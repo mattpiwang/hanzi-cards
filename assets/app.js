@@ -145,29 +145,48 @@
   /* Le verso concentre tout ce qui est demandé : pinyin, radicaux, exemples de
      mots, étymologie. */
   function backHTML(c) {
-    var comps = c.components.map(function (t) {
-      return '<li><span class="r">' + esc(t[0]) + '</span>' +
-             '<span class="g">' + esc(t[1]) + '</span>' +
-             '<span class="role">' + esc(t[2]) + '</span></li>';
-    }).join('');
+    /* Chaque section n'apparaît que si la donnée existe : les fiches
+       importées n'ont pas d'exemples de mots, et certaines n'ont pas de
+       radicaux exploitables dans la source. */
+    var compsHTML = (c.components && c.components.length)
+      ? '<section><h3>Radicaux</h3><ul class="comps">' +
+          c.components.map(function (t) {
+            return '<li><span class="r">' + esc(t[0]) + '</span>' +
+                   '<span class="g">' + esc(t[1]) + '</span>' +
+                   '<span class="role">' + esc(t[2]) + '</span></li>';
+          }).join('') +
+        '</ul></section>'
+      : '';
 
-    var words = c.words.map(function (t) {
-      return '<li><span class="w">' + esc(t[0]) + '</span>' +
-             '<span class="p tone-' + toneOf(t[1]) + '">' + esc(t[1]) + '</span>' +
-             '<span class="t">' + esc(t[2]) + '</span></li>';
-    }).join('');
+    var wordsHTML = (c.words && c.words.length)
+      ? '<section><h3>Exemples</h3><ul class="words">' +
+          c.words.map(function (t) {
+            return '<li><span class="w">' + esc(t[0]) + '</span>' +
+                   '<span class="p tone-' + toneOf(t[1]) + '">' + esc(t[1]) + '</span>' +
+                   '<span class="t">' + esc(t[2]) + '</span></li>';
+          }).join('') +
+        '</ul></section>'
+      : '';
+
+    /* Le sens vient du français quand il existe, sinon de la base anglaise
+       (avec une petite mention « en » pour que ce soit clair). */
+    var sens = c.meaning
+      ? esc(c.meaning)
+      : (c.meaningEn ? esc(c.meaningEn) + ' <span class="en">en</span>' : '—');
+
+    var etymoHTML = (c.etymology && c.etymology.length)
+      ? '<section><h3>Étymologie</h3>' +
+          '<p class="etype">' + esc(c.etymology[0]) + '</p>' +
+          (c.etymology[1] ? '<p class="etext">' + esc(c.etymology[1]) + '</p>' : '') +
+        '</section>'
+      : '';
 
     return '' +
       '<div class="back-head">' +
         '<div class="pinyin tone-' + toneOf(c.pinyin) + '">' + esc(c.pinyin) + '</div>' +
-        '<div class="meaning">' + esc(c.meaning) + '</div>' +
+        '<div class="meaning">' + sens + '</div>' +
       '</div>' +
-      '<section><h3>Radicaux</h3><ul class="comps">' + comps + '</ul></section>' +
-      '<section><h3>Exemples</h3><ul class="words">' + words + '</ul></section>' +
-      '<section><h3>Étymologie</h3>' +
-        '<p class="etype">' + esc(c.etymology[0]) + '</p>' +
-        '<p class="etext">' + esc(c.etymology[1]) + '</p>' +
-      '</section>' +
+      compsHTML + wordsHTML + etymoHTML +
       (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '');
   }
 

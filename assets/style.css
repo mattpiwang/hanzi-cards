@@ -195,6 +195,18 @@ kbd {
 
 .meaning { color: var(--txt); font-size: 1.02rem; margin-top: .15rem; }
 
+/* Marqueur « en » : le sens vient de la base anglaise, pas d'une traduction */
+.meaning .en {
+  color: var(--dim);
+  font-size: .72em;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: .05rem .3rem;
+  vertical-align: middle;
+}
+
 .back section { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
 
 .back h3 {

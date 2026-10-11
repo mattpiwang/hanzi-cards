@@ -97,6 +97,49 @@ hors ligne du § 5.
 
 ---
 
+### Importer des centaines de fiches (base Make Me a Hanzi)
+
+`import-hanzi-db.ps1` convertit la base libre **[Make Me a Hanzi](https://github.com/skishore/makemeahanzi)**
+(9 574 caractères) au format de ce jeu de cartes. Elle fournit exactement les
+mêmes champs : pinyin accentué, décomposition en radicaux, étymologie classée
+(象形 / 会意 / 形声) et radical principal.
+
+```powershell
+# 1. un niveau HSK (le fichier de filtre liste les caractères voulus)
+.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk1.txt -Category 'HSK 1'
+
+# 2. tout d'un coup (9 500 fiches : lourd, ~15 Mo de JSON)
+.\import-hanzi-db.ps1 -Category 'Tout'
+
+# 3. voir le rendu sans toucher au vrai fichier
+.\import-hanzi-db.ps1 -Limit 20 -Category 'Essai' -Output .\data\cards.test.json
+```
+
+| Option | Effet |
+|---|---|
+| `-FilterFile` | fichier texte listant les caractères voulus — **tout texte convient** (liste HSK, copier-coller, PDF converti) |
+| `-Limit` | ne garder que les n premiers. **À éviter sans filtre** : l'ordre du fichier source est l'ordre Unicode, donc les caractères les plus rares arrivent en premier |
+| `-Category` | nom du filtre dans l'application (ex. `HSK 1`) |
+| `-Output` | autre fichier de sortie, pour tester |
+| `-Replace` | repartir de zéro au lieu de compléter l'existant |
+
+**Les fiches écrites à la main gagnent toujours** : un caractère déjà présent
+(comme 好, avec son sens français et ses exemples) n'est jamais écrasé. L'ancien
+fichier est sauvegardé dans `data/cards.backup.json` avant chaque écriture.
+
+⚠️ **Les définitions et étymologies importées sont en anglais** — c'est la langue
+de la source. L'application affiche le français quand il existe, et l'anglais
+avec une petite mention `en` sinon. Le sens français peut être ajouté
+progressivement, fiche par fiche.
+
+**Listes HSK utilisées** : [HSK 3.0 de krmanik](https://github.com/krmanik/HSK-3.0)
+— HSK 1 : 246 caractères · HSK 2 : 125 · HSK 3 : 284 · HSK 4 : 441 · HSK 5 : 431 ·
+HSK 6 : 413 · HSK 7-9 : 1 148. Téléchargées dans `..\hanzi-db\filtres\`.
+
+**Attribution** : les fiches importées viennent de Make Me a Hanzi, lui-même
+dérivé d'Unihan et de polices Arphic sous licence permissive ; le champ `source`
+de chaque fiche le mentionne.
+
 ## 4. Lancer le site
 
 ```powershell
