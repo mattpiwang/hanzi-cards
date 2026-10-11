@@ -5,7 +5,10 @@ rem  Double-clique simplement sur ce fichier.
 rem
 rem  Note : ce serveur ecoute sur toutes les interfaces (pas seulement
 rem  127.0.0.1), afin que ton telephone puisse ouvrir les cartes via l'IP du PC.
-rem  Ce sont 41 caracteres chinois publics, rien de personnel.
+rem  Ce sont des caracteres chinois publics (aucune donnee personnelle).
+rem
+rem  Astuce : pour lire les cartes SANS serveur, ouvre simplement
+rem  cartes-mobile.html (double-clic) : tout est dans le fichier.
 rem ---------------------------------------------------------------------------
 setlocal
 cd /d "%~dp0"

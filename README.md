@@ -8,7 +8,7 @@ téléphone.
 index.html          la page
 assets/style.css    le design, et l'animation de retournement
 assets/app.js       la logique de révision
-data/cards.json     le jeu de cartes (41 caractères)
+data/cards.json     le jeu de cartes (253 caractères : 41 à la main, 212 importés)
 manifest.json       déclaration PWA : nom, icônes, mode plein écran
 service-worker.js   cache hors ligne (voir § 5 pour la condition HTTPS)
 icons/              icônes de l'application, générées avec .NET
@@ -178,10 +178,10 @@ exige une origine sécurisée** (`https`, ou `localhost`).
 ### B. Fichier unique, sans réseau
 
 ```powershell
-.\build-mobile.ps1          # produit cartes-mobile.html (~41 Ko)
+.\build-mobile.ps1          # produit cartes-mobile.html (~327 Ko)
 ```
 
-Ce fichier contient la page, le style, la logique **et les 41 fiches**. Copie-le
+Ce fichier contient la page, le style, la logique **et les 253 fiches**. Copie-le
 sur le téléphone (USB, OneDrive, mail) et ouvre-le : aucun serveur, aucun réseau.
 
 ⚠️ **La progression risque de ne pas être conservée** : Chrome interdit
@@ -213,9 +213,14 @@ Deux réserves à connaître :
 
 ## 6. État des données — à lire
 
-Les 41 fiches ont été **rédigées à la main**, pas extraites d'une base
-lexicographique. Ce qui est solide : les caractères, le pinyin (vérifié : les 41
-portent leur marque de ton), les sens et les mots d'exemple.
+Le jeu compte **253 fiches**, de deux origines bien distinctes :
+
+- **41 fiches rédigées à la main** — les caractères les plus courants. Tout est
+  vérifié : caractères, pinyin accentué, sens **en français**, mots d'exemple et
+  étymologie. C'est la partie la plus soignée.
+- **212 fiches importées** de la base libre Make Me a Hanzi (niveau HSK 1) —
+  pinyin accentué, radicaux et étymologie classée, mais **définitions en anglais**
+  et **sans mots d'exemple**. L'application les signale par une petite mention `en`.
 
 Les **classifications étymologiques** suivent la tradition du *Shuowen Jiezi*
 (象形 pictogramme, 指事 indicateur, 会意 composé d'idées, 形声
@@ -229,15 +234,17 @@ comme une source académique.
 | Envie | Piste |
 |---|---|
 | **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) — un JSON par caractère, fonctionne hors ligne. |
-| **Beaucoup plus de vocabulaire** | [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) : dictionnaire libre, ~120 000 entrées. |
-| **Décomposition officielle** | La base **Make Me a Hanzi** donne composants et tracés pour ~9 000 caractères. |
+| **Plus de vocabulaire** | Importer les niveaux suivants : `.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk2.txt -Category 'HSK 2'` — les listes HSK 1→7-9 sont déjà téléchargées (§ 3). |
+| **Mots d'exemple pour les fiches importées** | [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) : dictionnaire libre, ~120 000 entrées, pour remplir le champ `words`. |
+| **Sens en français partout** | Traduire les 212 définitions anglaises — faisable par lots avec une API de traduction. |
 | **Répétition espacée réelle** | Remplacer le compteur à trois états par un algorithme SM-2 (intervalles croissants). |
 | **Chinois traditionnel** | Ajouter un champ `traditional` et un bouton d'affichage. |
 | **Audio** | Un simple `<audio>` si tu enregistres les prononciations. |
 
 ## 8. Limites connues
 
-- **41 caractères** : un premier jeu, pas un cursus.
+- **253 caractères** : le socle du HSK 1. Pour lire couramment, il faut viser
+  2 500 à 3 000 caractères (voir § 3 pour importer les niveaux suivants).
 - La progression est **locale au navigateur** : pas de synchronisation entre appareils, et elle disparaît si tu vides les données du site.
 - Pas de répétition espacée à intervalles : « Je sais » monte d'un cran, sans notion de délai.
 - En `file://` (version § 5-B), la progression peut ne pas survivre à la fermeture.
