@@ -1,0 +1,8 @@
+﻿# Fichiers propres a la machine locale
+.vscode/
+ouvrir-pare-feu.ps1
+
+# Divers systeme
+Thumbs.db
+desktop.ini
+.DS_Store

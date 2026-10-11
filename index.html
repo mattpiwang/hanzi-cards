@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartes — 汉字</title>
+<meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- Installation sur téléphone : manifeste, icônes, couleur de la barre système -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0e1114">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cartes 汉字">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <span class="logo">汉</span>
+      <div>
+        <h1>Cartes</h1>
+        <p class="sub" id="deck-name">chargement…</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
+      <p id="counters" class="counters">…</p>
+    </div>
+  </div>
+</header>
+
+<nav class="wrap filters" id="filters" aria-label="Filtrer les cartes"></nav>
+
+<main class="wrap">
+  <div class="stage">
+    <article class="card" id="card" tabindex="0" aria-label="Carte de révision">
+      <!-- Recto : le caractère, seul, en grand -->
+      <div class="face front">
+        <div class="glyph" id="front-glyph">汉</div>
+        <p class="hint">Clic ou <kbd>Espace</kbd> pour retourner</p>
+      </div>
+      <!-- Verso : rempli par app.js -->
+      <div class="face back" id="back"></div>
+    </article>
+  </div>
+
+  <div class="controls">
+    <button id="prev" class="btn ghost" aria-label="Carte précédente">&#8592;</button>
+    <button id="flip" class="btn primary">Retourner</button>
+    <button id="next" class="btn ghost" aria-label="Carte suivante">&#8594;</button>
+  </div>
+
+  <div class="verdicts">
+    <button id="again" class="btn warn">À revoir <kbd>1</kbd></button>
+    <button id="known" class="btn ok">Je sais <kbd>2</kbd></button>
+  </div>
+
+  <p class="tools">
+    <button id="shuffle" class="link">Mélanger</button>
+    <span aria-hidden="true">·</span>
+    <button id="reset" class="link">Réinitialiser la progression</button>
+  </p>
+</main>
+
+<footer class="wrap foot">
+  <span><kbd>Espace</kbd> retourner · <kbd>&#8592;</kbd><kbd>&#8594;</kbd> naviguer · <kbd>1</kbd> à revoir · <kbd>2</kbd> je sais</span>
+  <span id="position" class="pos"></span>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

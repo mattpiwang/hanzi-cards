@@ -1,0 +1,262 @@
+{
+  "deck": "Hanzi — premiers caractères",
+  "note": "Données rédigées à la main. Classifications étymologiques selon la tradition du Shuowen Jiezi (certaines sont débattues).",
+  "schema": {
+    "components": "[caractère, glose, rôle] — rôle = sens | son | pictogramme | indicateur",
+    "words": "[mot, pinyin, traduction]",
+    "etymology": "[type, explication]",
+    "note": "remarque facultative affichée sous l'étymologie"
+  },
+  "cards": [
+    {
+      "char": "一", "pinyin": "yī", "meaning": "un", "category": "Nombres",
+      "components": [["一", "un trait unique", "indicateur"]],
+      "words": [["一个", "yí gè", "un (objet)"], ["一起", "yì qǐ", "ensemble"]],
+      "etymology": ["指事 — indicateur", "Un unique trait horizontal : la façon la plus directe de figurer « un »."],
+      "note": "Devant un 4e ton, 一 devient yí (一个 → yí gè) ; devant les autres tons, yì (一起 → yì qǐ)."
+    },
+    {
+      "char": "二", "pinyin": "èr", "meaning": "deux", "category": "Nombres",
+      "components": [["二", "deux traits", "indicateur"]],
+      "words": [["二月", "èr yuè", "février"], ["第二", "dì èr", "deuxième"]],
+      "etymology": ["指事 — indicateur", "Deux traits : deux unités."]
+    },
+    {
+      "char": "三", "pinyin": "sān", "meaning": "trois", "category": "Nombres",
+      "components": [["三", "trois traits", "indicateur"]],
+      "words": [["三个", "sān gè", "trois (objets)"], ["三月", "sān yuè", "mars"]],
+      "etymology": ["指事 — indicateur", "Trois traits empilés. En chinois, 三 évoque aussi la multitude (三心二意 : hésiter)."]
+    },
+    {
+      "char": "日", "pinyin": "rì", "meaning": "soleil, jour", "category": "Nature",
+      "components": [["日", "disque solaire", "pictogramme"]],
+      "words": [["日本", "Rì běn", "Japon"], ["生日", "shēng rì", "anniversaire"]],
+      "etymology": ["象形 — pictogramme", "Un disque avec un point au centre : le soleil des inscriptions oraculaires. De « soleil » vient « jour »."]
+    },
+    {
+      "char": "月", "pinyin": "yuè", "meaning": "lune, mois", "category": "Nature",
+      "components": [["月", "croissant de lune", "pictogramme"]],
+      "words": [["月亮", "yuè liang", "la lune"], ["一个月", "yí gè yuè", "un mois"]],
+      "etymology": ["象形 — pictogramme", "Un croissant. Comme le calendrier chinois suivait la lune, le caractère a pris le sens de « mois »."]
+    },
+    {
+      "char": "山", "pinyin": "shān", "meaning": "montagne", "category": "Nature",
+      "components": [["山", "trois pics", "pictogramme"]],
+      "words": [["火山", "huǒ shān", "volcan"], ["山上", "shān shàng", "sur la montagne"]],
+      "etymology": ["象形 — pictogramme", "Trois sommets dressés, dessinés tels quels."]
+    },
+    {
+      "char": "水", "pinyin": "shuǐ", "meaning": "eau", "category": "Nature",
+      "components": [["水", "courant d'eau", "pictogramme"]],
+      "words": [["水果", "shuǐ guǒ", "fruit"], ["喝水", "hē shuǐ", "boire de l'eau"]],
+      "etymology": ["象形 — pictogramme", "Le fil du courant, avec ses remous de part et d'autre."]
+    },
+    {
+      "char": "火", "pinyin": "huǒ", "meaning": "feu", "category": "Nature",
+      "components": [["火", "flammes", "pictogramme"]],
+      "words": [["火车", "huǒ chē", "train"], ["火山", "huǒ shān", "volcan"]],
+      "etymology": ["象形 — pictogramme", "Une flamme centrale entourée de deux étincelles."]
+    },
+    {
+      "char": "木", "pinyin": "mù", "meaning": "arbre, bois", "category": "Nature",
+      "components": [["木", "arbre", "pictogramme"]],
+      "words": [["木头", "mù tou", "bois, morceau de bois"], ["树木", "shù mù", "arbres"]],
+      "etymology": ["象形 — pictogramme", "Un tronc, des branches en haut, des racines en bas."]
+    },
+    {
+      "char": "田", "pinyin": "tián", "meaning": "champ cultivé", "category": "Nature",
+      "components": [["田", "parcelle cultivée", "pictogramme"]],
+      "words": [["田地", "tián dì", "terre cultivée"], ["稻田", "dào tián", "rizière"]],
+      "etymology": ["象形 — pictogramme", "Une parcelle vue du dessus, quadrillée par les chemins et les rigoles d'irrigation."]
+    },
+    {
+      "char": "雨", "pinyin": "yǔ", "meaning": "pluie", "category": "Nature",
+      "components": [["雨", "ciel et gouttes", "pictogramme"]],
+      "words": [["下雨", "xià yǔ", "pleuvoir"], ["雨天", "yǔ tiān", "jour de pluie"]],
+      "etymology": ["象形 — pictogramme", "Le ciel, figuré par le trait horizontal supérieur, d'où tombent des gouttes."]
+    },
+    {
+      "char": "风", "pinyin": "fēng", "meaning": "vent", "category": "Nature",
+      "components": [["凡", "phonétique (fán)", "son"], ["虫", "insecte", "sens"]],
+      "words": [["大风", "dà fēng", "grand vent"], ["风景", "fēng jǐng", "paysage"]],
+      "etymology": ["形声 — composé phonétique-sémantique", "Le Shuowen analyse 風 comme 虫 (sens) + 凡 (son), avec l'idée que « le vent fait naître les insectes ». La forme simplifiée 风 a gardé l'enveloppe extérieure."]
+    },
+    {
+      "char": "电", "pinyin": "diàn", "meaning": "électricité", "category": "Nature",
+      "components": [["田", "nuée, ciel chargé", "sens"], ["乚", "trait courbe de la foudre", "pictogramme"]],
+      "words": [["电话", "diàn huà", "téléphone"], ["电脑", "diàn nǎo", "ordinateur"]],
+      "etymology": ["象形 — pictogramme", "La forme traditionnelle 電 plaçait l'éclair sous 雨, le ciel de pluie. La simplification 电 a conservé la nuée traversée par le trait courbe de la foudre."]
+    },
+    {
+      "char": "人", "pinyin": "rén", "meaning": "personne, être humain", "category": "Corps & personnes",
+      "components": [["人", "silhouette humaine", "pictogramme"]],
+      "words": [["中国人", "Zhōng guó rén", "Chinois, Chinoise"], ["大人", "dà ren", "adulte"]],
+      "etymology": ["象形 — pictogramme", "Le profil d'un être humain debout, une jambe et un bras esquissés."]
+    },
+    {
+      "char": "大", "pinyin": "dà", "meaning": "grand", "category": "Corps & personnes",
+      "components": [["大", "homme aux bras écartés", "pictogramme"]],
+      "words": [["大学", "dà xué", "université"], ["大家", "dà jiā", "tout le monde"]],
+      "etymology": ["象形 — pictogramme", "Un homme debout, les bras largement écartés : l'ampleur, donc la grandeur."]
+    },
+    {
+      "char": "小", "pinyin": "xiǎo", "meaning": "petit", "category": "Corps & personnes",
+      "components": [["小", "trois menues marques", "indicateur"]],
+      "words": [["小时", "xiǎo shí", "heure (durée)"], ["小狗", "xiǎo gǒu", "petit chien"]],
+      "etymology": ["指事 — indicateur", "Trois marques minuscules : l'idée de petitesse. Certaines analyses y voient des grains de sable."]
+    },
+    {
+      "char": "口", "pinyin": "kǒu", "meaning": "bouche, ouverture", "category": "Corps & personnes",
+      "components": [["口", "bouche ouverte", "pictogramme"]],
+      "words": [["门口", "mén kǒu", "entrée, porte"], ["人口", "rén kǒu", "population"]],
+      "etymology": ["象形 — pictogramme", "Une bouche ouverte, dessinée comme un cadre. De la bouche vient le sens d'« ouverture » (porte, passage)."]
+    },
+    {
+      "char": "目", "pinyin": "mù", "meaning": "œil", "category": "Corps & personnes",
+      "components": [["目", "œil", "pictogramme"]],
+      "words": [["目标", "mù biāo", "objectif, but"], ["目录", "mù lù", "table des matières"]],
+      "etymology": ["象形 — pictogramme", "Un œil couché verticalement, pupille comprise, comme on le trouve sur les bronzes anciens."]
+    },
+    {
+      "char": "手", "pinyin": "shǒu", "meaning": "main", "category": "Corps & personnes",
+      "components": [["手", "main à cinq doigts", "pictogramme"]],
+      "words": [["手机", "shǒu jī", "téléphone portable"], ["洗手", "xǐ shǒu", "se laver les mains"]],
+      "etymology": ["象形 — pictogramme", "Une main avec ses doigts et son poignet."]
+    },
+    {
+      "char": "心", "pinyin": "xīn", "meaning": "cœur", "category": "Corps & personnes",
+      "components": [["心", "cœur", "pictogramme"]],
+      "words": [["小心", "xiǎo xīn", "attention !"], ["开心", "kāi xīn", "content, joyeux"]],
+      "etymology": ["象形 — pictogramme", "Un cœur anatomique avec ses cavités. En chinois, le cœur est le siège des émotions mais aussi de la pensée."]
+    },
+    {
+      "char": "女", "pinyin": "nǚ", "meaning": "femme, féminin", "category": "Corps & personnes",
+      "components": [["女", "silhouette assise", "pictogramme"]],
+      "words": [["女儿", "nǚ ér", "fille (descendante)"], ["女人", "nǚ rén", "femme"]],
+      "etymology": ["象形 — pictogramme", "Une silhouette assise, jambes croisées, dans la posture adoptée à l'intérieur de la maison."]
+    },
+    {
+      "char": "子", "pinyin": "zǐ", "meaning": "enfant, fils", "category": "Corps & personnes",
+      "components": [["子", "bébé emmailloté", "pictogramme"]],
+      "words": [["孩子", "hái zi", "enfant"], ["儿子", "ér zi", "fils"]],
+      "etymology": ["象形 — pictogramme", "Un nouveau-né emmailloté, les bras tendus vers l'extérieur."]
+    },
+    {
+      "char": "男", "pinyin": "nán", "meaning": "homme, masculin", "category": "Corps & personnes",
+      "components": [["田", "champ", "sens"], ["力", "force", "sens"]],
+      "words": [["男人", "nán rén", "homme"], ["男孩", "nán hái", "garçon"]],
+      "etymology": ["会意 — idéogramme composé", "La force (力) au champ (田) : dans la société agricole, l'homme était celui qui travaillait la terre."]
+    },
+    {
+      "char": "家", "pinyin": "jiā", "meaning": "maison, famille", "category": "Famille & maison",
+      "components": [["宀", "toit", "sens"], ["豕", "porc", "sens"]],
+      "words": [["家人", "jiā rén", "les proches"], ["回家", "huí jiā", "rentrer à la maison"]],
+      "etymology": ["会意 — idéogramme composé", "Un toit (宀) et un porc (豕) : le cochon sous le toit, c'était la sécurité matérielle du foyer. Le caractère désigne donc à la fois la maison et la famille."]
+    },
+    {
+      "char": "安", "pinyin": "ān", "meaning": "paix, tranquillité", "category": "Famille & maison",
+      "components": [["宀", "toit", "sens"], ["女", "femme", "sens"]],
+      "words": [["安全", "ān quán", "sécurité"], ["晚安", "wǎn ān", "bonne nuit"]],
+      "etymology": ["会意 — idéogramme composé", "Une femme (女) sous un toit (宀) : l'image traditionnelle du repos et de la quiétude. Analyse ancienne, à replacer dans son contexte social."]
+    },
+    {
+      "char": "好", "pinyin": "hǎo", "meaning": "bon, bien", "category": "Famille & maison",
+      "components": [["女", "femme", "sens"], ["子", "enfant", "sens"]],
+      "words": [["你好", "nǐ hǎo", "bonjour"], ["好看", "hǎo kàn", "beau, joli"]],
+      "etymology": ["会意 — idéogramme composé", "Une femme et un enfant réunis : l'harmonie du foyer, d'où « bon, bien »."],
+      "note": "Prononcé hào, le même caractère signifie « aimer » : 爱好 (àihào), un passe-temps."
+    },
+    {
+      "char": "上", "pinyin": "shàng", "meaning": "dessus, monter", "category": "Position",
+      "components": [["上", "repère au-dessus d'une ligne", "indicateur"]],
+      "words": [["上午", "shàng wǔ", "matin"], ["上面", "shàng miàn", "au-dessus"]],
+      "etymology": ["指事 — indicateur", "Un trait qui sert de référence, et un repère placé au-dessus de lui."]
+    },
+    {
+      "char": "下", "pinyin": "xià", "meaning": "dessous, descendre", "category": "Position",
+      "components": [["下", "repère sous une ligne", "indicateur"]],
+      "words": [["下午", "xià wǔ", "après-midi"], ["下雨", "xià yǔ", "pleuvoir"]],
+      "etymology": ["指事 — indicateur", "Le même trait de référence, avec le repère situé en dessous."]
+    },
+    {
+      "char": "中", "pinyin": "zhōng", "meaning": "milieu, centre", "category": "Position",
+      "components": [["中", "hampe traversant un cadre", "indicateur"]],
+      "words": [["中国", "Zhōng guó", "Chine"], ["中午", "zhōng wǔ", "midi"]],
+      "etymology": ["指事 — indicateur", "Une hampe qui traverse le milieu d'un objet : le centre, ce qui est à l'intérieur."]
+    },
+    {
+      "char": "我", "pinyin": "wǒ", "meaning": "je, moi", "category": "Pronoms & grammaire",
+      "components": [["我", "arme à dents de scie (origine)", "pictogramme"]],
+      "words": [["我们", "wǒ men", "nous"], ["我的", "wǒ de", "mon, ma"]],
+      "etymology": ["假借 — emprunt phonétique", "Le dessin représentait à l'origine une arme à dents de scie. Le caractère a été emprunté pour écrire le pronom « je », sans aucun lien avec le sens premier."]
+    },
+    {
+      "char": "你", "pinyin": "nǐ", "meaning": "tu, toi", "category": "Pronoms & grammaire",
+      "components": [["亻", "personne (forme réduite de 人)", "sens"], ["尔", "phonétique (ěr)", "son"]],
+      "words": [["你好", "nǐ hǎo", "bonjour"], ["你们", "nǐ men", "vous"]],
+      "etymology": ["形声 — composé phonétique-sémantique", "La clé de l'homme (亻) donne le sens, 尔 donne la prononciation."]
+    },
+    {
+      "char": "他", "pinyin": "tā", "meaning": "il, lui", "category": "Pronoms & grammaire",
+      "components": [["亻", "personne", "sens"], ["也", "phonétique (yě)", "son"]],
+      "words": [["他们", "tā men", "ils"], ["其他", "qí tā", "autre"]],
+      "etymology": ["形声 — composé phonétique-sémantique", "Personne (亻) pour le sens, 也 pour la prononciation."]
+    },
+    {
+      "char": "不", "pinyin": "bù", "meaning": "ne… pas", "category": "Pronoms & grammaire",
+      "components": [["不", "calice de fleur (origine)", "pictogramme"]],
+      "words": [["不是", "bú shì", "ne pas être"], ["不好", "bù hǎo", "pas bien"]],
+      "etymology": ["假借 — emprunt phonétique", "Le dessin figurait le calice d'une fleur ; il a été emprunté pour noter la négation."],
+      "note": "Devant un 4e ton, 不 devient bú : 不是 → bú shì. Ailleurs il reste bù."
+    },
+    {
+      "char": "是", "pinyin": "shì", "meaning": "être, c'est bien cela", "category": "Pronoms & grammaire",
+      "components": [["日", "soleil", "sens"], ["正", "droit, juste", "sens"]],
+      "words": [["是的", "shì de", "oui, c'est cela"], ["但是", "dàn shì", "mais"]],
+      "etymology": ["会意 — idéogramme composé", "Le soleil (日) et ce qui est droit (正) : le vrai, le correct — d'où le sens de « être, c'est bien cela »."]
+    },
+    {
+      "char": "有", "pinyin": "yǒu", "meaning": "avoir, il y a", "category": "Pronoms & grammaire",
+      "components": [["又", "main (forme ancienne)", "sens"], ["月", "chair, viande", "sens"]],
+      "words": [["没有", "méi yǒu", "ne pas avoir"], ["有意思", "yǒu yì si", "intéressant"]],
+      "etymology": ["会意 — idéogramme composé", "Une main (又) tenant un morceau de viande (月) : ce que l'on possède."]
+    },
+    {
+      "char": "来", "pinyin": "lái", "meaning": "venir", "category": "Verbes",
+      "components": [["来", "plant de blé (origine)", "pictogramme"]],
+      "words": [["回来", "huí lái", "revenir"], ["未来", "wèi lái", "avenir"]],
+      "etymology": ["假借 — emprunt phonétique", "À l'origine, le dessin d'un épi de blé (aujourd'hui écrit 麥). Il a été emprunté pour noter « venir »."]
+    },
+    {
+      "char": "去", "pinyin": "qù", "meaning": "aller, partir", "category": "Verbes",
+      "components": [["大", "personne", "sens"], ["凵", "réceptacle, ouverture", "sens"]],
+      "words": [["去年", "qù nián", "l'année dernière"], ["出去", "chū qù", "sortir"]],
+      "etymology": ["会意 — idéogramme composé", "Une personne (大) quittant un contenant (凵) : partir, s'en aller."]
+    },
+    {
+      "char": "看", "pinyin": "kàn", "meaning": "regarder, lire", "category": "Verbes",
+      "components": [["手", "main", "sens"], ["目", "œil", "sens"]],
+      "words": [["看书", "kàn shū", "lire un livre"], ["看见", "kàn jiàn", "voir"]],
+      "etymology": ["会意 — idéogramme composé", "Une main (手) au-dessus de l'œil (目) : se protéger du soleil pour mieux voir au loin."]
+    },
+    {
+      "char": "吃", "pinyin": "chī", "meaning": "manger", "category": "Verbes",
+      "components": [["口", "bouche", "sens"], ["乞", "phonétique (qǐ)", "son"]],
+      "words": [["吃饭", "chī fàn", "manger, prendre un repas"], ["好吃", "hǎo chī", "délicieux"]],
+      "etymology": ["形声 — composé phonétique-sémantique", "La bouche (口) pour le sens, 乞 pour la prononciation."]
+    },
+    {
+      "char": "学", "pinyin": "xué", "meaning": "apprendre, étudier", "category": "Verbes",
+      "components": [["子", "enfant", "sens"], ["冖", "toit", "sens"], ["⺍", "mains qui transmettent", "sens"]],
+      "words": [["学生", "xué shēng", "élève, étudiant"], ["学习", "xué xí", "étudier, apprendre"]],
+      "etymology": ["会意 — idéogramme composé", "Un enfant (子) sous un toit (冖), guidé par des mains : l'école, le lieu où l'on transmet. La forme traditionnelle 學 est plus détaillée encore."]
+    },
+    {
+      "char": "生", "pinyin": "shēng", "meaning": "naître, vie, cru", "category": "Verbes",
+      "components": [["生", "jeune pousse sur la terre", "pictogramme"]],
+      "words": [["生日", "shēng rì", "anniversaire"], ["先生", "xiān sheng", "monsieur"]],
+      "etymology": ["象形 — pictogramme", "Une jeune pousse sortant de terre : la naissance, la vie qui vient."],
+      "note": "Dans 先生, le ton de 生 s'atone : xiān sheng."
+    }
+  ]
+}
