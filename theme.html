@@ -6,6 +6,18 @@
 <title>Thèmes — 汉字</title>
 <meta name="description" content="Choisir un thème de vocabulaire et réviser uniquement ces caractères.">
 <link rel="stylesheet" href="assets/style.css">
+
+<!-- Même rattrapage que sur la page des cartes : le thème est appliqué avant
+     l'affichage, pour ne pas voir de flash au chargement. -->
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('hanzi-theme') === 'clair') {
+      document.documentElement.setAttribute('data-theme', 'clair');
+    }
+  } catch (e) { /* navigation privée : on garde le thème par défaut */ }
+})();
+</script>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0e1114">
 <link rel="icon" href="icons/icon-192.png">

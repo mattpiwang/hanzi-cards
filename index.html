@@ -7,6 +7,18 @@
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
 <link rel="stylesheet" href="assets/style.css">
 
+<!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
+     un flash clair au chargement quand on a choisi le mode sombre. -->
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('hanzi-theme') === 'clair') {
+      document.documentElement.setAttribute('data-theme', 'clair');
+    }
+  } catch (e) { /* navigation privée : on garde le thème par défaut */ }
+})();
+</script>
+
 <!-- Installation sur téléphone : manifeste, icônes, couleur de la barre système -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0e1114">
@@ -41,6 +53,14 @@
         <a href="theme.html">Thèmes de vocabulaire</a>
         <a href="index.html?review=1">Cartes à revoir</a>
         <a href="index.html">Toutes les cartes</a>
+        <div class="menu-sep" aria-hidden="true"></div>
+        <!-- 阴 l'ombre, 阳 la lumière : le curseur indique le mode en cours -->
+        <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
+          <span class="sw-yin" aria-hidden="true">阴</span>
+          <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
+          <span class="sw-yang" aria-hidden="true">阳</span>
+          <span class="sw-label" id="theme-label">Mode sombre</span>
+        </button>
       </div>
     </nav>
   </div>

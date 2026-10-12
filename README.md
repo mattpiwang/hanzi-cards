@@ -93,6 +93,15 @@ choix passe par l'adresse, sans rien ajouter à l'écran principal :
 Ces adresses sont **partageables** : un lien suffit pour envoyer un thème à
 quelqu'un.
 
+**Le menu contient aussi l'interrupteur 阴 / 阳** — l'ombre et la lumière, pour
+le mode sombre et le mode clair. Le curseur indique le mode en cours, et le
+caractère du mode actif passe en doré. Le choix est conservé dans le navigateur
+et appliqué **avant le premier affichage** (petit script dans l'en-tête des deux
+pages), donc aucun flash clair au chargement quand on a choisi le sombre.
+
+Comme toute la feuille de style ne dépend que de variables CSS, **ajouter un
+thème revient à ajouter un bloc `[data-theme="…"]`** dans `assets/style.css`.
+
 **Le retournement** est une rotation 3D en CSS pur. Le verso défile tout seul si
 l'étymologie est longue. Les **couleurs de tons** suivent la convention
 habituelle : 1 rouge, 2 orange, 3 vert, 4 bleu, ton neutre en gris.

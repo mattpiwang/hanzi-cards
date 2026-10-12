@@ -23,6 +23,33 @@
   --cjk: "KaiTi", "STKaiti", "Kaiti SC", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", serif;
 }
 
+/* ---------- mode clair (阴 / 阳) ----------
+   Le mode sombre est la valeur par défaut ci-dessus ; le mode clair se pose
+   par-dessus, sans toucher au reste de la feuille. */
+[data-theme="clair"] {
+  --bg: #f6f3ec;        /* papier chaud */
+  --panel: #fffdf8;
+  --panel-2: #efe9dd;
+  --line: #ded5c4;
+  --txt: #221f1a;
+  --dim: #776f63;
+  --accent: #9c7526;    /* doré assombri, pour rester lisible sur clair */
+  --ok: #1d8f5b;
+  --warn: #b0731a;
+
+  /* Les tons sont foncés : les teintes vives du mode sombre baveraient ici. */
+  --t1: #c0392b;
+  --t2: #b3620f;
+  --t3: #1c7d46;
+  --t4: #2c66a8;
+  --t0: #6d7480;
+}
+
+/* Trois détails qui ne passent pas par des variables */
+[data-theme="clair"] .glyph { color: #1d1a16; text-shadow: 0 6px 24px rgba(0, 0, 0, .12); }
+[data-theme="clair"] .etext { color: #4a453d; }
+[data-theme="clair"] .menu-panel { box-shadow: 0 18px 40px rgba(60, 50, 30, .18); }
+
 * { box-sizing: border-box; }
 
 body {
@@ -158,6 +185,65 @@ kbd {
   font-size: .9rem;
 }
 .menu-panel a:hover { background: var(--panel-2); }
+
+.menu-sep { height: 1px; margin: .3rem .4rem; background: var(--line); }
+
+/* ---------- interrupteur 阴 / 阳 ---------- */
+
+.switch {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  padding: .55rem .7rem;
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  color: var(--txt);
+  font: inherit;
+  font-size: .9rem;
+  text-align: left;
+  cursor: pointer;
+}
+.switch:hover { background: var(--panel-2); }
+
+/* Le caractère du mode actif passe en doré */
+.sw-yin, .sw-yang {
+  font-family: var(--cjk);
+  font-size: 1.08rem;
+  line-height: 1;
+  color: var(--dim);
+  transition: color .2s;
+}
+.switch[aria-checked="false"] .sw-yin { color: var(--accent); }
+.switch[aria-checked="true"] .sw-yang { color: var(--accent); }
+
+.sw-track {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  transition: background-color .2s, border-color .2s;
+}
+
+.sw-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--dim);
+  transition: transform .2s, background-color .2s;
+}
+
+.switch[aria-checked="true"] .sw-track { background: rgba(216, 178, 106, .28); border-color: var(--accent); }
+.switch[aria-checked="true"] .sw-knob { transform: translateX(18px); background: var(--accent); }
+
+.sw-label { margin-left: auto; color: var(--dim); font-size: .78rem; }
 
 /* ---------- page « Thèmes » ---------- */
 

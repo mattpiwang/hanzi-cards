@@ -375,6 +375,41 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /*  Mode clair / sombre (阴 / 阳)                                       */
+  /* ------------------------------------------------------------------ */
+
+  var THEME_KEY = 'hanzi-theme';
+  var themeBtn = document.getElementById('theme-toggle');
+  var themeLabel = document.getElementById('theme-label');
+
+  function themeActuel() {
+    try { return localStorage.getItem(THEME_KEY) === 'clair' ? 'clair' : 'sombre'; }
+    catch (e) { return 'sombre'; }
+  }
+
+  function appliquerTheme(nom) {
+    var racine = document.documentElement;
+    if (nom === 'clair') { racine.setAttribute('data-theme', 'clair'); }
+    else { racine.removeAttribute('data-theme'); }
+
+    try { localStorage.setItem(THEME_KEY, nom); } catch (e) { /* on ignore */ }
+
+    if (themeBtn) { themeBtn.setAttribute('aria-checked', nom === 'clair' ? 'true' : 'false'); }
+    if (themeLabel) { themeLabel.textContent = nom === 'clair' ? 'Mode clair' : 'Mode sombre'; }
+
+    // La barre système du téléphone suit le thème choisi.
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) { meta.setAttribute('content', nom === 'clair' ? '#f6f3ec' : '#0e1114'); }
+  }
+
+  if (themeBtn) {
+    appliquerTheme(themeActuel());   // le script du <head> l'a déjà posé : on synchronise l'interrupteur
+    themeBtn.addEventListener('click', function () {
+      appliquerTheme(themeActuel() === 'clair' ? 'sombre' : 'clair');
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
   /*  Écouteurs                                                          */
   /* ------------------------------------------------------------------ */
 

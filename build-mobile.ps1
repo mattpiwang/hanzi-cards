@@ -21,9 +21,9 @@
     progression peut repartir de zero a chaque ouverture. Pour la conserver
     a coup sur, il faut une origine http(s) : serveur local, ou hebergement.
 
-    Le menu disparait aussi : le bouton renvoie vers la page « Themes », qui
-    n'existe pas dans un fichier unique. Il est retire a la construction, et
-    toutes les fiches sont alors dans le meme paquet.
+    Les liens du menu disparaissent : ils renvoient vers la page « Themes »,
+    qui n'existe pas dans un fichier unique. Le bouton burger et
+    l'interrupteur clair/sombre, eux, restent — ils marchent hors ligne.
 
     USAGE
     -----
@@ -55,9 +55,10 @@ $html = $html.Replace('<script src="assets/app.js"></script>',
 # Le manifeste et le service worker n'ont aucun sens dans un fichier local.
 $html = $html.Replace('<link rel="manifest" href="manifest.json">', '')
 
-# Le menu renvoie vers theme.html : dans un fichier unique, ce lien n'existe
-# pas. On retire le bouton (le motif ne contient aucun $, -replace est sans risque).
-$html = $html -replace '(?s)\s*<nav class="menu">.*?</nav>', ''
+# Dans un fichier unique, les liens du menu (vers theme.html) ne menent nulle
+# part : on retire les <a>. Le bouton burger et l'interrupteur clair/sombre,
+# eux, restent : ils fonctionnent tres bien hors ligne.
+$html = $html -replace '(?s)\s*<a href="(?:theme|index)\.html[^"]*">.*?</a>', ''
 
 $html = $html.Replace('<title>Cartes — 汉字</title>',
                       '<title>Cartes 汉字 — hors ligne</title>')
