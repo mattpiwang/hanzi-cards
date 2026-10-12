@@ -70,8 +70,8 @@ les exemples de mots en profitent aussi.
 | État | Déclencheur | Effet |
 |---|---|---|
 | 0 | jamais vue | compte dans « à revoir » |
-| 1 | bouton **À revoir** | renvoyée au début |
-| 2 → 3 | bouton **Je sais** | monte d'un cran, sort de « à revoir » à 3 |
+| 1 | bouton **À revoir**, ou **glissement vers la gauche** | renvoyée au début |
+| 2 → 3 | bouton **Je sais**, ou **glissement vers la droite** | monte d'un cran, sort de « à revoir » à 3 |
 
 **Le filtre « À revoir »** n'affiche que les cartes non maîtrisées (état < 3), et
 une carte validée en sort immédiatement.
@@ -79,6 +79,14 @@ une carte validée en sort immédiatement.
 **Le retournement** est une rotation 3D en CSS pur. Le verso défile tout seul si
 l'étymologie est longue. Les **couleurs de tons** suivent la convention
 habituelle : 1 rouge, 2 orange, 3 vert, 4 bleu, ton neutre en gris.
+
+**Le glissement** (au doigt sur téléphone, ou à la souris sur ordinateur) refait
+les deux boutons : la carte suit le doigt, pivote légèrement, une étiquette
+apparaît — « Je sais » en vert à gauche quand on tire vers la droite, « À revoir »
+en ambre à droite quand on tire vers la gauche — et au-delà d'environ un quart de
+la largeur, la carte part de son côté avant de passer à la suivante. Un appui
+bref sans déplacement reste un retournement. Le geste est **horizontal
+uniquement** : le défilement vertical du verso continue de fonctionner.
 
 **Au clavier** : `Espace` retourne · `←` `→` naviguent · `1` à revoir · `2` je sais.
 

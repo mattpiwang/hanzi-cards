@@ -3,6 +3,10 @@
 **État actuel** : 253 fiches (41 écrites à la main en français + 212 importées du HSK 1),
 application statique sans dépendance, installable en PWA, progression locale au navigateur.
 
+**Déjà en place** : filtres par catégorie et « À revoir », retournement 3D, navigation
+au clavier, **glissement gauche/droite pour juger une carte**, version « un seul
+fichier » hors ligne, service worker pour l'installation sur le téléphone.
+
 ---
 
 ## 1. Contenu

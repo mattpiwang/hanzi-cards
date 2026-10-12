@@ -282,6 +282,41 @@ kbd {
   color: var(--dim);
 }
 
+/* ---------- geste de glissement (téléphone) ---------- */
+
+/* L'enveloppe ne sert qu'au glissement : la carte garde son retournement 3D.
+   touch-action: pan-y laisse le défilement vertical au navigateur et ne nous
+   donne que les gestes horizontaux. */
+.swipe {
+  position: relative;
+  touch-action: pan-y;
+  transition: transform .28s cubic-bezier(.2, .8, .25, 1), opacity .28s ease;
+}
+.swipe.dragging { transition: none; }
+
+/* Étiquettes qui apparaissent pendant le geste, comme un tampon posé sur la
+   carte : « Je sais » à gauche quand on tire vers la droite (et inversement). */
+.swipe-tag {
+  position: absolute;
+  top: 1rem;
+  z-index: 3;
+  padding: .42rem .9rem;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  opacity: 0;
+  pointer-events: none;
+}
+.swipe-tag.yes { left: 1rem;  background: var(--ok);   color: #14181d; }
+.swipe-tag.no  { right: 1rem; background: var(--warn); color: #14181d; }
+
+/* Sur un écran tactile seulement : les indications de geste */
+.touch-only { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .touch-only { display: inline; }
+}
+
 /* ---------- commandes ---------- */
 
 .controls, .verdicts { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }

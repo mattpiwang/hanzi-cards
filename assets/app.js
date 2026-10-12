@@ -276,6 +276,128 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /*  Geste de glissement                                                */
+  /* ------------------------------------------------------------------ */
+
+  /* Glisser vers la droite = « Je sais », vers la gauche = « À revoir » : les
+     deux mêmes actions que les boutons, dans le même ordre qu'à l'écran. Un
+     appui bref sans déplacement reste un clic, qui retourne la carte. */
+  var swipeEl = document.getElementById('swipe');
+  var tagYes = swipeEl ? swipeEl.querySelector('.swipe-tag.yes') : null;
+  var tagNo = swipeEl ? swipeEl.querySelector('.swipe-tag.no') : null;
+
+  var geste = {
+    x0: 0, y0: 0, t0: 0,
+    dx: 0,
+    pose: false,       // un doigt est posé
+    suivi: false,      // le mouvement est horizontal : on suit le doigt
+    avaleClic: false   // le clic qui suit la fin d'un glissement est ignoré
+  };
+
+  /* Seuil de déclenchement : une fraction de la largeur, bornée, pour rester
+     confortable sur un téléphone comme sur un grand écran. */
+  function seuilGlissement() {
+    var largeur = swipeEl ? swipeEl.offsetWidth : 400;
+    return Math.max(70, Math.min(150, largeur * 0.26));
+  }
+
+  /* Opacité des étiquettes, proportionnelle à la distance parcourue. */
+  function etiquettes(dx) {
+    var force = Math.min(Math.abs(dx) / seuilGlissement(), 1);
+    if (tagYes) { tagYes.style.opacity = dx > 0 ? force : 0; }
+    if (tagNo) { tagNo.style.opacity = dx < 0 ? force : 0; }
+  }
+
+  /* Remet l'enveloppe en place sans animation, pour la carte suivante. */
+  function remettreEnPlace() {
+    if (!swipeEl) { return; }
+    swipeEl.classList.remove('dragging');
+    swipeEl.style.transition = 'none';
+    swipeEl.style.transform = '';
+    swipeEl.style.opacity = '';
+    void swipeEl.offsetWidth;   // force le navigateur à appliquer tout de suite
+    swipeEl.style.transition = '';
+  }
+
+  function finDeGlissement(declenche) {
+    var dx = geste.dx;
+    geste.pose = false;
+    geste.suivi = false;
+    geste.dx = 0;
+    etiquettes(0);
+
+    if (!swipeEl) { return; }
+
+    if (!declenche) {
+      // Trop court : la carte revient en place (la transition CSS fait le ressort),
+      // et le clic éventuel retournera la carte.
+      swipeEl.classList.remove('dragging');
+      swipeEl.style.transform = '';
+      return;
+    }
+
+    // Assez loin : la carte part de son côté, puis on passe à la suivante.
+    geste.avaleClic = true;
+    window.setTimeout(function () { geste.avaleClic = false; }, 400);
+    swipeEl.classList.remove('dragging');
+    swipeEl.style.transform = 'translateX(' + (dx > 0 ? 130 : -130) + '%) rotate(' +
+      (dx > 0 ? 12 : -12) + 'deg)';
+    swipeEl.style.opacity = '0';
+
+    window.setTimeout(function () {
+      remettreEnPlace();
+      mark(dx > 0);
+    }, 230);
+  }
+
+  if (swipeEl) {
+    swipeEl.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) { return; }
+      if (!current()) { return; }
+      geste.pose = true;
+      geste.suivi = false;
+      geste.x0 = e.clientX;
+      geste.y0 = e.clientY;
+      geste.t0 = Date.now();
+      geste.dx = 0;
+    });
+
+    swipeEl.addEventListener('pointermove', function (e) {
+      if (!geste.pose) { return; }
+      var dx = e.clientX - geste.x0;
+      var dy = e.clientY - geste.y0;
+
+      if (!geste.suivi) {
+        /* Il faut un mouvement franchement horizontal pour prendre la main :
+           un geste vertical doit rester un défilement du verso. */
+        if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.2) { return; }
+        geste.suivi = true;
+        swipeEl.classList.add('dragging');
+        try { swipeEl.setPointerCapture(e.pointerId); } catch (err) { /* sans gravité */ }
+      }
+
+      if (e.cancelable) { e.preventDefault(); }
+      geste.dx = dx;
+      // Léger pivot, comme une carte qu'on fait glisser sur la table.
+      swipeEl.style.transform = 'translateX(' + dx + 'px) rotate(' + (dx / 30) + 'deg)';
+      etiquettes(dx);
+    });
+
+    function relacher() {
+      if (!geste.pose) { return; }
+      var dx = geste.dx;
+      var rapide = (Date.now() - geste.t0) < 250 && Math.abs(dx) > 34;
+      var loin = Math.abs(dx) >= seuilGlissement();
+      finDeGlissement(geste.suivi && (loin || rapide));
+    }
+
+    swipeEl.addEventListener('pointerup', relacher);
+    swipeEl.addEventListener('pointercancel', relacher);
+    // Filet de sécurité : si la fenêtre perd le focus en plein geste.
+    window.addEventListener('blur', function () { if (geste.pose) { finDeGlissement(false); } });
+  }
+
+  /* ------------------------------------------------------------------ */
   /*  Écouteurs                                                          */
   /* ------------------------------------------------------------------ */
 
@@ -284,7 +406,12 @@
     if (b) { applyFilter(b.dataset.key); }
   });
 
-  el.card.addEventListener('click', flip);
+  el.card.addEventListener('click', function () {
+    /* Un glissement se termine parfois par un clic : on l'ignore, sinon la
+       carte se retournerait juste après avoir été jugée. */
+    if (geste.avaleClic) { return; }
+    flip();
+  });
   el.card.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') { e.preventDefault(); flip(); }
   });
