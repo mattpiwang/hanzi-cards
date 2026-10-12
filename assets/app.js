@@ -399,7 +399,7 @@
 
     // La barre système du téléphone suit le thème choisi.
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) { meta.setAttribute('content', nom === 'clair' ? '#f6f3ec' : '#0e1114'); }
+    if (meta) { meta.setAttribute('content', nom === 'clair' ? '#f3ecda' : '#0e1114'); }
   }
 
   if (themeBtn) {

@@ -99,6 +99,11 @@ caractère du mode actif passe en doré. Le choix est conservé dans le navigate
 et appliqué **avant le premier affichage** (petit script dans l'en-tête des deux
 pages), donc aucun flash clair au chargement quand on a choisi le sombre.
 
+Le mode clair s'appelle **papier de riz** : fond crème `#f3ecda`, encre de Chine
+pour le grand caractère, or assombri pour que les titres restent lisibles — et
+des **fibres dessinées en CSS** (deux dégradés répétés très pâles), donc aucune
+image à charger.
+
 Comme toute la feuille de style ne dépend que de variables CSS, **ajouter un
 thème revient à ajouter un bloc `[data-theme="…"]`** dans `assets/style.css`.
 
