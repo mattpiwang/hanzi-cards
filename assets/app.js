@@ -21,16 +21,14 @@
 
   var state = {
     cards: [],
-    view: [],          // cartes visibles après filtrage
+    view: [],          // cartes affichées, dans l'ordre courant
     i: 0,              // index dans view
     flipped: false,
-    filter: 'all',
     progress: {}       // { "好": { box: 3, seen: 4, at: "2026-10-11" } }
   };
 
   var el = {
     deckName: document.getElementById('deck-name'),
-    filters: document.getElementById('filters'),
     card: document.getElementById('card'),
     front: document.getElementById('front-glyph'),
     back: document.getElementById('back'),
@@ -93,45 +91,6 @@
 
   function toReviewCount() {
     return state.cards.filter(function (c) { return boxOf(c) < MASTERED; }).length;
-  }
-
-  /* ------------------------------------------------------------------ */
-  /*  Filtres                                                            */
-  /* ------------------------------------------------------------------ */
-
-  function buildFilters() {
-    var cats = [];
-    state.cards.forEach(function (c) {
-      if (cats.indexOf(c.category) === -1) { cats.push(c.category); }
-    });
-
-    var html = chip('all', 'Toutes', state.cards.length, state.filter === 'all');
-    cats.forEach(function (cat) {
-      var n = state.cards.filter(function (c) { return c.category === cat; }).length;
-      html += chip(cat, cat, n, state.filter === cat);
-    });
-    html += chip('review', 'À revoir', toReviewCount(), state.filter === 'review');
-    el.filters.innerHTML = html;
-  }
-
-  function chip(key, label, count, active) {
-    return '<button class="chip" data-key="' + esc(key) + '" aria-pressed="' +
-      (active ? 'true' : 'false') + '">' + esc(label) +
-      '<span class="n">' + count + '</span></button>';
-  }
-
-  function applyFilter(key) {
-    state.filter = key;
-    state.i = 0;
-    if (key === 'all') {
-      state.view = state.cards.slice();
-    } else if (key === 'review') {
-      state.view = state.cards.filter(function (c) { return boxOf(c) < MASTERED; });
-    } else {
-      state.view = state.cards.filter(function (c) { return c.category === key; });
-    }
-    buildFilters();
-    render();
   }
 
   /* ------------------------------------------------------------------ */
@@ -243,18 +202,6 @@
     if (!c) { return; }
     // « Je sais » monte d'un cran (max 3), « À revoir » renvoie au début.
     setBox(c, known ? Math.min(boxOf(c) + 1, MASTERED) : 1);
-
-    // Dans le filtre « à revoir », une carte maîtrisée quitte la liste :
-    // on la retire pour ne pas la revoir tout de suite.
-    if (state.filter === 'review' && boxOf(c) >= MASTERED) {
-      state.view.splice(state.i, 1);
-      if (state.i >= state.view.length) { state.i = 0; }
-      buildFilters();
-      render();
-      return;
-    }
-
-    buildFilters();
     updateStats();
     go(1);
   }
@@ -272,7 +219,9 @@
     if (!confirm('Effacer toute la progression (cartes sues et à revoir) ?')) { return; }
     state.progress = {};
     save();
-    applyFilter('all');
+    state.view = state.cards.slice();
+    state.i = 0;
+    render();
   }
 
   /* ------------------------------------------------------------------ */
@@ -401,11 +350,6 @@
   /*  Écouteurs                                                          */
   /* ------------------------------------------------------------------ */
 
-  el.filters.addEventListener('click', function (e) {
-    var b = e.target.closest('.chip');
-    if (b) { applyFilter(b.dataset.key); }
-  });
-
   el.card.addEventListener('click', function () {
     /* Un glissement se termine parfois par un clic : on l'ignore, sinon la
        carte se retournerait juste après avoir été jugée. */
@@ -416,9 +360,10 @@
     if (e.key === 'Enter') { e.preventDefault(); flip(); }
   });
 
-  document.getElementById('flip').addEventListener('click', flip);
-  document.getElementById('prev').addEventListener('click', function () { go(-1); });
-  document.getElementById('next').addEventListener('click', function () { go(1); });
+  /* Les boutons « Retourner » et les flèches ont été retirés de l'interface :
+     un appui sur la carte la retourne, et on passe à la suivante en la jugeant
+     (glissement, ou les deux boutons ci-dessous). Au clavier, ← → naviguent
+     toujours — c'est invisible, donc ça ne charge pas l'écran. */
   document.getElementById('known').addEventListener('click', function () { mark(true); });
   document.getElementById('again').addEventListener('click', function () { mark(false); });
   document.getElementById('shuffle').addEventListener('click', shuffle);
@@ -443,7 +388,6 @@
     state.cards = data.cards || [];
     state.view = state.cards.slice();
     el.deckName.textContent = (data.deck || 'Jeu de cartes') + ' — ' + state.cards.length + ' caractères';
-    buildFilters();
     render();
   }
 

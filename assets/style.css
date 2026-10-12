@@ -93,27 +93,6 @@ kbd {
 
 .counters { margin: .45rem 0 0; color: var(--dim); font-size: .8rem; font-variant-numeric: tabular-nums; }
 
-/* ---------- filtres ---------- */
-
-.filters { display: flex; flex-wrap: wrap; gap: .45rem; padding: 1.1rem 0 .4rem; }
-
-.chip {
-  appearance: none;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--dim);
-  padding: .38rem .85rem;
-  border-radius: 999px;
-  font: inherit;
-  font-size: .82rem;
-  cursor: pointer;
-  transition: color .2s, border-color .2s, background-color .2s;
-}
-
-.chip:hover { color: var(--txt); border-color: #38424e; }
-.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #14181d; font-weight: 600; }
-.chip .n { opacity: .6; margin-left: .35rem; font-variant-numeric: tabular-nums; }
-
 /* ---------- la carte, avec retournement 3D ---------- */
 
 .stage {
@@ -319,8 +298,7 @@ kbd {
 
 /* ---------- commandes ---------- */
 
-.controls, .verdicts { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }
-.controls { margin-bottom: .7rem; }
+.verdicts { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }
 
 .btn {
   appearance: none;
@@ -338,8 +316,6 @@ kbd {
 .btn:active { transform: translateY(1px); }
 .btn kbd { margin-left: .45rem; }
 
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #14181d; font-weight: 600; }
-.btn.ghost { min-width: 52px; font-size: 1.1rem; }
 .btn.ok { border-color: rgba(62, 207, 142, .45); }
 .btn.ok:hover { background: rgba(62, 207, 142, .12); }
 .btn.warn { border-color: rgba(240, 180, 41, .45); }

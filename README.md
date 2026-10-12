@@ -47,14 +47,15 @@ serve.cmd           double-clic : sert le site, en local et sur le réseau
 | `char` | Le caractère, affiché au recto. |
 | `pinyin` | La prononciation, en grand au verso (colorée selon le ton). |
 | `meaning` | Le sens en français. |
-| `category` | Sert à construire les filtres automatiquement. |
+| `category` | Classe la carte ; affiché à côté de la position. |
 | `components` | Les radicaux : `[caractère, glose, rôle]`, le rôle valant `sens`, `son`, `pictogramme` ou `indicateur`. |
 | `words` | Deux exemples : `[mot, pinyin, traduction]`. |
 | `etymology` | `[type, explication]`. |
 | `note` | Facultatif : remarque affichée sous l'étymologie. |
 
-Les **catégories ne sont pas déclarées** : elles sont déduites des cartes. Tu
-ajoutes une carte avec `"category": "Nourriture"`, le filtre apparaît tout seul.
+Les **catégories ne sont pas déclarées** : elles sont simplement lues sur les
+cartes. Une carte avec `"category": "Nourriture"` s'affiche avec cette mention,
+sans rien d'autre à tenir à jour.
 
 ---
 
@@ -73,8 +74,10 @@ les exemples de mots en profitent aussi.
 | 1 | bouton **À revoir**, ou **glissement vers la gauche** | renvoyée au début |
 | 2 → 3 | bouton **Je sais**, ou **glissement vers la droite** | monte d'un cran, sort de « à revoir » à 3 |
 
-**Le filtre « À revoir »** n'affiche que les cartes non maîtrisées (état < 3), et
-une carte validée en sort immédiatement.
+**Il n'y a plus de filtres** : ils ont été retirés volontairement pour épurer
+l'écran. Le paquet se parcourt à la suite — ou mélangé avec le bouton
+« Mélanger » — et le compteur de l'en-tête indique en permanence combien de
+cartes restent à revoir.
 
 **Le retournement** est une rotation 3D en CSS pur. Le verso défile tout seul si
 l'étymologie est longue. Les **couleurs de tons** suivent la convention
@@ -127,7 +130,7 @@ mêmes champs : pinyin accentué, décomposition en radicaux, étymologie class�
 |---|---|
 | `-FilterFile` | fichier texte listant les caractères voulus — **tout texte convient** (liste HSK, copier-coller, PDF converti) |
 | `-Limit` | ne garder que les n premiers. **À éviter sans filtre** : l'ordre du fichier source est l'ordre Unicode, donc les caractères les plus rares arrivent en premier |
-| `-Category` | nom du filtre dans l'application (ex. `HSK 1`) |
+| `-Category` | nom du lot, affiché sur chaque fiche importée (ex. `HSK 1`) |
 | `-Output` | autre fichier de sortie, pour tester |
 | `-Replace` | repartir de zéro au lieu de compléter l'existant |
 

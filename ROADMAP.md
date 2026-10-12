@@ -3,9 +3,10 @@
 **État actuel** : 253 fiches (41 écrites à la main en français + 212 importées du HSK 1),
 application statique sans dépendance, installable en PWA, progression locale au navigateur.
 
-**Déjà en place** : filtres par catégorie et « À revoir », retournement 3D, navigation
-au clavier, **glissement gauche/droite pour juger une carte**, version « un seul
-fichier » hors ligne, service worker pour l'installation sur le téléphone.
+**Déjà en place** : retournement 3D d'un appui sur la carte, **glissement
+gauche/droite pour juger une carte**, navigation au clavier, compteur de
+progression, version « un seul fichier » hors ligne, service worker pour
+l'installation sur le téléphone.
 
 ---
 
@@ -25,6 +26,7 @@ fichier » hors ligne, service worker pour l'installation sur le téléphone.
 |---|---|---|---|
 | ★★★ | **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) + `graphics.txt` de Make Me a Hanzi (tracés vectoriels pour ~9 000 caractères). Deux modes : démonstration, puis **quiz** (tracer au doigt). C'est le vrai manque pour apprendre à écrire. | moyen |
 | ★★★ | **Répétition espacée (SM-2)** | Remplacer le compteur à 3 états par de vrais intervalles : échéance par fiche, file « à revoir aujourd'hui », boîtes de Leitner. | moyen |
+| ★★ | **Revoir seulement les cartes non sues** | Le filtre « À revoir » a été retiré de l'interface : à réintroduire sans encombrer (raccourci `R`, appui long, ou priorité donnée aux cartes non sues dans le mélange). | petit |
 | ★★ | **Sauvegarde de la progression** | Export / import d'un fichier JSON : changer de téléphone sans tout perdre. | petit |
 | ★★ | **Recherche** | Par caractère, pinyin, sens ou radical. | petit |
 | ★ | **Statistiques** | Nombre de fiches apprises, série de jours, progression par catégorie. | petit |
