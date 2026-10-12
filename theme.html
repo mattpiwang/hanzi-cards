@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thèmes — 汉字</title>
+<meta name="description" content="Choisir un thème de vocabulaire et réviser uniquement ces caractères.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0e1114">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cartes 汉字">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <span class="logo">汉</span>
+      <div>
+        <h1>Thèmes</h1>
+        <p class="sub" id="total">chargement…</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
+      <p id="counters" class="counters">…</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>Réviser par thème</h1>
+    <p>Choisis un lot : l'application n'affichera que ces caractères. Ta progression
+       est conservée, et le compteur t'indique où tu en es.</p>
+  </div>
+
+  <nav class="themes" id="themes" aria-label="Thèmes de vocabulaire"></nav>
+
+  <p><a class="back-link" href="index.html">← Retour aux cartes (tout le jeu)</a></p>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  var STORE_KEY = 'hanzi-cards-v1';
+  var MASTERED = 3;   // au-delà de 2, la carte est considérée comme sue
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  /* La progression vit dans le même stockage que l'application : on la relit
+     simplement ici pour afficher où en est chaque thème. */
+  function progression() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { return {}; }
+  }
+
+  function suesDans(lot, prog) {
+    return lot.filter(function (c) {
+      var p = prog[c.char];
+      return p && p.box >= MASTERED;
+    }).length;
+  }
+
+  function ligne(nom, total, sues, href) {
+    var pct = total ? Math.round(sues / total * 100) : 0;
+    var detail = total + ' caractère' + (total > 1 ? 's' : '');
+    if (sues !== null) { detail += ' · ' + sues + ' sue' + (sues > 1 ? 's' : ''); }
+    return '<a class="theme-row" href="' + href + '">' +
+      '<span class="t-main">' +
+        '<span class="t-name">' + esc(nom) + '</span>' +
+        '<span class="t-count">' + detail + '</span>' +
+      '</span>' +
+      '<span class="t-bar"><span style="width:' + pct + '%"></span></span>' +
+    '</a>';
+  }
+
+  function afficher(data) {
+    var cartes = data.cards || [];
+    var prog = progression();
+    var totalSues = suesDans(cartes, prog);
+
+    document.getElementById('total').textContent =
+      cartes.length + ' caractères · ' + totalSues + ' sue' + (totalSues > 1 ? 's' : '');
+    document.getElementById('counters').textContent = cartes.length
+      ? Math.round(totalSues / cartes.length * 100) + ' % du jeu maîtrisé'
+      : '';
+    document.getElementById('bar-fill').style.width =
+      cartes.length ? Math.round(totalSues / cartes.length * 100) + '%' : '0%';
+
+    var cats = [];
+    cartes.forEach(function (c) {
+      if (cats.indexOf(c.category) === -1) { cats.push(c.category); }
+    });
+
+    var html = '';
+    html += ligne('Toutes les cartes', cartes.length, totalSues, 'index.html');
+
+    var aRevoir = cartes.filter(function (c) {
+      var p = prog[c.char];
+      return !p || p.box < MASTERED;
+    });
+    html += ligne('Cartes à revoir', aRevoir.length, null, 'index.html?review=1');
+
+    cats.forEach(function (cat) {
+      var lot = cartes.filter(function (c) { return c.category === cat; });
+      html += ligne(cat, lot.length, suesDans(lot, prog),
+        'index.html?theme=' + encodeURIComponent(cat));
+    });
+
+    document.getElementById('themes').innerHTML = html;
+  }
+
+  fetch('data/cards.json', { cache: 'no-store' })
+    .then(function (r) {
+      if (!r.ok) { throw new Error('fichier de cartes introuvable (' + r.status + ')'); }
+      return r.json();
+    })
+    .then(afficher)
+    .catch(function (err) {
+      document.getElementById('total').textContent = 'Erreur';
+      document.getElementById('themes').innerHTML =
+        '<p class="meaning">Impossible de lire les cartes : ' + esc(err.message) +
+        '<br><br>Cette page a besoin d\'un serveur local (serve.cmd, ou Ctrl+Shift+B dans VS Code).</p>';
+    });
+})();
+</script>
+</body>
+</html>

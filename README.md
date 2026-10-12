@@ -6,6 +6,7 @@ téléphone.
 
 ```
 index.html          la page
+theme.html          la page « Thèmes » (atteinte par le menu burger)
 assets/style.css    le design, et l'animation de retournement
 assets/app.js       la logique de révision
 data/cards.json     le jeu de cartes (253 caractères : 41 à la main, 212 importés)
@@ -79,6 +80,19 @@ l'écran. Le paquet se parcourt à la suite — ou mélangé avec le bouton
 « Mélanger » — et le compteur de l'en-tête indique en permanence combien de
 cartes restent à revoir.
 
+**Le menu (burger, en haut à droite)** ouvre la page **Thèmes**, qui liste chaque
+lot de vocabulaire avec sa progression et lance la révision du lot choisi. Le
+choix passe par l'adresse, sans rien ajouter à l'écran principal :
+
+| Adresse | Ce qu'on révise |
+|---|---|
+| `index.html` | toutes les cartes |
+| `index.html?theme=Nature` | un thème (le nom exact de la catégorie) |
+| `index.html?review=1` | seulement les cartes non sues |
+
+Ces adresses sont **partageables** : un lien suffit pour envoyer un thème à
+quelqu'un.
+
 **Le retournement** est une rotation 3D en CSS pur. Le verso défile tout seul si
 l'étymologie est longue. Les **couleurs de tons** suivent la convention
 habituelle : 1 rouge, 2 orange, 3 vert, 4 bleu, ton neutre en gris.
@@ -105,6 +119,13 @@ La tâche VS Code **« Vérifier le fichier de cartes (JSON) »**
 
 Après une modification, relance **`build-mobile.ps1`** si tu utilises la version
 hors ligne du § 5.
+
+**Tu ne vois pas tes modifications ?** L'application s'installe en *service worker*
+et met ses fichiers en cache. Recharge **deux fois** (la première mise à jour
+remplace le cache, la seconde affiche la nouvelle version), ou ouvre une fenêtre
+de **navigation privée** pour vérifier. En cas de doute, le numéro de cache est
+en tête de `service-worker.js` : l'incrémenter force le rechargement chez tout le
+monde — c'est pour cela qu'on est passé à `v2` avec la page Thèmes.
 
 ---
 

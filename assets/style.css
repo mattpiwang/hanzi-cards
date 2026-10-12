@@ -93,6 +93,103 @@ kbd {
 
 .counters { margin: .45rem 0 0; color: var(--dim); font-size: .8rem; font-variant-numeric: tabular-nums; }
 
+/* ---------- menu (burger) ---------- */
+
+.menu { position: relative; }
+
+.menu-btn {
+  appearance: none;
+  width: 42px;
+  height: 42px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: border-color .2s;
+}
+
+.menu-btn:hover { border-color: #38424e; }
+
+/* Les trois barres sont dessinées en CSS : rien à charger, et elles se
+   transforment en croix quand le menu est ouvert. */
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--txt);
+  border-radius: 2px;
+  position: relative;
+  transition: transform .2s, top .2s, background-color .2s;
+}
+.burger::before,
+.burger::after { content: ''; position: absolute; }
+.burger::before { top: -6px; }
+.burger::after { top: 6px; }
+
+.menu-btn[aria-expanded="true"] .burger { background: transparent; }
+.menu-btn[aria-expanded="true"] .burger::before { top: 0; transform: rotate(45deg); }
+.menu-btn[aria-expanded="true"] .burger::after { top: 0; transform: rotate(-45deg); }
+
+.menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + .5rem);
+  z-index: 20;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: .35rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
+}
+.menu-panel[hidden] { display: none; }
+
+.menu-panel a {
+  padding: .55rem .7rem;
+  border-radius: 8px;
+  color: var(--txt);
+  text-decoration: none;
+  font-size: .9rem;
+}
+.menu-panel a:hover { background: var(--panel-2); }
+
+/* ---------- page « Thèmes » ---------- */
+
+.page-head { padding: 1.4rem 0 .4rem; }
+.page-head h1 { margin: 0; font-size: 1.25rem; }
+.page-head p { margin: .3rem 0 0; color: var(--dim); font-size: .87rem; }
+
+.themes { display: grid; gap: .55rem; margin: 1.1rem 0 2.5rem; }
+
+.theme-row {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding: .85rem 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--txt);
+  text-decoration: none;
+  transition: border-color .2s, background-color .2s;
+}
+.theme-row:hover { border-color: var(--accent); background: var(--panel-2); }
+
+.theme-row .t-main { flex: 1; }
+.theme-row .t-name { display: block; font-weight: 600; }
+.theme-row .t-count { display: block; margin-top: .15rem; color: var(--dim); font-size: .82rem; }
+.theme-row .t-bar { width: 74px; height: 5px; border-radius: 999px; background: var(--panel-2); overflow: hidden; }
+.theme-row .t-bar span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--ok)); }
+
+.back-link { display: inline-block; color: var(--dim); font-size: .9rem; text-decoration: none; }
+.back-link:hover { color: var(--txt); }
+
 /* ---------- la carte, avec retournement 3D ---------- */
 
 .stage {

@@ -1,4 +1,4 @@
-<#
+﻿<#
     ==========================================================================
     build-mobile.ps1 — construit une version « un seul fichier » des cartes
     ==========================================================================
@@ -20,6 +20,10 @@
     l'interdit, Firefox l'autorise. L'application reste utilisable, mais la
     progression peut repartir de zero a chaque ouverture. Pour la conserver
     a coup sur, il faut une origine http(s) : serveur local, ou hebergement.
+
+    Le menu disparait aussi : le bouton renvoie vers la page « Themes », qui
+    n'existe pas dans un fichier unique. Il est retire a la construction, et
+    toutes les fiches sont alors dans le meme paquet.
 
     USAGE
     -----
@@ -50,6 +54,10 @@ $html = $html.Replace('<script src="assets/app.js"></script>',
 
 # Le manifeste et le service worker n'ont aucun sens dans un fichier local.
 $html = $html.Replace('<link rel="manifest" href="manifest.json">', '')
+
+# Le menu renvoie vers theme.html : dans un fichier unique, ce lien n'existe
+# pas. On retire le bouton (le motif ne contient aucun $, -replace est sans risque).
+$html = $html -replace '(?s)\s*<nav class="menu">.*?</nav>', ''
 
 $html = $html.Replace('<title>Cartes — 汉字</title>',
                       '<title>Cartes 汉字 — hors ligne</title>')

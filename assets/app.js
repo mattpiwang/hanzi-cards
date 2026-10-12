@@ -24,6 +24,7 @@
     view: [],          // cartes affichées, dans l'ordre courant
     i: 0,              // index dans view
     flipped: false,
+    titre: '',         // thème en cours, quand il vient de l'adresse
     progress: {}       // { "好": { box: 3, seen: 4, at: "2026-10-11" } }
   };
 
@@ -154,7 +155,7 @@
 
     if (!c) {
       el.front.textContent = '—';
-      el.back.innerHTML = '<p class="meaning">Aucune carte dans ce filtre.</p>';
+      el.back.innerHTML = '<p class="meaning">Aucune carte ici.</p>';
       el.position.textContent = '';
       updateStats();
       return;
@@ -347,6 +348,33 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /*  Menu (burger)                                                      */
+  /* ------------------------------------------------------------------ */
+
+  var menuBtn = document.getElementById('menu-toggle');
+  var menuPanel = document.getElementById('menu-panel');
+
+  function menuOuvert(ouvert) {
+    if (!menuBtn || !menuPanel) { return; }
+    menuPanel.hidden = !ouvert;
+    menuBtn.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+  }
+
+  if (menuBtn && menuPanel) {
+    menuBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      menuOuvert(menuPanel.hidden);
+    });
+    // Un clic ailleurs referme le menu.
+    document.addEventListener('click', function (e) {
+      if (!menuPanel.hidden && !menuPanel.contains(e.target)) { menuOuvert(false); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { menuOuvert(false); }
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
   /*  Écouteurs                                                          */
   /* ------------------------------------------------------------------ */
 
@@ -384,10 +412,37 @@
   /*  Démarrage                                                          */
   /* ------------------------------------------------------------------ */
 
+  /* L'adresse peut préciser ce qu'on révise : la page theme.html envoie
+     index.html?theme=Nature ou index.html?review=1, et l'application ne
+     garde que ces cartes. C'est ce qui remplace les filtres — sans rien
+     ajouter à l'écran. */
+  function parametres() {
+    var p = {};
+    window.location.search.replace(/^\?/, '').split('&').forEach(function (kv) {
+      if (!kv) { return; }
+      var i = kv.indexOf('=');
+      var cle = i === -1 ? kv : kv.slice(0, i);
+      var val = i === -1 ? '' : kv.slice(i + 1);
+      try { p[decodeURIComponent(cle)] = decodeURIComponent(val); } catch (e) { /* on ignore */ }
+    });
+    return p;
+  }
+
   function start(data) {
     state.cards = data.cards || [];
-    state.view = state.cards.slice();
-    el.deckName.textContent = (data.deck || 'Jeu de cartes') + ' — ' + state.cards.length + ' caractères';
+    var p = parametres();
+    state.titre = p.theme || (p.review === '1' ? 'Cartes à revoir' : '');
+
+    if (p.theme) {
+      state.view = state.cards.filter(function (c) { return c.category === p.theme; });
+    } else if (p.review === '1') {
+      state.view = state.cards.filter(function (c) { return boxOf(c) < MASTERED; });
+    } else {
+      state.view = state.cards.slice();
+    }
+
+    el.deckName.textContent = (state.titre || data.deck || 'Jeu de cartes') +
+      ' — ' + state.view.length + ' caractères';
     render();
   }
 
