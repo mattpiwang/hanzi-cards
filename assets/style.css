@@ -586,7 +586,32 @@ kbd {
 
 .traits-bloc { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
 
-.traits { margin-top: .8rem; }
+.traits { margin-top: .8rem; display: flex; flex-direction: column; align-items: center; gap: .55rem; }
+
+/* L'œil qui montre ou cache le carré 田字格. Le barré veut dire « caché »,
+   l'ouvert « visible ». currentColor : l'icône suit le thème. */
+.traits-oeil {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: .3rem;
+  display: block;
+  line-height: 0;
+  color: var(--dim);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.traits-oeil:hover { color: var(--txt); }
+.traits-oeil svg { width: 22px; height: 22px; }
+.traits-oeil .oeil-ouvert { display: none; }
+.traits-oeil[aria-pressed="true"] .oeil-ouvert { display: inline-block; }
+.traits-oeil[aria-pressed="true"] .oeil-barre { display: none; }
+
+/* Sans cette règle, le display:flex du carré l'emporterait sur l'attribut
+   hidden, et le carré resterait visible. */
+.traits-box[hidden] { display: none; }
 
 /* Le carré 田字格 : visible directement, un appui dessus lance l'animation.
    Les deux axes du carré d'écriture chinois sont dessinés en dégradés. */

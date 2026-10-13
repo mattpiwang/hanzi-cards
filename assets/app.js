@@ -215,13 +215,27 @@
         '</section>'
       : '';
 
-    /* L'ordre des traits : le carré 田字格 est visible directement, et un appui
-       dessus lance (ou relance) l'animation. Absent de la version « un seul
-       fichier », qui n'embarque ni la bibliothèque ni les tracés. */
+    /* L'ordre des traits : le carré 田字格 est caché par défaut, l'œil le
+       révèle ; un appui sur le carré lance (ou relance) l'animation. Absent de
+       la version « un seul fichier », qui n'embarque ni la bibliothèque ni les
+       tracés. Les deux yeux sont dessinés en SVG : nets à toute taille, et ils
+       prennent la couleur du thème par currentColor. */
     var traitsHTML = monoFichier ? '' :
       '<section class="traits-bloc">' +
         '<div class="traits" id="traits">' +
-          '<div class="traits-box" id="traits-box" title="Appuie pour voir l\'ordre des traits">' +
+          '<button class="traits-oeil" id="traits-oeil" type="button" aria-pressed="false"' +
+                  ' aria-label="Afficher l\'ordre des traits" title="Afficher l\'ordre des traits">' +
+            '<svg class="oeil-ouvert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+              '<path d="M2 12s3.7-6.2 10-6.2S22 12 22 12s-3.7 6.2-10 6.2S2 12 2 12z"/>' +
+              '<circle cx="12" cy="12" r="2.7"/>' +
+            '</svg>' +
+            '<svg class="oeil-barre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+              '<path d="M2 12s3.7-6.2 10-6.2S22 12 22 12s-3.7 6.2-10 6.2S2 12 2 12z"/>' +
+              '<circle cx="12" cy="12" r="2.7"/>' +
+              '<line x1="4.5" y1="19.5" x2="19.5" y2="4.5"/>' +
+            '</svg>' +
+          '</button>' +
+          '<div class="traits-box" id="traits-box" hidden>' +
             '<p class="traits-note">' +
               '<img class="traits-icon" src="icons/tap.webp" alt="" width="44" height="44">' +
             '</p>' +
@@ -709,14 +723,34 @@
     chargerBibliotheque(function () { chargerTraces(jouer, echec); }, echec);
   }
 
+  /* L'œil montre ou cache le carré 田字格. Le bouton porte l'état dans
+     aria-pressed, et c'est le CSS qui choisit l'icône à afficher. */
+  function basculerTraits() {
+    var boite = document.getElementById('traits-box');
+    var oeil = document.getElementById('traits-oeil');
+    if (!boite || !oeil) { return; }
+    if (boite.hasAttribute('hidden')) {
+      boite.removeAttribute('hidden');
+      oeil.setAttribute('aria-pressed', 'true');
+      oeil.setAttribute('aria-label', 'Masquer l\'ordre des traits');
+      oeil.setAttribute('title', 'Masquer l\'ordre des traits');
+    } else {
+      boite.setAttribute('hidden', '');
+      oeil.setAttribute('aria-pressed', 'false');
+      oeil.setAttribute('aria-label', 'Afficher l\'ordre des traits');
+      oeil.setAttribute('title', 'Afficher l\'ordre des traits');
+    }
+  }
+
   /* Un seul écouteur, posé sur le verso : son contenu est réécrit à chaque
-     carte, mais l'élément qui le contient ne change pas. Un appui dans le carré
-     田字格 — et nulle part ailleurs — lance l'animation, et on arrête là la
+     carte, mais l'élément qui le contient ne change pas. L'œil bascule le
+     carré, un appui dans le carré lance l'animation, et on arrête là la
      remontée du clic : le gestionnaire de la carte n'a rien à y faire. */
   if (!monoFichier) {
     el.back.addEventListener('click', function (e) {
       if (!dansLesTraits(e)) { return; }
       e.stopPropagation();
+      if (e.target.closest && e.target.closest('.traits-oeil')) { basculerTraits(); return; }
       animerTraits();
     });
   }
