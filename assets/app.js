@@ -222,7 +222,10 @@
       '<section class="traits-bloc">' +
         '<div class="traits" id="traits">' +
           '<div class="traits-box" id="traits-box" title="Appuie pour voir l\'ordre des traits">' +
-            '<p class="traits-note"><span class="traits-icon" aria-hidden="true">☝️</span></p>' +
+            '<p class="traits-note">' +
+              '<img class="traits-icon sombre" src="icons/main-index-sombre.png" alt="" width="44" height="44">' +
+              '<img class="traits-icon clair" src="icons/main-index-clair.png" alt="" width="44" height="44">' +
+            '</p>' +
           '</div>' +
         '</div>' +
       '</section>';
