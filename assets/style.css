@@ -579,30 +579,26 @@ kbd {
 .traits-box:active { transform: scale(.985); }
 .traits-box .traits-note { margin: 0; }
 
-/* L'invite : une main dessinée, index levé, en deux variantes de couleur (une
-   par thème). Elle est volontairement discrète et s'éclaircit au survol. Le
-   miroir doit figurer DANS l'animation : une animation sur transform remplace
-   la transformation de base, elle ne s'y ajoute pas. */
+/* L'invite : un doigt qui tape (icons/tap.webp, image fournie par Matt). Le
+   dessin est noir : on l'inverse pour le thème sombre, qui est le thème par
+   défaut. Volontairement discrète, elle s'éclaircit au survol. */
 .traits-icon {
   display: inline-block;
   width: 44px;
   height: 44px;
   opacity: .55;
-  transform: scaleX(-1);
+  filter: invert(1);          /* thème sombre : le trait noir devient clair */
   transition: opacity .2s;
   animation: invite 1.9s ease-in-out infinite;
 }
 
-/* Une seule variante visible : celle du thème en cours. */
-.traits-icon.clair { display: none; }
-[data-theme="clair"] .traits-icon.sombre { display: none; }
-[data-theme="clair"] .traits-icon.clair { display: inline-block; }
+[data-theme="clair"] .traits-icon { filter: none; }
 
 .traits-box:hover .traits-icon { opacity: .85; }
 
 @keyframes invite {
-  0%, 100% { transform: scaleX(-1) translateY(0); }
-  50%      { transform: scaleX(-1) translateY(-6px); }
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
 }
 
 .traits-note { text-align: center; color: var(--dim); font-size: .82rem; margin: .6rem 0 0; }
