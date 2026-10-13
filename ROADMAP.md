@@ -21,26 +21,29 @@ version « un seul fichier » hors ligne, service worker.
 
 ---
 
-## 1. À faire maintenant
+## 1. Réalisé — le 13/10
+
+Tous les chantiers ci-dessous sont **terminés et vérifiés** (syntaxe, contrastes,
+service worker) et committés.
 
 ### Contenu
 
-| Priorité | Chantier | Détail |
+| Priorité | Chantier | Ce qui a été fait |
 |---|---|---|
-| ★★★ | **Sens en français** | Traduire les 212 définitions anglaises. Tant qu'une fiche n'est pas traduite, l'application affiche « sens à compléter » — jamais l'anglais. |
-| ★★★ | **Étymologies en français** | Même traitement : les indices de Make Me a Hanzi sont souvent de jolies images (« une femme 女 avec un fils 子 »). |
-| ★★ | **Mots d'exemple pour les fiches importées** | Remplir le champ `words`, vide sur les 212 fiches importées, depuis [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) (~120 000 entrées libres). |
+| ★★★ | **Sens en français** | ✅ **253 / 253** fiches. L'anglais reste dans `meaningEn` et n'est plus jamais affiché. |
+| ★★★ | **Étymologies en français** | ✅ **212 / 212**, plus les gloses des radicaux (**394** remplacées). |
+| ★★ | **Mots d'exemple** | ✅ **244 / 253** fiches. Mots pris dans les listes HSK (~11 000 entrées), pinyin et définitions de CC-CEDICT, traduits. |
 
 ### Fonctionnalités
 
 | Priorité | Chantier | Détail |
 |---|---|---|
-| ★★★ | **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) + les tracés vectoriels `graphics.txt` de Make Me a Hanzi : mode démonstration, puis quiz (tracer au doigt). |
-| ★★★ | **Répétition espacée (SM-2)** | Remplacer le compteur à 3 états par de vrais intervalles : échéance par fiche, file « à revoir aujourd'hui ». |
-| ★★ | **Revoir seulement les cartes non sues** | L'entrée existe déjà dans le menu (`index.html?review=1`) ; à compléter d'un raccourci clavier et d'un moyen de revenir en arrière. |
-| ★★ | **Sauvegarde de la progression** | Export / import d'un fichier JSON : changer de téléphone sans rien perdre. |
-| ★★ | **Recherche** | Par caractère, pinyin, sens ou radical. |
-| ★ | **Statistiques** | Fiches apprises, série de jours, progression par thème (la page Thèmes en montre déjà l'essentiel). |
+| ★★★ | **Ordre des traits animé** | ✅ [hanzi-writer](https://hanziwriter.org) + tracés de Make Me a Hanzi (253 caractères). Le quiz « tracer au doigt » a été **retiré** : la carte retournée en 3D envoyait les coordonnées en miroir. |
+| ★★★ | **Répétition espacée (SM-2)** | ✅ Intervalles 1 j, 6 j, puis `i x ef` ; échéance par fiche ; migration des anciennes progressions. Testé par simulation. |
+| ★★ | **Revoir les cartes dues** | ✅ Entrée « Cartes à revoir » du menu = **dues aujourd'hui** ; une carte réussie quitte la file. |
+| ★★ | **Sauvegarde de la progression** | ✅ Export / import JSON dans le menu, avec confirmation. Validation testée sur 8 cas limites. |
+| ★★ | **Recherche** | ✅ Sur la page Thèmes : caractère, pinyin, sens ou radical ; le résultat ouvre la carte (`index.html?char=X`). |
+| ★ | **Statistiques** | ✅ Dû aujourd'hui, fiches sues, pourcentage du jeu, **prévision des sept prochains jours** (fonction pure testée). |
 
 ---
 

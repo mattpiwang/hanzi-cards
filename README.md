@@ -15,6 +15,10 @@ service-worker.js   cache hors ligne (voir § 5 pour la condition HTTPS)
 icons/              icônes de l'application, générées avec .NET
 build-mobile.ps1    produit la version « un seul fichier »
 serve.cmd           double-clic : sert le site, en local et sur le réseau
+import-hanzi-db.ps1 importe la base Make Me a Hanzi, filtrable par liste
+traduire.ps1        fait traduire les fiches par l'assistant OpenClaw
+build-exemples.js   choisit les mots d'exemple dans les listes HSK
+apply-exemples.js   écrit ces mots d'exemple dans data/cards.json
 ```
 
 ---
@@ -66,14 +70,24 @@ sans rien d'autre à tenir à jour.
 (`ǎ ě ǐ ǒ ǔ ǚ` → 3e ton) dans une petite table. Une seule source de vérité, et
 les exemples de mots en profitent aussi.
 
-**La progression est un compteur à trois états** par caractère, gardé dans le
-`localStorage` du navigateur :
+**La progression suit SM-2** (répétition espacée), caractère par caractère, dans
+le `localStorage` du navigateur :
 
-| État | Déclencheur | Effet |
-|---|---|---|
-| 0 | jamais vue | compte dans « à revoir » |
-| 1 | bouton **À revoir**, ou **glissement vers la gauche** | renvoyée au début |
-| 2 → 3 | bouton **Je sais**, ou **glissement vers la droite** | monte d'un cran, sort de « à revoir » à 3 |
+| Champ | Rôle |
+|---|---|
+| `n` | réussites d'affilée |
+| `ef` | facteur de facilité : 2,5 au départ, borné entre 1,3 et 2,8 |
+| `i` | intervalle courant, en jours |
+| `due` | date de la prochaine révision |
+| `seen`, `at` | nombre de révisions, et date de la dernière |
+
+Une réponse **Je sais** (ou un glissement à droite) enchaîne 1 jour, 6 jours,
+puis `i x ef`. Une réponse **À revoir** (glissement à gauche) ramène à un jour et
+abaisse la facilité : les intervalles suivants raccourcissent.
+
+« À revoir » veut donc dire **dû aujourd'hui**, pas « jamais sue ». Une carte est
+considérée **sue** à partir de trois semaines d'intervalle. Les progressions de
+l'ancien compteur à trois états sont migrées automatiquement au chargement.
 
 **Il n'y a plus de filtres** : ils ont été retirés volontairement pour épurer
 l'écran. Le paquet se parcourt à la suite — ou mélangé avec le bouton
@@ -130,6 +144,25 @@ variables CSS : l'animation suit donc le thème clair comme le sombre.
 ⚠️ La version « un seul fichier » (§ 5-B) ne propose **pas** cette animation :
 elle y ajouterait ~530 Ko. Elle est réservée à la version servie (serveur local,
 ou GitHub Pages).
+
+**Les mots d'exemple** des fiches importées viennent des **listes de vocabulaire
+HSK** (~11 000 entrées : le programme officiel), avec la priorité aux mots courts
+qui commencent par le caractère et aux niveaux bas ; le pinyin et la définition
+viennent de **CC-CEDICT**, traduits en français. 244 fiches sur 253 en ont.
+
+**La page Thèmes** (`theme.html`, atteinte par le menu burger) réunit :
+
+| Bloc | Contenu |
+|---|---|
+| **Où j'en suis** | ce qui est dû aujourd'hui, ce qui est su, pourcentage du jeu |
+| **Prévision** | combien de cartes reviennent chaque jour, sur sept jours |
+| **Chercher** | par caractère, pinyin, sens ou radical ; le résultat ouvre la carte voulue (`index.html?char=X`) |
+| **Réviser par thème** | un lot de vocabulaire, ou seulement les cartes à revoir |
+
+**Le menu permet aussi de sauvegarder la progression** : « Sauvegarder ma
+progression » télécharge un fichier JSON daté, « Restaurer une sauvegarde » le
+relit après confirmation. Utile pour changer de téléphone, ou avant de vider les
+données du site.
 
 **Au clavier** : `Espace` retourne · `←` `→` naviguent · `1` à revoir · `2` je sais.
 
