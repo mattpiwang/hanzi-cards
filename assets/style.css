@@ -64,8 +64,18 @@ body {
   color: var(--txt);
   font: 16px/1.6 ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* dvh suit les barres d'outils mobiles qui vont et viennent ; vh reste en
+     repli pour les navigateurs qui ne connaissent pas dvh. */
   min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
+
+/* La page tient dans l'ecran : la carte prend toute la hauteur qui reste, le
+   pied se contente du bas. Rien a faire defiler, et la carte est aussi grande
+   que l'ecran le permet. */
+main.wrap { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
 
 .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
 
@@ -356,14 +366,21 @@ kbd {
 
 .stage {
   perspective: 1800px;
-  margin: .9rem auto 1.2rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  margin: .6rem auto .7rem;
   width: min(680px, 100%);
 }
 
+.stage .swipe { flex: 1 1 auto; min-height: 0; }
+
+/* La hauteur n'est plus fixee : elle vient de la place laissee par le pied. */
 .card {
   position: relative;
   width: 100%;
-  height: clamp(430px, 64vh, 620px);
+  height: 100%;
+  min-height: 240px;
   transform-style: preserve-3d;
   transition: transform .55s cubic-bezier(.45, .05, .25, 1);
   cursor: pointer;
@@ -380,7 +397,7 @@ kbd {
   border-radius: var(--radius);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  padding: 1.6rem 1.7rem;
+  padding: clamp(.8rem, 2.5vw, 1.6rem) clamp(.9rem, 3vw, 1.7rem);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -398,7 +415,9 @@ kbd {
 
 .glyph {
   font-family: var(--cjk);
-  font-size: clamp(6rem, 21vw, 11rem);
+  /* La hauteur compte autant que la largeur : sur un ecran court, le caractere
+     ne doit pas deborder de la carte. */
+  font-size: clamp(5rem, min(21vw, 34vh), 11rem);
   line-height: 1;
   letter-spacing: .04em;
   color: #f4f7fa;
@@ -631,8 +650,8 @@ kbd {
    carte, qui occupe le haut de l'écran. */
 .foot {
   border-top: 1px solid var(--line);
-  padding: .9rem 0 1.1rem;
-  margin-top: 1.2rem;
+  padding: .55rem 0 .7rem;
+  margin-top: .6rem;
 }
 
 .foot .top-inner { flex-wrap: wrap; }
@@ -654,8 +673,9 @@ kbd {
 
 @media (max-width: 560px) {
   .wrap { width: min(1120px, 100% - 1.4rem); }
-  .face { padding: 1.1rem 1.15rem; }
-  .card { height: clamp(440px, 72vh, 640px); }
+  .face { padding: .8rem .9rem; }
+  /* Plus de hauteur imposee : la carte suit la place disponible. */
+  .card { min-height: 200px; }
   .words li { grid-template-columns: 1fr; }
   .words .t { grid-column: 1; }
 }
