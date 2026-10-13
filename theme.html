@@ -62,7 +62,7 @@
   'use strict';
 
   var STORE_KEY = 'hanzi-cards-v1';
-  var MASTERED = 3;   // au-delà de 2, la carte est considérée comme sue
+  var MAITRISE = 21;  // trois semaines d'intervalle : la carte est sue
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -79,7 +79,7 @@
   function suesDans(lot, prog) {
     return lot.filter(function (c) {
       var p = prog[c.char];
-      return p && p.box >= MASTERED;
+      return p && p.i >= MAITRISE;
     }).length;
   }
 
@@ -117,9 +117,10 @@
     var html = '';
     html += ligne('Toutes les cartes', cartes.length, totalSues, 'index.html');
 
+    var aujourdhui = new Date().toISOString().slice(0, 10);
     var aRevoir = cartes.filter(function (c) {
       var p = prog[c.char];
-      return !p || p.box < MASTERED;
+      return !p || p.due <= aujourdhui;
     });
     html += ligne('Cartes à revoir', aRevoir.length, null, 'index.html?review=1');
 

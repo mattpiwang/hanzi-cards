@@ -17,7 +17,7 @@
 
   /* Seuil de maîtrise : au-delà de 2, la carte sort du paquet « à revoir ».
      Compteur simple à trois états — 0 jamais vue, 1 à revoir, 2 en cours, 3 sue. */
-  var MASTERED = 3;
+  /* Le rythme des révisions est décrit plus bas, avec la mécanique SM-2. */
 
   var state = {
     cards: [],
@@ -25,7 +25,8 @@
     i: 0,              // index dans view
     flipped: false,
     titre: '',         // thème en cours, quand il vient de l'adresse
-    progress: {}       // { "好": { box: 3, seen: 4, at: "2026-10-11" } }
+    reviewMode: false, // vue « à revoir aujourd'hui » (?review=1)
+    progress: {}       // { "好": { n: 2, ef: 2.5, i: 6, due: "2026-10-19", … } }
   };
 
   var el = {
@@ -55,19 +56,67 @@
     });
   }
 
-  function boxOf(card) {
-    var p = state.progress[card.char];
-    return p ? p.box : 0;
+  /* ------------------------------------------------------------------ */
+  /*  Répétition espacée (SM-2)                                          */
+  /* ------------------------------------------------------------------ */
+
+  /* Chaque fiche garde :
+       n     réussites d'affilée
+       ef    facteur de facilité (2,5 au départ, borné entre 1,3 et 2,8)
+       i     intervalle courant, en jours
+       due   date de la prochaine révision (AAAA-MM-JJ)
+       seen  nombre total de révisions
+       at    date de la dernière révision
+
+     Réussie : les intervalles suivent 1 jour, 6 jours, puis i × ef — c'est la
+     formule de SuperMemo 2. Manquée : retour à un jour, et la facilité baisse,
+     donc tous les intervalles suivants raccourcissent. */
+  var JOUR = 86400000;
+  var EF_DEPART = 2.5, EF_MIN = 1.3, EF_MAX = 2.8;
+  var MAITRISE = 21;   // au-delà de trois semaines d'intervalle, la carte est sue
+
+  function aujourdhui() {
+    return new Date().toISOString().slice(0, 10);
   }
 
-  function setBox(card, box) {
-    var old = state.progress[card.char] || { seen: 0 };
-    state.progress[card.char] = {
-      box: box,
-      seen: old.seen + 1,
-      at: new Date().toISOString().slice(0, 10)
-    };
+  function dansNJours(n) {
+    return new Date(Date.now() + n * JOUR).toISOString().slice(0, 10);
+  }
+
+  function fiche(char) {
+    if (!state.progress[char]) {
+      state.progress[char] = { n: 0, ef: EF_DEPART, i: 0, due: aujourdhui(), seen: 0, at: '' };
+    }
+    return state.progress[char];
+  }
+
+  function estDue(card) {
+    return fiche(card.char).due <= aujourdhui();
+  }
+
+  function estMaitrisee(card) {
+    return fiche(card.char).i >= MAITRISE;
+  }
+
+  /* Révision : « Je sais » compte comme une qualité 5, « À revoir » comme 2. */
+  function reviser(card, connu) {
+    var f = fiche(card.char);
+    if (connu) {
+      f.n = f.n + 1;
+      if (f.n === 1) { f.i = 1; }
+      else if (f.n === 2) { f.i = 6; }
+      else { f.i = Math.round(Math.max(f.i, 6) * f.ef); }
+      f.ef = Math.min(EF_MAX, f.ef + 0.1);
+    } else {
+      f.n = 0;
+      f.i = 1;
+      f.ef = Math.max(EF_MIN, f.ef - 0.32);
+    }
+    f.due = dansNJours(f.i);
+    f.seen = f.seen + 1;
+    f.at = aujourdhui();
     save();
+    return f;
   }
 
   /* La progression est enregistrée dans le navigateur. Deux cas où ça échoue :
@@ -79,19 +128,43 @@
     catch (e) { /* on ignore : mode privé ou file:// */ }
   }
 
+  /* Les anciennes fiches portaient un simple compteur « box ». On les traduit
+     une fois pour toutes au chargement : 0/1 → à revoir, 2 → 1 jour, 3 → 6 jours. */
+  function migrerProgression() {
+    var change = false;
+    Object.keys(state.progress).forEach(function (ch) {
+      var p = state.progress[ch];
+      if (p && p.ef === undefined) {
+        var n = p.box >= 3 ? 2 : (p.box >= 2 ? 1 : 0);
+        state.progress[ch] = {
+          n: n,
+          ef: EF_DEPART,
+          i: n === 2 ? 6 : (n === 1 ? 1 : 0),
+          due: n === 2 ? dansNJours(6) : aujourdhui(),
+          seen: p.seen || 0,
+          at: p.at || ''
+        };
+        change = true;
+      }
+    });
+    if (change) { save(); }
+  }
+
   function load() {
     try {
       var raw = localStorage.getItem(STORE_KEY);
       if (raw) { state.progress = JSON.parse(raw) || {}; }
     } catch (e) { state.progress = {}; }
+    migrerProgression();
   }
 
   function masteredCount() {
-    return state.cards.filter(function (c) { return boxOf(c) >= MASTERED; }).length;
+    return state.cards.filter(estMaitrisee).length;
   }
 
+  /* Ce qui est « à revoir » : ce qui est dû aujourd'hui ou en retard. */
   function toReviewCount() {
-    return state.cards.filter(function (c) { return boxOf(c) < MASTERED; }).length;
+    return state.cards.filter(estDue).length;
   }
 
   /* ------------------------------------------------------------------ */
@@ -150,17 +223,29 @@
         '<div class="traits" id="traits" hidden>' +
           '<div class="traits-box" id="traits-box"></div>' +
           '<div class="traits-actions">' +
-            '<button class="btn" data-action="traits-rejouer" type="button">Rejouer</button>' +
-            '<button class="btn" data-action="traits-tracer" type="button">Tracer au doigt</button>' +
+            '<button class="btn" data-action="traits-rejouer" type="button">Rejouer l\'animation</button>' +
           '</div>' +
         '</div>' +
       '</section>';
+
+    /* Où en est cette fiche : combien de fois revue, et quand elle revient.
+       On lit la progression sans la créer (state.progress, pas fiche()). */
+    var suivi = '';
+    var p = state.progress[c.char];
+    if (p && p.seen) {
+      var quand = (p.due && p.due <= aujourdhui())
+        ? 'à revoir maintenant'
+        : ('prochaine révision dans ' + p.i + ' jour' + (p.i > 1 ? 's' : ''));
+      suivi = '<p class="suivi">Revue ' + p.seen + ' fois · ' + esc(quand) +
+        (p.i >= MAITRISE ? ' · <span class="ok">maîtrisée</span>' : '') + '</p>';
+    }
 
     return '' +
       '<div class="back-head">' +
         '<div class="pinyin tone-' + toneOf(c.pinyin) + '">' + esc(c.pinyin) + '</div>' +
         '<div class="meaning">' + sens + '</div>' +
       '</div>' +
+      suivi +
       compsHTML + wordsHTML + etymoHTML + traitsHTML +
       (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '');
   }
@@ -217,10 +302,22 @@
   function mark(known) {
     var c = current();
     if (!c) { return; }
-    // « Je sais » monte d'un cran (max 3), « À revoir » renvoie au début.
-    setBox(c, known ? Math.min(boxOf(c) + 1, MASTERED) : 1);
+    var avant = estDue(c);
+    var f = reviser(c, known);
+
+    /* En mode « à revoir », une carte qui vient d'être réussie ne sera plus due
+       avant un moment : elle quitte la file, plutôt que de revenir tout de suite. */
+    if (state.reviewMode && avant && !estDue(c)) {
+      state.view.splice(state.i, 1);
+      if (state.i >= state.view.length) { state.i = 0; }
+      updateStats();
+      render();
+      return;
+    }
+
     updateStats();
     go(1);
+    return f;
   }
 
   function shuffle() {
@@ -503,7 +600,9 @@
       var action = b.getAttribute('data-action');
       if (action === 'traits') { afficherTraits(); }
       else if (action === 'traits-rejouer' && writer) { writer.animateCharacter(); }
-      else if (action === 'traits-tracer' && writer) { writer.quiz(); }
+      /* Le mode « tracer au doigt » a été retiré : la carte étant retournée en
+         3D, les coordonnées du doigt y arrivent en miroir. Pour le rétablir, il
+         faudrait sortir la zone de dessin du bloc qui pivote. */
     });
   }
 
@@ -564,12 +663,13 @@
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
-    state.titre = p.theme || (p.review === '1' ? 'Cartes à revoir' : '');
+    state.reviewMode = (p.review === '1');
+    state.titre = p.theme || (state.reviewMode ? 'À revoir aujourd\'hui' : '');
 
     if (p.theme) {
       state.view = state.cards.filter(function (c) { return c.category === p.theme; });
-    } else if (p.review === '1') {
-      state.view = state.cards.filter(function (c) { return boxOf(c) < MASTERED; });
+    } else if (state.reviewMode) {
+      state.view = state.cards.filter(estDue);
     } else {
       state.view = state.cards.slice();
     }

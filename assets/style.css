@@ -480,6 +480,16 @@ kbd {
   .touch-only { display: inline; }
 }
 
+/* Suivi de révision : où en est la fiche, quand elle revient */
+.suivi {
+  text-align: center;
+  color: var(--dim);
+  font-size: .78rem;
+  margin: .55rem 0 0;
+  font-variant-numeric: tabular-nums;
+}
+.suivi .ok { color: var(--ok); font-weight: 600; }
+
 /* ---------- ordre des traits ---------- */
 
 .traits-bloc { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
