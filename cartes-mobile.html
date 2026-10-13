@@ -10351,6 +10351,10 @@ kbd {
       writer = HanziWriter.create(boite, c.char, {
         width: 198, height: 198, padding: 8,
         showOutline: false,
+        /* showCharacter vaut true par défaut : le caractère serait peint entier
+           à la création, puis l'animation le remettrait à zéro pour le
+           redessiner — d'où un clignotement au premier appui. */
+        showCharacter: false,
         strokeColor: couleurCSS('--accent', '#d8b26a'),
         drawingColor: couleurCSS('--txt', '#ffffff'),
         highlightColor: couleurCSS('--ok', '#3ecf8e'),
