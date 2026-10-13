@@ -89,6 +89,7 @@ kbd {
 
 /* ---------- en-tête ---------- */
 
+/* La page des cartes n'a plus de bandeau (il est dans le pied), mais la page Themes en garde un. */
 .top { border-bottom: 1px solid var(--line); padding: 1.1rem 0; }
 
 .top-inner {
@@ -363,7 +364,7 @@ kbd {
 
 .stage {
   perspective: 1800px;
-  margin: 1.6rem auto 1.2rem;
+  margin: .9rem auto 1.2rem;
   width: min(680px, 100%);
 }
 
@@ -634,14 +635,19 @@ kbd {
 
 /* ---------- pied ---------- */
 
-/* Réduit au strict minimum : la place dans le paquet. Les commandes et les
-   raccourcis sont dans le menu, l'invite est sur la carte elle-même. */
+/* Le bandeau est passé ici, fusionné avec le pied : plus rien ne surplombe la
+   carte, qui occupe le haut de l'écran. */
 .foot {
-  padding: 0 0 .9rem;
-  color: var(--dim);
-  font-size: .78rem;
-  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: .9rem 0 1.1rem;
+  margin-top: 1.2rem;
 }
+
+.foot .top-inner { flex-wrap: wrap; }
+.foot .pos { margin-left: auto; color: var(--dim); font-size: .8rem; }
+
+/* Le menu vit désormais en bas de page : son panneau s'ouvre vers le haut. */
+.menu-panel { top: auto; bottom: calc(100% + .55rem); }
 
 .pos { font-variant-numeric: tabular-nums; }
 
@@ -688,8 +694,31 @@ kbd {
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap top-inner">
+
+
+<main class="wrap">
+  <div class="stage">
+    <!-- L'enveloppe « swipe » porte le glissement ; la carte garde son
+         retournement 3D, les deux transformations ne se marchent pas dessus. -->
+    <div class="swipe" id="swipe">
+      <div class="swipe-tag yes" aria-hidden="true">Je sais</div>
+      <div class="swipe-tag no" aria-hidden="true">À revoir</div>
+      <article class="card" id="card" tabindex="0" aria-label="Carte de révision">
+        <!-- Recto : le caractère, seul, en grand -->
+        <div class="face front">
+          <div class="glyph" id="front-glyph">汉</div>
+          <p class="hint">Clic ou <kbd>Espace</kbd> pour retourner<span class="touch-only"> · glisse ← → pour juger</span></p>
+        </div>
+        <!-- Verso : rempli par app.js -->
+        <div class="face back" id="back"></div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <div class="top-inner">
+
     <div class="brand">
       <span class="logo">汉</span>
       <div>
@@ -731,31 +760,8 @@ kbd {
         </button>
       </div>
     </nav>
+    <span id="position" class="pos"></span>
   </div>
-</header>
-
-<main class="wrap">
-  <div class="stage">
-    <!-- L'enveloppe « swipe » porte le glissement ; la carte garde son
-         retournement 3D, les deux transformations ne se marchent pas dessus. -->
-    <div class="swipe" id="swipe">
-      <div class="swipe-tag yes" aria-hidden="true">Je sais</div>
-      <div class="swipe-tag no" aria-hidden="true">À revoir</div>
-      <article class="card" id="card" tabindex="0" aria-label="Carte de révision">
-        <!-- Recto : le caractère, seul, en grand -->
-        <div class="face front">
-          <div class="glyph" id="front-glyph">汉</div>
-          <p class="hint">Clic ou <kbd>Espace</kbd> pour retourner<span class="touch-only"> · glisse ← → pour juger</span></p>
-        </div>
-        <!-- Verso : rempli par app.js -->
-        <div class="face back" id="back"></div>
-      </article>
-    </div>
-  </div>
-</main>
-
-<footer class="wrap foot">
-  <span id="position" class="pos"></span>
 </footer>
 
 <script>window.__CARDS__ = {

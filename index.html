@@ -31,8 +31,31 @@
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap top-inner">
+
+
+<main class="wrap">
+  <div class="stage">
+    <!-- L'enveloppe « swipe » porte le glissement ; la carte garde son
+         retournement 3D, les deux transformations ne se marchent pas dessus. -->
+    <div class="swipe" id="swipe">
+      <div class="swipe-tag yes" aria-hidden="true">Je sais</div>
+      <div class="swipe-tag no" aria-hidden="true">À revoir</div>
+      <article class="card" id="card" tabindex="0" aria-label="Carte de révision">
+        <!-- Recto : le caractère, seul, en grand -->
+        <div class="face front">
+          <div class="glyph" id="front-glyph">汉</div>
+          <p class="hint">Clic ou <kbd>Espace</kbd> pour retourner<span class="touch-only"> · glisse ← → pour juger</span></p>
+        </div>
+        <!-- Verso : rempli par app.js -->
+        <div class="face back" id="back"></div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <div class="top-inner">
+
     <div class="brand">
       <span class="logo">汉</span>
       <div>
@@ -77,31 +100,8 @@
         </button>
       </div>
     </nav>
+    <span id="position" class="pos"></span>
   </div>
-</header>
-
-<main class="wrap">
-  <div class="stage">
-    <!-- L'enveloppe « swipe » porte le glissement ; la carte garde son
-         retournement 3D, les deux transformations ne se marchent pas dessus. -->
-    <div class="swipe" id="swipe">
-      <div class="swipe-tag yes" aria-hidden="true">Je sais</div>
-      <div class="swipe-tag no" aria-hidden="true">À revoir</div>
-      <article class="card" id="card" tabindex="0" aria-label="Carte de révision">
-        <!-- Recto : le caractère, seul, en grand -->
-        <div class="face front">
-          <div class="glyph" id="front-glyph">汉</div>
-          <p class="hint">Clic ou <kbd>Espace</kbd> pour retourner<span class="touch-only"> · glisse ← → pour juger</span></p>
-        </div>
-        <!-- Verso : rempli par app.js -->
-        <div class="face back" id="back"></div>
-      </article>
-    </div>
-  </div>
-</main>
-
-<footer class="wrap foot">
-  <span id="position" class="pos"></span>
 </footer>
 
 <script src="assets/app.js"></script>
