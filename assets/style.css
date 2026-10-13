@@ -588,8 +588,8 @@ kbd {
 
 .traits { margin-top: .8rem; display: flex; flex-direction: column; align-items: center; gap: .55rem; }
 
-/* L'œil qui montre ou cache le carré 田字格. Le barré veut dire « caché »,
-   l'ouvert « visible ». currentColor : l'icône suit le thème. */
+/* L'œil qui montre ou cache le carré 田字格. currentColor : l'icône suit le
+   thème. */
 .traits-oeil {
   appearance: none;
   background: none;
@@ -609,9 +609,14 @@ kbd {
 
 .traits-oeil:hover { color: var(--txt); }
 .traits-oeil svg { width: 22px; height: 22px; }
-.traits-oeil .oeil-ouvert { display: none; }
-.traits-oeil[aria-pressed="true"] .oeil-ouvert { display: inline-block; }
-.traits-oeil[aria-pressed="true"] .oeil-barre { display: none; }
+
+/* L'icône annonce l'ACTION à venir, pas l'état courant : œil ouvert = « appuie
+   pour afficher » (le cas par défaut, carré caché), œil barré = « appuie pour
+   masquer ». C'est aussi ce que dit le libellé lisible par les lecteurs
+   d'écran. */
+.traits-oeil .oeil-barre { display: none; }
+.traits-oeil[aria-pressed="true"] .oeil-ouvert { display: none; }
+.traits-oeil[aria-pressed="true"] .oeil-barre { display: inline-block; }
 
 /* Sans cette règle, le display:flex du carré l'emporterait sur l'attribut
    hidden, et le carré resterait visible. */
