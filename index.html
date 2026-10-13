@@ -50,9 +50,16 @@
         <span class="burger" aria-hidden="true"></span>
       </button>
       <div class="menu-panel" id="menu-panel" hidden>
+        <!-- Les deux jugements portent sur la carte affichée -->
+        <button id="again" class="menu-item warn" type="button">À revoir <kbd>1</kbd></button>
+        <button id="known" class="menu-item ok" type="button">Je sais <kbd>2</kbd></button>
+        <div class="menu-sep" aria-hidden="true"></div>
         <a href="theme.html">Thèmes de vocabulaire</a>
         <a href="index.html?review=1">Cartes à revoir</a>
         <a href="index.html">Toutes les cartes</a>
+        <div class="menu-sep" aria-hidden="true"></div>
+        <button id="shuffle" class="menu-item" type="button">Mélanger</button>
+        <button id="reset" class="menu-item" type="button">Réinitialiser la progression</button>
         <button id="export" class="menu-item" type="button">💾 Sauvegarder ma progression</button>
         <button id="import" class="menu-item" type="button">📥 Restaurer une sauvegarde</button>
         <input type="file" id="import-file" accept="application/json,.json" hidden>
@@ -87,21 +94,9 @@
       </article>
     </div>
   </div>
-
-  <div class="verdicts">
-    <button id="again" class="btn warn">À revoir <kbd>1</kbd></button>
-    <button id="known" class="btn ok">Je sais <kbd>2</kbd></button>
-  </div>
-
-  <p class="tools">
-    <button id="shuffle" class="link">Mélanger</button>
-    <span aria-hidden="true">·</span>
-    <button id="reset" class="link">Réinitialiser la progression</button>
-  </p>
 </main>
 
 <footer class="wrap foot">
-  <span><kbd>Espace</kbd> retourner · <kbd>&#8592;</kbd><kbd>&#8594;</kbd> naviguer · <kbd>1</kbd> à revoir · <kbd>2</kbd> je sais</span>
   <span id="position" class="pos"></span>
 </footer>
 

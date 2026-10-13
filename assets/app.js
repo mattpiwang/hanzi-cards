@@ -738,14 +738,21 @@
     if (e.key === 'Enter') { e.preventDefault(); flip(); }
   });
 
-  /* Les boutons « Retourner » et les flèches ont été retirés de l'interface :
-     un appui sur la carte la retourne, et on passe à la suivante en la jugeant
-     (glissement, ou les deux boutons ci-dessous). Au clavier, ← → naviguent
-     toujours — c'est invisible, donc ça ne charge pas l'écran. */
-  document.getElementById('known').addEventListener('click', function () { mark(true); });
-  document.getElementById('again').addEventListener('click', function () { mark(false); });
-  document.getElementById('shuffle').addEventListener('click', shuffle);
-  document.getElementById('reset').addEventListener('click', resetProgress);
+  /* Tout ce qui commande est désormais dans le menu : l'écran ne garde que la
+     carte. Un appui sur la carte la retourne, un glissement la juge. Chaque
+     entrée du menu referme celui-ci avant d'agir — sinon on ne verrait pas le
+     résultat. Au clavier, ← → naviguent et 1 / 2 jugent, sans rien afficher. */
+  function depuisLeMenu(id, action) {
+    document.getElementById(id).addEventListener('click', function () {
+      menuOuvert(false);
+      action();
+    });
+  }
+
+  depuisLeMenu('known', function () { mark(true); });
+  depuisLeMenu('again', function () { mark(false); });
+  depuisLeMenu('shuffle', shuffle);
+  depuisLeMenu('reset', resetProgress);
 
   document.addEventListener('keydown', function (e) {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') { return; }

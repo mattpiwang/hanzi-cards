@@ -604,56 +604,22 @@ kbd {
 .traits-note { text-align: center; color: var(--dim); font-size: .82rem; margin: .6rem 0 0; }
 
 /* ---------- commandes ---------- */
+/* Tout ce qui commande est dans le menu : l'écran ne garde que la carte. Seuls
+   les deux jugements sont colorés, pour se distinguer des autres entrées. */
 
-.verdicts { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }
-
-.btn {
-  appearance: none;
-  font: inherit;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--txt);
-  border-radius: 10px;
-  padding: .6rem 1.1rem;
-  cursor: pointer;
-  transition: background-color .2s, border-color .2s, transform .1s;
-}
-
-.btn:hover { border-color: #38424e; background: var(--panel-2); }
-.btn:active { transform: translateY(1px); }
-.btn kbd { margin-left: .45rem; }
-
-.btn.ok { border-color: rgba(62, 207, 142, .45); }
-.btn.ok:hover { background: rgba(62, 207, 142, .12); }
-.btn.warn { border-color: rgba(240, 180, 41, .45); }
-.btn.warn:hover { background: rgba(240, 180, 41, .12); }
-
-.tools { text-align: center; margin: 1.1rem 0 0; color: var(--dim); font-size: .82rem; }
-
-.link {
-  appearance: none;
-  background: none;
-  border: 0;
-  color: var(--dim);
-  font: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  cursor: pointer;
-  padding: .2rem .3rem;
-}
-
-.link:hover { color: var(--txt); }
+.menu-item.ok { color: var(--ok); }
+.menu-item.warn { color: var(--accent); }
+.menu-item kbd { margin-left: .45rem; opacity: .7; }
 
 /* ---------- pied ---------- */
 
+/* Réduit au strict minimum : la place dans le paquet. Les commandes et les
+   raccourcis sont dans le menu, l'invite est sur la carte elle-même. */
 .foot {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem 1.5rem;
-  justify-content: space-between;
-  padding: 1.6rem 0 3rem;
+  padding: 0 0 .9rem;
   color: var(--dim);
-  font-size: .8rem;
+  font-size: .78rem;
+  text-align: center;
 }
 
 .pos { font-variant-numeric: tabular-nums; }
