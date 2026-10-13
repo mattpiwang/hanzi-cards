@@ -183,14 +183,22 @@ kbd {
 }
 .menu-panel[hidden] { display: none; }
 
-.menu-panel a {
+.menu-panel a,
+.menu-item {
+  appearance: none;
+  background: none;
+  border: 0;
+  text-align: left;
   padding: .55rem .7rem;
   border-radius: 8px;
   color: var(--txt);
-  text-decoration: none;
+  font: inherit;
   font-size: .9rem;
+  text-decoration: none;
+  cursor: pointer;
 }
-.menu-panel a:hover { background: var(--panel-2); }
+.menu-panel a:hover,
+.menu-item:hover { background: var(--panel-2); }
 
 .menu-sep { height: 1px; margin: .3rem .4rem; background: var(--line); }
 

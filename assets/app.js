@@ -523,6 +523,89 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /*  Sauvegarde de la progression                                       */
+  /* ------------------------------------------------------------------ */
+
+  /* La progression ne vit que dans ce navigateur. L'export produit un fichier
+     JSON lisible, l'import le relit : utile pour changer de téléphone, ou
+     avant de vider les données du site. */
+  function exporterProgression() {
+    var paquet = {
+      app: 'hanzi-cards',
+      version: 2,
+      exporteLe: aujourdhui(),
+      fiches: state.cards.length,
+      progression: state.progress
+    };
+    var blob = new Blob([JSON.stringify(paquet, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'cartes-progression-' + aujourdhui() + '.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+  }
+
+  /* Accepte un export complet (objet avec « progression ») ou une simple table
+     de progression : un fichier bricolé à la main reste utilisable. */
+  function progressionDe(paquet) {
+    if (!paquet || typeof paquet !== 'object' || Array.isArray(paquet)) { return null; }
+    var prog = paquet.progression || paquet;
+    if (!prog || typeof prog !== 'object' || Array.isArray(prog)) { return null; }
+    var res = {};
+    var n = 0;
+    Object.keys(prog).forEach(function (k) {
+      if (prog[k] && typeof prog[k] === 'object') { res[k] = prog[k]; n++; }
+    });
+    return n ? res : null;
+  }
+
+  function restaurerProgression(fichier) {
+    var lecteur = new FileReader();
+    lecteur.onload = function () {
+      var paquet = null;
+      try { paquet = JSON.parse(lecteur.result); } catch (e) { paquet = null; }
+      var prog = progressionDe(paquet);
+      if (!prog) {
+        alert('Ce fichier ne contient pas de progression lisible.');
+        return;
+      }
+      var n = Object.keys(prog).length;
+      if (!confirm('Remplacer ta progression actuelle par celle de ce fichier (' + n + ' fiches) ?')) { return; }
+      state.progress = prog;
+      migrerProgression();   // au cas où la sauvegarde vient d'une ancienne version
+      save();
+      render();
+      updateStats();
+      alert('Progression restaurée : ' + n + ' fiches.');
+    };
+    lecteur.readAsText(fichier);
+  }
+
+  var btnExport = document.getElementById('export');
+  var btnImport = document.getElementById('import');
+  var champImport = document.getElementById('import-file');
+
+  if (btnExport) {
+    btnExport.addEventListener('click', function () {
+      menuOuvert(false);
+      exporterProgression();
+    });
+  }
+  if (btnImport && champImport) {
+    btnImport.addEventListener('click', function () {
+      menuOuvert(false);
+      champImport.click();
+    });
+    champImport.addEventListener('change', function () {
+      if (champImport.files && champImport.files[0]) { restaurerProgression(champImport.files[0]); }
+      champImport.value = '';   // pour pouvoir rechoisir le même fichier
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
   /*  Ordre des traits (hanzi-writer)                                    */
   /* ------------------------------------------------------------------ */
 
