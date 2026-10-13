@@ -1301,9 +1301,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To bring a friend 友 into one\u0027s house 冖"
+                                        "Amener un ami 友 dans sa maison 冖"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To bring a friend 友 into one\u0027s house 冖",
+                      "meaning":  "aimer, affection, amour"
                   },
                   {
                       "char":  "姐",
@@ -1325,9 +1327,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "女 donne le sens ; 且 donne la prononciation. (indice : woman)"
+                                        "女 donne le sens ; 且 donne la prononciation. (indice : femme)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "女 donne le sens ; 且 donne la prononciation. (indice : woman)",
+                      "meaning":  "sœur aînée, mademoiselle"
                   },
                   {
                       "char":  "年",
@@ -1340,9 +1344,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A man 干 carrying grain, representing the annual harvest"
+                                        "Un homme 干 portant du grain, image de la récolte annuelle"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A man 干 carrying grain, representing the annual harvest",
+                      "meaning":  "année, anniversaire, âge"
                   },
                   {
                       "char":  "八",
@@ -1355,9 +1361,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two bent lines meaning \"to divide\""
+                                        "Deux traits courbés signifiant « diviser »"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two bent lines meaning \"to divide\"",
+                      "meaning":  "huit, de tous côtés"
                   },
                   {
                       "char":  "饭",
@@ -1379,9 +1387,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "饣 donne le sens ; 反 donne la prononciation. (indice : food)"
+                                        "饣 donne le sens ; 反 donne la prononciation. (indice : nourriture)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "饣 donne le sens ; 反 donne la prononciation. (indice : food)",
+                      "meaning":  "repas, nourriture, riz cuit"
                   },
                   {
                       "char":  "今",
@@ -1394,9 +1404,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A mouth 亼 talking about things"
+                                        "Une bouche 亼 qui parle de choses"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A mouth 亼 talking about things",
+                      "meaning":  "aujourd\u0027hui, maintenant, actuel"
                   },
                   {
                       "char":  "您",
@@ -1418,9 +1430,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "You 你 said with affection 心"
+                                        "« Vous » 你 dit avec affection 心"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "You 你 said with affection 心",
+                      "meaning":  "vous de politesse"
                   },
                   {
                       "char":  "爸",
@@ -1442,9 +1456,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "父 donne le sens ; 巴 donne la prononciation. (indice : father)"
+                                        "父 donne le sens ; 巴 donne la prononciation. (indice : père)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "父 donne le sens ; 巴 donne la prononciation. (indice : father)",
+                      "meaning":  "père, papa"
                   },
                   {
                       "char":  "房",
@@ -1466,9 +1482,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "户 donne le sens ; 方 donne la prononciation. (indice : door)"
+                                        "户 donne le sens ; 方 donne la prononciation. (indice : porte)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "户 donne le sens ; 方 donne la prononciation. (indice : door)",
+                      "meaning":  "bâtiment, maison, chambre"
                   },
                   {
                       "char":  "九",
@@ -1490,9 +1508,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : An elbow)"
+                                        "(indice : un coude)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : An elbow)",
+                      "meaning":  "neuf"
                   },
                   {
                       "char":  "牛",
@@ -1505,9 +1525,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : An ox\u0027s horned head)"
+                                        "(indice : tête cornue de bœuf)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : An ox\u0027s horned head)",
+                      "meaning":  "bœuf, vache, taureau"
                   },
                   {
                       "char":  "吧",
@@ -1529,9 +1551,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 巴 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 巴 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 巴 donne la prononciation. (indice : mouth)",
+                      "meaning":  "particule finale emphatique"
                   },
                   {
                       "char":  "飞",
@@ -1544,9 +1568,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A bird flapping its wings)"
+                                        "(indice : oiseau battant des ailes)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A bird flapping its wings)",
+                      "meaning":  "voler, s\u0027élancer, haut"
                   },
                   {
                       "char":  "觉",
@@ -1573,9 +1599,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "见 donne le sens ; ⺍ donne la prononciation. (indice : see)"
+                                        "见 donne le sens ; ⺍ donne la prononciation. (indice : voir)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "见 donne le sens ; ⺍ donne la prononciation. (indice : see)",
+                      "meaning":  "conscient, dormir, se réveiller"
                   },
                   {
                       "char":  "白",
@@ -1588,9 +1616,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A burning candle; the rays of the sun"
+                                        "Une bougie qui brûle ; les rayons du soleil"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A burning candle; the rays of the sun",
+                      "meaning":  "blanc, clair, pur"
                   },
                   {
                       "char":  "非",
@@ -1603,9 +1633,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two bird\u0027s wings opposed; two people back-to-back"
+                                        "Deux ailes d\u0027oiseau opposées ; deux personnes dos à dos"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two bird\u0027s wings opposed; two people back-to-back",
+                      "meaning":  "non, négatif, s\u0027opposer"
                   },
                   {
                       "char":  "开",
@@ -1627,9 +1659,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Simplified form of 開; hands 廾 lifting the latch 一 of a door"
+                                        "Forme simplifiée de 開 ; des mains 廾 soulevant le loquet 一 d\u0027une porte"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 開; hands 廾 lifting the latch 一 of a door",
+                      "meaning":  "ouvrir, commencer, lancer"
                   },
                   {
                       "char":  "朋",
@@ -1646,9 +1680,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two people 月 walking together"
+                                        "Deux personnes 月 marchant ensemble"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two people 月 walking together",
+                      "meaning":  "ami, camarade, connaissance"
                   },
                   {
                       "char":  "百",
@@ -1670,9 +1706,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "一 donne le sens ; 白 donne la prononciation. (indice : one)"
+                                        "一 donne le sens ; 白 donne la prononciation. (indice : un)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "一 donne le sens ; 白 donne la prononciation. (indice : one)",
+                      "meaning":  "cent, nombreux"
                   },
                   {
                       "char":  "分",
@@ -1694,9 +1732,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Pieces 八 being further subdivided with a knife 刀 "
+                                        "Des morceaux 八 encore divisés au couteau 刀"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Pieces 八 being further subdivided with a knife 刀 ",
+                      "meaning":  "diviser, répartir, fraction, unité"
                   },
                   {
                       "char":  "漂",
@@ -1718,9 +1758,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "氵 donne le sens ; 票 donne la prononciation. (indice : water)"
+                                        "氵 donne le sens ; 票 donne la prononciation. (indice : eau)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "氵 donne le sens ; 票 donne la prononciation. (indice : water)",
+                      "meaning":  "flotter, dériver, ballotter, javelliser"
                   },
                   {
                       "char":  "班",
@@ -1742,9 +1784,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Cutting 刂 a piece of jade 王 in two, symbolizing two classes"
+                                        "Couper 刂 un jade 王 en deux, image de deux classes"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Cutting 刂 a piece of jade 王 in two, symbolizing two classes",
+                      "meaning":  "classe, équipe, service"
                   },
                   {
                       "char":  "服",
@@ -1771,9 +1815,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person 卩 putting on 又 a coat 月"
+                                        "Une personne 卩 enfilant 又 un manteau 月"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person 卩 putting on 又 a coat 月",
+                      "meaning":  "vêtements, porter, prendre remède"
                   },
                   {
                       "char":  "可",
@@ -1795,9 +1841,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "丁 donne le sens ; 口 donne la prononciation. (indice : vigorous)"
+                                        "丁 donne le sens ; 口 donne la prononciation. (indice : vigoureux)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "丁 donne le sens ; 口 donne la prononciation. (indice : vigorous)",
+                      "meaning":  "pouvoir, possible, -able"
                   },
                   {
                       "char":  "苹",
@@ -1819,9 +1867,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "艹 donne le sens ; 平 donne la prononciation. (indice : plant)"
+                                        "艹 donne le sens ; 平 donne la prononciation. (indice : plante)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "艹 donne le sens ; 平 donne la prononciation. (indice : plant)",
+                      "meaning":  "pomme, lentille d\u0027eau, armoise"
                   },
                   {
                       "char":  "半",
@@ -1843,9 +1893,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A cow 牛 splitting 丷 wood in half"
+                                        "Une vache 牛 fendant 丷 du bois en deux"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A cow 牛 splitting 丷 wood in half",
+                      "meaning":  "moitié, demi-, incomplet"
                   },
                   {
                       "char":  "高",
@@ -1872,9 +1924,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A tall palace)"
+                                        "(indice : un grand palais)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A tall palace)",
+                      "meaning":  "haut, grand, élevé"
                   },
                   {
                       "char":  "客",
@@ -1896,9 +1950,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person 各 welcomed under one\u0027s roof 宀; 各 also provides the pronunciation"
+                                        "Une personne 各 accueillie sous un toit 宀 ; 各 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person 各 welcomed under one\u0027s roof 宀; 各 also provides the pronunciation",
+                      "meaning":  "invité, voyageur, client"
                   },
                   {
                       "char":  "七",
@@ -1922,7 +1978,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "sept"
                   },
                   {
                       "char":  "包",
@@ -1944,9 +2002,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To swaddle 勹 a baby 巳; 勹 also provides the pronunciation"
+                                        "Emmailloter 勹 un bébé 巳 ; 勹 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To swaddle 勹 a baby 巳; 勹 also provides the pronunciation",
+                      "meaning":  "envelopper, paquet, emballer"
                   },
                   {
                       "char":  "哥",
@@ -1963,9 +2023,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "One person talking 可 over another 可"
+                                        "Une personne parlant 可 au-dessus d\u0027une autre 可"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "One person talking 可 over another 可",
+                      "meaning":  "frère aîné"
                   },
                   {
                       "char":  "课",
@@ -1987,9 +2049,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 果 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 果 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 果 donne la prononciation. (indice : speech)",
+                      "meaning":  "leçon, cours, matière"
                   },
                   {
                       "char":  "期",
@@ -2011,9 +2075,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "月 donne le sens ; 其 donne la prononciation. (indice : moon)"
+                                        "月 donne le sens ; 其 donne la prononciation. (indice : lune)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "月 donne le sens ; 其 donne la prononciation. (indice : moon)",
+                      "meaning":  "période, date, phase"
                   },
                   {
                       "char":  "杯",
@@ -2035,9 +2101,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "木 donne le sens ; 不 donne la prononciation. (indice : tree)"
+                                        "木 donne le sens ; 不 donne la prononciation. (indice : arbre)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "木 donne le sens ; 不 donne la prononciation. (indice : tree)",
+                      "meaning":  "verre, tasse, classificateur"
                   },
                   {
                       "char":  "歌",
@@ -2059,9 +2127,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "欠 donne le sens ; 哥 donne la prononciation. (indice : breath)"
+                                        "欠 donne le sens ; 哥 donne la prononciation. (indice : souffle)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "欠 donne le sens ; 哥 donne la prononciation. (indice : breath)",
+                      "meaning":  "chanson, paroles, chanter"
                   },
                   {
                       "char":  "起",
@@ -2083,9 +2153,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "走 donne le sens ; 己 donne la prononciation. (indice : walk)"
+                                        "走 donne le sens ; 己 donne la prononciation. (indice : marche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "走 donne le sens ; 己 donne la prononciation. (indice : walk)",
+                      "meaning":  "commencer, se lever, monter"
                   },
                   {
                       "char":  "本",
@@ -2107,9 +2179,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A tree 木 with its roots highlighted"
+                                        "Un arbre 木 dont les racines sont mises en valeur"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A tree 木 with its roots highlighted",
+                      "meaning":  "racine, origine, base"
                   },
                   {
                       "char":  "个",
@@ -2131,9 +2205,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A tally 丨 of people 人)"
+                                        "(indice : un bâton 丨 pour compter les gens 人)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A tally 丨 of people 人)",
+                      "meaning":  "ce, classificateur (individus)"
                   },
                   {
                       "char":  "块",
@@ -2155,9 +2231,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "土 donne le sens ; 夬 donne la prononciation. (indice : earth)"
+                                        "土 donne le sens ; 夬 donne la prononciation. (indice : terre)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "土 donne le sens ; 夬 donne la prononciation. (indice : earth)",
+                      "meaning":  "morceau, bloc, yuan"
                   },
                   {
                       "char":  "气",
@@ -2170,9 +2248,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A person 亻 breathing air)"
+                                        "(indice : une personne 亻 qui respire l\u0027air)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A person 亻 breathing air)",
+                      "meaning":  "air, gaz, vapeur, colère"
                   },
                   {
                       "char":  "边",
@@ -2194,9 +2274,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "辶 donne le sens ; 臱 donne la prononciation. (indice : walk)"
+                                        "辶 donne le sens ; 臱 donne la prononciation. (indice : marche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "辶 donne le sens ; 臱 donne la prononciation. (indice : walk)",
+                      "meaning":  "bord, côté, marge"
                   },
                   {
                       "char":  "给",
@@ -2218,9 +2300,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "纟 donne le sens ; 合 donne la prononciation. (indice : thread)"
+                                        "纟 donne le sens ; 合 donne la prononciation. (indice : fil)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "纟 donne le sens ; 合 donne la prononciation. (indice : thread)",
+                      "meaning":  "donner, prêter, pour"
                   },
                   {
                       "char":  "千",
@@ -2244,7 +2328,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "mille, nombreux"
                   },
                   {
                       "char":  "便",
@@ -2268,7 +2354,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "facile, pratique, commode"
                   },
                   {
                       "char":  "工",
@@ -2290,9 +2378,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A spade or other workman\u0027s tool"
+                                        "Une bêche ou un autre outil d\u0027ouvrier"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A spade or other workman\u0027s tool",
+                      "meaning":  "travail, ouvrier, labeur"
                   },
                   {
                       "char":  "老",
@@ -2314,9 +2404,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A person bent over with long hair 匕 and a crutch; compare 耂"
+                                        "Une personne courbée, longs cheveux 匕 et béquille ; à comparer à 耂"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person bent over with long hair 匕 and a crutch; compare 耂",
+                      "meaning":  "vieux, âgé, expérimenté"
                   },
                   {
                       "char":  "前",
@@ -2345,7 +2437,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "devant, avant, précédent"
                   },
                   {
                       "char":  "病",
@@ -2367,9 +2461,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "疒 donne le sens ; 丙 donne la prononciation. (indice : sickness)"
+                                        "疒 donne le sens ; 丙 donne la prononciation. (indice : maladie)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "疒 donne le sens ; 丙 donne la prononciation. (indice : sickness)",
+                      "meaning":  "maladie, mal, affection"
                   },
                   {
                       "char":  "公",
@@ -2391,9 +2487,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To divide 八 what is private 厶"
+                                        "Partager 八 ce qui est privé 厶"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To divide 八 what is private 厶",
+                      "meaning":  "public, équitable, duc"
                   },
                   {
                       "char":  "了",
@@ -2415,9 +2513,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A child swaddled in blanklets; compare 子"
+                                        "Un enfant emmailloté dans des langes ; à comparer à 子"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A child swaddled in blanklets; compare 子",
+                      "meaning":  "particule d\u0027action accomplie"
                   },
                   {
                       "char":  "钱",
@@ -2439,9 +2539,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "钅 donne le sens ; 戋 donne la prononciation. (indice : money)"
+                                        "钅 donne le sens ; 戋 donne la prononciation. (indice : argent)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "钅 donne le sens ; 戋 donne la prononciation. (indice : money)",
+                      "meaning":  "argent, monnaie, pièces"
                   },
                   {
                       "char":  "狗",
@@ -2463,9 +2565,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "犭 donne le sens ; 句 donne la prononciation. (indice : dog)"
+                                        "犭 donne le sens ; 句 donne la prononciation. (indice : chien)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "犭 donne le sens ; 句 donne la prononciation. (indice : dog)",
+                      "meaning":  "chien"
                   },
                   {
                       "char":  "冷",
@@ -2487,9 +2591,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "冫 donne le sens ; 令 donne la prononciation. (indice : ice)"
+                                        "冫 donne le sens ; 令 donne la prononciation. (indice : glace)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "冫 donne le sens ; 令 donne la prononciation. (indice : ice)",
+                      "meaning":  "froid, glacial, seul"
                   },
                   {
                       "char":  "请",
@@ -2511,9 +2617,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 青 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 青 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 青 donne la prononciation. (indice : speech)",
+                      "meaning":  "demander, inviter, s\u0027il vous plaît"
                   },
                   {
                       "char":  "菜",
@@ -2535,9 +2643,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "艹 donne le sens ; 采 donne la prononciation. (indice : plant)"
+                                        "艹 donne le sens ; 采 donne la prononciation. (indice : plante)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "艹 donne le sens ; 采 donne la prononciation. (indice : plant)",
+                      "meaning":  "légumes, plat, nourriture"
                   },
                   {
                       "char":  "关",
@@ -2561,7 +2671,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "fermer, col, relation"
                   },
                   {
                       "char":  "里",
@@ -2583,9 +2695,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Unit of measure for farm 田 land 土"
+                                        "Unité de mesure pour les terres 田 cultivées 土"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Unit of measure for farm 田 land 土",
+                      "meaning":  "li (500 m), village, ruelle"
                   },
                   {
                       "char":  "茶",
@@ -2612,9 +2726,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "艹 donne le sens. (indice : plant)"
+                                        "艹 donne le sens. (indice : plante)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "艹 donne le sens. (indice : plant)",
+                      "meaning":  "thé, feuilles, théier"
                   },
                   {
                       "char":  "贵",
@@ -2641,9 +2757,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "贝 donne le sens. (indice : money)"
+                                        "贝 donne le sens. (indice : argent)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "贝 donne le sens. (indice : money)",
+                      "meaning":  "cher, coûteux, précieux"
                   },
                   {
                       "char":  "两",
@@ -2670,9 +2788,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two people 从 together in a cart"
+                                        "Deux personnes 从 ensemble dans une charrette"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two people 从 together in a cart",
+                      "meaning":  "deux, paire, once"
                   },
                   {
                       "char":  "热",
@@ -2694,9 +2814,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "灬 donne le sens ; 执 donne la prononciation. (indice : fire)"
+                                        "灬 donne le sens ; 执 donne la prononciation. (indice : feu)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "灬 donne le sens ; 执 donne la prononciation. (indice : fire)",
+                      "meaning":  "chaud, fièvre, zèle"
                   },
                   {
                       "char":  "常",
@@ -2718,9 +2840,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "巾 donne le sens ; 尚 donne la prononciation. (indice : cloth)"
+                                        "巾 donne le sens ; 尚 donne la prononciation. (indice : tissu)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "巾 donne le sens ; 尚 donne la prononciation. (indice : cloth)",
+                      "meaning":  "commun, normal, souvent"
                   },
                   {
                       "char":  "国",
@@ -2742,9 +2866,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Treasure 玉 within a country\u0027s borders 囗"
+                                        "Un trésor 玉 à l\u0027intérieur des frontières 囗 du pays"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Treasure 玉 within a country\u0027s borders 囗",
+                      "meaning":  "pays, nation, état"
                   },
                   {
                       "char":  "亮",
@@ -2776,9 +2902,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A lit oil lamp)"
+                                        "(indice : une lampe à huile allumée)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A lit oil lamp)",
+                      "meaning":  "lumineux, brillant, clair"
                   },
                   {
                       "char":  "唱",
@@ -2800,9 +2928,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 昌 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 昌 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 昌 donne la prononciation. (indice : mouth)",
+                      "meaning":  "chanter, chantonner, chanson"
                   },
                   {
                       "char":  "果",
@@ -2824,9 +2954,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Fruit 田 growing on a tree 木"
+                                        "Un fruit 田 poussant sur un arbre 木"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Fruit 田 growing on a tree 木",
+                      "meaning":  "fruit, noix, résultat"
                   },
                   {
                       "char":  "零",
@@ -2848,9 +2980,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "雨 donne le sens ; 令 donne la prononciation. (indice : raindrop)"
+                                        "雨 donne le sens ; 令 donne la prononciation. (indice : goutte de pluie)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "雨 donne le sens ; 令 donne la prononciation. (indice : raindrop)",
+                      "meaning":  "zéro, fragment, fraction"
                   },
                   {
                       "char":  "认",
@@ -2872,9 +3006,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 人 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 人 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 人 donne la prononciation. (indice : speech)",
+                      "meaning":  "reconnaître, connaître, comprendre"
                   },
                   {
                       "char":  "超",
@@ -2896,9 +3032,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "走 donne le sens ; 召 donne la prononciation. (indice : run)"
+                                        "走 donne le sens ; 召 donne la prononciation. (indice : course)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "走 donne le sens ; 召 donne la prononciation. (indice : run)",
+                      "meaning":  "dépasser, surpasser, sauter"
                   },
                   {
                       "char":  "还",
@@ -2920,9 +3058,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : Not 不 moving 辶)"
+                                        "(indice : ce qui ne 不 bouge pas 辶)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : Not 不 moving 辶)",
+                      "meaning":  "encore, aussi, rendre"
                   },
                   {
                       "char":  "六",
@@ -2946,7 +3086,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "six"
                   },
                   {
                       "char":  "车",
@@ -2968,9 +3110,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "Simplified form of 車, a cart with two wheels, seen from above"
+                                        "Forme simplifiée de 車, une charrette à deux roues vue de dessus"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 車, a cart with two wheels, seen from above",
+                      "meaning":  "véhicule, charrette, voiture"
                   },
                   {
                       "char":  "孩",
@@ -2992,9 +3136,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "子 donne le sens ; 亥 donne la prononciation. (indice : child)"
+                                        "子 donne le sens ; 亥 donne la prononciation. (indice : enfant)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "子 donne le sens ; 亥 donne la prononciation. (indice : child)",
+                      "meaning":  "bébé, enfant"
                   },
                   {
                       "char":  "妈",
@@ -3016,9 +3162,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "女 donne le sens ; 马 donne la prononciation. (indice : woman)"
+                                        "女 donne le sens ; 马 donne la prononciation. (indice : femme)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "女 donne le sens ; 马 donne la prononciation. (indice : woman)",
+                      "meaning":  "mère, maman"
                   },
                   {
                       "char":  "汉",
@@ -3040,9 +3188,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Simplified form of 漢; the Han 𦰩 river 氵"
+                                        "Forme simplifiée de 漢 ; la rivière Han 𦰩 氵"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 漢; the Han 𦰩 river 氵",
+                      "meaning":  "Chinois, langue chinoise"
                   },
                   {
                       "char":  "吗",
@@ -3064,9 +3214,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 马 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 马 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 马 donne la prononciation. (indice : mouth)",
+                      "meaning":  "particule interrogative finale"
                   },
                   {
                       "char":  "商",
@@ -3093,9 +3245,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "冏 donne le sens ; 章 donne la prononciation. (indice : bright)"
+                                        "冏 donne le sens ; 章 donne la prononciation. (indice : brillant)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "冏 donne le sens ; 章 donne la prononciation. (indice : bright)",
+                      "meaning":  "commerce, affaires, négoce"
                   },
                   {
                       "char":  "出",
@@ -3117,9 +3271,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A sprout 屮 growing out of a container 凵"
+                                        "Une pousse 屮 sortant d\u0027un récipient 凵"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A sprout 屮 growing out of a container 凵",
+                      "meaning":  "sortir, produire, expédier"
                   },
                   {
                       "char":  "买",
@@ -3143,7 +3299,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "acheter, soudoyer, persuader"
                   },
                   {
                       "char":  "穿",
@@ -3165,9 +3323,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "牙 donne le sens ; 穴 donne la prononciation. (indice : tooth)"
+                                        "牙 donne le sens ; 穴 donne la prononciation. (indice : dent)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "牙 donne le sens ; 穴 donne la prononciation. (indice : tooth)",
+                      "meaning":  "percer, porter, revêtir"
                   },
                   {
                       "char":  "号",
@@ -3189,9 +3349,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 丂 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 丂 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 丂 donne la prononciation. (indice : mouth)",
+                      "meaning":  "numéro, signe, crier"
                   },
                   {
                       "char":  "卖",
@@ -3213,9 +3375,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "买 donne le sens ; 买 donne la prononciation. (indice : buy)"
+                                        "买 donne le sens ; 买 donne la prononciation. (indice : acheter)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "买 donne le sens ; 买 donne la prononciation. (indice : buy)",
+                      "meaning":  "vendre, trahir, frimer"
                   },
                   {
                       "char":  "少",
@@ -3237,9 +3401,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "Grains of sand; 小 provides the pronunciation and meaning"
+                                        "Des grains de sable ; 小 donne la prononciation et le sens"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Grains of sand; 小 provides the pronunciation and meaning",
+                      "meaning":  "peu, moins, insuffisant"
                   },
                   {
                       "char":  "床",
@@ -3261,9 +3427,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A house 广 made out of wood 木; 广 also provides the pronunciation"
+                                        "Une maison 广 faite de bois 木 ; 广 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A house 广 made out of wood 木; 广 also provides the pronunciation",
+                      "meaning":  "lit, couche, châssis"
                   },
                   {
                       "char":  "喝",
@@ -3285,9 +3453,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 曷 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 曷 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 曷 donne la prononciation. (indice : mouth)",
+                      "meaning":  "boire, crier, héler"
                   },
                   {
                       "char":  "忙",
@@ -3309,9 +3479,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A heart 忄 faced with death 亡; 亡 also provides the pronunciation"
+                                        "Un cœur 忄 face à la mort 亡 ; 亡 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A heart 忄 faced with death 亡; 亡 also provides the pronunciation",
+                      "meaning":  "occupé, pressé, affairé"
                   },
                   {
                       "char":  "谁",
@@ -3333,9 +3505,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 隹 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 隹 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 隹 donne la prononciation. (indice : speech)",
+                      "meaning":  "qui, qui que ce soit"
                   },
                   {
                       "char":  "打",
@@ -3357,9 +3531,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "扌 donne le sens ; 丁 donne la prononciation. (indice : hand)"
+                                        "扌 donne le sens ; 丁 donne la prononciation. (indice : main)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "扌 donne le sens ; 丁 donne la prononciation. (indice : hand)",
+                      "meaning":  "frapper, battre, taper"
                   },
                   {
                       "char":  "和",
@@ -3381,9 +3557,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 禾 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 禾 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 禾 donne la prononciation. (indice : mouth)",
+                      "meaning":  "harmonie, paix, calme"
                   },
                   {
                       "char":  "猫",
@@ -3407,7 +3585,9 @@
                                         "形声 — composé phonétique-sémantique",
                                         "犭 donne le sens ; 苗 donne la prononciation. (indice : animal)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "犭 donne le sens ; 苗 donne la prononciation. (indice : animal)",
+                      "meaning":  "chat"
                   },
                   {
                       "char":  "什",
@@ -3429,9 +3609,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A file of ten 十 people 亻)"
+                                        "(indice : une file de dix 十 personnes 亻)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A file of ten 十 people 亻)",
+                      "meaning":  "quoi, divers, mélangé"
                   },
                   {
                       "char":  "很",
@@ -3453,9 +3635,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "彳 donne le sens ; 艮 donne la prononciation. (indice : step)"
+                                        "彳 donne le sens ; 艮 donne la prononciation. (indice : pas)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "彳 donne le sens ; 艮 donne la prononciation. (indice : step)",
+                      "meaning":  "très, fort, beaucoup"
                   },
                   {
                       "char":  "么",
@@ -3479,7 +3663,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "particule interrogative"
                   },
                   {
                       "char":  "蛋",
@@ -3501,9 +3687,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "虫 donne le sens ; 延 donne la prononciation. (indice : insect)"
+                                        "虫 donne le sens ; 延 donne la prononciation. (indice : insecte)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "虫 donne le sens ; 延 donne la prononciation. (indice : insect)",
+                      "meaning":  "œuf"
                   },
                   {
                       "char":  "后",
@@ -3518,7 +3706,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "après, derrière, arrière"
                   },
                   {
                       "char":  "没",
@@ -3540,9 +3730,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "氵 donne le sens ; 殳 donne la prononciation. (indice : water)"
+                                        "氵 donne le sens ; 殳 donne la prononciation. (indice : eau)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "氵 donne le sens ; 殳 donne la prononciation. (indice : water)",
+                      "meaning":  "ne pas, sans, disparu"
                   },
                   {
                       "char":  "师",
@@ -3564,9 +3756,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To skillfully wield 帀 a knife 刂"
+                                        "Manière habile de tenir 帀 un couteau 刂"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To skillfully wield 帀 a knife 刂",
+                      "meaning":  "maître, enseignant, expert"
                   },
                   {
                       "char":  "到",
@@ -3588,9 +3782,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "至 donne le sens ; 刂 donne la prononciation. (indice : arrive)"
+                                        "至 donne le sens ; 刂 donne la prononciation. (indice : arriver)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "至 donne le sens ; 刂 donne la prononciation. (indice : arrive)",
+                      "meaning":  "arriver, atteindre"
                   },
                   {
                       "char":  "候",
@@ -3612,9 +3808,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "亻 donne le sens ; 矦 donne la prononciation. (indice : person)"
+                                        "亻 donne le sens ; 矦 donne la prononciation. (indice : personne)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "亻 donne le sens ; 矦 donne la prononciation. (indice : person)",
+                      "meaning":  "attendre, guetter, saluer"
                   },
                   {
                       "char":  "妹",
@@ -3636,9 +3834,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "女 donne le sens ; 未 donne la prononciation. (indice : woman)"
+                                        "女 donne le sens ; 未 donne la prononciation. (indice : femme)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "女 donne le sens ; 未 donne la prononciation. (indice : woman)",
+                      "meaning":  "sœur cadette"
                   },
                   {
                       "char":  "十",
@@ -3662,7 +3862,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "dix, dixième, complet"
                   },
                   {
                       "char":  "道",
@@ -3684,9 +3886,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "辶 donne le sens ; 首 donne la prononciation. (indice : walk)"
+                                        "辶 donne le sens ; 首 donne la prononciation. (indice : marche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "辶 donne le sens ; 首 donne la prononciation. (indice : walk)",
+                      "meaning":  "voie, chemin, méthode"
                   },
                   {
                       "char":  "话",
@@ -3708,9 +3912,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A spoken 讠 tongue 舌; 舌 also provides the pronunciation"
+                                        "Une langue 舌 parlée 讠 ; 舌 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A spoken 讠 tongue 舌; 舌 also provides the pronunciation",
+                      "meaning":  "parole, langage, dialecte"
                   },
                   {
                       "char":  "们",
@@ -3732,9 +3938,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "亻 donne le sens ; 门 donne la prononciation. (indice : people)"
+                                        "亻 donne le sens ; 门 donne la prononciation. (indice : gens)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "亻 donne le sens ; 门 donne la prononciation. (indice : people)",
+                      "meaning":  "marque du pluriel"
                   },
                   {
                       "char":  "时",
@@ -3756,9 +3964,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "日 donne le sens. (indice : day)"
+                                        "日 donne le sens. (indice : jour)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "日 donne le sens. (indice : day)",
+                      "meaning":  "temps, époque, saison"
                   },
                   {
                       "char":  "得",
@@ -3785,9 +3995,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A hand 寸 grabbing a shell 旦"
+                                        "Une main 寸 saisissant un coquillage 旦"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A hand 寸 grabbing a shell 旦",
+                      "meaning":  "obtenir, convenir, prêt"
                   },
                   {
                       "char":  "欢",
@@ -3811,7 +4023,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "heureux, joyeux, content"
                   },
                   {
                       "char":  "米",
@@ -3833,9 +4047,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : Grains of rice)"
+                                        "(indice : grains de riz)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : Grains of rice)",
+                      "meaning":  "riz, millet, grain"
                   },
                   {
                       "char":  "识",
@@ -3857,9 +4073,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 只 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 只 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 只 donne la prononciation. (indice : speech)",
+                      "meaning":  "savoir, connaître, reconnaître"
                   },
                   {
                       "char":  "的",
@@ -3883,7 +4101,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "particule possessive, but"
                   },
                   {
                       "char":  "回",
@@ -3905,9 +4125,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Originally, a spiral signifying return"
+                                        "À l\u0027origine, une spirale signifiant le retour"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Originally, a spiral signifying return",
+                      "meaning":  "revenir, tourner, fois"
                   },
                   {
                       "char":  "面",
@@ -3920,9 +4142,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A person\u0027s face)"
+                                        "(indice : le visage d\u0027une personne)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A person\u0027s face)",
+                      "meaning":  "face, surface, côté"
                   },
                   {
                       "char":  "士",
@@ -3937,7 +4161,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "lettré, gentilhomme, soldat"
                   },
                   {
                       "char":  "弟",
@@ -3952,7 +4178,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "frère cadet, junior"
                   },
                   {
                       "char":  "会",
@@ -3974,9 +4202,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : People 人 speaking 云)"
+                                        "(indice : des gens 人 qui parlent 云)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : People 人 speaking 云)",
+                      "meaning":  "se réunir, réunion, savoir"
                   },
                   {
                       "char":  "名",
@@ -3998,9 +4228,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A name called out 口 to hail someone at night 夕"
+                                        "Un nom crié 口 pour appeler quelqu\u0027un dans la nuit 夕"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A name called out 口 to hail someone at night 夕",
+                      "meaning":  "nom, titre, rang"
                   },
                   {
                       "char":  "市",
@@ -4024,7 +4256,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "ville, marché, commerce"
                   },
                   {
                       "char":  "第",
@@ -4046,9 +4280,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Bamboo strips ⺮ arrayed in sequence; 弟 provides the pronunciation"
+                                        "Des lamelles de bambou ⺮ rangées en ordre ; 弟 donne la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Bamboo strips ⺮ arrayed in sequence; 弟 provides the pronunciation",
+                      "meaning":  "préfixe ordinal, rang"
                   },
                   {
                       "char":  "明",
@@ -4070,9 +4306,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "The light of the sun 日 and moon 月"
+                                        "La lumière du soleil 日 et de la lune 月"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "The light of the sun 日 and moon 月",
+                      "meaning":  "clair, lumineux, expliquer"
                   },
                   {
                       "char":  "事",
@@ -4106,7 +4344,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "affaire, chose, incident"
                   },
                   {
                       "char":  "点",
@@ -4128,9 +4368,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "灬 donne le sens ; 占 donne la prononciation. (indice : fire)"
+                                        "灬 donne le sens ; 占 donne la prononciation. (indice : feu)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "灬 donne le sens ; 占 donne la prononciation. (indice : fire)",
+                      "meaning":  "point, tache"
                   },
                   {
                       "char":  "机",
@@ -4152,9 +4394,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A table 几 made of wood 木; 几 also provides the pronunciation"
+                                        "Une table 几 faite de bois 木 ; 几 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A table 几 made of wood 木; 几 also provides the pronunciation",
+                      "meaning":  "machine, occasion, moment"
                   },
                   {
                       "char":  "哪",
@@ -4176,9 +4420,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 那 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 那 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 那 donne la prononciation. (indice : mouth)",
+                      "meaning":  "quel, où, comment"
                   },
                   {
                       "char":  "视",
@@ -4200,9 +4446,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "见 donne le sens ; 礻 donne la prononciation. (indice : see)"
+                                        "见 donne le sens ; 礻 donne la prononciation. (indice : voir)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "见 donne le sens ; 礻 donne la prononciation. (indice : see)",
+                      "meaning":  "regarder, observer, considérer"
                   },
                   {
                       "char":  "鸡",
@@ -4224,9 +4472,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : Another 又 kind of bird 鸟)"
+                                        "(indice : une autre 又 sorte d\u0027oiseau 鸟)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : Another 又 kind of bird 鸟)",
+                      "meaning":  "poulet, poule"
                   },
                   {
                       "char":  "那",
@@ -4241,7 +4491,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "ce, cela, ces"
                   },
                   {
                       "char":  "东",
@@ -4263,9 +4515,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "Simplified form of 東, the sun 日 rising behind a tree 木"
+                                        "Forme simplifiée de 東, le soleil 日 se levant derrière un arbre 木"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 東, the sun 日 rising behind a tree 木",
+                      "meaning":  "est, oriental"
                   },
                   {
                       "char":  "几",
@@ -4287,9 +4541,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A small table; compare 丌)"
+                                        "(indice : une petite table ; à comparer à 丌)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A small table; compare 丌)",
+                      "meaning":  "combien, quelques-uns"
                   },
                   {
                       "char":  "奶",
@@ -4311,9 +4567,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "女 donne le sens ; 乃 donne la prononciation. (indice : woman)"
+                                        "女 donne le sens ; 乃 donne la prononciation. (indice : femme)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "女 donne le sens ; 乃 donne la prononciation. (indice : woman)",
+                      "meaning":  "lait, sein, nourrice, grand-mère"
                   },
                   {
                       "char":  "都",
@@ -4335,9 +4593,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "阝 donne le sens ; 者 donne la prononciation. (indice : city)"
+                                        "阝 donne le sens ; 者 donne la prononciation. (indice : ville)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "阝 donne le sens ; 者 donne la prononciation. (indice : city)",
+                      "meaning":  "tout, tous, capitale"
                   },
                   {
                       "char":  "书",
@@ -4350,9 +4610,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A mark made by a pen ⺺)"
+                                        "(indice : une marque faite par un pinceau ⺺)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A mark made by a pen ⺺)",
+                      "meaning":  "livre, lettre, écrit"
                   },
                   {
                       "char":  "读",
@@ -4374,9 +4636,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To show off 卖 one\u0027s literacy 讠"
+                                        "Exhiber 卖 son savoir-lire 讠"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To show off 卖 one\u0027s literacy 讠",
+                      "meaning":  "lire, étudier, prononcer"
                   },
                   {
                       "char":  "间",
@@ -4398,9 +4662,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "The sun 日 shining through a doorway 门"
+                                        "Le soleil 日 brillant à travers une porte 门"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "The sun 日 shining through a doorway 门",
+                      "meaning":  "entre, espace, intervalle"
                   },
                   {
                       "char":  "脑",
@@ -4427,9 +4693,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "⺼ donne le sens. (indice : flesh)"
+                                        "⺼ donne le sens. (indice : chair)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "⺼ donne le sens. (indice : flesh)",
+                      "meaning":  "cerveau"
                   },
                   {
                       "char":  "对",
@@ -4451,9 +4719,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A pair 又 of hands 寸)"
+                                        "(indice : une paire 又 de mains 寸)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A pair 又 of hands 寸)",
+                      "meaning":  "correct, juste, face à"
                   },
                   {
                       "char":  "见",
@@ -4475,9 +4745,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Simplified form of 見; a man 儿 with the eye 目 emphasized"
+                                        "Forme simplifiée de 見 ; un homme 儿 dont l\u0027œil 目 est accentué"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 見; a man 儿 with the eye 目 emphasized",
+                      "meaning":  "voir, rencontrer, apparaître"
                   },
                   {
                       "char":  "呢",
@@ -4499,9 +4771,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 尼 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 尼 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 尼 donne la prononciation. (indice : mouth)",
+                      "meaning":  "particule finale, laine"
                   },
                   {
                       "char":  "睡",
@@ -4523,9 +4797,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "目 donne le sens ; 垂 donne la prononciation. (indice : eye)"
+                                        "目 donne le sens ; 垂 donne la prononciation. (indice : œil)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "目 donne le sens ; 垂 donne la prononciation. (indice : eye)",
+                      "meaning":  "dormir, sommeiller"
                   },
                   {
                       "char":  "多",
@@ -4542,9 +4818,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two nights 夕, suggesting many"
+                                        "Deux nuits 夕, suggérant la multitude"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two nights 夕, suggesting many",
+                      "meaning":  "beaucoup, nombreux, plus de"
                   },
                   {
                       "char":  "件",
@@ -4566,9 +4844,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A man 亻 dividing up a cow 牛"
+                                        "Un homme 亻 dépeçant une vache 牛"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A man 亻 dividing up a cow 牛",
+                      "meaning":  "article, pièce, affaire"
                   },
                   {
                       "char":  "能",
@@ -4595,9 +4875,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A bear\u0027s head 厶, body ⺼, and claws 匕"
+                                        "Tête 厶, corps ⺼ et griffes 匕 d\u0027un ours"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A bear\u0027s head 厶, body ⺼, and claws 匕",
+                      "meaning":  "pouvoir, capable, énergie"
                   },
                   {
                       "char":  "说",
@@ -4619,9 +4901,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 兑 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 兑 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 兑 donne la prononciation. (indice : speech)",
+                      "meaning":  "parler, dire, réprimander"
                   },
                   {
                       "char":  "儿",
@@ -4643,9 +4927,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "Simplified form of 兒, a picture of a child; compare 人"
+                                        "Forme simplifiée de 兒, l\u0027image d\u0027un enfant ; à comparer à 人"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simplified form of 兒, a picture of a child; compare 人",
+                      "meaning":  "fils, enfant"
                   },
                   {
                       "char":  "叫",
@@ -4667,9 +4953,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 丩 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 丩 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 丩 donne la prononciation. (indice : mouth)",
+                      "meaning":  "appeler, crier, héler"
                   },
                   {
                       "char":  "司",
@@ -4682,9 +4970,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person speaking orders 口 and raising their arm"
+                                        "Une personne donnant des ordres 口 et levant le bras"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person speaking orders 口 and raising their arm",
+                      "meaning":  "gérer, diriger, officier"
                   },
                   {
                       "char":  "四",
@@ -4706,9 +4996,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A child 儿 in a room with four walls 囗"
+                                        "Un enfant 儿 dans une pièce à quatre murs 囗"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A child 儿 in a room with four walls 囗",
+                      "meaning":  "quatre"
                   },
                   {
                       "char":  "西",
@@ -4730,9 +5022,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A bird settling into its nest, representing sunset; compare 東"
+                                        "Un oiseau regagnant son nid, image du coucher du soleil ; à comparer à 東"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A bird settling into its nest, representing sunset; compare 東",
+                      "meaning":  "ouest, occidental"
                   },
                   {
                       "char":  "样",
@@ -4754,9 +5048,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "木 donne le sens ; 羊 donne la prononciation. (indice : tree)"
+                                        "木 donne le sens ; 羊 donne la prononciation. (indice : arbre)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "木 donne le sens ; 羊 donne la prononciation. (indice : tree)",
+                      "meaning":  "forme, modèle, style"
                   },
                   {
                       "char":  "怎",
@@ -4778,9 +5074,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "心 donne le sens ; 乍 donne la prononciation. (indice : heart)"
+                                        "心 donne le sens ; 乍 donne la prononciation. (indice : cœur)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "心 donne le sens ; 乍 donne la prononciation. (indice : heart)",
+                      "meaning":  "comment, pourquoi"
                   },
                   {
                       "char":  "岁",
@@ -4804,7 +5102,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "an, âge, récolte"
                   },
                   {
                       "char":  "息",
@@ -4826,9 +5126,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To breathe (life, 心) through one\u0027s nose 自; 心 also provides the pronunciation"
+                                        "Respirer (la vie, 心) par son nez 自 ; 心 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To breathe (life, 心) through one\u0027s nose 自; 心 also provides the pronunciation",
+                      "meaning":  "cesser, repos, souffle, nouvelle"
                   },
                   {
                       "char":  "要",
@@ -4850,9 +5152,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A woman 女 with hands on her waist 覀"
+                                        "Une femme 女 les mains sur la taille 覀"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A woman 女 with hands on her waist 覀",
+                      "meaning":  "vouloir, devoir, nécessaire"
                   },
                   {
                       "char":  "找",
@@ -4874,9 +5178,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To go searching with a spear 戈 in hand 扌"
+                                        "Partir chercher avec une lance 戈 en main 扌"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To go searching with a spear 戈 in hand 扌",
+                      "meaning":  "chercher, trouver, monnaie"
                   },
                   {
                       "char":  "习",
@@ -4891,7 +5197,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "étudier, pratiquer, habitude"
                   },
                   {
                       "char":  "也",
@@ -4906,7 +5214,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "aussi, également"
                   },
                   {
                       "char":  "这",
@@ -4930,7 +5240,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "ce, ceci, ces"
                   },
                   {
                       "char":  "它",
@@ -4954,7 +5266,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "il, cela"
                   },
                   {
                       "char":  "喜",
@@ -4976,9 +5290,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Singing 口 and beating drums 壴"
+                                        "Chanter 口 et battre des tambours 壴"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Singing 口 and beating drums 壴",
+                      "meaning":  "aimer, joyeux, se réjouir"
                   },
                   {
                       "char":  "真",
@@ -5000,9 +5316,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A straight 直 (that is, level) table 几"
+                                        "Une table 几 droite 直 (c\u0027est-à-dire de niveau)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A straight 直 (that is, level) table 几",
+                      "meaning":  "vrai, réel, authentique"
                   },
                   {
                       "char":  "她",
@@ -5024,9 +5342,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : A woman 女 beside you 也)"
+                                        "(indice : une femme 女 à côté de toi 也)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A woman 女 beside you 也)",
+                      "meaning":  "elle"
                   },
                   {
                       "char":  "系",
@@ -5048,9 +5368,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "糸 donne le sens. (indice : thread)"
+                                        "糸 donne le sens. (indice : fil)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "糸 donne le sens. (indice : thread)",
+                      "meaning":  "système, lien, série"
                   },
                   {
                       "char":  "衣",
@@ -5063,9 +5385,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "(indice : A woman\u0027s dress)"
+                                        "(indice : une robe de femme)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : A woman\u0027s dress)",
+                      "meaning":  "vêtement, habit, manteau"
                   },
                   {
                       "char":  "正",
@@ -5087,9 +5411,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A foot 止 stopping in the right place 一"
+                                        "Un pied 止 qui s\u0027arrête au bon endroit 一"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A foot 止 stopping in the right place 一",
+                      "meaning":  "droit, correct, juste"
                   },
                   {
                       "char":  "太",
@@ -5111,9 +5437,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A giant 大 with a normal-sized man 丶 for scale"
+                                        "Un géant 大 avec un homme de taille normale 丶 pour l\u0027échelle"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A giant 大 with a normal-sized man 丶 for scale",
+                      "meaning":  "très, trop, extrême"
                   },
                   {
                       "char":  "医",
@@ -5135,9 +5463,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "矢 donne le sens ; 匸 donne la prononciation. (indice : arrow)"
+                                        "矢 donne le sens ; 匸 donne la prononciation. (indice : flèche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "矢 donne le sens ; 匸 donne la prononciation. (indice : arrow)",
+                      "meaning":  "médecin, soigner, médecine"
                   },
                   {
                       "char":  "知",
@@ -5159,9 +5489,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 矢 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 矢 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 矢 donne la prononciation. (indice : mouth)",
+                      "meaning":  "savoir, connaître, percevoir"
                   },
                   {
                       "char":  "题",
@@ -5183,9 +5515,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "页 donne le sens ; 是 donne la prononciation. (indice : head)"
+                                        "页 donne le sens ; 是 donne la prononciation. (indice : tête)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "页 donne le sens ; 是 donne la prononciation. (indice : head)",
+                      "meaning":  "titre, sujet, front"
                   },
                   {
                       "char":  "先",
@@ -5198,9 +5532,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Someone stepping 止 in front of another person 儿"
+                                        "Quelqu\u0027un avançant 止 devant une autre personne 儿"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Someone stepping 止 in front of another person 儿",
+                      "meaning":  "d\u0027abord, premier, avant"
                   },
                   {
                       "char":  "宜",
@@ -5222,9 +5558,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A memorial service 且 held in a house 宀"
+                                        "Une cérémonie commémorative 且 tenue dans une maison 宀"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A memorial service 且 held in a house 宀",
+                      "meaning":  "convenir, approprié, convenable"
                   },
                   {
                       "char":  "只",
@@ -5246,9 +5584,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Simple words 八 coming from the mouth 口"
+                                        "De simples mots 八 sortant de la bouche 口"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Simple words 八 coming from the mouth 口",
+                      "meaning":  "seulement, uniquement"
                   },
                   {
                       "char":  "天",
@@ -5270,9 +5610,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "The heavens 一 above a man 大"
+                                        "Le ciel 一 au-dessus d\u0027un homme 大"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "The heavens 一 above a man 大",
+                      "meaning":  "ciel, jour, dieu"
                   },
                   {
                       "char":  "现",
@@ -5294,9 +5636,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "To see 见 jade 王; 见 also provides the pronunciation"
+                                        "Voir 见 du jade 王 ; 见 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "To see 见 jade 王; 见 also provides the pronunciation",
+                      "meaning":  "apparaître, actuel, maintenant"
                   },
                   {
                       "char":  "以",
@@ -5311,7 +5655,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "selon, afin de, par"
                   },
                   {
                       "char":  "条",
@@ -5335,7 +5681,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "bande, clause, article"
                   },
                   {
                       "char":  "想",
@@ -5357,9 +5705,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "心 donne le sens ; 相 donne la prononciation. (indice : mind)"
+                                        "心 donne le sens ; 相 donne la prononciation. (indice : esprit)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "心 donne le sens ; 相 donne la prononciation. (indice : mind)",
+                      "meaning":  "penser, vouloir, croire"
                   },
                   {
                       "char":  "椅",
@@ -5381,9 +5731,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "木 donne le sens ; 奇 donne la prononciation. (indice : wood)"
+                                        "木 donne le sens ; 奇 donne la prononciation. (indice : bois)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "木 donne le sens ; 奇 donne la prononciation. (indice : wood)",
+                      "meaning":  "chaise, siège"
                   },
                   {
                       "char":  "钟",
@@ -5405,9 +5757,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "钅 donne le sens ; 中 donne la prononciation. (indice : metal)"
+                                        "钅 donne le sens ; 中 donne la prononciation. (indice : métal)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "钅 donne le sens ; 中 donne la prononciation. (indice : metal)",
+                      "meaning":  "horloge, cloche"
                   },
                   {
                       "char":  "听",
@@ -5429,9 +5783,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "(indice : Words 口 reaching an ear 斤)"
+                                        "(indice : des mots 口 atteignant une oreille 斤)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "(indice : Words 口 reaching an ear 斤)",
+                      "meaning":  "entendre, écouter, obéir"
                   },
                   {
                       "char":  "影",
@@ -5453,9 +5809,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "彡 donne le sens ; 景 donne la prononciation. (indice : sunlight)"
+                                        "彡 donne le sens ; 景 donne la prononciation. (indice : lumière du soleil)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "彡 donne le sens ; 景 donne la prononciation. (indice : sunlight)",
+                      "meaning":  "ombre, image, reflet"
                   },
                   {
                       "char":  "住",
@@ -5477,9 +5835,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person 亻 who hosts 主; 主 also provides the pronunciation"
+                                        "Une personne 亻 qui héberge 主 ; 主 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person 亻 who hosts 主; 主 also provides the pronunciation",
+                      "meaning":  "habiter, loger, demeurer"
                   },
                   {
                       "char":  "同",
@@ -5501,9 +5861,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Sharing a common 凡 tongue 口"
+                                        "Partager une langue 口 commune 凡"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Sharing a common 凡 tongue 口",
+                      "meaning":  "même, semblable, avec"
                   },
                   {
                       "char":  "校",
@@ -5525,9 +5887,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "木 donne le sens ; 交 donne la prononciation. (indice : wood)"
+                                        "木 donne le sens ; 交 donne la prononciation. (indice : bois)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "木 donne le sens ; 交 donne la prononciation. (indice : wood)",
+                      "meaning":  "école, officier"
                   },
                   {
                       "char":  "友",
@@ -5540,9 +5904,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two hands 又 joined, representing friendship; 又 also provides the pronunciation"
+                                        "Deux mains 又 jointes, image de l\u0027amitié ; 又 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
+                      "meaning":  "ami, compagnon, amitié"
                   },
                   {
                       "char":  "桌",
@@ -5566,7 +5932,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "table, bureau, comptoir"
                   },
                   {
                       "char":  "外",
@@ -5588,9 +5956,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Night-time 夕 divinations 卜; the supernatural, the foreign"
+                                        "Divinations 卜 nocturnes 夕 ; le surnaturel, l\u0027étranger"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Night-time 夕 divinations 卜; the supernatural, the foreign",
+                      "meaning":  "dehors, extérieur, étranger"
                   },
                   {
                       "char":  "些",
@@ -5612,9 +5982,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "二 donne le sens ; 此 donne la prononciation. (indice : two)"
+                                        "二 donne le sens ; 此 donne la prononciation. (indice : deux)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "二 donne le sens ; 此 donne la prononciation. (indice : two)",
+                      "meaning":  "quelques, un peu, plutôt"
                   },
                   {
                       "char":  "玩",
@@ -5638,7 +6010,9 @@
                                         "形声 — composé phonétique-sémantique",
                                         "王 donne le sens ; 元 donne la prononciation. (indice : jade)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "王 donne le sens ; 元 donne la prononciation. (indice : jade)",
+                      "meaning":  "jouer, plaisanter, s\u0027amuser"
                   },
                   {
                       "char":  "写",
@@ -5662,7 +6036,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "écrire, dessiner, composer"
                   },
                   {
                       "char":  "字",
@@ -5684,9 +6060,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A child 子 in a house 宀; 子 also provides the pronunciation"
+                                        "Un enfant 子 dans une maison 宀 ; 子 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A child 子 in a house 宀; 子 also provides the pronunciation",
+                      "meaning":  "caractère, lettre, mot"
                   },
                   {
                       "char":  "晚",
@@ -5708,9 +6086,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Avoiding 免 the sun 日; 免 also provides the pronunciation"
+                                        "Éviter 免 le soleil 日 ; 免 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Avoiding 免 the sun 日; 免 also provides the pronunciation",
+                      "meaning":  "soir, nuit, tard"
                   },
                   {
                       "char":  "谢",
@@ -5732,9 +6112,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 射 donne la prononciation. (indice : speech)"
+                                        "讠 donne le sens ; 射 donne la prononciation. (indice : parole)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 射 donne la prononciation. (indice : speech)",
+                      "meaning":  "remercier, refuser"
                   },
                   {
                       "char":  "语",
@@ -5756,9 +6138,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "讠 donne le sens ; 吾 donne la prononciation. (indice : words)"
+                                        "讠 donne le sens ; 吾 donne la prononciation. (indice : mots)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "讠 donne le sens ; 吾 donne la prononciation. (indice : words)",
+                      "meaning":  "langue, langage, parole"
                   },
                   {
                       "char":  "租",
@@ -5780,9 +6164,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Regularly paid 且 tribute in grain 禾"
+                                        "Un tribut 且 en grain 禾 payé régulièrement"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Regularly paid 且 tribute in grain 禾",
+                      "meaning":  "louer, loyer, taxe"
                   },
                   {
                       "char":  "喂",
@@ -5804,9 +6190,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 畏 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 畏 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 畏 donne la prononciation. (indice : mouth)",
+                      "meaning":  "allô, hé"
                   },
                   {
                       "char":  "新",
@@ -5828,9 +6216,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A freshly chopped 斤 tree 亲"
+                                        "Un arbre 亲 fraîchement coupé 斤"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A freshly chopped 斤 tree 亲",
+                      "meaning":  "nouveau, récent, frais"
                   },
                   {
                       "char":  "元",
@@ -5852,9 +6242,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A man 儿 with two lines emphasizing their head 二"
+                                        "Un homme 儿 avec deux traits soulignant sa tête 二"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A man 儿 with two lines emphasizing their head 二",
+                      "meaning":  "yuan, origine, premier"
                   },
                   {
                       "char":  "昨",
@@ -5876,9 +6268,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "日 donne le sens ; 乍 donne la prononciation. (indice : day)"
+                                        "日 donne le sens ; 乍 donne la prononciation. (indice : jour)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "日 donne le sens ; 乍 donne la prononciation. (indice : day)",
+                      "meaning":  "hier, autrefois"
                   },
                   {
                       "char":  "文",
@@ -5900,9 +6294,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "A tattooed chest, representing writing"
+                                        "Une poitrine tatouée, image de l\u0027écriture"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A tattooed chest, representing writing",
+                      "meaning":  "culture, littérature, écriture"
                   },
                   {
                       "char":  "星",
@@ -5924,9 +6320,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "日 donne le sens ; 生 donne la prononciation. (indice : sun)"
+                                        "日 donne le sens ; 生 donne la prononciation. (indice : soleil)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "日 donne le sens ; 生 donne la prononciation. (indice : sun)",
+                      "meaning":  "étoile, astre, planète"
                   },
                   {
                       "char":  "院",
@@ -5948,9 +6346,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "阝 donne le sens ; 完 donne la prononciation. (indice : place)"
+                                        "阝 donne le sens ; 完 donne la prononciation. (indice : lieu)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "阝 donne le sens ; 完 donne la prononciation. (indice : place)",
+                      "meaning":  "cour, jardin, institut"
                   },
                   {
                       "char":  "作",
@@ -5972,9 +6372,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person 亻 making something for the first time 乍; 乍 also provides the pronunciation"
+                                        "Une personne 亻 fabriquant quelque chose pour la première fois 乍 ; 乍 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person 亻 making something for the first time 乍; 乍 also provides the pronunciation",
+                      "meaning":  "faire, écrire, composer"
                   },
                   {
                       "char":  "问",
@@ -5996,9 +6398,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "口 donne le sens ; 门 donne la prononciation. (indice : mouth)"
+                                        "口 donne le sens ; 门 donne la prononciation. (indice : bouche)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "口 donne le sens ; 门 donne la prononciation. (indice : mouth)",
+                      "meaning":  "demander, s\u0027informer, interroger"
                   },
                   {
                       "char":  "兴",
@@ -6027,7 +6431,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "prospérer, fleurir, s\u0027épanouir"
                   },
                   {
                       "char":  "坐",
@@ -6049,9 +6455,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Two people 从 sitting on the ground 土"
+                                        "Deux personnes 从 assises sur le sol 土"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two people 从 sitting on the ground 土",
+                      "meaning":  "s\u0027asseoir, siège, prendre (véhicule)"
                   },
                   {
                       "char":  "休",
@@ -6073,9 +6481,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "A person 亻 leaning against a tree 木"
+                                        "Une personne 亻 appuyée contre un arbre 木"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "A person 亻 leaning against a tree 木",
+                      "meaning":  "se reposer, cesser, retraite"
                   },
                   {
                       "char":  "再",
@@ -6097,9 +6507,11 @@
                                      ],
                       "etymology":  [
                                         "象形 — pictogramme",
-                                        "Two fish 冉 caught on a line 一"
+                                        "Deux poissons 冉 pris à une ligne 一"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Two fish 冉 caught on a line 一",
+                      "meaning":  "encore, de nouveau, re-"
                   },
                   {
                       "char":  "做",
@@ -6121,9 +6533,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Someone 亻 who causes things to happen 故; 故 also provides the pronuncation"
+                                        "Quelqu\u0027un 亻 qui fait arriver les choses 故 ; 故 donne aussi la prononciation"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Someone 亻 who causes things to happen 故; 故 also provides the pronuncation",
+                      "meaning":  "faire, travailler, agir"
                   },
                   {
                       "char":  "五",
@@ -6136,9 +6550,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 "
+                                        "Cinq éléments (la croix au trait supplémentaire) entre le ciel 一 et la terre 一"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 ",
+                      "meaning":  "cinq"
                   },
                   {
                       "char":  "在",
@@ -6160,9 +6576,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "土 donne le sens ; 才 donne la prononciation. (indice : earth)"
+                                        "土 donne le sens ; 才 donne la prononciation. (indice : terre)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "土 donne le sens ; 才 donne la prononciation. (indice : earth)",
+                      "meaning":  "être, à, en"
                   },
                   {
                       "char":  "午",
@@ -6186,7 +6604,9 @@
                                         "—",
                                         "Étymologie non documentée dans cette base."
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "Étymologie non documentée dans cette base.",
+                      "meaning":  "midi, branche terrestre"
                   },
                   {
                       "char":  "雪",
@@ -6208,9 +6628,11 @@
                                      ],
                       "etymology":  [
                                         "形声 — composé phonétique-sémantique",
-                                        "雨 donne le sens ; 彐 donne la prononciation. (indice : rain)"
+                                        "雨 donne le sens ; 彐 donne la prononciation. (indice : pluie)"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "雨 donne le sens ; 彐 donne la prononciation. (indice : rain)",
+                      "meaning":  "neige, venger"
                   },
                   {
                       "char":  "早",
@@ -6232,9 +6654,11 @@
                                      ],
                       "etymology":  [
                                         "会意 — idéogramme composé",
-                                        "The first rays 十 of the sun 日"
+                                        "Les premiers rayons 十 du soleil 日"
                                     ],
-                      "source":  "Make Me a Hanzi"
+                      "source":  "Make Me a Hanzi",
+                      "etymologyEn":  "The first rays 十 of the sun 日",
+                      "meaning":  "tôt, matin, bientôt"
                   }
               ]
 }
