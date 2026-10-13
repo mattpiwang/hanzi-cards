@@ -412,7 +412,10 @@ kbd {
   text-shadow: 0 6px 30px rgba(0, 0, 0, .5);
 }
 
-.hint { margin: 0; color: var(--dim); font-size: .78rem; }
+/* L'invite de la carte (« Clic ou Espace pour retourner ») est masquée sur
+   demande. Ses autres propriétés sont conservées : il suffit de retirer le
+   display:none pour la faire revenir. */
+.hint { display: none; margin: 0; color: var(--dim); font-size: .78rem; }
 
 /* Verso : défile si le contenu dépasse (étymologies longues) */
 .back {
