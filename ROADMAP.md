@@ -1,66 +1,78 @@
 # Feuille de route — Cartes 汉字
 
-**État actuel** : 253 fiches (41 écrites à la main en français + 212 importées du HSK 1),
-application statique sans dépendance, installable en PWA, progression locale au navigateur.
+**État actuel** : 253 fiches (41 écrites à la main en français + 212 importées du
+HSK 1), application statique sans dépendance, installable en PWA, progression
+locale au navigateur.
 
-**Déjà en place** : retournement 3D d'un appui sur la carte, **glissement
-gauche/droite pour juger une carte**, navigation au clavier, compteur de
-progression, version « un seul fichier » hors ligne, service worker pour
-l'installation sur le téléphone.
+**Déjà en place** : retournement d'un appui sur la carte, **glissement
+gauche/droite pour juger**, menu burger, **page Thèmes**, interrupteur **阴 / 阳**
+(mode sombre / papier de riz), navigation au clavier, compteur de progression,
+version « un seul fichier » hors ligne, service worker.
 
 ---
 
-## 1. Contenu
+## Décisions prises le 12/10
 
-| Priorité | Chantier | Détail | Effort |
-|---|---|---|---|
-| ★★★ | **Sens en français** | Les 212 fiches importées n'ont qu'une définition **anglaise**. Traduction par lots via une API LLM, l'anglais restant en secours (`meaningEn`). | script + relecture |
-| ★★★ | **Niveaux HSK suivants** | Listes déjà téléchargées dans `..\hanzi-db\filtres\` : HSK 2 (125), 3 (284), 4 (441), 5 (431), 6 (413), 7-9 (1 148). Une commande par niveau. | 1 commande |
-| ★★ | **Mots d'exemple** pour les fiches importées | [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) (~120 000 entrées) pour remplir le champ `words`, aujourd'hui vide sur ces fiches. | script |
-| ★★ | **Étymologies en français** | Même traitement que les sens : l'indice anglais est souvent une jolie image (« une femme 女 avec un fils 子 »). | avec la traduction |
-| ★ | **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. | petit |
+| Décision | Détail |
+|---|---|
+| **Pas d'anglais à l'écran** | Les sens et les étymologies importés sont traduits en français. L'anglais **reste dans les données** (`meaningEn`) : il sert de base à la traduction, mais n'est **jamais affiché** sur une carte. |
+| **Contenu et fonctionnalités avant l'APK** | L'empaquetage Android attendra que l'application soit plus riche. |
+| **Architecture : un fichier par niveau** | Au prochain import, chaque niveau aura son `cards-<niveau>.json`, chargé à la demande. À mettre en place **au moment de l'import**, pas avant. |
 
-## 2. Fonctionnalités
+---
 
-| Priorité | Chantier | Détail | Effort |
-|---|---|---|---|
-| ★★★ | **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) + `graphics.txt` de Make Me a Hanzi (tracés vectoriels pour ~9 000 caractères). Deux modes : démonstration, puis **quiz** (tracer au doigt). C'est le vrai manque pour apprendre à écrire. | moyen |
-| ★★★ | **Répétition espacée (SM-2)** | Remplacer le compteur à 3 états par de vrais intervalles : échéance par fiche, file « à revoir aujourd'hui », boîtes de Leitner. | moyen |
-| ★★ | **Revoir seulement les cartes non sues** | Le filtre « À revoir » a été retiré de l'interface : à réintroduire sans encombrer (raccourci `R`, appui long, ou priorité donnée aux cartes non sues dans le mélange). | petit |
-| ★★ | **Sauvegarde de la progression** | Export / import d'un fichier JSON : changer de téléphone sans tout perdre. | petit |
-| ★★ | **Recherche** | Par caractère, pinyin, sens ou radical. | petit |
-| ★ | **Statistiques** | Nombre de fiches apprises, série de jours, progression par catégorie. | petit |
-| ★ | **Audio** | Prononciations (fichiers locaux ou synthèse). | moyen |
+## 1. À faire maintenant
 
-## 3. Architecture — à trancher avant de grossir
+### Contenu
 
-Tout le jeu tient aujourd'hui dans **`data/cards.json`** : 302 Ko pour 253 fiches,
-soit environ **1,1 Ko par fiche**.
+| Priorité | Chantier | Détail |
+|---|---|---|
+| ★★★ | **Sens en français** | Traduire les 212 définitions anglaises. Tant qu'une fiche n'est pas traduite, l'application affiche « sens à compléter » — jamais l'anglais. |
+| ★★★ | **Étymologies en français** | Même traitement : les indices de Make Me a Hanzi sont souvent de jolies images (« une femme 女 avec un fils 子 »). |
+| ★★ | **Mots d'exemple pour les fiches importées** | Remplir le champ `words`, vide sur les 212 fiches importées, depuis [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) (~120 000 entrées libres). |
 
-Les six niveaux HSK représenteraient **~2 000 fiches ≈ 2,2 Mo** : c'est lourd à charger
-sur un téléphone, et le mode hors ligne devrait tout mettre en cache.
+### Fonctionnalités
 
-Deux options le jour où on dépasse ~1 000 fiches :
+| Priorité | Chantier | Détail |
+|---|---|---|
+| ★★★ | **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) + les tracés vectoriels `graphics.txt` de Make Me a Hanzi : mode démonstration, puis quiz (tracer au doigt). |
+| ★★★ | **Répétition espacée (SM-2)** | Remplacer le compteur à 3 états par de vrais intervalles : échéance par fiche, file « à revoir aujourd'hui ». |
+| ★★ | **Revoir seulement les cartes non sues** | L'entrée existe déjà dans le menu (`index.html?review=1`) ; à compléter d'un raccourci clavier et d'un moyen de revenir en arrière. |
+| ★★ | **Sauvegarde de la progression** | Export / import d'un fichier JSON : changer de téléphone sans rien perdre. |
+| ★★ | **Recherche** | Par caractère, pinyin, sens ou radical. |
+| ★ | **Statistiques** | Fiches apprises, série de jours, progression par thème (la page Thèmes en montre déjà l'essentiel). |
 
-1. **Un fichier par niveau** (`cards-hsk1.json`, `cards-hsk2.json`…) chargé à la demande — simple, garde le hors ligne.
-2. **Un index + des paquets** (chargement par lots de 200 fiches) — plus fluide, plus complexe.
+---
 
-**Recommandation** : l'option 1, quand le besoin arrive. Pas avant.
+## 2. Plus tard
+
+| Chantier | Pourquoi attendre |
+|---|---|
+| **Niveaux HSK suivants** | Les listes sont déjà téléchargées (`..\hanzi-db\filtres\` : HSK 2 → 7-9). On les importera quand le contenu actuel sera traduit et l'architecture par niveau en place. |
+| **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. |
+| **Audio** | Prononciations enregistrées, ou de synthèse. |
+| **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
+
+---
+
+## 3. Architecture — décidé : un fichier par niveau
+
+Tout tient aujourd'hui dans `data/cards.json` : 302 Ko pour 253 fiches, soit
+environ **1,1 Ko par fiche**. Les six niveaux HSK représenteraient ~2 000 fiches
+≈ 2,2 Mo — trop lourd à charger d'un bloc sur un téléphone.
+
+**Choix retenu** : un fichier par niveau (`data/cards-hsk1.json`,
+`cards-hsk2.json`…), chargé à la demande. Le mode hors ligne devra mettre en
+cache les niveaux déjà ouverts, et l'écran d'accueil devra permettre de choisir
+le niveau — la page Thèmes s'en chargera naturellement.
+
+Tant qu'il n'y a qu'un niveau, un fichier unique reste plus simple : le découpage
+se fera **pendant** le prochain import.
+
+---
 
 ## 4. Empaquetage APK (plus tard)
 
-Une fois le contenu et les fonctionnalités étoffés, et le site publié en HTTPS :
-
-- **[PWABuilder](https://www.pwabuilder.com)** (en ligne) ou **Bubblewrap** (Node + JDK) produisent un `.apk` signé à partir de la PWA.
-- Prérequis déjà en place : site publié (GitHub Pages), `manifest.json` complet, icônes 192/512, `display: standalone`.
+- **[PWABuilder](https://www.pwabuilder.com)** (en ligne) ou **Bubblewrap** (Node + JDK) produisent un `.apk` signé depuis la PWA publiée.
+- Déjà en place : GitHub Pages en HTTPS, `manifest.json` complet, icônes 192/512, `display: standalone`.
 - À prévoir : un identifiant d'application (ex. `io.github.mattpiwang.cartes`), une clé de signature à conserver, et une nouvelle version à republier à chaque évolution.
-
----
-
-## Ordre de travail proposé
-
-1. 📈 **Importer HSK 2** (une commande) — pour sentir la montée en volume et décider de l'architecture.
-2. 🇫🇷 **Traduire les sens en français** — le gain de qualité le plus visible.
-3. ✍️ **Ordre des traits** — la fonctionnalité la plus utile pour apprendre.
-4. 🔁 **SM-2** — pour que la révision devienne efficace.
-5. 📦 **APK** — quand le contenu sera suffisant.

@@ -128,11 +128,12 @@
         '</ul></section>'
       : '';
 
-    /* Le sens vient du français quand il existe, sinon de la base anglaise
-       (avec une petite mention « en » pour que ce soit clair). */
+    /* Aucun anglais à l'écran, jamais : si la traduction française manque
+       encore, on l'annonce discrètement. L'anglais reste dans les données
+       (champ meaningEn) : il sert de base à la traduction, rien de plus. */
     var sens = c.meaning
       ? esc(c.meaning)
-      : (c.meaningEn ? esc(c.meaningEn) + ' <span class="en">en</span>' : '—');
+      : '<span class="manquant">sens à compléter</span>';
 
     var etymoHTML = (c.etymology && c.etymology.length)
       ? '<section><h3>Étymologie</h3>' +
