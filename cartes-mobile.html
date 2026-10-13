@@ -605,6 +605,10 @@ kbd {
   padding: .3rem;
   display: block;
   line-height: 0;
+  /* L'œil se range à droite ; le carré 田字格, lui, reste centré
+     (align-items: center sur .traits, que align-self vient contredire ici). */
+  align-self: flex-end;
+  margin-right: .25rem;
   color: var(--dim);
   border-radius: 8px;
   cursor: pointer;
