@@ -91,18 +91,28 @@ l'ancien compteur à trois états sont migrées automatiquement au chargement.
 
 **Il n'y a plus de filtres** : ils ont été retirés volontairement pour épurer
 l'écran. Le paquet se parcourt à la suite — ou mélangé avec le bouton
-« Mélanger » — et le compteur de l'en-tête indique en permanence combien de
+l'entrée « Mélanger » du menu — et le compteur de l'en-tête indique combien de
 cartes restent à revoir.
 
-**Le menu (burger, en haut à droite)** ouvre la page **Thèmes**, qui liste chaque
-lot de vocabulaire avec sa progression et lance la révision du lot choisi. Le
-choix passe par l'adresse, sans rien ajouter à l'écran principal :
+**L'écran ne garde que la carte** : les deux jugements, les liens et les outils
+sont dans le menu (burger, en haut à droite), rangé en quatre catégories :
+
+| Catégorie | Contenu |
+|---|---|
+| *Cette carte* | **À revoir** (1) et **Je sais** (2) — portent sur la carte affichée |
+| *Parcourir* | la page Thèmes, les cartes à revoir, toutes les cartes, **Mélanger** |
+| *Progression* | **Réinitialiser**, **Sauvegarder**, **Restaurer** |
+| *Apparence* | le thème clair ou sombre (interrupteur 阴 / 阳) |
+
+La page **Thèmes** liste chaque lot de vocabulaire avec sa progression et lance
+la révision du lot choisi. Le choix passe par l'adresse, sans rien ajouter à
+l'écran principal :
 
 | Adresse | Ce qu'on révise |
 |---|---|
 | `index.html` | toutes les cartes |
 | `index.html?theme=Nature` | un thème (le nom exact de la catégorie) |
-| `index.html?review=1` | seulement les cartes non sues |
+| `index.html?review=1` | les cartes dues aujourd'hui |
 
 Ces adresses sont **partageables** : un lien suffit pour envoyer un thème à
 quelqu'un.
@@ -159,10 +169,10 @@ viennent de **CC-CEDICT**, traduits en français. 244 fiches sur 253 en ont.
 | **Chercher** | par caractère, pinyin, sens ou radical ; le résultat ouvre la carte voulue (`index.html?char=X`) |
 | **Réviser par thème** | un lot de vocabulaire, ou seulement les cartes à revoir |
 
-**Le menu permet aussi de sauvegarder la progression** : « Sauvegarder ma
-progression » télécharge un fichier JSON daté, « Restaurer une sauvegarde » le
-relit après confirmation. Utile pour changer de téléphone, ou avant de vider les
-données du site.
+**Le menu permet aussi de sauvegarder la progression** (catégorie *Progression*) :
+« Sauvegarder » télécharge un fichier JSON daté, « Restaurer » le relit après
+confirmation. Utile pour changer de téléphone, ou avant de vider les données du
+site.
 
 **Au clavier** : `Espace` retourne · `←` `→` naviguent · `1` à revoir · `2` je sais.
 
