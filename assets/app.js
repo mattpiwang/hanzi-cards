@@ -215,15 +215,14 @@
         '</section>'
       : '';
 
-    /* L'ordre des traits. Absent de la version « un seul fichier » : elle
-       n'embarque ni la bibliothèque (36 Ko) ni les tracés (494 Ko). */
+    /* L'ordre des traits : le carré 田字格 est visible directement, et un appui
+       dessus lance (ou relance) l'animation. Absent de la version « un seul
+       fichier », qui n'embarque ni la bibliothèque ni les tracés. */
     var traitsHTML = monoFichier ? '' :
       '<section class="traits-bloc">' +
-        '<button class="btn" data-action="traits" type="button">✍️ Ordre des traits</button>' +
-        '<div class="traits" id="traits" hidden>' +
-          '<div class="traits-box" id="traits-box"></div>' +
-          '<div class="traits-actions">' +
-            '<button class="btn" data-action="traits-rejouer" type="button">Rejouer l\'animation</button>' +
+        '<div class="traits" id="traits">' +
+          '<div class="traits-box" id="traits-box">' +
+            '<p class="traits-note">appuie ici pour voir l\'ordre des traits</p>' +
           '</div>' +
         '</div>' +
       '</section>';
@@ -262,7 +261,8 @@
     }
 
     el.front.textContent = c.char;
-    writer = null;   // le dessin précédent disparaît avec le contenu réécrit
+    writer = null;          // le dessin précédent disparaît avec le contenu réécrit
+    carteDessinee = '';
     el.back.innerHTML = backHTML(c);
     el.back.scrollTop = 0;
 
@@ -616,6 +616,7 @@
   var biblioPrete = false;
   var traces = null;
   var writer = null;
+  var carteDessinee = '';   // le caractère actuellement dessiné dans le carré
 
   function chargerBibliotheque(fait, rate) {
     if (biblioPrete) { fait(); return; }
@@ -639,21 +640,21 @@
     return (v && v.trim()) || secours;
   }
 
-  function afficherTraits() {
-    var zone = document.getElementById('traits');
+  /* Prépare le dessin de la carte affichée, puis joue l'animation. Un appui
+     suivant relance l'animation déjà en place, sans tout reconstruire. */
+  function animerTraits() {
     var boite = document.getElementById('traits-box');
-    if (!zone || !boite || !current()) { return; }
-    zone.hidden = false;
-    boite.innerHTML = '<p class="traits-note">chargement…</p>';
+    var c = current();
+    if (!boite || !c) { return; }
 
-    function pret() {
-      var c = current();
-      var donnees = c && traces ? traces[c.char] : null;
-      boite.innerHTML = '';
+    function jouer() {
+      var donnees = traces ? traces[c.char] : null;
       if (!donnees) {
         boite.innerHTML = '<p class="traits-note">Pas de tracé pour ce caractère.</p>';
         return;
       }
+      if (writer && carteDessinee === c.char) { writer.animateCharacter(); return; }
+      boite.innerHTML = '';
       writer = HanziWriter.create(boite, c.char, {
         width: 198, height: 198, padding: 8,
         showOutline: false,
@@ -664,6 +665,7 @@
         delayBetweenStrokes: 200,
         charDataLoader: function (car, onComplete) { onComplete(donnees); }
       });
+      carteDessinee = c.char;
       writer.animateCharacter();
     }
 
@@ -671,21 +673,18 @@
       boite.innerHTML = '<p class="traits-note">Tracés indisponibles : cette animation demande la version servie par un serveur.</p>';
     }
 
-    chargerBibliotheque(function () { chargerTraces(pret, echec); }, echec);
+    if (!biblioPrete || !traces) {
+      boite.innerHTML = '<p class="traits-note">chargement…</p>';
+    }
+    chargerBibliotheque(function () { chargerTraces(jouer, echec); }, echec);
   }
 
-  /* Un seul écouteur, posé sur le verso : le contenu est réécrit à chaque
-     carte, mais l'élément qui le contient, lui, ne change pas. */
+  /* Un seul écouteur, posé sur le verso : son contenu est réécrit à chaque
+     carte, mais l'élément qui le contient ne change pas. Un appui dans le carré
+     田字格 — et nulle part ailleurs — lance l'animation. */
   if (!monoFichier) {
     el.back.addEventListener('click', function (e) {
-      var b = e.target.closest('[data-action]');
-      if (!b) { return; }
-      var action = b.getAttribute('data-action');
-      if (action === 'traits') { afficherTraits(); }
-      else if (action === 'traits-rejouer' && writer) { writer.animateCharacter(); }
-      /* Le mode « tracer au doigt » a été retiré : la carte étant retournée en
-         3D, les coordonnées du doigt y arrivent en miroir. Pour le rétablir, il
-         faudrait sortir la zone de dessin du bloc qui pivote. */
+      if (e.target.closest && e.target.closest('.traits')) { animerTraits(); }
     });
   }
 
@@ -697,10 +696,9 @@
     /* Un glissement se termine parfois par un clic : on l'ignore, sinon la
        carte se retournerait juste après avoir été jugée. */
     if (geste.avaleClic) { return; }
-    /* Les commandes posées SUR le verso (ordre des traits, rejouer l'animation)
-       sont dans la carte : sans ce filtre, leur clic remonterait jusqu'ici et
-       retournerait la carte. On laisse aussi tranquille toute la zone de dessin. */
-    if (e.target.closest && (e.target.closest('[data-action]') || e.target.closest('.traits'))) { return; }
+    /* Le carré 田字格 est DANS la carte : sans ce filtre, l'appui qui lance
+       l'animation remonterait jusqu'ici et retournerait la carte. */
+    if (e.target.closest && e.target.closest('.traits')) { return; }
     flip();
   });
   el.card.addEventListener('keydown', function (e) {

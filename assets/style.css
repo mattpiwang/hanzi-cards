@@ -555,20 +555,29 @@ kbd {
 
 .traits { margin-top: .8rem; }
 
+/* Le carré 田字格 : visible directement, un appui dessus lance l'animation.
+   Les deux axes du carré d'écriture chinois sont dessinés en dégradés. */
 .traits-box {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6rem;
   background: var(--panel-2);
   border: 1px solid var(--line);
   border-radius: 12px;
-  /* Le 田字格 : les deux axes du carré d'écriture chinois */
+  cursor: pointer;
+  transition: border-color .2s, transform .12s;
   background-image:
     linear-gradient(to right, transparent calc(50% - .5px), var(--line) calc(50% - .5px), var(--line) calc(50% + .5px), transparent calc(50% + .5px)),
     linear-gradient(to bottom, transparent calc(50% - .5px), var(--line) calc(50% - .5px), var(--line) calc(50% + .5px), transparent calc(50% + .5px));
 }
 
-.traits-actions { display: flex; gap: .5rem; justify-content: center; margin-top: .7rem; flex-wrap: wrap; }
+.traits-box:hover { border-color: var(--accent); }
+.traits-box:active { transform: scale(.985); }
+.traits-box .traits-note { margin: 0; }
 
 .traits-note { text-align: center; color: var(--dim); font-size: .82rem; margin: .6rem 0 0; }
 
