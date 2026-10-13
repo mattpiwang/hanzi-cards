@@ -757,6 +757,15 @@
       state.view = state.cards.slice();
     }
 
+    /* ?char=好 : la recherche de la page Thèmes renvoie ici sur un caractère
+       précis. On garde tout le paquet et on se place simplement dessus, pour
+       pouvoir continuer la révision à partir de là. */
+    if (p.char) {
+      for (var k = 0; k < state.view.length; k++) {
+        if (state.view[k].char === p.char) { state.i = k; break; }
+      }
+    }
+
     el.deckName.textContent = (state.titre || data.deck || 'Jeu de cartes') +
       ' — ' + state.view.length + ' caractères';
     render();

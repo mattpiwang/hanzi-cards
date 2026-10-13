@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thèmes — 汉字</title>
-<meta name="description" content="Choisir un thème de vocabulaire et réviser uniquement ces caractères.">
+<meta name="description" content="Choisir un thème, chercher un caractère, suivre sa progression.">
 <link rel="stylesheet" href="assets/style.css">
 
 <!-- Même rattrapage que sur la page des cartes : le thème est appliqué avant
@@ -18,6 +18,7 @@
   } catch (e) { /* navigation privée : on garde le thème par défaut */ }
 })();
 </script>
+
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0e1114">
 <link rel="icon" href="icons/icon-192.png">
@@ -47,12 +48,29 @@
 
 <main class="wrap">
   <div class="page-head">
-    <h1>Réviser par thème</h1>
-    <p>Choisis un lot : l'application n'affichera que ces caractères. Ta progression
-       est conservée, et le compteur t'indique où tu en es.</p>
+    <h1>Réviser, chercher, suivre</h1>
+    <p>Choisis un lot, ou cherche un caractère par son pinyin, son sens ou l'un
+       de ses radicaux. La progression est conservée, et la prévision indique
+       ce qui revient dans les jours qui viennent.</p>
   </div>
 
-  <nav class="themes" id="themes" aria-label="Thèmes de vocabulaire"></nav>
+  <section class="bloc">
+    <h2 class="bloc-titre">Où j'en suis</h2>
+    <p class="resume" id="resume">…</p>
+    <div class="prevision" id="prevision"></div>
+  </section>
+
+  <section class="bloc">
+    <h2 class="bloc-titre">Chercher</h2>
+    <input type="search" id="recherche" class="recherche" autocomplete="off"
+           placeholder="caractère, pinyin, sens, radical…" aria-label="Chercher une carte">
+    <nav class="themes" id="resultats" hidden aria-label="Résultats de la recherche"></nav>
+  </section>
+
+  <section class="bloc">
+    <h2 class="bloc-titre">Réviser par thème</h2>
+    <nav class="themes" id="themes" aria-label="Thèmes de vocabulaire"></nav>
+  </section>
 
   <p><a class="back-link" href="index.html">← Retour aux cartes (tout le jeu)</a></p>
 </main>
@@ -62,7 +80,10 @@
   'use strict';
 
   var STORE_KEY = 'hanzi-cards-v1';
-  var MAITRISE = 21;  // trois semaines d'intervalle : la carte est sue
+  var MAITRISE = 21;   // trois semaines d'intervalle : la carte est sue
+  var JOUR = 86400000;
+
+  var CARTES = [];
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -70,17 +91,26 @@
     });
   }
 
-  /* La progression vit dans le même stockage que l'application : on la relit
-     simplement ici pour afficher où en est chaque thème. */
   function progression() {
     try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { return {}; }
   }
 
+  function aujourdhui() { return new Date().toISOString().slice(0, 10); }
+
+  /* L'état d'une carte, dans les mêmes termes que l'application (SM-2). */
+  function etatDe(c, prog) {
+    var p = prog[c.char];
+    return {
+      n: p ? (p.n || 0) : 0,
+      i: p ? (p.i || 0) : 0,
+      due: p ? (p.due || '') : '',
+      sue: !!(p && p.i >= MAITRISE),
+      aRevoir: !p || !p.due || p.due <= aujourdhui()
+    };
+  }
+
   function suesDans(lot, prog) {
-    return lot.filter(function (c) {
-      var p = prog[c.char];
-      return p && p.i >= MAITRISE;
-    }).length;
+    return lot.filter(function (c) { return etatDe(c, prog).sue; }).length;
   }
 
   function ligne(nom, total, sues, href) {
@@ -96,41 +126,139 @@
     '</a>';
   }
 
-  function afficher(data) {
-    var cartes = data.cards || [];
-    var prog = progression();
-    var totalSues = suesDans(cartes, prog);
+  /* Répartition des prochaines révisions sur sept jours. Fonction pure : elle
+     ne touche pas au document, donc elle se vérifie hors navigateur. Les cartes
+     jamais vues et les retards comptent pour aujourd'hui. */
+  function courtDate(date) {
+    try { return date.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric' }); }
+    catch (e) { return date.toISOString().slice(5, 10); }
+  }
 
-    document.getElementById('total').textContent =
-      cartes.length + ' caractères · ' + totalSues + ' sue' + (totalSues > 1 ? 's' : '');
-    document.getElementById('counters').textContent = cartes.length
-      ? Math.round(totalSues / cartes.length * 100) + ' % du jeu maîtrisé'
-      : '';
-    document.getElementById('bar-fill').style.width =
-      cartes.length ? Math.round(totalSues / cartes.length * 100) + '%' : '0%';
-
-    var cats = [];
+  function prevision7(prog, cartes, depart) {
+    var base = (depart === undefined) ? Date.now() : depart;
+    var jours = [];
+    for (var d = 0; d < 7; d++) {
+      var date = new Date(base + d * JOUR);
+      jours.push({
+        cle: date.toISOString().slice(0, 10),
+        nom: d === 0 ? "aujourd'hui" : courtDate(date),
+        n: 0
+      });
+    }
     cartes.forEach(function (c) {
+      var due = etatDe(c, prog).due || jours[0].cle;
+      if (due <= jours[0].cle) { jours[0].n++; return; }
+      var cible = jours.filter(function (j) { return j.cle === due; })[0];
+      if (cible) { cible.n++; }
+    });
+    return jours;
+  }
+
+  /* ---------- statistiques ---------- */
+
+  function afficherStats(prog) {
+    var aRevoir = CARTES.filter(function (c) { return etatDe(c, prog).aRevoir; }).length;
+    var sues = suesDans(CARTES, prog);
+    var pct = CARTES.length ? Math.round(sues / CARTES.length * 100) : 0;
+
+    document.getElementById('resume').innerHTML =
+      '<strong>' + aRevoir + '</strong> à revoir aujourd\'hui · ' +
+      '<strong>' + sues + '</strong> sues sur ' + CARTES.length +
+      ' (' + pct + ' % du jeu)';
+
+    var jours = prevision7(prog, CARTES);
+
+    var max = 1;
+    jours.forEach(function (j) { if (j.n > max) { max = j.n; } });
+    document.getElementById('prevision').innerHTML = jours.map(function (j) {
+      return '<div class="jour">' +
+        '<span class="j-nom">' + esc(j.nom) + '</span>' +
+        '<span class="t-bar"><span style="width:' + Math.round(j.n / max * 100) + '%"></span></span>' +
+        '<span class="j-n">' + j.n + '</span>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- lots de vocabulaire ---------- */
+
+  function afficherLots(prog) {
+    var cats = [];
+    CARTES.forEach(function (c) {
       if (cats.indexOf(c.category) === -1) { cats.push(c.category); }
     });
 
     var html = '';
-    html += ligne('Toutes les cartes', cartes.length, totalSues, 'index.html');
+    html += ligne('Toutes les cartes', CARTES.length, suesDans(CARTES, prog), 'index.html');
 
-    var aujourdhui = new Date().toISOString().slice(0, 10);
-    var aRevoir = cartes.filter(function (c) {
-      var p = prog[c.char];
-      return !p || p.due <= aujourdhui;
-    });
-    html += ligne('Cartes à revoir', aRevoir.length, null, 'index.html?review=1');
+    var aRevoir = CARTES.filter(function (c) { return etatDe(c, prog).aRevoir; });
+    html += ligne('À revoir aujourd\'hui', aRevoir.length, null, 'index.html?review=1');
 
     cats.forEach(function (cat) {
-      var lot = cartes.filter(function (c) { return c.category === cat; });
+      var lot = CARTES.filter(function (c) { return c.category === cat; });
       html += ligne(cat, lot.length, suesDans(lot, prog),
         'index.html?theme=' + encodeURIComponent(cat));
     });
 
     document.getElementById('themes').innerHTML = html;
+  }
+
+  /* ---------- recherche ---------- */
+
+  function chercher(terme) {
+    var q = String(terme || '').trim().toLowerCase();
+    var zone = document.getElementById('resultats');
+    if (!q) { zone.hidden = true; zone.innerHTML = ''; return; }
+
+    var prog = progression();
+    var trouvees = CARTES.filter(function (c) {
+      var texte = [c.char, c.pinyin, c.meaning || '', c.meaningEn || ''];
+      if (c.components) {
+        c.components.forEach(function (t) { texte.push(t[0], t[1]); });
+      }
+      return texte.join(' ').toLowerCase().indexOf(q) !== -1;
+    }).slice(0, 40);
+
+    zone.hidden = false;
+    if (!trouvees.length) {
+      zone.innerHTML = '<p class="traits-note">Aucun résultat pour « ' + esc(q) + ' ».</p>';
+      return;
+    }
+    zone.innerHTML = trouvees.map(function (c) {
+      var e = etatDe(c, prog);
+      return '<a class="theme-row" href="index.html?char=' + encodeURIComponent(c.char) + '">' +
+        '<span class="t-glyphe">' + esc(c.char) + '</span>' +
+        '<span class="t-main">' +
+          '<span class="t-name">' + esc(c.pinyin || '') + '</span>' +
+          '<span class="t-count">' + esc(c.meaning || 'sens à compléter') + '</span>' +
+        '</span>' +
+        (e.sue ? '<span class="t-ok">sue</span>' : '') +
+      '</a>';
+    }).join('');
+  }
+
+  /* ---------- démarrage ---------- */
+
+  function afficher(data) {
+    CARTES = data.cards || [];
+    var prog = progression();
+    var sues = suesDans(CARTES, prog);
+
+    document.getElementById('total').textContent =
+      CARTES.length + ' caractères · ' + sues + ' sue' + (sues > 1 ? 's' : '');
+    document.getElementById('counters').textContent = CARTES.length
+      ? Math.round(sues / CARTES.length * 100) + ' % du jeu maîtrisé'
+      : '';
+    document.getElementById('bar-fill').style.width =
+      CARTES.length ? Math.round(sues / CARTES.length * 100) + '%' : '0%';
+
+    afficherStats(prog);
+    afficherLots(prog);
+
+    var champ = document.getElementById('recherche');
+    champ.addEventListener('input', function () { chercher(champ.value); });
+    champ.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { champ.value = ''; chercher(''); }
+    });
   }
 
   fetch('data/cards.json', { cache: 'no-store' })
