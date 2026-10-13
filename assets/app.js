@@ -693,10 +693,14 @@
   /*  Écouteurs                                                          */
   /* ------------------------------------------------------------------ */
 
-  el.card.addEventListener('click', function () {
+  el.card.addEventListener('click', function (e) {
     /* Un glissement se termine parfois par un clic : on l'ignore, sinon la
        carte se retournerait juste après avoir été jugée. */
     if (geste.avaleClic) { return; }
+    /* Les commandes posées SUR le verso (ordre des traits, rejouer l'animation)
+       sont dans la carte : sans ce filtre, leur clic remonterait jusqu'ici et
+       retournerait la carte. On laisse aussi tranquille toute la zone de dessin. */
+    if (e.target.closest && (e.target.closest('[data-action]') || e.target.closest('.traits'))) { return; }
     flip();
   });
   el.card.addEventListener('keydown', function (e) {
