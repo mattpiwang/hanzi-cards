@@ -6,9 +6,12 @@
    http://<IP-du-PC>:8002 (l'IP du PC vue du téléphone), le navigateur le
    refuse : l'app fonctionne, mais sans mode hors ligne. */
 
-var CACHE = 'hanzi-cards-v4';
+var CACHE = 'hanzi-cards-v5';
 
-/* Tout ce dont l'app a besoin pour démarrer sans réseau. */
+/* Tout ce dont l'app a besoin pour démarrer sans réseau.
+   Les tracés (data/strokes.json) et la bibliothèque hanzi-writer ne sont PAS
+   listés : ils sont lourds et facultatifs. Le gestionnaire de requêtes plus bas
+   les met en cache au premier usage. */
 var ASSETS = [
   './',
   './index.html',

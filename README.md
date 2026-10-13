@@ -119,6 +119,18 @@ la largeur, la carte part de son côté avant de passer à la suivante. Un appui
 bref sans déplacement reste un retournement. Le geste est **horizontal
 uniquement** : le défilement vertical du verso continue de fonctionner.
 
+**L'ordre des traits** s'anime à la demande, depuis un bouton au verso. La
+bibliothèque [hanzi-writer](https://hanziwriter.org) (36 Ko) et les tracés
+(`data/strokes.json`, 494 Ko, extraits de **Make Me a Hanzi**) ne sont
+téléchargés qu'au premier usage — le reste du temps, ils ne coûtent rien.
+« Rejouer » relance l'animation, « Tracer au doigt » passe en mode quiz. Le
+carré 田字格 est dessiné en CSS, et les couleurs du tracé sont lues dans les
+variables CSS : l'animation suit donc le thème clair comme le sombre.
+
+⚠️ La version « un seul fichier » (§ 5-B) ne propose **pas** cette animation :
+elle y ajouterait ~530 Ko. Elle est réservée à la version servie (serveur local,
+ou GitHub Pages).
+
 **Au clavier** : `Espace` retourne · `←` `→` naviguent · `1` à revoir · `2` je sais.
 
 ---

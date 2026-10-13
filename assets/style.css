@@ -480,6 +480,29 @@ kbd {
   .touch-only { display: inline; }
 }
 
+/* ---------- ordre des traits ---------- */
+
+.traits-bloc { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
+
+.traits { margin-top: .8rem; }
+
+.traits-box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  /* Le 田字格 : les deux axes du carré d'écriture chinois */
+  background-image:
+    linear-gradient(to right, transparent calc(50% - .5px), var(--line) calc(50% - .5px), var(--line) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(to bottom, transparent calc(50% - .5px), var(--line) calc(50% - .5px), var(--line) calc(50% + .5px), transparent calc(50% + .5px));
+}
+
+.traits-actions { display: flex; gap: .5rem; justify-content: center; margin-top: .7rem; flex-wrap: wrap; }
+
+.traits-note { text-align: center; color: var(--dim); font-size: .82rem; margin: .6rem 0 0; }
+
 /* ---------- commandes ---------- */
 
 .verdicts { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; }

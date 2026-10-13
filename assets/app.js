@@ -142,12 +142,26 @@
         '</section>'
       : '';
 
+    /* L'ordre des traits. Absent de la version « un seul fichier » : elle
+       n'embarque ni la bibliothèque (36 Ko) ni les tracés (494 Ko). */
+    var traitsHTML = monoFichier ? '' :
+      '<section class="traits-bloc">' +
+        '<button class="btn" data-action="traits" type="button">✍️ Ordre des traits</button>' +
+        '<div class="traits" id="traits" hidden>' +
+          '<div class="traits-box" id="traits-box"></div>' +
+          '<div class="traits-actions">' +
+            '<button class="btn" data-action="traits-rejouer" type="button">Rejouer</button>' +
+            '<button class="btn" data-action="traits-tracer" type="button">Tracer au doigt</button>' +
+          '</div>' +
+        '</div>' +
+      '</section>';
+
     return '' +
       '<div class="back-head">' +
         '<div class="pinyin tone-' + toneOf(c.pinyin) + '">' + esc(c.pinyin) + '</div>' +
         '<div class="meaning">' + sens + '</div>' +
       '</div>' +
-      compsHTML + wordsHTML + etymoHTML +
+      compsHTML + wordsHTML + etymoHTML + traitsHTML +
       (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '');
   }
 
@@ -163,6 +177,7 @@
     }
 
     el.front.textContent = c.char;
+    writer = null;   // le dessin précédent disparaît avec le contenu réécrit
     el.back.innerHTML = backHTML(c);
     el.back.scrollTop = 0;
 
@@ -407,6 +422,88 @@
     appliquerTheme(themeActuel());   // le script du <head> l'a déjà posé : on synchronise l'interrupteur
     themeBtn.addEventListener('click', function () {
       appliquerTheme(themeActuel() === 'clair' ? 'sombre' : 'clair');
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Ordre des traits (hanzi-writer)                                    */
+  /* ------------------------------------------------------------------ */
+
+  /* Tout arrive à la demande : la bibliothèque (36 Ko) et les tracés (494 Ko)
+     ne sont téléchargés que si on demande l'animation. La version « un seul
+     fichier » ne les embarque pas — d'où monoFichier. */
+  var monoFichier = !!window.__CARDS__;
+  var biblioPrete = false;
+  var traces = null;
+  var writer = null;
+
+  function chargerBibliotheque(fait, rate) {
+    if (biblioPrete) { fait(); return; }
+    var s = document.createElement('script');
+    s.src = 'assets/hanzi-writer.min.js';
+    s.onload = function () { biblioPrete = true; fait(); };
+    s.onerror = rate;
+    document.head.appendChild(s);
+  }
+
+  function chargerTraces(fait, rate) {
+    if (traces) { fait(); return; }
+    fetch('data/strokes.json')
+      .then(function (r) { if (!r.ok) { throw new Error(r.status); } return r.json(); })
+      .then(function (d) { traces = d; fait(); })
+      .catch(rate);
+  }
+
+  function couleurCSS(nom, secours) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(nom);
+    return (v && v.trim()) || secours;
+  }
+
+  function afficherTraits() {
+    var zone = document.getElementById('traits');
+    var boite = document.getElementById('traits-box');
+    if (!zone || !boite || !current()) { return; }
+    zone.hidden = false;
+    boite.innerHTML = '<p class="traits-note">chargement…</p>';
+
+    function pret() {
+      var c = current();
+      var donnees = c && traces ? traces[c.char] : null;
+      boite.innerHTML = '';
+      if (!donnees) {
+        boite.innerHTML = '<p class="traits-note">Pas de tracé pour ce caractère.</p>';
+        return;
+      }
+      writer = HanziWriter.create(boite, c.char, {
+        width: 198, height: 198, padding: 8,
+        showOutline: false,
+        strokeColor: couleurCSS('--accent', '#d8b26a'),
+        drawingColor: couleurCSS('--txt', '#ffffff'),
+        highlightColor: couleurCSS('--ok', '#3ecf8e'),
+        strokeAnimationSpeed: 1,
+        delayBetweenStrokes: 200,
+        charDataLoader: function (car, onComplete) { onComplete(donnees); }
+      });
+      writer.animateCharacter();
+    }
+
+    function echec() {
+      boite.innerHTML = '<p class="traits-note">Tracés indisponibles : cette animation demande la version servie par un serveur.</p>';
+    }
+
+    chargerBibliotheque(function () { chargerTraces(pret, echec); }, echec);
+  }
+
+  /* Un seul écouteur, posé sur le verso : le contenu est réécrit à chaque
+     carte, mais l'élément qui le contient, lui, ne change pas. */
+  if (!monoFichier) {
+    el.back.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-action]');
+      if (!b) { return; }
+      var action = b.getAttribute('data-action');
+      if (action === 'traits') { afficherTraits(); }
+      else if (action === 'traits-rejouer' && writer) { writer.animateCharacter(); }
+      else if (action === 'traits-tracer' && writer) { writer.quiz(); }
     });
   }
 
