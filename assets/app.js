@@ -221,8 +221,8 @@
     var traitsHTML = monoFichier ? '' :
       '<section class="traits-bloc">' +
         '<div class="traits" id="traits">' +
-          '<div class="traits-box" id="traits-box">' +
-            '<p class="traits-note">appuie ici pour voir l\'ordre des traits</p>' +
+          '<div class="traits-box" id="traits-box" title="Appuie pour voir l\'ordre des traits">' +
+            '<p class="traits-note"><span class="traits-icon" aria-hidden="true">☝️</span></p>' +
           '</div>' +
         '</div>' +
       '</section>';
@@ -640,6 +640,25 @@
     return (v && v.trim()) || secours;
   }
 
+  /* Le clic vient-il du carré 田字格 ?
+
+     On interroge le CHEMIN de l'événement, pas les ancêtres actuels de la cible :
+     au premier appui le contenu du carré est réécrit, donc la cible peut avoir
+     été retirée du document entre-temps — et un élément détaché n'a plus
+     d'ancêtres, si bien que target.closest('.traits') renverrait null et le clic
+     remonterait retourner la carte. Le chemin, lui, est figé à l'émission. */
+  function dansLesTraits(e) {
+    if (e.composedPath) {
+      var chemin = e.composedPath();
+      for (var i = 0; i < chemin.length; i++) {
+        var n = chemin[i];
+        if (n && n.classList && n.classList.contains('traits')) { return true; }
+      }
+      return false;
+    }
+    return !!(e.target && e.target.closest && e.target.closest('.traits'));
+  }
+
   /* Prépare le dessin de la carte affichée, puis joue l'animation. Un appui
      suivant relance l'animation déjà en place, sans tout reconstruire. */
   function animerTraits() {
@@ -647,10 +666,17 @@
     var c = current();
     if (!boite || !c) { return; }
 
+    function message(texte) {
+      // On remplace le texte du noeud existant : pas de noeud retiré en plein clic.
+      var note = boite.querySelector('.traits-note');
+      if (note) { note.textContent = texte; }
+      else { boite.innerHTML = '<p class="traits-note">' + texte + '</p>'; }
+    }
+
     function jouer() {
       var donnees = traces ? traces[c.char] : null;
       if (!donnees) {
-        boite.innerHTML = '<p class="traits-note">Pas de tracé pour ce caractère.</p>';
+        message('Pas de tracé pour ce caractère.');
         return;
       }
       if (writer && carteDessinee === c.char) { writer.animateCharacter(); return; }
@@ -670,21 +696,22 @@
     }
 
     function echec() {
-      boite.innerHTML = '<p class="traits-note">Tracés indisponibles : cette animation demande la version servie par un serveur.</p>';
+      message('Tracés indisponibles : cette animation demande la version servie par un serveur.');
     }
 
-    if (!biblioPrete || !traces) {
-      boite.innerHTML = '<p class="traits-note">chargement…</p>';
-    }
+    if (!biblioPrete || !traces) { message('⏳'); }
     chargerBibliotheque(function () { chargerTraces(jouer, echec); }, echec);
   }
 
   /* Un seul écouteur, posé sur le verso : son contenu est réécrit à chaque
      carte, mais l'élément qui le contient ne change pas. Un appui dans le carré
-     田字格 — et nulle part ailleurs — lance l'animation. */
+     田字格 — et nulle part ailleurs — lance l'animation, et on arrête là la
+     remontée du clic : le gestionnaire de la carte n'a rien à y faire. */
   if (!monoFichier) {
     el.back.addEventListener('click', function (e) {
-      if (e.target.closest && e.target.closest('.traits')) { animerTraits(); }
+      if (!dansLesTraits(e)) { return; }
+      e.stopPropagation();
+      animerTraits();
     });
   }
 
@@ -698,7 +725,7 @@
     if (geste.avaleClic) { return; }
     /* Le carré 田字格 est DANS la carte : sans ce filtre, l'appui qui lance
        l'animation remonterait jusqu'ici et retournerait la carte. */
-    if (e.target.closest && e.target.closest('.traits')) { return; }
+    if (dansLesTraits(e)) { return; }
     flip();
   });
   el.card.addEventListener('keydown', function (e) {

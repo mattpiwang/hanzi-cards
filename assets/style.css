@@ -579,6 +579,20 @@ kbd {
 .traits-box:active { transform: scale(.985); }
 .traits-box .traits-note { margin: 0; }
 
+/* L'invite : une main, index levé, qui appelle l'appui. Le mouvement est
+   coupé par la règle prefers-reduced-motion plus bas. */
+.traits-icon {
+  display: inline-block;
+  font-size: 2.6rem;
+  line-height: 1;
+  animation: invite 1.9s ease-in-out infinite;
+}
+
+@keyframes invite {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
 .traits-note { text-align: center; color: var(--dim); font-size: .82rem; margin: .6rem 0 0; }
 
 /* ---------- commandes ---------- */
