@@ -183,6 +183,17 @@ kbd {
 }
 .menu-panel[hidden] { display: none; }
 
+/* Titre de groupe dans le menu : juger, parcourir, progression, apparence */
+.menu-titre {
+  margin: .85rem .7rem .2rem;
+  font-size: .62rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.menu-titre:first-child { margin-top: .3rem; }
 .menu-panel a,
 .menu-item {
   appearance: none;
@@ -200,7 +211,6 @@ kbd {
 .menu-panel a:hover,
 .menu-item:hover { background: var(--panel-2); }
 
-.menu-sep { height: 1px; margin: .3rem .4rem; background: var(--line); }
 
 /* ---------- interrupteur 阴 / 阳 ---------- */
 

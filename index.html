@@ -51,19 +51,23 @@
       </button>
       <div class="menu-panel" id="menu-panel" hidden>
         <!-- Les deux jugements portent sur la carte affichée -->
+        <p class="menu-titre">Cette carte</p>
         <button id="again" class="menu-item warn" type="button">À revoir <kbd>1</kbd></button>
         <button id="known" class="menu-item ok" type="button">Je sais <kbd>2</kbd></button>
-        <div class="menu-sep" aria-hidden="true"></div>
+
+        <p class="menu-titre">Parcourir</p>
         <a href="theme.html">Thèmes de vocabulaire</a>
         <a href="index.html?review=1">Cartes à revoir</a>
         <a href="index.html">Toutes les cartes</a>
-        <div class="menu-sep" aria-hidden="true"></div>
         <button id="shuffle" class="menu-item" type="button">Mélanger</button>
+
+        <p class="menu-titre">Progression</p>
         <button id="reset" class="menu-item" type="button">Réinitialiser la progression</button>
-        <button id="export" class="menu-item" type="button">💾 Sauvegarder ma progression</button>
-        <button id="import" class="menu-item" type="button">📥 Restaurer une sauvegarde</button>
+        <button id="export" class="menu-item" type="button">Sauvegarder</button>
+        <button id="import" class="menu-item" type="button">Restaurer</button>
         <input type="file" id="import-file" accept="application/json,.json" hidden>
-        <div class="menu-sep" aria-hidden="true"></div>
+
+        <p class="menu-titre">Apparence</p>
         <!-- 阴 l'ombre, 阳 la lumière : le curseur indique le mode en cours -->
         <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
           <span class="sw-yin" aria-hidden="true">阴</span>

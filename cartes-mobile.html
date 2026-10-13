@@ -191,6 +191,17 @@ kbd {
 }
 .menu-panel[hidden] { display: none; }
 
+/* Titre de groupe dans le menu : juger, parcourir, progression, apparence */
+.menu-titre {
+  margin: .85rem .7rem .2rem;
+  font-size: .62rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.menu-titre:first-child { margin-top: .3rem; }
 .menu-panel a,
 .menu-item {
   appearance: none;
@@ -208,7 +219,6 @@ kbd {
 .menu-panel a:hover,
 .menu-item:hover { background: var(--panel-2); }
 
-.menu-sep { height: 1px; margin: .3rem .4rem; background: var(--line); }
 
 /* ---------- interrupteur 阴 / 阳 ---------- */
 
@@ -695,16 +705,20 @@ kbd {
       </button>
       <div class="menu-panel" id="menu-panel" hidden>
         <!-- Les deux jugements portent sur la carte affichée -->
+        <p class="menu-titre">Cette carte</p>
         <button id="again" class="menu-item warn" type="button">À revoir <kbd>1</kbd></button>
         <button id="known" class="menu-item ok" type="button">Je sais <kbd>2</kbd></button>
-        <div class="menu-sep" aria-hidden="true"></div>
-        <div class="menu-sep" aria-hidden="true"></div>
+
+        <p class="menu-titre">Parcourir</p>
         <button id="shuffle" class="menu-item" type="button">Mélanger</button>
+
+        <p class="menu-titre">Progression</p>
         <button id="reset" class="menu-item" type="button">Réinitialiser la progression</button>
-        <button id="export" class="menu-item" type="button">💾 Sauvegarder ma progression</button>
-        <button id="import" class="menu-item" type="button">📥 Restaurer une sauvegarde</button>
+        <button id="export" class="menu-item" type="button">Sauvegarder</button>
+        <button id="import" class="menu-item" type="button">Restaurer</button>
         <input type="file" id="import-file" accept="application/json,.json" hidden>
-        <div class="menu-sep" aria-hidden="true"></div>
+
+        <p class="menu-titre">Apparence</p>
         <!-- 阴 l'ombre, 阳 la lumière : le curseur indique le mode en cours -->
         <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
           <span class="sw-yin" aria-hidden="true">阴</span>
