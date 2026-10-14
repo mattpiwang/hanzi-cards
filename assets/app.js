@@ -261,8 +261,9 @@
         '<div class="meaning">' + sens + '</div>' +
       '</div>' +
       suivi +
-      compsHTML + wordsHTML + etymoHTML + traitsHTML +
-      (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '');
+      compsHTML + wordsHTML + etymoHTML +
+      (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '') +
+      traitsHTML;
   }
 
   function render() {
@@ -280,7 +281,7 @@
       var sortie = monoFichier ? '' :
         '<br><br><a class="back-link" href="index.html">Voir toutes les cartes de la collection</a>';
       el.back.innerHTML = '<p class="meaning">' + esc(raison) + sortie + '</p>';
-      el.position.textContent = '';
+      if (el.position) { el.position.textContent = ''; }
       updateStats();
       return;
     }
@@ -299,15 +300,17 @@
        Le niveau n'est pas répété s'il porte déjà le nom de la catégorie. */
     var ou = c.category || '';
     if (c.niveau && c.niveau !== ou) { ou = c.niveau + (ou ? ' · ' + ou : ''); }
-    el.position.textContent = 'Carte ' + (state.i + 1) + ' / ' + state.view.length + (ou ? ' · ' + ou : '');
+    if (el.position) { el.position.textContent = 'Carte ' + (state.i + 1) + ' / ' + state.view.length + (ou ? ' · ' + ou : ''); }
     updateStats();
   }
 
   function updateStats() {
     var total = state.cards.length;
     var known = masteredCount();
-    el.counters.textContent = state.view.length + ' carte' + (state.view.length > 1 ? 's' : '') +
-      ' · ' + toReviewCount() + ' à revoir · ' + known + ' sue' + (known > 1 ? 's' : '');
+    if (el.counters) {
+      el.counters.textContent = state.view.length + ' carte' + (state.view.length > 1 ? 's' : '') +
+        ' · ' + toReviewCount() + ' à revoir · ' + known + ' sue' + (known > 1 ? 's' : '');
+    }
     el.bar.style.width = total ? Math.round(known / total * 100) + '%' : '0%';
   }
 
@@ -895,7 +898,7 @@
     /* Le niveau remplace le nom générique du paquet : « HSK 2 — 125 caractères »
        est plus utile que « Hanzi — caractères chinois ». */
     var quoi = state.titre || data.niveau || data.deck || 'Jeu de cartes';
-    el.deckName.textContent = quoi + ' — ' + state.view.length + ' caractères';
+    if (el.deckName) { el.deckName.textContent = quoi + ' — ' + state.view.length + ' caractères'; }
     render();
   }
 
@@ -903,7 +906,7 @@
      cas le plus courant est une ancienne version gardée en cache, qui réclame un
      fichier renommé depuis (data/cards.json devenu data/cards-hsk1.json). */
   function fail(err) {
-    el.deckName.textContent = 'Erreur';
+    if (el.deckName) { el.deckName.textContent = 'Erreur'; }
     /* On retourne la carte pour montrer le message : sans ça il restait caché
        derrière un recto qui ne répond pas au clic (il n'y a pas de carte). */
     el.front.textContent = '—';
@@ -930,7 +933,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '71';
+  var VERSION = '79';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -953,33 +956,6 @@
 
   /* Le menu indique le niveau en cours d'un petit trait doré et d'un ✓. */
   /* La version, affichée dans Réglages : elle dit ce que le navigateur a vraiment chargé. */
-  /* Mesures affichées dans Réglages : elles disent en clair ce que le navigateur
-     calcule vraiment — largeur de la fenêtre, de la barre, et marges gauche/droite
-     de la feuille ouverte. C'est ce qui permet de trancher un écart d'affichage
-     sans ouvrir la console. */
-  function afficherMesures() {
-    var ligne = document.getElementById('mesures');
-    if (!ligne) { return; }
-    var barre = document.querySelector('.bas');
-    if (!barre) { return; }
-    var b = barre.getBoundingClientRect();
-    var texte = 'fenêtre ' + Math.round(window.innerWidth) + ' · barre ' + b.width.toFixed(1) + ' × ' + b.height.toFixed(1);
-    var ouvertes = document.querySelectorAll('.feuille:not([hidden])');
-    for (var i = 0; i < ouvertes.length; i++) {
-      var f = ouvertes[i].getBoundingClientRect();
-      texte += ' · ' + ouvertes[i].getAttribute('data-feuille')
-             + ' g' + (f.left - b.left).toFixed(1)
-             + ' d' + (b.right - f.right).toFixed(1);
-    }
-    ligne.textContent = texte;
-  }
-
-  /* On remesure après chaque clic (l'ouverture d'une feuille se fait sur un clic)
-     et à chaque redimensionnement. Pas besoin de toucher aux fonctions existantes. */
-  document.addEventListener('click', function () { setTimeout(afficherMesures, 0); }, true);
-  window.addEventListener('resize', afficherMesures);
-  afficherMesures();
-
   function afficherVersion() {
     var v = document.getElementById('version');
     if (v) { v.textContent = VERSION; }

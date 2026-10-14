@@ -20,10 +20,19 @@
 
   --radius: 18px;
   /* Pile de polices chinoises : KaiTi (calligraphique) si présent, sinon YaHei */
-  --cjk: "KaiTi", "STKaiti", "Kaiti SC", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", serif;
+  --cjk: "KaiTi", "Kaiti SC", "STKaiti", "SimSun", "Noto Serif SC", "Songti SC",
+         "Microsoft YaHei", "Noto Sans SC", "PingFang SC", serif;
   /* Dit au navigateur quel theme on utilise : ascenseurs et controles natifs suivent. */
   color-scheme: dark;
 }
+
+/* Le calcul des dimensions, pour TOUS les thèmes.
+   Cette règle était enfermée dans le bloc [data-theme="clair"] : le thème sombre
+   restait donc en content-box, où width: 100% s'AJOUTE au padding au lieu de
+   l'inclure. D'où une barre plus large que la fenêtre en sombre, des hauteurs
+   qui comptaient la bordure en plus, et des icônes de tailles différentes.
+   Elle est maintenant globale — c'est la même géométrie dans les deux thèmes. */
+*, *::before, *::after { box-sizing: border-box; }
 
 /* Mode clair : « papier de riz ». Les fibres sont dessinées en CSS — deux
    dégradés répétés très pâles — donc aucune image à charger. */
@@ -82,10 +91,6 @@ body {
 /* Trois détails qui ne passent pas par des variables */
 [data-theme="clair"] .glyph { color: #211d16; text-shadow: 0 6px 24px rgba(80, 60, 20, .12); }
 [data-theme="clair"] .etext { color: #4a4235; }
-[data-theme="clair"] 
-
-* { box-sizing: border-box; }
-
 /* Réserve la place de l'ascenseur : la page ne se décale plus quand il apparaît. */
 body {
   margin: 0;
@@ -391,6 +396,10 @@ kbd {
   transform: rotateY(180deg);
   background: var(--panel);
   overflow-y: auto;
+  /* Colonne flex : la section de l'ordre des traits est poussée au fond de la
+     carte par son margin-top: auto (voir .traits-bloc). */
+  display: flex;
+  flex-direction: column;
   gap: .2rem;
   cursor: default;
 }
@@ -541,7 +550,7 @@ kbd {
 
 /* ---------- ordre des traits ---------- */
 
-.traits-bloc { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
+.traits-bloc { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: auto;     /* colle la section au bas de la carte (la ligne de separation reste) */ }
 
 .traits { margin-top: .8rem; display: flex; flex-direction: column; align-items: center; gap: .55rem; }
 
@@ -655,8 +664,6 @@ kbd {
 }
 
 .foot .top-inner { flex-wrap: wrap; }
-.foot .pos { margin-left: auto; color: var(--dim); font-size: .8rem; }
-
 .pos { font-variant-numeric: tabular-nums; }
 
 /* ---------- accessibilité et petits écrans ---------- */
@@ -700,28 +707,6 @@ kbd {
   box-shadow: 0 -10px 30px rgba(0, 0, 0, .45);
   padding: .3rem .6rem calc(.3rem + env(safe-area-inset-bottom, 0px));
 }
-
-.bas-info {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: .5rem;
-  margin: 0;
-  padding: .1rem .4rem 0;
-  color: var(--dim);
-  font-size: .76rem;
-  line-height: 1.4;
-  /* Hauteur figée : sans elle, la ligne d'informations mesure un ou deux pixels
-     de plus dans un thème que dans l'autre. La barre grandit, la page devient
-     défilable, un ascenseur apparaît et vole 19 px de large : deux écarts pour
-     une seule cause. */
-  min-width: 0;           /* son contenu ne force plus la largeur de la barre */
-  height: 18px;           /* en px : la hauteur ne depend plus de la taille de police */
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.bas-info .pos { margin-left: .2rem; }
 
 .bas .bar {
   height: 3px;
@@ -851,5 +836,3 @@ kbd {
 /* Le numero de version, discret, dans Reglages : il dit ce que le navigateur a charge. */
 .version { margin: .7rem .6rem .2rem; color: var(--dim); font-size: .7rem; opacity: .8; }
 
-/* Les mesures affichées dans Réglages, en tout petit. */
-.mesures { margin: .15rem .6rem .35rem; color: var(--dim); font-size: .68rem; line-height: 1.5; font-variant-numeric: tabular-nums; }
