@@ -930,7 +930,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '61';
+  var VERSION = '71';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -953,6 +953,33 @@
 
   /* Le menu indique le niveau en cours d'un petit trait doré et d'un ✓. */
   /* La version, affichée dans Réglages : elle dit ce que le navigateur a vraiment chargé. */
+  /* Mesures affichées dans Réglages : elles disent en clair ce que le navigateur
+     calcule vraiment — largeur de la fenêtre, de la barre, et marges gauche/droite
+     de la feuille ouverte. C'est ce qui permet de trancher un écart d'affichage
+     sans ouvrir la console. */
+  function afficherMesures() {
+    var ligne = document.getElementById('mesures');
+    if (!ligne) { return; }
+    var barre = document.querySelector('.bas');
+    if (!barre) { return; }
+    var b = barre.getBoundingClientRect();
+    var texte = 'fenêtre ' + Math.round(window.innerWidth) + ' · barre ' + b.width.toFixed(1) + ' × ' + b.height.toFixed(1);
+    var ouvertes = document.querySelectorAll('.feuille:not([hidden])');
+    for (var i = 0; i < ouvertes.length; i++) {
+      var f = ouvertes[i].getBoundingClientRect();
+      texte += ' · ' + ouvertes[i].getAttribute('data-feuille')
+             + ' g' + (f.left - b.left).toFixed(1)
+             + ' d' + (b.right - f.right).toFixed(1);
+    }
+    ligne.textContent = texte;
+  }
+
+  /* On remesure après chaque clic (l'ouverture d'une feuille se fait sur un clic)
+     et à chaque redimensionnement. Pas besoin de toucher aux fonctions existantes. */
+  document.addEventListener('click', function () { setTimeout(afficherMesures, 0); }, true);
+  window.addEventListener('resize', afficherMesures);
+  afficherMesures();
+
   function afficherVersion() {
     var v = document.getElementById('version');
     if (v) { v.textContent = VERSION; }

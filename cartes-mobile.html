@@ -6,22 +6,6 @@
 <title>Cartes — 汉字</title>
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
 <style>
-/* L'ascenseur du document
-   -----------------------
-   Masquer l'ascenseur (`scrollbar-width: none`, `::-webkit-scrollbar`) ne marche
-   pas partout : selon le moteur, un ascenseur classique apparaît malgré tout et
-   vole alors ~19 px de large. D'un thème à l'autre, la barre du bas changeait
-   donc de largeur (678 puis 680, 1109 puis 1128…).
-
-   La seule façon d'obtenir une largeur IDENTIQUE dans tous les cas est de
-   réserver la place des deux côtés, en permanence : que l'ascenseur soit là ou
-   non, la largeur disponible ne bouge plus, et le contenu reste centré.
-
-   Les feuilles gardent leur propre défilement : elles, elles peuvent déborder. */
-html {
-  scrollbar-gutter: stable both-edges;
-}
-
 /* Cartes français / chinois — feuille de style unique, aucune dépendance. */
 
 :root {
@@ -79,6 +63,22 @@ html {
        l'autre, quand la page devenait défilable ;
      - un ascenseur visible sur une page qui tient dans l'écran n'apporte rien.
    Les feuilles, elles, gardent le leur : elles peuvent vraiment déborder. */
+
+/* La page est faite pour tenir dans l'écran : la carte prend la place restante,
+   la barre ne se comprime jamais, les feuilles défilent toutes seules.
+   On empêche donc le document de défiler — et c'est aussi la seule façon d'avoir
+   des dimensions IDENTIQUES dans les deux thèmes : la largeur d'un ascenseur
+   dépend du jeu de couleurs (color-scheme: dark donne un ascenseur en
+   surimpression, large de 0 px, alors que light en donne un classique de ~19 px).
+   Tout ce qui réservait sa place produisait donc deux résultats différents.
+   Sans ascenseur du tout, la question ne se pose plus.
+
+   Filet de sécurité : sur une fenêtre vraiment basse, on rend le défilement. */
+html, body { height: 100%; overflow: hidden; }
+
+@media (max-height: 430px) {
+  html, body { height: auto; overflow: auto; }
+}
 
 body {
   background-color: var(--bg);
@@ -695,13 +695,16 @@ kbd {
      quand la carte, protegee par son min-height, refusait de se reduire. */
   flex: 0 0 auto;
   width: 100%;                        /* pleine largeur : plus de plafond a 680 px */
+  /* Sans ce min-width: 0, un element flex garde une largeur minimale egale a
+     celle de son contenu : la barre s'elargissait donc avec le texte des
+     compteurs (« 0 sues » puis « 250 sues »), et depassait la fenetre. */
+  min-width: 0;
   margin: 0;
   background: var(--panel);
-  border: 0;
-  border-top: 1px solid var(--line);
-  /* Sur fond sombre, une ombre noire ne se voit pas : c'est cette arête claire
-     qui détache la barre de la page. */
-  border-top-color: rgba(255, 255, 255, .07);
+  /* Une seule declaration de bordure haute. Le theme sombre est celui de base :
+     une arete claire detache la barre de la page, alors qu'une ombre noire sur
+     fond noir ne se verrait pas. Le theme clair ne change que la couleur. */
+  border-top: 1px solid rgba(255, 255, 255, .07);
   box-shadow: 0 -10px 30px rgba(0, 0, 0, .45);
   padding: .3rem .6rem calc(.3rem + env(safe-area-inset-bottom, 0px));
 }
@@ -720,7 +723,8 @@ kbd {
      de plus dans un thème que dans l'autre. La barre grandit, la page devient
      défilable, un ascenseur apparaît et vole 19 px de large : deux écarts pour
      une seule cause. */
-  height: 1.1rem;
+  min-width: 0;           /* son contenu ne force plus la largeur de la barre */
+  height: 18px;           /* en px : la hauteur ne depend plus de la taille de police */
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   overflow: hidden;
@@ -855,6 +859,9 @@ kbd {
 /* Le numero de version, discret, dans Reglages : il dit ce que le navigateur a charge. */
 .version { margin: .7rem .6rem .2rem; color: var(--dim); font-size: .7rem; opacity: .8; }
 
+/* Les mesures affichées dans Réglages, en tout petit. */
+.mesures { margin: .15rem .6rem .35rem; color: var(--dim); font-size: .68rem; line-height: 1.5; font-variant-numeric: tabular-nums; }
+
 </style>
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
@@ -969,6 +976,7 @@ kbd {
       </button>
     </div>
     <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2</span></p>
+    <p class="mesures" id="mesures"></p>
   </footer>
 
 <script>window.__CARDS__ = {
@@ -10787,7 +10795,7 @@ kbd {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '61';
+  var VERSION = '71';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -10810,6 +10818,33 @@ kbd {
 
   /* Le menu indique le niveau en cours d'un petit trait doré et d'un ✓. */
   /* La version, affichée dans Réglages : elle dit ce que le navigateur a vraiment chargé. */
+  /* Mesures affichées dans Réglages : elles disent en clair ce que le navigateur
+     calcule vraiment — largeur de la fenêtre, de la barre, et marges gauche/droite
+     de la feuille ouverte. C'est ce qui permet de trancher un écart d'affichage
+     sans ouvrir la console. */
+  function afficherMesures() {
+    var ligne = document.getElementById('mesures');
+    if (!ligne) { return; }
+    var barre = document.querySelector('.bas');
+    if (!barre) { return; }
+    var b = barre.getBoundingClientRect();
+    var texte = 'fenêtre ' + Math.round(window.innerWidth) + ' · barre ' + b.width.toFixed(1) + ' × ' + b.height.toFixed(1);
+    var ouvertes = document.querySelectorAll('.feuille:not([hidden])');
+    for (var i = 0; i < ouvertes.length; i++) {
+      var f = ouvertes[i].getBoundingClientRect();
+      texte += ' · ' + ouvertes[i].getAttribute('data-feuille')
+             + ' g' + (f.left - b.left).toFixed(1)
+             + ' d' + (b.right - f.right).toFixed(1);
+    }
+    ligne.textContent = texte;
+  }
+
+  /* On remesure après chaque clic (l'ouverture d'une feuille se fait sur un clic)
+     et à chaque redimensionnement. Pas besoin de toucher aux fonctions existantes. */
+  document.addEventListener('click', function () { setTimeout(afficherMesures, 0); }, true);
+  window.addEventListener('resize', afficherMesures);
+  afficherMesures();
+
   function afficherVersion() {
     var v = document.getElementById('version');
     if (v) { v.textContent = VERSION; }
