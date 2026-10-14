@@ -1,4 +1,4 @@
-﻿<#
+<#
     ==========================================================================
     traduire.ps1 — traduit les fiches importées en français, par Ziya
     ==========================================================================
@@ -27,12 +27,13 @@
         data/traductions-etymo.json   { "爱": "Une main qui offre son cœur…", ... }
 
     Le fichier de sortie est complété après CHAQUE lot : une interruption ne
-    fait rien perdre, il suffit de relancer. L'ancien cards.json est sauvegardé
+    fait rien perdre, il suffit de relancer. L'ancien fichier de fiches est sauvegardé
     dans data/cards.backup.json avant toute écriture.
 #>
 [CmdletBinding()]
 param(
     [ValidateSet('sens', 'etymo')] [string]$Quoi = 'sens',
+    [string]$Fichier,          # fiches à traduire (défaut : data\cards.json)
     [int]$Taille = 25,
     [int]$Limit = 0,
     [switch]$AppliquerSeul,
@@ -42,9 +43,17 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $root = $PSScriptRoot
-$cardsPath = Join-Path $root 'data\cards.json'
-$sortie = Join-Path $root ("data\traductions-$Quoi.json")
-$promptPath = Join-Path $env:TEMP "dsh-prompt-$Quoi.txt"
+# Le fichier de fiches : celui du niveau de base par défaut, ou celui demandé
+# (-Fichier data\cards-hsk2.json). Les noms des fichiers produits en découlent,
+# pour que deux niveaux ne s'écrasent pas l'un l'autre.
+if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards.json' }
+elseif (-not [IO.Path]::IsPathRooted($Fichier)) { $Fichier = Join-Path $root $Fichier }
+$cardsPath = $Fichier
+$suffixe = ''
+$feuille = Split-Path $cardsPath -Leaf
+if ($feuille -ne 'cards.json') { $suffixe = '-' + ($feuille -replace '^cards-', '' -replace '\.json$', '') }
+$sortie = Join-Path $root ("data\traductions-$Quoi$suffixe.json")
+$promptPath = Join-Path $env:TEMP "dsh-prompt-$Quoi$suffixe.txt"
 $utf8 = New-Object Text.UTF8Encoding($false)
 $utf8Bom = New-Object Text.UTF8Encoding($true)
 
@@ -221,5 +230,5 @@ Copy-Item $cardsPath (Join-Path $root 'data\cards.backup.json') -Force
 [IO.File]::WriteAllText($cardsPath, ($doc | ConvertTo-Json -Depth 8), $utf8)
 
 Write-Host ""
-Write-Host "Applique dans cards.json : $appliquees fiche(s)" -ForegroundColor Green
+Write-Host "Applique dans $feuille : $appliquees fiche(s)" -ForegroundColor Green
 Write-Host "Pense a relancer build-mobile.ps1, puis a committer." -ForegroundColor DarkGray

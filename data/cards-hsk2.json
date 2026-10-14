@@ -1,0 +1,3111 @@
+{
+    "deck":  "Hanzi — caractères chinois",
+    "note":  "Fiches françaises écrites à la main, complétées par la base libre Make Me a Hanzi (définitions et étymologies en anglais).",
+    "schema":  {
+                   "components":  "[caractère, glose, rôle] — rôle = sens | son | composant",
+                   "etymology":  "[type, explication]",
+                   "words":  "[mot, pinyin, traduction]",
+                   "meaningEn":  "définition anglaise, utilisée si aucune traduction française n\u0027est fournie"
+               },
+    "cards":  [
+                  {
+                      "char":  "啊",
+                      "pinyin":  "a",
+                      "meaningEn":  "ah, exclamatory particle",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "sens"
+                                         ],
+                                         [
+                                             "阿",
+                                             "particule initiale, préfixe",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "口 donne le sens ; 阿 donne la prononciation. (indice : bouche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "ah, particule d\u0027exclamation",
+                      "etymologyEn":  "口 donne le sens ; 阿 donne la prononciation. (indice : mouth)"
+                  },
+                  {
+                      "char":  "交",
+                      "pinyin":  "jiāo",
+                      "meaningEn":  "to connect, to deliver, to exchange, to intersect, to mix",
+                      "category":  "HSK 2",
+                      "radical":  "亠",
+                      "components":  [
+                                         [
+                                             "六",
+                                             "six",
+                                             "composant"
+                                         ],
+                                         [
+                                             "乂",
+                                             "gouverner, contrôler, nourrir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une personne aux jambes croisées"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "relier, livrer, échanger",
+                      "etymologyEn":  "A person with crossed (intersecting) legs"
+                  },
+                  {
+                      "char":  "晴",
+                      "pinyin":  "qíng",
+                      "meaningEn":  "clear weather, fine weather",
+                      "category":  "HSK 2",
+                      "radical":  "日",
+                      "components":  [
+                                         [
+                                             "日",
+                                             "soleil, jour",
+                                             "sens"
+                                         ],
+                                         [
+                                             "青",
+                                             "bleu, vert, jeune",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "日 donne le sens ; 青 donne la prononciation. (indice : soleil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "temps clair, beau temps",
+                      "etymologyEn":  "日 donne le sens ; 青 donne la prononciation. (indice : sun)"
+                  },
+                  {
+                      "char":  "希",
+                      "pinyin":  "xī",
+                      "meaningEn":  "rare, to hope for, to strive for, to expect",
+                      "category":  "HSK 2",
+                      "radical":  "巾",
+                      "components":  [
+                                         [
+                                             "乂",
+                                             "gouverner, contrôler, nourrir",
+                                             "composant"
+                                         ],
+                                         [
+                                             "布",
+                                             "coton, lin, textiles",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "rare, espérer, souhaiter",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "帮",
+                      "pinyin":  "bāng",
+                      "meaningEn":  "to help, to assist, to support, to defend, party, gang",
+                      "category":  "HSK 2",
+                      "radical":  "巾",
+                      "components":  [
+                                         [
+                                             "邦",
+                                             "pays, nation, État",
+                                             "composant"
+                                         ],
+                                         [
+                                             "巾",
+                                             "tissu, rideau, mouchoir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Le drapeau 巾 d\u0027une nation 邦 ; 邦 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "aider, soutenir, groupe",
+                      "etymologyEn":  "A nation\u0027s 邦 flag 巾; 邦 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "教",
+                      "pinyin":  "jiào",
+                      "meaningEn":  "school, education",
+                      "category":  "HSK 2",
+                      "radical":  "攵",
+                      "components":  [
+                                         [
+                                             "孝",
+                                             "piété filiale, deuil",
+                                             "son"
+                                         ],
+                                         [
+                                             "攵",
+                                             "main qui frappe",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "攵 donne le sens ; 孝 donne la prononciation. (indice : écriture)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "école, éducation, enseigner",
+                      "etymologyEn":  "攵 donne le sens ; 孝 donne la prononciation. (indice : script)"
+                  },
+                  {
+                      "char":  "球",
+                      "pinyin":  "qiú",
+                      "meaningEn":  "ball, globe, sphere, round",
+                      "category":  "HSK 2",
+                      "radical":  "王",
+                      "components":  [
+                                         [
+                                             "王",
+                                             "roi, souverain, royal",
+                                             "sens"
+                                         ],
+                                         [
+                                             "求",
+                                             "chercher, demander, exiger",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "王 donne le sens ; 求 donne la prononciation. (indice : jade)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "ballon, sphère, balle",
+                      "etymologyEn":  "王 donne le sens ; 求 donne la prononciation. (indice : jade)"
+                  },
+                  {
+                      "char":  "洗",
+                      "pinyin":  "xǐ",
+                      "meaningEn":  "to bathe, to rinse, to wash",
+                      "category":  "HSK 2",
+                      "radical":  "氵",
+                      "components":  [
+                                         [
+                                             "氵",
+                                             "eau",
+                                             "sens"
+                                         ],
+                                         [
+                                             "先",
+                                             "premier, ancien, précédent",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "氵 donne le sens ; 先 donne la prononciation. (indice : eau)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "laver, rincer, baigner",
+                      "etymologyEn":  "氵 donne le sens ; 先 donne la prononciation. (indice : water)"
+                  },
+                  {
+                      "char":  "备",
+                      "pinyin":  "bèi",
+                      "meaningEn":  "to prepare, to get ready, to equip, ready, perfect",
+                      "category":  "HSK 2",
+                      "radical":  "夂",
+                      "components":  [
+                                         [
+                                             "夂",
+                                             "pied",
+                                             "composant"
+                                         ],
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Aller 夂 au champ 田 pour préparer la récolte"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "préparer, équiper, prêt",
+                      "etymologyEn":  "To go 夂 to the farm 田 to prepare for a harvest"
+                  },
+                  {
+                      "char":  "介",
+                      "pinyin":  "jiè",
+                      "meaningEn":  "agent, go-between, intermediary, to introduce, shell, armor",
+                      "category":  "HSK 2",
+                      "radical":  "人",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une frontière 八 séparant les gens 人"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "intermédiaire, présenter, carapace",
+                      "etymologyEn":  "A border 八 dividing people 人"
+                  },
+                  {
+                      "char":  "然",
+                      "pinyin":  "rán",
+                      "meaningEn":  "certainly, naturally, suddenly",
+                      "category":  "HSK 2",
+                      "radical":  "灬",
+                      "components":  [
+                                         [
+                                             "肰",
+                                             "viande de chien",
+                                             "son"
+                                         ],
+                                         [
+                                             "灬",
+                                             "feu",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "灬 donne le sens ; 肰 donne la prononciation. (indice : feu)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "certes, naturellement, soudain",
+                      "etymologyEn":  "灬 donne le sens ; 肰 donne la prononciation. (indice : fire)"
+                  },
+                  {
+                      "char":  "笑",
+                      "pinyin":  "xiào",
+                      "meaningEn":  "to smile, to laugh, to giggle, to snicker",
+                      "category":  "HSK 2",
+                      "radical":  "⺮",
+                      "components":  [
+                                         [
+                                             "⺮",
+                                             "bambou",
+                                             "composant"
+                                         ],
+                                         [
+                                             "夭",
+                                             "jeune, énergique",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une personne 夭 au large sourire ⺮"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "sourire, rire, ricaner",
+                      "etymologyEn":  "A person 夭 with a big grin ⺮"
+                  },
+                  {
+                      "char":  "比",
+                      "pinyin":  "bǐ",
+                      "meaningEn":  "to compare, liken, comparison, than",
+                      "category":  "HSK 2",
+                      "radical":  "比",
+                      "components":  [
+                                         [
+                                             "匕",
+                                             "cuillère, louche, couteau",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Deux cuillères 匕 côte à côte ; 匕 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "comparer, comparaison, que",
+                      "etymologyEn":  "Two spoons 匕 side-by-side; 匕 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "进",
+                      "pinyin":  "jìn",
+                      "meaningEn":  "to advance, to make progress, to come in, to enter",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "sens"
+                                         ],
+                                         [
+                                             "井",
+                                             "puits, mine",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "辶 donne le sens ; 井 donne la prononciation. (indice : marche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "entrer, avancer, progresser",
+                      "etymologyEn":  "辶 donne le sens ; 井 donne la prononciation. (indice : walk)"
+                  },
+                  {
+                      "char":  "让",
+                      "pinyin":  "ràng",
+                      "meaningEn":  "to allow, to permit, to yield",
+                      "category":  "HSK 2",
+                      "radical":  "讠",
+                      "components":  [
+                                         [
+                                             "讠",
+                                             "parole",
+                                             "sens"
+                                         ],
+                                         [
+                                             "上",
+                                             "au-dessus, supérieur",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "讠 donne le sens ; 上 donne la prononciation. (indice : parole)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "laisser, permettre, céder",
+                      "etymologyEn":  "讠 donne le sens ; 上 donne la prononciation. (indice : speech)"
+                  },
+                  {
+                      "char":  "姓",
+                      "pinyin":  "xìng",
+                      "meaningEn":  "name, family name, surname, clan, people",
+                      "category":  "HSK 2",
+                      "radical":  "女",
+                      "components":  [
+                                         [
+                                             "女",
+                                             "femme, fille, femelle",
+                                             "sens"
+                                         ],
+                                         [
+                                             "生",
+                                             "vie, naissance, croissance",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "女 donne le sens ; 生 donne la prononciation. (indice : femme)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "nom de famille, patronyme",
+                      "etymologyEn":  "女 donne le sens ; 生 donne la prononciation. (indice : woman)"
+                  },
+                  {
+                      "char":  "笔",
+                      "pinyin":  "bǐ",
+                      "meaningEn":  "pen, pencil, writing brush, to compose, to write, Hanzi stroke",
+                      "category":  "HSK 2",
+                      "radical":  "⺮",
+                      "components":  [
+                                         [
+                                             "⺮",
+                                             "bambou",
+                                             "composant"
+                                         ],
+                                         [
+                                             "毛",
+                                             "poil, fourrure, plume",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un bâton de bambou ⺮ à pointe de poils 毛"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "stylo, pinceau, trait",
+                      "etymologyEn":  "A bamboo rod ⺮ tipped with hair 毛"
+                  },
+                  {
+                      "char":  "近",
+                      "pinyin":  "jìn",
+                      "meaningEn":  "to approach, near, close, intimate",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "sens"
+                                         ],
+                                         [
+                                             "斤",
+                                             "livre (≈500 g), hache",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "辶 donne le sens ; 斤 donne la prononciation. (indice : marche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "proche, près, intime",
+                      "etymologyEn":  "辶 donne le sens ; 斤 donne la prononciation. (indice : walk)"
+                  },
+                  {
+                      "char":  "肉",
+                      "pinyin":  "ròu",
+                      "meaningEn":  "meat, flesh",
+                      "category":  "HSK 2",
+                      "radical":  "肉",
+                      "components":  [
+                                         [
+                                             "冂",
+                                             "vaste, large",
+                                             "composant"
+                                         ],
+                                         [
+                                             "仌",
+                                             "gelé, glacé",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "De la viande sur les côtes d\u0027un animal"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "viande, chair",
+                      "etymologyEn":  "Meat on the ribs of an animal"
+                  },
+                  {
+                      "char":  "颜",
+                      "pinyin":  "yán",
+                      "meaningEn":  "face, facial appearance",
+                      "category":  "HSK 2",
+                      "radical":  "页",
+                      "components":  [
+                                         [
+                                             "彦",
+                                             "élégant",
+                                             "son"
+                                         ],
+                                         [
+                                             "页",
+                                             "page, feuille",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "页 donne le sens ; 彦 donne la prononciation. (indice : tête)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "visage, face, mine",
+                      "etymologyEn":  "页 donne le sens ; 彦 donne la prononciation. (indice : head)"
+                  },
+                  {
+                      "char":  "表",
+                      "pinyin":  "biǎo",
+                      "meaningEn":  "to show, to express, to display, outside, appearance, a watch",
+                      "category":  "HSK 2",
+                      "radical":  "衣",
+                      "components":  [
+                                         [
+                                             "毛",
+                                             "poil, fourrure, plume",
+                                             "composant"
+                                         ],
+                                         [
+                                             "衣",
+                                             "tissu, vêtements, habit",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un vêtement 衣 de fourrure 毛 ; un châle"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "montrer, extérieur, montre",
+                      "etymologyEn":  "Fur 毛 clothing 衣; a shawl or wrap"
+                  },
+                  {
+                      "char":  "经",
+                      "pinyin":  "jīng",
+                      "meaningEn":  "the classics, to experience, to undergo",
+                      "category":  "HSK 2",
+                      "radical":  "纟",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "纟 donne le sens ; 工 donne la prononciation. (indice : fil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "classiques, expérimenter, subir",
+                      "etymologyEn":  "纟 donne le sens ; 工 donne la prononciation. (indice : thread)"
+                  },
+                  {
+                      "char":  "色",
+                      "pinyin":  "sè",
+                      "meaningEn":  "color, tint, hue, shade, beauty, form, sex",
+                      "category":  "HSK 2",
+                      "radical":  "色",
+                      "components":  [
+                                         [
+                                             "⺈",
+                                             "?",
+                                             "composant"
+                                         ],
+                                         [
+                                             "巴",
+                                             "désirer, souhaiter",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "(indice : ce qu\u0027une personne ⺈ désire 巴)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "couleur, teinte, beauté",
+                      "etymologyEn":  "(indice : What a person ⺈ desires 巴)"
+                  },
+                  {
+                      "char":  "眼",
+                      "pinyin":  "yǎn",
+                      "meaningEn":  "eyelet, hole, opening",
+                      "category":  "HSK 2",
+                      "radical":  "目",
+                      "components":  [
+                                         [
+                                             "目",
+                                             "œil, regarder, voir",
+                                             "sens"
+                                         ],
+                                         [
+                                             "艮",
+                                             "obtus, dur, coriace",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "目 donne le sens ; 艮 donne la prononciation. (indice : œil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "œillet, trou, ouverture",
+                      "etymologyEn":  "目 donne le sens ; 艮 donne la prononciation. (indice : eye)"
+                  },
+                  {
+                      "char":  "别",
+                      "pinyin":  "bié",
+                      "meaningEn":  "to separate, to distinguish, to classify, to leave, other, do not, must not",
+                      "category":  "HSK 2",
+                      "radical":  "刂",
+                      "components":  [
+                                         [
+                                             "另",
+                                             "autre, distinct, séparé",
+                                             "composant"
+                                         ],
+                                         [
+                                             "刂",
+                                             "couteau",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Tracer des frontières 刂 entre les catégories 另"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "séparer, distinguer, autre, ne pas",
+                      "etymologyEn":  "To draw boundaries 刂 between classes 另"
+                  },
+                  {
+                      "char":  "睛",
+                      "pinyin":  "jīng",
+                      "meaningEn":  "eyeball, pupil",
+                      "category":  "HSK 2",
+                      "radical":  "目",
+                      "components":  [
+                                         [
+                                             "目",
+                                             "œil, regarder, voir",
+                                             "sens"
+                                         ],
+                                         [
+                                             "青",
+                                             "bleu, vert, jeune",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "目 donne le sens ; 青 donne la prononciation. (indice : œil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "globe oculaire, pupille",
+                      "etymologyEn":  "目 donne le sens ; 青 donne la prononciation. (indice : eye)"
+                  },
+                  {
+                      "char":  "绍",
+                      "pinyin":  "shào",
+                      "meaningEn":  "to connect, to introduce",
+                      "category":  "HSK 2",
+                      "radical":  "纟",
+                      "components":  [
+                                         [
+                                             "纟",
+                                             "soie",
+                                             "sens"
+                                         ],
+                                         [
+                                             "召",
+                                             "décret, convoquer, appeler",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "纟 donne le sens ; 召 donne la prononciation. (indice : fil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "relier, présenter",
+                      "etymologyEn":  "纟 donne le sens ; 召 donne la prononciation. (indice : thread)"
+                  },
+                  {
+                      "char":  "药",
+                      "pinyin":  "yào",
+                      "meaningEn":  "drugs, medicine, the leaf of the Dahurian angelica plant",
+                      "category":  "HSK 2",
+                      "radical":  "艹",
+                      "components":  [
+                                         [
+                                             "艹",
+                                             "herbe",
+                                             "sens"
+                                         ],
+                                         [
+                                             "约",
+                                             "traité, pacte, accord",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "艹 donne le sens ; 约 donne la prononciation. (indice : plante)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "médicament, remède, drogue",
+                      "etymologyEn":  "艹 donne le sens ; 约 donne la prononciation. (indice : plant)"
+                  },
+                  {
+                      "char":  "步",
+                      "pinyin":  "bù",
+                      "meaningEn":  "walk, stroll, pace, march, to make progress",
+                      "category":  "HSK 2",
+                      "radical":  "止",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Forme moderne de 歨 ; poser un pied 止 devant l\u0027autre"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "pas, marche, avancer",
+                      "etymologyEn":  "Modern form of 歨; putting one foot 止 in front of the other"
+                  },
+                  {
+                      "char":  "酒",
+                      "pinyin":  "jiǔ",
+                      "meaningEn":  "wine, spirits, liquor, alcohol",
+                      "category":  "HSK 2",
+                      "radical":  "酉",
+                      "components":  [
+                                         [
+                                             "氵",
+                                             "eau",
+                                             "composant"
+                                         ],
+                                         [
+                                             "酉",
+                                             "vin, alcool, vase",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une jarre 酉 de vin 氵 ; 酉 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "vin, alcool, liqueur",
+                      "etymologyEn":  "A jar 酉 of wine 氵; 酉 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "身",
+                      "pinyin":  "shēn",
+                      "meaningEn":  "body, torso, person, pregnancy",
+                      "category":  "HSK 2",
+                      "radical":  "身",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : une femme enceinte)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "corps, personne, grossesse",
+                      "etymologyEn":  "(indice : A pregnant woman)"
+                  },
+                  {
+                      "char":  "爷",
+                      "pinyin":  "yé",
+                      "meaningEn":  "grandfather, old man",
+                      "category":  "HSK 2",
+                      "radical":  "父",
+                      "components":  [
+                                         [
+                                             "父",
+                                             "père, papa",
+                                             "sens"
+                                         ],
+                                         [
+                                             "卩",
+                                             "sceau",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "父 donne le sens ; 耶 donne la prononciation. (indice : père)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "grand-père, vieil homme",
+                      "etymologyEn":  "父 donne le sens ; 耶 donne la prononciation. (indice : father)"
+                  },
+                  {
+                      "char":  "场",
+                      "pinyin":  "chǎng",
+                      "meaningEn":  "field, open space, market, square, stage",
+                      "category":  "HSK 2",
+                      "radical":  "土",
+                      "components":  [
+                                         [
+                                             "土",
+                                             "terre, sol, argile",
+                                             "sens"
+                                         ],
+                                         [
+                                             "勿",
+                                             "ne pas, sans, jamais",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "土 donne le sens ; 昜 donne la prononciation. (indice : terre)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "terrain, place, scène",
+                      "etymologyEn":  "土 donne le sens ; 昜 donne la prononciation. (indice : earth)"
+                  },
+                  {
+                      "char":  "就",
+                      "pinyin":  "jiù",
+                      "meaningEn":  "just, simply, to go to, to approach, near",
+                      "category":  "HSK 2",
+                      "radical":  "尢",
+                      "components":  [
+                                         [
+                                             "京",
+                                             "capitale",
+                                             "son"
+                                         ],
+                                         [
+                                             "尤",
+                                             "surtout, particulièrement",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "尤 donne le sens ; 京 donne la prononciation. (indice : spécialité)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "justement, aussitôt, approcher",
+                      "etymologyEn":  "尤 donne le sens ; 京 donne la prononciation. (indice : specialty)"
+                  },
+                  {
+                      "char":  "始",
+                      "pinyin":  "shǐ",
+                      "meaningEn":  "to begin, to start, beginning",
+                      "category":  "HSK 2",
+                      "radical":  "女",
+                      "components":  [
+                                         [
+                                             "女",
+                                             "femme, fille, femelle",
+                                             "sens"
+                                         ],
+                                         [
+                                             "台",
+                                             "plateforme, unité, titre",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "女 donne le sens ; 台 donne la prononciation. (indice : femme)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "commencer, début, débuter",
+                      "etymologyEn":  "女 donne le sens ; 台 donne la prononciation. (indice : woman)"
+                  },
+                  {
+                      "char":  "已",
+                      "pinyin":  "yǐ",
+                      "meaningEn":  "already, finished, to stop, then, afterwards",
+                      "category":  "HSK 2",
+                      "radical":  "己",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "déjà, fini, ensuite",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "词",
+                      "pinyin":  "cí",
+                      "meaningEn":  "phrase, expression, words, speech",
+                      "category":  "HSK 2",
+                      "radical":  "讠",
+                      "components":  [
+                                         [
+                                             "讠",
+                                             "parole",
+                                             "sens"
+                                         ],
+                                         [
+                                             "司",
+                                             "gérer, contrôler, diriger",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "讠 donne le sens ; 司 donne la prononciation. (indice : mots)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "mot, expression, parole",
+                      "etymologyEn":  "讠 donne le sens ; 司 donne la prononciation. (indice : words)"
+                  },
+                  {
+                      "char":  "咖",
+                      "pinyin":  "kā",
+                      "meaningEn":  "coffee, used in transliterations",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "sens"
+                                         ],
+                                         [
+                                             "加",
+                                             "ajouter, augmenter",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "口 donne le sens ; 加 donne la prononciation. (indice : bouche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "café, préfixe phonétique",
+                      "etymologyEn":  "口 donne le sens ; 加 donne la prononciation. (indice : mouth)"
+                  },
+                  {
+                      "char":  "试",
+                      "pinyin":  "shì",
+                      "meaningEn":  "to try, to experiment, exam, test",
+                      "category":  "HSK 2",
+                      "radical":  "讠",
+                      "components":  [
+                                         [
+                                             "讠",
+                                             "parole",
+                                             "sens"
+                                         ],
+                                         [
+                                             "式",
+                                             "formule, modèle, règle",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "讠 donne le sens ; 式 donne la prononciation. (indice : parole)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "essayer, tester, examen",
+                      "etymologyEn":  "讠 donne le sens ; 式 donne la prononciation. (indice : speech)"
+                  },
+                  {
+                      "char":  "意",
+                      "pinyin":  "yì",
+                      "meaningEn":  "thought, idea, opinion, desire, wish, meaning, intention",
+                      "category":  "HSK 2",
+                      "radical":  "心",
+                      "components":  [
+                                         [
+                                             "音",
+                                             "son, ton, prononciation",
+                                             "son"
+                                         ],
+                                         [
+                                             "心",
+                                             "cœur, esprit, âme",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "心 donne le sens ; 音 donne la prononciation. (indice : cœur)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "idée, sens, intention",
+                      "etymologyEn":  "心 donne le sens ; 音 donne la prononciation. (indice : heart)"
+                  },
+                  {
+                      "char":  "次",
+                      "pinyin":  "cì",
+                      "meaningEn":  "order, sequence, second, next, one after the other",
+                      "category":  "HSK 2",
+                      "radical":  "欠",
+                      "components":  [
+                                         [
+                                             "冫",
+                                             "glace",
+                                             "composant"
+                                         ],
+                                         [
+                                             "欠",
+                                             "manquer, devoir, souffle",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une personne 欠 bâillant plusieurs fois 冫"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "fois, ordre, suivant",
+                      "etymologyEn":  "A person 欠 yawning multiple times 冫"
+                  },
+                  {
+                      "char":  "考",
+                      "pinyin":  "kǎo",
+                      "meaningEn":  "to test, to investigate, to examine",
+                      "category":  "HSK 2",
+                      "radical":  "耂",
+                      "components":  [
+                                         [
+                                             "耂",
+                                             "vieux, âgé, expérimenté",
+                                             "sens"
+                                         ],
+                                         [
+                                             "丂",
+                                             "souffle bloqué",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "耂 donne le sens ; 丂 donne la prononciation. (indice : vieux)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "tester, examiner, enquêter",
+                      "etymologyEn":  "耂 donne le sens ; 丂 donne la prononciation. (indice : old)"
+                  },
+                  {
+                      "char":  "室",
+                      "pinyin":  "shì",
+                      "meaningEn":  "house, home, room, chamber",
+                      "category":  "HSK 2",
+                      "radical":  "宀",
+                      "components":  [
+                                         [
+                                             "宀",
+                                             "toit",
+                                             "sens"
+                                         ],
+                                         [
+                                             "至",
+                                             "atteindre, arriver, très",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "宀 donne le sens ; 至 donne la prononciation. (indice : toit)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "pièce, salle, chambre",
+                      "etymologyEn":  "宀 donne le sens ; 至 donne la prononciation. (indice : roof)"
+                  },
+                  {
+                      "char":  "因",
+                      "pinyin":  "yīn",
+                      "meaningEn":  "cause, reason, by, because",
+                      "category":  "HSK 2",
+                      "radical":  "囗",
+                      "components":  [
+                                         [
+                                             "囗",
+                                             "enceinte",
+                                             "composant"
+                                         ],
+                                         [
+                                             "大",
+                                             "grand, vaste, haut",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "cause, raison, parce que",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "从",
+                      "pinyin":  "cóng",
+                      "meaningEn":  "from, by, since, whence, through",
+                      "category":  "HSK 2",
+                      "radical":  "人",
+                      "components":  [
+                                         [
+                                             "人",
+                                             "homme, personne, gens",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une personne 人 suivant une autre"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "depuis, de, par",
+                      "etymologyEn":  "One person 人 following another"
+                  },
+                  {
+                      "char":  "裤",
+                      "pinyin":  "kù",
+                      "meaningEn":  "pants, trousers",
+                      "category":  "HSK 2",
+                      "radical":  "衤",
+                      "components":  [
+                                         [
+                                             "衤",
+                                             "vêtement",
+                                             "sens"
+                                         ],
+                                         [
+                                             "库",
+                                             "arsenal, trésorerie, entrepôt",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "衤 donne le sens ; 库 donne la prononciation. (indice : vêtements)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "pantalon, culotte",
+                      "etymologyEn":  "衤 donne le sens ; 库 donne la prononciation. (indice : clothes)"
+                  },
+                  {
+                      "char":  "舒",
+                      "pinyin":  "shū",
+                      "meaningEn":  "relaxed, comfortable, to unfold, to stretch out",
+                      "category":  "HSK 2",
+                      "radical":  "舌",
+                      "components":  [
+                                         [
+                                             "舍",
+                                             "maison, demeure, habiter",
+                                             "sens"
+                                         ],
+                                         [
+                                             "予",
+                                             "donner, accorder",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "舍 donne le sens ; 予 donne la prononciation. (indice : maison)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "détendu, confortable, étendre",
+                      "etymologyEn":  "舍 donne le sens ; 予 donne la prononciation. (indice : home)"
+                  },
+                  {
+                      "char":  "阴",
+                      "pinyin":  "yīn",
+                      "meaningEn":  "the female principle, dark, shaded, hidden, implicit, secret",
+                      "category":  "HSK 2",
+                      "radical":  "阝",
+                      "components":  [
+                                         [
+                                             "阝",
+                                             "lieu, ville, cité",
+                                             "composant"
+                                         ],
+                                         [
+                                             "月",
+                                             "lune, mois",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Le lieu 阝 de la lune 月 ; à comparer à 阳"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "yin, sombre, caché",
+                      "etymologyEn":  "The place 阝 of the moon 月; compare 阳"
+                  },
+                  {
+                      "char":  "错",
+                      "pinyin":  "cuò",
+                      "meaningEn":  "error, mistake, incorrect, wrong",
+                      "category":  "HSK 2",
+                      "radical":  "钅",
+                      "components":  [
+                                         [
+                                             "钅",
+                                             "métal",
+                                             "composant"
+                                         ],
+                                         [
+                                             "昔",
+                                             "passé, ancien, jadis",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "De l\u0027or 钅 qui fut 昔 mais est perdu"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "erreur, faute, faux",
+                      "etymologyEn":  "Gold 钅 that once was 昔 but is lost"
+                  },
+                  {
+                      "char":  "快",
+                      "pinyin":  "kuài",
+                      "meaningEn":  "speedy, rapid, quick, soon",
+                      "category":  "HSK 2",
+                      "radical":  "忄",
+                      "components":  [
+                                         [
+                                             "忄",
+                                             "cœur",
+                                             "composant"
+                                         ],
+                                         [
+                                             "夬",
+                                             "décisif, certain, séparé",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une volonté 忄 décidée 夬 ; 夬 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "rapide, vite, bientôt",
+                      "etymologyEn":  "A decisive 夬 will 忄; 夬 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "思",
+                      "pinyin":  "sī",
+                      "meaningEn":  "to think, to ponder, to consider, final particle",
+                      "category":  "HSK 2",
+                      "radical":  "心",
+                      "components":  [
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ],
+                                         [
+                                             "心",
+                                             "cœur, esprit, âme",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Peser quelque chose avec l\u0027esprit 囟 (modifié) et le cœur 心"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "penser, réfléchir, particule finale",
+                      "etymologyEn":  "Weighing something with your mind 囟 (altered) and heart 心"
+                  },
+                  {
+                      "char":  "泳",
+                      "pinyin":  "yǒng",
+                      "meaningEn":  "to swim, to dive",
+                      "category":  "HSK 2",
+                      "radical":  "氵",
+                      "components":  [
+                                         [
+                                             "氵",
+                                             "eau",
+                                             "sens"
+                                         ],
+                                         [
+                                             "永",
+                                             "long, perpétuel, éternel",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "氵 donne le sens ; 永 donne la prononciation. (indice : eau)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "nager, plonger",
+                      "etymologyEn":  "氵 donne le sens ; 永 donne la prononciation. (indice : water)"
+                  },
+                  {
+                      "char":  "但",
+                      "pinyin":  "dàn",
+                      "meaningEn":  "only, but, however, yet, still",
+                      "category":  "HSK 2",
+                      "radical":  "亻",
+                      "components":  [
+                                         [
+                                             "亻",
+                                             "personne",
+                                             "composant"
+                                         ],
+                                         [
+                                             "旦",
+                                             "aube, matin, jour",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "旦 donne la prononciation. (pas de détail)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "mais, cependant, toutefois",
+                      "etymologyEn":  "旦 donne la prononciation. (pas de détail)"
+                  },
+                  {
+                      "char":  "篮",
+                      "pinyin":  "lán",
+                      "meaningEn":  "basket, goal",
+                      "category":  "HSK 2",
+                      "radical":  "⺮",
+                      "components":  [
+                                         [
+                                             "⺮",
+                                             "bambou",
+                                             "sens"
+                                         ],
+                                         [
+                                             "监",
+                                             "superviser, diriger, contrôler",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "⺮ donne le sens ; 监 donne la prononciation. (indice : bambou)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "panier, but",
+                      "etymologyEn":  "⺮ donne le sens ; 监 donne la prononciation. (indice : bamboo)"
+                  },
+                  {
+                      "char":  "送",
+                      "pinyin":  "sòng",
+                      "meaningEn":  "to see off, to send off, to dispatch, to give",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "composant"
+                                         ],
+                                         [
+                                             "关",
+                                             "col, fermer, frontière",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une personne saluant 关 quelqu\u0027un qui s\u0027éloigne 辶"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "offrir, envoyer, raccompagner",
+                      "etymologyEn":  "A person waving 关 to someone walking away 辶"
+                  },
+                  {
+                      "char":  "游",
+                      "pinyin":  "yóu",
+                      "meaningEn":  "to wander, to travel, to tour, to roam",
+                      "category":  "HSK 2",
+                      "radical":  "氵",
+                      "components":  [
+                                         [
+                                             "氵",
+                                             "eau",
+                                             "composant"
+                                         ],
+                                         [
+                                             "斿",
+                                             "nager, se mouvoir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Nager librement 斿 à travers les mers 氵"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "voyager, errer, parcourir",
+                      "etymologyEn":  "To swim freely 斿 through the seas 氵"
+                  },
+                  {
+                      "char":  "地",
+                      "pinyin":  "de",
+                      "meaningEn":  "earth, ground, soil, land, region, structural particle used before a verb",
+                      "category":  "HSK 2",
+                      "radical":  "土",
+                      "components":  [
+                                         [
+                                             "土",
+                                             "terre, sol, argile",
+                                             "sens"
+                                         ],
+                                         [
+                                             "也",
+                                             "aussi, également",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "土 donne le sens ; 也 donne la prononciation. (indice : terre)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "terre, sol, particule",
+                      "etymologyEn":  "土 donne le sens ; 也 donne la prononciation. (indice : earth)"
+                  },
+                  {
+                      "char":  "乐",
+                      "pinyin":  "lè",
+                      "meaningEn":  "cheerful, happy, laughing, music",
+                      "category":  "HSK 2",
+                      "radical":  "丿",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Forme simplifiée de 樂, un instrument de musique avec bois 木, cordes 幺 et plectre 白"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "joyeux, content, musique",
+                      "etymologyEn":  "Simplified form of 樂, a musical instrument with wood 木, strings 幺, and a pick 白"
+                  },
+                  {
+                      "char":  "诉",
+                      "pinyin":  "sù",
+                      "meaningEn":  "to accuse, to sue, to inform, to narrate",
+                      "category":  "HSK 2",
+                      "radical":  "讠",
+                      "components":  [
+                                         [
+                                             "讠",
+                                             "parole",
+                                             "composant"
+                                         ],
+                                         [
+                                             "斥",
+                                             "gronder, réprimander",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Des paroles 讠 de reproche 斥 ; 斥 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "accuser, informer, raconter",
+                      "etymologyEn":  "Words 讠 of blame 斥; 斥 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "右",
+                      "pinyin":  "yòu",
+                      "meaningEn":  "right, right-wing",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "droite, droit",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "等",
+                      "pinyin":  "děng",
+                      "meaningEn":  "rank, grade, same, equal, to wait",
+                      "category":  "HSK 2",
+                      "radical":  "⺮",
+                      "components":  [
+                                         [
+                                             "⺮",
+                                             "bambou",
+                                             "composant"
+                                         ],
+                                         [
+                                             "寺",
+                                             "tribunal, bureau, temple",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Des lamelles de bambou ⺮ posées devant un tribunal 寺"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "attendre, égal, rang",
+                      "etymologyEn":  "Bamboo strips ⺮ laid before a court 寺"
+                  },
+                  {
+                      "char":  "累",
+                      "pinyin":  "lèi",
+                      "meaningEn":  "tired, to accumulate, to involve, bother, nuisance",
+                      "category":  "HSK 2",
+                      "radical":  "糸",
+                      "components":  [
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ],
+                                         [
+                                             "糸",
+                                             "soie, fil",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Forme simplifiée de 纍 ; élever de la soie 糸 dans les champs 畾 ; 畾 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "fatigué, accumuler, ennui",
+                      "etymologyEn":  "Simplified form of 纍; growing silk 糸 in the fields 畾; 畾 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "虽",
+                      "pinyin":  "suī",
+                      "meaningEn":  "although, even though",
+                      "category":  "HSK 2",
+                      "radical":  "虫",
+                      "components":  [
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "composant"
+                                         ],
+                                         [
+                                             "虫",
+                                             "insecte, ver, mollusque",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "bien que, quoique",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "鱼",
+                      "pinyin":  "yú",
+                      "meaningEn":  "fish",
+                      "category":  "HSK 2",
+                      "radical":  "鱼",
+                      "components":  [
+                                         [
+                                             "⺈",
+                                             "?",
+                                             "composant"
+                                         ],
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ],
+                                         [
+                                             "一",
+                                             "un, seul",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : un poisson nageant vers le haut)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "poisson",
+                      "etymologyEn":  "(indice : A fish swimming upwards)"
+                  },
+                  {
+                      "char":  "店",
+                      "pinyin":  "diàn",
+                      "meaningEn":  "shop, store, inn, hotel",
+                      "category":  "HSK 2",
+                      "radical":  "广",
+                      "components":  [
+                                         [
+                                             "广",
+                                             "abri",
+                                             "sens"
+                                         ],
+                                         [
+                                             "占",
+                                             "diviner, observer",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "广 donne le sens ; 占 donne la prononciation. (indice : bâtiment)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "magasin, boutique, hôtel",
+                      "etymologyEn":  "广 donne le sens ; 占 donne la prononciation. (indice : building)"
+                  },
+                  {
+                      "char":  "离",
+                      "pinyin":  "lí",
+                      "meaningEn":  "rare beast, strange, elegant",
+                      "category":  "HSK 2",
+                      "radical":  "禸",
+                      "components":  [
+                                         [
+                                             "亠",
+                                             "couvercle",
+                                             "composant"
+                                         ],
+                                         [
+                                             "凶",
+                                             "coupable, mauvais, funeste",
+                                             "composant"
+                                         ],
+                                         [
+                                             "禸",
+                                             "croupe, derrière",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "Un animal debout bien droit ; 亠 est la tête"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "bête rare, étrange, élégant",
+                      "etymologyEn":  "An animal standing straight; 亠 is the head"
+                  },
+                  {
+                      "char":  "所",
+                      "pinyin":  "suǒ",
+                      "meaningEn":  "place, location, \"that which\", a particle introducing a passive clause",
+                      "category":  "HSK 2",
+                      "radical":  "户",
+                      "components":  [
+                                         [
+                                             "户",
+                                             "porte, famille",
+                                             "composant"
+                                         ],
+                                         [
+                                             "斤",
+                                             "livre (≈500 g), hache",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une hache 斤 brandie contre une porte 户"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "lieu, endroit, ce que",
+                      "etymologyEn":  "An axe 斤 swung at a door 户"
+                  },
+                  {
+                      "char":  "远",
+                      "pinyin":  "yuǎn",
+                      "meaningEn":  "distant, remote, far, profound",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "sens"
+                                         ],
+                                         [
+                                             "元",
+                                             "premier, dollar, origine",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "辶 donne le sens ; 元 donne la prononciation. (indice : marche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "loin, lointain, profond",
+                      "etymologyEn":  "辶 donne le sens ; 元 donne la prononciation. (indice : walk)"
+                  },
+                  {
+                      "char":  "懂",
+                      "pinyin":  "dǒng",
+                      "meaningEn":  "to understand, to know",
+                      "category":  "HSK 2",
+                      "radical":  "忄",
+                      "components":  [
+                                         [
+                                             "忄",
+                                             "cœur",
+                                             "sens"
+                                         ],
+                                         [
+                                             "董",
+                                             "diriger, superviser",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "忄 donne le sens ; 董 donne la prononciation. (indice : esprit)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "comprendre, savoir",
+                      "etymologyEn":  "忄 donne le sens ; 董 donne la prononciation. (indice : mind)"
+                  },
+                  {
+                      "char":  "留",
+                      "pinyin":  "liú",
+                      "meaningEn":  "to stay, to remain, to preserve, to keep, to leave a message",
+                      "category":  "HSK 2",
+                      "radical":  "田",
+                      "components":  [
+                                         [
+                                             "卯",
+                                             "4e branche terrestre",
+                                             "composant"
+                                         ],
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "rester, garder, laisser",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "疼",
+                      "pinyin":  "téng",
+                      "meaningEn":  "ache, pain, to love dearly",
+                      "category":  "HSK 2",
+                      "radical":  "疒",
+                      "components":  [
+                                         [
+                                             "疒",
+                                             "maladie",
+                                             "sens"
+                                         ],
+                                         [
+                                             "冬",
+                                             "hiver, 11e mois lunaire",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "疒 donne le sens ; 冬 donne la prononciation. (indice : maladie)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "douleur, faire mal, chérir",
+                      "etymologyEn":  "疒 donne le sens ; 冬 donne la prononciation. (indice : sickness)"
+                  },
+                  {
+                      "char":  "运",
+                      "pinyin":  "yùn",
+                      "meaningEn":  "to run, ship, transport, fortune, luck",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "sens"
+                                         ],
+                                         [
+                                             "云",
+                                             "nuage, dire, parler",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "辶 donne le sens ; 云 donne la prononciation. (indice : marche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "transport, chance, mouvement",
+                      "etymologyEn":  "辶 donne le sens ; 云 donne la prononciation. (indice : walk)"
+                  },
+                  {
+                      "char":  "动",
+                      "pinyin":  "dòng",
+                      "meaningEn":  "to move, to happen, movement, action",
+                      "category":  "HSK 2",
+                      "radical":  "力",
+                      "components":  [
+                                         [
+                                             "云",
+                                             "nuage, dire, parler",
+                                             "composant"
+                                         ],
+                                         [
+                                             "力",
+                                             "force, pouvoir, capacité",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "力 donne le sens. (indice : force)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "bouger, mouvement, action",
+                      "etymologyEn":  "力 donne le sens. (indice : strength)"
+                  },
+                  {
+                      "char":  "楼",
+                      "pinyin":  "lóu",
+                      "meaningEn":  "multi-story building, floor",
+                      "category":  "HSK 2",
+                      "radical":  "木",
+                      "components":  [
+                                         [
+                                             "木",
+                                             "arbre, bois",
+                                             "sens"
+                                         ],
+                                         [
+                                             "娄",
+                                             "constellation, porter",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "木 donne le sens ; 娄 donne la prononciation. (indice : bois)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "immeuble, étage",
+                      "etymologyEn":  "木 donne le sens ; 娄 donne la prononciation. (indice : wood)"
+                  },
+                  {
+                      "char":  "踢",
+                      "pinyin":  "tī",
+                      "meaningEn":  "to kick",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+                                         [
+                                             "足",
+                                             "pied, suffire, assez",
+                                             "sens"
+                                         ],
+                                         [
+                                             "易",
+                                             "changer, échanger, transformer",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "足 donne le sens ; 易 donne la prononciation. (indice : pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "donner un coup de pied",
+                      "etymologyEn":  "足 donne le sens ; 易 donne la prononciation. (indice : foot)"
+                  },
+                  {
+                      "char":  "站",
+                      "pinyin":  "zhàn",
+                      "meaningEn":  "stand, station, to halt, to stand, website, measure word for stands and stations",
+                      "category":  "HSK 2",
+                      "radical":  "立",
+                      "components":  [
+                                         [
+                                             "立",
+                                             "se tenir, établir",
+                                             "sens"
+                                         ],
+                                         [
+                                             "占",
+                                             "diviner, observer",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "立 donne le sens ; 占 donne la prononciation. (indice : se tenir debout)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "station, arrêt, site web",
+                      "etymologyEn":  "立 donne le sens ; 占 donne la prononciation. (indice : stand)"
+                  },
+                  {
+                      "char":  "啡",
+                      "pinyin":  "fēi",
+                      "meaningEn":  "coffee, morphine",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "sens"
+                                         ],
+                                         [
+                                             "非",
+                                             "non, négatif, s\u0027opposer",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "口 donne le sens ; 非 donne la prononciation. (indice : bouche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "café, morphine",
+                      "etymologyEn":  "口 donne le sens ; 非 donne la prononciation. (indice : mouth)"
+                  },
+                  {
+                      "char":  "路",
+                      "pinyin":  "lù",
+                      "meaningEn":  "road, path, street, journey",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+                                         [
+                                             "足",
+                                             "pied, suffire, assez",
+                                             "sens"
+                                         ],
+                                         [
+                                             "各",
+                                             "individu, chacun, tous",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "足 donne le sens ; 各 donne la prononciation. (indice : pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "route, chemin, rue",
+                      "etymologyEn":  "足 donne le sens ; 各 donne la prononciation. (indice : foot)"
+                  },
+                  {
+                      "char":  "体",
+                      "pinyin":  "tǐ",
+                      "meaningEn":  "body, group, class, form, style, system",
+                      "category":  "HSK 2",
+                      "radical":  "亻",
+                      "components":  [
+                                         [
+                                             "亻",
+                                             "personne",
+                                             "composant"
+                                         ],
+                                         [
+                                             "本",
+                                             "racine, origine, base",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "corps, forme, style",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "长",
+                      "pinyin":  "zhǎng",
+                      "meaningEn":  "long, lasting, to excel in",
+                      "category":  "HSK 2",
+                      "radical":  "长",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Forme simplifiée de 長 ; un vieillard aux longs cheveux avec une canne"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "long, durable, exceller",
+                      "etymologyEn":  "Simplified form of 長; an old man with long hair and a cane"
+                  },
+                  {
+                      "char":  "夫",
+                      "pinyin":  "fū",
+                      "meaningEn":  "man, husband, worker, those",
+                      "category":  "HSK 2",
+                      "radical":  "大",
+                      "components":  [
+                                         [
+                                             "一",
+                                             "un, seul",
+                                             "composant"
+                                         ],
+                                         [
+                                             "大",
+                                             "grand, vaste, haut",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un homme 大 portant l\u0027épingle 一 de sa majorité"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "homme, mari, travailleur",
+                      "etymologyEn":  "A man 大 wearing a coming-of-age hairpin 一"
+                  },
+                  {
+                      "char":  "旅",
+                      "pinyin":  "lǚ",
+                      "meaningEn":  "journey, trip, to travel",
+                      "category":  "HSK 2",
+                      "radical":  "方",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un homme 方 voyageant avec un paquet 氏 sur le dos"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "voyage, périple, voyager",
+                      "etymologyEn":  "A man 方 traveling with a pack 氏 on his back"
+                  },
+                  {
+                      "char":  "跳",
+                      "pinyin":  "tiào",
+                      "meaningEn":  "to hop, to skip, to jump, to leap, to vault, to dance",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+                                         [
+                                             "足",
+                                             "pied, suffire, assez",
+                                             "sens"
+                                         ],
+                                         [
+                                             "兆",
+                                             "présage, méga-, million",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "足 donne le sens ; 兆 donne la prononciation. (indice : pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "sauter, bondir, danser",
+                      "etymologyEn":  "足 donne le sens ; 兆 donne la prononciation. (indice : foot)"
+                  },
+                  {
+                      "char":  "丈",
+                      "pinyin":  "zhàng",
+                      "meaningEn":  "gentleman, man, husband, unit of length equal to 3.3 meters",
+                      "category":  "HSK 2",
+                      "radical":  "一",
+                      "components":  [
+                                         [
+                                             "一",
+                                             "un, seul",
+                                             "composant"
+                                         ],
+                                         [
+                                             "又",
+                                             "et, aussi, encore",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "homme, mari, zhang (3,3 m)",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "告",
+                      "pinyin":  "gào",
+                      "meaningEn":  "to tell, to inform, to announce, to accuse",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+                                         [
+                                             "牛",
+                                             "bœuf, vache, taureau",
+                                             "composant"
+                                         ],
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Parler 口 avec la force d\u0027un bœuf 牛"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "annoncer, informer, accuser",
+                      "etymologyEn":  "To speak 口 with the force of an ox 牛"
+                  },
+                  {
+                      "char":  "绿",
+                      "pinyin":  "lǜ",
+                      "meaningEn":  "green, chlorine",
+                      "category":  "HSK 2",
+                      "radical":  "纟",
+                      "components":  [
+                                         [
+                                             "纟",
+                                             "soie",
+                                             "sens"
+                                         ],
+                                         [
+                                             "录",
+                                             "copier, noter, transcrire",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "纟 donne le sens ; 录 donne la prononciation. (indice : soie)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "vert, chlore",
+                      "etymologyEn":  "纟 donne le sens ; 录 donne la prononciation. (indice : silk)"
+                  },
+                  {
+                      "char":  "铁",
+                      "pinyin":  "tiě",
+                      "meaningEn":  "iron, strong, solid, firm",
+                      "category":  "HSK 2",
+                      "radical":  "钅",
+                      "components":  [
+                                         [
+                                             "钅",
+                                             "métal",
+                                             "sens"
+                                         ],
+                                         [
+                                             "失",
+                                             "perdre, se tromper",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "钅 donne le sens ; 失 donne la prononciation. (indice : métal)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "fer, solide, ferme",
+                      "etymologyEn":  "钅 donne le sens ; 失 donne la prononciation. (indice : metal)"
+                  },
+                  {
+                      "char":  "周",
+                      "pinyin":  "zhōu",
+                      "meaningEn":  "Zhou dynasty, circumference",
+                      "category":  "HSK 2",
+                      "radical":  "口",
+                      "components":  [
+                                         [
+                                             "冂",
+                                             "vaste, large",
+                                             "composant"
+                                         ],
+                                         [
+                                             "土",
+                                             "terre, sol, argile",
+                                             "composant"
+                                         ],
+                                         [
+                                             "口",
+                                             "bouche, entrée, ouverture",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une bordure 冂 autour d\u0027une terre 土 avec un puits 口"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "dynastie Zhou, circonférence",
+                      "etymologyEn":  "Border 冂 around land 土 with a well 口"
+                  },
+                  {
+                      "char":  "跟",
+                      "pinyin":  "gēn",
+                      "meaningEn":  "heel, to accompany, to follow, with",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+                                         [
+                                             "足",
+                                             "pied, suffire, assez",
+                                             "sens"
+                                         ],
+                                         [
+                                             "艮",
+                                             "obtus, dur, coriace",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "足 donne le sens ; 艮 donne la prononciation. (indice : pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "talon, suivre, avec",
+                      "etymologyEn":  "足 donne le sens ; 艮 donne la prononciation. (indice : foot)"
+                  },
+                  {
+                      "char":  "慢",
+                      "pinyin":  "màn",
+                      "meaningEn":  "slowly, leisurely, sluggish",
+                      "category":  "HSK 2",
+                      "radical":  "忄",
+                      "components":  [
+                                         [
+                                             "忄",
+                                             "cœur",
+                                             "sens"
+                                         ],
+                                         [
+                                             "曼",
+                                             "long, étendu, vaste",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "忄 donne le sens ; 曼 donne la prononciation. (indice : cœur)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "lent, lentement, nonchalant",
+                      "etymologyEn":  "忄 donne le sens ; 曼 donne la prononciation. (indice : heart)"
+                  },
+                  {
+                      "char":  "头",
+                      "pinyin":  "tóu",
+                      "meaningEn":  "head, chief, boss, first, top",
+                      "category":  "HSK 2",
+                      "radical":  "大",
+                      "components":  [
+                                         [
+                                             "⺀",
+                                             "glace",
+                                             "composant"
+                                         ],
+                                         [
+                                             "大",
+                                             "grand, vaste, haut",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "大 donne le sens. (indice : haut)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "tête, chef, sommet",
+                      "etymologyEn":  "大 donne le sens. (indice : high)"
+                  },
+                  {
+                      "char":  "着",
+                      "pinyin":  "zhe",
+                      "meaningEn":  "to make a move, to take action",
+                      "category":  "HSK 2",
+                      "radical":  "目",
+                      "components":  [
+                                         [
+                                             "羊",
+                                             "mouton, chèvre",
+                                             "composant"
+                                         ],
+                                         [
+                                             "目",
+                                             "œil, regarder, voir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "agir, faire un geste",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "馆",
+                      "pinyin":  "guǎn",
+                      "meaningEn":  "public building, shop, house, establishment",
+                      "category":  "HSK 2",
+                      "radical":  "饣",
+                      "components":  [
+                                         [
+                                             "饣",
+                                             "nourriture",
+                                             "composant"
+                                         ],
+                                         [
+                                             "官",
+                                             "fonctionnaire, officiel",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un bâtiment 官 public où l\u0027on sert à manger 饣 ; 官 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "édifice, boutique, maison",
+                      "etymologyEn":  "A public 官 building where food 饣 is served; 官 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "每",
+                      "pinyin":  "měi",
+                      "meaningEn":  "each, every",
+                      "category":  "HSK 2",
+                      "radical":  "母",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "母 donne la prononciation. (pas de détail)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "chaque, tous",
+                      "etymologyEn":  "母 donne la prononciation. (pas de détail)"
+                  },
+                  {
+                      "char":  "完",
+                      "pinyin":  "wán",
+                      "meaningEn":  "to complete, to finish, to settle, whole",
+                      "category":  "HSK 2",
+                      "radical":  "宀",
+                      "components":  [
+                                         [
+                                             "宀",
+                                             "toit",
+                                             "sens"
+                                         ],
+                                         [
+                                             "元",
+                                             "premier, dollar, origine",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "宀 donne le sens ; 元 donne la prononciation. (indice : toit)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "achever, finir, entier",
+                      "etymologyEn":  "宀 donne le sens ; 元 donne la prononciation. (indice : roof)"
+                  },
+                  {
+                      "char":  "准",
+                      "pinyin":  "zhǔn",
+                      "meaningEn":  "standard, accurate, to permit, to approve, to allow",
+                      "category":  "HSK 2",
+                      "radical":  "冫",
+                      "components":  [
+                                         [
+                                             "冫",
+                                             "glace",
+                                             "sens"
+                                         ],
+                                         [
+                                             "隹",
+                                             "oiseau à queue courte",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "冫 donne le sens ; 隹 donne la prononciation. (indice : eau d\u0027un niveau)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "exact, permettre, approuver",
+                      "etymologyEn":  "冫 donne le sens ; 隹 donne la prononciation. (indice : water in a spirit level)"
+                  },
+                  {
+                      "char":  "过",
+                      "pinyin":  "guò",
+                      "meaningEn":  "pass, to go across, to pass through",
+                      "category":  "HSK 2",
+                      "radical":  "辶",
+                      "components":  [
+                                         [
+                                             "辶",
+                                             "marcher",
+                                             "sens"
+                                         ],
+                                         [
+                                             "寸",
+                                             "pouce, petit",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "辶 donne le sens ; 咼 donne la prononciation. (indice : marche)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "passer, traverser, dépasser",
+                      "etymologyEn":  "辶 donne le sens ; 咼 donne la prononciation. (indice : walk)"
+                  },
+                  {
+                      "char":  "门",
+                      "pinyin":  "mén",
+                      "meaningEn":  "gate, door, entrance, opening",
+                      "category":  "HSK 2",
+                      "radical":  "门",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : une porte ou un portail ouvert)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "porte, entrée, portail",
+                      "etymologyEn":  "(indice : An open doorway or gate)"
+                  },
+                  {
+                      "char":  "万",
+                      "pinyin":  "wàn",
+                      "meaningEn":  "ten thousand, innumerable",
+                      "category":  "HSK 2",
+                      "radical":  "一",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "dix mille, innombrable",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "自",
+                      "pinyin":  "zì",
+                      "meaningEn":  "self, private, personal, from",
+                      "category":  "HSK 2",
+                      "radical":  "自",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "Un nez ; en Chine, on se désigne soi-même en montrant son nez"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "soi, personnel, depuis",
+                      "etymologyEn":  "A nose; in China, people refer to themselves by pointing to their noses"
+                  },
+                  {
+                      "char":  "黑",
+                      "pinyin":  "hēi",
+                      "meaningEn":  "black, dark, evil, sinister",
+                      "category":  "HSK 2",
+                      "radical":  "黑",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Le visage d\u0027un homme noirci par la suie d\u0027un feu 灬"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "noir, sombre, maléfique",
+                      "etymologyEn":  "A man\u0027s face blacked by soot from a fire 灬"
+                  },
+                  {
+                      "char":  "拿",
+                      "pinyin":  "ná",
+                      "meaningEn":  "to bring, to grasp, to hold, to take",
+                      "category":  "HSK 2",
+                      "radical":  "手",
+                      "components":  [
+                                         [
+                                             "合",
+                                             "combiner, joindre, unir",
+                                             "son"
+                                         ],
+                                         [
+                                             "手",
+                                             "main",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "手 donne le sens ; 合 donne la prononciation. (indice : main)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "prendre, tenir, saisir",
+                      "etymologyEn":  "手 donne le sens ; 合 donne la prononciation. (indice : hand)"
+                  },
+                  {
+                      "char":  "网",
+                      "pinyin":  "wǎng",
+                      "meaningEn":  "net, network",
+                      "category":  "HSK 2",
+                      "radical":  "网",
+                      "components":  [
+                                         [
+                                             "冂",
+                                             "vaste, large",
+                                             "composant"
+                                         ],
+                                         [
+                                             "乂",
+                                             "gouverner, contrôler, nourrir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : un filet pour prendre le poisson)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "filet, réseau",
+                      "etymologyEn":  "(indice : A net for catching fish)"
+                  },
+                  {
+                      "char":  "走",
+                      "pinyin":  "zǒu",
+                      "meaningEn":  "to walk, to run, to flee",
+                      "category":  "HSK 2",
+                      "radical":  "走",
+                      "components":  [
+                                         [
+                                             "土",
+                                             "terre, sol, argile",
+                                             "composant"
+                                         ],
+                                         [
+                                             "止",
+                                             "arrêter, cesser, retenir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Quelqu\u0027un 土 avançant de son pied 止"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "marcher, courir, fuir",
+                      "etymologyEn":  "Someone 土 stepping with their foot 止"
+                  },
+                  {
+                      "char":  "红",
+                      "pinyin":  "hóng",
+                      "meaningEn":  "red, vermillion, to blush, to flush, popular",
+                      "category":  "HSK 2",
+                      "radical":  "纟",
+                      "components":  [
+                                         [
+                                             "纟",
+                                             "soie",
+                                             "sens"
+                                         ],
+                                         [
+                                             "工",
+                                             "travail, ouvrier, labeur",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "纟 donne le sens ; 工 donne la prononciation. (indice : soie)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "rouge, vermillon, rougir",
+                      "etymologyEn":  "纟 donne le sens ; 工 donne la prononciation. (indice : silk)"
+                  },
+                  {
+                      "char":  "鸟",
+                      "pinyin":  "niǎo",
+                      "meaningEn":  "bird",
+                      "category":  "HSK 2",
+                      "radical":  "鸟",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "Forme simplifiée de 烏, un oiseau"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "oiseau",
+                      "etymologyEn":  "Simplified form of 烏, a bird"
+                  },
+                  {
+                      "char":  "往",
+                      "pinyin":  "wǎng",
+                      "meaningEn":  "to go, to depart, past, former",
+                      "category":  "HSK 2",
+                      "radical":  "彳",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "彳 donne le sens ; 王 donne la prononciation. (indice : pas)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "aller, partir, passé",
+                      "etymologyEn":  "彳 donne le sens ; 王 donne la prononciation. (indice : step)"
+                  },
+                  {
+                      "char":  "足",
+                      "pinyin":  "zú",
+                      "meaningEn":  "foot, to attain, to satisfy, enough",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : la jambe 口 au-dessus du pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "pied, suffire, assez",
+                      "etymologyEn":  "(indice : The leg 口 above the foot)"
+                  },
+                  {
+                      "char":  "花",
+                      "pinyin":  "huā",
+                      "meaningEn":  "flower, blossom, to spend (time or money)",
+                      "category":  "HSK 2",
+                      "radical":  "艹",
+                      "components":  [
+                                         [
+                                             "艹",
+                                             "herbe",
+                                             "composant"
+                                         ],
+                                         [
+                                             "化",
+                                             "changer, transformer, réformer",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une fleur 艹 éclose 化 ; 化 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "fleur, fleurir, dépenser",
+                      "etymologyEn":  "A flower 艹 in bloom 化; 化 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "旁",
+                      "pinyin":  "páng",
+                      "meaningEn":  "side, beside, close, nearby",
+                      "category":  "HSK 2",
+                      "radical":  "方",
+                      "components":  [
+                                         [
+                                             "立",
+                                             "se tenir, établir",
+                                             "sens"
+                                         ],
+                                         [
+                                             "方",
+                                             "carré, côté, région",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "立 donne le sens ; 方 donne la prononciation. (indice : se tenir debout)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "côté, à côté, près",
+                      "etymologyEn":  "立 donne le sens ; 方 donne la prononciation. (indice : stand)"
+                  },
+                  {
+                      "char":  "忘",
+                      "pinyin":  "wàng",
+                      "meaningEn":  "to forget, to miss, to neglect, to overlook",
+                      "category":  "HSK 2",
+                      "radical":  "心",
+                      "components":  [
+                                         [
+                                             "亡",
+                                             "mort, destruction, perdre",
+                                             "son"
+                                         ],
+                                         [
+                                             "心",
+                                             "cœur, esprit, âme",
+                                             "sens"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "心 donne le sens ; 亡 donne la prononciation. (indice : cœur)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "oublier, négliger",
+                      "etymologyEn":  "心 donne le sens ; 亡 donne la prononciation. (indice : heart)"
+                  },
+                  {
+                      "char":  "最",
+                      "pinyin":  "zuì",
+                      "meaningEn":  "most, extremely, exceedingly, superlative",
+                      "category":  "HSK 2",
+                      "radical":  "曰",
+                      "components":  [
+                                         [
+                                             "日",
+                                             "soleil, jour",
+                                             "composant"
+                                         ],
+                                         [
+                                             "取",
+                                             "prendre, recevoir, obtenir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Avoir lieu 取 sous le soleil 日 (c\u0027est-à-dire partout)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "le plus, extrêmement",
+                      "etymologyEn":  "To take place 取 under the sun 日 (that is, everywhere)"
+                  },
+                  {
+                      "char":  "画",
+                      "pinyin":  "huà",
+                      "meaningEn":  "picture, painting, drawing, to draw",
+                      "category":  "HSK 2",
+                      "radical":  "田",
+                      "components":  [
+                                         [
+                                             "一",
+                                             "un, seul",
+                                             "composant"
+                                         ],
+                                         [
+                                             "凵",
+                                             "récipient, contenant",
+                                             "composant"
+                                         ],
+                                         [
+                                             "田",
+                                             "champ, terre cultivée",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un tableau sur un chevalet ; à comparer à 畫, qui inclut le pinceau"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "tableau, dessin, dessiner",
+                      "etymologyEn":  "A painting on an easel; compare 畫, which includes the brush"
+                  },
+                  {
+                      "char":  "跑",
+                      "pinyin":  "pǎo",
+                      "meaningEn":  "to run, to flee, to escape",
+                      "category":  "HSK 2",
+                      "radical":  "足",
+                      "components":  [
+                                         [
+                                             "足",
+                                             "pied, suffire, assez",
+                                             "sens"
+                                         ],
+                                         [
+                                             "包",
+                                             "envelopper, paquet, emballer",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "足 donne le sens ; 包 donne la prononciation. (indice : pied)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "courir, fuir, s\u0027échapper",
+                      "etymologyEn":  "足 donne le sens ; 包 donne la prononciation. (indice : foot)"
+                  },
+                  {
+                      "char":  "望",
+                      "pinyin":  "wàng",
+                      "meaningEn":  "to expect, to hope, to look forward to",
+                      "category":  "HSK 2",
+                      "radical":  "月",
+                      "components":  [
+                                         [
+                                             "亡",
+                                             "mort, destruction, perdre",
+                                             "composant"
+                                         ],
+                                         [
+                                             "月",
+                                             "lune, mois",
+                                             "composant"
+                                         ],
+                                         [
+                                             "王",
+                                             "roi, souverain, royal",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Un roi 王 contemplant la lune 月 ; 亡 donne la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "espérer, attendre, souhaiter",
+                      "etymologyEn":  "A king 王 gazing at the moon 月; 亡 provides the pronunciation"
+                  },
+                  {
+                      "char":  "左",
+                      "pinyin":  "zuǒ",
+                      "meaningEn":  "left, unorthodox, improper",
+                      "category":  "HSK 2",
+                      "radical":  "工",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : une main gauche ; à comparer à 又)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "gauche, non conventionnel",
+                      "etymologyEn":  "(indice : A left hand; compare 又)"
+                  },
+                  {
+                      "char":  "坏",
+                      "pinyin":  "huài",
+                      "meaningEn":  "bad, rotten, spoiled, to break down",
+                      "category":  "HSK 2",
+                      "radical":  "土",
+                      "components":  [
+                                         [
+                                             "土",
+                                             "terre, sol, argile",
+                                             "sens"
+                                         ],
+                                         [
+                                             "不",
+                                             "non, pas, préfixe négatif",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "土 donne le sens ; 不 donne la prononciation. (indice : terre)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "mauvais, gâté, casser",
+                      "etymologyEn":  "土 donne le sens ; 不 donne la prononciation. (indice : earth)"
+                  },
+                  {
+                      "char":  "票",
+                      "pinyin":  "piào",
+                      "meaningEn":  "bank note, ticket, vote, a slip of paper",
+                      "category":  "HSK 2",
+                      "radical":  "示",
+                      "components":  [
+                                         [
+                                             "覀",
+                                             "ouest, occidental",
+                                             "composant"
+                                         ],
+                                         [
+                                             "示",
+                                             "autel, cérémonie, montrer",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Des flammes 覀 au-dessus d\u0027un autel 示, rappel d\u0027une tradition chinoise de brûler de la fausse monnaie en offrande"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "billet, ticket, vote",
+                      "etymologyEn":  "Flames 覀 over an altar 示, referring to a Chinese tradition of burning fake money as an offering"
+                  },
+                  {
+                      "char":  "为",
+                      "pinyin":  "wèi",
+                      "meaningEn":  "to do, to act, to handle, to govern, to be",
+                      "category":  "HSK 2",
+                      "radical":  "丶",
+                      "components":  [
+                                         [
+                                             "丶",
+                                             "point",
+                                             "composant"
+                                         ],
+                                         [
+                                             "力",
+                                             "force, pouvoir, capacité",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "—",
+                                        "Étymologie non documentée dans cette base."
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "faire, agir, être",
+                      "etymologyEn":  "Étymologie non documentée dans cette base."
+                  },
+                  {
+                      "char":  "己",
+                      "pinyin":  "jǐ",
+                      "meaningEn":  "self, oneself, personal, private, 6th heavenly stem",
+                      "category":  "HSK 2",
+                      "radical":  "己",
+                      "components":  [
+
+                                     ],
+                      "etymology":  [
+                                        "象形 — pictogramme",
+                                        "(indice : un métier à tisser avec du fil)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "soi, personnel, tronc céleste",
+                      "etymologyEn":  "(indice : A loom woven with thread)"
+                  },
+                  {
+                      "char":  "妻",
+                      "pinyin":  "qī",
+                      "meaningEn":  "wife",
+                      "category":  "HSK 2",
+                      "radical":  "女",
+                      "components":  [
+                                         [
+                                             "十",
+                                             "dix, dixième, complet",
+                                             "composant"
+                                         ],
+                                         [
+                                             "彐",
+                                             "museau, groin",
+                                             "composant"
+                                         ],
+                                         [
+                                             "女",
+                                             "femme, fille, femelle",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une femme 女 tenant un balai 十 à la main 彐"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "épouse, femme",
+                      "etymologyEn":  "A woman 女 holding a broom 十 in her hand 彐"
+                  },
+                  {
+                      "char":  "位",
+                      "pinyin":  "wèi",
+                      "meaningEn":  "seat, throne, rank, status, position, location",
+                      "category":  "HSK 2",
+                      "radical":  "亻",
+                      "components":  [
+                                         [
+                                             "亻",
+                                             "personne",
+                                             "composant"
+                                         ],
+                                         [
+                                             "立",
+                                             "se tenir, établir",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "L\u0027endroit où se tient 立 une personne 亻"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "place, rang, position",
+                      "etymologyEn":  "The place where a person 亻 stands 立"
+                  },
+                  {
+                      "char":  "记",
+                      "pinyin":  "jì",
+                      "meaningEn":  "mark, sign, to note, to record",
+                      "category":  "HSK 2",
+                      "radical":  "讠",
+                      "components":  [
+                                         [
+                                             "讠",
+                                             "parole",
+                                             "composant"
+                                         ],
+                                         [
+                                             "己",
+                                             "soi, personnel, privé",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "Une note 讠 personnelle 己 ; 己 donne aussi la prononciation"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "note, marque, enregistrer",
+                      "etymologyEn":  "A private 己 note 讠; 己 also provides the pronunciation"
+                  },
+                  {
+                      "char":  "情",
+                      "pinyin":  "qíng",
+                      "meaningEn":  "emotion, feeling, sentiment",
+                      "category":  "HSK 2",
+                      "radical":  "忄",
+                      "components":  [
+                                         [
+                                             "忄",
+                                             "cœur",
+                                             "sens"
+                                         ],
+                                         [
+                                             "青",
+                                             "bleu, vert, jeune",
+                                             "son"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "形声 — composé phonétique-sémantique",
+                                        "忄 donne le sens ; 青 donne la prononciation. (indice : cœur)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "émotion, sentiment, affection",
+                      "etymologyEn":  "忄 donne le sens ; 青 donne la prononciation. (indice : heart)"
+                  },
+                  {
+                      "char":  "舞",
+                      "pinyin":  "wǔ",
+                      "meaningEn":  "to dance, to brandish",
+                      "category":  "HSK 2",
+                      "radical":  "舛",
+                      "components":  [
+                                         [
+                                             "無",
+                                             "non, sans, privé de",
+                                             "composant"
+                                         ],
+                                         [
+                                             "舛",
+                                             "erroné, contraire",
+                                             "composant"
+                                         ]
+                                     ],
+                      "etymology":  [
+                                        "会意 — idéogramme composé",
+                                        "(indice : une main 舛 tenant un éventail)"
+                                    ],
+                      "source":  "Make Me a Hanzi",
+                      "meaning":  "danser, brandir",
+                      "etymologyEn":  "(indice : A hand 舛 holding a fan)"
+                  }
+              ]
+}
