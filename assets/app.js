@@ -933,7 +933,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '79';
+  var VERSION = '81';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -1023,7 +1023,15 @@
      navigateur le refuse, et `serviceWorker` est simplement absent. */
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('service-worker.js').catch(function () { /* silencieux */ });
+      navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
+        .then(function (enregistrement) {
+          /* On redemande tout de suite s'il existe une version plus récente.
+             updateViaCache: 'none' empêche le navigateur de servir le script du
+             worker depuis son cache HTTP : sans ça, un téléphone peut garder
+             l'ancienne version pendant des jours. */
+          if (enregistrement) { enregistrement.update(); }
+        })
+        .catch(function () { /* silencieux */ });
     });
   }
 
