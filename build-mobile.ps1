@@ -60,7 +60,7 @@ $html = $html.Replace('<link rel="manifest" href="manifest.json">', '')
 # eux, restent : ils fonctionnent tres bien hors ligne.
 $html = $html -replace '(?s)\s*<a href="(?:theme|index)\.html[^"]*"[^>]*>.*?</a>', ''
 # Le niveau n'a pas de sens dans un fichier unique : il n'y en a qu'un.
-$html = $html -replace '\s*<p class="menu-titre">Niveau</p>', ''
+$html = $html -replace '\s*<p class="feuille-titre">Niveau</p>', ''
 
 $html = $html.Replace('<title>Cartes — 汉字</title>',
                       '<title>Cartes 汉字 — hors ligne</title>')

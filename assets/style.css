@@ -1,3 +1,19 @@
+/* L'ascenseur du document
+   -----------------------
+   Masquer l'ascenseur (`scrollbar-width: none`, `::-webkit-scrollbar`) ne marche
+   pas partout : selon le moteur, un ascenseur classique apparaît malgré tout et
+   vole alors ~19 px de large. D'un thème à l'autre, la barre du bas changeait
+   donc de largeur (678 puis 680, 1109 puis 1128…).
+
+   La seule façon d'obtenir une largeur IDENTIQUE dans tous les cas est de
+   réserver la place des deux côtés, en permanence : que l'ascenseur soit là ou
+   non, la largeur disponible ne bouge plus, et le contenu reste centré.
+
+   Les feuilles gardent leur propre défilement : elles, elles peuvent déborder. */
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 /* Cartes français / chinois — feuille de style unique, aucune dépendance. */
 
 :root {
@@ -21,11 +37,14 @@
   --radius: 18px;
   /* Pile de polices chinoises : KaiTi (calligraphique) si présent, sinon YaHei */
   --cjk: "KaiTi", "STKaiti", "Kaiti SC", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", serif;
+  /* Dit au navigateur quel theme on utilise : ascenseurs et controles natifs suivent. */
+  color-scheme: dark;
 }
 
 /* Mode clair : « papier de riz ». Les fibres sont dessinées en CSS — deux
    dégradés répétés très pâles — donc aucune image à charger. */
 [data-theme="clair"] {
+  color-scheme: light;
   --bg: #f3ecda;        /* le papier de riz */
   --panel: #fbf7ec;     /* la feuille posée dessus */
   --panel-2: #ece3ce;
@@ -44,7 +63,16 @@
   --t0: #6d7480;
 }
 
-[data-theme="clair"] body {
+[data-theme="clair"] /* Réserve la place de l'ascenseur : la page ne se décale plus quand il apparaît. */
+/* La page est faite pour tenir dans l'écran (la carte prend la place restante).
+   On masque donc l'ascenseur du document — la molette et le doigt continuent de
+   faire défiler s'il y a vraiment trop peu de place. Deux raisons :
+     - c'est lui qui faisait perdre 18 px de large à la barre d'un thème à
+       l'autre, quand la page devenait défilable ;
+     - un ascenseur visible sur une page qui tient dans l'écran n'apporte rien.
+   Les feuilles, elles, gardent le leur : elles peuvent vraiment déborder. */
+
+body {
   background-color: var(--bg);
   background-image:
     repeating-linear-gradient(115deg, rgba(150, 125, 80, .05) 0 1px, transparent 1px 7px),
@@ -54,10 +82,11 @@
 /* Trois détails qui ne passent pas par des variables */
 [data-theme="clair"] .glyph { color: #211d16; text-shadow: 0 6px 24px rgba(80, 60, 20, .12); }
 [data-theme="clair"] .etext { color: #4a4235; }
-[data-theme="clair"] .menu-panel { box-shadow: 0 18px 40px rgba(90, 70, 30, .18); }
+[data-theme="clair"] 
 
 * { box-sizing: border-box; }
 
+/* Réserve la place de l'ascenseur : la page ne se décale plus quand il apparaît. */
 body {
   margin: 0;
   background: var(--bg);
@@ -137,91 +166,6 @@ kbd {
 
 .counters { margin: .45rem 0 0; color: var(--dim); font-size: .8rem; font-variant-numeric: tabular-nums; }
 
-/* ---------- menu (burger) ---------- */
-
-.menu { position: relative; }
-
-.menu-btn {
-  appearance: none;
-  width: 42px;
-  height: 42px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  transition: border-color .2s;
-}
-
-.menu-btn:hover { border-color: #38424e; }
-
-/* Les trois barres sont dessinées en CSS : rien à charger, et elles se
-   transforment en croix quand le menu est ouvert. */
-.burger,
-.burger::before,
-.burger::after {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: var(--txt);
-  border-radius: 2px;
-  position: relative;
-  transition: transform .2s, top .2s, background-color .2s;
-}
-.burger::before,
-.burger::after { content: ''; position: absolute; }
-.burger::before { top: -6px; }
-.burger::after { top: 6px; }
-
-.menu-btn[aria-expanded="true"] .burger { background: transparent; }
-.menu-btn[aria-expanded="true"] .burger::before { top: 0; transform: rotate(45deg); }
-.menu-btn[aria-expanded="true"] .burger::after { top: 0; transform: rotate(-45deg); }
-
-.menu-panel {
-  position: absolute;
-  right: 0;
-  top: calc(100% + .5rem);
-  z-index: 20;
-  min-width: 230px;
-  display: flex;
-  flex-direction: column;
-  padding: .35rem;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
-}
-.menu-panel[hidden] { display: none; }
-
-/* Titre de groupe dans le menu : juger, parcourir, progression, apparence */
-.menu-titre {
-  margin: .85rem .7rem .2rem;
-  font-size: .62rem;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.menu-titre:first-child { margin-top: .3rem; }
-.menu-panel a,
-.menu-item {
-  appearance: none;
-  background: none;
-  border: 0;
-  text-align: left;
-  padding: .55rem .7rem;
-  border-radius: 8px;
-  color: var(--txt);
-  font: inherit;
-  font-size: .9rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-.menu-panel a:hover,
-.menu-item:hover { background: var(--panel-2); }
-
 
 /* ---------- interrupteur 阴 / 阳 ---------- */
 
@@ -278,7 +222,9 @@ kbd {
 .switch[aria-checked="true"] .sw-track { background: rgba(216, 178, 106, .28); border-color: var(--accent); }
 .switch[aria-checked="true"] .sw-knob { transform: translateX(18px); background: var(--accent); }
 
-.sw-label { margin-left: auto; color: var(--dim); font-size: .78rem; }
+/* Largeur minimale : « Mode sombre » et « Mode clair » n'ont pas la même
+   largeur, et sans ça le contenu se décale à chaque bascule. */
+.sw-label { margin-left: .35rem; color: var(--dim); font-size: .78rem; }
 
 /* ---------- page « Thèmes » ---------- */
 
@@ -406,6 +352,7 @@ kbd {
   border-radius: var(--radius);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  padding: 1.2rem;                                     /* repli : moteurs sans clamp() */
   padding: clamp(.8rem, 2.5vw, 1.6rem) clamp(.9rem, 3vw, 1.7rem);
   display: flex;
   flex-direction: column;
@@ -426,6 +373,7 @@ kbd {
   font-family: var(--cjk);
   /* La hauteur compte autant que la largeur : sur un ecran court, le caractere
      ne doit pas deborder de la carte. */
+  font-size: 7rem;                                     /* repli : moteurs sans clamp() ni min() */
   font-size: clamp(5rem, min(21vw, 34vh), 11rem);
   line-height: 1;
   letter-spacing: .04em;
@@ -696,14 +644,6 @@ kbd {
 .niveaux a:hover { color: var(--txt); border-color: var(--accent); }
 .niveaux a.actif { color: var(--accent); border-color: var(--accent); font-weight: 600; }
 
-/* Le niveau en cours de révision, dans le menu */
-.menu-panel a.actif { color: var(--accent); font-weight: 600; }
-.menu-panel a.actif::after { content: ' ✓'; }
-
-.menu-item.ok { color: var(--ok); }
-.menu-item.warn { color: var(--accent); }
-.menu-item kbd { margin-left: .45rem; opacity: .7; }
-
 /* ---------- pied ---------- */
 
 /* Le bandeau est passé ici, fusionné avec le pied : plus rien ne surplombe la
@@ -716,9 +656,6 @@ kbd {
 
 .foot .top-inner { flex-wrap: wrap; }
 .foot .pos { margin-left: auto; color: var(--dim); font-size: .8rem; }
-
-/* Le menu vit désormais en bas de page : son panneau s'ouvre vers le haut. */
-.menu-panel { top: auto; bottom: calc(100% + .55rem); }
 
 .pos { font-variant-numeric: tabular-nums; }
 
@@ -739,3 +676,173 @@ kbd {
   .words li { grid-template-columns: 1fr; }
   .words .t { grid-column: 1; }
 }
+
+/* ---------- la barre du bas : informations, progression, onglets ---------- */
+/* Barre flottante arrondie : icônes seules, halo doux sous l'onglet actif.
+   Elle reste dans le flux : la page tient dans l'écran, rien ne la recouvre. */
+.bas {
+  position: relative;                 /* ancre des feuilles */
+  /* La barre ne doit jamais etre comprimee : enfant d'une colonne flex, elle a
+     flex-shrink: 1 par defaut, et c'est elle qui encaissait le manque de hauteur
+     quand la carte, protegee par son min-height, refusait de se reduire. */
+  flex: 0 0 auto;
+  width: 100%;                        /* pleine largeur : plus de plafond a 680 px */
+  margin: 0;
+  background: var(--panel);
+  border: 0;
+  border-top: 1px solid var(--line);
+  /* Sur fond sombre, une ombre noire ne se voit pas : c'est cette arête claire
+     qui détache la barre de la page. */
+  border-top-color: rgba(255, 255, 255, .07);
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, .45);
+  padding: .3rem .6rem calc(.3rem + env(safe-area-inset-bottom, 0px));
+}
+
+.bas-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: .5rem;
+  margin: 0;
+  padding: .1rem .4rem 0;
+  color: var(--dim);
+  font-size: .76rem;
+  line-height: 1.4;
+  /* Hauteur figée : sans elle, la ligne d'informations mesure un ou deux pixels
+     de plus dans un thème que dans l'autre. La barre grandit, la page devient
+     défilable, un ascenseur apparaît et vole 19 px de large : deux écarts pour
+     une seule cause. */
+  height: 1.1rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.bas-info .pos { margin-left: .2rem; }
+
+.bas .bar {
+  height: 3px;
+  margin: .3rem .35rem .15rem;
+  border-radius: 999px;
+  background: var(--panel-2);
+  overflow: hidden;
+}
+.bas .bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--ok));
+  transition: width .3s;
+}
+
+/* Les onglets : icône seule, le halo est dessiné par le padding de l'icône */
+.onglets { display: grid; grid-template-columns: repeat(4, 1fr); gap: .1rem; grid-auto-rows: 44px; }
+
+.onglet {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: .15rem 0 .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Un bouton sans texte garde une boite de ligne, dont la hauteur depend du
+     moteur et du jeu de couleurs : c'est elle qui faisait varier la hauteur de
+     la barre d'un theme a l'autre. */
+  font: inherit;
+  font-size: 0;
+  line-height: 0;
+  color: var(--dim);
+  cursor: pointer;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.onglet svg {
+  display: block;
+  /* Un trait clair sur fond sombre paraît plus fin : on l'épaissit un peu. */
+  stroke-width: 2;
+  /* Sans ca, le box-sizing global fait que 24 px est la boite ENTIERE : le halo
+     mange le dessin, qui ne fait plus que ~11 px. */
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: .42rem;
+  border-radius: 999px;
+  transition: background-color .2s, color .2s;
+}
+.onglet:hover { color: var(--txt); }
+.onglet.actif { color: var(--accent); }
+.onglet.actif svg { background: rgba(216, 178, 106, .16); }
+[data-theme="clair"] .onglet.actif svg { background: rgba(138, 100, 21, .14); }
+
+/* La feuille : ce que l'onglet ouvre, posée juste au-dessus de la barre */
+.feuille {
+  position: absolute;
+  /* Centrage par translation : deux bords égaux ne garantissent pas un
+     centrage visuel (arrondis, ascenseur interne, marges des enfants). Là,
+     la feuille est centrée par construction : 50 % moins la moitié de sa
+     largeur. La largeur est celle de la barre moins .9rem de chaque côté. */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 1.8rem);
+  bottom: calc(100% + .5rem);
+  background: var(--panel);
+  /* En sombre, --line est trop proche du fond et l'ombre noire ne se voit pas :
+     c'est cette bordure plus claire qui detache la feuille, comme l'arete de la barre. */
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 18px;
+  box-shadow: 0 -10px 34px rgba(0, 0, 0, .55);
+  padding: .45rem .5rem .55rem;
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+}
+.feuille[hidden] { display: none; }
+
+.feuille-titre {
+  margin: .5rem .6rem .2rem;
+  font-size: .62rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+.feuille-titre:first-child { margin-top: .2rem; }
+
+.feuille-entree,
+.feuille a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: .6rem .7rem;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  color: var(--txt);
+  font: inherit;
+  font-size: .92rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.feuille-entree:hover,
+.feuille a:hover { background: var(--panel-2); }
+.feuille-entree.ok { color: var(--ok); }
+.feuille-entree.warn { color: var(--accent); }
+.feuille-entree kbd { margin-left: .45rem; opacity: .7; }
+.feuille a.actif { color: var(--accent); font-weight: 600; }
+.feuille a.actif::after { content: ' ✓'; }
+
+/* Sur le papier de riz, une ombre noire parait lourde : elle est plus douce et
+   chaude. C'est aussi ce qui donne l'impression que la barre change de taille
+   en basculant. */
+[data-theme="clair"] .bas {
+  border-top-color: var(--line);
+  box-shadow: 0 -6px 18px rgba(80, 66, 34, .10);
+}
+[data-theme="clair"] .onglet svg { stroke-width: 1.8; }
+[data-theme="clair"] .feuille {
+  border-color: var(--line);
+  box-shadow: 0 -6px 22px rgba(80, 66, 34, .16);
+}
+
+/* Le numero de version, discret, dans Reglages : il dit ce que le navigateur a charge. */
+.version { margin: .7rem .6rem .2rem; color: var(--dim); font-size: .7rem; opacity: .8; }

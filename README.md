@@ -6,7 +6,7 @@ téléphone.
 
 ```
 index.html          la page
-theme.html          la page « Thèmes » (atteinte par le menu burger)
+theme.html          la page « Thèmes » (atteinte par l'onglet Parcourir)
 assets/style.css    le design, et l'animation de retournement
 assets/app.js       la logique de révision
 data/cards-hsk1.json  niveau HSK 1 (253 caractères : 41 à la main, 212 importés)
@@ -96,15 +96,18 @@ l'entrée « Mélanger » du menu — et le compteur de l'en-tête indique combi
 cartes restent à revoir.
 
 **L'écran ne garde que la carte** : les deux jugements, les liens et les outils
-sont dans le menu (burger, en haut à droite), rangé en quatre catégories :
+sont descendus dans la barre du bas, rangée en quatre onglets :
 
-| Catégorie | Contenu |
+La barre du bas porte les informations (niveau, position, compteurs), une barre
+de progression fine, et **quatre onglets**. Chaque onglet ouvre sa feuille
+juste au-dessus, et un second appui la referme :
+
+| Onglet | Sa feuille |
 |---|---|
-| *Cette carte* | **À revoir** (1) et **Je sais** (2) — portent sur la carte affichée |
-| *Parcourir* | la page Thèmes, les cartes à revoir, toutes les cartes, **Mélanger** |
-| *Niveau* | la collection à réviser : **HSK 1**, **HSK 2**, ou **Tous les niveaux** |
-| *Progression* | **Réinitialiser**, **Sauvegarder**, **Restaurer** |
-| *Apparence* | le thème clair ou sombre (interrupteur 阴 / 阳) |
+| **Réviser** | Je sais (2), À revoir (1), Mélanger |
+| **Parcourir** | la page Thèmes, les cartes à revoir, toutes les cartes, et le choix du niveau |
+| **Progression** | Sauvegarder, Restaurer, Réinitialiser |
+| **Réglages** | le thème clair ou sombre (l'interrupteur yin / yang) |
 
 La page **Thèmes** liste chaque lot de vocabulaire avec sa progression et lance
 la révision du lot choisi. Le choix passe par l'adresse, sans rien ajouter à
@@ -162,7 +165,7 @@ HSK** (~11 000 entrées : le programme officiel), avec la priorité aux mots cou
 qui commencent par le caractère et aux niveaux bas ; le pinyin et la définition
 viennent de **CC-CEDICT**, traduits en français. 244 fiches sur 253 en ont.
 
-**La page Thèmes** (`theme.html`, atteinte par le menu burger) réunit :
+**La page Thèmes** (`theme.html`, atteinte par l'onglet *Parcourir*) réunit :
 
 | Bloc | Contenu |
 |---|---|

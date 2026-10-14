@@ -5,7 +5,7 @@ HSK 1), application statique sans dépendance, installable en PWA, progression
 locale au navigateur.
 
 **Déjà en place** : retournement d'un appui sur la carte, **glissement
-gauche/droite pour juger**, menu burger, **page Thèmes**, interrupteur **阴 / 阳**
+gauche/droite pour juger**, barre du bas à quatre onglets, **page Thèmes**, interrupteur **阴 / 阳**
 (mode sombre / papier de riz), navigation au clavier, compteur de progression,
 version « un seul fichier » hors ligne, service worker.
 
@@ -94,7 +94,7 @@ indexée par caractère.
 > Note laissée par Matt le 13/10, après l'épuration de l'écran.
 
 L'écran ne garde plus que la carte, et tout ce qui commande est dans le menu
-burger, rangé en quatre catégories (*Cette carte*, *Parcourir*, *Progression*,
+barre du bas, rangée en onglets (*Cette carte*, *Parcourir*, *Progression*,
 *Apparence*). Quatre pistes sont ouvertes, aucune n'est tranchée.
 
 ### a. Que faire ensuite ?
@@ -105,6 +105,12 @@ contenu appelle l'interface (un sélecteur de niveau deviendra nécessaire), et
 l'interface est encore fraîche dans nos têtes.
 
 ### b. Une barre de boutons en bas ?
+
+**Tranché le 14/10** : les quatre onglets de la barre du bas (Réviser, Parcourir,
+Progression, Réglages) portent les commandes, chacun ouvrant sa feuille. Fait
+sans ajouter un pixel de hauteur : la barre a remplacé le pied existant.
+
+*(la piste ci-dessous est donc close)*
 
 Au lieu du burger : les commandes principales toujours visibles sous la carte,
 sans rien ouvrir. À mettre en balance avec la place qu'elles prendraient — on

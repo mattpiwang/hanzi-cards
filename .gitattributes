@@ -1,0 +1,12 @@
+# Fins de ligne
+# ------------
+# Tout est normalisé en LF dans le dépôt, et rien n'est converti dans la copie
+# de travail. Sans cette règle, avec core.autocrlf=true (le défaut de Git pour
+# Windows), un fichier écrit en LF revenait en CRLF au passage suivant de Git :
+# le dépôt semblait modifié en boucle, et VS Code rafraîchissait son panneau
+# sans fin.
+#
+# Exception : les scripts Windows (.cmd, .bat) ont besoin de CRLF.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf

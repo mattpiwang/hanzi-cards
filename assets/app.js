@@ -490,29 +490,66 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /*  Menu (burger)                                                      */
+  /*  La barre du bas : les onglets et leur feuille                      */
   /* ------------------------------------------------------------------ */
 
-  var menuBtn = document.getElementById('menu-toggle');
-  var menuPanel = document.getElementById('menu-panel');
+  /* Chaque onglet ouvre une feuille posée juste au-dessus de la barre. Une
+     seule à la fois : un appui sur l'onglet ouvert le referme. Le clic ailleurs
+     et Échap ferment aussi — comme le faisait le menu précédent. */
+  var onglets = document.querySelectorAll('[data-onglet]');
+  var feuilles = document.querySelectorAll('[data-feuille]');
 
-  function menuOuvert(ouvert) {
-    if (!menuBtn || !menuPanel) { return; }
-    menuPanel.hidden = !ouvert;
-    menuBtn.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+  function fermerFeuilles() {
+    for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
+    for (var j = 0; j < onglets.length; j++) {
+      onglets[j].setAttribute('aria-expanded', 'false');
+      onglets[j].classList.remove('actif');   // le halo part avec la feuille
+    }
   }
 
-  if (menuBtn && menuPanel) {
-    menuBtn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      menuOuvert(menuPanel.hidden);
-    });
-    // Un clic ailleurs referme le menu.
+  /* Le nom est conservé pour le reste du code : les entrées de la feuille
+     appellent menuOuvert(false) avant d'agir, pour qu'on voie le résultat. */
+  function menuOuvert(ouvert) {
+    if (!ouvert) { fermerFeuilles(); }
+  }
+
+  function ouvrirFeuille(cle) {
+    var ouverte = false;
+    for (var i = 0; i < feuilles.length; i++) {
+      var f = feuilles[i];
+      var meme = (f.getAttribute('data-feuille') === cle);
+      var etaitOuverte = !f.hidden;
+      f.hidden = !(meme && !etaitOuverte);   // un second appui referme
+      if (!f.hidden) { ouverte = true; }
+    }
+    for (var j = 0; j < onglets.length; j++) {
+      var o = onglets[j];
+      var actif = ouverte && (o.getAttribute('data-onglet') === cle);
+      o.setAttribute('aria-expanded', actif ? 'true' : 'false');
+      o.classList.toggle('actif', actif);
+    }
+  }
+
+  for (var k = 0; k < onglets.length; k++) {
+    (function (bouton) {
+      bouton.addEventListener('click', function (e) {
+        e.stopPropagation();
+        ouvrirFeuille(bouton.getAttribute('data-onglet'));
+      });
+    })(onglets[k]);
+  }
+
+  if (onglets.length) {
+    // Un appui ailleurs, ou Échap, referme la feuille ouverte.
     document.addEventListener('click', function (e) {
-      if (!menuPanel.hidden && !menuPanel.contains(e.target)) { menuOuvert(false); }
+      var dedans = false;
+      for (var i = 0; i < feuilles.length; i++) {
+        if (feuilles[i].contains(e.target)) { dedans = true; }
+      }
+      if (!dedans) { fermerFeuilles(); }
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') { menuOuvert(false); }
+      if (e.key === 'Escape') { fermerFeuilles(); }
     });
   }
 
@@ -867,6 +904,11 @@
      fichier renommé depuis (data/cards.json devenu data/cards-hsk1.json). */
   function fail(err) {
     el.deckName.textContent = 'Erreur';
+    /* On retourne la carte pour montrer le message : sans ça il restait caché
+       derrière un recto qui ne répond pas au clic (il n'y a pas de carte). */
+    el.front.textContent = '—';
+    state.flipped = true;
+    el.card.classList.add('flipped');
     el.back.innerHTML = '<p class="meaning">Impossible de charger les cartes : ' + esc(err.message) +
       '<br><br>Si l\'application marchait avant, <strong>recharge la page</strong> (Ctrl+Shift+R, ' +
       'ou « vider le cache ») : le navigateur garde parfois l\'ancienne version.' +
@@ -886,6 +928,10 @@
   /* Chaque niveau est une collection : un fichier, chargé à la demande, avec son
      nom. « Tous les niveaux » les réunit — c'est le même code, avec plusieurs
      fichiers à la fois. */
+  /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
+     permet de savoir quelle version le navigateur sert vraiment. */
+  var VERSION = '61';
+
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
@@ -906,6 +952,12 @@
   }
 
   /* Le menu indique le niveau en cours d'un petit trait doré et d'un ✓. */
+  /* La version, affichée dans Réglages : elle dit ce que le navigateur a vraiment chargé. */
+  function afficherVersion() {
+    var v = document.getElementById('version');
+    if (v) { v.textContent = VERSION; }
+  }
+
   function marquerNiveau(cle) {
     var liens = document.querySelectorAll('[data-niveau]');
     for (var i = 0; i < liens.length; i++) {
@@ -947,6 +999,8 @@
       return { cards: cartes, deck: choix.nom, niveau: choix.nom };
     });
   }
+
+  afficherVersion();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);

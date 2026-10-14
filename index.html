@@ -53,61 +53,80 @@
   </div>
 </main>
 
-<footer class="wrap foot">
-  <div class="top-inner">
+  <!-- La barre du bas : les informations de la carte, la progression, puis les
+       onglets. Chaque onglet ouvre une feuille posée juste au-dessus. -->
+  <footer class="bas">
+    <p class="bas-info">
+      <span id="deck-name">chargement…</span>
+      <span id="position" class="pos"></span>
+      <span id="counters" class="counters">…</span>
+    </p>
+    <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
 
-    <div class="brand">
-      <span class="logo">汉</span>
-      <div>
-        <h1>Cartes</h1>
-        <p class="sub" id="deck-name">chargement…</p>
-      </div>
-    </div>
-    <div class="stats">
-      <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
-      <p id="counters" class="counters">…</p>
-    </div>
-    <nav class="menu">
-      <button id="menu-toggle" class="menu-btn" type="button"
-              aria-expanded="false" aria-controls="menu-panel" aria-label="Menu">
-        <span class="burger" aria-hidden="true"></span>
+    <nav class="onglets" aria-label="Sections">
+      <button class="onglet" type="button" data-onglet="reviser" aria-expanded="false" aria-label="Réviser" title="Réviser">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 11a8 8 0 0 0-13.7-5.6L4 7.5"/><path d="M4 4v3.5h3.5"/>
+          <path d="M4 13a8 8 0 0 0 13.7 5.6L20 16.5"/><path d="M20 20v-3.5h-3.5"/>
+        </svg>
       </button>
-      <div class="menu-panel" id="menu-panel" hidden>
-        <!-- Les deux jugements portent sur la carte affichée -->
-        <p class="menu-titre">Cette carte</p>
-        <button id="again" class="menu-item warn" type="button">À revoir <kbd>1</kbd></button>
-        <button id="known" class="menu-item ok" type="button">Je sais <kbd>2</kbd></button>
-
-        <p class="menu-titre">Parcourir</p>
-        <a href="theme.html">Thèmes de vocabulaire</a>
-        <a href="index.html?review=1">Cartes à revoir</a>
-        <a href="index.html">Toutes les cartes</a>
-        <button id="shuffle" class="menu-item" type="button">Mélanger</button>
-
-        <p class="menu-titre">Niveau</p>
-        <a href="index.html?niveau=hsk1" data-niveau="hsk1">HSK 1 — 253 fiches</a>
-        <a href="index.html?niveau=hsk2" data-niveau="hsk2">HSK 2 — 125 fiches</a>
-        <a href="index.html?niveau=tout" data-niveau="tout">Tous les niveaux — 378 fiches</a>
-
-        <p class="menu-titre">Progression</p>
-        <button id="reset" class="menu-item" type="button">Réinitialiser</button>
-        <button id="export" class="menu-item" type="button">Sauvegarder</button>
-        <button id="import" class="menu-item" type="button">Restaurer</button>
-        <input type="file" id="import-file" accept="application/json,.json" hidden>
-
-        <p class="menu-titre">Apparence</p>
-        <!-- 阴 l'ombre, 阳 la lumière : le curseur indique le mode en cours -->
-        <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
-          <span class="sw-yin" aria-hidden="true">阴</span>
-          <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
-          <span class="sw-yang" aria-hidden="true">阳</span>
-          <span class="sw-label" id="theme-label">Mode sombre</span>
-        </button>
-      </div>
+      <button class="onglet" type="button" data-onglet="parcourir" aria-expanded="false" aria-label="Parcourir" title="Parcourir">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/>
+          <rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/>
+        </svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="progression" aria-expanded="false" aria-label="Progression" title="Progression">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 20h16"/><path d="M7 20v-6"/><path d="M12 20V6"/><path d="M17 20v-9"/>
+        </svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="reglages" aria-expanded="false" aria-label="Réglages" title="Réglages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 8h16"/><circle cx="10" cy="8" r="2.3"/>
+          <path d="M4 16h16"/><circle cx="15" cy="16" r="2.3"/>
+        </svg>
+      </button>
     </nav>
-    <span id="position" class="pos"></span>
-  </div>
-</footer>
+
+    <!-- Ce que chaque onglet ouvre -->
+    <div class="feuille" data-feuille="reviser" hidden>
+      <p class="feuille-titre">Cette carte</p>
+      <button id="known" class="feuille-entree ok" type="button">Je sais <kbd>2</kbd></button>
+      <button id="again" class="feuille-entree warn" type="button">À revoir <kbd>1</kbd></button>
+      <button id="shuffle" class="feuille-entree" type="button">Mélanger</button>
+    </div>
+
+    <div class="feuille" data-feuille="parcourir" hidden>
+      <p class="feuille-titre">Parcourir</p>
+      <a href="theme.html">Thèmes de vocabulaire</a>
+      <a href="index.html?review=1">Cartes à revoir</a>
+      <a href="index.html">Toutes les cartes</a>
+      <p class="feuille-titre">Niveau</p>
+      <a href="index.html?niveau=hsk1" data-niveau="hsk1">HSK 1 — 253 fiches</a>
+      <a href="index.html?niveau=hsk2" data-niveau="hsk2">HSK 2 — 125 fiches</a>
+      <a href="index.html?niveau=tout" data-niveau="tout">Tous les niveaux — 378 fiches</a>
+    </div>
+
+    <div class="feuille" data-feuille="progression" hidden>
+      <p class="feuille-titre">Progression</p>
+      <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
+      <button id="import" class="feuille-entree" type="button">Restaurer</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+      <button id="reset" class="feuille-entree" type="button">Réinitialiser</button>
+    </div>
+
+    <div class="feuille" data-feuille="reglages" hidden>
+      <p class="feuille-titre">Apparence</p>
+      <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
+        <span class="sw-yin" aria-hidden="true">阴</span>
+        <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
+        <span class="sw-yang" aria-hidden="true">阳</span>
+        <span class="sw-label" id="theme-label">Mode sombre</span>
+      </button>
+    </div>
+    <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2</span></p>
+  </footer>
 
 <script src="assets/app.js"></script>
 </body>
