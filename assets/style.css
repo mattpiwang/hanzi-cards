@@ -300,6 +300,15 @@ kbd {
 .resume { margin: 0 0 .8rem; font-size: .93rem; }
 .resume strong { color: var(--accent); font-variant-numeric: tabular-nums; }
 
+/* Le détail par niveau, sous la ligne principale : une ligne discrète */
+.par-niveau {
+  display: block;
+  margin-top: .35rem;
+  color: var(--dim);
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+}
+
 /* Prévision des sept prochains jours */
 .prevision { display: grid; gap: .4rem; }
 
@@ -673,6 +682,23 @@ kbd {
 /* ---------- commandes ---------- */
 /* Tout ce qui commande est dans le menu : l'écran ne garde que la carte. Seuls
    les deux jugements sont colorés, pour se distinguer des autres entrées. */
+
+/* Sélecteur de niveau : l'onglet en cours est marqué */
+.niveaux { display: flex; gap: .5rem; margin: 1rem 0 0; }
+.niveaux a {
+  padding: .4rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--dim);
+  text-decoration: none;
+  font-size: .85rem;
+}
+.niveaux a:hover { color: var(--txt); border-color: var(--accent); }
+.niveaux a.actif { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+
+/* Le niveau en cours de révision, dans le menu */
+.menu-panel a.actif { color: var(--accent); font-weight: 600; }
+.menu-panel a.actif::after { content: ' ✓'; }
 
 .menu-item.ok { color: var(--ok); }
 .menu-item.warn { color: var(--accent); }

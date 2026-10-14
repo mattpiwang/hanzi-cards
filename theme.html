@@ -54,6 +54,12 @@
        ce qui revient dans les jours qui viennent.</p>
   </div>
 
+  <nav class="niveaux" aria-label="Niveau">
+    <a href="theme.html?niveau=hsk1" data-niveau="hsk1">HSK 1</a>
+    <a href="theme.html?niveau=hsk2" data-niveau="hsk2">HSK 2</a>
+    <a href="theme.html?niveau=tout" data-niveau="tout">Tous les niveaux</a>
+  </nav>
+
   <section class="bloc">
     <h2 class="bloc-titre">Où j'en suis</h2>
     <p class="resume" id="resume">…</p>
@@ -84,6 +90,67 @@
   var JOUR = 86400000;
 
   var CARTES = [];
+
+  /* Un fichier par niveau, chargé à la demande. Le choix se retient : on
+     revient sur le niveau qu'on révisait. */
+  var NIVEAUX = [
+    { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
+    { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json'] }
+  ];
+
+  /* Les fiches de chaque niveau, chargées ensemble : c'est ce qui permet de
+     compter niveau par niveau ET de réunir toutes les collections. */
+  var PAR_NIVEAU = [];   // [{ cle, nom, cards }]
+
+  function cartesDeLaCollection(cle) {
+    if (cle === 'tout') {
+      var tout = [];
+      PAR_NIVEAU.forEach(function (n) { tout = tout.concat(n.cards); });
+      return tout;
+    }
+    var trouve = PAR_NIVEAU.filter(function (n) { return n.cle === cle; })[0];
+    return trouve ? trouve.cards : [];
+  }
+
+  /* Le détail par niveau, sous la ligne principale : le tableau de bord des
+     collections, avec le total de tous les niveaux. */
+  function detailNiveaux(prog) {
+    if (!PAR_NIVEAU.length) { return ''; }
+    var totalSues = 0, totalCartes = 0;
+    var morceaux = PAR_NIVEAU.map(function (n) {
+      var s = suesDans(n.cards, prog);
+      totalSues += s;
+      totalCartes += n.cards.length;
+      return n.nom + ' : ' + s + ' / ' + n.cards.length;
+    });
+    return '<span class="par-niveau">' + morceaux.join(' · ') +
+      ' — <strong>tous niveaux : ' + totalSues + ' sues / ' + totalCartes + '</strong></span>';
+  }
+
+  function niveauDemande() {
+    var cherche = (window.location.search.match(/[?&]niveau=([^&]*)/) || [])[1];
+    if (cherche) { cherche = decodeURIComponent(cherche); }
+    if (!cherche) {
+      try { cherche = localStorage.getItem('hanzi-niveau'); } catch (e) { cherche = null; }
+    }
+    for (var i = 0; i < NIVEAUX.length; i++) {
+      if (NIVEAUX[i].cle === cherche) { return NIVEAUX[i]; }
+    }
+    return NIVEAUX[0];
+  }
+
+  var NIVEAU = niveauDemande();
+  /* Tous les liens internes gardent le niveau : changer de page ne doit pas
+     ramener au niveau de base. */
+  var LIEN = 'index.html?niveau=' + NIVEAU.cle;
+
+  function marquerNiveau() {
+    var liens = document.querySelectorAll('[data-niveau]');
+    for (var i = 0; i < liens.length; i++) {
+      liens[i].classList.toggle('actif', liens[i].getAttribute('data-niveau') === NIVEAU.cle);
+    }
+  }
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -164,7 +231,7 @@
     document.getElementById('resume').innerHTML =
       '<strong>' + aRevoir + '</strong> à revoir aujourd\'hui · ' +
       '<strong>' + sues + '</strong> sues sur ' + CARTES.length +
-      ' (' + pct + ' % du jeu)';
+      ' (' + pct + ' % du jeu)' + detailNiveaux(prog);
 
     var jours = prevision7(prog, CARTES);
 
@@ -188,15 +255,15 @@
     });
 
     var html = '';
-    html += ligne('Toutes les cartes', CARTES.length, suesDans(CARTES, prog), 'index.html');
+    html += ligne('Toutes les cartes', CARTES.length, suesDans(CARTES, prog), LIEN);
 
     var aRevoir = CARTES.filter(function (c) { return etatDe(c, prog).aRevoir; });
-    html += ligne('À revoir aujourd\'hui', aRevoir.length, null, 'index.html?review=1');
+    html += ligne('À revoir aujourd\'hui', aRevoir.length, null, LIEN + '&review=1');
 
     cats.forEach(function (cat) {
       var lot = CARTES.filter(function (c) { return c.category === cat; });
       html += ligne(cat, lot.length, suesDans(lot, prog),
-        'index.html?theme=' + encodeURIComponent(cat));
+        LIEN + '&theme=' + encodeURIComponent(cat));
     });
 
     document.getElementById('themes').innerHTML = html;
@@ -225,7 +292,7 @@
     }
     zone.innerHTML = trouvees.map(function (c) {
       var e = etatDe(c, prog);
-      return '<a class="theme-row" href="index.html?char=' + encodeURIComponent(c.char) + '">' +
+      return '<a class="theme-row" href="' + LIEN + '&char=' + encodeURIComponent(c.char) + '">' +
         '<span class="t-glyphe">' + esc(c.char) + '</span>' +
         '<span class="t-main">' +
           '<span class="t-name">' + esc(c.pinyin || '') + '</span>' +
@@ -244,7 +311,7 @@
     var sues = suesDans(CARTES, prog);
 
     document.getElementById('total').textContent =
-      CARTES.length + ' caractères · ' + sues + ' sue' + (sues > 1 ? 's' : '');
+      NIVEAU.nom + ' · ' + CARTES.length + ' caractères · ' + sues + ' sue' + (sues > 1 ? 's' : '');
     document.getElementById('counters').textContent = CARTES.length
       ? Math.round(sues / CARTES.length * 100) + ' % du jeu maîtrisé'
       : '';
@@ -261,18 +328,34 @@
     });
   }
 
-  fetch('data/cards.json', { cache: 'no-store' })
-    .then(function (r) {
-      if (!r.ok) { throw new Error('fichier de cartes introuvable (' + r.status + ')'); }
-      return r.json();
-    })
-    .then(afficher)
-    .catch(function (err) {
-      document.getElementById('total').textContent = 'Erreur';
-      document.getElementById('themes').innerHTML =
-        '<p class="meaning">Impossible de lire les cartes : ' + esc(err.message) +
-        '<br><br>Cette page a besoin d\'un serveur local (serve.cmd, ou Ctrl+Shift+B dans VS Code).</p>';
-    });
+  try { localStorage.setItem('hanzi-niveau', NIVEAU.cle); } catch (e) { /* navigation privee */ }
+  marquerNiveau();
+  /* On charge TOUS les niveaux, en parallèle : le tableau de bord les compte,
+     et la collection choisie en rassemble un ou plusieurs. Les fichiers sont
+     petits, et le service worker les garde ensuite. */
+  /* « Tous les niveaux » n'a pas de fichier à elle : elle réunit les autres. On
+     ne charge donc que les vraies collections, sinon HSK 1 serait comptée deux
+     fois (631 fiches au lieu de 378). */
+  Promise.all(NIVEAUX.filter(function (n) { return n.cle !== 'tout'; }).map(function (n) {
+    return fetch(n.fichiers[0], { cache: 'no-store' })
+      .then(function (r) {
+        if (!r.ok) { throw new Error('fichier de cartes introuvable (' + r.status + ')'); }
+        return r.json();
+      })
+      .then(function (d) {
+        var nom = d.niveau || n.nom;
+        var cartes = (d.cards || []).map(function (c) { c.niveau = nom; return c; });
+        return { cle: n.cle, nom: nom, cards: cartes };
+      });
+  })).then(function (paquets) {
+    PAR_NIVEAU = paquets;
+    afficher({ cards: cartesDeLaCollection(NIVEAU.cle) });
+  }).catch(function (err) {
+    document.getElementById('total').textContent = 'Erreur';
+    document.getElementById('themes').innerHTML =
+      '<p class="meaning">Impossible de lire les cartes : ' + esc(err.message) +
+      '<br><br>Cette page a besoin d\'un serveur local (serve.cmd, ou Ctrl+Shift+B dans VS Code).</p>';
+  });
 })();
 </script>
 </body>

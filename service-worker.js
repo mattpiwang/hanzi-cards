@@ -6,7 +6,7 @@
    http://<IP-du-PC>:8002 (l'IP du PC vue du téléphone), le navigateur le
    refuse : l'app fonctionne, mais sans mode hors ligne. */
 
-var CACHE = 'hanzi-cards-v24';
+var CACHE = 'hanzi-cards-v31';
 
 /* Tout ce dont l'app a besoin pour démarrer sans réseau.
    Les tracés (data/strokes.json) et la bibliothèque hanzi-writer ne sont PAS
@@ -18,7 +18,7 @@ var ASSETS = [
   './theme.html',
   './assets/style.css',
   './assets/app.js',
-  './data/cards.json',
+  './data/cards-hsk1.json',
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png',

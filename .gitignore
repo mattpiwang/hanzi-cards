@@ -3,7 +3,7 @@
 ouvrir-pare-feu.ps1
 
 # Sauvegardes et essais generes par les scripts
-data/cards.backup.json
+data/cards.backup*.json
 data/cards.test.json
 data/cards.merge-test.json
 data/filtre-test.txt

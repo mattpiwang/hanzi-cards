@@ -51,14 +51,14 @@ service worker) et committés.
 
 | Chantier | Pourquoi attendre |
 |---|---|
-| **Niveaux HSK suivants** | Les listes sont déjà téléchargées (`..\hanzi-db\filtres\` : HSK 2 → 7-9). On les importera quand le contenu actuel sera traduit et l'architecture par niveau en place. |
+| **Niveaux HSK 3 à 9** | HSK 2 est fait (125 fiches, 13/10). Les listes sont déjà téléchargées (`..\hanzi-db\filtres\`) et la marche à suivre est rodée : import, trois traductions, mots d'exemple. Il ne reste qu'à répéter. |
 | **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. |
 | **Audio** | Prononciations enregistrées, ou de synthèse. |
 | **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
 
 ---
 
-## 3. Architecture — décidé : un fichier par niveau
+## 3. Architecture — fait : un fichier par niveau
 
 Tout tient aujourd'hui dans `data/cards.json` : 302 Ko pour 253 fiches, soit
 environ **1,1 Ko par fiche**. Les six niveaux HSK représenteraient ~2 000 fiches
@@ -69,8 +69,15 @@ environ **1,1 Ko par fiche**. Les six niveaux HSK représenteraient ~2 000 fiche
 cache les niveaux déjà ouverts, et l'écran d'accueil devra permettre de choisir
 le niveau — la page Thèmes s'en chargera naturellement.
 
-Tant qu'il n'y a qu'un niveau, un fichier unique reste plus simple : le découpage
-se fera **pendant** le prochain import.
+**Fait le 13/10**, pendant l'import du HSK 2 : `data/cards-hsk1.json` (253 fiches)
+et `data/cards-hsk2.json` (125 fiches). L'application ne télécharge que le niveau
+choisi, et le service worker ne garde en cache que ceux qu'on a ouverts.
+
+**Puis les niveaux sont devenus des collections** : une entrée « Tous les
+niveaux » les réunit (378 fiches), chaque fiche déclare son niveau, la page
+Thèmes compte niveau par niveau avec le total, et le filtrage par niveau passe
+par les catégories (`?niveau=tout&theme=HSK 2`). La progression reste commune,
+indexée par caractère.
 
 ---
 

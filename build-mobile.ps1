@@ -1,4 +1,4 @@
-﻿<#
+<#
     ==========================================================================
     build-mobile.ps1 — construit une version « un seul fichier » des cartes
     ==========================================================================
@@ -42,7 +42,7 @@ $read = { param($p) [IO.File]::ReadAllText((Join-Path $root $p), [Text.Encoding]
 $html = & $read 'index.html'
 $css  = & $read 'assets\style.css'
 $js   = & $read 'assets\app.js'
-$json = & $read 'data\cards.json'
+$json = & $read 'data\cards-hsk1.json'
 
 # On utilise .Replace() et non -replace : le CSS, le JS et le JSON contiennent
 # des caracteres $, que -replace interpreterait comme des references de regex.
@@ -58,7 +58,9 @@ $html = $html.Replace('<link rel="manifest" href="manifest.json">', '')
 # Dans un fichier unique, les liens du menu (vers theme.html) ne menent nulle
 # part : on retire les <a>. Le bouton burger et l'interrupteur clair/sombre,
 # eux, restent : ils fonctionnent tres bien hors ligne.
-$html = $html -replace '(?s)\s*<a href="(?:theme|index)\.html[^"]*">.*?</a>', ''
+$html = $html -replace '(?s)\s*<a href="(?:theme|index)\.html[^"]*"[^>]*>.*?</a>', ''
+# Le niveau n'a pas de sens dans un fichier unique : il n'y en a qu'un.
+$html = $html -replace '\s*<p class="menu-titre">Niveau</p>', ''
 
 $html = $html.Replace('<title>Cartes — 汉字</title>',
                       '<title>Cartes 汉字 — hors ligne</title>')

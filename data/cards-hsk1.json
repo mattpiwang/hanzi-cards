@@ -1,5 +1,6 @@
 {
   "deck": "Hanzi — caractères chinois",
+  "niveau": "HSK 1",
   "note": "Fiches françaises écrites à la main, complétées par la base libre Make Me a Hanzi (définitions et étymologies en anglais).",
   "schema": {
     "components": "[caractère, glose, rôle] — rôle = sens | son | composant",

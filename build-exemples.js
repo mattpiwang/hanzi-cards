@@ -25,8 +25,14 @@ const path = require('path');
 const ICI = __dirname;
 const DICO = path.join(ICI, '..', 'hanzi-db', 'cedict.txt');
 const FILTRES = path.join(ICI, '..', 'hanzi-db', 'filtres');
-const CARTES = path.join(ICI, 'data', 'cards.json');
-const SORTIE = path.join(ICI, 'data', 'mots-choisis.json');
+/* Le fichier de fiches : celui du niveau de base, ou celui passé en argument
+   (node build-exemples.js data/cards-hsk2.json). Le nom du fichier produit en
+   découle, comme pour les traductions : deux niveaux ne s'écrasent pas. */
+const FICHIER = process.argv[2] || path.join('data', 'cards.json');
+const CARTES = path.isAbsolute(FICHIER) ? FICHIER : path.join(ICI, FICHIER);
+const feuille = path.basename(CARTES);
+const SUFFIXE = feuille === 'cards.json' ? '' : '-' + feuille.replace(/^cards-/, '').replace(/\.json$/, '');
+const SORTIE = path.join(ICI, 'data', 'mots-choisis' + SUFFIXE + '.json');
 
 const NIVEAUX = ['1', '2', '3', '4', '5', '6', '7-9'];
 const PAR_CARACTERE = 2;
@@ -86,8 +92,11 @@ function main() {
   if (!fs.existsSync(DICO)) { console.error('CC-CEDICT introuvable : ' + DICO); process.exit(1); }
 
   const cartes = lireCartes();
-  const aFaire = cartes.filter(function (c) { return c.source; });
+  /* Seules les fiches importées, et seulement celles sans exemples : les fiches
+     écrites à la main gardent les leurs. */
+  const aFaire = cartes.filter(function (c) { return c.source && !(c.words && c.words.length); });
   const vocabulaire = new Set(cartes.map(function (c) { return c.char; }));
+  console.log('Niveau : ' + feuille + '  ->  ' + path.basename(SORTIE));
   console.log('Fiches importées à illustrer : ' + aFaire.length);
 
   const motsHSK = lireMotsHSK();

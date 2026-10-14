@@ -20,10 +20,21 @@ const fs = require('fs');
 const path = require('path');
 
 const ICI = __dirname;
-const CARDS = path.join(ICI, 'data', 'cards.json');
-const CHOISIS = path.join(ICI, 'data', 'mots-choisis.json');
-const TRAD = path.join(ICI, 'data', 'traductions-exemples.json');
-const SAUVEGARDE = path.join(ICI, 'data', 'cards.backup.json');
+/* Le fichier de fiches : celui du niveau de base, ou celui passé en argument
+   (node apply-exemples.js data/cards-hsk2.json). Les fichiers compagnons en
+   découlent, comme pour les traductions. */
+const FICHIER = process.argv[2] || path.join('data', 'cards.json');
+const CARDS = path.isAbsolute(FICHIER) ? FICHIER : path.join(ICI, FICHIER);
+const feuille = path.basename(CARDS);
+const SUFFIXE = feuille === 'cards.json' ? '' : '-' + feuille.replace(/^cards-/, '').replace(/\.json$/, '');
+const CHOISIS = path.join(ICI, 'data', 'mots-choisis' + SUFFIXE + '.json');
+/* Les définitions traduites : le nom actuel, ou l'ancien nom pour le niveau de
+   base, dont le fichier a été produit avant le renommage. */
+const TRAD = (SUFFIXE === '' && !fs.existsSync(path.join(ICI, 'data', 'traductions-mots.json')))
+  ? path.join(ICI, 'data', 'traductions-exemples.json')
+  : path.join(ICI, 'data', 'traductions-mots' + SUFFIXE + '.json');
+/* Une sauvegarde par niveau : celle du niveau de base n'est pas écrasée. */
+const SAUVEGARDE = path.join(ICI, 'data', 'cards.backup' + SUFFIXE + '.json');
 
 /* Règle d'accentuation : a, puis o, puis e ; sinon la dernière voyelle
    (c'est ce qui donne jiǔ pour "jiu3" et huì pour "hui4"). */
@@ -55,6 +66,7 @@ function pinyinLisible(pinyin) {
 }
 
 function main() {
+  console.log('Niveau : ' + feuille);
   const doc = JSON.parse(fs.readFileSync(CARDS, 'utf8').replace(/^\uFEFF/, ''));
   const choisis = JSON.parse(fs.readFileSync(CHOISIS, 'utf8').replace(/^\uFEFF/, ''));
   const trad = JSON.parse(fs.readFileSync(TRAD, 'utf8').replace(/^\uFEFF/, ''));
@@ -72,7 +84,10 @@ function main() {
     const mots = [];
     lot.forEach(function (x) {
       if (motsVus.has(x.mot)) { return; }
-      const fr = trad[x.mot];
+      /* Deux conventions coexistent : le fichier du niveau de base est indexé
+         par mot, ceux produits par traduire-mots.ps1 le sont par définition
+         anglaise. On accepte les deux. */
+      const fr = trad[x.mot] || trad[x.def];
       if (!fr) { sansTraduction++; return; }
       motsVus.add(x.mot);
       mots.push([x.mot, pinyinLisible(x.pinyin), fr]);

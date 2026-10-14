@@ -268,9 +268,18 @@
   function render() {
     var c = current();
 
+    /* Vue vide : plutôt qu'une carte morte qui ne répond pas au clic, on dit
+       pourquoi — et on donne le chemin de sortie. */
     if (!c) {
+      var raison = state.reviewMode
+        ? 'Rien à revoir aujourd\'hui dans cette collection.'
+        : (state.titre ? 'Ce lot est vide dans cette collection.' : 'Aucune carte chargée.');
       el.front.textContent = '—';
-      el.back.innerHTML = '<p class="meaning">Aucune carte ici.</p>';
+      /* Le lien de sortie n'a pas de sens dans la version « un seul fichier » :
+         il n'y a pas d'autre page a ouvrir. */
+      var sortie = monoFichier ? '' :
+        '<br><br><a class="back-link" href="index.html">Voir toutes les cartes de la collection</a>';
+      el.back.innerHTML = '<p class="meaning">' + esc(raison) + sortie + '</p>';
       el.position.textContent = '';
       updateStats();
       return;
@@ -286,7 +295,11 @@
     state.flipped = false;
     el.card.classList.remove('flipped');
 
-    el.position.textContent = 'Carte ' + (state.i + 1) + ' / ' + state.view.length + ' · ' + c.category;
+    /* Quand plusieurs collections sont réunies, on dit d'où vient la fiche.
+       Le niveau n'est pas répété s'il porte déjà le nom de la catégorie. */
+    var ou = c.category || '';
+    if (c.niveau && c.niveau !== ou) { ou = c.niveau + (ou ? ' · ' + ou : ''); }
+    el.position.textContent = 'Carte ' + (state.i + 1) + ' / ' + state.view.length + (ou ? ' · ' + ou : '');
     updateStats();
   }
 
@@ -842,33 +855,108 @@
       }
     }
 
-    el.deckName.textContent = (state.titre || data.deck || 'Jeu de cartes') +
-      ' — ' + state.view.length + ' caractères';
+    /* Le niveau remplace le nom générique du paquet : « HSK 2 — 125 caractères »
+       est plus utile que « Hanzi — caractères chinois ». */
+    var quoi = state.titre || data.niveau || data.deck || 'Jeu de cartes';
+    el.deckName.textContent = quoi + ' — ' + state.view.length + ' caractères';
     render();
   }
 
+  /* Échec de chargement : on dit quoi faire, pas seulement que ça a échoué. Le
+     cas le plus courant est une ancienne version gardée en cache, qui réclame un
+     fichier renommé depuis (data/cards.json devenu data/cards-hsk1.json). */
   function fail(err) {
     el.deckName.textContent = 'Erreur';
     el.back.innerHTML = '<p class="meaning">Impossible de charger les cartes : ' + esc(err.message) +
-      '<br><br>Lance le site via un serveur local (serve.cmd ou Ctrl+Shift+B dans VS Code) : ' +
+      '<br><br>Si l\'application marchait avant, <strong>recharge la page</strong> (Ctrl+Shift+R, ' +
+      'ou « vider le cache ») : le navigateur garde parfois l\'ancienne version.' +
+      '<br><br>Sinon, lance le site via un serveur local (serve.cmd ou Ctrl+Shift+B dans VS Code) : ' +
       'un fichier ouvert en file:// ne peut pas lire le JSON voisin.</p>';
   }
 
   load();
 
-  /* Deux modes de chargement :
+  /* ------------------------------------------------------------------ */
+  /*  Les niveaux                                                        */
+  /* ------------------------------------------------------------------ */
+
+  /* Un fichier par niveau, chargé à la demande : on ne télécharge que celui
+     qu'on révise. La progression, elle, reste commune — elle est indexée par
+     caractère, et un caractère ne change pas de niveau. */
+  /* Chaque niveau est une collection : un fichier, chargé à la demande, avec son
+     nom. « Tous les niveaux » les réunit — c'est le même code, avec plusieurs
+     fichiers à la fois. */
+  var NIVEAUX = [
+    { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
+    { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json'] }
+  ];
+
+  /* Le niveau demandé : ?niveau=hsk2 dans l'adresse, sinon celui de la dernière
+     visite, sinon le premier. Le nom inconnu retombe sur le premier. */
+  function niveauDemande() {
+    var demande = parametres().niveau;
+    if (!demande) {
+      try { demande = localStorage.getItem('hanzi-niveau'); } catch (e) { demande = null; }
+    }
+    for (var i = 0; i < NIVEAUX.length; i++) {
+      if (NIVEAUX[i].cle === demande) { return NIVEAUX[i]; }
+    }
+    return NIVEAUX[0];
+  }
+
+  /* Le menu indique le niveau en cours d'un petit trait doré et d'un ✓. */
+  function marquerNiveau(cle) {
+    var liens = document.querySelectorAll('[data-niveau]');
+    for (var i = 0; i < liens.length; i++) {
+      var actif = (liens[i].getAttribute('data-niveau') === cle);
+      liens[i].classList.toggle('actif', actif);
+      if (actif) { liens[i].setAttribute('aria-current', 'true'); }
+      else { liens[i].removeAttribute('aria-current'); }
+    }
+  }
+
+  /* Trois modes de chargement :
      - fichier unique (cartes-mobile.html) : les données sont déjà dans la page,
-       via window.__CARDS__ — aucun réseau nécessaire, ça marche hors ligne ;
-     - site normal : on va chercher data/cards.json. */
-  if (window.__CARDS__) {
-    start(window.__CARDS__);
-  } else {
-    fetch('data/cards.json', { cache: 'no-store' })
-      .then(function (r) {
+       via window.__CARDS__ — aucun réseau, ça marche hors ligne, et il n'y a
+       qu'un seul niveau ;
+     - site normal : on va chercher le fichier du niveau choisi ;
+     - échec : on le dit, plutôt que de laisser un écran blanc. */
+  /* Charge une collection : un ou plusieurs fichiers, fusionnés. Chaque fiche
+     retient le nom de son niveau — c'est ce qui permet de l'afficher et de
+     compter niveau par niveau. Un caractère déjà chargé n'est pas repris deux
+     fois (les listes HSK ne se recoupent pas, mais autant s'en assurer). */
+  function chargerCollection(choix) {
+    return Promise.all(choix.fichiers.map(function (f) {
+      return fetch(f, { cache: 'no-store' }).then(function (r) {
         if (!r.ok) { throw new Error('fichier de cartes introuvable (' + r.status + ')'); }
         return r.json();
-      })
-      .then(start)
+      });
+    })).then(function (paquets) {
+      var cartes = [];
+      var vus = {};
+      paquets.forEach(function (paquet) {
+        var nom = paquet.niveau || choix.nom;
+        (paquet.cards || []).forEach(function (c) {
+          if (vus[c.char]) { return; }
+          vus[c.char] = true;
+          c.niveau = nom;
+          cartes.push(c);
+        });
+      });
+      return { cards: cartes, deck: choix.nom, niveau: choix.nom };
+    });
+  }
+
+  if (window.__CARDS__) {
+    marquerNiveau(NIVEAUX[0].cle);
+    start(window.__CARDS__);
+  } else {
+    var choisi = niveauDemande();
+    try { localStorage.setItem('hanzi-niveau', choisi.cle); } catch (e) { /* navigation privée */ }
+    marquerNiveau(choisi.cle);
+    chargerCollection(choisi)
+      .then(function (data) { start(data); })
       .catch(fail);
   }
 

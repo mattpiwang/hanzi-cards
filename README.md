@@ -9,7 +9,8 @@ index.html          la page
 theme.html          la page « Thèmes » (atteinte par le menu burger)
 assets/style.css    le design, et l'animation de retournement
 assets/app.js       la logique de révision
-data/cards.json     le jeu de cartes (253 caractères : 41 à la main, 212 importés)
+data/cards-hsk1.json  niveau HSK 1 (253 caractères : 41 à la main, 212 importés)
+data/cards-hsk2.json  niveau HSK 2 (125 caractères importés, tout en français)
 manifest.json       déclaration PWA : nom, icônes, mode plein écran
 service-worker.js   cache hors ligne (voir § 5 pour la condition HTTPS)
 icons/              icônes de l'application, générées avec .NET
@@ -18,7 +19,7 @@ serve.cmd           double-clic : sert le site, en local et sur le réseau
 import-hanzi-db.ps1 importe la base Make Me a Hanzi, filtrable par liste
 traduire.ps1        fait traduire les fiches par l'assistant OpenClaw
 build-exemples.js   choisit les mots d'exemple dans les listes HSK
-apply-exemples.js   écrit ces mots d'exemple dans data/cards.json
+apply-exemples.js   écrit ces mots dans le fichier du niveau
 ```
 
 ---
@@ -101,6 +102,7 @@ sont dans le menu (burger, en haut à droite), rangé en quatre catégories :
 |---|---|
 | *Cette carte* | **À revoir** (1) et **Je sais** (2) — portent sur la carte affichée |
 | *Parcourir* | la page Thèmes, les cartes à revoir, toutes les cartes, **Mélanger** |
+| *Niveau* | la collection à réviser : **HSK 1**, **HSK 2**, ou **Tous les niveaux** |
 | *Progression* | **Réinitialiser**, **Sauvegarder**, **Restaurer** |
 | *Apparence* | le thème clair ou sombre (interrupteur 阴 / 阳) |
 
@@ -180,7 +182,7 @@ site.
 
 ## 3. Ajouter ou modifier des cartes
 
-Ouvre `data/cards.json` et ajoute un objet dans `cards`. Rien d'autre à modifier :
+Ouvre le fichier du niveau (`data/cards-hsk1.json`) et ajoute un objet dans `cards`. Rien d'autre à modifier :
 ni liste de catégories, ni index, ni build.
 
 La tâche VS Code **« Vérifier le fichier de cartes (JSON) »**
@@ -207,7 +209,8 @@ mêmes champs : pinyin accentué, décomposition en radicaux, étymologie class�
 
 ```powershell
 # 1. un niveau HSK (le fichier de filtre liste les caractères voulus)
-.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk1.txt -Category 'HSK 1'
+#    -Output compte : un fichier par niveau, chargé à la demande
+.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk2.txt -Category 'HSK 2' -Output data\cards-hsk2.json
 
 # 2. tout d'un coup (9 500 fiches : lourd, ~15 Mo de JSON)
 .\import-hanzi-db.ps1 -Category 'Tout'
@@ -233,6 +236,42 @@ de la source. L'application affiche le français quand il existe, et l'anglais
 avec une petite mention `en` sinon. Le sens français peut être ajouté
 progressivement, fiche par fiche.
 
+### Les niveaux, un fichier chacun
+
+Un fichier JSON par niveau, **chargé à la demande** : on ne télécharge que celui
+qu'on révise. Le choix se fait dans le menu (catégorie *Niveau*) ou sur la page
+Thèmes, et il est **retenu** d'une visite à l'autre (`?niveau=hsk2` dans
+l'adresse, sinon `localStorage`).
+
+| Niveau | Fichier | Fiches |
+|---|---|---|
+| HSK 1 | `data/cards-hsk1.json` | 253 (41 écrites à la main, 212 importées) |
+| HSK 2 | `data/cards-hsk2.json` | 125 (importées) |
+
+Le service worker ne met en cache que le niveau de base à l'installation ; les
+autres sont mis en cache **au premier usage** — inutile de télécharger 105 Ko
+pour un niveau qu'on n'ouvrira peut-être pas.
+
+La progression, elle, est **commune** : elle est indexée par caractère, et un
+caractère ne change pas de niveau.
+
+### Les niveaux se comportent comme des collections
+
+- **On choisit une collection** — HSK 1, HSK 2, ou **Tous les niveaux**, qui les
+  réunit (378 fiches). Le choix est mémorisé.
+- **Chaque fiche sait d'où elle vient** : son fichier déclare `niveau`, et la
+  barre de position l'affiche quand plusieurs collections sont réunies
+  (« Carte 12 / 378 · HSK 2 »).
+- **Le filtrage par niveau est déjà là** : chaque niveau importé porte sa propre
+  catégorie (`HSK 1`, `HSK 2`), donc `?niveau=tout&theme=HSK 2` ne révise que le
+  HSK 2, et la page Thèmes liste les niveaux comme des lots.
+- **La page Thèmes compte niveau par niveau** : « HSK 1 : 34 / 253 · HSK 2 :
+  12 / 125 — tous niveaux : 46 / 378 ». Elle charge les niveaux en parallèle ;
+  le service worker les garde ensuite.
+- **Les compteurs de l'application portent sur la collection chargée** : en
+  HSK 1, « à revoir » ne compte que les cartes HSK 1 dues. Celles de HSK 2
+  attendent de l'autre côté.
+
 **Listes HSK utilisées** : [HSK 3.0 de krmanik](https://github.com/krmanik/HSK-3.0)
 — HSK 1 : 246 caractères · HSK 2 : 125 · HSK 3 : 284 · HSK 4 : 441 · HSK 5 : 431 ·
 HSK 6 : 413 · HSK 7-9 : 1 148. Téléchargées dans `..\hanzi-db\filtres\`.
@@ -251,7 +290,7 @@ python -m http.server 8002          # à lancer depuis le dossier du projet
 ```
 
 Un `index.html` ouvert par double-clic (en `file://`) **ne fonctionnera pas** :
-le navigateur interdit à une page locale de lire `data/cards.json`. C'est la
+le navigateur interdit à une page locale de lire le fichier de fiches. C'est la
 seule raison d'être du serveur — et c'est aussi ce que règle la version du § 5-B.
 
 ---
@@ -319,7 +358,7 @@ Le jeu compte **253 fiches**, de deux origines bien distinctes :
 - **41 fiches rédigées à la main** — les caractères les plus courants. Tout est
   vérifié : caractères, pinyin accentué, sens **en français**, mots d'exemple et
   étymologie. C'est la partie la plus soignée.
-- **212 fiches importées** de la base libre Make Me a Hanzi (niveau HSK 1) —
+- **337 fiches importées** de la base libre Make Me a Hanzi (212 en HSK 1, 125 en HSK 2) —
   pinyin accentué, radicaux et étymologie classée, mais **définitions en anglais**
   et **sans mots d'exemple**. L'application les signale par une petite mention `en`.
 
@@ -344,7 +383,7 @@ comme une source académique.
 
 ## 8. Limites connues
 
-- **253 caractères** : le socle du HSK 1. Pour lire couramment, il faut viser
+- **378 caractères** : le HSK 1 complet et le HSK 2. Pour lire couramment, il faut viser
   2 500 à 3 000 caractères (voir § 3 pour importer les niveaux suivants).
 - La progression est **locale au navigateur** : pas de synchronisation entre appareils, et elle disparaît si tu vides les données du site.
 - Pas de répétition espacée à intervalles : « Je sais » monte d'un cran, sans notion de délai.
