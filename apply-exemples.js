@@ -1,9 +1,9 @@
-/* apply-exemples.js — écrit les mots d'exemple dans data/cards.json.
+/* apply-exemples.js — écrit les mots d'exemple dans data/cards-hsk1.json.
 
-   Entrées : data/mots-choisis.json        (mots + pinyin numéroté + définition anglaise)
-             data/traductions-exemples.json (mot -> traduction française)
-             data/cards.json
-   Sortie  : data/cards.json enrichi, sauvegarde dans data/cards.backup.json
+   Entrées : data/mots-choisis-<niveau>.json (mots + pinyin numéroté + définition anglaise)
+             data/traductions-mots-<niveau>.json (mot -> traduction française)
+             data/cards-hsk1.json
+   Sortie  : data/cards-hsk1.json enrichi, sauvegarde dans data/cards.backup.json
 
    Les fiches écrites à la main gardent leurs propres exemples : on ne touche
    qu'aux fiches importées qui n'en ont pas encore.
@@ -23,16 +23,14 @@ const ICI = __dirname;
 /* Le fichier de fiches : celui du niveau de base, ou celui passé en argument
    (node apply-exemples.js data/cards-hsk2.json). Les fichiers compagnons en
    découlent, comme pour les traductions. */
-const FICHIER = process.argv[2] || path.join('data', 'cards.json');
+const FICHIER = process.argv[2] || path.join('data', 'cards-hsk1.json');
 const CARDS = path.isAbsolute(FICHIER) ? FICHIER : path.join(ICI, FICHIER);
 const feuille = path.basename(CARDS);
 const SUFFIXE = feuille === 'cards.json' ? '' : '-' + feuille.replace(/^cards-/, '').replace(/\.json$/, '');
 const CHOISIS = path.join(ICI, 'data', 'mots-choisis' + SUFFIXE + '.json');
 /* Les définitions traduites : le nom actuel, ou l'ancien nom pour le niveau de
    base, dont le fichier a été produit avant le renommage. */
-const TRAD = (SUFFIXE === '' && !fs.existsSync(path.join(ICI, 'data', 'traductions-mots.json')))
-  ? path.join(ICI, 'data', 'traductions-exemples.json')
-  : path.join(ICI, 'data', 'traductions-mots' + SUFFIXE + '.json');
+const TRAD = path.join(ICI, 'data', 'traductions-mots' + SUFFIXE + '.json');
 /* Une sauvegarde par niveau : celle du niveau de base n'est pas écrasée. */
 const SAUVEGARDE = path.join(ICI, 'data', 'cards.backup' + SUFFIXE + '.json');
 

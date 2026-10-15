@@ -1,4 +1,4 @@
-﻿<#
+<#
     ==========================================================================
     traduire-mots.ps1 — traduit les définitions des mots d'exemple d'un niveau
     ==========================================================================
@@ -24,7 +24,7 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$Fichier,          # fiches du niveau (défaut : data\cards.json)
+    [string]$Fichier,          # fiches du niveau (défaut : data\cards-hsk1.json)
     [int]$Taille = 30,         # définitions par lot envoyé à Ziya
     [switch]$SansEcrire
 )
@@ -38,7 +38,7 @@ $oc = Join-Path $env:APPDATA 'npm\openclaw.cmd'
 if (-not (Test-Path $oc)) { throw "OpenClaw introuvable : $oc" }
 
 # ---- le niveau, et les fichiers qui en découlent ---------------------------
-if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards.json' }
+if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards-hsk1.json' }
 elseif (-not [IO.Path]::IsPathRooted($Fichier)) { $Fichier = Join-Path $root $Fichier }
 $feuille = Split-Path $Fichier -Leaf
 $suffixe = ''

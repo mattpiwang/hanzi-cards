@@ -1,4 +1,4 @@
-﻿<#
+<#
     ==========================================================================
     import-hanzi-db.ps1 — convertit la base Make Me a Hanzi en jeu de cartes
     ==========================================================================
@@ -8,7 +8,7 @@
     La base « Make Me a Hanzi » (9 574 caractères, libre et gratuite) contient
     exactement les mêmes champs que nos fiches : pinyin, décomposition en
     radicaux, étymologie classée (象形 / 会意 / 形声) et radical principal.
-    Ce script la convertit au format data/cards.json de l'application.
+    Ce script la convertit au format data/cards-hsk1.json de l'application.
 
     LIMITE À CONNAÎTRE
     ------------------
@@ -32,7 +32,7 @@
     OPTIONS
     -------
       -Source <fichier>     dictionary.txt de Make Me a Hanzi (téléchargé si absent)
-      -Output <fichier>     fichier de sortie (défaut : data\cards.json)
+      -Output <fichier>     fichier de sortie (défaut : data\cards-hsk1.json)
       -Category <libellé>   nom du filtre affiché dans l'application
       -FilterFile <fichier> fichier texte listant les caractères à importer
                             (espaces, virgules et retours à la ligne acceptés)
@@ -57,7 +57,7 @@ $utf8NoBom = New-Object Text.UTF8Encoding($false)
 # $PSScriptRoot n'est pas encore défini dans les valeurs par défaut des
 # paramètres en PowerShell 5.1 : on calcule donc les chemins ici.
 if (-not $Source) { $Source = Join-Path (Split-Path $PSScriptRoot -Parent) 'hanzi-db\dictionary.txt' }
-if (-not $Output) { $Output = Join-Path $PSScriptRoot 'data\cards.json' }
+if (-not $Output) { $Output = Join-Path $PSScriptRoot 'data\cards-hsk1.json' }
 
 # --------------------------------------------------------------------------
 #  Outils

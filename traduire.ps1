@@ -33,7 +33,7 @@
 [CmdletBinding()]
 param(
     [ValidateSet('sens', 'etymo')] [string]$Quoi = 'sens',
-    [string]$Fichier,          # fiches à traduire (défaut : data\cards.json)
+    [string]$Fichier,          # fiches à traduire (défaut : data\cards-hsk1.json)
     [int]$Taille = 25,
     [int]$Limit = 0,
     [switch]$AppliquerSeul,
@@ -46,7 +46,7 @@ $root = $PSScriptRoot
 # Le fichier de fiches : celui du niveau de base par défaut, ou celui demandé
 # (-Fichier data\cards-hsk2.json). Les noms des fichiers produits en découlent,
 # pour que deux niveaux ne s'écrasent pas l'un l'autre.
-if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards.json' }
+if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards-hsk1.json' }
 elseif (-not [IO.Path]::IsPathRooted($Fichier)) { $Fichier = Join-Path $root $Fichier }
 $cardsPath = $Fichier
 $suffixe = ''

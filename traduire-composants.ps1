@@ -1,4 +1,4 @@
-﻿<#
+<#
     ==========================================================================
     traduire-composants.ps1 — traduit les gloses des radicaux d'un niveau
     ==========================================================================
@@ -16,7 +16,7 @@
 
     ENTRÉES / SORTIE
     ----------------
-        data\cards.json            par défaut (-Fichier pour un autre niveau)
+        data\cards-hsk1.json            par défaut (-Fichier pour un autre niveau)
         data\traductions-composants[-niveau].json      gloses traduites
 
     USAGE
@@ -26,7 +26,7 @@
 #>
 [CmdletBinding()]
 param(
-    [string]$Fichier,          # fiches à traiter (défaut : data\cards.json)
+    [string]$Fichier,          # fiches à traiter (défaut : data\cards-hsk1.json)
     [int]$Taille = 30,         # gloses par lot envoyé à Ziya
     [switch]$SansAppliquer
 )
@@ -40,7 +40,7 @@ $oc = Join-Path $env:APPDATA 'npm\openclaw.cmd'
 if (-not (Test-Path $oc)) { throw "OpenClaw introuvable : $oc" }
 
 # ---- le fichier de fiches, et le nom des fichiers produits -----------------
-if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards.json' }
+if (-not $Fichier) { $Fichier = Join-Path $root 'data\cards-hsk1.json' }
 elseif (-not [IO.Path]::IsPathRooted($Fichier)) { $Fichier = Join-Path $root $Fichier }
 $feuille = Split-Path $Fichier -Leaf
 $suffixe = ''

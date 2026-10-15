@@ -1383,7 +1383,8 @@
           "nián qīng",
           "jeune"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "八",
@@ -1399,11 +1400,17 @@
       "source": "Make Me a Hanzi",
       "etymologyEn": "Two bent lines meaning \"to divide\"",
       "meaning": "huit, de tous côtés",
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
       "words": [
         [
           "八卦",
           "bā guà",
           "huit trigrammes, commérages, cancans"
+        ],
+        [
+          "十八",
+          "shí bā",
+          "dix-huit"
         ]
       ]
     },
@@ -1470,7 +1477,8 @@
           "jīn tiān",
           "aujourd'hui, maintenant"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "您",
@@ -1496,7 +1504,24 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "You 你 said with affection 心",
-      "meaning": "vous de politesse"
+      "meaning": "vous de politesse",
+      "words": [
+        [
+          "您好",
+          "nín hǎo",
+          "bonjour"
+        ],
+        [
+          "您早",
+          "nín zǎo",
+          "bonjour (matin)"
+        ],
+        [
+          "您贵姓",
+          "nín guì xìng",
+          "comment vous appelez-vous ?"
+        ]
+      ]
     },
     {
       "char": "爸",
@@ -1528,6 +1553,11 @@
           "爸爸",
           "bà ba",
           "papa, père"
+        ],
+        [
+          "爸妈",
+          "bà mā",
+          "papa et maman, parents"
         ]
       ]
     },
@@ -1593,7 +1623,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "(indice : An elbow)",
-      "meaning": "neuf"
+      "meaning": "neuf",
+      "words": [
+        [
+          "九十",
+          "jiǔ shí",
+          "quatre-vingt-dix"
+        ],
+        [
+          "九月",
+          "jiǔ yuè",
+          "septembre"
+        ],
+        [
+          "九点",
+          "jiǔ diǎn",
+          "neuf heures"
+        ],
+        [
+          "九牛一毛",
+          "jiǔ niú yī máo",
+          "goutte d'eau dans la mer"
+        ]
+      ]
     },
     {
       "char": "牛",
@@ -1620,7 +1672,8 @@
           "niú zǎi kù",
           "jean, pantalon de jean"
         ]
-      ]
+      ],
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
     },
     {
       "char": "吧",
@@ -1685,7 +1738,8 @@
           "fēi xíng",
           "voler, vol"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "觉",
@@ -1755,7 +1809,8 @@
           "bái sè",
           "blanc, réactionnaire"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "非",
@@ -1782,7 +1837,8 @@
           "fēi děi",
           "devoir absolument"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "开",
@@ -1961,6 +2017,11 @@
           "漂亮",
           "piào liang",
           "joli, beau, ravissant"
+        ],
+        [
+          "漂流",
+          "piāo liú",
+          "flotter, dériver"
         ]
       ]
     },
@@ -2113,6 +2174,11 @@
           "苹果",
           "Píng guǒ",
           "Apple, firme informatique"
+        ],
+        [
+          "苹果汁",
+          "píng guǒ zhī",
+          "jus de pomme"
         ]
       ]
     },
@@ -2259,7 +2325,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "Étymologie non documentée dans cette base.",
-      "meaning": "sept"
+      "meaning": "sept",
+      "words": [
+        [
+          "七十",
+          "qī shí",
+          "soixante-dix"
+        ],
+        [
+          "七月",
+          "qī yuè",
+          "juillet"
+        ],
+        [
+          "七点",
+          "qī diǎn",
+          "sept heures"
+        ],
+        [
+          "七上八下",
+          "qī shàng bā xià",
+          "sens dessus dessous"
+        ]
+      ]
     },
     {
       "char": "包",
@@ -2628,6 +2716,11 @@
           "板块",
           "bǎn kuài",
           "plaque, secteur, bloc"
+        ],
+        [
+          "一块",
+          "yī kuài",
+          "morceau, bout, tranche"
         ]
       ]
     },
@@ -2656,7 +2749,8 @@
           "qì hòu",
           "climat, ambiance"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "边",
@@ -3105,7 +3199,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "犭 donne le sens ; 句 donne la prononciation. (indice : dog)",
-      "meaning": "chien"
+      "meaning": "chien",
+      "words": [
+        [
+          "小狗",
+          "xiǎo gǒu",
+          "chiot"
+        ],
+        [
+          "热狗",
+          "rè gǒu",
+          "hot-dog"
+        ],
+        [
+          "狗年",
+          "gǒu nián",
+          "année du Chien"
+        ],
+        [
+          "狗急跳墙",
+          "gǒu jí tiào qiáng",
+          "bête acculée se défend"
+        ]
+      ]
     },
     {
       "char": "冷",
@@ -3577,6 +3693,11 @@
       "meaning": "lumineux, brillant, clair",
       "words": [
         [
+          "漂亮",
+          "piào liang",
+          "joli, beau, ravissant"
+        ],
+        [
           "月亮",
           "yuè liang",
           "lune"
@@ -3835,7 +3956,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "Étymologie non documentée dans cette base.",
-      "meaning": "six"
+      "meaning": "six",
+      "words": [
+        [
+          "六十",
+          "liù shí",
+          "soixante"
+        ],
+        [
+          "六月",
+          "liù yuè",
+          "juin"
+        ],
+        [
+          "六点",
+          "liù diǎn",
+          "six heures"
+        ],
+        [
+          "六神无主",
+          "liù shén wú zhǔ",
+          "affolé, désemparé"
+        ]
+      ]
     },
     {
       "char": "车",
@@ -4013,7 +4156,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "口 donne le sens ; 马 donne la prononciation. (indice : mouth)",
-      "meaning": "particule interrogative finale"
+      "meaning": "particule interrogative finale",
+      "words": [
+        [
+          "好吗",
+          "hǎo ma",
+          "d'accord ? ça va ?"
+        ],
+        [
+          "是吗",
+          "shì ma",
+          "vraiment ? c'est vrai ?"
+        ],
+        [
+          "干吗",
+          "gàn má",
+          "pourquoi, dans quel but"
+        ],
+        [
+          "不是吗",
+          "bù shì ma",
+          "n'est-ce pas ?"
+        ]
+      ]
     },
     {
       "char": "商",
@@ -4313,6 +4478,11 @@
       "meaning": "lit, couche, châssis",
       "words": [
         [
+          "起床",
+          "qǐ chuáng",
+          "se lever, sortir du lit"
+        ],
+        [
           "床位",
           "chuáng wèi",
           "lit, couchette"
@@ -4349,6 +4519,11 @@
           "喝彩",
           "hè cǎi",
           "acclamer, applaudir"
+        ],
+        [
+          "喝茶",
+          "hē chá",
+          "boire du thé"
         ]
       ]
     },
@@ -4420,6 +4595,11 @@
           "谁知道",
           "shéi zhī dào",
           "va savoir, qui l'aurait cru"
+        ],
+        [
+          "谁的",
+          "shéi de",
+          "à qui, de qui"
         ]
       ]
     },
@@ -4529,6 +4709,11 @@
           "大熊猫",
           "dà xióng māo",
           "panda géant"
+        ],
+        [
+          "小猫",
+          "xiǎo māo",
+          "chaton"
         ]
       ]
     },
@@ -4594,7 +4779,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "彳 donne le sens ; 艮 donne la prononciation. (indice : step)",
-      "meaning": "très, fort, beaucoup"
+      "meaning": "très, fort, beaucoup",
+      "words": [
+        [
+          "很好",
+          "hén hǎo",
+          "très bien, parfait"
+        ],
+        [
+          "很多",
+          "hěn duō",
+          "beaucoup, plein de"
+        ],
+        [
+          "很久",
+          "hěn jiǔ",
+          "longtemps"
+        ],
+        [
+          "很少",
+          "hěn shǎo",
+          "très peu, rarement"
+        ]
+      ]
     },
     {
       "char": "么",
@@ -4622,6 +4829,11 @@
       "etymologyEn": "Étymologie non documentée dans cette base.",
       "meaning": "particule interrogative",
       "words": [
+        [
+          "什么",
+          "shén me",
+          "quoi, quelque chose"
+        ],
         [
           "怎么",
           "zěn me",
@@ -4692,7 +4904,8 @@
           "hòu tiān",
           "après-demain, acquis"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "没",
@@ -4758,6 +4971,11 @@
       "etymologyEn": "To skillfully wield 帀 a knife 刂",
       "meaning": "maître, enseignant, expert",
       "words": [
+        [
+          "老师",
+          "lǎo shī",
+          "professeur, enseignant"
+        ],
         [
           "教师",
           "jiào shī",
@@ -5058,6 +5276,11 @@
       "meaning": "temps, époque, saison",
       "words": [
         [
+          "时候",
+          "shí hou",
+          "moment, temps"
+        ],
+        [
           "时间",
           "shí jiān",
           "temps, durée, moment"
@@ -5210,6 +5433,11 @@
       "meaning": "savoir, connaître, reconnaître",
       "words": [
         [
+          "认识",
+          "rèn shi",
+          "connaître, reconnaître, savoir"
+        ],
+        [
           "知识",
           "zhī shi",
           "connaissance, savoir"
@@ -5306,7 +5534,13 @@
       "source": "Make Me a Hanzi",
       "etymologyEn": "(indice : A person's face)",
       "meaning": "face, surface, côté",
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
+        [
+          "面包",
+          "miàn bāo",
+          "pain"
+        ],
         [
           "面前",
           "miàn qián",
@@ -5339,7 +5573,8 @@
           "bā shì",
           "bus, autocar"
         ]
-      ]
+      ],
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
     },
     {
       "char": "弟",
@@ -5366,7 +5601,8 @@
           "xiōng dì",
           "frères, frère cadet"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "会",
@@ -5785,6 +6021,11 @@
       "meaning": "poulet, poule",
       "words": [
         [
+          "鸡蛋",
+          "jī dàn",
+          "œuf, œuf de poule"
+        ],
+        [
           "公鸡",
           "gōng jī",
           "coq"
@@ -5816,7 +6057,8 @@
           "nà li",
           "là, cet endroit"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "东",
@@ -5844,6 +6086,11 @@
       "etymologyEn": "Simplified form of 東, the sun 日 rising behind a tree 木",
       "meaning": "est, oriental",
       "words": [
+        [
+          "东边",
+          "dōng bian",
+          "est, côté est"
+        ],
         [
           "东西",
           "dōng xī",
@@ -5990,7 +6237,8 @@
           "shū diàn",
           "librairie"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "读",
@@ -6054,7 +6302,29 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "The sun 日 shining through a doorway 门",
-      "meaning": "entre, espace, intervalle"
+      "meaning": "entre, espace, intervalle",
+      "words": [
+        [
+          "房间",
+          "fáng jiān",
+          "chambre, pièce"
+        ],
+        [
+          "时间",
+          "shí jiān",
+          "temps, durée, moment"
+        ],
+        [
+          "中间",
+          "zhōng jiān",
+          "milieu, intérieur"
+        ],
+        [
+          "之间",
+          "zhī jiān",
+          "entre, parmi"
+        ]
+      ]
     },
     {
       "char": "脑",
@@ -6199,7 +6469,24 @@
       ],
       "source": "Make Me a Hanzi",
       "etymologyEn": "口 donne le sens ; 尼 donne la prononciation. (indice : mouth)",
-      "meaning": "particule finale, laine"
+      "meaning": "particule finale, laine",
+      "words": [
+        [
+          "你呢",
+          "nǐ ne",
+          "et toi ? et vous ?"
+        ],
+        [
+          "着呢",
+          "zhe ne",
+          "vraiment, très"
+        ],
+        [
+          "呢子",
+          "ní zi",
+          "tissu de laine épais"
+        ]
+      ]
     },
     {
       "char": "睡",
@@ -6227,6 +6514,11 @@
       "etymologyEn": "目 donne le sens ; 垂 donne la prononciation. (indice : eye)",
       "meaning": "dormir, sommeiller",
       "words": [
+        [
+          "睡觉",
+          "shuì jiào",
+          "dormir, se coucher"
+        ],
         [
           "睡着",
           "shuì zháo",
@@ -6416,6 +6708,11 @@
           "儿子",
           "ér zi",
           "fils"
+        ],
+        [
+          "哪儿",
+          "nǎ r",
+          "où, où donc"
         ]
       ]
     },
@@ -6482,7 +6779,8 @@
           "gōng sī",
           "entreprise, société"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "四",
@@ -6625,9 +6923,19 @@
       "meaning": "comment, pourquoi",
       "words": [
         [
+          "怎么",
+          "zěn me",
+          "comment, pourquoi"
+        ],
+        [
           "怎样",
           "zěn yàng",
           "comment, de quelle façon"
+        ],
+        [
+          "怎么样",
+          "zěn me yàng",
+          "comment ? et si ?"
         ]
       ]
     },
@@ -6808,7 +7116,8 @@
           "xué xí",
           "apprendre, étudier"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "也",
@@ -6835,7 +7144,8 @@
           "yě hǎo",
           "ça va, tant pis, peu importe"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "这",
@@ -6905,6 +7215,11 @@
           "它们",
           "tā men",
           "ils, elles, eux"
+        ],
+        [
+          "它的",
+          "tā de",
+          "son, sa (objet)"
         ]
       ]
     },
@@ -7014,6 +7329,11 @@
           "她们",
           "tā men",
           "elles"
+        ],
+        [
+          "她的",
+          "tā de",
+          "son, sa, ses"
         ]
       ]
     },
@@ -7080,7 +7400,8 @@
           "yī jià",
           "cintre, portemanteau"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "正",
@@ -7226,6 +7547,16 @@
           "知道",
           "zhī dào",
           "savoir, apprendre"
+        ],
+        [
+          "知识",
+          "zhī shi",
+          "connaissance, savoir"
+        ],
+        [
+          "知名",
+          "zhī míng",
+          "célèbre, renommé"
         ]
       ]
     },
@@ -7292,7 +7623,8 @@
           "xiān jìn",
           "avancé, de pointe, exemplaire"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "宜",
@@ -7320,6 +7652,11 @@
       "etymologyEn": "A memorial service 且 held in a house 宀",
       "meaning": "convenir, approprié, convenable",
       "words": [
+        [
+          "便宜",
+          "biàn yí",
+          "commode, pratique"
+        ],
         [
           "不宜",
           "bù yí",
@@ -7466,7 +7803,8 @@
           "yǐ qián",
           "avant, autrefois, auparavant"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "条",
@@ -7494,6 +7832,11 @@
       "etymologyEn": "Étymologie non documentée dans cette base.",
       "meaning": "bande, clause, article",
       "words": [
+        [
+          "条件",
+          "tiáo jiàn",
+          "condition, exigence, situation"
+        ],
         [
           "条款",
           "tiáo kuǎn",
@@ -7819,7 +8162,13 @@
       "source": "Make Me a Hanzi",
       "etymologyEn": "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
       "meaning": "ami, compagnon, amitié",
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
+        [
+          "朋友",
+          "péng you",
+          "ami, amie"
+        ],
         [
           "网友",
           "wǎng yǒu",
@@ -8047,6 +8396,11 @@
           "字典",
           "zì diǎn",
           "dictionnaire de caractères"
+        ],
+        [
+          "汉字",
+          "hàn zì",
+          "caractère chinois"
         ]
       ]
     },
@@ -8156,6 +8510,11 @@
           "语言",
           "yǔ yán",
           "langue, langage"
+        ],
+        [
+          "汉语",
+          "Hàn yǔ",
+          "chinois, langue chinoise"
         ]
       ]
     },
@@ -8227,6 +8586,11 @@
           "喂养",
           "wèi yǎng",
           "nourrir, élever"
+        ],
+        [
+          "喂食",
+          "wèi shí",
+          "nourrir, alimenter"
         ]
       ]
     },
@@ -8336,6 +8700,11 @@
           "昨天",
           "zuó tiān",
           "hier"
+        ],
+        [
+          "昨晚",
+          "zuó wǎn",
+          "hier soir"
         ]
       ]
     },
@@ -8403,6 +8772,11 @@
       "etymologyEn": "日 donne le sens ; 生 donne la prononciation. (indice : sun)",
       "meaning": "étoile, astre, planète",
       "words": [
+        [
+          "星期",
+          "xīng qī",
+          "semaine, jour de la semaine"
+        ],
         [
           "星期日",
           "Xīng qī rì",
@@ -8556,6 +8930,11 @@
       "meaning": "prospérer, fleurir, s'épanouir",
       "words": [
         [
+          "高兴",
+          "gāo xìng",
+          "content, heureux, joyeux"
+        ],
+        [
           "兴奋",
           "xīng fèn",
           "excité, excitation, enthousiasme"
@@ -8626,6 +9005,11 @@
       "etymologyEn": "A person 亻 leaning against a tree 木",
       "meaning": "se reposer, cesser, retraite",
       "words": [
+        [
+          "休息",
+          "xiū xi",
+          "repos, se reposer"
+        ],
         [
           "休假",
           "xiū jià",
@@ -8723,11 +9107,17 @@
       "source": "Make Me a Hanzi",
       "etymologyEn": "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 ",
       "meaning": "cinq",
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
         [
           "五星级",
           "wǔ xīng jí",
           "cinq étoiles"
+        ],
+        [
+          "五十",
+          "wǔ shí",
+          "cinquante"
         ]
       ]
     },
@@ -8761,6 +9151,11 @@
           "在家",
           "zài jiā",
           "à la maison, chez soi"
+        ],
+        [
+          "现在",
+          "xiàn zài",
+          "maintenant, actuellement"
         ]
       ]
     },

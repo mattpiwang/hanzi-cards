@@ -33,7 +33,29 @@
       ],
       "source": "Make Me a Hanzi",
       "meaning": "ah, particule d'exclamation",
-      "etymologyEn": "口 donne le sens ; 阿 donne la prononciation. (indice : mouth)"
+      "etymologyEn": "口 donne le sens ; 阿 donne la prononciation. (indice : mouth)",
+      "words": [
+        [
+          "天啊",
+          "tiān a",
+          "mon Dieu !"
+        ],
+        [
+          "好啊",
+          "hǎo a",
+          "d'accord ! bien sûr !"
+        ],
+        [
+          "啊呀",
+          "ā yā",
+          "interjection de surprise"
+        ],
+        [
+          "啊哟",
+          "ā yo",
+          "interjection de surprise, douleur"
+        ]
+      ]
     },
     {
       "char": "交",
@@ -141,6 +163,11 @@
           "希望",
           "xī wàng",
           "espérer, espoir, souhait"
+        ],
+        [
+          "希腊",
+          "Xī là",
+          "Grèce"
         ]
       ]
     },
@@ -359,7 +386,8 @@
           "zhōng jiè",
           "intermédiaire, relier, agence"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "然",
@@ -799,7 +827,8 @@
           "jīng guò",
           "passer, processus, parcours"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "色",
@@ -939,7 +968,24 @@
       ],
       "source": "Make Me a Hanzi",
       "meaning": "globe oculaire, pupille",
-      "etymologyEn": "目 donne le sens ; 青 donne la prononciation. (indice : eye)"
+      "etymologyEn": "目 donne le sens ; 青 donne la prononciation. (indice : eye)",
+      "words": [
+        [
+          "眼睛",
+          "yǎn jing",
+          "œil"
+        ],
+        [
+          "定睛",
+          "dìng jīng",
+          "fixer, dévisager"
+        ],
+        [
+          "目不转睛",
+          "mù bù zhuǎn jīng",
+          "regarder intensément"
+        ]
+      ]
     },
     {
       "char": "绍",
@@ -965,7 +1011,24 @@
       ],
       "source": "Make Me a Hanzi",
       "meaning": "relier, présenter",
-      "etymologyEn": "纟 donne le sens ; 召 donne la prononciation. (indice : thread)"
+      "etymologyEn": "纟 donne le sens ; 召 donne la prononciation. (indice : thread)",
+      "words": [
+        [
+          "介绍",
+          "jiè shào",
+          "présenter, présentation"
+        ],
+        [
+          "自我介绍",
+          "zì wǒ jiè shào",
+          "présentation, se présenter"
+        ],
+        [
+          "介绍信",
+          "jiè shào xìn",
+          "lettre de présentation"
+        ]
+      ]
     },
     {
       "char": "药",
@@ -1030,7 +1093,8 @@
           "chū bù",
           "initial, préliminaire, provisoire"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "酒",
@@ -1095,7 +1159,8 @@
           "shēn tǐ",
           "corps, santé"
         ]
-      ]
+      ],
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
     },
     {
       "char": "爷",
@@ -1274,7 +1339,8 @@
           "zǎo yǐ",
           "depuis longtemps, jadis"
         ]
-      ]
+      ],
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
     },
     {
       "char": "词",
@@ -1344,6 +1410,11 @@
           "咖啡",
           "kā fēi",
           "café"
+        ],
+        [
+          "咖喱",
+          "gā lí",
+          "curry"
         ]
       ]
     },
@@ -2089,7 +2160,8 @@
           "yuè duì",
           "groupe, orchestre"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "诉",
@@ -2154,7 +2226,8 @@
           "zuǒ yòu",
           "gauche et droite, environ, contrôler"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "等",
@@ -2722,7 +2795,29 @@
       ],
       "source": "Make Me a Hanzi",
       "meaning": "donner un coup de pied",
-      "etymologyEn": "足 donne le sens ; 易 donne la prononciation. (indice : foot)"
+      "etymologyEn": "足 donne le sens ; 易 donne la prononciation. (indice : foot)",
+      "words": [
+        [
+          "踢球",
+          "tī qiú",
+          "jouer au ballon"
+        ],
+        [
+          "踢足球",
+          "tī zú qiú",
+          "jouer au football"
+        ],
+        [
+          "踢腿",
+          "tī tuǐ",
+          "battre des jambes"
+        ],
+        [
+          "拳打脚踢",
+          "quán dǎ jiǎo tī",
+          "rouer de coups"
+        ]
+      ]
     },
     {
       "char": "站",
@@ -2786,7 +2881,24 @@
       ],
       "source": "Make Me a Hanzi",
       "meaning": "café, morphine",
-      "etymologyEn": "口 donne le sens ; 非 donne la prononciation. (indice : mouth)"
+      "etymologyEn": "口 donne le sens ; 非 donne la prononciation. (indice : mouth)",
+      "words": [
+        [
+          "咖啡",
+          "kā fēi",
+          "café"
+        ],
+        [
+          "咖啡馆",
+          "kā fēi guǎn",
+          "café"
+        ],
+        [
+          "咖啡因",
+          "kā fēi yīn",
+          "caféine"
+        ]
+      ]
     },
     {
       "char": "路",
@@ -2889,7 +3001,8 @@
           "Cháng chéng",
           "la Grande Muraille"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "夫",
@@ -2954,7 +3067,8 @@
           "lǚ xíng",
           "voyager, voyage"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "跳",
@@ -3024,6 +3138,11 @@
           "丈夫",
           "zhàng fu",
           "mari, époux"
+        ],
+        [
+          "万丈",
+          "wàn zhàng",
+          "dix mille brasses, sans limites"
         ]
       ]
     },
@@ -3053,6 +3172,11 @@
       "meaning": "annoncer, informer, accuser",
       "etymologyEn": "To speak 口 with the force of an ox 牛",
       "words": [
+        [
+          "告诉",
+          "gào sù",
+          "porter plainte"
+        ],
         [
           "告别",
           "gào bié",
@@ -3394,7 +3518,8 @@
           "měi féng",
           "chaque fois, à chaque occasion"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "完",
@@ -3460,6 +3585,11 @@
       "meaning": "exact, permettre, approuver",
       "etymologyEn": "冫 donne le sens ; 隹 donne la prononciation. (indice : water in a spirit level)",
       "words": [
+        [
+          "准备",
+          "zhǔn bèi",
+          "préparation, préparer, prévoir"
+        ],
         [
           "准确",
           "zhǔn què",
@@ -3530,7 +3660,8 @@
           "mén piào",
           "billet, place de spectacle"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "万",
@@ -3557,7 +3688,8 @@
           "qiān wàn",
           "dix millions, absolument, surtout"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "自",
@@ -3584,7 +3716,8 @@
           "zì yóu",
           "liberté, libre"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "黑",
@@ -3611,7 +3744,8 @@
           "hēi sè",
           "noir"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "拿",
@@ -3779,11 +3913,17 @@
       "source": "Make Me a Hanzi",
       "meaning": "oiseau",
       "etymologyEn": "Simplified form of 烏, a bird",
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
       "words": [
         [
           "鸟巢",
           "niǎo cháo",
           "nid d'oiseau, stade olympique"
+        ],
+        [
+          "小鸟",
+          "xiǎo niǎo",
+          "petit oiseau"
         ]
       ]
     },
@@ -3812,7 +3952,8 @@
           "jiāo wǎng",
           "fréquenter, relation, contact"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "足",
@@ -3839,7 +3980,8 @@
           "zú qiú",
           "football, ballon de foot"
         ]
-      ]
+      ],
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
     },
     {
       "char": "花",
@@ -4106,6 +4248,11 @@
       "etymologyEn": "A king 王 gazing at the moon 月; 亡 provides the pronunciation",
       "words": [
         [
+          "希望",
+          "xī wàng",
+          "espérer, espoir, souhait"
+        ],
+        [
           "愿望",
           "yuàn wàng",
           "désir, souhait"
@@ -4126,11 +4273,17 @@
       "source": "Make Me a Hanzi",
       "meaning": "gauche, non conventionnel",
       "etymologyEn": "(indice : A left hand; compare 又)",
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
         [
           "左边",
           "zuǒ bian",
           "gauche, à gauche de"
+        ],
+        [
+          "左右",
+          "zuǒ yòu",
+          "gauche et droite, environ, contrôler"
         ]
       ]
     },
@@ -4262,7 +4415,13 @@
       "source": "Make Me a Hanzi",
       "meaning": "soi, personnel, tronc céleste",
       "etymologyEn": "(indice : A loom woven with thread)",
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
+        [
+          "自己",
+          "zì jǐ",
+          "soi-même, personnel"
+        ],
         [
           "知己",
           "zhī jǐ",
@@ -4305,6 +4464,11 @@
           "妻子",
           "qī zǐ",
           "femme et enfants, famille"
+        ],
+        [
+          "夫妻",
+          "fū qī",
+          "mari et femme, couple"
         ]
       ]
     },
@@ -4452,6 +4616,11 @@
           "舞台",
           "wǔ tái",
           "scène, arène"
+        ],
+        [
+          "跳舞",
+          "tiào wǔ",
+          "danser"
         ]
       ]
     }

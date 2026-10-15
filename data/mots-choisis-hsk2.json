@@ -1,1682 +1,1794 @@
 {
- "交": [
-  {
-   "mot": "交给",
-   "pinyin": "jiao1 gei3",
-   "niveau": "HSK 2",
-   "def": "to give; to deliver; to hand over"
-  },
-  {
-   "mot": "交通",
-   "pinyin": "jiao1 tong1",
-   "niveau": "HSK 2",
-   "def": "to be connected ; traffic ; transportation ; communications ; liaison"
-  }
- ],
- "晴": [
-  {
-   "mot": "晴天",
-   "pinyin": "qing2 tian1",
-   "niveau": "HSK 2",
-   "def": "clear sky ; sunny day"
-  },
-  {
-   "mot": "晴朗",
-   "pinyin": "qing2 lang3",
-   "niveau": "HSK 5",
-   "def": "sunny and cloudless"
-  }
- ],
- "希": [
-  {
-   "mot": "希望",
-   "pinyin": "xi1 wang4",
-   "niveau": "HSK 3",
-   "def": "to hope ; a hope; a wish"
-  }
- ],
- "帮": [
-  {
-   "mot": "帮忙",
-   "pinyin": "bang1 mang2",
-   "niveau": "HSK 1",
-   "def": "to help ; to lend a hand ; to do a favor ; to do a good turn"
-  },
-  {
-   "mot": "帮助",
-   "pinyin": "bang1 zhu4",
-   "niveau": "HSK 2",
-   "def": "assistance; aid ; to help; to assist"
-  }
- ],
- "教": [
-  {
-   "mot": "教学楼",
-   "pinyin": "jiao4 xue2 lou2",
-   "niveau": "HSK 1",
-   "def": "school building; academic building"
-  },
-  {
-   "mot": "教师",
-   "pinyin": "jiao4 shi1",
-   "niveau": "HSK 2",
-   "def": "teacher ; CL:個|个[ge4]"
-  }
- ],
- "球": [
-  {
-   "mot": "球场",
-   "pinyin": "qiu2 chang3",
-   "niveau": "HSK 2",
-   "def": "stadium ; sports ground ; court ; pitch ; field ; golf course ; CL:個|个[ge4],處|处[chu4]"
-  },
-  {
-   "mot": "球队",
-   "pinyin": "qiu2 dui4",
-   "niveau": "HSK 2",
-   "def": "sports team (basketball, soccer, football etc)"
-  }
- ],
- "洗": [
-  {
-   "mot": "洗手间",
-   "pinyin": "xi3 shou3 jian1",
-   "niveau": "HSK 1",
-   "def": "toilet ; lavatory ; washroom"
-  },
-  {
-   "mot": "洗澡",
-   "pinyin": "xi3 zao3",
-   "niveau": "HSK 2",
-   "def": "to bathe ; to take a shower"
-  }
- ],
- "备": [
-  {
-   "mot": "准备",
-   "pinyin": "zhun3 bei4",
-   "niveau": "HSK 1",
-   "def": "preparation ; to prepare ; to intend ; to be about to ; reserve (fund)"
-  },
-  {
-   "mot": "设备",
-   "pinyin": "she4 bei4",
-   "niveau": "HSK 3",
-   "def": "equipment; facilities; installations"
-  }
- ],
- "介": [
-  {
-   "mot": "介绍",
-   "pinyin": "jie4 shao4",
-   "niveau": "HSK 1",
-   "def": "to introduce (sb to sb) ; to give a presentation ; to present (sb for a job etc) ; introduction"
-  },
-  {
-   "mot": "中介",
-   "pinyin": "zhong1 jie4",
-   "niveau": "HSK 4",
-   "def": "to act as intermediary ; to link ; intermediate ; inter- ; agency ; agent"
-  }
- ],
- "然": [
-  {
-   "mot": "然后",
-   "pinyin": "ran2 hou4",
-   "niveau": "HSK 2",
-   "def": "then; after that; afterwards"
-  },
-  {
-   "mot": "然而",
-   "pinyin": "ran2 er2",
-   "niveau": "HSK 4",
-   "def": "however; but; yet"
-  }
- ],
- "笑": [
-  {
-   "mot": "笑话",
-   "pinyin": "xiao4 hua5",
-   "niveau": "HSK 2",
-   "def": "joke; jest ; to laugh at; to mock ; ridiculous; absurd"
-  },
-  {
-   "mot": "笑话儿",
-   "pinyin": "xiao4 hua5 r5",
-   "niveau": "HSK 2",
-   "def": "erhua form of 笑話|笑话[xiao4 hua5]"
-  }
- ],
- "比": [
-  {
-   "mot": "比如说",
-   "pinyin": "bi3 ru2 shuo1",
-   "niveau": "HSK 2",
-   "def": "for example"
-  },
-  {
-   "mot": "比较",
-   "pinyin": "bi3 jiao4",
-   "niveau": "HSK 3",
-   "def": "to compare ; to contrast ; comparatively ; relatively ; quite ; comparison"
-  }
- ],
- "进": [
-  {
-   "mot": "进来",
-   "pinyin": "jin4 lai2",
-   "niveau": "HSK 1",
-   "def": "to come in"
-  },
-  {
-   "mot": "进去",
-   "pinyin": "jin4 qu4",
-   "niveau": "HSK 1",
-   "def": "to go in"
-  }
- ],
- "让": [
-  {
-   "mot": "让座",
-   "pinyin": "rang4 zuo4",
-   "niveau": "HSK 6",
-   "def": "to give up one's seat for sb"
-  },
-  {
-   "mot": "让步",
-   "pinyin": "rang4 bu4",
-   "niveau": "HSK 7-9",
-   "def": "to concede ; to give in ; to yield ; a concession ; (linguistics) concessive"
-  }
- ],
- "姓": [
-  {
-   "mot": "姓名",
-   "pinyin": "xing4 ming2",
-   "niveau": "HSK 2",
-   "def": "surname and given name; full name"
-  },
-  {
-   "mot": "老百姓",
-   "pinyin": "lao3 bai3 xing4",
-   "niveau": "HSK 3",
-   "def": "ordinary people ; the \"person in the street\" ; CL:個|个[ge4]"
-  }
- ],
- "笔": [
-  {
-   "mot": "笔记",
-   "pinyin": "bi3 ji4",
-   "niveau": "HSK 2",
-   "def": "to take down (in writing) ; notes ; a type of literature consisting mainly of short sketches ; CL:本[ben3]"
-  },
-  {
-   "mot": "笔记本",
-   "pinyin": "bi3 ji4 ben3",
-   "niveau": "HSK 2",
-   "def": "notebook (stationery) (CL:本[ben3]) ; (computing) laptop; notebook (abbr. for 筆記本電腦|笔记本电脑[bi3 ji4 ben3 dian4 nao3])"
-  }
- ],
- "近": [
-  {
-   "mot": "近期",
-   "pinyin": "jin4 qi1",
-   "niveau": "HSK 3",
-   "def": "near in time ; in the near future ; very soon ; recent"
-  },
-  {
-   "mot": "近代",
-   "pinyin": "jin4 dai4",
-   "niveau": "HSK 4",
-   "def": "the not-very-distant past ; modern times, excluding recent decades ; (in the context of Chinese history) the period from the Opium Wars until the May 4th Movement (mid-19th century to 1919) ; capitalist times (pre-1949)"
-  }
- ],
- "肉": [
-  {
-   "mot": "肌肉",
-   "pinyin": "ji1 rou4",
-   "niveau": "HSK 5",
-   "def": "muscle ; flesh"
-  },
-  {
-   "mot": "烤肉",
-   "pinyin": "kao3 rou4",
-   "niveau": "HSK 5",
-   "def": "to barbecue meat; to roast meat ; barbecued meat; roast meat"
-  }
- ],
- "颜": [
-  {
-   "mot": "颜色",
-   "pinyin": "yan2 se4",
-   "niveau": "HSK 2",
-   "def": "color ; countenance ; appearance ; facial expression ; pigment ; dyestuff"
-  },
-  {
-   "mot": "容颜",
-   "pinyin": "rong2 yan2",
-   "niveau": "HSK 7-9",
-   "def": "mien ; complexion"
-  }
- ],
- "表": [
-  {
-   "mot": "表达",
-   "pinyin": "biao3 da2",
-   "niveau": "HSK 3",
-   "def": "to express; to convey"
-  },
-  {
-   "mot": "表格",
-   "pinyin": "biao3 ge2",
-   "niveau": "HSK 3",
-   "def": "form; table ; CL:張|张[zhang1],份[fen4]"
-  }
- ],
- "经": [
-  {
-   "mot": "经常",
-   "pinyin": "jing1 chang2",
-   "niveau": "HSK 2",
-   "def": "frequently; constantly; regularly; often ; day-to-day; everyday; daily"
-  },
-  {
-   "mot": "经过",
-   "pinyin": "jing1 guo4",
-   "niveau": "HSK 2",
-   "def": "to pass ; to go through ; process ; course ; CL:個|个[ge4]"
-  }
- ],
- "色": [
-  {
-   "mot": "色彩",
-   "pinyin": "se4 cai3",
-   "niveau": "HSK 4",
-   "def": "tint; coloring; coloration ; (fig.) flavor; character"
-  },
-  {
-   "mot": "白色",
-   "pinyin": "bai2 se4",
-   "niveau": "HSK 2",
-   "def": "white ; fig. reactionary ; anti-communist"
-  }
- ],
- "眼": [
-  {
-   "mot": "眼睛",
-   "pinyin": "yan3 jing5",
-   "niveau": "HSK 2",
-   "def": "eye ; CL:隻|只[zhi1],雙|双[shuang1]"
-  },
-  {
-   "mot": "眼前",
-   "pinyin": "yan3 qian2",
-   "niveau": "HSK 3",
-   "def": "before one's eyes ; now ; at present"
-  }
- ],
- "别": [
-  {
-   "mot": "别的",
-   "pinyin": "bie2 de5",
-   "niveau": "HSK 1",
-   "def": "else ; other"
-  },
-  {
-   "mot": "别人",
-   "pinyin": "bie2 ren5",
-   "niveau": "HSK 1",
-   "def": "other people; others; other person"
-  }
- ],
- "睛": [
-  {
-   "mot": "眼睛",
-   "pinyin": "yan3 jing5",
-   "niveau": "HSK 2",
-   "def": "eye ; CL:隻|只[zhi1],雙|双[shuang1]"
-  }
- ],
- "绍": [
-  {
-   "mot": "介绍",
-   "pinyin": "jie4 shao4",
-   "niveau": "HSK 1",
-   "def": "to introduce (sb to sb) ; to give a presentation ; to present (sb for a job etc) ; introduction"
-  }
- ],
- "药": [
-  {
-   "mot": "药店",
-   "pinyin": "yao4 dian4",
-   "niveau": "HSK 2",
-   "def": "pharmacy; drugstore"
-  },
-  {
-   "mot": "药片",
-   "pinyin": "yao4 pian4",
-   "niveau": "HSK 2",
-   "def": "a (medicine) pill or tablet ; CL:片[pian4]"
-  }
- ],
- "步": [
-  {
-   "mot": "步行",
-   "pinyin": "bu4 xing2",
-   "niveau": "HSK 4",
-   "def": "to go on foot ; to walk"
-  },
-  {
-   "mot": "初步",
-   "pinyin": "chu1 bu4",
-   "niveau": "HSK 3",
-   "def": "initial ; preliminary ; tentative"
-  }
- ],
- "酒": [
-  {
-   "mot": "酒店",
-   "pinyin": "jiu3 dian4",
-   "niveau": "HSK 2",
-   "def": "wine shop ; pub (public house) ; hotel ; restaurant ; (Tw) hostess club"
-  },
-  {
-   "mot": "酒吧",
-   "pinyin": "jiu3 ba1",
-   "niveau": "HSK 4",
-   "def": "bar (place to buy drinks) ; CL:家[jia1]"
-  }
- ],
- "身": [
-  {
-   "mot": "身上",
-   "pinyin": "shen1 shang5",
-   "niveau": "HSK 1",
-   "def": "on the body ; at hand ; among"
-  },
-  {
-   "mot": "身体",
-   "pinyin": "shen1 ti3",
-   "niveau": "HSK 1",
-   "def": "the body ; one's health"
-  }
- ],
- "爷": [
-  {
-   "mot": "爷爷",
-   "pinyin": "ye2 ye5",
-   "niveau": "HSK 1",
-   "def": "(coll.) paternal grandfather; grandpa"
-  },
-  {
-   "mot": "大爷",
-   "pinyin": "da4 ye2",
-   "niveau": "HSK 4",
-   "def": "arrogant idler ; self-centered show-off"
-  }
- ],
- "场": [
-  {
-   "mot": "场合",
-   "pinyin": "chang3 he2",
-   "niveau": "HSK 3",
-   "def": "occasion; situation; context ; setting; venue"
-  },
-  {
-   "mot": "场所",
-   "pinyin": "chang3 suo3",
-   "niveau": "HSK 3",
-   "def": "location ; place"
-  }
- ],
- "就": [
-  {
-   "mot": "就要",
-   "pinyin": "jiu4 yao4",
-   "niveau": "HSK 2",
-   "def": "will ; shall ; to be going to"
-  },
-  {
-   "mot": "就是",
-   "pinyin": "jiu4 shi4",
-   "niveau": "HSK 3",
-   "def": "exactly; precisely ; only; simply; just ; (used correlatively with 也[ye3]) even; even if"
-  }
- ],
- "始": [
-  {
-   "mot": "始终",
-   "pinyin": "shi3 zhong1",
-   "niveau": "HSK 3",
-   "def": "from beginning to end ; all along"
-  },
-  {
-   "mot": "开始",
-   "pinyin": "kai1 shi3",
-   "niveau": "HSK 3",
-   "def": "to begin; to start ; beginning; start"
-  }
- ],
- "已": [
-  {
-   "mot": "已经",
-   "pinyin": "yi3 jing1",
-   "niveau": "HSK 2",
-   "def": "already"
-  },
-  {
-   "mot": "早已",
-   "pinyin": "zao3 yi3",
-   "niveau": "HSK 3",
-   "def": "for a long time; long since ; (dialect) in the past"
-  }
- ],
- "词": [
-  {
-   "mot": "词典",
-   "pinyin": "ci2 dian3",
-   "niveau": "HSK 2",
-   "def": "dictionary ; CL:本[ben3],部[bu4]"
-  },
-  {
-   "mot": "词语",
-   "pinyin": "ci2 yu3",
-   "niveau": "HSK 2",
-   "def": "word (general term including monosyllables through to short phrases) ; term (e.g. technical term) ; expression"
-  }
- ],
- "咖": [
-  {
-   "mot": "咖啡",
-   "pinyin": "ka1 fei1",
-   "niveau": "HSK 3",
-   "def": "(loanword) coffee ; CL:杯[bei1]"
-  }
- ],
- "试": [
-  {
-   "mot": "试题",
-   "pinyin": "shi4 ti2",
-   "niveau": "HSK 3",
-   "def": "exam question ; test topic"
-  },
-  {
-   "mot": "试验",
-   "pinyin": "shi4 yan4",
-   "niveau": "HSK 3",
-   "def": "experiment ; test ; CL:次[ci4],個|个[ge4] ; to experiment ; experimental"
-  }
- ],
- "意": [
-  {
-   "mot": "意见",
-   "pinyin": "yi4 jian4",
-   "niveau": "HSK 2",
-   "def": "idea ; opinion ; suggestion ; objection ; complaint ; CL:點|点[dian3],條|条[tiao2]"
-  },
-  {
-   "mot": "意思",
-   "pinyin": "yi4 si5",
-   "niveau": "HSK 2",
-   "def": "idea ; opinion ; meaning ; wish ; desire ; interest ; fun ; token of appreciation, affection etc ; CL:個|个[ge4] ; to give as a small token ; to do sth as a gesture of goodwill etc"
-  }
- ],
- "次": [
-  {
-   "mot": "上次",
-   "pinyin": "shang4 ci4",
-   "niveau": "HSK 1",
-   "def": "last time"
-  },
-  {
-   "mot": "下次",
-   "pinyin": "xia4 ci4",
-   "niveau": "HSK 1",
-   "def": "next time"
-  }
- ],
- "考": [
-  {
-   "mot": "考试",
-   "pinyin": "kao3 shi4",
-   "niveau": "HSK 1",
-   "def": "to take an exam ; exam ; CL:次[ci4]"
-  },
-  {
-   "mot": "考生",
-   "pinyin": "kao3 sheng1",
-   "niveau": "HSK 2",
-   "def": "exam candidate ; student whose name has been put forward for an exam"
-  }
- ],
- "室": [
-  {
-   "mot": "教室",
-   "pinyin": "jiao4 shi4",
-   "niveau": "HSK 2",
-   "def": "classroom ; CL:間|间[jian1]"
-  },
-  {
-   "mot": "办公室",
-   "pinyin": "ban4 gong1 shi4",
-   "niveau": "HSK 2",
-   "def": "office; business premises"
-  }
- ],
- "因": [
-  {
-   "mot": "因为",
-   "pinyin": "yin1 wei4",
-   "niveau": "HSK 2",
-   "def": "because; owing to; on account of"
-  },
-  {
-   "mot": "因此",
-   "pinyin": "yin1 ci3",
-   "niveau": "HSK 3",
-   "def": "thus; consequently; as a result"
-  }
- ],
- "从": [
-  {
-   "mot": "从小",
-   "pinyin": "cong2 xiao3",
-   "niveau": "HSK 2",
-   "def": "from childhood; from a young age"
-  },
-  {
-   "mot": "从来",
-   "pinyin": "cong2 lai2",
-   "niveau": "HSK 3",
-   "def": "always ; at all times ; never (if used in negative sentence)"
-  }
- ],
- "裤": [
-  {
-   "mot": "裤子",
-   "pinyin": "ku4 zi5",
-   "niveau": "HSK 3",
-   "def": "trousers; pants ; CL:條|条[tiao2]"
-  },
-  {
-   "mot": "短裤",
-   "pinyin": "duan3 ku4",
-   "niveau": "HSK 3",
-   "def": "short pants ; shorts"
-  }
- ],
- "舒": [
-  {
-   "mot": "舒服",
-   "pinyin": "shu1 fu5",
-   "niveau": "HSK 2",
-   "def": "comfortable ; feeling well"
-  },
-  {
-   "mot": "舒适",
-   "pinyin": "shu1 shi4",
-   "niveau": "HSK 4",
-   "def": "cozy ; snug"
-  }
- ],
- "阴": [
-  {
-   "mot": "阴天",
-   "pinyin": "yin1 tian1",
-   "niveau": "HSK 2",
-   "def": "cloudy day; overcast sky"
-  },
-  {
-   "mot": "阴谋",
-   "pinyin": "yin1 mou2",
-   "niveau": "HSK 6",
-   "def": "to conspire; to plot ; a conspiracy; a plot"
-  }
- ],
- "错": [
-  {
-   "mot": "错误",
-   "pinyin": "cuo4 wu4",
-   "niveau": "HSK 3",
-   "def": "mistaken; false; wrong ; error; mistake ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "不错",
-   "pinyin": "bu4 cuo4",
-   "niveau": "HSK 2",
-   "def": "correct ; right ; not bad ; pretty good"
-  }
- ],
- "快": [
-  {
-   "mot": "快餐",
-   "pinyin": "kuai4 can1",
-   "niveau": "HSK 2",
-   "def": "fast food ; snack ; quick meal"
-  },
-  {
-   "mot": "快乐",
-   "pinyin": "kuai4 le4",
-   "niveau": "HSK 2",
-   "def": "happy; joyful"
-  }
- ],
- "思": [
-  {
-   "mot": "思想",
-   "pinyin": "si1 xiang3",
-   "niveau": "HSK 3",
-   "def": "thought ; thinking ; idea ; ideology ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "思考",
-   "pinyin": "si1 kao3",
-   "niveau": "HSK 4",
-   "def": "to reflect on ; to ponder over"
-  }
- ],
- "泳": [
-  {
-   "mot": "游泳",
-   "pinyin": "you2 yong3",
-   "niveau": "HSK 3",
-   "def": "swimming ; to swim"
-  },
-  {
-   "mot": "游泳池",
-   "pinyin": "you2 yong3 chi2",
-   "niveau": "HSK 5",
-   "def": "swimming pool"
-  }
- ],
- "但": [
-  {
-   "mot": "但是",
-   "pinyin": "dan4 shi4",
-   "niveau": "HSK 2",
-   "def": "but; however"
-  },
-  {
-   "mot": "不但",
-   "pinyin": "bu4 dan4",
-   "niveau": "HSK 2",
-   "def": "not only (... but also ...)"
-  }
- ],
- "篮": [
-  {
-   "mot": "篮球",
-   "pinyin": "lan2 qiu2",
-   "niveau": "HSK 2",
-   "def": "basketball ; CL:個|个[ge4],隻|只[zhi1]"
-  },
-  {
-   "mot": "摇篮",
-   "pinyin": "yao2 lan2",
-   "niveau": "HSK 7-9",
-   "def": "cradle (for a baby) ; (fig.) cradle; birthplace (of a civilization, movement etc)"
-  }
- ],
- "送": [
-  {
-   "mot": "送给",
-   "pinyin": "song4 gei3",
-   "niveau": "HSK 2",
-   "def": "to send ; to give as a present"
-  },
-  {
-   "mot": "发送",
-   "pinyin": "fa1 song4",
-   "niveau": "HSK 3",
-   "def": "to transmit ; to dispatch ; to issue (an official document or credential)"
-  }
- ],
- "游": [
-  {
-   "mot": "游客",
-   "pinyin": "you2 ke4",
-   "niveau": "HSK 2",
-   "def": "traveler; tourist ; (online gaming) guest player"
-  },
-  {
-   "mot": "游戏",
-   "pinyin": "you2 xi4",
-   "niveau": "HSK 3",
-   "def": "game (CL:場|场[chang3]) ; to play"
-  }
- ],
- "地": [
-  {
-   "mot": "地点",
-   "pinyin": "di4 dian3",
-   "niveau": "HSK 1",
-   "def": "place ; site ; location ; venue ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "地方",
-   "pinyin": "di4 fang1",
-   "niveau": "HSK 1",
-   "def": "region ; regional (away from the central administration) ; local"
-  }
- ],
- "乐": [
-  {
-   "mot": "乐观",
-   "pinyin": "le4 guan1",
-   "niveau": "HSK 3",
-   "def": "optimistic; hopeful"
-  },
-  {
-   "mot": "乐队",
-   "pinyin": "yue4 dui4",
-   "niveau": "HSK 3",
-   "def": "band ; pop group ; CL:支[zhi1]"
-  }
- ],
- "诉": [
-  {
-   "mot": "告诉",
-   "pinyin": "gao4 su4",
-   "niveau": "HSK 1",
-   "def": "to press charges; to file a complaint"
-  },
-  {
-   "mot": "投诉",
-   "pinyin": "tou2 su4",
-   "niveau": "HSK 4",
-   "def": "to lodge a complaint"
-  }
- ],
- "右": [
-  {
-   "mot": "右边",
-   "pinyin": "you4 bian5",
-   "niveau": "HSK 1",
-   "def": "right side ; right, to the right"
-  },
-  {
-   "mot": "左右",
-   "pinyin": "zuo3 you4",
-   "niveau": "HSK 3",
-   "def": "left and right ; nearby ; approximately ; attendant ; to control ; to influence"
-  }
- ],
- "等": [
-  {
-   "mot": "等到",
-   "pinyin": "deng3 dao4",
-   "niveau": "HSK 2",
-   "def": "to wait until ; by the time when (sth is ready etc)"
-  },
-  {
-   "mot": "等于",
-   "pinyin": "deng3 yu2",
-   "niveau": "HSK 2",
-   "def": "to equal ; to be tantamount to"
-  }
- ],
- "累": [
-  {
-   "mot": "积累",
-   "pinyin": "ji1 lei3",
-   "niveau": "HSK 4",
-   "def": "to accumulate ; accumulation ; cumulative ; cumulatively"
-  },
-  {
-   "mot": "累积",
-   "pinyin": "lei3 ji1",
-   "niveau": "HSK 7-9",
-   "def": "to accumulate"
-  }
- ],
- "虽": [
-  {
-   "mot": "虽然",
-   "pinyin": "sui1 ran2",
-   "niveau": "HSK 2",
-   "def": "although; even though (often used correlatively with 可是[ke3 shi4] or 但是[dan4 shi4] etc)"
-  },
-  {
-   "mot": "虽说",
-   "pinyin": "sui1 shuo1",
-   "niveau": "HSK 7-9",
-   "def": "though ; although"
-  }
- ],
- "鱼": [
-  {
-   "mot": "钓鱼",
-   "pinyin": "diao4 yu2",
-   "niveau": "HSK 7-9",
-   "def": "to fish (with line and hook); to angle ; (fig.) to entrap ; (Tw) to repeatedly nod one's head while dozing"
-  },
-  {
-   "mot": "鳄鱼",
-   "pinyin": "e4 yu2",
-   "niveau": "HSK 7-9",
-   "def": "alligator; crocodile (CL:條|条[tiao2])"
-  }
- ],
- "店": [
-  {
-   "mot": "饭店",
-   "pinyin": "fan4 dian4",
-   "niveau": "HSK 1",
-   "def": "restaurant ; hotel ; CL:家[jia1]"
-  },
-  {
-   "mot": "商店",
-   "pinyin": "shang1 dian4",
-   "niveau": "HSK 1",
-   "def": "store; shop ; CL:家[jia1]"
-  }
- ],
- "离": [
-  {
-   "mot": "离开",
-   "pinyin": "li2 kai1",
-   "niveau": "HSK 2",
-   "def": "to depart; to leave"
-  },
-  {
-   "mot": "离婚",
-   "pinyin": "li2 hun1",
-   "niveau": "HSK 3",
-   "def": "to divorce"
-  }
- ],
- "所": [
-  {
-   "mot": "所以",
-   "pinyin": "suo3 yi3",
-   "niveau": "HSK 2",
-   "def": "therefore ; as a result ; so ; the reason why"
-  },
-  {
-   "mot": "所有",
-   "pinyin": "suo3 you3",
-   "niveau": "HSK 2",
-   "def": "all ; to have; to possess; to own"
-  }
- ],
- "远": [
-  {
-   "mot": "永远",
-   "pinyin": "yong3 yuan3",
-   "niveau": "HSK 2",
-   "def": "forever ; eternal"
-  },
-  {
-   "mot": "远处",
-   "pinyin": "yuan3 chu4",
-   "niveau": "HSK 5",
-   "def": "distant place"
-  }
- ],
- "懂": [
-  {
-   "mot": "懂得",
-   "pinyin": "dong3 de5",
-   "niveau": "HSK 2",
-   "def": "to understand; to know; to comprehend"
-  },
-  {
-   "mot": "懂事",
-   "pinyin": "dong3 shi4",
-   "niveau": "HSK 7-9",
-   "def": "to grow beyond the naivete of childhood; to be aware of what is going on in the world ; (esp. of a child) sensible; thoughtful; intelligent"
-  }
- ],
- "留": [
-  {
-   "mot": "留下",
-   "pinyin": "liu2 xia4",
-   "niveau": "HSK 2",
-   "def": "to leave behind ; to stay behind ; to remain ; to keep ; not to let (sb) go"
-  },
-  {
-   "mot": "留学生",
-   "pinyin": "liu2 xue2 sheng1",
-   "niveau": "HSK 2",
-   "def": "student studying abroad; returned student; foreign student; international student"
-  }
- ],
- "疼": [
-  {
-   "mot": "疼痛",
-   "pinyin": "teng2 tong4",
-   "niveau": "HSK 6",
-   "def": "pain ; (of a body part) to be painful; to be sore; to hurt ; (of a person) to be in pain"
-  },
-  {
-   "mot": "心疼",
-   "pinyin": "xin1 teng2",
-   "niveau": "HSK 5",
-   "def": "to love dearly ; to feel sorry for sb ; to regret ; to grudge ; to be distressed"
-  }
- ],
- "运": [
-  {
-   "mot": "运动",
-   "pinyin": "yun4 dong4",
-   "niveau": "HSK 2",
-   "def": "to move ; to exercise ; sports ; exercise ; motion ; movement ; campaign ; CL:場|场[chang3]"
-  },
-  {
-   "mot": "运输",
-   "pinyin": "yun4 shu1",
-   "niveau": "HSK 3",
-   "def": "to transport ; to carry ; transportation"
-  }
- ],
- "动": [
-  {
-   "mot": "动作",
-   "pinyin": "dong4 zuo4",
-   "niveau": "HSK 1",
-   "def": "movement; motion; action ; to act; to move"
-  },
-  {
-   "mot": "动物",
-   "pinyin": "dong4 wu4",
-   "niveau": "HSK 2",
-   "def": "animal"
-  }
- ],
- "楼": [
-  {
-   "mot": "楼上",
-   "pinyin": "lou2 shang4",
-   "niveau": "HSK 1",
-   "def": "upstairs ; (Internet slang) previous poster in a forum thread"
-  },
-  {
-   "mot": "楼下",
-   "pinyin": "lou2 xia4",
-   "niveau": "HSK 1",
-   "def": "downstairs"
-  }
- ],
- "站": [
-  {
-   "mot": "站住",
-   "pinyin": "zhan4 zhu4",
-   "niveau": "HSK 2",
-   "def": "to come to a stop; to halt ; to keep one's footing; to stay upright ; (fig.) to hold one's ground; to gain a firm foothold ; (of an assertion etc) to hold up; to be tenable"
-  },
-  {
-   "mot": "车站",
-   "pinyin": "che1 zhan4",
-   "niveau": "HSK 1",
-   "def": "rail station ; bus stop ; CL:處|处[chu4],個|个[ge4]"
-  }
- ],
- "啡": [
-  {
-   "mot": "咖啡",
-   "pinyin": "ka1 fei1",
-   "niveau": "HSK 3",
-   "def": "(loanword) coffee ; CL:杯[bei1]"
-  }
- ],
- "路": [
-  {
-   "mot": "路口",
-   "pinyin": "lu4 kou3",
-   "niveau": "HSK 1",
-   "def": "crossing ; intersection (of roads)"
-  },
-  {
-   "mot": "路上",
-   "pinyin": "lu4 shang5",
-   "niveau": "HSK 1",
-   "def": "on the road ; on the way; en route"
-  }
- ],
- "体": [
-  {
-   "mot": "体育",
-   "pinyin": "ti3 yu4",
-   "niveau": "HSK 2",
-   "def": "sports ; physical education"
-  },
-  {
-   "mot": "体育场",
-   "pinyin": "ti3 yu4 chang3",
-   "niveau": "HSK 2",
-   "def": "stadium ; CL:個|个[ge4],座[zuo4]"
-  }
- ],
- "长": [
-  {
-   "mot": "长大",
-   "pinyin": "zhang3 da4",
-   "niveau": "HSK 2",
-   "def": "to grow up"
-  },
-  {
-   "mot": "长城",
-   "pinyin": "Chang2 cheng2",
-   "niveau": "HSK 3",
-   "def": "the Great Wall"
-  }
- ],
- "夫": [
-  {
-   "mot": "夫妇",
-   "pinyin": "fu1 fu4",
-   "niveau": "HSK 4",
-   "def": "a (married) couple ; husband and wife ; CL:對|对[dui4]"
-  },
-  {
-   "mot": "夫妻",
-   "pinyin": "fu1 qi1",
-   "niveau": "HSK 4",
-   "def": "husband and wife; married couple"
-  }
- ],
- "旅": [
-  {
-   "mot": "旅客",
-   "pinyin": "lu:3 ke4",
-   "niveau": "HSK 2",
-   "def": "traveler; tourist"
-  },
-  {
-   "mot": "旅行",
-   "pinyin": "lu:3 xing2",
-   "niveau": "HSK 2",
-   "def": "to travel ; journey; trip ; CL:趟[tang4],次[ci4]"
-  }
- ],
- "跳": [
-  {
-   "mot": "跳高",
-   "pinyin": "tiao4 gao1",
-   "niveau": "HSK 3",
-   "def": "(athletics) high jump"
-  },
-  {
-   "mot": "跳舞",
-   "pinyin": "tiao4 wu3",
-   "niveau": "HSK 3",
-   "def": "to dance"
-  }
- ],
- "丈": [
-  {
-   "mot": "丈夫",
-   "pinyin": "zhang4 fu5",
-   "niveau": "HSK 4",
-   "def": "husband"
-  }
- ],
- "告": [
-  {
-   "mot": "告诉",
-   "pinyin": "gao4 su4",
-   "niveau": "HSK 1",
-   "def": "to press charges; to file a complaint"
-  },
-  {
-   "mot": "告别",
-   "pinyin": "gao4 bie2",
-   "niveau": "HSK 3",
-   "def": "to leave; to part from ; to bid farewell to; to say goodbye to"
-  }
- ],
- "绿": [
-  {
-   "mot": "绿色",
-   "pinyin": "lu:4 se4",
-   "niveau": "HSK 2",
-   "def": "green"
-  },
-  {
-   "mot": "绿茶",
-   "pinyin": "lu:4 cha2",
-   "niveau": "HSK 3",
-   "def": "green tea ; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities"
-  }
- ],
- "铁": [
-  {
-   "mot": "铁路",
-   "pinyin": "tie3 lu4",
-   "niveau": "HSK 3",
-   "def": "railroad ; railway ; CL:條|条[tiao2]"
-  },
-  {
-   "mot": "地铁",
-   "pinyin": "di4 tie3",
-   "niveau": "HSK 2",
-   "def": "underground railway; subway ; subway train"
-  }
- ],
- "周": [
-  {
-   "mot": "周末",
-   "pinyin": "zhou1 mo4",
-   "niveau": "HSK 2",
-   "def": "weekend"
-  },
-  {
-   "mot": "周年",
-   "pinyin": "zhou1 nian2",
-   "niveau": "HSK 2",
-   "def": "anniversary ; annual"
-  }
- ],
- "跟": [
-  {
-   "mot": "跟前",
-   "pinyin": "gen1 qian2",
-   "niveau": "HSK 5",
-   "def": "the front (of) ; (in) front ; (in) sb's presence ; just before (a date)"
-  },
-  {
-   "mot": "跟随",
-   "pinyin": "gen1 sui2",
-   "niveau": "HSK 5",
-   "def": "to follow"
-  }
- ],
- "慢": [
-  {
-   "mot": "慢慢",
-   "pinyin": "man4 man4",
-   "niveau": "HSK 3",
-   "def": "slowly; gradually"
-  },
-  {
-   "mot": "慢车",
-   "pinyin": "man4 che1",
-   "niveau": "HSK 6",
-   "def": "local bus or train ; slow train with many stops"
-  }
- ],
- "头": [
-  {
-   "mot": "头发",
-   "pinyin": "tou2 fa5",
-   "niveau": "HSK 2",
-   "def": "hair (on the head)"
-  },
-  {
-   "mot": "头脑",
-   "pinyin": "tou2 nao3",
-   "niveau": "HSK 3",
-   "def": "brains ; mind ; skull ; (fig.) gist (of a matter) ; leader ; boss"
-  }
- ],
- "着": [
-  {
-   "mot": "着火",
-   "pinyin": "zhao2 huo3",
-   "niveau": "HSK 4",
-   "def": "to catch fire"
-  },
-  {
-   "mot": "着急",
-   "pinyin": "zhao2 ji2",
-   "niveau": "HSK 4",
-   "def": "to worry; to feel anxious ; to feel a sense of urgency; to be in a hurry ; Taiwan pr. [zhao1ji2]"
-  }
- ],
- "馆": [
-  {
-   "mot": "图书馆",
-   "pinyin": "tu2 shu1 guan3",
-   "niveau": "HSK 1",
-   "def": "library ; CL:家[jia1],個|个[ge4]"
-  },
-  {
-   "mot": "饭馆",
-   "pinyin": "fan4 guan3",
-   "niveau": "HSK 2",
-   "def": "restaurant ; CL:家[jia1]"
-  }
- ],
- "每": [
-  {
-   "mot": "每当",
-   "pinyin": "mei3 dang1",
-   "niveau": "HSK 7-9",
-   "def": "whenever; every time"
-  },
-  {
-   "mot": "每逢",
-   "pinyin": "mei3 feng2",
-   "niveau": "HSK 7-9",
-   "def": "every time ; on each occasion ; whenever"
-  }
- ],
- "完": [
-  {
-   "mot": "完成",
-   "pinyin": "wan2 cheng2",
-   "niveau": "HSK 2",
-   "def": "to complete; to accomplish"
-  },
-  {
-   "mot": "完全",
-   "pinyin": "wan2 quan2",
-   "niveau": "HSK 2",
-   "def": "complete; whole ; totally; entirely"
-  }
- ],
- "准": [
-  {
-   "mot": "准备",
-   "pinyin": "zhun3 bei4",
-   "niveau": "HSK 1",
-   "def": "preparation ; to prepare ; to intend ; to be about to ; reserve (fund)"
-  },
-  {
-   "mot": "准确",
-   "pinyin": "zhun3 que4",
-   "niveau": "HSK 2",
-   "def": "accurate; exact; precise"
-  }
- ],
- "过": [
-  {
-   "mot": "过来",
-   "pinyin": "guo4 lai2",
-   "niveau": "HSK 2",
-   "def": "to come over ; to manage ; to handle ; to be able to take care of"
-  },
-  {
-   "mot": "过年",
-   "pinyin": "guo4 nian2",
-   "niveau": "HSK 2",
-   "def": "to celebrate the Chinese New Year"
-  }
- ],
- "门": [
-  {
-   "mot": "门口",
-   "pinyin": "men2 kou3",
-   "niveau": "HSK 1",
-   "def": "doorway ; gate ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "门票",
-   "pinyin": "men2 piao4",
-   "niveau": "HSK 1",
-   "def": "ticket (for theater, cinema etc)"
-  }
- ],
- "万": [
-  {
-   "mot": "万一",
-   "pinyin": "wan4 yi1",
-   "niveau": "HSK 4",
-   "def": "just in case ; if by any chance ; contingency"
-  },
-  {
-   "mot": "千万",
-   "pinyin": "qian1 wan4",
-   "niveau": "HSK 3",
-   "def": "ten million ; countless ; many ; one must by all means"
-  }
- ],
- "自": [
-  {
-   "mot": "自己",
-   "pinyin": "zi4 ji3",
-   "niveau": "HSK 2",
-   "def": "oneself; (attributive) one's own"
-  },
-  {
-   "mot": "自由",
-   "pinyin": "zi4 you2",
-   "niveau": "HSK 2",
-   "def": "freedom; liberty ; free; unrestricted"
-  }
- ],
- "黑": [
-  {
-   "mot": "黑板",
-   "pinyin": "hei1 ban3",
-   "niveau": "HSK 2",
-   "def": "blackboard ; CL:塊|块[kuai4],個|个[ge4]"
-  },
-  {
-   "mot": "黑色",
-   "pinyin": "hei1 se4",
-   "niveau": "HSK 2",
-   "def": "black"
-  }
- ],
- "拿": [
-  {
-   "mot": "拿出",
-   "pinyin": "na2 chu1",
-   "niveau": "HSK 2",
-   "def": "to take out ; to put out ; to provide ; to put forward (a proposal) ; to come up with (evidence)"
-  },
-  {
-   "mot": "拿到",
-   "pinyin": "na2 dao4",
-   "niveau": "HSK 2",
-   "def": "to get ; to obtain"
-  }
- ],
- "网": [
-  {
-   "mot": "网上",
-   "pinyin": "wang3 shang4",
-   "niveau": "HSK 1",
-   "def": "online"
-  },
-  {
-   "mot": "网友",
-   "pinyin": "wang3 you3",
-   "niveau": "HSK 1",
-   "def": "online friend ; netizen; Internet user"
-  }
- ],
- "走": [
-  {
-   "mot": "走路",
-   "pinyin": "zou3 lu4",
-   "niveau": "HSK 1",
-   "def": "to walk; to go on foot ; to leave; to depart ; (informal) to clear off; to beat it ; (of sb who gets fired or resigns) to leave the job; to get out"
-  },
-  {
-   "mot": "走过",
-   "pinyin": "zou3 guo4",
-   "niveau": "HSK 2",
-   "def": "to walk past ; to pass by"
-  }
- ],
- "红": [
-  {
-   "mot": "红色",
-   "pinyin": "hong2 se4",
-   "niveau": "HSK 2",
-   "def": "red (color) ; revolutionary"
-  },
-  {
-   "mot": "红茶",
-   "pinyin": "hong2 cha2",
-   "niveau": "HSK 3",
-   "def": "black tea ; CL:杯[bei1],壺|壶[hu2]"
-  }
- ],
- "鸟": [
-  {
-   "mot": "鸟巢",
-   "pinyin": "niao3 chao2",
-   "niveau": "HSK 7-9",
-   "def": "bird's nest ; nickname for Beijing 2008 Olympic stadium"
-  }
- ],
- "往": [
-  {
-   "mot": "往往",
-   "pinyin": "wang3 wang3",
-   "niveau": "HSK 3",
-   "def": "usually ; in many cases ; more often than not"
-  },
-  {
-   "mot": "交往",
-   "pinyin": "jiao1 wang3",
-   "niveau": "HSK 3",
-   "def": "to associate (with) ; to have contact (with) ; to hang out (with) ; to date ; (interpersonal) relationship ; association ; contact"
-  }
- ],
- "足": [
-  {
-   "mot": "足够",
-   "pinyin": "zu2 gou4",
-   "niveau": "HSK 3",
-   "def": "enough; sufficient"
-  },
-  {
-   "mot": "足球",
-   "pinyin": "zu2 qiu2",
-   "niveau": "HSK 3",
-   "def": "soccer; football ; a soccer ball; a football"
-  }
- ],
- "花": [
-  {
-   "mot": "花园",
-   "pinyin": "hua1 yuan2",
-   "niveau": "HSK 2",
-   "def": "garden (for flowers, ornamental plants etc); (landscaped) park; yard with decorative plants ; CL:座[zuo4]"
-  },
-  {
-   "mot": "花费",
-   "pinyin": "hua1 fei4",
-   "niveau": "HSK 6",
-   "def": "expense ; cost ; to spend (time or money) ; expenditure"
-  }
- ],
- "旁": [
-  {
-   "mot": "旁边",
-   "pinyin": "pang2 bian1",
-   "niveau": "HSK 1",
-   "def": "side; adjacent place"
-  },
-  {
-   "mot": "旁观",
-   "pinyin": "pang2 guan1",
-   "niveau": "HSK 7-9",
-   "def": "spectator ; non-participant"
-  }
- ],
- "忘": [
-  {
-   "mot": "忘记",
-   "pinyin": "wang4 ji4",
-   "niveau": "HSK 1",
-   "def": "to forget"
-  },
-  {
-   "mot": "忘掉",
-   "pinyin": "wang4 diao4",
-   "niveau": "HSK 7-9",
-   "def": "to forget"
-  }
- ],
- "最": [
-  {
-   "mot": "最好",
-   "pinyin": "zui4 hao3",
-   "niveau": "HSK 1",
-   "def": "best ; had better ...; it would be best to ..."
-  },
-  {
-   "mot": "最后",
-   "pinyin": "zui4 hou4",
-   "niveau": "HSK 1",
-   "def": "final; last; ultimate ; finally; in the end"
-  }
- ],
- "画": [
-  {
-   "mot": "画家",
-   "pinyin": "hua4 jia1",
-   "niveau": "HSK 2",
-   "def": "painter ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "画儿",
-   "pinyin": "hua4 r5",
-   "niveau": "HSK 2",
-   "def": "picture ; drawing ; painting"
-  }
- ],
- "跑": [
-  {
-   "mot": "跑步",
-   "pinyin": "pao3 bu4",
-   "niveau": "HSK 3",
-   "def": "to run ; to jog ; (military) to march at the double"
-  },
-  {
-   "mot": "跑车",
-   "pinyin": "pao3 che1",
-   "niveau": "HSK 7-9",
-   "def": "racing bicycle; racing car; sports car ; to drive a vehicle (such as a truck or taxi) for a living ; (of a conductor or attendant) to work on a train ; (mining) (of a cable-car) to slip away (in an accident)"
-  }
- ],
- "望": [
-  {
-   "mot": "希望",
-   "pinyin": "xi1 wang4",
-   "niveau": "HSK 3",
-   "def": "to hope ; a hope; a wish"
-  },
-  {
-   "mot": "愿望",
-   "pinyin": "yuan4 wang4",
-   "niveau": "HSK 3",
-   "def": "desire ; wish"
-  }
- ],
- "左": [
-  {
-   "mot": "左边",
-   "pinyin": "zuo3 bian5",
-   "niveau": "HSK 1",
-   "def": "left ; the left side ; to the left of"
-  },
-  {
-   "mot": "左右",
-   "pinyin": "zuo3 you4",
-   "niveau": "HSK 3",
-   "def": "left and right ; nearby ; approximately ; attendant ; to control ; to influence"
-  }
- ],
- "坏": [
-  {
-   "mot": "坏处",
-   "pinyin": "huai4 chu5",
-   "niveau": "HSK 2",
-   "def": "harm ; troubles ; CL:個|个[ge4]"
-  },
-  {
-   "mot": "坏人",
-   "pinyin": "huai4 ren2",
-   "niveau": "HSK 2",
-   "def": "bad person ; villain"
-  }
- ],
- "票": [
-  {
-   "mot": "票价",
-   "pinyin": "piao4 jia4",
-   "niveau": "HSK 3",
-   "def": "ticket price; fare; admission fee"
-  },
-  {
-   "mot": "车票",
-   "pinyin": "che1 piao4",
-   "niveau": "HSK 1",
-   "def": "ticket for a bus or train"
-  }
- ],
- "为": [
-  {
-   "mot": "为什么",
-   "pinyin": "wei4 shen2 me5",
-   "niveau": "HSK 2",
-   "def": "why? ; for what reason?"
-  },
-  {
-   "mot": "为了",
-   "pinyin": "wei4 le5",
-   "niveau": "HSK 3",
-   "def": "for; for the purpose of; in order to"
-  }
- ],
- "己": [
-  {
-   "mot": "自己",
-   "pinyin": "zi4 ji3",
-   "niveau": "HSK 2",
-   "def": "oneself; (attributive) one's own"
-  },
-  {
-   "mot": "知己",
-   "pinyin": "zhi1 ji3",
-   "niveau": "HSK 7-9",
-   "def": "to know oneself ; to be intimate or close ; intimate friend"
-  }
- ],
- "妻": [
-  {
-   "mot": "妻子",
-   "pinyin": "qi1 zi3",
-   "niveau": "HSK 4",
-   "def": "wife and children"
-  },
-  {
-   "mot": "夫妻",
-   "pinyin": "fu1 qi1",
-   "niveau": "HSK 4",
-   "def": "husband and wife; married couple"
-  }
- ],
- "位": [
-  {
-   "mot": "位于",
-   "pinyin": "wei4 yu2",
-   "niveau": "HSK 4",
-   "def": "to be located at ; to be situated at ; to lie"
-  },
-  {
-   "mot": "位置",
-   "pinyin": "wei4 zhi5",
-   "niveau": "HSK 4",
-   "def": "position ; place ; seat ; CL:個|个[ge4]"
-  }
- ],
- "记": [
-  {
-   "mot": "记得",
-   "pinyin": "ji4 de5",
-   "niveau": "HSK 1",
-   "def": "to remember"
-  },
-  {
-   "mot": "记住",
-   "pinyin": "ji4 zhu5",
-   "niveau": "HSK 1",
-   "def": "to remember ; to bear in mind ; to learn by heart"
-  }
- ],
- "情": [
-  {
-   "mot": "情感",
-   "pinyin": "qing2 gan3",
-   "niveau": "HSK 3",
-   "def": "feeling ; emotion ; to move (emotionally)"
-  },
-  {
-   "mot": "情况",
-   "pinyin": "qing2 kuang4",
-   "niveau": "HSK 3",
-   "def": "circumstances; state of affairs; situation ; CL:種|种[zhong3]"
-  }
- ],
- "舞": [
-  {
-   "mot": "舞台",
-   "pinyin": "wu3 tai2",
-   "niveau": "HSK 3",
-   "def": "(lit. and fig.) stage; arena"
-  },
-  {
-   "mot": "跳舞",
-   "pinyin": "tiao4 wu3",
-   "niveau": "HSK 3",
-   "def": "to dance"
-  }
- ]
+  "交": [
+    {
+      "mot": "交给",
+      "pinyin": "jiao1 gei3",
+      "niveau": "HSK 2",
+      "def": "to give; to deliver; to hand over"
+    },
+    {
+      "mot": "交通",
+      "pinyin": "jiao1 tong1",
+      "niveau": "HSK 2",
+      "def": "to be connected ; traffic ; transportation ; communications ; liaison"
+    }
+  ],
+  "晴": [
+    {
+      "mot": "晴天",
+      "pinyin": "qing2 tian1",
+      "niveau": "HSK 2",
+      "def": "clear sky ; sunny day"
+    },
+    {
+      "mot": "晴朗",
+      "pinyin": "qing2 lang3",
+      "niveau": "HSK 5",
+      "def": "sunny and cloudless"
+    }
+  ],
+  "希": [
+    {
+      "mot": "希望",
+      "pinyin": "xi1 wang4",
+      "niveau": "HSK 3",
+      "def": "to hope ; a hope; a wish"
+    },
+    {
+      "mot": "希腊",
+      "pinyin": "Xi1 la4",
+      "niveau": "HSK 2",
+      "def": "Greece"
+    }
+  ],
+  "帮": [
+    {
+      "mot": "帮忙",
+      "pinyin": "bang1 mang2",
+      "niveau": "HSK 1",
+      "def": "to help ; to lend a hand ; to do a favor ; to do a good turn"
+    },
+    {
+      "mot": "帮助",
+      "pinyin": "bang1 zhu4",
+      "niveau": "HSK 2",
+      "def": "assistance; aid ; to help; to assist"
+    }
+  ],
+  "教": [
+    {
+      "mot": "教学楼",
+      "pinyin": "jiao4 xue2 lou2",
+      "niveau": "HSK 1",
+      "def": "school building; academic building"
+    },
+    {
+      "mot": "教师",
+      "pinyin": "jiao4 shi1",
+      "niveau": "HSK 2",
+      "def": "teacher ; CL:個|个[ge4]"
+    }
+  ],
+  "球": [
+    {
+      "mot": "球场",
+      "pinyin": "qiu2 chang3",
+      "niveau": "HSK 2",
+      "def": "stadium ; sports ground ; court ; pitch ; field ; golf course ; CL:個|个[ge4],處|处[chu4]"
+    },
+    {
+      "mot": "球队",
+      "pinyin": "qiu2 dui4",
+      "niveau": "HSK 2",
+      "def": "sports team (basketball, soccer, football etc)"
+    }
+  ],
+  "洗": [
+    {
+      "mot": "洗手间",
+      "pinyin": "xi3 shou3 jian1",
+      "niveau": "HSK 1",
+      "def": "toilet ; lavatory ; washroom"
+    },
+    {
+      "mot": "洗澡",
+      "pinyin": "xi3 zao3",
+      "niveau": "HSK 2",
+      "def": "to bathe ; to take a shower"
+    }
+  ],
+  "备": [
+    {
+      "mot": "准备",
+      "pinyin": "zhun3 bei4",
+      "niveau": "HSK 1",
+      "def": "preparation ; to prepare ; to intend ; to be about to ; reserve (fund)"
+    },
+    {
+      "mot": "设备",
+      "pinyin": "she4 bei4",
+      "niveau": "HSK 3",
+      "def": "equipment; facilities; installations"
+    }
+  ],
+  "介": [
+    {
+      "mot": "介绍",
+      "pinyin": "jie4 shao4",
+      "niveau": "HSK 1",
+      "def": "to introduce (sb to sb) ; to give a presentation ; to present (sb for a job etc) ; introduction"
+    },
+    {
+      "mot": "中介",
+      "pinyin": "zhong1 jie4",
+      "niveau": "HSK 4",
+      "def": "to act as intermediary ; to link ; intermediate ; inter- ; agency ; agent"
+    }
+  ],
+  "然": [
+    {
+      "mot": "然后",
+      "pinyin": "ran2 hou4",
+      "niveau": "HSK 2",
+      "def": "then; after that; afterwards"
+    },
+    {
+      "mot": "然而",
+      "pinyin": "ran2 er2",
+      "niveau": "HSK 4",
+      "def": "however; but; yet"
+    }
+  ],
+  "笑": [
+    {
+      "mot": "笑话",
+      "pinyin": "xiao4 hua5",
+      "niveau": "HSK 2",
+      "def": "joke; jest ; to laugh at; to mock ; ridiculous; absurd"
+    },
+    {
+      "mot": "笑话儿",
+      "pinyin": "xiao4 hua5 r5",
+      "niveau": "HSK 2",
+      "def": "erhua form of 笑話|笑话[xiao4 hua5]"
+    }
+  ],
+  "比": [
+    {
+      "mot": "比如说",
+      "pinyin": "bi3 ru2 shuo1",
+      "niveau": "HSK 2",
+      "def": "for example"
+    },
+    {
+      "mot": "比较",
+      "pinyin": "bi3 jiao4",
+      "niveau": "HSK 3",
+      "def": "to compare ; to contrast ; comparatively ; relatively ; quite ; comparison"
+    }
+  ],
+  "进": [
+    {
+      "mot": "进来",
+      "pinyin": "jin4 lai2",
+      "niveau": "HSK 1",
+      "def": "to come in"
+    },
+    {
+      "mot": "进去",
+      "pinyin": "jin4 qu4",
+      "niveau": "HSK 1",
+      "def": "to go in"
+    }
+  ],
+  "让": [
+    {
+      "mot": "让座",
+      "pinyin": "rang4 zuo4",
+      "niveau": "HSK 6",
+      "def": "to give up one's seat for sb"
+    },
+    {
+      "mot": "让步",
+      "pinyin": "rang4 bu4",
+      "niveau": "HSK 7-9",
+      "def": "to concede ; to give in ; to yield ; a concession ; (linguistics) concessive"
+    }
+  ],
+  "姓": [
+    {
+      "mot": "姓名",
+      "pinyin": "xing4 ming2",
+      "niveau": "HSK 2",
+      "def": "surname and given name; full name"
+    },
+    {
+      "mot": "老百姓",
+      "pinyin": "lao3 bai3 xing4",
+      "niveau": "HSK 3",
+      "def": "ordinary people ; the \"person in the street\" ; CL:個|个[ge4]"
+    }
+  ],
+  "笔": [
+    {
+      "mot": "笔记",
+      "pinyin": "bi3 ji4",
+      "niveau": "HSK 2",
+      "def": "to take down (in writing) ; notes ; a type of literature consisting mainly of short sketches ; CL:本[ben3]"
+    },
+    {
+      "mot": "笔记本",
+      "pinyin": "bi3 ji4 ben3",
+      "niveau": "HSK 2",
+      "def": "notebook (stationery) (CL:本[ben3]) ; (computing) laptop; notebook (abbr. for 筆記本電腦|笔记本电脑[bi3 ji4 ben3 dian4 nao3])"
+    }
+  ],
+  "近": [
+    {
+      "mot": "近期",
+      "pinyin": "jin4 qi1",
+      "niveau": "HSK 3",
+      "def": "near in time ; in the near future ; very soon ; recent"
+    },
+    {
+      "mot": "近代",
+      "pinyin": "jin4 dai4",
+      "niveau": "HSK 4",
+      "def": "the not-very-distant past ; modern times, excluding recent decades ; (in the context of Chinese history) the period from the Opium Wars until the May 4th Movement (mid-19th century to 1919) ; capitalist times (pre-1949)"
+    }
+  ],
+  "肉": [
+    {
+      "mot": "肌肉",
+      "pinyin": "ji1 rou4",
+      "niveau": "HSK 5",
+      "def": "muscle ; flesh"
+    },
+    {
+      "mot": "烤肉",
+      "pinyin": "kao3 rou4",
+      "niveau": "HSK 5",
+      "def": "to barbecue meat; to roast meat ; barbecued meat; roast meat"
+    }
+  ],
+  "颜": [
+    {
+      "mot": "颜色",
+      "pinyin": "yan2 se4",
+      "niveau": "HSK 2",
+      "def": "color ; countenance ; appearance ; facial expression ; pigment ; dyestuff"
+    },
+    {
+      "mot": "容颜",
+      "pinyin": "rong2 yan2",
+      "niveau": "HSK 7-9",
+      "def": "mien ; complexion"
+    }
+  ],
+  "表": [
+    {
+      "mot": "表达",
+      "pinyin": "biao3 da2",
+      "niveau": "HSK 3",
+      "def": "to express; to convey"
+    },
+    {
+      "mot": "表格",
+      "pinyin": "biao3 ge2",
+      "niveau": "HSK 3",
+      "def": "form; table ; CL:張|张[zhang1],份[fen4]"
+    }
+  ],
+  "经": [
+    {
+      "mot": "经常",
+      "pinyin": "jing1 chang2",
+      "niveau": "HSK 2",
+      "def": "frequently; constantly; regularly; often ; day-to-day; everyday; daily"
+    },
+    {
+      "mot": "经过",
+      "pinyin": "jing1 guo4",
+      "niveau": "HSK 2",
+      "def": "to pass ; to go through ; process ; course ; CL:個|个[ge4]"
+    }
+  ],
+  "色": [
+    {
+      "mot": "色彩",
+      "pinyin": "se4 cai3",
+      "niveau": "HSK 4",
+      "def": "tint; coloring; coloration ; (fig.) flavor; character"
+    },
+    {
+      "mot": "白色",
+      "pinyin": "bai2 se4",
+      "niveau": "HSK 2",
+      "def": "white ; fig. reactionary ; anti-communist"
+    }
+  ],
+  "眼": [
+    {
+      "mot": "眼睛",
+      "pinyin": "yan3 jing5",
+      "niveau": "HSK 2",
+      "def": "eye ; CL:隻|只[zhi1],雙|双[shuang1]"
+    },
+    {
+      "mot": "眼前",
+      "pinyin": "yan3 qian2",
+      "niveau": "HSK 3",
+      "def": "before one's eyes ; now ; at present"
+    }
+  ],
+  "别": [
+    {
+      "mot": "别的",
+      "pinyin": "bie2 de5",
+      "niveau": "HSK 1",
+      "def": "else ; other"
+    },
+    {
+      "mot": "别人",
+      "pinyin": "bie2 ren5",
+      "niveau": "HSK 1",
+      "def": "other people; others; other person"
+    }
+  ],
+  "睛": [
+    {
+      "mot": "眼睛",
+      "pinyin": "yan3 jing5",
+      "niveau": "HSK 2",
+      "def": "eye ; CL:隻|只[zhi1],雙|双[shuang1]"
+    },
+    {
+      "mot": "定睛",
+      "pinyin": "ding4 jing1",
+      "niveau": "HSK 2",
+      "def": "to stare at"
+    },
+    {
+      "mot": "目不转睛",
+      "pinyin": "mu4 bu4 zhuan3 jing1",
+      "niveau": "HSK 2",
+      "def": "to gaze intently (idiom)"
+    }
+  ],
+  "绍": [
+    {
+      "mot": "介绍",
+      "pinyin": "jie4 shao4",
+      "niveau": "HSK 1",
+      "def": "to introduce (sb to sb) ; to give a presentation ; to present (sb for a job etc) ; introduction"
+    },
+    {
+      "mot": "自我介绍",
+      "pinyin": "zi4 wo3 jie4 shao4",
+      "niveau": "HSK 2",
+      "def": "self-introduction"
+    },
+    {
+      "mot": "介绍信",
+      "pinyin": "jie4 shao4 xin4",
+      "niveau": "HSK 2",
+      "def": "letter of introduction"
+    }
+  ],
+  "药": [
+    {
+      "mot": "药店",
+      "pinyin": "yao4 dian4",
+      "niveau": "HSK 2",
+      "def": "pharmacy; drugstore"
+    },
+    {
+      "mot": "药片",
+      "pinyin": "yao4 pian4",
+      "niveau": "HSK 2",
+      "def": "a (medicine) pill or tablet ; CL:片[pian4]"
+    }
+  ],
+  "步": [
+    {
+      "mot": "步行",
+      "pinyin": "bu4 xing2",
+      "niveau": "HSK 4",
+      "def": "to go on foot ; to walk"
+    },
+    {
+      "mot": "初步",
+      "pinyin": "chu1 bu4",
+      "niveau": "HSK 3",
+      "def": "initial ; preliminary ; tentative"
+    }
+  ],
+  "酒": [
+    {
+      "mot": "酒店",
+      "pinyin": "jiu3 dian4",
+      "niveau": "HSK 2",
+      "def": "wine shop ; pub (public house) ; hotel ; restaurant ; (Tw) hostess club"
+    },
+    {
+      "mot": "酒吧",
+      "pinyin": "jiu3 ba1",
+      "niveau": "HSK 4",
+      "def": "bar (place to buy drinks) ; CL:家[jia1]"
+    }
+  ],
+  "身": [
+    {
+      "mot": "身上",
+      "pinyin": "shen1 shang5",
+      "niveau": "HSK 1",
+      "def": "on the body ; at hand ; among"
+    },
+    {
+      "mot": "身体",
+      "pinyin": "shen1 ti3",
+      "niveau": "HSK 1",
+      "def": "the body ; one's health"
+    }
+  ],
+  "爷": [
+    {
+      "mot": "爷爷",
+      "pinyin": "ye2 ye5",
+      "niveau": "HSK 1",
+      "def": "(coll.) paternal grandfather; grandpa"
+    },
+    {
+      "mot": "大爷",
+      "pinyin": "da4 ye2",
+      "niveau": "HSK 4",
+      "def": "arrogant idler ; self-centered show-off"
+    }
+  ],
+  "场": [
+    {
+      "mot": "场合",
+      "pinyin": "chang3 he2",
+      "niveau": "HSK 3",
+      "def": "occasion; situation; context ; setting; venue"
+    },
+    {
+      "mot": "场所",
+      "pinyin": "chang3 suo3",
+      "niveau": "HSK 3",
+      "def": "location ; place"
+    }
+  ],
+  "就": [
+    {
+      "mot": "就要",
+      "pinyin": "jiu4 yao4",
+      "niveau": "HSK 2",
+      "def": "will ; shall ; to be going to"
+    },
+    {
+      "mot": "就是",
+      "pinyin": "jiu4 shi4",
+      "niveau": "HSK 3",
+      "def": "exactly; precisely ; only; simply; just ; (used correlatively with 也[ye3]) even; even if"
+    }
+  ],
+  "始": [
+    {
+      "mot": "始终",
+      "pinyin": "shi3 zhong1",
+      "niveau": "HSK 3",
+      "def": "from beginning to end ; all along"
+    },
+    {
+      "mot": "开始",
+      "pinyin": "kai1 shi3",
+      "niveau": "HSK 3",
+      "def": "to begin; to start ; beginning; start"
+    }
+  ],
+  "已": [
+    {
+      "mot": "已经",
+      "pinyin": "yi3 jing1",
+      "niveau": "HSK 2",
+      "def": "already"
+    },
+    {
+      "mot": "早已",
+      "pinyin": "zao3 yi3",
+      "niveau": "HSK 3",
+      "def": "for a long time; long since ; (dialect) in the past"
+    }
+  ],
+  "词": [
+    {
+      "mot": "词典",
+      "pinyin": "ci2 dian3",
+      "niveau": "HSK 2",
+      "def": "dictionary ; CL:本[ben3],部[bu4]"
+    },
+    {
+      "mot": "词语",
+      "pinyin": "ci2 yu3",
+      "niveau": "HSK 2",
+      "def": "word (general term including monosyllables through to short phrases) ; term (e.g. technical term) ; expression"
+    }
+  ],
+  "咖": [
+    {
+      "mot": "咖啡",
+      "pinyin": "ka1 fei1",
+      "niveau": "HSK 3",
+      "def": "(loanword) coffee ; CL:杯[bei1]"
+    },
+    {
+      "mot": "咖喱",
+      "pinyin": "ga1 li2",
+      "niveau": "HSK 2",
+      "def": "curry"
+    }
+  ],
+  "试": [
+    {
+      "mot": "试题",
+      "pinyin": "shi4 ti2",
+      "niveau": "HSK 3",
+      "def": "exam question ; test topic"
+    },
+    {
+      "mot": "试验",
+      "pinyin": "shi4 yan4",
+      "niveau": "HSK 3",
+      "def": "experiment ; test ; CL:次[ci4],個|个[ge4] ; to experiment ; experimental"
+    }
+  ],
+  "意": [
+    {
+      "mot": "意见",
+      "pinyin": "yi4 jian4",
+      "niveau": "HSK 2",
+      "def": "idea ; opinion ; suggestion ; objection ; complaint ; CL:點|点[dian3],條|条[tiao2]"
+    },
+    {
+      "mot": "意思",
+      "pinyin": "yi4 si5",
+      "niveau": "HSK 2",
+      "def": "idea ; opinion ; meaning ; wish ; desire ; interest ; fun ; token of appreciation, affection etc ; CL:個|个[ge4] ; to give as a small token ; to do sth as a gesture of goodwill etc"
+    }
+  ],
+  "次": [
+    {
+      "mot": "上次",
+      "pinyin": "shang4 ci4",
+      "niveau": "HSK 1",
+      "def": "last time"
+    },
+    {
+      "mot": "下次",
+      "pinyin": "xia4 ci4",
+      "niveau": "HSK 1",
+      "def": "next time"
+    }
+  ],
+  "考": [
+    {
+      "mot": "考试",
+      "pinyin": "kao3 shi4",
+      "niveau": "HSK 1",
+      "def": "to take an exam ; exam ; CL:次[ci4]"
+    },
+    {
+      "mot": "考生",
+      "pinyin": "kao3 sheng1",
+      "niveau": "HSK 2",
+      "def": "exam candidate ; student whose name has been put forward for an exam"
+    }
+  ],
+  "室": [
+    {
+      "mot": "教室",
+      "pinyin": "jiao4 shi4",
+      "niveau": "HSK 2",
+      "def": "classroom ; CL:間|间[jian1]"
+    },
+    {
+      "mot": "办公室",
+      "pinyin": "ban4 gong1 shi4",
+      "niveau": "HSK 2",
+      "def": "office; business premises"
+    }
+  ],
+  "因": [
+    {
+      "mot": "因为",
+      "pinyin": "yin1 wei4",
+      "niveau": "HSK 2",
+      "def": "because; owing to; on account of"
+    },
+    {
+      "mot": "因此",
+      "pinyin": "yin1 ci3",
+      "niveau": "HSK 3",
+      "def": "thus; consequently; as a result"
+    }
+  ],
+  "从": [
+    {
+      "mot": "从小",
+      "pinyin": "cong2 xiao3",
+      "niveau": "HSK 2",
+      "def": "from childhood; from a young age"
+    },
+    {
+      "mot": "从来",
+      "pinyin": "cong2 lai2",
+      "niveau": "HSK 3",
+      "def": "always ; at all times ; never (if used in negative sentence)"
+    }
+  ],
+  "裤": [
+    {
+      "mot": "裤子",
+      "pinyin": "ku4 zi5",
+      "niveau": "HSK 3",
+      "def": "trousers; pants ; CL:條|条[tiao2]"
+    },
+    {
+      "mot": "短裤",
+      "pinyin": "duan3 ku4",
+      "niveau": "HSK 3",
+      "def": "short pants ; shorts"
+    }
+  ],
+  "舒": [
+    {
+      "mot": "舒服",
+      "pinyin": "shu1 fu5",
+      "niveau": "HSK 2",
+      "def": "comfortable ; feeling well"
+    },
+    {
+      "mot": "舒适",
+      "pinyin": "shu1 shi4",
+      "niveau": "HSK 4",
+      "def": "cozy ; snug"
+    }
+  ],
+  "阴": [
+    {
+      "mot": "阴天",
+      "pinyin": "yin1 tian1",
+      "niveau": "HSK 2",
+      "def": "cloudy day; overcast sky"
+    },
+    {
+      "mot": "阴谋",
+      "pinyin": "yin1 mou2",
+      "niveau": "HSK 6",
+      "def": "to conspire; to plot ; a conspiracy; a plot"
+    }
+  ],
+  "错": [
+    {
+      "mot": "错误",
+      "pinyin": "cuo4 wu4",
+      "niveau": "HSK 3",
+      "def": "mistaken; false; wrong ; error; mistake ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "不错",
+      "pinyin": "bu4 cuo4",
+      "niveau": "HSK 2",
+      "def": "correct ; right ; not bad ; pretty good"
+    }
+  ],
+  "快": [
+    {
+      "mot": "快餐",
+      "pinyin": "kuai4 can1",
+      "niveau": "HSK 2",
+      "def": "fast food ; snack ; quick meal"
+    },
+    {
+      "mot": "快乐",
+      "pinyin": "kuai4 le4",
+      "niveau": "HSK 2",
+      "def": "happy; joyful"
+    }
+  ],
+  "思": [
+    {
+      "mot": "思想",
+      "pinyin": "si1 xiang3",
+      "niveau": "HSK 3",
+      "def": "thought ; thinking ; idea ; ideology ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "思考",
+      "pinyin": "si1 kao3",
+      "niveau": "HSK 4",
+      "def": "to reflect on ; to ponder over"
+    }
+  ],
+  "泳": [
+    {
+      "mot": "游泳",
+      "pinyin": "you2 yong3",
+      "niveau": "HSK 3",
+      "def": "swimming ; to swim"
+    },
+    {
+      "mot": "游泳池",
+      "pinyin": "you2 yong3 chi2",
+      "niveau": "HSK 5",
+      "def": "swimming pool"
+    }
+  ],
+  "但": [
+    {
+      "mot": "但是",
+      "pinyin": "dan4 shi4",
+      "niveau": "HSK 2",
+      "def": "but; however"
+    },
+    {
+      "mot": "不但",
+      "pinyin": "bu4 dan4",
+      "niveau": "HSK 2",
+      "def": "not only (... but also ...)"
+    }
+  ],
+  "篮": [
+    {
+      "mot": "篮球",
+      "pinyin": "lan2 qiu2",
+      "niveau": "HSK 2",
+      "def": "basketball ; CL:個|个[ge4],隻|只[zhi1]"
+    },
+    {
+      "mot": "摇篮",
+      "pinyin": "yao2 lan2",
+      "niveau": "HSK 7-9",
+      "def": "cradle (for a baby) ; (fig.) cradle; birthplace (of a civilization, movement etc)"
+    }
+  ],
+  "送": [
+    {
+      "mot": "送给",
+      "pinyin": "song4 gei3",
+      "niveau": "HSK 2",
+      "def": "to send ; to give as a present"
+    },
+    {
+      "mot": "发送",
+      "pinyin": "fa1 song4",
+      "niveau": "HSK 3",
+      "def": "to transmit ; to dispatch ; to issue (an official document or credential)"
+    }
+  ],
+  "游": [
+    {
+      "mot": "游客",
+      "pinyin": "you2 ke4",
+      "niveau": "HSK 2",
+      "def": "traveler; tourist ; (online gaming) guest player"
+    },
+    {
+      "mot": "游戏",
+      "pinyin": "you2 xi4",
+      "niveau": "HSK 3",
+      "def": "game (CL:場|场[chang3]) ; to play"
+    }
+  ],
+  "地": [
+    {
+      "mot": "地点",
+      "pinyin": "di4 dian3",
+      "niveau": "HSK 1",
+      "def": "place ; site ; location ; venue ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "地方",
+      "pinyin": "di4 fang1",
+      "niveau": "HSK 1",
+      "def": "region ; regional (away from the central administration) ; local"
+    }
+  ],
+  "乐": [
+    {
+      "mot": "乐观",
+      "pinyin": "le4 guan1",
+      "niveau": "HSK 3",
+      "def": "optimistic; hopeful"
+    },
+    {
+      "mot": "乐队",
+      "pinyin": "yue4 dui4",
+      "niveau": "HSK 3",
+      "def": "band ; pop group ; CL:支[zhi1]"
+    }
+  ],
+  "诉": [
+    {
+      "mot": "告诉",
+      "pinyin": "gao4 su4",
+      "niveau": "HSK 1",
+      "def": "to press charges; to file a complaint"
+    },
+    {
+      "mot": "投诉",
+      "pinyin": "tou2 su4",
+      "niveau": "HSK 4",
+      "def": "to lodge a complaint"
+    }
+  ],
+  "右": [
+    {
+      "mot": "右边",
+      "pinyin": "you4 bian5",
+      "niveau": "HSK 1",
+      "def": "right side ; right, to the right"
+    },
+    {
+      "mot": "左右",
+      "pinyin": "zuo3 you4",
+      "niveau": "HSK 3",
+      "def": "left and right ; nearby ; approximately ; attendant ; to control ; to influence"
+    }
+  ],
+  "等": [
+    {
+      "mot": "等到",
+      "pinyin": "deng3 dao4",
+      "niveau": "HSK 2",
+      "def": "to wait until ; by the time when (sth is ready etc)"
+    },
+    {
+      "mot": "等于",
+      "pinyin": "deng3 yu2",
+      "niveau": "HSK 2",
+      "def": "to equal ; to be tantamount to"
+    }
+  ],
+  "累": [
+    {
+      "mot": "积累",
+      "pinyin": "ji1 lei3",
+      "niveau": "HSK 4",
+      "def": "to accumulate ; accumulation ; cumulative ; cumulatively"
+    },
+    {
+      "mot": "累积",
+      "pinyin": "lei3 ji1",
+      "niveau": "HSK 7-9",
+      "def": "to accumulate"
+    }
+  ],
+  "虽": [
+    {
+      "mot": "虽然",
+      "pinyin": "sui1 ran2",
+      "niveau": "HSK 2",
+      "def": "although; even though (often used correlatively with 可是[ke3 shi4] or 但是[dan4 shi4] etc)"
+    },
+    {
+      "mot": "虽说",
+      "pinyin": "sui1 shuo1",
+      "niveau": "HSK 7-9",
+      "def": "though ; although"
+    }
+  ],
+  "鱼": [
+    {
+      "mot": "钓鱼",
+      "pinyin": "diao4 yu2",
+      "niveau": "HSK 7-9",
+      "def": "to fish (with line and hook); to angle ; (fig.) to entrap ; (Tw) to repeatedly nod one's head while dozing"
+    },
+    {
+      "mot": "鳄鱼",
+      "pinyin": "e4 yu2",
+      "niveau": "HSK 7-9",
+      "def": "alligator; crocodile (CL:條|条[tiao2])"
+    }
+  ],
+  "店": [
+    {
+      "mot": "饭店",
+      "pinyin": "fan4 dian4",
+      "niveau": "HSK 1",
+      "def": "restaurant ; hotel ; CL:家[jia1]"
+    },
+    {
+      "mot": "商店",
+      "pinyin": "shang1 dian4",
+      "niveau": "HSK 1",
+      "def": "store; shop ; CL:家[jia1]"
+    }
+  ],
+  "离": [
+    {
+      "mot": "离开",
+      "pinyin": "li2 kai1",
+      "niveau": "HSK 2",
+      "def": "to depart; to leave"
+    },
+    {
+      "mot": "离婚",
+      "pinyin": "li2 hun1",
+      "niveau": "HSK 3",
+      "def": "to divorce"
+    }
+  ],
+  "所": [
+    {
+      "mot": "所以",
+      "pinyin": "suo3 yi3",
+      "niveau": "HSK 2",
+      "def": "therefore ; as a result ; so ; the reason why"
+    },
+    {
+      "mot": "所有",
+      "pinyin": "suo3 you3",
+      "niveau": "HSK 2",
+      "def": "all ; to have; to possess; to own"
+    }
+  ],
+  "远": [
+    {
+      "mot": "永远",
+      "pinyin": "yong3 yuan3",
+      "niveau": "HSK 2",
+      "def": "forever ; eternal"
+    },
+    {
+      "mot": "远处",
+      "pinyin": "yuan3 chu4",
+      "niveau": "HSK 5",
+      "def": "distant place"
+    }
+  ],
+  "懂": [
+    {
+      "mot": "懂得",
+      "pinyin": "dong3 de5",
+      "niveau": "HSK 2",
+      "def": "to understand; to know; to comprehend"
+    },
+    {
+      "mot": "懂事",
+      "pinyin": "dong3 shi4",
+      "niveau": "HSK 7-9",
+      "def": "to grow beyond the naivete of childhood; to be aware of what is going on in the world ; (esp. of a child) sensible; thoughtful; intelligent"
+    }
+  ],
+  "留": [
+    {
+      "mot": "留下",
+      "pinyin": "liu2 xia4",
+      "niveau": "HSK 2",
+      "def": "to leave behind ; to stay behind ; to remain ; to keep ; not to let (sb) go"
+    },
+    {
+      "mot": "留学生",
+      "pinyin": "liu2 xue2 sheng1",
+      "niveau": "HSK 2",
+      "def": "student studying abroad; returned student; foreign student; international student"
+    }
+  ],
+  "疼": [
+    {
+      "mot": "疼痛",
+      "pinyin": "teng2 tong4",
+      "niveau": "HSK 6",
+      "def": "pain ; (of a body part) to be painful; to be sore; to hurt ; (of a person) to be in pain"
+    },
+    {
+      "mot": "心疼",
+      "pinyin": "xin1 teng2",
+      "niveau": "HSK 5",
+      "def": "to love dearly ; to feel sorry for sb ; to regret ; to grudge ; to be distressed"
+    }
+  ],
+  "运": [
+    {
+      "mot": "运动",
+      "pinyin": "yun4 dong4",
+      "niveau": "HSK 2",
+      "def": "to move ; to exercise ; sports ; exercise ; motion ; movement ; campaign ; CL:場|场[chang3]"
+    },
+    {
+      "mot": "运输",
+      "pinyin": "yun4 shu1",
+      "niveau": "HSK 3",
+      "def": "to transport ; to carry ; transportation"
+    }
+  ],
+  "动": [
+    {
+      "mot": "动作",
+      "pinyin": "dong4 zuo4",
+      "niveau": "HSK 1",
+      "def": "movement; motion; action ; to act; to move"
+    },
+    {
+      "mot": "动物",
+      "pinyin": "dong4 wu4",
+      "niveau": "HSK 2",
+      "def": "animal"
+    }
+  ],
+  "楼": [
+    {
+      "mot": "楼上",
+      "pinyin": "lou2 shang4",
+      "niveau": "HSK 1",
+      "def": "upstairs ; (Internet slang) previous poster in a forum thread"
+    },
+    {
+      "mot": "楼下",
+      "pinyin": "lou2 xia4",
+      "niveau": "HSK 1",
+      "def": "downstairs"
+    }
+  ],
+  "站": [
+    {
+      "mot": "站住",
+      "pinyin": "zhan4 zhu4",
+      "niveau": "HSK 2",
+      "def": "to come to a stop; to halt ; to keep one's footing; to stay upright ; (fig.) to hold one's ground; to gain a firm foothold ; (of an assertion etc) to hold up; to be tenable"
+    },
+    {
+      "mot": "车站",
+      "pinyin": "che1 zhan4",
+      "niveau": "HSK 1",
+      "def": "rail station ; bus stop ; CL:處|处[chu4],個|个[ge4]"
+    }
+  ],
+  "啡": [
+    {
+      "mot": "咖啡",
+      "pinyin": "ka1 fei1",
+      "niveau": "HSK 3",
+      "def": "(loanword) coffee ; CL:杯[bei1]"
+    },
+    {
+      "mot": "咖啡馆",
+      "pinyin": "ka1 fei1 guan3",
+      "niveau": "HSK 2",
+      "def": "cafe; coffee shop"
+    },
+    {
+      "mot": "咖啡因",
+      "pinyin": "ka1 fei1 yin1",
+      "niveau": "HSK 2",
+      "def": "caffeine"
+    }
+  ],
+  "路": [
+    {
+      "mot": "路口",
+      "pinyin": "lu4 kou3",
+      "niveau": "HSK 1",
+      "def": "crossing ; intersection (of roads)"
+    },
+    {
+      "mot": "路上",
+      "pinyin": "lu4 shang5",
+      "niveau": "HSK 1",
+      "def": "on the road ; on the way; en route"
+    }
+  ],
+  "体": [
+    {
+      "mot": "体育",
+      "pinyin": "ti3 yu4",
+      "niveau": "HSK 2",
+      "def": "sports ; physical education"
+    },
+    {
+      "mot": "体育场",
+      "pinyin": "ti3 yu4 chang3",
+      "niveau": "HSK 2",
+      "def": "stadium ; CL:個|个[ge4],座[zuo4]"
+    }
+  ],
+  "长": [
+    {
+      "mot": "长大",
+      "pinyin": "zhang3 da4",
+      "niveau": "HSK 2",
+      "def": "to grow up"
+    },
+    {
+      "mot": "长城",
+      "pinyin": "Chang2 cheng2",
+      "niveau": "HSK 3",
+      "def": "the Great Wall"
+    }
+  ],
+  "夫": [
+    {
+      "mot": "夫妇",
+      "pinyin": "fu1 fu4",
+      "niveau": "HSK 4",
+      "def": "a (married) couple ; husband and wife ; CL:對|对[dui4]"
+    },
+    {
+      "mot": "夫妻",
+      "pinyin": "fu1 qi1",
+      "niveau": "HSK 4",
+      "def": "husband and wife; married couple"
+    }
+  ],
+  "旅": [
+    {
+      "mot": "旅客",
+      "pinyin": "lu:3 ke4",
+      "niveau": "HSK 2",
+      "def": "traveler; tourist"
+    },
+    {
+      "mot": "旅行",
+      "pinyin": "lu:3 xing2",
+      "niveau": "HSK 2",
+      "def": "to travel ; journey; trip ; CL:趟[tang4],次[ci4]"
+    }
+  ],
+  "跳": [
+    {
+      "mot": "跳高",
+      "pinyin": "tiao4 gao1",
+      "niveau": "HSK 3",
+      "def": "(athletics) high jump"
+    },
+    {
+      "mot": "跳舞",
+      "pinyin": "tiao4 wu3",
+      "niveau": "HSK 3",
+      "def": "to dance"
+    }
+  ],
+  "丈": [
+    {
+      "mot": "丈夫",
+      "pinyin": "zhang4 fu5",
+      "niveau": "HSK 4",
+      "def": "husband"
+    },
+    {
+      "mot": "万丈",
+      "pinyin": "wan4 zhang4",
+      "niveau": "HSK 2",
+      "def": "lit. ten thousand fathoms; fig. boundless"
+    }
+  ],
+  "告": [
+    {
+      "mot": "告诉",
+      "pinyin": "gao4 su4",
+      "niveau": "HSK 1",
+      "def": "to press charges; to file a complaint"
+    },
+    {
+      "mot": "告别",
+      "pinyin": "gao4 bie2",
+      "niveau": "HSK 3",
+      "def": "to leave; to part from ; to bid farewell to; to say goodbye to"
+    }
+  ],
+  "绿": [
+    {
+      "mot": "绿色",
+      "pinyin": "lu:4 se4",
+      "niveau": "HSK 2",
+      "def": "green"
+    },
+    {
+      "mot": "绿茶",
+      "pinyin": "lu:4 cha2",
+      "niveau": "HSK 3",
+      "def": "green tea ; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities"
+    }
+  ],
+  "铁": [
+    {
+      "mot": "铁路",
+      "pinyin": "tie3 lu4",
+      "niveau": "HSK 3",
+      "def": "railroad ; railway ; CL:條|条[tiao2]"
+    },
+    {
+      "mot": "地铁",
+      "pinyin": "di4 tie3",
+      "niveau": "HSK 2",
+      "def": "underground railway; subway ; subway train"
+    }
+  ],
+  "周": [
+    {
+      "mot": "周末",
+      "pinyin": "zhou1 mo4",
+      "niveau": "HSK 2",
+      "def": "weekend"
+    },
+    {
+      "mot": "周年",
+      "pinyin": "zhou1 nian2",
+      "niveau": "HSK 2",
+      "def": "anniversary ; annual"
+    }
+  ],
+  "跟": [
+    {
+      "mot": "跟前",
+      "pinyin": "gen1 qian2",
+      "niveau": "HSK 5",
+      "def": "the front (of) ; (in) front ; (in) sb's presence ; just before (a date)"
+    },
+    {
+      "mot": "跟随",
+      "pinyin": "gen1 sui2",
+      "niveau": "HSK 5",
+      "def": "to follow"
+    }
+  ],
+  "慢": [
+    {
+      "mot": "慢慢",
+      "pinyin": "man4 man4",
+      "niveau": "HSK 3",
+      "def": "slowly; gradually"
+    },
+    {
+      "mot": "慢车",
+      "pinyin": "man4 che1",
+      "niveau": "HSK 6",
+      "def": "local bus or train ; slow train with many stops"
+    }
+  ],
+  "头": [
+    {
+      "mot": "头发",
+      "pinyin": "tou2 fa5",
+      "niveau": "HSK 2",
+      "def": "hair (on the head)"
+    },
+    {
+      "mot": "头脑",
+      "pinyin": "tou2 nao3",
+      "niveau": "HSK 3",
+      "def": "brains ; mind ; skull ; (fig.) gist (of a matter) ; leader ; boss"
+    }
+  ],
+  "着": [
+    {
+      "mot": "着火",
+      "pinyin": "zhao2 huo3",
+      "niveau": "HSK 4",
+      "def": "to catch fire"
+    },
+    {
+      "mot": "着急",
+      "pinyin": "zhao2 ji2",
+      "niveau": "HSK 4",
+      "def": "to worry; to feel anxious ; to feel a sense of urgency; to be in a hurry ; Taiwan pr. [zhao1ji2]"
+    }
+  ],
+  "馆": [
+    {
+      "mot": "图书馆",
+      "pinyin": "tu2 shu1 guan3",
+      "niveau": "HSK 1",
+      "def": "library ; CL:家[jia1],個|个[ge4]"
+    },
+    {
+      "mot": "饭馆",
+      "pinyin": "fan4 guan3",
+      "niveau": "HSK 2",
+      "def": "restaurant ; CL:家[jia1]"
+    }
+  ],
+  "每": [
+    {
+      "mot": "每当",
+      "pinyin": "mei3 dang1",
+      "niveau": "HSK 7-9",
+      "def": "whenever; every time"
+    },
+    {
+      "mot": "每逢",
+      "pinyin": "mei3 feng2",
+      "niveau": "HSK 7-9",
+      "def": "every time ; on each occasion ; whenever"
+    }
+  ],
+  "完": [
+    {
+      "mot": "完成",
+      "pinyin": "wan2 cheng2",
+      "niveau": "HSK 2",
+      "def": "to complete; to accomplish"
+    },
+    {
+      "mot": "完全",
+      "pinyin": "wan2 quan2",
+      "niveau": "HSK 2",
+      "def": "complete; whole ; totally; entirely"
+    }
+  ],
+  "准": [
+    {
+      "mot": "准备",
+      "pinyin": "zhun3 bei4",
+      "niveau": "HSK 1",
+      "def": "preparation ; to prepare ; to intend ; to be about to ; reserve (fund)"
+    },
+    {
+      "mot": "准确",
+      "pinyin": "zhun3 que4",
+      "niveau": "HSK 2",
+      "def": "accurate; exact; precise"
+    }
+  ],
+  "过": [
+    {
+      "mot": "过来",
+      "pinyin": "guo4 lai2",
+      "niveau": "HSK 2",
+      "def": "to come over ; to manage ; to handle ; to be able to take care of"
+    },
+    {
+      "mot": "过年",
+      "pinyin": "guo4 nian2",
+      "niveau": "HSK 2",
+      "def": "to celebrate the Chinese New Year"
+    }
+  ],
+  "门": [
+    {
+      "mot": "门口",
+      "pinyin": "men2 kou3",
+      "niveau": "HSK 1",
+      "def": "doorway ; gate ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "门票",
+      "pinyin": "men2 piao4",
+      "niveau": "HSK 1",
+      "def": "ticket (for theater, cinema etc)"
+    }
+  ],
+  "万": [
+    {
+      "mot": "万一",
+      "pinyin": "wan4 yi1",
+      "niveau": "HSK 4",
+      "def": "just in case ; if by any chance ; contingency"
+    },
+    {
+      "mot": "千万",
+      "pinyin": "qian1 wan4",
+      "niveau": "HSK 3",
+      "def": "ten million ; countless ; many ; one must by all means"
+    }
+  ],
+  "自": [
+    {
+      "mot": "自己",
+      "pinyin": "zi4 ji3",
+      "niveau": "HSK 2",
+      "def": "oneself; (attributive) one's own"
+    },
+    {
+      "mot": "自由",
+      "pinyin": "zi4 you2",
+      "niveau": "HSK 2",
+      "def": "freedom; liberty ; free; unrestricted"
+    }
+  ],
+  "黑": [
+    {
+      "mot": "黑板",
+      "pinyin": "hei1 ban3",
+      "niveau": "HSK 2",
+      "def": "blackboard ; CL:塊|块[kuai4],個|个[ge4]"
+    },
+    {
+      "mot": "黑色",
+      "pinyin": "hei1 se4",
+      "niveau": "HSK 2",
+      "def": "black"
+    }
+  ],
+  "拿": [
+    {
+      "mot": "拿出",
+      "pinyin": "na2 chu1",
+      "niveau": "HSK 2",
+      "def": "to take out ; to put out ; to provide ; to put forward (a proposal) ; to come up with (evidence)"
+    },
+    {
+      "mot": "拿到",
+      "pinyin": "na2 dao4",
+      "niveau": "HSK 2",
+      "def": "to get ; to obtain"
+    }
+  ],
+  "网": [
+    {
+      "mot": "网上",
+      "pinyin": "wang3 shang4",
+      "niveau": "HSK 1",
+      "def": "online"
+    },
+    {
+      "mot": "网友",
+      "pinyin": "wang3 you3",
+      "niveau": "HSK 1",
+      "def": "online friend ; netizen; Internet user"
+    }
+  ],
+  "走": [
+    {
+      "mot": "走路",
+      "pinyin": "zou3 lu4",
+      "niveau": "HSK 1",
+      "def": "to walk; to go on foot ; to leave; to depart ; (informal) to clear off; to beat it ; (of sb who gets fired or resigns) to leave the job; to get out"
+    },
+    {
+      "mot": "走过",
+      "pinyin": "zou3 guo4",
+      "niveau": "HSK 2",
+      "def": "to walk past ; to pass by"
+    }
+  ],
+  "红": [
+    {
+      "mot": "红色",
+      "pinyin": "hong2 se4",
+      "niveau": "HSK 2",
+      "def": "red (color) ; revolutionary"
+    },
+    {
+      "mot": "红茶",
+      "pinyin": "hong2 cha2",
+      "niveau": "HSK 3",
+      "def": "black tea ; CL:杯[bei1],壺|壶[hu2]"
+    }
+  ],
+  "鸟": [
+    {
+      "mot": "鸟巢",
+      "pinyin": "niao3 chao2",
+      "niveau": "HSK 7-9",
+      "def": "bird's nest ; nickname for Beijing 2008 Olympic stadium"
+    },
+    {
+      "mot": "小鸟",
+      "pinyin": "xiao3 niao3",
+      "niveau": "HSK 2",
+      "def": "small bird; little bird"
+    }
+  ],
+  "往": [
+    {
+      "mot": "往往",
+      "pinyin": "wang3 wang3",
+      "niveau": "HSK 3",
+      "def": "usually ; in many cases ; more often than not"
+    },
+    {
+      "mot": "交往",
+      "pinyin": "jiao1 wang3",
+      "niveau": "HSK 3",
+      "def": "to associate (with) ; to have contact (with) ; to hang out (with) ; to date ; (interpersonal) relationship ; association ; contact"
+    }
+  ],
+  "足": [
+    {
+      "mot": "足够",
+      "pinyin": "zu2 gou4",
+      "niveau": "HSK 3",
+      "def": "enough; sufficient"
+    },
+    {
+      "mot": "足球",
+      "pinyin": "zu2 qiu2",
+      "niveau": "HSK 3",
+      "def": "soccer; football ; a soccer ball; a football"
+    }
+  ],
+  "花": [
+    {
+      "mot": "花园",
+      "pinyin": "hua1 yuan2",
+      "niveau": "HSK 2",
+      "def": "garden (for flowers, ornamental plants etc); (landscaped) park; yard with decorative plants ; CL:座[zuo4]"
+    },
+    {
+      "mot": "花费",
+      "pinyin": "hua1 fei4",
+      "niveau": "HSK 6",
+      "def": "expense ; cost ; to spend (time or money) ; expenditure"
+    }
+  ],
+  "旁": [
+    {
+      "mot": "旁边",
+      "pinyin": "pang2 bian1",
+      "niveau": "HSK 1",
+      "def": "side; adjacent place"
+    },
+    {
+      "mot": "旁观",
+      "pinyin": "pang2 guan1",
+      "niveau": "HSK 7-9",
+      "def": "spectator ; non-participant"
+    }
+  ],
+  "忘": [
+    {
+      "mot": "忘记",
+      "pinyin": "wang4 ji4",
+      "niveau": "HSK 1",
+      "def": "to forget"
+    },
+    {
+      "mot": "忘掉",
+      "pinyin": "wang4 diao4",
+      "niveau": "HSK 7-9",
+      "def": "to forget"
+    }
+  ],
+  "最": [
+    {
+      "mot": "最好",
+      "pinyin": "zui4 hao3",
+      "niveau": "HSK 1",
+      "def": "best ; had better ...; it would be best to ..."
+    },
+    {
+      "mot": "最后",
+      "pinyin": "zui4 hou4",
+      "niveau": "HSK 1",
+      "def": "final; last; ultimate ; finally; in the end"
+    }
+  ],
+  "画": [
+    {
+      "mot": "画家",
+      "pinyin": "hua4 jia1",
+      "niveau": "HSK 2",
+      "def": "painter ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "画儿",
+      "pinyin": "hua4 r5",
+      "niveau": "HSK 2",
+      "def": "picture ; drawing ; painting"
+    }
+  ],
+  "跑": [
+    {
+      "mot": "跑步",
+      "pinyin": "pao3 bu4",
+      "niveau": "HSK 3",
+      "def": "to run ; to jog ; (military) to march at the double"
+    },
+    {
+      "mot": "跑车",
+      "pinyin": "pao3 che1",
+      "niveau": "HSK 7-9",
+      "def": "racing bicycle; racing car; sports car ; to drive a vehicle (such as a truck or taxi) for a living ; (of a conductor or attendant) to work on a train ; (mining) (of a cable-car) to slip away (in an accident)"
+    }
+  ],
+  "望": [
+    {
+      "mot": "希望",
+      "pinyin": "xi1 wang4",
+      "niveau": "HSK 3",
+      "def": "to hope ; a hope; a wish"
+    },
+    {
+      "mot": "愿望",
+      "pinyin": "yuan4 wang4",
+      "niveau": "HSK 3",
+      "def": "desire ; wish"
+    }
+  ],
+  "左": [
+    {
+      "mot": "左边",
+      "pinyin": "zuo3 bian5",
+      "niveau": "HSK 1",
+      "def": "left ; the left side ; to the left of"
+    },
+    {
+      "mot": "左右",
+      "pinyin": "zuo3 you4",
+      "niveau": "HSK 3",
+      "def": "left and right ; nearby ; approximately ; attendant ; to control ; to influence"
+    }
+  ],
+  "坏": [
+    {
+      "mot": "坏处",
+      "pinyin": "huai4 chu5",
+      "niveau": "HSK 2",
+      "def": "harm ; troubles ; CL:個|个[ge4]"
+    },
+    {
+      "mot": "坏人",
+      "pinyin": "huai4 ren2",
+      "niveau": "HSK 2",
+      "def": "bad person ; villain"
+    }
+  ],
+  "票": [
+    {
+      "mot": "票价",
+      "pinyin": "piao4 jia4",
+      "niveau": "HSK 3",
+      "def": "ticket price; fare; admission fee"
+    },
+    {
+      "mot": "车票",
+      "pinyin": "che1 piao4",
+      "niveau": "HSK 1",
+      "def": "ticket for a bus or train"
+    }
+  ],
+  "为": [
+    {
+      "mot": "为什么",
+      "pinyin": "wei4 shen2 me5",
+      "niveau": "HSK 2",
+      "def": "why? ; for what reason?"
+    },
+    {
+      "mot": "为了",
+      "pinyin": "wei4 le5",
+      "niveau": "HSK 3",
+      "def": "for; for the purpose of; in order to"
+    }
+  ],
+  "己": [
+    {
+      "mot": "自己",
+      "pinyin": "zi4 ji3",
+      "niveau": "HSK 2",
+      "def": "oneself; (attributive) one's own"
+    },
+    {
+      "mot": "知己",
+      "pinyin": "zhi1 ji3",
+      "niveau": "HSK 7-9",
+      "def": "to know oneself ; to be intimate or close ; intimate friend"
+    }
+  ],
+  "妻": [
+    {
+      "mot": "妻子",
+      "pinyin": "qi1 zi3",
+      "niveau": "HSK 4",
+      "def": "wife and children"
+    },
+    {
+      "mot": "夫妻",
+      "pinyin": "fu1 qi1",
+      "niveau": "HSK 4",
+      "def": "husband and wife; married couple"
+    }
+  ],
+  "位": [
+    {
+      "mot": "位于",
+      "pinyin": "wei4 yu2",
+      "niveau": "HSK 4",
+      "def": "to be located at ; to be situated at ; to lie"
+    },
+    {
+      "mot": "位置",
+      "pinyin": "wei4 zhi5",
+      "niveau": "HSK 4",
+      "def": "position ; place ; seat ; CL:個|个[ge4]"
+    }
+  ],
+  "记": [
+    {
+      "mot": "记得",
+      "pinyin": "ji4 de5",
+      "niveau": "HSK 1",
+      "def": "to remember"
+    },
+    {
+      "mot": "记住",
+      "pinyin": "ji4 zhu5",
+      "niveau": "HSK 1",
+      "def": "to remember ; to bear in mind ; to learn by heart"
+    }
+  ],
+  "情": [
+    {
+      "mot": "情感",
+      "pinyin": "qing2 gan3",
+      "niveau": "HSK 3",
+      "def": "feeling ; emotion ; to move (emotionally)"
+    },
+    {
+      "mot": "情况",
+      "pinyin": "qing2 kuang4",
+      "niveau": "HSK 3",
+      "def": "circumstances; state of affairs; situation ; CL:種|种[zhong3]"
+    }
+  ],
+  "舞": [
+    {
+      "mot": "舞台",
+      "pinyin": "wu3 tai2",
+      "niveau": "HSK 3",
+      "def": "(lit. and fig.) stage; arena"
+    },
+    {
+      "mot": "跳舞",
+      "pinyin": "tiao4 wu3",
+      "niveau": "HSK 3",
+      "def": "to dance"
+    }
+  ],
+  "踢": [
+    {
+      "mot": "踢球",
+      "pinyin": "ti1 qiu2",
+      "niveau": "HSK 2",
+      "def": "to play ball; to kick a ball"
+    },
+    {
+      "mot": "踢足球",
+      "pinyin": "ti1 zu2 qiu2",
+      "niveau": "HSK 2",
+      "def": "to play football"
+    },
+    {
+      "mot": "踢腿",
+      "pinyin": "ti1 tui3",
+      "niveau": "HSK 2",
+      "def": "to kick one's legs"
+    },
+    {
+      "mot": "拳打脚踢",
+      "pinyin": "quan2 da3 jiao3 ti1",
+      "niveau": "HSK 2",
+      "def": "to punch and kick (idiom); to beat up"
+    }
+  ],
+  "啊": [
+    {
+      "mot": "天啊",
+      "pinyin": "tian1 a5",
+      "niveau": "HSK 2",
+      "def": "good heavens!; oh my God!"
+    },
+    {
+      "mot": "好啊",
+      "pinyin": "hao3 a5",
+      "niveau": "HSK 2",
+      "def": "all right!; sure!"
+    },
+    {
+      "mot": "啊呀",
+      "pinyin": "a1 ya1",
+      "niveau": "HSK 2",
+      "def": "interjection of surprise"
+    },
+    {
+      "mot": "啊哟",
+      "pinyin": "a1 yo5",
+      "niveau": "HSK 2",
+      "def": "interjection of surprise or pain"
+    }
+  ]
 }

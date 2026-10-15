@@ -10,7 +10,7 @@
     A QUOI CA SERT
     --------------
     Le site normal a besoin d'un serveur (un fichier ouvert en file:// ne peut
-    pas lire data/cards.json). Cette version contourne la limite en integrant
+    pas lire data/cards-hsk1.json). Cette version contourne la limite en integrant
     les donnees dans la page, sous forme de window.__CARDS__ : app.js les
     detecte et ne fait aucun appel reseau.
 
