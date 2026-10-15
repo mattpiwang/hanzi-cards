@@ -255,12 +255,26 @@
         (p.i >= MAITRISE ? ' · <span class="ok">maîtrisée</span>' : '') + '</p>';
     }
 
+    /* Une phrase d'exemple qui met le caractère en situation : drôle, ou
+       chéngyǔ avec son explication. Champ optionnel — les fiches qui n'en ont
+       pas (le HSK 2 pour l'instant) n'affichent simplement rien. */
+    var phraseHTML = '';
+    if (c.phrase && c.phrase.length >= 3) {
+      phraseHTML = '<div class="phrase">' +
+        '<p class="phrase-zh">' + esc(c.phrase[0]) + '</p>' +
+        '<p class="phrase-py">' + esc(c.phrase[1]) + '</p>' +
+        '<p class="phrase-fr">' + esc(c.phrase[2]) + '</p>' +
+        (c.phraseNote ? '<p class="phrase-note">' + esc(c.phraseNote) + '</p>' : '') +
+      '</div>';
+    }
+
     return '' +
       '<div class="back-head">' +
         '<div class="pinyin tone-' + toneOf(c.pinyin) + '">' + esc(c.pinyin) + '</div>' +
         '<div class="meaning">' + sens + '</div>' +
       '</div>' +
       suivi +
+      phraseHTML +
       compsHTML + wordsHTML + etymoHTML +
       (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '') +
       traitsHTML;
@@ -933,7 +947,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '85';
+  var VERSION = '86';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

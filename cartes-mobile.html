@@ -844,7 +844,40 @@ kbd {
 /* Le numero de version, discret, dans Reglages : il dit ce que le navigateur a charge. */
 .version { margin: .7rem .6rem .2rem; color: var(--dim); font-size: .7rem; opacity: .8; }
 
-
+/* La phrase d'exemple : le caractère en situation, juste sous le sens.
+   Un liseré doré à gauche, comme une citation. */
+.phrase {
+  margin-top: .9rem;
+  padding: .7rem .85rem;
+  border-left: 3px solid var(--accent);
+  background: var(--panel-2);
+  border-radius: 0 10px 10px 0;
+}
+.phrase p { margin: 0; }
+.phrase .phrase-zh {
+  font-family: var(--cjk);
+  font-size: 1.18rem;
+  line-height: 1.5;
+  color: var(--txt);
+}
+.phrase .phrase-py {
+  margin-top: .25rem;
+  font-size: .84rem;
+  font-style: italic;
+  color: var(--dim);
+}
+.phrase .phrase-fr {
+  margin-top: .35rem;
+  font-size: .92rem;
+  color: var(--txt);
+}
+.phrase .phrase-note {
+  margin-top: .45rem;
+  padding-top: .4rem;
+  border-top: 1px dashed var(--line);
+  font-size: .82rem;
+  color: var(--dim);
+}
 </style>
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
@@ -995,7 +1028,12 @@ kbd {
         "指事 — indicateur",
         "Un unique trait horizontal : la façon la plus directe de figurer « un »."
       ],
-      "note": "Devant un 4e ton, 一 devient yí (一个 → yí gè) ; devant les autres tons, yì (一起 → yì qǐ)."
+      "note": "Devant un 4e ton, 一 devient yí (一个 → yí gè) ; devant les autres tons, yì (一起 → yì qǐ).",
+      "phrase": [
+        "我有一个秘密，不告诉你。",
+        "Wǒ yǒu yī gè mìmì, bù gàosù nǐ.",
+        "J'ai un secret, je ne te le dis pas."
+      ]
     },
     {
       "char": "二",
@@ -1024,7 +1062,13 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Deux traits : deux unités."
-      ]
+      ],
+      "phrase": [
+        "这个菜独一无二。",
+        "Zhège cài dú yī wú èr.",
+        "Ce plat est unique en son genre."
+      ],
+      "phraseNote": "独一无二 : unique, sans pareil."
     },
     {
       "char": "三",
@@ -1053,6 +1097,11 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Trois traits empilés. En chinois, 三 évoque aussi la multitude (三心二意 : hésiter)."
+      ],
+      "phrase": [
+        "我有三个苹果，都在冰箱里。",
+        "Wǒ yǒu sān gè píngguǒ, dōu zài bīngxiāng lǐ.",
+        "J'ai trois pommes, toutes dans le frigo."
       ]
     },
     {
@@ -1082,6 +1131,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un disque avec un point au centre : le soleil des inscriptions oraculaires. De « soleil » vient « jour »."
+      ],
+      "phrase": [
+        "今天是我的生日，可是没人记得。",
+        "Jīntiān shì wǒ de shēngrì, kěshì méi rén jìde.",
+        "C'est mon anniversaire aujourd'hui, mais personne ne s'en souvient."
       ]
     },
     {
@@ -1111,7 +1165,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un croissant. Comme le calendrier chinois suivait la lune, le caractère a pris le sens de « mois »."
-      ]
+      ],
+      "phrase": [
+        "他们的婚礼花好月圆。",
+        "Tāmen de hūnlǐ huā hǎo yuè yuán.",
+        "Leur mariage est une union parfaite."
+      ],
+      "phraseNote": "花好月圆 : union heureuse, bonheur parfait."
     },
     {
       "char": "山",
@@ -1140,6 +1200,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Trois sommets dressés, dessinés tels quels."
+      ],
+      "phrase": [
+        "我的猫想爬山，可是它太胖了。",
+        "Wǒ de māo xiǎng pá shān, kěshì tā tài pàng le.",
+        "Mon chat veut grimper la montagne, mais il est trop gros."
       ]
     },
     {
@@ -1169,6 +1234,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Le fil du courant, avec ses remous de part et d'autre."
+      ],
+      "phrase": [
+        "我不喜欢喝水，可是我喜欢吃水果。",
+        "Wǒ bù xǐhuan hē shuǐ, kěshì wǒ xǐhuan chī shuǐguǒ.",
+        "Je n'aime pas boire de l'eau, mais j'adore les fruits."
       ]
     },
     {
@@ -1198,7 +1268,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Une flamme centrale entourée de deux étincelles."
-      ]
+      ],
+      "phrase": [
+        "他生气得火冒三丈。",
+        "Tā shēngqì de huǒ mào sān zhàng.",
+        "Il est furieux, il bout de colère."
+      ],
+      "phraseNote": "火冒三丈 : entrer dans une colère noire."
     },
     {
       "char": "木",
@@ -1227,6 +1303,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un tronc, des branches en haut, des racines en bas."
+      ],
+      "phrase": [
+        "我的猫睡在木头上，像一块面包。",
+        "Wǒ de māo shuì zài mùtou shàng, xiàng yī kuài miànbāo.",
+        "Mon chat dort sur le bois, comme un pain."
       ]
     },
     {
@@ -1256,6 +1337,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Une parcelle vue du dessus, quadrillée par les chemins et les rigoles d'irrigation."
+      ],
+      "phrase": [
+        "爷爷的田地里住着一只青蛙。",
+        "Yéye de tiándì lǐ zhù zhe yī zhī qīngwā.",
+        "Une grenouille habite dans le champ de grand-père."
       ]
     },
     {
@@ -1285,7 +1371,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Le ciel, figuré par le trait horizontal supérieur, d'où tombent des gouttes."
-      ]
+      ],
+      "phrase": [
+        "妈妈说要未雨绸缪，先带伞。",
+        "Māma shuō yào wèi yǔ chóu móu, xiān dài sǎn.",
+        "Maman dit qu'il faut prévoir, on prend un parapluie."
+      ],
+      "phraseNote": "未雨绸缪 : prévoir avant que le mal n'arrive."
     },
     {
       "char": "风",
@@ -1319,6 +1411,11 @@ kbd {
       "etymology": [
         "形声 — composé phonétique-sémantique",
         "Le Shuowen analyse 風 comme 虫 (sens) + 凡 (son), avec l'idée que « le vent fait naître les insectes ». La forme simplifiée 风 a gardé l'enveloppe extérieure."
+      ],
+      "phrase": [
+        "今天风很大，我的帽子飞走了。",
+        "Jīntiān fēng hěn dà, wǒ de màozi fēizǒu le.",
+        "Aujourd'hui il y a beaucoup de vent, mon chapeau s'est envolé."
       ]
     },
     {
@@ -1353,6 +1450,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "La forme traditionnelle 電 plaçait l'éclair sous 雨, le ciel de pluie. La simplification 电 a conservé la nuée traversée par le trait courbe de la foudre."
+      ],
+      "phrase": [
+        "我的电脑今天不想工作。",
+        "Wǒ de diànnǎo jīntiān bù xiǎng gōngzuò.",
+        "Mon ordinateur ne veut pas travailler aujourd'hui."
       ]
     },
     {
@@ -1382,7 +1484,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Le profil d'un être humain debout, une jambe et un bras esquissés."
-      ]
+      ],
+      "phrase": [
+        "商店里人山人海，我出不去了。",
+        "Shāngdiàn lǐ rén shān rén hǎi, wǒ chū bù qù le.",
+        "Il y a une foule énorme dans le magasin, je n'arrive pas à sortir."
+      ],
+      "phraseNote": "人山人海 : foule immense, marée humaine."
     },
     {
       "char": "大",
@@ -1411,6 +1519,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un homme debout, les bras largement écartés : l'ampleur, donc la grandeur."
+      ],
+      "phrase": [
+        "大家的猫都很大，只有我的很小。",
+        "Dàjiā de māo dōu hěn dà, zhǐyǒu wǒ de hěn xiǎo.",
+        "Les chats de tout le monde sont grands, seul le mien est petit."
       ]
     },
     {
@@ -1440,6 +1553,11 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Trois marques minuscules : l'idée de petitesse. Certaines analyses y voient des grains de sable."
+      ],
+      "phrase": [
+        "我家的小狗每天睡十个小时。",
+        "Wǒ jiā de xiǎogǒu měi tiān shuì shí gè xiǎoshí.",
+        "Mon petit chien dort dix heures par jour."
       ]
     },
     {
@@ -1469,7 +1587,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Une bouche ouverte, dessinée comme un cadre. De la bouche vient le sens d'« ouverture » (porte, passage)."
-      ]
+      ],
+      "phrase": [
+        "大家异口同声地说：好吃！",
+        "Dàjiā yì kǒu tóng shēng de shuō: hǎo chī!",
+        "Tout le monde dit d'une même voix : délicieux !"
+      ],
+      "phraseNote": "异口同声 : dire la même chose à l'unisson."
     },
     {
       "char": "目",
@@ -1498,6 +1622,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un œil couché verticalement, pupille comprise, comme on le trouve sur les bronzes anciens."
+      ],
+      "phrase": [
+        "我的新目标是每天不看手机。",
+        "Wǒ de xīn mùbiāo shì měi tiān bù kàn shǒujī.",
+        "Mon nouvel objectif : ne pas regarder mon téléphone chaque jour."
       ]
     },
     {
@@ -1527,6 +1656,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Une main avec ses doigts et son poignet."
+      ],
+      "phrase": [
+        "猫用舌头洗手，不用手机。",
+        "Māo yòng shétou xǐ shǒu, bù yòng shǒujī.",
+        "Le chat se lave les pattes avec sa langue, sans téléphone."
       ]
     },
     {
@@ -1556,7 +1690,13 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un cœur anatomique avec ses cavités. En chinois, le cœur est le siège des émotions mais aussi de la pensée."
-      ]
+      ],
+      "phrase": [
+        "他一心一意地学习中文。",
+        "Tā yī xīn yī yì de xuéxí Zhōngwén.",
+        "Il étudie le chinois avec une concentration totale."
+      ],
+      "phraseNote": "一心一意 : de tout cœur, avec une seule intention."
     },
     {
       "char": "女",
@@ -1585,6 +1725,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Une silhouette assise, jambes croisées, dans la posture adoptée à l'intérieur de la maison."
+      ],
+      "phrase": [
+        "我的小狗是女孩子，它爱吃米饭。",
+        "Wǒ de xiǎogǒu shì nǚháizi, tā ài chī mǐfàn.",
+        "Mon petit chien est une fille, elle adore le riz."
       ]
     },
     {
@@ -1614,6 +1759,11 @@ kbd {
       "etymology": [
         "象形 — pictogramme",
         "Un nouveau-né emmailloté, les bras tendus vers l'extérieur."
+      ],
+      "phrase": [
+        "这个孩子吃米饭，像一只小鸟。",
+        "Zhège háizi chī mǐfàn, xiàng yī zhī xiǎoniǎo.",
+        "Cet enfant mange du riz comme un petit oiseau."
       ]
     },
     {
@@ -1648,7 +1798,13 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "La force (力) au champ (田) : dans la société agricole, l'homme était celui qui travaillait la terre."
-      ]
+      ],
+      "phrase": [
+        "从前男耕女织，现在大家都在上班。",
+        "Cóngqián nán gēng nǚ zhī, xiànzài dàjiā dōu zài shàngbān.",
+        "Autrefois les hommes cultivaient, les femmes tissaient ; maintenant tout le monde travaille."
+      ],
+      "phraseNote": "男耕女织 : division traditionnelle du travail entre hommes et femmes."
     },
     {
       "char": "家",
@@ -1682,6 +1838,11 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Un toit (宀) et un porc (豕) : le cochon sous le toit, c'était la sécurité matérielle du foyer. Le caractère désigne donc à la fois la maison et la famille."
+      ],
+      "phrase": [
+        "我回家的时候，猫在门口等我。",
+        "Wǒ huí jiā de shíhou, māo zài ménkǒu děng wǒ.",
+        "Quand je rentre à la maison, le chat m'attend à la porte."
       ]
     },
     {
@@ -1716,6 +1877,11 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Une femme (女) sous un toit (宀) : l'image traditionnelle du repos et de la quiétude. Analyse ancienne, à replacer dans son contexte social."
+      ],
+      "phrase": [
+        "晚上不安全，我的猫不敢出门。",
+        "Wǎnshang bù ānquán, wǒ de māo bù gǎn chūmén.",
+        "La nuit n'est pas sûre, mon chat n'ose pas sortir."
       ]
     },
     {
@@ -1751,7 +1917,13 @@ kbd {
         "会意 — idéogramme composé",
         "Une femme et un enfant réunis : l'harmonie du foyer, d'où « bon, bien »."
       ],
-      "note": "Prononcé hào, le même caractère signifie « aimer » : 爱好 (àihào), un passe-temps."
+      "note": "Prononcé hào, le même caractère signifie « aimer » : 爱好 (àihào), un passe-temps.",
+      "phrase": [
+        "学中文好事多磨，慢慢来吧。",
+        "Xué Zhōngwén hǎo shì duō mó, mànman lái ba.",
+        "Apprendre le chinois demande du temps ; prends ton temps."
+      ],
+      "phraseNote": "好事多磨 : les bonnes choses demandent patience et efforts."
     },
     {
       "char": "上",
@@ -1780,6 +1952,11 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Un trait qui sert de référence, et un repère placé au-dessus de lui."
+      ],
+      "phrase": [
+        "上午我上山，下午我下海。",
+        "Shàngwǔ wǒ shàng shān, xiàwǔ wǒ xià hǎi.",
+        "Le matin je monte à la montagne, l'après-midi je descends à la mer."
       ]
     },
     {
@@ -1809,7 +1986,13 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Le même trait de référence, avec le repère situé en dessous."
-      ]
+      ],
+      "phrase": [
+        "等一下考试，我心里七上八下。",
+        "Děng yīxià kǎoshì, wǒ xīnlǐ qī shàng bā xià.",
+        "À l'approche de l'examen, je suis très nerveux."
+      ],
+      "phraseNote": "七上八下 : être inquiet, le cœur agité."
     },
     {
       "char": "中",
@@ -1838,6 +2021,11 @@ kbd {
       "etymology": [
         "指事 — indicateur",
         "Une hampe qui traverse le milieu d'un objet : le centre, ce qui est à l'intérieur."
+      ],
+      "phrase": [
+        "中午我吃中国菜，晚上吃法国菜。",
+        "Zhōngwǔ wǒ chī Zhōngguócài, wǎnshang chī Fǎguócài.",
+        "Le midi je mange chinois, le soir français."
       ]
     },
     {
@@ -1867,7 +2055,13 @@ kbd {
       "etymology": [
         "假借 — emprunt phonétique",
         "Le dessin représentait à l'origine une arme à dents de scie. Le caractère a été emprunté pour écrire le pronom « je », sans aucun lien avec le sens premier."
-      ]
+      ],
+      "phrase": [
+        "他做事我行我素，不听别人。",
+        "Tā zuòshì wǒ xíng wǒ sù, bù tīng biérén.",
+        "Il agit toujours à sa façon, sans écouter les autres."
+      ],
+      "phraseNote": "我行我素 : faire à sa tête, à sa manière."
     },
     {
       "char": "你",
@@ -1901,6 +2095,11 @@ kbd {
       "etymology": [
         "形声 — composé phonétique-sémantique",
         "La clé de l'homme (亻) donne le sens, 尔 donne la prononciation."
+      ],
+      "phrase": [
+        "你好，你家的猫叫什么名字？",
+        "Nǐ hǎo, nǐ jiā de māo jiào shénme míngzi?",
+        "Bonjour, comment s'appelle le chat de ta maison ?"
       ]
     },
     {
@@ -1935,7 +2134,13 @@ kbd {
       "etymology": [
         "形声 — composé phonétique-sémantique",
         "Personne (亻) pour le sens, 也 pour la prononciation."
-      ]
+      ],
+      "phrase": [
+        "他山之石，可以攻玉。",
+        "Tā shān zhī shí, kěyǐ gōng yù.",
+        "La pierre d'une autre montagne peut polir le jade."
+      ],
+      "phraseNote": "他山之石 : tirer profit des expériences d'autrui pour progresser."
     },
     {
       "char": "不",
@@ -1965,7 +2170,12 @@ kbd {
         "假借 — emprunt phonétique",
         "Le dessin figurait le calice d'une fleur ; il a été emprunté pour noter la négation."
       ],
-      "note": "Devant un 4e ton, 不 devient bú : 不是 → bú shì. Ailleurs il reste bù."
+      "note": "Devant un 4e ton, 不 devient bú : 不是 → bú shì. Ailleurs il reste bù.",
+      "phrase": [
+        "我不喜欢吃药，可是我喜欢吃糖。",
+        "Wǒ bù xǐhuan chī yào, kěshì wǒ xǐhuan chī táng.",
+        "Je n'aime pas les médicaments, mais j'adore les bonbons."
+      ]
     },
     {
       "char": "是",
@@ -1999,7 +2209,13 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Le soleil (日) et ce qui est droit (正) : le vrai, le correct — d'où le sens de « être, c'est bien cela »."
-      ]
+      ],
+      "phrase": [
+        "他很自以为是，不听大家的话。",
+        "Tā hěn zì yǐ wéi shì, bù tīng dàjiā de huà.",
+        "Il a la grosse tête et n'écoute personne."
+      ],
+      "phraseNote": "自以为是 : se croire toujours dans le vrai."
     },
     {
       "char": "有",
@@ -2033,6 +2249,11 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Une main (又) tenant un morceau de viande (月) : ce que l'on possède."
+      ],
+      "phrase": [
+        "我的猫有意思，它喜欢看书。",
+        "Wǒ de māo yǒu yìsi, tā xǐhuan kàn shū.",
+        "Mon chat est amusant, il aime lire."
       ]
     },
     {
@@ -2062,7 +2283,13 @@ kbd {
       "etymology": [
         "假借 — emprunt phonétique",
         "À l'origine, le dessin d'un épi de blé (aujourd'hui écrit 麥). Il a été emprunté pour noter « venir »."
-      ]
+      ],
+      "phrase": [
+        "他后来居上，考试得了第一。",
+        "Tā hòu lái jū shàng, kǎoshì dé le dì yī.",
+        "Il a dépassé tout le monde et a fini premier."
+      ],
+      "phraseNote": "后来居上 : dépasser ceux qui étaient devant, réussir au final."
     },
     {
       "char": "去",
@@ -2096,6 +2323,11 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Une personne (大) quittant un contenant (凵) : partir, s'en aller."
+      ],
+      "phrase": [
+        "去年我去北京，看见很多猫。",
+        "Qùnián wǒ qù Běijīng, kànjiàn hěn duō māo.",
+        "L'an dernier je suis allé à Pékin et j'ai vu beaucoup de chats."
       ]
     },
     {
@@ -2130,7 +2362,13 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Une main (手) au-dessus de l'œil (目) : se protéger du soleil pour mieux voir au loin."
-      ]
+      ],
+      "phrase": [
+        "他进步很大，大家刮目相看。",
+        "Tā jìnbù hěn dà, dàjiā guā mù xiāng kàn.",
+        "Il a beaucoup progressé, tout le monde le voit autrement."
+      ],
+      "phraseNote": "刮目相看 : voir quelqu'un d'un nouvel œil."
     },
     {
       "char": "吃",
@@ -2164,6 +2402,11 @@ kbd {
       "etymology": [
         "形声 — composé phonétique-sémantique",
         "La bouche (口) pour le sens, 乞 pour la prononciation."
+      ],
+      "phrase": [
+        "我吃火锅的时候，猫也在吃鱼。",
+        "Wǒ chī huǒguō de shíhou, māo yě zài chī yú.",
+        "Quand je mange une fondue chinoise, le chat mange aussi du poisson."
       ]
     },
     {
@@ -2203,7 +2446,13 @@ kbd {
       "etymology": [
         "会意 — idéogramme composé",
         "Un enfant (子) sous un toit (冖), guidé par des mains : l'école, le lieu où l'on transmet. La forme traditionnelle 學 est plus détaillée encore."
-      ]
+      ],
+      "phrase": [
+        "学无止境，我们继续努力。",
+        "Xué wú zhǐ jìng, wǒmen jìxù nǔlì.",
+        "Le savoir n'a pas de limite, continuons à travailler."
+      ],
+      "phraseNote": "学无止境 : on n'a jamais fini d'apprendre."
     },
     {
       "char": "生",
@@ -2233,7 +2482,12 @@ kbd {
         "象形 — pictogramme",
         "Une jeune pousse sortant de terre : la naissance, la vie qui vient."
       ],
-      "note": "Dans 先生, le ton de 生 s'atone : xiān sheng."
+      "note": "Dans 先生, le ton de 生 s'atone : xiān sheng.",
+      "phrase": [
+        "我的生日是八月八日，很吉利。",
+        "Wǒ de shēngrì shì bā yuè bā rì, hěn jílì.",
+        "Mon anniversaire tombe le 8 août, très porte-bonheur."
+      ]
     },
     {
       "char": "爱",
@@ -2276,7 +2530,13 @@ kbd {
           "ài qíng",
           "amour, romance"
         ]
-      ]
+      ],
+      "phrase": [
+        "她对新书爱不释手。",
+        "Tā duì xīn shū ài bù shì shǒu.",
+        "Elle ne peut pas lâcher son nouveau livre."
+      ],
+      "phraseNote": "爱不释手 : aimer tellement qu'on ne peut plus s'en séparer."
     },
     {
       "char": "姐",
@@ -2314,6 +2574,11 @@ kbd {
           "xiǎo jie",
           "mademoiselle, jeune femme, prostituée"
         ]
+      ],
+      "phrase": [
+        "我的姐姐今年十八岁。",
+        "Wǒ de jiějie jīnnián shíbā suì.",
+        "Ma grande sœur a dix-huit ans cette année."
       ]
     },
     {
@@ -2342,7 +2607,13 @@ kbd {
           "jeune"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他不喜欢上班，每天度日如年。",
+        "Tā bù xǐhuan shàngbān, měi tiān dù rì rú nián.",
+        "Il n'aime pas travailler, chaque jour lui semble une éternité."
+      ],
+      "phraseNote": "度日如年 : trouver le temps interminable."
     },
     {
       "char": "八",
@@ -2370,6 +2641,11 @@ kbd {
           "shí bā",
           "dix-huit"
         ]
+      ],
+      "phrase": [
+        "我八点起床，可是八点半还在睡。",
+        "Wǒ bā diǎn qǐchuáng, kěshì bā diǎn bàn hái zài shuì.",
+        "Je me lève à huit heures, mais à huit heures et demie je dors encore."
       ]
     },
     {
@@ -2408,7 +2684,13 @@ kbd {
           "fàn guǎn",
           "restaurant"
         ]
-      ]
+      ],
+      "phrase": [
+        "加班对他来说已经是家常便饭。",
+        "Jiābān duì tā lái shuō yǐjīng shì jiā cháng biàn fàn.",
+        "Les heures supplémentaires sont devenues son quotidien."
+      ],
+      "phraseNote": "家常便饭 : chose devenue habituelle, routine."
     },
     {
       "char": "今",
@@ -2436,7 +2718,12 @@ kbd {
           "aujourd'hui, maintenant"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "今天我很忙，但是我很开心。",
+        "Jīntiān wǒ hěn máng, dànshì wǒ hěn kāixīn.",
+        "Aujourd'hui je suis très occupé, mais très content."
+      ]
     },
     {
       "char": "您",
@@ -2479,6 +2766,11 @@ kbd {
           "nín guì xìng",
           "comment vous appelez-vous ?"
         ]
+      ],
+      "phrase": [
+        "您好，您今天要去哪里？",
+        "Nín hǎo, nín jīntiān yào qù nǎlǐ?",
+        "Bonjour, où allez-vous aujourd'hui ?"
       ]
     },
     {
@@ -2517,6 +2809,11 @@ kbd {
           "bà mā",
           "papa et maman, parents"
         ]
+      ],
+      "phrase": [
+        "爸爸今天做饭，可是饭很咸。",
+        "Bàba jīntiān zuòfàn, kěshì fàn hěn xián.",
+        "Papa a cuisiné aujourd'hui, mais le plat est très salé."
       ]
     },
     {
@@ -2555,7 +2852,13 @@ kbd {
           "fáng zi",
           "maison, logement, appartement"
         ]
-      ]
+      ],
+      "phrase": [
+        "书桌上有文房四宝。",
+        "Shūzhuō shàng yǒu wén fáng sì bǎo.",
+        "Sur le bureau reposent les quatre trésors du lettré."
+      ],
+      "phraseNote": "文房四宝 : les quatre trésors du lettré (pinceau, encre, papier, pierre à encre)."
     },
     {
       "char": "九",
@@ -2603,6 +2906,11 @@ kbd {
           "jiǔ niú yī máo",
           "goutte d'eau dans la mer"
         ]
+      ],
+      "phrase": [
+        "我九点睡觉，可是九点半还在看书。",
+        "Wǒ jiǔ diǎn shuìjiào, kěshì jiǔ diǎn bàn hái zài kàn shū.",
+        "Je me couche à neuf heures, mais à neuf heures et demie je lis encore."
       ]
     },
     {
@@ -2631,7 +2939,13 @@ kbd {
           "jean, pantalon de jean"
         ]
       ],
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "phrase": [
+        "这点钱是九牛一毛。",
+        "Zhè diǎn qián shì jiǔ niú yī máo.",
+        "Cette somme, c'est une goutte d'eau dans la mer."
+      ],
+      "phraseNote": "九牛一毛 : quantité insignifiante par rapport à l'ensemble."
     },
     {
       "char": "吧",
@@ -2669,6 +2983,11 @@ kbd {
           "wǎng bā",
           "cybercafé"
         ]
+      ],
+      "phrase": [
+        "我们去酒吧喝牛奶吧！",
+        "Wǒmen qù jiǔbā hē niúnǎi ba!",
+        "Allons boire du lait au bar !"
       ]
     },
     {
@@ -2697,7 +3016,13 @@ kbd {
           "voler, vol"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他毕业后飞黄腾达。",
+        "Tā bìyè hòu fēi huáng téng dá.",
+        "Après ses études, il a fait une carrière éclatante."
+      ],
+      "phraseNote": "飞黄腾达 : réussir brillamment, faire une carrière fulgurante."
     },
     {
       "char": "觉",
@@ -2740,6 +3065,11 @@ kbd {
           "shuì jiào",
           "dormir, se coucher"
         ]
+      ],
+      "phrase": [
+        "我今天觉得非常累。",
+        "Wǒ jīntiān juéde fēicháng lèi.",
+        "Aujourd'hui je me sens très fatigué."
       ]
     },
     {
@@ -2768,7 +3098,13 @@ kbd {
           "blanc, réactionnaire"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他白手起家，现在很有钱。",
+        "Tā bái shǒu qǐ jiā, xiànzài hěn yǒu qián.",
+        "Il est parti de rien et il est riche aujourd'hui."
+      ],
+      "phraseNote": "白手起家 : bâtir sa réussite à partir de rien."
     },
     {
       "char": "非",
@@ -2796,7 +3132,12 @@ kbd {
           "devoir absolument"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "今天的天气非常好。",
+        "Jīntiān de tiānqì fēicháng hǎo.",
+        "Aujourd'hui, le temps est très beau."
+      ]
     },
     {
       "char": "开",
@@ -2834,7 +3175,13 @@ kbd {
           "kāi huì",
           "tenir réunion, se réunir"
         ]
-      ]
+      ],
+      "phrase": [
+        "你别客气，开门见山吧。",
+        "Nǐ bié kèqi, kāi mén jiàn shān ba.",
+        "Ne tourne pas autour du pot, va droit au but."
+      ],
+      "phraseNote": "开门见山 : entrer directement dans le sujet."
     },
     {
       "char": "朋",
@@ -2867,6 +3214,11 @@ kbd {
           "nán péng you",
           "petit ami, copain"
         ]
+      ],
+      "phrase": [
+        "我的朋友都喜欢吃米饭。",
+        "Wǒ de péngyou dōu xǐhuan chī mǐfàn.",
+        "Mes amis aiment tous manger du riz."
       ]
     },
     {
@@ -2905,7 +3257,13 @@ kbd {
           "lǎo bǎi xìng",
           "gens du peuple, Monsieur Tout-le-monde"
         ]
-      ]
+      ],
+      "phrase": [
+        "他打篮球百发百中。",
+        "Tā dǎ lánqiú bǎi fā bǎi zhòng.",
+        "Il marque à tous les coups au basket."
+      ],
+      "phraseNote": "百发百中 : ne jamais manquer sa cible."
     },
     {
       "char": "分",
@@ -2943,7 +3301,13 @@ kbd {
           "fēn shù",
           "note, score, fraction"
         ]
-      ]
+      ],
+      "phrase": [
+        "考试快到了，大家分秒必争。",
+        "Kǎoshì kuài dào le, dàjiā fēn miǎo bì zhēng.",
+        "L'examen approche, chacun ne perd pas une seconde."
+      ],
+      "phraseNote": "分秒必争 : lutter pour chaque seconde, ne pas perdre de temps."
     },
     {
       "char": "漂",
@@ -2981,6 +3345,11 @@ kbd {
           "piāo liú",
           "flotter, dériver"
         ]
+      ],
+      "phrase": [
+        "这条河很漂亮，可是水很冷。",
+        "Zhè tiáo hé hěn piàoliang, kěshì shuǐ hěn lěng.",
+        "Cette rivière est très jolie, mais l'eau est très froide."
       ]
     },
     {
@@ -3019,7 +3388,13 @@ kbd {
           "bān jí",
           "classe, promotion"
         ]
-      ]
+      ],
+      "phrase": [
+        "我唱歌是班门弄斧。",
+        "Wǒ chànggē shì bān mén nòng fǔ.",
+        "Quand je chante, c'est de la prétention."
+      ],
+      "phraseNote": "班门弄斧 : étaler ses talents devant plus fort que soi."
     },
     {
       "char": "服",
@@ -3062,6 +3437,11 @@ kbd {
           "fú zhuāng",
           "vêtements, costume, habillement"
         ]
+      ],
+      "phrase": [
+        "这件旧衣服我很喜欢。",
+        "Zhè jiàn jiù yīfu wǒ hěn xǐhuan.",
+        "Ce vieux vêtement, je l'aime beaucoup."
       ]
     },
     {
@@ -3100,7 +3480,13 @@ kbd {
           "kě néng",
           "possible, probable, peut-être"
         ]
-      ]
+      ],
+      "phrase": [
+        "猫会说法语，太不可思议了！",
+        "Māo huì shuō Fǎyǔ, tài bù kě sī yì le!",
+        "Un chat qui parle français, c'est incroyable !"
+      ],
+      "phraseNote": "不可思议 : inconcevable, incroyable."
     },
     {
       "char": "苹",
@@ -3138,6 +3524,11 @@ kbd {
           "píng guǒ zhī",
           "jus de pomme"
         ]
+      ],
+      "phrase": [
+        "我每天吃一个苹果，医生远离我。",
+        "Wǒ měi tiān chī yī gè píngguǒ, yīshēng yuǎnlí wǒ.",
+        "Je mange une pomme par jour, le médecin s'éloigne de moi."
       ]
     },
     {
@@ -3176,7 +3567,13 @@ kbd {
           "bàn tiān",
           "demi-journée, longtemps, en l'air"
         ]
-      ]
+      ],
+      "phrase": [
+        "学中文不要半途而废。",
+        "Xué Zhōngwén bù yào bàn tú ér fèi.",
+        "Pour apprendre le chinois, n'abandonne pas en route."
+      ],
+      "phraseNote": "半途而废 : abandonner une tâche à mi-chemin."
     },
     {
       "char": "高",
@@ -3219,6 +3616,11 @@ kbd {
           "gāo jí",
           "de haut niveau, avancé"
         ]
+      ],
+      "phrase": [
+        "我很高兴，因为今天没有作业。",
+        "Wǒ hěn gāoxìng, yīnwèi jīntiān méiyǒu zuòyè.",
+        "Je suis content, car aujourd'hui il n'y a pas de devoirs."
       ]
     },
     {
@@ -3257,7 +3659,13 @@ kbd {
           "kè guān",
           "objectif, impartial"
         ]
-      ]
+      ],
+      "phrase": [
+        "昨天家里来了一位不速之客。",
+        "Zuótiān jiālǐ lái le yī wèi bù sù zhī kè.",
+        "Hier, un visiteur inattendu est venu à la maison."
+      ],
+      "phraseNote": "不速之客 : visiteur inattendu, non invité."
     },
     {
       "char": "七",
@@ -3305,6 +3713,11 @@ kbd {
           "qī shàng bā xià",
           "sens dessus dessous"
         ]
+      ],
+      "phrase": [
+        "我七点起床，可是七点半还在睡。",
+        "Wǒ qī diǎn qǐchuáng, kěshì qī diǎn bàn hái zài shuì.",
+        "Je me lève à sept heures, mais à sept heures et demie je dors encore."
       ]
     },
     {
@@ -3343,7 +3756,13 @@ kbd {
           "miàn bāo",
           "pain"
         ]
-      ]
+      ],
+      "phrase": [
+        "这本书包罗万象。",
+        "Zhè běn shū bāo luó wàn xiàng.",
+        "Ce livre aborde tous les sujets."
+      ],
+      "phraseNote": "包罗万象 : englober tout, être universel."
     },
     {
       "char": "哥",
@@ -3376,6 +3795,11 @@ kbd {
           "dà gē",
           "grand frère, aîné, chef de gang"
         ]
+      ],
+      "phrase": [
+        "我的哥哥很高，像一棵树。",
+        "Wǒ de gēge hěn gāo, xiàng yī kē shù.",
+        "Mon grand frère est très grand, comme un arbre."
       ]
     },
     {
@@ -3414,6 +3838,11 @@ kbd {
           "kè wén",
           "texte, leçon"
         ]
+      ],
+      "phrase": [
+        "这节课很有意思，老师很像演员。",
+        "Zhè jié kè hěn yǒu yìsi, lǎoshī hěn xiàng yǎnyuán.",
+        "Ce cours est très intéressant, le professeur ressemble à un acteur."
       ]
     },
     {
@@ -3452,7 +3881,13 @@ kbd {
           "xīng qī",
           "semaine, jour de la semaine"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话期期艾艾，大家听不懂。",
+        "Tā shuōhuà qī qī ài ài, dàjiā tīng bù dǒng.",
+        "Il bégaie en parlant, personne ne le comprend."
+      ],
+      "phraseNote": "期期艾艾 : bégayer, s'exprimer avec peine."
     },
     {
       "char": "杯",
@@ -3490,6 +3925,11 @@ kbd {
           "gān bēi",
           "trinquer, cul sec, santé"
         ]
+      ],
+      "phrase": [
+        "这个杯子太漂亮了，我舍不得用。",
+        "Zhège bēizi tài piàoliang le, wǒ shěbudé yòng.",
+        "Ce verre est trop joli, je n'ose pas m'en servir."
       ]
     },
     {
@@ -3528,7 +3968,13 @@ kbd {
           "gē shēng",
           "voix chantante, chant"
         ]
-      ]
+      ],
+      "phrase": [
+        "大家高歌猛进，一起努力。",
+        "Dàjiā gāo gē měng jìn, yīqǐ nǔlì.",
+        "Tous avancent avec ardeur."
+      ],
+      "phraseNote": "高歌猛进 : avancer avec ardeur et enthousiasme."
     },
     {
       "char": "起",
@@ -3566,6 +4012,11 @@ kbd {
           "qǐ lai",
           "se lever, se redresser"
         ]
+      ],
+      "phrase": [
+        "我每天六点起床，可是猫还在睡。",
+        "Wǒ měi tiān liù diǎn qǐchuáng, kěshì māo hái zài shuì.",
+        "Je me lève à six heures chaque jour, mais le chat dort encore."
       ]
     },
     {
@@ -3604,7 +4055,13 @@ kbd {
           "běn lái",
           "à l'origine, au départ, bien sûr"
         ]
-      ]
+      ],
+      "phrase": [
+        "学习不要舍本逐末。",
+        "Xuéxí bù yào shě běn zhú mò.",
+        "Dans l'étude, ne néglige pas l'essentiel pour l'accessoire."
+      ],
+      "phraseNote": "舍本逐末 : sacrifier l'essentiel pour le détail."
     },
     {
       "char": "个",
@@ -3642,6 +4099,11 @@ kbd {
           "gè rén",
           "individu, personnel, soi-même"
         ]
+      ],
+      "phrase": [
+        "我这个星期很忙，那个星期也忙。",
+        "Wǒ zhège xīngqī hěn máng, nàge xīngqī yě máng.",
+        "Cette semaine je suis très occupé, et la semaine dernière aussi."
       ]
     },
     {
@@ -3680,6 +4142,11 @@ kbd {
           "yī kuài",
           "morceau, bout, tranche"
         ]
+      ],
+      "phrase": [
+        "我买了一块蛋糕，两块面包。",
+        "Wǒ mǎi le yī kuài dàngāo, liǎng kuài miànbāo.",
+        "J'ai acheté un morceau de gâteau et deux pains."
       ]
     },
     {
@@ -3708,7 +4175,13 @@ kbd {
           "climat, ambiance"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "山上气象万千，非常好看。",
+        "Shān shàng qì xiàng wàn qiān, fēicháng hǎokàn.",
+        "À la montagne, le spectacle est grandiose."
+      ],
+      "phraseNote": "气象万千 : paysage grandiose, spectacle magnifique."
     },
     {
       "char": "边",
@@ -3746,7 +4219,13 @@ kbd {
           "dōng bian",
           "est, côté est"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话不着边际，我听不懂。",
+        "Tā shuōhuà bù zhuó biān jì, wǒ tīng bù dǒng.",
+        "Il parle à côté du sujet, je ne comprends pas."
+      ],
+      "phraseNote": "不着边际 : sans rapport, à côté du sujet."
     },
     {
       "char": "给",
@@ -3784,6 +4263,11 @@ kbd {
           "sòng gěi",
           "offrir, envoyer"
         ]
+      ],
+      "phrase": [
+        "妈妈给我一个苹果。",
+        "Māma gěi wǒ yī gè píngguǒ.",
+        "Maman me donne une pomme."
       ]
     },
     {
@@ -3822,7 +4306,13 @@ kbd {
           "qiān wàn",
           "dix millions, absolument, surtout"
         ]
-      ]
+      ],
+      "phrase": [
+        "他千方百计找他的猫。",
+        "Tā qiān fāng bǎi jì zhǎo tā de māo.",
+        "Il cherche son chat par tous les moyens."
+      ],
+      "phraseNote": "千方百计 : par tous les moyens possibles."
     },
     {
       "char": "便",
@@ -3860,6 +4350,11 @@ kbd {
           "fāng biàn",
           "pratique, commode, faciliter"
         ]
+      ],
+      "phrase": [
+        "这个手机很方便，也很便宜。",
+        "Zhège shǒujī hěn fāngbiàn, yě hěn piányi.",
+        "Ce téléphone est très pratique et pas cher."
       ]
     },
     {
@@ -3898,7 +4393,13 @@ kbd {
           "gōng zuò",
           "travail, travailler, emploi"
         ]
-      ]
+      ],
+      "phrase": [
+        "这个蛋糕巧夺天工，我舍不得吃。",
+        "Zhège dàngāo qiǎo duó tiān gōng, wǒ shěbudé chī.",
+        "Ce gâteau a un air d'œuvre d'art, je n'ose pas le manger."
+      ],
+      "phraseNote": "巧夺天工 : dont l'habileté surpasse la nature."
     },
     {
       "char": "老",
@@ -3936,6 +4437,11 @@ kbd {
           "lǎo shī",
           "professeur, enseignant"
         ]
+      ],
+      "phrase": [
+        "老人每天在公园唱歌。",
+        "Lǎorén měi tiān zài gōngyuán chànggē.",
+        "Le vieil homme chante au parc chaque jour."
       ]
     },
     {
@@ -3979,7 +4485,13 @@ kbd {
           "qián tiān",
           "avant-hier"
         ]
-      ]
+      ],
+      "phrase": [
+        "我们勇往直前，不怕困难。",
+        "Wǒmen yǒng wǎng zhí qián, bù pà kùnnan.",
+        "Nous avançons avec courage, sans craindre les difficultés."
+      ],
+      "phraseNote": "勇往直前 : avancer hardiment sans reculer."
     },
     {
       "char": "病",
@@ -4017,6 +4529,11 @@ kbd {
           "kàn bìng",
           "consulter un médecin, voir un malade"
         ]
+      ],
+      "phrase": [
+        "病人今天好多了，可以吃饭。",
+        "Bìngrén jīntiān hǎo duō le, kěyǐ chīfàn.",
+        "Le malade va mieux aujourd'hui, il peut manger."
       ]
     },
     {
@@ -4055,7 +4572,13 @@ kbd {
           "gōng lǐ",
           "kilomètre"
         ]
-      ]
+      ],
+      "phrase": [
+        "他做事大公无私，大家都喜欢他。",
+        "Tā zuòshì dà gōng wú sī, dàjiā dōu xǐhuan tā.",
+        "Il est impartial et désintéressé, tout le monde l'aime."
+      ],
+      "phraseNote": "大公无私 : juste et désintéressé, sans favoritisme."
     },
     {
       "char": "了",
@@ -4093,7 +4616,13 @@ kbd {
           "liǎo bu qǐ",
           "extraordinaire, formidable"
         ]
-      ]
+      ],
+      "phrase": [
+        "这张图一目了然，很容易。",
+        "Zhè zhāng tú yī mù liǎo rán, hěn róngyì.",
+        "Ce schéma est clair au premier coup d'œil."
+      ],
+      "phraseNote": "一目了然 : clair au premier regard."
     },
     {
       "char": "钱",
@@ -4131,6 +4660,11 @@ kbd {
           "jià qian",
           "prix"
         ]
+      ],
+      "phrase": [
+        "我的钱包里没有钱，只有一张照片。",
+        "Wǒ de qiánbāo lǐ méiyǒu qián, zhǐyǒu yī zhāng zhàopiàn.",
+        "Dans mon portefeuille il n'y a pas d'argent, juste une photo."
       ]
     },
     {
@@ -4179,7 +4713,13 @@ kbd {
           "gǒu jí tiào qiáng",
           "bête acculée se défend"
         ]
-      ]
+      ],
+      "phrase": [
+        "别逼他，狗急跳墙。",
+        "Bié bī tā, gǒu jí tiào qiáng.",
+        "Ne le pousse pas à bout : un chien acculé saute le mur."
+      ],
+      "phraseNote": "狗急跳墙 : acculé, on agit de façon désespérée."
     },
     {
       "char": "冷",
@@ -4217,6 +4757,11 @@ kbd {
           "lěng qì",
           "air froid, climatisation"
         ]
+      ],
+      "phrase": [
+        "今天很冷，我们开冷气吧！",
+        "Jīntiān hěn lěng, wǒmen kāi lěngqì ba!",
+        "Il fait très froid aujourd'hui, allumons la climatisation !"
       ]
     },
     {
@@ -4255,6 +4800,11 @@ kbd {
           "qǐng jìn",
           "entrez donc"
         ]
+      ],
+      "phrase": [
+        "请进，请坐，请喝茶。",
+        "Qǐng jìn, qǐng zuò, qǐng hē chá.",
+        "Entrez, asseyez-vous, buvez du thé."
       ]
     },
     {
@@ -4293,7 +4843,13 @@ kbd {
           "bái cài",
           "chou chinois, chou de Pékin"
         ]
-      ]
+      ],
+      "phrase": [
+        "他病了以后，面有菜色。",
+        "Tā bìng le yǐhòu, miàn yǒu cài sè.",
+        "Depuis sa maladie, il a le teint pâle."
+      ],
+      "phraseNote": "面有菜色 : avoir le teint blême et maladif."
     },
     {
       "char": "关",
@@ -4331,7 +4887,13 @@ kbd {
           "guān jī",
           "éteindre, arrêter"
         ]
-      ]
+      ],
+      "phrase": [
+        "健康与运动息息相关。",
+        "Jiànkāng yǔ yùndòng xī xī xiāng guān.",
+        "La santé et le sport sont étroitement liés."
+      ],
+      "phraseNote": "息息相关 : étroitement lié, inséparable."
     },
     {
       "char": "里",
@@ -4369,6 +4931,11 @@ kbd {
           "lǐ tou",
           "intérieur, dedans"
         ]
+      ],
+      "phrase": [
+        "我的猫在房子里边睡觉。",
+        "Wǒ de māo zài fángzi lǐbian shuìjiào.",
+        "Mon chat dort à l'intérieur de la maison."
       ]
     },
     {
@@ -4412,7 +4979,13 @@ kbd {
           "hóng chá",
           "thé noir"
         ]
-      ]
+      ],
+      "phrase": [
+        "茶余饭后，我们喜欢散步。",
+        "Chá yú fàn hòu, wǒmen xǐhuan sànbù.",
+        "Après le repas, nous aimons nous promener."
+      ],
+      "phraseNote": "茶余饭后 : aux moments de loisir, après les repas."
     },
     {
       "char": "贵",
@@ -4455,6 +5028,11 @@ kbd {
           "guì bīn",
           "hôte de marque, invité d'honneur"
         ]
+      ],
+      "phrase": [
+        "时间比钱更宝贵。",
+        "Shíjiān bǐ qián gèng bǎoguì.",
+        "Le temps est plus précieux que l'argent."
       ]
     },
     {
@@ -4498,7 +5076,13 @@ kbd {
           "liǎng àn",
           "les deux rives, Taïwan et continent"
         ]
-      ]
+      ],
+      "phrase": [
+        "学生们三三两两地来了。",
+        "Xuéshēngmen sān sān liǎng liǎng de lái le.",
+        "Les élèves sont arrivés par petits groupes."
+      ],
+      "phraseNote": "三三两两 : par petits groupes de deux ou trois."
     },
     {
       "char": "热",
@@ -4536,6 +5120,11 @@ kbd {
           "rè ài",
           "aimer ardemment, adorer"
         ]
+      ],
+      "phrase": [
+        "他对客人非常热情。",
+        "Tā duì kèrén fēicháng rèqíng.",
+        "Il est très chaleureux avec les invités."
       ]
     },
     {
@@ -4574,7 +5163,13 @@ kbd {
           "cháng jiàn",
           "courant, fréquent"
         ]
-      ]
+      ],
+      "phrase": [
+        "他迟到，大家都习以为常。",
+        "Tā chídào, dàjiā dōu xí yǐ wéi cháng.",
+        "Il arrive en retard, tout le monde y est habitué."
+      ],
+      "phraseNote": "习以为常 : être devenu une habitude, ne plus surprendre."
     },
     {
       "char": "国",
@@ -4612,6 +5207,11 @@ kbd {
           "guó wài",
           "à l'étranger, outre-mer"
         ]
+      ],
+      "phrase": [
+        "中国菜在外国很有名。",
+        "Zhōngguócài zài wàiguó hěn yǒumíng.",
+        "La cuisine chinoise est très célèbre à l'étranger."
       ]
     },
     {
@@ -4660,7 +5260,13 @@ kbd {
           "yuè liang",
           "lune"
         ]
-      ]
+      ],
+      "phrase": [
+        "他为人高风亮节，值得学习。",
+        "Tā wéirén gāo fēng liàng jié, zhídé xuéxí.",
+        "Il a un caractère noble et exemplaire."
+      ],
+      "phraseNote": "高风亮节 : grande noblesse de caractère et de conduite."
     },
     {
       "char": "唱",
@@ -4698,6 +5304,11 @@ kbd {
           "chàng piàn",
           "disque, album"
         ]
+      ],
+      "phrase": [
+        "我的猫唱歌比我好听。",
+        "Wǒ de māo chànggē bǐ wǒ hǎotīng.",
+        "Mon chat chante mieux que moi."
       ]
     },
     {
@@ -4736,7 +5347,13 @@ kbd {
           "guǒ zhī",
           "jus de fruits"
         ]
-      ]
+      ],
+      "phrase": [
+        "他不听劝告，终于自食其果。",
+        "Tā bù tīng quàngào, zhōngyú zì shí qí guǒ.",
+        "Il n'a pas écouté les conseils et en a subi les conséquences."
+      ],
+      "phraseNote": "自食其果 : subir les conséquences de ses propres actes."
     },
     {
       "char": "零",
@@ -4774,6 +5391,11 @@ kbd {
           "líng shí",
           "en-cas, grignotines"
         ]
+      ],
+      "phrase": [
+        "外面零下十度，我想吃零食。",
+        "Wàimiàn líng xià shí dù, wǒ xiǎng chī língshí.",
+        "Il fait moins dix dehors, et j'ai envie de grignoter."
       ]
     },
     {
@@ -4812,6 +5434,11 @@ kbd {
           "rèn zhēn",
           "sérieux, consciencieux, appliqué"
         ]
+      ],
+      "phrase": [
+        "我认识那只猫，它叫小白。",
+        "Wǒ rènshi nà zhī māo, tā jiào Xiǎobái.",
+        "Je connais ce chat, il s'appelle Petit-Blanc."
       ]
     },
     {
@@ -4850,7 +5477,13 @@ kbd {
           "chāo shì",
           "supermarché"
         ]
-      ]
+      ],
+      "phrase": [
+        "他的画超凡脱俗。",
+        "Tā de huà chāo fán tuō sú.",
+        "Sa peinture sort de l'ordinaire."
+      ],
+      "phraseNote": "超凡脱俗 : sortir du commun, être au-dessus du vulgaire."
     },
     {
       "char": "还",
@@ -4888,6 +5521,11 @@ kbd {
           "hái yǒu",
           "il reste, en plus, aussi"
         ]
+      ],
+      "phrase": [
+        "我还有三个苹果。",
+        "Wǒ hái yǒu sān gè píngguǒ.",
+        "J'ai encore trois pommes."
       ]
     },
     {
@@ -4936,7 +5574,13 @@ kbd {
           "liù shén wú zhǔ",
           "affolé, désemparé"
         ]
-      ]
+      ],
+      "phrase": [
+        "他考试前六神无主。",
+        "Tā kǎoshì qián liù shén wú zhǔ.",
+        "Avant l'examen, il est complètement paniqué."
+      ],
+      "phraseNote": "六神无主 : perdre ses moyens, être affolé."
     },
     {
       "char": "车",
@@ -4974,6 +5618,11 @@ kbd {
           "chē zhàn",
           "gare, arrêt, station"
         ]
+      ],
+      "phrase": [
+        "学校前边有一个车站。",
+        "Xuéxiào qiánbian yǒu yī gè chēzhàn.",
+        "Il y a une station devant l'école."
       ]
     },
     {
@@ -5012,6 +5661,11 @@ kbd {
           "nán hái r",
           "garçon"
         ]
+      ],
+      "phrase": [
+        "这个孩子一天吃六个包子。",
+        "Zhège háizi yī tiān chī liù gè bāozi.",
+        "Cet enfant mange six brioches par jour."
       ]
     },
     {
@@ -5050,6 +5704,11 @@ kbd {
           "dà mā",
           "tante, dame âgée"
         ]
+      ],
+      "phrase": [
+        "妈妈，我的袜子在哪里？",
+        "Māma, wǒ de wàzi zài nǎlǐ?",
+        "Maman, où sont mes chaussettes ?"
       ]
     },
     {
@@ -5088,7 +5747,13 @@ kbd {
           "hàn zì",
           "caractère chinois"
         ]
-      ]
+      ],
+      "phrase": [
+        "他虽然小，但是气冲霄汉。",
+        "Tā suīrán xiǎo, dànshì qì chōng xiāo hàn.",
+        "Bien que petit, il a un courage immense."
+      ],
+      "phraseNote": "气冲霄汉 : plein d'ardeur, une énergie qui monte au ciel."
     },
     {
       "char": "吗",
@@ -5136,6 +5801,11 @@ kbd {
           "bù shì ma",
           "n'est-ce pas ?"
         ]
+      ],
+      "phrase": [
+        "你会说汉语吗？",
+        "Nǐ huì shuō Hànyǔ ma?",
+        "Sais-tu parler chinois ?"
       ]
     },
     {
@@ -5179,6 +5849,11 @@ kbd {
           "shāng diàn",
           "magasin, boutique"
         ]
+      ],
+      "phrase": [
+        "我在商场买了三件衣服。",
+        "Wǒ zài shāngchǎng mǎi le sān jiàn yīfu.",
+        "J'ai acheté trois vêtements au centre commercial."
       ]
     },
     {
@@ -5217,7 +5892,13 @@ kbd {
           "chū qù",
           "sortir"
         ]
-      ]
+      ],
+      "phrase": [
+        "他努力学习，想出人头地。",
+        "Tā nǔlì xuéxí, xiǎng chū rén tóu dì.",
+        "Il travaille dur, voulant se distinguer."
+      ],
+      "phraseNote": "出人头地 : se distinguer, s'élever au-dessus des autres."
     },
     {
       "char": "买",
@@ -5255,6 +5936,11 @@ kbd {
           "gòu mǎi",
           "acheter, acquisition"
         ]
+      ],
+      "phrase": [
+        "我去买面包，你去买牛奶。",
+        "Wǒ qù mǎi miànbāo, nǐ qù mǎi niúnǎi.",
+        "Je vais acheter du pain, tu vas acheter du lait."
       ]
     },
     {
@@ -5293,6 +5979,11 @@ kbd {
           "chuān guò",
           "traverser, franchir"
         ]
+      ],
+      "phrase": [
+        "今天很冷，我穿了两件衣服。",
+        "Jīntiān hěn lěng, wǒ chuān le liǎng jiàn yīfu.",
+        "Il fait très froid, j'ai mis deux vêtements."
       ]
     },
     {
@@ -5331,7 +6022,13 @@ kbd {
           "xìn hào",
           "signal"
         ]
-      ]
+      ],
+      "phrase": [
+        "他喜欢发号施令，像一个小老板。",
+        "Tā xǐhuan fā hào shī lìng, xiàng yī gè xiǎo lǎobǎn.",
+        "Il aime donner des ordres, comme un petit patron."
+      ],
+      "phraseNote": "发号施令 : donner des ordres, commander."
     },
     {
       "char": "卖",
@@ -5369,6 +6066,11 @@ kbd {
           "mài nong",
           "se vanter, frimer"
         ]
+      ],
+      "phrase": [
+        "这家店卖面包，也卖牛奶。",
+        "Zhè jiā diàn mài miànbāo, yě mài niúnǎi.",
+        "Ce magasin vend du pain et du lait."
       ]
     },
     {
@@ -5407,7 +6109,13 @@ kbd {
           "shào nián",
           "jeune, adolescent"
         ]
-      ]
+      ],
+      "phrase": [
+        "你少见多怪，猫当然会睡觉。",
+        "Nǐ shǎo jiàn duō guài, māo dāngrán huì shuìjiào.",
+        "Tu t'étonnes pour rien : bien sûr qu'un chat dort."
+      ],
+      "phraseNote": "少见多怪 : s'étonner de ce qui est banal, faute d'expérience."
     },
     {
       "char": "床",
@@ -5445,6 +6153,11 @@ kbd {
           "chuáng wèi",
           "lit, couchette"
         ]
+      ],
+      "phrase": [
+        "我每天七点起床，可是今天没有。",
+        "Wǒ měi tiān qī diǎn qǐchuáng, kěshì jīntiān méiyǒu.",
+        "Je me lève à sept heures chaque jour, mais pas aujourd'hui."
       ]
     },
     {
@@ -5483,7 +6196,13 @@ kbd {
           "hē chá",
           "boire du thé"
         ]
-      ]
+      ],
+      "phrase": [
+        "没有钱，我们只能喝西北风。",
+        "Méiyǒu qián, wǒmen zhǐ néng hē xī běi fēng.",
+        "Sans argent, il ne nous reste qu'à jeûner."
+      ],
+      "phraseNote": "喝西北风 : n'avoir rien à manger, vivre dans la misère."
     },
     {
       "char": "忙",
@@ -5521,6 +6240,11 @@ kbd {
           "lián máng",
           "aussitôt, prestement"
         ]
+      ],
+      "phrase": [
+        "他今天很忙，连饭都没有吃。",
+        "Tā jīntiān hěn máng, lián fàn dōu méiyǒu chī.",
+        "Il est si occupé aujourd'hui qu'il n'a même pas mangé."
       ]
     },
     {
@@ -5559,6 +6283,11 @@ kbd {
           "shéi de",
           "à qui, de qui"
         ]
+      ],
+      "phrase": [
+        "谁把我的苹果吃了？",
+        "Shuí bǎ wǒ de píngguǒ chī le?",
+        "Qui a mangé ma pomme ?"
       ]
     },
     {
@@ -5597,7 +6326,13 @@ kbd {
           "dǎ kāi",
           "ouvrir, allumer"
         ]
-      ]
+      ],
+      "phrase": [
+        "小声一点，不要打草惊蛇。",
+        "Xiǎoshēng yīdiǎn, bù yào dǎ cǎo jīng shé.",
+        "Parle moins fort, ne va pas éveiller les soupçons."
+      ],
+      "phraseNote": "打草惊蛇 : alerter l'adversaire en agissant trop tôt."
     },
     {
       "char": "和",
@@ -5635,6 +6370,11 @@ kbd {
           "nuǎn huo",
           "chaud, douillet"
         ]
+      ],
+      "phrase": [
+        "这个房子很暖和，我很喜欢。",
+        "Zhège fángzi hěn nuǎnhuo, wǒ hěn xǐhuan.",
+        "Cette maison est bien chaude, je l'aime beaucoup."
       ]
     },
     {
@@ -5673,7 +6413,13 @@ kbd {
           "xiǎo māo",
           "chaton"
         ]
-      ]
+      ],
+      "phrase": [
+        "他只是照猫画虎，画得不好。",
+        "Tā zhǐshì zhào māo huà hǔ, huà de bù hǎo.",
+        "Il ne fait que copier maladroitement, son dessin est raté."
+      ],
+      "phraseNote": "照猫画虎 : imiter servilement, sans comprendre."
     },
     {
       "char": "什",
@@ -5711,6 +6457,11 @@ kbd {
           "shén me yàng",
           "quel genre, comment"
         ]
+      ],
+      "phrase": [
+        "你喜欢什么颜色？",
+        "Nǐ xǐhuan shénme yánsè?",
+        "Quelle couleur aimes-tu ?"
       ]
     },
     {
@@ -5759,6 +6510,11 @@ kbd {
           "hěn shǎo",
           "très peu, rarement"
         ]
+      ],
+      "phrase": [
+        "今天的天气很好，我很开心。",
+        "Jīntiān de tiānqì hěn hǎo, wǒ hěn kāixīn.",
+        "Il fait très beau aujourd'hui, je suis très content."
       ]
     },
     {
@@ -5797,6 +6553,11 @@ kbd {
           "zěn me",
           "comment, pourquoi"
         ]
+      ],
+      "phrase": [
+        "你为什么不吃早饭？",
+        "Nǐ wèishénme bù chī zǎofàn?",
+        "Pourquoi ne manges-tu pas de petit-déjeuner ?"
       ]
     },
     {
@@ -5835,7 +6596,13 @@ kbd {
           "dàn gāo",
           "gâteau"
         ]
-      ]
+      ],
+      "phrase": [
+        "他鸡飞蛋打，什么都没有了。",
+        "Tā jī fēi dàn dǎ, shénme dōu méiyǒu le.",
+        "Il a tout perdu, il ne lui reste rien."
+      ],
+      "phraseNote": "鸡飞蛋打 : tout perdre, le poulet s'envole et l'œuf se casse."
     },
     {
       "char": "后",
@@ -5863,7 +6630,12 @@ kbd {
           "après-demain, acquis"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "后天是我的生日，千万别忘了。",
+        "Hòutiān shì wǒ de shēngrì, qiānwàn bié wàng le.",
+        "Après-demain c'est mon anniversaire, n'oublie surtout pas."
+      ]
     },
     {
       "char": "没",
@@ -5901,6 +6673,11 @@ kbd {
           "méi guān xi",
           "ce n'est pas grave, peu importe"
         ]
+      ],
+      "phrase": [
+        "我没有钱，但是我有猫。",
+        "Wǒ méiyǒu qián, dànshì wǒ yǒu māo.",
+        "Je n'ai pas d'argent, mais j'ai un chat."
       ]
     },
     {
@@ -5939,7 +6716,13 @@ kbd {
           "jiào shī",
           "enseignant, professeur"
         ]
-      ]
+      ],
+      "phrase": [
+        "他什么都懂，好为人师。",
+        "Tā shénme dōu dǒng, hào wéi rén shī.",
+        "Il croit tout savoir et aime faire la leçon."
+      ],
+      "phraseNote": "好为人师 : aimer donner des leçons, se poser en maître."
     },
     {
       "char": "到",
@@ -5977,6 +6760,11 @@ kbd {
           "dào dá",
           "arriver, atteindre"
         ]
+      ],
+      "phrase": [
+        "我们到了车站，车已经走了。",
+        "Wǒmen dào le chēzhàn, chē yǐjīng zǒu le.",
+        "Nous sommes arrivés à la gare, mais le bus était déjà parti."
       ]
     },
     {
@@ -6015,6 +6803,11 @@ kbd {
           "yǒu shí hou",
           "parfois, quelquefois"
         ]
+      ],
+      "phrase": [
+        "有时候我喝茶，有时候我喝咖啡。",
+        "Yǒushíhou wǒ hē chá, yǒushíhou wǒ hē kāfēi.",
+        "Parfois je bois du thé, parfois du café."
       ]
     },
     {
@@ -6053,6 +6846,11 @@ kbd {
           "jiě mèi",
           "sœurs, frangines"
         ]
+      ],
+      "phrase": [
+        "我的妹妹今年十岁。",
+        "Wǒ de mèimei jīnnián shí suì.",
+        "Ma petite sœur a dix ans cette année."
       ]
     },
     {
@@ -6091,7 +6889,13 @@ kbd {
           "shí zú",
           "complet, absolu, cent pour cent"
         ]
-      ]
+      ],
+      "phrase": [
+        "没有人是十全十美的。",
+        "Méiyǒu rén shì shí quán shí měi de.",
+        "Personne n'est parfait."
+      ],
+      "phraseNote": "十全十美 : parfait en tout point."
     },
     {
       "char": "道",
@@ -6129,6 +6933,11 @@ kbd {
           "dào lù",
           "route, chemin, voie"
         ]
+      ],
+      "phrase": [
+        "这条道路又宽又干净。",
+        "Zhè tiáo dàolù yòu kuān yòu gānjìng.",
+        "Cette route est large et propre."
       ]
     },
     {
@@ -6167,7 +6976,13 @@ kbd {
           "huà tí",
           "sujet, thème"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话里有话，你要小心。",
+        "Tā shuō huà lǐ yǒu huà, nǐ yào xiǎoxīn.",
+        "Il parle à mots couverts, fais attention."
+      ],
+      "phraseNote": "话里有话 : avoir un sous-entendu, parler à mots couverts."
     },
     {
       "char": "们",
@@ -6205,6 +7020,11 @@ kbd {
           "tā men",
           "ils, eux"
         ]
+      ],
+      "phrase": [
+        "你们都喜欢吃中国菜吗？",
+        "Nǐmen dōu xǐhuan chī Zhōngguócài ma?",
+        "Vous aimez tous la cuisine chinoise ?"
       ]
     },
     {
@@ -6243,7 +7063,13 @@ kbd {
           "shí jiān",
           "temps, durée, moment"
         ]
-      ]
+      ],
+      "phrase": [
+        "他时时刻刻都想着他的猫。",
+        "Tā shí shí kè kè dōu xiǎng zhe tā de māo.",
+        "Il pense à son chat à chaque instant."
+      ],
+      "phraseNote": "时时刻刻 : à tout moment, sans cesse."
     },
     {
       "char": "得",
@@ -6286,6 +7112,11 @@ kbd {
           "dé chū",
           "conclure, dégager"
         ]
+      ],
+      "phrase": [
+        "我今天得到了一件礼物。",
+        "Wǒ jīntiān dédào le yī jiàn lǐwù.",
+        "Aujourd'hui j'ai reçu un cadeau."
       ]
     },
     {
@@ -6324,7 +7155,13 @@ kbd {
           "huān lè",
           "joie, gaieté, heureux"
         ]
-      ]
+      ],
+      "phrase": [
+        "孩子们欢天喜地地唱歌。",
+        "Háizimen huān tiān xǐ dì de chànggē.",
+        "Les enfants chantent pleins de joie."
+      ],
+      "phraseNote": "欢天喜地 : déborder de joie."
     },
     {
       "char": "米",
@@ -6362,6 +7199,11 @@ kbd {
           "háo mǐ",
           "millimètre"
         ]
+      ],
+      "phrase": [
+        "我每天吃米饭，喝牛奶。",
+        "Wǒ měi tiān chī mǐfàn, hē niúnǎi.",
+        "Je mange du riz et bois du lait chaque jour."
       ]
     },
     {
@@ -6400,7 +7242,13 @@ kbd {
           "zhī shi",
           "connaissance, savoir"
         ]
-      ]
+      ],
+      "phrase": [
+        "他有远见卓识，大家信任他。",
+        "Tā yǒu yuǎn jiàn zhuó shí, dàjiā xìnrèn tā.",
+        "Il a une vision remarquable, tout le monde lui fait confiance."
+      ],
+      "phraseNote": "远见卓识 : avoir une grande clairvoyance, voir loin."
     },
     {
       "char": "的",
@@ -6438,6 +7286,11 @@ kbd {
           "bié de",
           "autre, d'autres"
         ]
+      ],
+      "phrase": [
+        "这是我的猫，它喜欢面包。",
+        "Zhè shì wǒ de māo, tā xǐhuan miànbāo.",
+        "C'est mon chat, il adore le pain."
       ]
     },
     {
@@ -6476,7 +7329,13 @@ kbd {
           "huí dào",
           "retourner à, revenir"
         ]
-      ]
+      ],
+      "phrase": [
+        "他终于回心转意，回来了。",
+        "Tā zhōngyú huí xīn zhuǎn yì, huílái le.",
+        "Il a finalement changé d'avis et est revenu."
+      ],
+      "phraseNote": "回心转意 : changer d'avis, revenir sur sa décision."
     },
     {
       "char": "面",
@@ -6504,6 +7363,11 @@ kbd {
           "miàn qián",
           "devant, face à"
         ]
+      ],
+      "phrase": [
+        "我的面前有一碗面条。",
+        "Wǒ de miànqián yǒu yī wǎn miàntiáo.",
+        "Devant moi, il y a un bol de nouilles."
       ]
     },
     {
@@ -6532,7 +7396,13 @@ kbd {
           "bus, autocar"
         ]
       ],
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "phrase": [
+        "这位老板礼贤下士，大家喜欢他。",
+        "Zhè wèi lǎobǎn lǐ xián xià shì, dàjiā xǐhuan tā.",
+        "Ce patron respecte les gens de talent, on l'apprécie."
+      ],
+      "phraseNote": "礼贤下士 : respecter et accueillir les personnes de mérite."
     },
     {
       "char": "弟",
@@ -6560,7 +7430,12 @@ kbd {
           "frères, frère cadet"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "我的弟弟喜欢喝牛奶。",
+        "Wǒ de dìdi xǐhuan hē niúnǎi.",
+        "Mon petit frère aime boire du lait."
+      ]
     },
     {
       "char": "会",
@@ -6598,7 +7473,13 @@ kbd {
           "huì yuán",
           "membre, adhérent"
         ]
-      ]
+      ],
+      "phrase": [
+        "他学习很努力，融会贯通。",
+        "Tā xuéxí hěn nǔlì, róng huì guàn tōng.",
+        "Il travaille dur et assimile tout à la perfection."
+      ],
+      "phraseNote": "融会贯通 : maîtriser parfaitement en reliant toutes les connaissances."
     },
     {
       "char": "名",
@@ -6636,6 +7517,11 @@ kbd {
           "míng chēng",
           "nom, appellation"
         ]
+      ],
+      "phrase": [
+        "我的名字很难写，只有两个字。",
+        "Wǒ de míngzi hěn nán xiě, zhǐyǒu liǎng gè zì.",
+        "Mon prénom est difficile à écrire, il n'a que deux caractères."
       ]
     },
     {
@@ -6674,7 +7560,13 @@ kbd {
           "shì chǎng",
           "marché, place du marché"
         ]
-      ]
+      ],
+      "phrase": [
+        "这家饭馆门庭若市，人很多。",
+        "Zhè jiā fànguǎn mén tíng ruò shì, rén hěn duō.",
+        "Ce restaurant est pris d'assaut, il y a beaucoup de monde."
+      ],
+      "phraseNote": "门庭若市 : avoir une affluence énorme."
     },
     {
       "char": "第",
@@ -6712,6 +7604,11 @@ kbd {
           "dì yī xiàn",
           "première ligne, front"
         ]
+      ],
+      "phrase": [
+        "这是我第一次来中国。",
+        "Zhè shì wǒ dì yī cì lái Zhōngguó.",
+        "C'est ma première fois en Chine."
       ]
     },
     {
@@ -6750,7 +7647,13 @@ kbd {
           "míng nián",
           "l'année prochaine"
         ]
-      ]
+      ],
+      "phrase": [
+        "他明知故犯，真的不好。",
+        "Tā míng zhī gù fàn, zhēn de bù hǎo.",
+        "Il fait exprès de mal agir, ce n'est vraiment pas bien."
+      ],
+      "phraseNote": "明知故犯 : commettre sciemment une faute."
     },
     {
       "char": "事",
@@ -6798,6 +7701,11 @@ kbd {
           "shì gù",
           "accident, incident"
         ]
+      ],
+      "phrase": [
+        "今天事情很多，我没有时间。",
+        "Jīntiān shìqing hěn duō, wǒ méiyǒu shíjiān.",
+        "Aujourd'hui j'ai beaucoup de choses à faire, je n'ai pas le temps."
       ]
     },
     {
@@ -6836,7 +7744,13 @@ kbd {
           "dì diǎn",
           "lieu, endroit, site"
         ]
-      ]
+      ],
+      "phrase": [
+        "这句话画龙点睛，非常好。",
+        "Zhè jù huà huà lóng diǎn jīng, fēicháng hǎo.",
+        "Cette phrase est la touche finale parfaite."
+      ],
+      "phraseNote": "画龙点睛 : la touche finale qui fait toute la différence."
     },
     {
       "char": "机",
@@ -6874,6 +7788,11 @@ kbd {
           "jī piào",
           "billet d'avion"
         ]
+      ],
+      "phrase": [
+        "我们去机场，坐飞机去北京。",
+        "Wǒmen qù jīchǎng, zuò fēijī qù Běijīng.",
+        "Nous allons à l'aéroport prendre l'avion pour Pékin."
       ]
     },
     {
@@ -6912,6 +7831,11 @@ kbd {
           "nǎ r",
           "où, où donc"
         ]
+      ],
+      "phrase": [
+        "你的猫在哪里？我很想它。",
+        "Nǐ de māo zài nǎlǐ? Wǒ hěn xiǎng tā.",
+        "Où est ton chat ? Il me manque beaucoup."
       ]
     },
     {
@@ -6950,7 +7874,13 @@ kbd {
           "diàn shì jī",
           "téléviseur, poste de télé"
         ]
-      ]
+      ],
+      "phrase": [
+        "老师对学生一视同仁。",
+        "Lǎoshī duì xuéshēng yī shì tóng rén.",
+        "Le professeur traite tous les élèves de la même façon."
+      ],
+      "phraseNote": "一视同仁 : traiter tout le monde sur un pied d'égalité."
     },
     {
       "char": "鸡",
@@ -6988,6 +7918,11 @@ kbd {
           "gōng jī",
           "coq"
         ]
+      ],
+      "phrase": [
+        "我家的公鸡每天早上唱歌。",
+        "Wǒ jiā de gōngjī měi tiān zǎoshang chànggē.",
+        "Mon coq chante chaque matin."
       ]
     },
     {
@@ -7016,7 +7951,12 @@ kbd {
           "là, cet endroit"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "那边的东西很便宜。",
+        "Nàbiān de dōngxi hěn piányi.",
+        "Ce qui est là-bas n'est pas cher."
+      ]
     },
     {
       "char": "东",
@@ -7054,7 +7994,13 @@ kbd {
           "dōng xī",
           "est et ouest"
         ]
-      ]
+      ],
+      "phrase": [
+        "他在车站东张西望，像在等人。",
+        "Tā zài chēzhàn dōng zhāng xī wàng, xiàng zài děng rén.",
+        "Il regarde partout à la gare, comme s'il attendait quelqu'un."
+      ],
+      "phraseNote": "东张西望 : regarder de tous les côtés."
     },
     {
       "char": "几",
@@ -7092,7 +8038,13 @@ kbd {
           "jī lǜ",
           "probabilité, chances"
         ]
-      ]
+      ],
+      "phrase": [
+        "我们的钱所剩无几。",
+        "Wǒmen de qián suǒ shèng wú jǐ.",
+        "Il ne nous reste presque plus d'argent."
+      ],
+      "phraseNote": "所剩无几 : il n'en reste presque plus."
     },
     {
       "char": "奶",
@@ -7130,6 +8082,11 @@ kbd {
           "nǎi chá",
           "thé au lait"
         ]
+      ],
+      "phrase": [
+        "奶奶每天早上喝奶茶。",
+        "Nǎinai měi tiān zǎoshang hē nǎichá.",
+        "Grand-mère boit du thé au lait chaque matin."
       ]
     },
     {
@@ -7168,6 +8125,11 @@ kbd {
           "dū shì",
           "ville, métropole"
         ]
+      ],
+      "phrase": [
+        "我们都是好朋友。",
+        "Wǒmen dōu shì hǎo péngyou.",
+        "Nous sommes tous de bons amis."
       ]
     },
     {
@@ -7196,7 +8158,13 @@ kbd {
           "librairie"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他博览群书，什么都懂。",
+        "Tā bó lǎn qún shū, shénme dōu dǒng.",
+        "Il a tout lu et comprend tout."
+      ],
+      "phraseNote": "博览群书 : avoir lu énormément de livres."
     },
     {
       "char": "读",
@@ -7234,6 +8202,11 @@ kbd {
           "dú yīn",
           "prononciation, lecture"
         ]
+      ],
+      "phrase": [
+        "我每天读书，也读报纸。",
+        "Wǒ měi tiān dúshū, yě dú bàozhǐ.",
+        "Je lis des livres et des journaux chaque jour."
       ]
     },
     {
@@ -7282,7 +8255,13 @@ kbd {
           "zhī jiān",
           "entre, parmi"
         ]
-      ]
+      ],
+      "phrase": [
+        "情况很危险，间不容发。",
+        "Qíngkuàng hěn wēixiǎn, jiān bù róng fà.",
+        "La situation est si critique qu'il n'y a pas un instant à perdre."
+      ],
+      "phraseNote": "间不容发 : urgence extrême, pas le moindre répit."
     },
     {
       "char": "脑",
@@ -7325,6 +8304,11 @@ kbd {
           "nǎo dai",
           "tête, cervelle, crâne"
         ]
+      ],
+      "phrase": [
+        "我的电脑又坏了，脑袋疼。",
+        "Wǒ de diànnǎo yòu huài le, nǎodai téng.",
+        "Mon ordinateur est encore en panne, j'en ai mal à la tête."
       ]
     },
     {
@@ -7363,7 +8347,13 @@ kbd {
           "duì huà",
           "dialogue, conversation"
         ]
-      ]
+      ],
+      "phrase": [
+        "跟他讲道理，简直对牛弹琴。",
+        "Gēn tā jiǎng dàolǐ, jiǎnzhí duì niú tán qín.",
+        "Lui expliquer la raison, c'est parler à un mur."
+      ],
+      "phraseNote": "对牛弹琴 : perdre ses paroles avec qui ne comprend pas."
     },
     {
       "char": "见",
@@ -7401,6 +8391,11 @@ kbd {
           "jiàn dào",
           "voir, apercevoir"
         ]
+      ],
+      "phrase": [
+        "我很想见他，可是没有时间。",
+        "Wǒ hěn xiǎng jiàn tā, kěshì méiyǒu shíjiān.",
+        "Je veux beaucoup le voir, mais je n'ai pas le temps."
       ]
     },
     {
@@ -7444,6 +8439,11 @@ kbd {
           "ní zi",
           "tissu de laine épais"
         ]
+      ],
+      "phrase": [
+        "我的猫呢？它在睡觉。",
+        "Wǒ de māo ne? Tā zài shuìjiào.",
+        "Et mon chat ? Il dort."
       ]
     },
     {
@@ -7482,6 +8482,11 @@ kbd {
           "shuì zháo",
           "s'endormir"
         ]
+      ],
+      "phrase": [
+        "他每天睡八个小时，很幸福。",
+        "Tā měi tiān shuì bā gè xiǎoshí, hěn xìngfú.",
+        "Il dort huit heures par jour, quel bonheur."
       ]
     },
     {
@@ -7515,7 +8520,13 @@ kbd {
           "duō jiǔ",
           "combien de temps, longtemps"
         ]
-      ]
+      ],
+      "phrase": [
+        "书越多越好，多多益善。",
+        "Shū yuè duō yuè hǎo, duō duō yì shàn.",
+        "Plus il y a de livres, mieux c'est : on n'en a jamais trop."
+      ],
+      "phraseNote": "多多益善 : plus il y en a, mieux c'est."
     },
     {
       "char": "件",
@@ -7553,6 +8564,11 @@ kbd {
           "shì jiàn",
           "incident, événement"
         ]
+      ],
+      "phrase": [
+        "今天有一件很好的事情。",
+        "Jīntiān yǒu yī jiàn hěn hǎo de shìqing.",
+        "Aujourd'hui il y a une très bonne chose."
       ]
     },
     {
@@ -7596,6 +8612,11 @@ kbd {
           "néng lì",
           "capacité, compétence"
         ]
+      ],
+      "phrase": [
+        "我能吃三碗米饭。",
+        "Wǒ néng chī sān wǎn mǐfàn.",
+        "Je peux manger trois bols de riz."
       ]
     },
     {
@@ -7634,7 +8655,13 @@ kbd {
           "shuō míng",
           "expliquer, indiquer, notice"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话说一不二，大家听他的。",
+        "Tā shuōhuà shuō yī bù èr, dàjiā tīng tā de.",
+        "Il tient toujours parole, tout le monde l'écoute."
+      ],
+      "phraseNote": "说一不二 : tenir parole, être inflexible dans ses propos."
     },
     {
       "char": "儿",
@@ -7672,6 +8699,11 @@ kbd {
           "nǎ r",
           "où, où donc"
         ]
+      ],
+      "phrase": [
+        "我的儿子喜欢吃鸡蛋。",
+        "Wǒ de érzi xǐhuan chī jīdàn.",
+        "Mon fils aime manger des œufs."
       ]
     },
     {
@@ -7710,7 +8742,13 @@ kbd {
           "jiào bǎn",
           "provoquer, lancer un défi"
         ]
-      ]
+      ],
+      "phrase": [
+        "每天加班，他叫苦连天。",
+        "Měi tiān jiābān, tā jiào kǔ lián tiān.",
+        "Il se plaint sans cesse de ses heures supplémentaires."
+      ],
+      "phraseNote": "叫苦连天 : se plaindre amèrement sans arrêt."
     },
     {
       "char": "司",
@@ -7738,7 +8776,12 @@ kbd {
           "entreprise, société"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他的公司离这里很近。",
+        "Tā de gōngsī lí zhèlǐ hěn jìn.",
+        "Son entreprise est tout près d'ici."
+      ]
     },
     {
       "char": "四",
@@ -7776,7 +8819,13 @@ kbd {
           "sì chù",
           "partout, en tous sens"
         ]
-      ]
+      ],
+      "phrase": [
+        "人们从四面八方来了。",
+        "Rénmen cóng sì miàn bā fāng lái le.",
+        "Les gens sont venus de tous les côtés."
+      ],
+      "phraseNote": "四面八方 : de tous les côtés, de partout."
     },
     {
       "char": "西",
@@ -7814,6 +8863,11 @@ kbd {
           "Xī běi",
           "nord-ouest (Chine)"
         ]
+      ],
+      "phrase": [
+        "西边的学校很大。",
+        "Xībian de xuéxiào hěn dà.",
+        "L'école à l'ouest est très grande."
       ]
     },
     {
@@ -7852,7 +8906,13 @@ kbd {
           "yī yàng",
           "pareil, identique, comme"
         ]
-      ]
+      ],
+      "phrase": [
+        "这两只猫一模一样。",
+        "Zhè liǎng zhī māo yī mú yī yàng.",
+        "Ces deux chats se ressemblent trait pour trait."
+      ],
+      "phraseNote": "一模一样 : exactement pareils, identiques."
     },
     {
       "char": "怎",
@@ -7895,6 +8955,11 @@ kbd {
           "zěn me yàng",
           "comment ? et si ?"
         ]
+      ],
+      "phrase": [
+        "你怎么不吃早饭呢？",
+        "Nǐ zěnme bù chī zǎofàn ne?",
+        "Pourquoi ne manges-tu pas de petit-déjeuner ?"
       ]
     },
     {
@@ -7933,7 +8998,13 @@ kbd {
           "suì shu",
           "âge"
         ]
-      ]
+      ],
+      "phrase": [
+        "祝奶奶长命百岁！",
+        "Zhù nǎinai cháng mìng bǎi suì!",
+        "Que grand-mère vive cent ans !"
+      ],
+      "phraseNote": "长命百岁 : vivre jusqu'à cent ans (vœu de longue vie)."
     },
     {
       "char": "息",
@@ -7971,6 +9042,11 @@ kbd {
           "xìn xī",
           "information, message"
         ]
+      ],
+      "phrase": [
+        "他工作太忙，没有时间休息。",
+        "Tā gōngzuò tài máng, méiyǒu shíjiān xiūxi.",
+        "Il est trop occupé pour se reposer."
       ]
     },
     {
@@ -8009,7 +9085,13 @@ kbd {
           "yào shi",
           "si, au cas où"
         ]
-      ]
+      ],
+      "phrase": [
+        "他的报告简明扼要，很好懂。",
+        "Tā de bàogào jiǎn míng è yào, hěn hǎo dǒng.",
+        "Son rapport est concis et clair, facile à comprendre."
+      ],
+      "phraseNote": "简明扼要 : concis et précis."
     },
     {
       "char": "找",
@@ -8047,6 +9129,11 @@ kbd {
           "zhǎo chū",
           "trouver, dénicher"
         ]
+      ],
+      "phrase": [
+        "我的猫不见了，到处找它。",
+        "Wǒ de māo bùjiàn le, dàochù zhǎo tā.",
+        "Mon chat a disparu, je le cherche partout."
       ]
     },
     {
@@ -8075,7 +9162,13 @@ kbd {
           "apprendre, étudier"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他迟到，大家习以为常。",
+        "Tā chídào, dàjiā xí yǐ wéi cháng.",
+        "Il arrive en retard, tout le monde y est habitué."
+      ],
+      "phraseNote": "习以为常 : être devenu une habitude banale."
     },
     {
       "char": "也",
@@ -8103,7 +9196,12 @@ kbd {
           "ça va, tant pis, peu importe"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "我也喜欢吃中国菜。",
+        "Wǒ yě xǐhuan chī Zhōngguócài.",
+        "Moi aussi j'aime la cuisine chinoise."
+      ]
     },
     {
       "char": "这",
@@ -8141,6 +9239,11 @@ kbd {
           "zhè r",
           "ici"
         ]
+      ],
+      "phrase": [
+        "这本书很有意思。",
+        "Zhè běn shū hěn yǒu yìsi.",
+        "Ce livre est très intéressant."
       ]
     },
     {
@@ -8179,6 +9282,11 @@ kbd {
           "tā de",
           "son, sa (objet)"
         ]
+      ],
+      "phrase": [
+        "这只猫很胖，它只吃米饭。",
+        "Zhè zhī māo hěn pàng, tā zhǐ chī mǐfàn.",
+        "Ce chat est gros, il ne mange que du riz."
       ]
     },
     {
@@ -8217,7 +9325,13 @@ kbd {
           "xǐ ài",
           "aimer, adorer, préféré"
         ]
-      ]
+      ],
+      "phrase": [
+        "他收到礼物，喜出望外。",
+        "Tā shōudào lǐwù, xǐ chū wàng wài.",
+        "En recevant son cadeau, il a été transporté de joie."
+      ],
+      "phraseNote": "喜出望外 : être ravi au-delà de toute attente."
     },
     {
       "char": "真",
@@ -8255,6 +9369,11 @@ kbd {
           "zhēn zhèng",
           "véritable, réel, vraiment"
         ]
+      ],
+      "phrase": [
+        "这是真的吗？我不相信。",
+        "Zhè shì zhēn de ma? Wǒ bù xiāngxìn.",
+        "C'est vrai ? Je n'y crois pas."
       ]
     },
     {
@@ -8293,6 +9412,11 @@ kbd {
           "tā de",
           "son, sa, ses"
         ]
+      ],
+      "phrase": [
+        "她是我妹妹，她很可爱。",
+        "Tā shì wǒ mèimei, tā hěn kě'ài.",
+        "C'est ma petite sœur, elle est adorable."
       ]
     },
     {
@@ -8331,6 +9455,11 @@ kbd {
           "xì tǒng",
           "système"
         ]
+      ],
+      "phrase": [
+        "这个系统很方便，我用它。",
+        "Zhège xìtǒng hěn fāngbiàn, wǒ yòng tā.",
+        "Ce système est très pratique, je l'utilise."
       ]
     },
     {
@@ -8359,7 +9488,13 @@ kbd {
           "cintre, portemanteau"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "衣食住行都很重要。",
+        "Yī shí zhù xíng dōu hěn zhòngyào.",
+        "Se vêtir, se nourrir, se loger et se déplacer : tout est important."
+      ],
+      "phraseNote": "衣食住行 : les besoins essentiels de la vie."
     },
     {
       "char": "正",
@@ -8397,6 +9532,11 @@ kbd {
           "zhèng cháng",
           "normal, régulier"
         ]
+      ],
+      "phrase": [
+        "我正在学习汉语。",
+        "Wǒ zhèngzài xuéxí Hànyǔ.",
+        "Je suis en train d'apprendre le chinois."
       ]
     },
     {
@@ -8435,6 +9575,11 @@ kbd {
           "tài yang",
           "soleil, lumière du soleil"
         ]
+      ],
+      "phrase": [
+        "今天太热了，我想吃冰。",
+        "Jīntiān tài rè le, wǒ xiǎng chī bīng.",
+        "Il fait trop chaud aujourd'hui, je veux manger de la glace."
       ]
     },
     {
@@ -8473,7 +9618,13 @@ kbd {
           "yī yuàn",
           "hôpital, clinique"
         ]
-      ]
+      ],
+      "phrase": [
+        "有病要看医生，不要讳疾忌医。",
+        "Yǒu bìng yào kàn yīshēng, bù yào huì jí jì yī.",
+        "En cas de maladie, va voir le médecin : ne cache pas ton mal."
+      ],
+      "phraseNote": "讳疾忌医 : refuser d'affronter le problème par peur du remède."
     },
     {
       "char": "知",
@@ -8516,6 +9667,11 @@ kbd {
           "zhī míng",
           "célèbre, renommé"
         ]
+      ],
+      "phrase": [
+        "我知道他的名字。",
+        "Wǒ zhīdào tā de míngzi.",
+        "Je connais son nom."
       ]
     },
     {
@@ -8554,7 +9710,13 @@ kbd {
           "nán tí",
           "problème difficile, casse-tête"
         ]
-      ]
+      ],
+      "phrase": [
+        "一件小事，不要小题大做。",
+        "Yī jiàn xiǎoshì, bù yào xiǎo tí dà zuò.",
+        "C'est un petit détail, n'en fais pas toute une histoire."
+      ],
+      "phraseNote": "小题大做 : faire toute une montagne d'un rien."
     },
     {
       "char": "先",
@@ -8582,7 +9744,12 @@ kbd {
           "avancé, de pointe, exemplaire"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "你先吃饭，再喝水。",
+        "Nǐ xiān chīfàn, zài hē shuǐ.",
+        "Mange d'abord, puis bois de l'eau."
+      ]
     },
     {
       "char": "宜",
@@ -8620,7 +9787,13 @@ kbd {
           "bù yí",
           "déconseillé, inapproprié"
         ]
-      ]
+      ],
+      "phrase": [
+        "这只是权宜之计。",
+        "Zhè zhǐshì quán yí zhī jì.",
+        "Ce n'est qu'une mesure provisoire."
+      ],
+      "phraseNote": "权宜之计 : expédient temporaire, solution provisoire."
     },
     {
       "char": "只",
@@ -8658,6 +9831,11 @@ kbd {
           "zhǐ yào",
           "tant que, pourvu que"
         ]
+      ],
+      "phrase": [
+        "我只有一个苹果。",
+        "Wǒ zhǐyǒu yī gè píngguǒ.",
+        "Je n'ai qu'une seule pomme."
       ]
     },
     {
@@ -8696,7 +9874,13 @@ kbd {
           "tiān shàng",
           "ciel, au ciel"
         ]
-      ]
+      ],
+      "phrase": [
+        "愿我们的友谊天长地久。",
+        "Yuàn wǒmen de yǒuyì tiān cháng dì jiǔ.",
+        "Que notre amitié dure à jamais."
+      ],
+      "phraseNote": "天长地久 : durer éternellement, comme le ciel et la terre."
     },
     {
       "char": "现",
@@ -8734,6 +9918,11 @@ kbd {
           "xiàn chǎng",
           "sur place, scène, site"
         ]
+      ],
+      "phrase": [
+        "现在几点？我要睡觉了。",
+        "Xiànzài jǐ diǎn? Wǒ yào shuìjiào le.",
+        "Quelle heure est-il ? Je vais me coucher."
       ]
     },
     {
@@ -8762,7 +9951,13 @@ kbd {
           "avant, autrefois, auparavant"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "老师以身作则，学生学他。",
+        "Lǎoshī yǐ shēn zuò zé, xuéshēng xué tā.",
+        "Le professeur donne l'exemple, les élèves l'imitent."
+      ],
+      "phraseNote": "以身作则 : montrer l'exemple par sa propre conduite."
     },
     {
       "char": "条",
@@ -8800,6 +9995,11 @@ kbd {
           "tiáo kuǎn",
           "clause, article"
         ]
+      ],
+      "phrase": [
+        "这个条件很简单。",
+        "Zhège tiáojiàn hěn jiǎndān.",
+        "Cette condition est très simple."
       ]
     },
     {
@@ -8838,7 +10038,13 @@ kbd {
           "xiǎng fǎ",
           "idée, opinion, avis"
         ]
-      ]
+      ],
+      "phrase": [
+        "他上课的时候想入非非。",
+        "Tā shàngkè de shíhou xiǎng rù fēi fēi.",
+        "Pendant le cours, il se perd dans ses rêveries."
+      ],
+      "phraseNote": "想入非非 : se livrer à des rêveries, fantasmer."
     },
     {
       "char": "椅",
@@ -8876,6 +10082,11 @@ kbd {
           "lún yǐ",
           "fauteuil roulant"
         ]
+      ],
+      "phrase": [
+        "这把椅子很舒服。",
+        "Zhè bǎ yǐzi hěn shūfu.",
+        "Cette chaise est très confortable."
       ]
     },
     {
@@ -8914,7 +10125,13 @@ kbd {
           "zhōng tóu",
           "heure"
         ]
-      ]
+      ],
+      "phrase": [
+        "他们一见钟情，很快结婚。",
+        "Tāmen yī jiàn zhōng qíng, hěn kuài jiéhūn.",
+        "Ils ont eu un coup de foudre et se sont mariés vite."
+      ],
+      "phraseNote": "一见钟情 : tomber amoureux au premier regard."
     },
     {
       "char": "听",
@@ -8952,6 +10169,11 @@ kbd {
           "tīng jiàn",
           "entendre"
         ]
+      ],
+      "phrase": [
+        "我听不懂他说的话。",
+        "Wǒ tīng bù dǒng tā shuō de huà.",
+        "Je ne comprends pas ce qu'il dit."
       ]
     },
     {
@@ -8990,7 +10212,13 @@ kbd {
           "yǐng xiǎng",
           "influence, effet, influencer"
         ]
-      ]
+      ],
+      "phrase": [
+        "我的猫跑得无影无踪。",
+        "Wǒ de māo pǎo de wú yǐng wú zōng.",
+        "Mon chat a disparu sans laisser de trace."
+      ],
+      "phraseNote": "无影无踪 : disparaître complètement, sans laisser de trace."
     },
     {
       "char": "住",
@@ -9028,6 +10256,11 @@ kbd {
           "zhù yuàn",
           "hospitalisation, être hospitalisé"
         ]
+      ],
+      "phrase": [
+        "我住在学校里。",
+        "Wǒ zhù zài xuéxiào lǐ.",
+        "J'habite dans l'école."
       ]
     },
     {
@@ -9066,7 +10299,13 @@ kbd {
           "tóng shí",
           "en même temps, simultanément"
         ]
-      ]
+      ],
+      "phrase": [
+        "我们同心协力，一定成功。",
+        "Wǒmen tóng xīn xié lì, yīdìng chénggōng.",
+        "En unissant nos efforts, nous réussirons."
+      ],
+      "phraseNote": "同心协力 : unir ses forces, travailler de concert."
     },
     {
       "char": "校",
@@ -9104,6 +10343,11 @@ kbd {
           "xiào zhǎng",
           "directeur, proviseur, président"
         ]
+      ],
+      "phrase": [
+        "我们的校园很漂亮。",
+        "Wǒmen de xiàoyuán hěn piàoliang.",
+        "Notre campus est très joli."
       ]
     },
     {
@@ -9132,7 +10376,13 @@ kbd {
           "wǎng yǒu",
           "ami en ligne, internaute"
         ]
-      ]
+      ],
+      "phrase": [
+        "他是我的良师益友。",
+        "Tā shì wǒ de liáng shī yì yǒu.",
+        "Il est pour moi un bon maître et un ami précieux."
+      ],
+      "phraseNote": "良师益友 : maître bienveillant et ami profitable."
     },
     {
       "char": "桌",
@@ -9170,6 +10420,11 @@ kbd {
           "shū zhuō",
           "bureau, secrétaire"
         ]
+      ],
+      "phrase": [
+        "桌子上有一杯茶。",
+        "Zhuōzi shàng yǒu yī bēi chá.",
+        "Sur la table, il y a une tasse de thé."
       ]
     },
     {
@@ -9208,7 +10463,13 @@ kbd {
           "wài guó",
           "pays étranger, étranger"
         ]
-      ]
+      ],
+      "phrase": [
+        "他外强中干，其实很怕。",
+        "Tā wài qiáng zhōng gān, qíshí hěn pà.",
+        "Il fait le fort, mais au fond il a très peur."
+      ],
+      "phraseNote": "外强中干 : fort en apparence, faible en réalité."
     },
     {
       "char": "些",
@@ -9246,6 +10507,11 @@ kbd {
           "nà xiē",
           "ceux-là, ces"
         ]
+      ],
+      "phrase": [
+        "我买了一些苹果。",
+        "Wǒ mǎi le yīxiē píngguǒ.",
+        "J'ai acheté quelques pommes."
       ]
     },
     {
@@ -9284,6 +10550,11 @@ kbd {
           "wán jù",
           "jouet"
         ]
+      ],
+      "phrase": [
+        "孩子们在公园玩儿。",
+        "Háizimen zài gōngyuán wánr.",
+        "Les enfants jouent au parc."
       ]
     },
     {
@@ -9322,6 +10593,11 @@ kbd {
           "tīng xiě",
           "dictée, écrire sous dictée"
         ]
+      ],
+      "phrase": [
+        "我用汉语写我的名字。",
+        "Wǒ yòng Hànyǔ xiě wǒ de míngzi.",
+        "J'écris mon nom en chinois."
       ]
     },
     {
@@ -9360,7 +10636,13 @@ kbd {
           "hàn zì",
           "caractère chinois"
         ]
-      ]
+      ],
+      "phrase": [
+        "他的字一字千金。",
+        "Tā de zì yī zì qiān jīn.",
+        "Chacun de ses mots vaut de l'or."
+      ],
+      "phraseNote": "一字千金 : chaque mot pèse de l'or, un écrit très précieux."
     },
     {
       "char": "晚",
@@ -9398,6 +10680,11 @@ kbd {
           "wǎn shang",
           "soir, soirée, le soir"
         ]
+      ],
+      "phrase": [
+        "昨天晚上我睡得很好。",
+        "Zuótiān wǎnshang wǒ shuì de hěn hǎo.",
+        "Hier soir, j'ai très bien dormi."
       ]
     },
     {
@@ -9436,7 +10723,13 @@ kbd {
           "gǎn xiè",
           "remercier, reconnaissance"
         ]
-      ]
+      ],
+      "phrase": [
+        "谢天谢地，你终于来了！",
+        "Xiè tiān xiè dì, nǐ zhōngyú lái le!",
+        "Dieu merci, tu es enfin arrivé !"
+      ],
+      "phraseNote": "谢天谢地 : Dieu merci, quelle chance !"
     },
     {
       "char": "语",
@@ -9474,6 +10767,11 @@ kbd {
           "Hàn yǔ",
           "chinois, langue chinoise"
         ]
+      ],
+      "phrase": [
+        "我会说两种语言。",
+        "Wǒ huì shuō liǎng zhǒng yǔyán.",
+        "Je parle deux langues."
       ]
     },
     {
@@ -9512,6 +10810,11 @@ kbd {
           "chū zū chē",
           "taxi"
         ]
+      ],
+      "phrase": [
+        "我们租了一间房子。",
+        "Wǒmen zū le yī jiān fángzi.",
+        "Nous avons loué une maison."
       ]
     },
     {
@@ -9550,6 +10853,11 @@ kbd {
           "wèi shí",
           "nourrir, alimenter"
         ]
+      ],
+      "phrase": [
+        "喂，你好，请问你是谁？",
+        "Wèi, nǐ hǎo, qǐngwèn nǐ shì shuí?",
+        "Allô, bonjour, qui êtes-vous ?"
       ]
     },
     {
@@ -9588,7 +10896,13 @@ kbd {
           "xīn wén",
           "actualités, nouvelles, info"
         ]
-      ]
+      ],
+      "phrase": [
+        "房间焕然一新，很漂亮。",
+        "Fángjiān huàn rán yī xīn, hěn piàoliang.",
+        "La pièce a un air tout neuf, très jolie."
+      ],
+      "phraseNote": "焕然一新 : prendre un aspect entièrement nouveau."
     },
     {
       "char": "元",
@@ -9626,6 +10940,11 @@ kbd {
           "dān yuán",
           "unité, module, entrée"
         ]
+      ],
+      "phrase": [
+        "这本书十元，很便宜。",
+        "Zhè běn shū shí yuán, hěn piányi.",
+        "Ce livre coûte dix yuans, c'est bon marché."
       ]
     },
     {
@@ -9664,6 +10983,11 @@ kbd {
           "zuó wǎn",
           "hier soir"
         ]
+      ],
+      "phrase": [
+        "昨天我们去了公园。",
+        "Zuótiān wǒmen qù le gōngyuán.",
+        "Hier, nous sommes allés au parc."
       ]
     },
     {
@@ -9702,7 +11026,13 @@ kbd {
           "wén jiàn",
           "document, fichier"
         ]
-      ]
+      ],
+      "phrase": [
+        "这个计划只是一纸空文。",
+        "Zhège jìhuà zhǐshì yī zhǐ kōng wén.",
+        "Ce plan n'est qu'un chiffon de papier."
+      ],
+      "phraseNote": "一纸空文 : texte sans effet, simple bout de papier."
     },
     {
       "char": "星",
@@ -9740,6 +11070,11 @@ kbd {
           "Xīng qī rì",
           "dimanche"
         ]
+      ],
+      "phrase": [
+        "今晚的星星很漂亮。",
+        "Jīnwǎn de xīngxing hěn piàoliang.",
+        "Les étoiles sont très belles ce soir."
       ]
     },
     {
@@ -9778,6 +11113,11 @@ kbd {
           "yuàn zi",
           "cour, jardin, patio"
         ]
+      ],
+      "phrase": [
+        "我家的院子里有一只猫。",
+        "Wǒ jiā de yuànzi lǐ yǒu yī zhī māo.",
+        "Il y a un chat dans la cour de ma maison."
       ]
     },
     {
@@ -9816,7 +11156,13 @@ kbd {
           "zuò wén",
           "rédaction, composition"
         ]
-      ]
+      ],
+      "phrase": [
+        "大家一鼓作气，做完了工作。",
+        "Dàjiā yī gǔ zuò qì, zuò wán le gōngzuò.",
+        "Tous d'un seul élan, ils ont fini le travail."
+      ],
+      "phraseNote": "一鼓作气 : accomplir d'un seul souffle, sans relâche."
     },
     {
       "char": "问",
@@ -9854,6 +11200,11 @@ kbd {
           "wèn tí",
           "question, problème, sujet"
         ]
+      ],
+      "phrase": [
+        "我想问老师一个问题。",
+        "Wǒ xiǎng wèn lǎoshī yī gè wèntí.",
+        "Je veux poser une question au professeur."
       ]
     },
     {
@@ -9897,7 +11248,13 @@ kbd {
           "xīng fèn",
           "excité, excitation, enthousiasme"
         ]
-      ]
+      ],
+      "phrase": [
+        "孩子们兴高采烈地唱歌。",
+        "Háizimen xìng gāo cǎi liè de chànggē.",
+        "Les enfants chantent pleins d'entrain."
+      ],
+      "phraseNote": "兴高采烈 : plein d'entrain et de joie."
     },
     {
       "char": "坐",
@@ -9935,6 +11292,11 @@ kbd {
           "qǐng zuò",
           "asseyez-vous, prenez place"
         ]
+      ],
+      "phrase": [
+        "请坐，我给你倒茶。",
+        "Qǐng zuò, wǒ gěi nǐ dào chá.",
+        "Asseyez-vous, je vous sers du thé."
       ]
     },
     {
@@ -9973,7 +11335,13 @@ kbd {
           "xiū jià",
           "être en congé, prendre des vacances"
         ]
-      ]
+      ],
+      "phrase": [
+        "他不肯善罢甘休。",
+        "Tā bù kěn shàn bà gān xiū.",
+        "Il refuse de laisser tomber."
+      ],
+      "phraseNote": "善罢甘休 : laisser tomber facilement, s'arrêter de bon gré."
     },
     {
       "char": "再",
@@ -10011,6 +11379,11 @@ kbd {
           "zài sān",
           "à plusieurs reprises, encore et encore"
         ]
+      ],
+      "phrase": [
+        "再见，明天再聊。",
+        "Zàijiàn, míngtiān zài liáo.",
+        "Au revoir, on reparlera demain."
       ]
     },
     {
@@ -10049,7 +11422,13 @@ kbd {
           "zuò fǎ",
           "méthode, façon de faire, recette"
         ]
-      ]
+      ],
+      "phrase": [
+        "他做贼心虚，一句话也不说。",
+        "Tā zuò zéi xīn xū, yī jù huà yě bù shuō.",
+        "Il a mauvaise conscience, il ne dit pas un mot."
+      ],
+      "phraseNote": "做贼心虚 : avoir la conscience coupable, être mal à l'aise."
     },
     {
       "char": "五",
@@ -10077,6 +11456,11 @@ kbd {
           "wǔ shí",
           "cinquante"
         ]
+      ],
+      "phrase": [
+        "我有五个苹果，都很红。",
+        "Wǒ yǒu wǔ gè píngguǒ, dōu hěn hóng.",
+        "J'ai cinq pommes, toutes rouges."
       ]
     },
     {
@@ -10115,7 +11499,13 @@ kbd {
           "xiàn zài",
           "maintenant, actuellement"
         ]
-      ]
+      ],
+      "phrase": [
+        "别放弃，事在人为。",
+        "Bié fàngqì, shì zài rén wéi.",
+        "N'abandonne pas : tout dépend de nos efforts."
+      ],
+      "phraseNote": "事在人为 : tout dépend de l'effort humain, rien n'est fatal."
     },
     {
       "char": "午",
@@ -10153,6 +11543,11 @@ kbd {
           "wǔ cān",
           "déjeuner"
         ]
+      ],
+      "phrase": [
+        "中午我们一起吃饭吧。",
+        "Zhōngwǔ wǒmen yīqǐ chīfàn ba.",
+        "Déjeunons ensemble à midi."
       ]
     },
     {
@@ -10191,7 +11586,13 @@ kbd {
           "bīng xuě",
           "glace et neige"
         ]
-      ]
+      ],
+      "phrase": [
+        "他帮助我，真是雪中送炭。",
+        "Tā bāngzhù wǒ, zhēn shì xuě zhōng sòng tàn.",
+        "Son aide m'a été d'un grand secours dans le besoin."
+      ],
+      "phraseNote": "雪中送炭 : apporter une aide précieuse dans l'adversité."
     },
     {
       "char": "早",
@@ -10229,6 +11630,11 @@ kbd {
           "zǎo shang",
           "matin, matinée"
         ]
+      ],
+      "phrase": [
+        "我早上六点起床，可是还很困。",
+        "Wǒ zǎoshang liù diǎn qǐchuáng, kěshì hái hěn kùn.",
+        "Je me lève à six heures du matin, mais je suis encore tout endormi."
       ]
     }
   ]
@@ -10492,12 +11898,26 @@ kbd {
         (p.i >= MAITRISE ? ' · <span class="ok">maîtrisée</span>' : '') + '</p>';
     }
 
+    /* Une phrase d'exemple qui met le caractère en situation : drôle, ou
+       chéngyǔ avec son explication. Champ optionnel — les fiches qui n'en ont
+       pas (le HSK 2 pour l'instant) n'affichent simplement rien. */
+    var phraseHTML = '';
+    if (c.phrase && c.phrase.length >= 3) {
+      phraseHTML = '<div class="phrase">' +
+        '<p class="phrase-zh">' + esc(c.phrase[0]) + '</p>' +
+        '<p class="phrase-py">' + esc(c.phrase[1]) + '</p>' +
+        '<p class="phrase-fr">' + esc(c.phrase[2]) + '</p>' +
+        (c.phraseNote ? '<p class="phrase-note">' + esc(c.phraseNote) + '</p>' : '') +
+      '</div>';
+    }
+
     return '' +
       '<div class="back-head">' +
         '<div class="pinyin tone-' + toneOf(c.pinyin) + '">' + esc(c.pinyin) + '</div>' +
         '<div class="meaning">' + sens + '</div>' +
       '</div>' +
       suivi +
+      phraseHTML +
       compsHTML + wordsHTML + etymoHTML +
       (c.note ? '<p class="note">' + esc(c.note) + '</p>' : '') +
       traitsHTML;
@@ -11170,7 +12590,7 @@ kbd {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '85';
+  var VERSION = '86';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

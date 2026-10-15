@@ -836,3 +836,37 @@ kbd {
 /* Le numero de version, discret, dans Reglages : il dit ce que le navigateur a charge. */
 .version { margin: .7rem .6rem .2rem; color: var(--dim); font-size: .7rem; opacity: .8; }
 
+/* La phrase d'exemple : le caractère en situation, juste sous le sens.
+   Un liseré doré à gauche, comme une citation. */
+.phrase {
+  margin-top: .9rem;
+  padding: .7rem .85rem;
+  border-left: 3px solid var(--accent);
+  background: var(--panel-2);
+  border-radius: 0 10px 10px 0;
+}
+.phrase p { margin: 0; }
+.phrase .phrase-zh {
+  font-family: var(--cjk);
+  font-size: 1.18rem;
+  line-height: 1.5;
+  color: var(--txt);
+}
+.phrase .phrase-py {
+  margin-top: .25rem;
+  font-size: .84rem;
+  font-style: italic;
+  color: var(--dim);
+}
+.phrase .phrase-fr {
+  margin-top: .35rem;
+  font-size: .92rem;
+  color: var(--txt);
+}
+.phrase .phrase-note {
+  margin-top: .45rem;
+  padding-top: .4rem;
+  border-top: 1px dashed var(--line);
+  font-size: .82rem;
+  color: var(--dim);
+}

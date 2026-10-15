@@ -20,6 +20,9 @@ import-hanzi-db.ps1 importe la base Make Me a Hanzi, filtrable par liste
 traduire.ps1        fait traduire les fiches par l'assistant OpenClaw
 build-exemples.js   choisit les mots d'exemple dans les listes HSK
 apply-exemples.js   écrit ces mots dans le fichier du niveau
+generer-phrases.ps1 demande à Ziya une phrase d'exemple par fiche (drôle ou chéngyǔ)
+apply-phrases.js    écrit ces phrases dans le fichier du niveau
+verifier-phrases.js contrôle les phrases : caractère présent, pinyin, français
 ```
 
 ---
