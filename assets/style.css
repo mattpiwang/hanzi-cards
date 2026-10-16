@@ -904,13 +904,22 @@ kbd {
 /* Le décompte du jour : « 12 consultées · 9 je sais · 3 à revoir ». */
 .feuille-info#aujourdhui { color: var(--accent); }
 
-/* Le compteur du jour, rappelé sur les deux boutons. */
-.feuille-compte {
-  margin-left: auto;
-  padding-left: .6rem;
-  font-size: .82rem;
-  font-weight: 700;
-  opacity: .75;
+/* Le tableau de bord du jour : un libellé à gauche, un nombre à droite. Ce
+   sont des affichages, plus des boutons — on juge au glissement. */
+.feuille-jour {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: .4rem 0;
+  padding: .1rem .1rem .1rem 0;
+  border-bottom: 1px solid rgba(127, 127, 127, .12);
+  font-size: .95rem;
 }
-.feuille-compte:empty { display: none; }
+.feuille-jour:last-of-type { border-bottom: 0; }
+.feuille-jour b {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
 .feuille-entree { display: flex; align-items: center; }

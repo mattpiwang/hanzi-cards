@@ -90,10 +90,9 @@
       <p class="feuille-titre">Cette carte</p>
       <p class="feuille-info" id="deck-name"></p>
       <p class="feuille-info" id="position"></p>
-      <p class="feuille-info" id="counters"></p>
       <p class="feuille-info" id="aujourdhui"></p>
-      <button id="known" class="feuille-entree ok" type="button">Je sais <kbd>2</kbd><span class="feuille-compte" id="compte-sais"></span></button>
-      <button id="again" class="feuille-entree warn" type="button">À revoir <kbd>1</kbd><span class="feuille-compte" id="compte-revoir"></span></button>
+      <p class="feuille-jour"><span>Je sais</span><b id="compte-sais">0</b></p>
+      <p class="feuille-jour"><span>À revoir</span><b id="compte-revoir">0</b></p>
       <button id="shuffle" class="feuille-entree" type="button">Mélanger</button>
     </div>
 
@@ -115,6 +114,7 @@
       <button id="import" class="feuille-entree" type="button">Restaurer</button>
       <input type="file" id="import-file" accept="application/json,.json" hidden>
       <button id="reset" class="feuille-entree" type="button">Réinitialiser</button>
+      <p class="feuille-info" id="sauvegarde"></p>
     </div>
 
     <div class="feuille" data-feuille="reglages" hidden>

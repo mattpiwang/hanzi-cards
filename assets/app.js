@@ -36,10 +36,10 @@
     card: document.getElementById('card'),
     front: document.getElementById('front-glyph'),
     back: document.getElementById('back'),
-    counters: document.getElementById('counters'),
     bar: document.getElementById('bar-fill'),
     position: document.getElementById('position'),
     badge: document.getElementById('badge'),
+    reset: document.getElementById('reset'),    sauvegarde: document.getElementById('sauvegarde'),
     aujourdhui: document.getElementById('aujourdhui'),
     compteSais: document.getElementById('compte-sais'),
     compteRevoir: document.getElementById('compte-revoir')
@@ -389,10 +389,6 @@
   function updateStats() {
     var total = state.cards.length;
     var known = masteredCount();
-    if (el.counters) {
-      el.counters.textContent = state.view.length + ' carte' + (state.view.length > 1 ? 's' : '') +
-        ' · ' + toReviewCount() + ' à revoir · ' + known + ' sue' + (known > 1 ? 's' : '');
-    }
     /* La pastille de l'onglet : le nombre de cartes à revoir, visible sans
        ouvrir la feuille. Elle disparaît quand il n'y a plus rien à revoir. */
     if (el.badge) {
@@ -405,11 +401,11 @@
     /* Le décompte du jour, en direct : consultées, « je sais », « à revoir ». */
     if (el.aujourdhui && state.jour) {
       var vues = nbVues();
-      el.aujourdhui.textContent = 'Aujourd\'hui : ' + vues + ' consultée' + (vues > 1 ? 's' : '') +
-        ' · ' + state.jour.sais + ' « je sais » · ' + state.jour.revoir + ' « à revoir »';
+      el.aujourdhui.textContent = 'Aujourd\'hui : ' + vues + ' carte' + (vues > 1 ? 's' : '') +
+        ' consultée' + (vues > 1 ? 's' : '');
     }
-    if (el.compteSais) { el.compteSais.textContent = (state.jour && state.jour.sais) ? state.jour.sais : ''; }
-    if (el.compteRevoir) { el.compteRevoir.textContent = (state.jour && state.jour.revoir) ? state.jour.revoir : ''; }
+    if (el.compteSais) { el.compteSais.textContent = state.jour ? state.jour.sais : 0; }
+    if (el.compteRevoir) { el.compteRevoir.textContent = state.jour ? state.jour.revoir : 0; }
   }
 
   /* ------------------------------------------------------------------ */
@@ -464,13 +460,43 @@
     render();
   }
 
+  /* Tout remettre a zero : la progression, le decompte du jour, et la
+     position retenue. Deux appuis plutot qu'un dialogue natif : dans une
+     application installee, `confirm` peut etre ignore et renvoyer false —
+     le bouton semblait alors ne rien faire. Ici, le libelle change, donc on
+     voit que le bouton repond. */
   function resetProgress() {
-    if (!confirm('Effacer toute la progression (cartes sues et à revoir) ?')) { return; }
+    if (!state.resetArme) {
+      state.resetArme = true;
+      if (el.reset) {
+        if (!state.resetLibelle) { state.resetLibelle = el.reset.textContent; }
+        el.reset.textContent = 'Confirmer';
+        el.reset.classList.add('warn');
+      }
+      window.setTimeout(desarmerReset, 4000);
+      return;
+    }
+    desarmerReset();
     state.progress = {};
     save();
+    state.jour = { date: aujourdhui(), sais: 0, revoir: 0, vues: {} };
+    try { localStorage.setItem(JOUR_KEY, JSON.stringify(state.jour)); }
+    catch (e) { /* mode prive : la remise a zero reste en memoire */ }
+    try { localStorage.removeItem(SESSION_KEY); }
+    catch (e) { /* rien a effacer */ }
     state.view = state.cards.slice();
     state.i = 0;
     render();
+    menuOuvert(false);   /* la feuille se referme, une fois tout efface */
+  }
+
+  /* Le bouton retrouve son libelle si on ne confirme pas. */
+  function desarmerReset() {
+    state.resetArme = false;
+    if (el.reset) {
+      if (state.resetLibelle) { el.reset.textContent = state.resetLibelle; }
+      el.reset.classList.remove('warn');
+    }
   }
 
   /* ------------------------------------------------------------------ */
@@ -702,6 +728,12 @@
      JSON lisible, l'import le relit : utile pour changer de téléphone, ou
      avant de vider les données du site. */
   function exporterProgression() {
+    var fiches = Object.keys(state.progress).length;
+    if (!fiches) {
+      annoncerSauvegarde('Aucune progression à enregistrer pour l\'instant.');
+      return;
+    }
+    var nom = 'cartes-progression-' + aujourdhui() + '.json';
     var paquet = {
       app: 'hanzi-cards',
       version: 2,
@@ -713,11 +745,28 @@
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;
-    a.download = 'cartes-progression-' + aujourdhui() + '.json';
+    a.download = nom;
     document.body.appendChild(a);
     a.click();
-    document.body.removeChild(a);
-    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+    /* Le lien reste dans la page jusqu'à la révocation : retiré juste après
+       le clic, certains navigateurs annulent le téléchargement — et il ne
+       se passe alors rien du tout. */
+    window.setTimeout(function () {
+      if (a.parentNode) { a.parentNode.removeChild(a); }
+      URL.revokeObjectURL(url);
+    }, 2000);
+    annoncerSauvegarde('Enregistré : ' + nom + ' · ' + fiches + ' fiche' + (fiches > 1 ? 's' : ''));
+  }
+
+  /* Le retour visible : sans lui, un téléchargement discret laisse croire que
+     le bouton ne fait rien. Le message s'efface tout seul. */
+  function annoncerSauvegarde(message) {
+    if (!el.sauvegarde) { return; }
+    el.sauvegarde.textContent = message;
+    if (state.sauvegardeMinuteur) { window.clearTimeout(state.sauvegardeMinuteur); }
+    state.sauvegardeMinuteur = window.setTimeout(function () {
+      if (el.sauvegarde) { el.sauvegarde.textContent = ''; }
+    }, 8000);
   }
 
   /* Accepte un export complet (objet avec « progression ») ou une simple table
@@ -932,17 +981,20 @@
      carte. Un appui sur la carte la retourne, un glissement la juge. Chaque
      entrée du menu referme celui-ci avant d'agir — sinon on ne verrait pas le
      résultat. Au clavier, ← → naviguent et 1 / 2 jugent, sans rien afficher. */
-  function depuisLeMenu(id, action) {
-    document.getElementById(id).addEventListener('click', function () {
-      menuOuvert(false);
+  function depuisLeMenu(id, action, garderOuvert) {
+    /* Un element absent ne doit pas faire tomber l'application entiere :
+       les boutons vont et viennent (on juge desormais au glissement), et
+       une liaison orpheline suffisait a empecher le demarrage. */
+    var bouton = document.getElementById(id);
+    if (!bouton) { return; }
+    bouton.addEventListener('click', function () {
+      if (!garderOuvert) { menuOuvert(false); }
       action();
     });
   }
 
-  depuisLeMenu('known', function () { mark(true); });
-  depuisLeMenu('again', function () { mark(false); });
   depuisLeMenu('shuffle', shuffle);
-  depuisLeMenu('reset', resetProgress);
+  depuisLeMenu('reset', resetProgress, true);
 
   document.addEventListener('keydown', function (e) {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') { return; }
@@ -1054,7 +1106,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '91';
+  var VERSION = '97';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
