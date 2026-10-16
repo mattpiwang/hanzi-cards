@@ -135,6 +135,7 @@ unique, qui ne contient que le HSK 1.
 | **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. |
 | **Audio** | Prononciations enregistrées, ou de synthèse. Prévu pour accompagner chaque phrase d'exemple. |
 | **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
+| **Traductions locales (Ollama)** | Mesuré le 16/10, en aveugle sur 50 définitions : un 7 B local (`qwen2.5:7b`) n'en rend que **64 %** au format demandé, et perd le match **21 à 1** (10 égalités) face à Ziya — les seules vraies erreurs étant de son côté. Gardé pour les tâches courtes (`..\ollama-chat\`), **écarté pour le contenu des cartes**. Protocole, tableau A/B et dépouillement : `..\comparaison-ollama\`. |
 
 ---
 
