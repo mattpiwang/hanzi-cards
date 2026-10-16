@@ -27,6 +27,7 @@
     titre: '',         // thème en cours, quand il vient de l'adresse
     reviewMode: false, // vue « à revoir aujourd'hui » (?review=1)
     theme: '',          // le thème en cours ('' si aucun), retenu pour la prochaine ouverture
+    jour: null,         // le décompte du jour (consultées, je sais, à revoir)
     progress: {}       // { "好": { n: 2, ef: 2.5, i: 6, due: "2026-10-19", … } }
   };
 
@@ -37,7 +38,11 @@
     back: document.getElementById('back'),
     counters: document.getElementById('counters'),
     bar: document.getElementById('bar-fill'),
-    position: document.getElementById('position')
+    position: document.getElementById('position'),
+    badge: document.getElementById('badge'),
+    aujourdhui: document.getElementById('aujourdhui'),
+    compteSais: document.getElementById('compte-sais'),
+    compteRevoir: document.getElementById('compte-revoir')
   };
 
   /* ------------------------------------------------------------------ */
@@ -113,7 +118,10 @@
       f.i = 1;
       f.ef = Math.max(EF_MIN, f.ef - 0.32);
     }
-    f.due = dansNJours(f.i);
+    /* « À revoir » remet la carte dans la file d'aujourd'hui : un échec doit
+       revenir tout de suite, pas demain. C'est aussi ce qui fait monter le
+       compteur du jour au lieu de le voir baisser. */
+    f.due = connu ? dansNJours(f.i) : aujourdhui();
     f.seen = f.seen + 1;
     f.at = aujourdhui();
     save();
@@ -155,6 +163,35 @@
     } catch (e) { /* mode privé ou file:// : on repartira du début */ }
   }
 
+  /* Le décompte du jour : ce qu'on a consulté et jugé depuis ce matin. Il est
+     relu au chargement et remis à zéro tout seul quand la date change — c'est
+     ce qui rend les compteurs vivants pendant qu'on révise. */
+  var JOUR_KEY = 'hanzi-jour';
+
+  function lireJour() {
+    try {
+      var j = JSON.parse(localStorage.getItem(JOUR_KEY));
+      if (j && j.date === aujourdhui()) {
+        return { date: j.date, sais: j.sais || 0, revoir: j.revoir || 0, vues: j.vues || {} };
+      }
+    } catch (e) { /* illisible : on repart de zéro */ }
+    return { date: aujourdhui(), sais: 0, revoir: 0, vues: {} };
+  }
+
+  /* Un geste : « vue » (on a retourné le verso), « sais » ou « revoir ». */
+  function compter(quoi, char) {
+    if (!state.jour) { state.jour = lireJour(); }
+    if (quoi === 'vue') { state.jour.vues[char] = true; }
+    else if (quoi === 'sais') { state.jour.sais++; }
+    else if (quoi === 'revoir') { state.jour.revoir++; }
+    try { localStorage.setItem(JOUR_KEY, JSON.stringify(state.jour)); }
+    catch (e) { /* mode privé : les compteurs restent en mémoire */ }
+  }
+
+  function nbVues() {
+    return state.jour ? Object.keys(state.jour.vues).length : 0;
+  }
+
   /* Les anciennes fiches portaient un simple compteur « box ». On les traduit
      une fois pour toutes au chargement : 0/1 → à revoir, 2 → 1 jour, 3 → 6 jours. */
   function migrerProgression() {
@@ -182,6 +219,7 @@
       var raw = localStorage.getItem(STORE_KEY);
       if (raw) { state.progress = JSON.parse(raw) || {}; }
     } catch (e) { state.progress = {}; }
+    state.jour = lireJour();
     migrerProgression();
   }
 
@@ -355,7 +393,23 @@
       el.counters.textContent = state.view.length + ' carte' + (state.view.length > 1 ? 's' : '') +
         ' · ' + toReviewCount() + ' à revoir · ' + known + ' sue' + (known > 1 ? 's' : '');
     }
+    /* La pastille de l'onglet : le nombre de cartes à revoir, visible sans
+       ouvrir la feuille. Elle disparaît quand il n'y a plus rien à revoir. */
+    if (el.badge) {
+      var dues = toReviewCount();
+      el.badge.textContent = dues;
+      el.badge.hidden = !dues;
+    }
     el.bar.style.width = total ? Math.round(known / total * 100) + '%' : '0%';
+
+    /* Le décompte du jour, en direct : consultées, « je sais », « à revoir ». */
+    if (el.aujourdhui && state.jour) {
+      var vues = nbVues();
+      el.aujourdhui.textContent = 'Aujourd\'hui : ' + vues + ' consultée' + (vues > 1 ? 's' : '') +
+        ' · ' + state.jour.sais + ' « je sais » · ' + state.jour.revoir + ' « à revoir »';
+    }
+    if (el.compteSais) { el.compteSais.textContent = (state.jour && state.jour.sais) ? state.jour.sais : ''; }
+    if (el.compteRevoir) { el.compteRevoir.textContent = (state.jour && state.jour.revoir) ? state.jour.revoir : ''; }
   }
 
   /* ------------------------------------------------------------------ */
@@ -363,9 +417,13 @@
   /* ------------------------------------------------------------------ */
 
   function flip() {
-    if (!current()) { return; }
+    var c = current();
+    if (!c) { return; }
     state.flipped = !state.flipped;
     el.card.classList.toggle('flipped', state.flipped);
+    /* Retourner la carte, c'est la consulter : on le compte une fois par carte. */
+    if (state.flipped) { compter('vue', c.char); }
+    updateStats();
   }
 
   function go(delta) {
@@ -379,6 +437,7 @@
     var c = current();
     if (!c) { return; }
     var avant = estDue(c);
+    compter(known ? 'sais' : 'revoir', c.char);
     var f = reviser(c, known);
 
     /* En mode « à revoir », une carte qui vient d'être réussie ne sera plus due
@@ -995,7 +1054,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '88';
+  var VERSION = '91';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

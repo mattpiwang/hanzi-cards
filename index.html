@@ -64,6 +64,7 @@
           <path d="M20 11a8 8 0 0 0-13.7-5.6L4 7.5"/><path d="M4 4v3.5h3.5"/>
           <path d="M4 13a8 8 0 0 0 13.7 5.6L20 16.5"/><path d="M20 20v-3.5h-3.5"/>
         </svg>
+        <span class="onglet-badge" id="badge" hidden></span>
       </button>
       <button class="onglet" type="button" data-onglet="parcourir" aria-expanded="false" aria-label="Parcourir" title="Parcourir">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -87,8 +88,12 @@
     <!-- Ce que chaque onglet ouvre -->
     <div class="feuille" data-feuille="reviser" hidden>
       <p class="feuille-titre">Cette carte</p>
-      <button id="known" class="feuille-entree ok" type="button">Je sais <kbd>2</kbd></button>
-      <button id="again" class="feuille-entree warn" type="button">À revoir <kbd>1</kbd></button>
+      <p class="feuille-info" id="deck-name"></p>
+      <p class="feuille-info" id="position"></p>
+      <p class="feuille-info" id="counters"></p>
+      <p class="feuille-info" id="aujourdhui"></p>
+      <button id="known" class="feuille-entree ok" type="button">Je sais <kbd>2</kbd><span class="feuille-compte" id="compte-sais"></span></button>
+      <button id="again" class="feuille-entree warn" type="button">À revoir <kbd>1</kbd><span class="feuille-compte" id="compte-revoir"></span></button>
       <button id="shuffle" class="feuille-entree" type="button">Mélanger</button>
     </div>
 
