@@ -286,6 +286,37 @@ HSK 6 : 413 · HSK 7-9 : 1 148. Téléchargées dans `..\hanzi-db\filtres\`.
 dérivé d'Unihan et de polices Arphic sous licence permissive ; le champ `source`
 de chaque fiche le mentionne.
 
+### Les phrases d'exemple
+
+Chaque fiche du HSK 1 porte une **phrase qui contient son caractère** : drôle,
+absurde, ou un **chéngyǔ** (expression de quatre caractères) suivi de son
+explication. Elle s'affiche au verso de la carte, entre l'état de révision et la
+décomposition.
+
+Dans les données, deux champs :
+
+```json
+"phrase": ["我的猫想爬山，可是它太胖了。", "Wǒ de māo xiǎng pá shān, kěshì tā tài pàng le.",
+           "Mon chat veut grimper la montagne, mais il est trop gros."],
+"phraseNote": "人山人海 : foule immense, marée humaine."
+```
+
+`phraseNote` n'existe que lorsque la phrase est un chéngyǔ : c'est son
+explication en français. Une fiche sans `phrase` n'affiche rien de plus — c'est
+le cas des 125 fiches du HSK 2 pour l'instant.
+
+**Pour un niveau entier** (par lots, relançable : il reprend où il s'est arrêté) :
+
+```powershell
+.\generer-phrases.ps1 -Fichier data\cards-hsk1.json   # demande les phrases à Ziya
+node apply-phrases.js data/cards-hsk1.json            # les écrit dans les fiches
+node verifier-phrases.js data/cards-hsk1.json         # contrôle qualité
+```
+
+`verifier-phrases.js` vérifie que chaque phrase contient bien le caractère de sa
+fiche, que le pinyin est accentué, que la traduction est en français, et que tout
+chéngyǔ a son explication. Le HSK 1 est passé au vert : **253 / 253**.
+
 ## 4. Lancer le site
 
 ```powershell
@@ -377,20 +408,26 @@ comme une source académique.
 
 ## 7. Pistes d'enrichissement
 
+Ce qui restait à faire ici est fait (ordre des traits animé, mots d'exemple pris
+dans CC-CEDICT, sens et étymologies en français, répétition espacée SM-2). Voici
+ce qui reste ouvert :
+
 | Envie | Piste |
 |---|---|
-| **Ordre des traits animé** | [hanzi-writer](https://hanziwriter.org) — un JSON par caractère, fonctionne hors ligne. |
-| **Plus de vocabulaire** | Importer les niveaux suivants : `.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk2.txt -Category 'HSK 2'` — les listes HSK 1→7-9 sont déjà téléchargées (§ 3). |
-| **Mots d'exemple pour les fiches importées** | [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) : dictionnaire libre, ~120 000 entrées, pour remplir le champ `words`. |
-| **Sens en français partout** | Traduire les 212 définitions anglaises — faisable par lots avec une API de traduction. |
-| **Répétition espacée réelle** | Remplacer le compteur à trois états par un algorithme SM-2 (intervalles croissants). |
+| **Phrases d'exemple pour le HSK 2** | `.\generer-phrases.ps1 -Fichier data\cards-hsk2.json` puis `node apply-phrases.js data/cards-hsk2.json` — exactement la recette du HSK 1 (§ 3, « Les phrases d'exemple »). |
+| **Plus de vocabulaire** | Importer les niveaux suivants : `.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk3.txt -Category 'HSK 3'` — les listes HSK 1→7-9 sont déjà téléchargées (§ 3). |
 | **Chinois traditionnel** | Ajouter un champ `traditional` et un bouton d'affichage. |
-| **Audio** | Un simple `<audio>` si tu enregistres les prononciations. |
+| **Audio** | Un simple `<audio>` si tu enregistres les prononciations — utile sous chaque phrase d'exemple. |
+| **APK** | PWABuilder ou Bubblewrap, depuis la PWA publiée (voir `ROADMAP.md`, § 5). |
 
 ## 8. Limites connues
 
 - **378 caractères** : le HSK 1 complet et le HSK 2. Pour lire couramment, il faut viser
   2 500 à 3 000 caractères (voir § 3 pour importer les niveaux suivants).
+- **Les phrases d'exemple n'existent que pour le HSK 1** (253). Le HSK 2 a ses mots,
+  sans phrase pour l'instant.
+- L'ordre des traits est un **support**, pas une vérification : le quiz « tracer au
+  doigt » a été retiré parce que la carte retournée en 3D envoyait les coordonnées
+  en miroir.
 - La progression est **locale au navigateur** : pas de synchronisation entre appareils, et elle disparaît si tu vides les données du site.
-- Pas de répétition espacée à intervalles : « Je sais » monte d'un cran, sans notion de délai.
 - En `file://` (version § 5-B), la progression peut ne pas survivre à la fermeture.
