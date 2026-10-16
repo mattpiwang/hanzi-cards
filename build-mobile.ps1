@@ -1,4 +1,4 @@
-<#
+﻿<#
     ==========================================================================
     build-mobile.ps1 — construit une version « un seul fichier » des cartes
     ==========================================================================
@@ -61,6 +61,9 @@ $html = $html.Replace('<link rel="manifest" href="manifest.json">', '')
 $html = $html -replace '(?s)\s*<a href="(?:theme|index)\.html[^"]*"[^>]*>.*?</a>', ''
 # Le niveau n'a pas de sens dans un fichier unique : il n'y en a qu'un.
 $html = $html -replace '\s*<p class="feuille-titre">Niveau</p>', ''
+
+# Le fichier unique ne contient que le HSK 1 : l'etiquette des niveaux doit le dire.
+$html = $html -replace '(?s)<span id="version-niveaux">.*?</span>', '<span id="version-niveaux">HSK 1</span>'
 
 $html = $html.Replace('<title>Cartes — 汉字</title>',
                       '<title>Cartes 汉字 — hors ligne</title>')

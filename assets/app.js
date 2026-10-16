@@ -26,6 +26,7 @@
     flipped: false,
     titre: '',         // thème en cours, quand il vient de l'adresse
     reviewMode: false, // vue « à revoir aujourd'hui » (?review=1)
+    theme: '',          // le thème en cours ('' si aucun), retenu pour la prochaine ouverture
     progress: {}       // { "好": { n: 2, ef: 2.5, i: 6, due: "2026-10-19", … } }
   };
 
@@ -126,6 +127,32 @@
   function save() {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state.progress)); }
     catch (e) { /* on ignore : mode privé ou file:// */ }
+  }
+
+  /* La session : le niveau est retenu à part (« hanzi-niveau ») ; ici on garde
+     le lot qu'on regardait (un thème, ou « à revoir aujourd'hui ») et la carte
+     où l'on s'est arrêté. On la relit à l'ouverture pour reprendre exactement
+     là où on en était, sans avoir à retrouver sa place. */
+  var SESSION_KEY = 'hanzi-session';
+
+  function lireSession() {
+    try {
+      var s = JSON.parse(localStorage.getItem(SESSION_KEY));
+      return (s && typeof s === 'object') ? s : null;
+    } catch (e) { return null; }
+  }
+
+  function retenirSession() {
+    var c = current();
+    if (!c) { return; }        /* vue vide : on ne mémorise pas de position */
+    try {
+      localStorage.setItem(SESSION_KEY, JSON.stringify({
+        niveau: window.__CARDS__ ? 'mono' : niveauDemande().cle,
+        theme: state.theme || '',
+        review: !!state.reviewMode,
+        char: c.char
+      }));
+    } catch (e) { /* mode privé ou file:// : on repartira du début */ }
   }
 
   /* Les anciennes fiches portaient un simple compteur « box ». On les traduit
@@ -316,6 +343,9 @@
     if (c.niveau && c.niveau !== ou) { ou = c.niveau + (ou ? ' · ' + ou : ''); }
     if (el.position) { el.position.textContent = 'Carte ' + (state.i + 1) + ' / ' + state.view.length + (ou ? ' · ' + ou : ''); }
     updateStats();
+
+    /* Où l'on s'est arrêté : la prochaine ouverture reprendra ici. */
+    retenirSession();
   }
 
   function updateStats() {
@@ -889,23 +919,41 @@
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
-    state.reviewMode = (p.review === '1');
-    state.titre = p.theme || (state.reviewMode ? 'À revoir aujourd\'hui' : '');
 
-    if (p.theme) {
-      state.view = state.cards.filter(function (c) { return c.category === p.theme; });
-    } else if (state.reviewMode) {
-      state.view = state.cards.filter(estDue);
-    } else {
-      state.view = state.cards.slice();
+    /* La session ne sert que si l'adresse ne dit rien : un lien qui précise un
+       niveau, un thème ou un caractère commande. Et elle ne vaut que pour le
+       niveau d'où elle vient — sinon on se placerait sur une carte absente. */
+    var niveauCle = window.__CARDS__ ? 'mono' : niveauDemande().cle;
+    var brut = (!p.theme && p.review !== '1' && !p.char) ? lireSession() : null;
+    var reprise = (brut && brut.niveau === niveauCle) ? brut : null;
+
+    /* Ce qu'on regarde : le thème de l'adresse, sinon celui de la session. */
+    var theme = p.theme || (reprise && reprise.theme) || '';
+    var vue = theme ? state.cards.filter(function (c) { return c.category === theme; }) : null;
+    if (vue && !vue.length) { theme = ''; vue = null; }   /* thème vide : on ouvre tout */
+
+    /* « À revoir aujourd'hui », demandé par l'adresse ou repris de la session. */
+    var revision = (p.review === '1') || (!theme && !!(reprise && reprise.review));
+    if (!vue && revision) {
+      vue = state.cards.filter(estDue);
+      /* Rien de dû : plutôt qu'un écran vide, on ouvre le paquet — sauf si
+         l'adresse demandait explicitement la révision. */
+      if (!vue.length && p.review !== '1') { revision = false; vue = null; }
     }
+    if (!vue) { vue = state.cards.slice(); }
+
+    state.theme = theme;
+    state.reviewMode = revision;
+    state.titre = theme || (revision ? 'À revoir aujourd\'hui' : '');
+    state.view = vue;
 
     /* ?char=好 : la recherche de la page Thèmes renvoie ici sur un caractère
        précis. On garde tout le paquet et on se place simplement dessus, pour
        pouvoir continuer la révision à partir de là. */
-    if (p.char) {
+    var cible = p.char || (reprise && reprise.char);
+    if (cible) {
       for (var k = 0; k < state.view.length; k++) {
-        if (state.view[k].char === p.char) { state.i = k; break; }
+        if (state.view[k].char === cible) { state.i = k; break; }
       }
     }
 
@@ -947,12 +995,13 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '86';
+  var VERSION = '88';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
-    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json'] }
+    { cle: 'hsk3', nom: 'HSK 3', fichiers: ['data/cards-hsk3.json'] },
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json'] }
   ];
 
   /* Le niveau demandé : ?niveau=hsk2 dans l'adresse, sinon celui de la dernière

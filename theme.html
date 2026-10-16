@@ -57,6 +57,7 @@
   <nav class="niveaux" aria-label="Niveau">
     <a href="theme.html?niveau=hsk1" data-niveau="hsk1">HSK 1</a>
     <a href="theme.html?niveau=hsk2" data-niveau="hsk2">HSK 2</a>
+    <a href="theme.html?niveau=hsk3" data-niveau="hsk3">HSK 3</a>
     <a href="theme.html?niveau=tout" data-niveau="tout">Tous les niveaux</a>
   </nav>
 
@@ -96,7 +97,8 @@
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
-    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json'] }
+    { cle: 'hsk3', nom: 'HSK 3', fichiers: ['data/cards-hsk3.json'] },
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json'] }
   ];
 
   /* Les fiches de chaque niveau, chargées ensemble : c'est ce qui permet de
@@ -335,7 +337,7 @@
      petits, et le service worker les garde ensuite. */
   /* « Tous les niveaux » n'a pas de fichier à elle : elle réunit les autres. On
      ne charge donc que les vraies collections, sinon HSK 1 serait comptée deux
-     fois (631 fiches au lieu de 378). */
+     fois (662 fiches au lieu de 253). */
   Promise.all(NIVEAUX.filter(function (n) { return n.cle !== 'tout'; }).map(function (n) {
     return fetch(n.fichiers[0], { cache: 'no-store' })
       .then(function (r) {

@@ -17,6 +17,7 @@ icons/              icônes de l'application, générées avec .NET
 build-mobile.ps1    produit la version « un seul fichier »
 serve.cmd           double-clic : sert le site, en local et sur le réseau
 import-hanzi-db.ps1 importe la base Make Me a Hanzi, filtrable par liste
+ajouter-niveau.ps1 déroule toute la chaîne (traductions, mots, phrases) pour un niveau
 traduire.ps1        fait traduire les fiches par l'assistant OpenClaw
 build-exemples.js   choisit les mots d'exemple dans les listes HSK
 apply-exemples.js   écrit ces mots dans le fichier du niveau
@@ -264,16 +265,16 @@ caractère ne change pas de niveau.
 ### Les niveaux se comportent comme des collections
 
 - **On choisit une collection** — HSK 1, HSK 2, ou **Tous les niveaux**, qui les
-  réunit (378 fiches). Le choix est mémorisé.
+  réunit (662 fiches). Le choix est mémorisé.
 - **Chaque fiche sait d'où elle vient** : son fichier déclare `niveau`, et la
   barre de position l'affiche quand plusieurs collections sont réunies
-  (« Carte 12 / 378 · HSK 2 »).
+  (« Carte 12 / 662 · HSK 2 »).
 - **Le filtrage par niveau est déjà là** : chaque niveau importé porte sa propre
   catégorie (`HSK 1`, `HSK 2`), donc `?niveau=tout&theme=HSK 2` ne révise que le
   HSK 2, et la page Thèmes liste les niveaux comme des lots.
 - **La page Thèmes compte niveau par niveau** : « HSK 1 : 34 / 253 · HSK 2 :
-  12 / 125 — tous niveaux : 46 / 378 ». Elle charge les niveaux en parallèle ;
-  le service worker les garde ensuite.
+  12 / 125 · HSK 3 : 5 / 284 — tous niveaux : 51 / 662 ». Elle charge les niveaux
+  en parallèle ; le service worker les garde ensuite.
 - **Les compteurs de l'application portent sur la collection chargée** : en
   HSK 1, « à revoir » ne compte que les cartes HSK 1 dues. Celles de HSK 2
   attendent de l'autre côté.
@@ -390,14 +391,22 @@ Deux réserves à connaître :
 
 ## 6. État des données — à lire
 
-Le jeu compte **253 fiches**, de deux origines bien distinctes :
+Le jeu compte **662 fiches**, en trois niveaux et de deux origines :
 
-- **41 fiches rédigées à la main** — les caractères les plus courants. Tout est
-  vérifié : caractères, pinyin accentué, sens **en français**, mots d'exemple et
-  étymologie. C'est la partie la plus soignée.
-- **337 fiches importées** de la base libre Make Me a Hanzi (212 en HSK 1, 125 en HSK 2) —
-  pinyin accentué, radicaux et étymologie classée, mais **définitions en anglais**
-  et **sans mots d'exemple**. L'application les signale par une petite mention `en`.
+- **41 fiches rédigées à la main** — les caractères les plus courants du HSK 1.
+  Tout est vérifié depuis le début : caractères, pinyin accentué, sens, mots
+  d'exemple et étymologie.
+- **621 fiches importées** de la base libre Make Me a Hanzi — 212 en HSK 1,
+  125 en HSK 2, 284 en HSK 3. Pinyin accentué, radicaux, décomposition et
+  étymologie classée ; les définitions et les gloses ont été **traduites en
+  français**, chaque fiche a ses mots d'exemple, et le HSK 1 comme le HSK 3 ont
+  en plus une phrase qui met le caractère en situation.
+
+**Rien n'est affiché en anglais** : l'anglais d'origine reste dans les champs
+`meaningEn` et `etymologyEn`, qui servent de source aux traductions et ne sont
+jamais montrés. Toutes les fiches ont au moins deux mots d'exemple, et les 73
+fiches dont la base ne donne pas la décomposition portent une note qui explique
+ce silence.
 
 Les **classifications étymologiques** suivent la tradition du *Shuowen Jiezi*
 (象形 pictogramme, 指事 indicateur, 会意 composé d'idées, 形声
@@ -415,17 +424,17 @@ ce qui reste ouvert :
 | Envie | Piste |
 |---|---|
 | **Phrases d'exemple pour le HSK 2** | `.\generer-phrases.ps1 -Fichier data\cards-hsk2.json` puis `node apply-phrases.js data/cards-hsk2.json` — exactement la recette du HSK 1 (§ 3, « Les phrases d'exemple »). |
-| **Plus de vocabulaire** | Importer les niveaux suivants : `.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk3.txt -Category 'HSK 3'` — les listes HSK 1→7-9 sont déjà téléchargées (§ 3). |
+| **Plus de vocabulaire** | Importer le niveau suivant : `.\import-hanzi-db.ps1 -FilterFile ..\hanzi-db\filtres\hsk4.txt -Category 'HSK 4' -Output data\cards-hsk4.json`, puis `.\ajouter-niveau.ps1 -Niveau hsk4` — les listes HSK 1→7-9 sont déjà téléchargées (§ 3). |
 | **Chinois traditionnel** | Ajouter un champ `traditional` et un bouton d'affichage. |
 | **Audio** | Un simple `<audio>` si tu enregistres les prononciations — utile sous chaque phrase d'exemple. |
-| **APK** | PWABuilder ou Bubblewrap, depuis la PWA publiée (voir `ROADMAP.md`, § 5). |
+| **APK** | PWABuilder ou Bubblewrap, depuis la PWA publiée (voir `ROADMAP.md`, § 6). |
 
 ## 8. Limites connues
 
-- **378 caractères** : le HSK 1 complet et le HSK 2. Pour lire couramment, il faut viser
+- **662 caractères** : le HSK 1, le HSK 2 et le HSK 3. Pour lire couramment, il faut viser
   2 500 à 3 000 caractères (voir § 3 pour importer les niveaux suivants).
-- **Les phrases d'exemple n'existent que pour le HSK 1** (253). Le HSK 2 a ses mots,
-  sans phrase pour l'instant.
+- **Les phrases d'exemple manquent au HSK 2** : le HSK 1 (253) et le HSK 3 (284)
+  en ont une, les 125 fiches du HSK 2 n'ont que leurs mots.
 - L'ordre des traits est un **support**, pas une vérification : le quiz « tracer au
   doigt » a été retiré parce que la carte retournée en 3D envoyait les coordonnées
   en miroir.

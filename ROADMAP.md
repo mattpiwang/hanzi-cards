@@ -1,13 +1,14 @@
 # Feuille de route — Cartes 汉字
 
-**État actuel** (15/10, version 86) : **378 fiches** — 253 du HSK 1 (41 écrites à
-la main en français + 212 importées) et 125 du HSK 2 —, application statique
-sans dépendance, installable en PWA, progression locale au navigateur.
+**État actuel** (16/10, version 87) : **662 fiches** — 253 du HSK 1 (41 écrites à
+la main en français + 212 importées), 125 du HSK 2 et 284 du HSK 3 —,
+application statique sans dépendance, installable en PWA, progression locale au
+navigateur.
 
-Chaque fiche a **au moins deux mots d'exemple** (781 en tout), le **HSK 1 a en
-plus une phrase** qui met son caractère en situation (253 phrases, dont 108
-chéngyǔ expliqués), et **aucun anglais n'est affiché** : les sens, étymologies,
-gloses, mots et phrases sont tous en français.
+Chaque fiche a **au moins deux mots d'exemple** (1 277 en tout), le **HSK 1 et
+le HSK 3 ont en plus une phrase** qui met le caractère en situation (537
+phrases, dont 235 chéngyǔ expliqués), et **aucun anglais n'est affiché** : les
+sens, étymologies, gloses, mots et phrases sont tous en français.
 
 **Déjà en place** : retournement d'un appui sur la carte, **glissement
 gauche/droite pour juger**, barre du bas à quatre onglets, **page Thèmes**, interrupteur **阴 / 阳**
@@ -86,19 +87,58 @@ service worker) et committés.
 
 ---
 
-## 3. Plus tard
+## 3. Réalisé — le 16/10
+
+### Le HSK 3 est arrivé (284 fiches de plus)
+
+| Priorité | Chantier | Ce qui a été fait |
+|---|---|---|
+| ★★★ | **Import du HSK 3** | ✅ 284 fiches importées de Make Me a Hanzi, filtrées sur `hsk3.txt` : pinyin, radicaux, décomposition, type étymologique. |
+| ★★★ | **Tout en français** | ✅ 284 sens, 284 étymologies et 256 gloses de composants traduits : **aucune glose anglaise ne subsiste**. |
+| ★★★ | **Mots d'exemple** | ✅ 496 mots choisis dans les listes HSK (CC-CEDICT) et traduits — **284 / 284 fiches** en ont au moins un. |
+| ★★★ | **Une phrase par fiche** | ✅ 284 phrases, dont **127 chéngyǔ** avec leur explication. Contrôle qualité au vert : chaque phrase contient son caractère. |
+| ★★ | **Les fiches muettes** | ✅ Les 32 fiches sans décomposition portent une note ; les 8 fiches restées sans mot d'exemple ont reçu un mot choisi à la main (消瘦, 又名, 山羊, 姨妈, 勺子…). |
+| ★★ | **Un outil pour les niveaux suivants** | ✅ `ajouter-niveau.ps1` déroule les huit étapes (traductions, mots, phrases) d'un seul appel — le HSK 4 tiendra en deux commandes. |
+
+### Où en sont les données
+
+| | HSK 1 | HSK 2 | HSK 3 | Total |
+|---|---|---|---|---|
+| Fiches | 253 | 125 | 284 | **662** |
+| Mots d'exemple | 524 | 257 | 496 | **1 277** |
+| Phrases | 253 | 0 | 284 | **537** |
+| Notes explicatives | 26 | 19 | 32 | **77** |
+
+**Reste à aligner** : les **125 fiches du HSK 2** n'ont pas encore de phrase —
+elles ont leurs mots, et la recette tient en une commande.
+
+**Décision du 16/10** : un niveau se traite désormais **d'un bout à l'autre** par
+`import-hanzi-db.ps1` puis `ajouter-niveau.ps1`, et il se déclare dans trois
+fichiers (`assets/app.js`, `theme.html`, `index.html`).
+
+### Un incident à retenir
+
+Six scripts PowerShell avaient perdu leur **BOM UTF-8** au fil des retouches du
+15/10 : Windows PowerShell les lisait alors en CP1252, et `import-hanzi-db.ps1` a
+refusé de s'analyser le jour de l'import du HSK 3. Les huit scripts en ont un
+désormais. `build-mobile.ps1` corrige aussi l'étiquette des niveaux du fichier
+unique, qui ne contient que le HSK 1.
+
+---
+
+## 4. Plus tard
 
 | Chantier | Pourquoi attendre |
 |---|---|
 | **Phrases du HSK 2** | Aligner les 125 fiches du HSK 2 sur le HSK 1. Recette rodée : `generer-phrases.ps1 -Fichier data\cards-hsk2.json`, puis `apply-phrases.js`. Quelques minutes. |
-| **Niveaux HSK 3 à 9** | HSK 2 est fait (125 fiches, 13/10). Les listes sont déjà téléchargées (`..\hanzi-db\filtres\`) et la marche à suivre est éprouvée de bout en bout : import, trois traductions, mots d'exemple, phrases. Il ne reste qu'à répéter. |
+| **Niveaux HSK 4 à 9** | Le HSK 1, le HSK 2 et le HSK 3 sont faits (662 fiches). Les listes sont déjà téléchargées (`..\hanzi-db\filtres\`) et la marche à suivre tient en deux commandes : `import-hanzi-db.ps1`, puis `ajouter-niveau.ps1`. Il ne reste qu'à répéter. |
 | **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. |
 | **Audio** | Prononciations enregistrées, ou de synthèse. Prévu pour accompagner chaque phrase d'exemple. |
 | **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
 
 ---
 
-## 4. Architecture — fait : un fichier par niveau
+## 5. Architecture — fait : un fichier par niveau
 
 Tout tenait autrefois dans `data/cards.json` : 302 Ko pour 253 fiches, soit
 environ **1,1 Ko par fiche**. Les six niveaux HSK représenteraient ~2 000 fiches
@@ -114,7 +154,7 @@ et `data/cards-hsk2.json` (125 fiches). L'application ne télécharge que le niv
 choisi, et le service worker ne garde en cache que ceux qu'on a ouverts.
 
 **Puis les niveaux sont devenus des collections** : une entrée « Tous les
-niveaux » les réunit (378 fiches), chaque fiche déclare son niveau, la page
+niveaux » les réunit (662 fiches), chaque fiche déclare son niveau, la page
 Thèmes compte niveau par niveau avec le total, et le filtrage par niveau passe
 par les catégories (`?niveau=tout&theme=HSK 2`). La progression reste commune,
 indexée par caractère.
@@ -126,7 +166,7 @@ suffixe qui manquait au HSK 1 jusqu'au 15/10.
 
 ---
 
-## 5. Empaquetage APK (plus tard)
+## 6. Empaquetage APK (plus tard)
 
 - **[PWABuilder](https://www.pwabuilder.com)** (en ligne) ou **Bubblewrap** (Node + JDK) produisent un `.apk` signé depuis la PWA publiée.
 - Déjà en place : GitHub Pages en HTTPS, `manifest.json` complet, icônes 192/512, `display: standalone`.
@@ -134,7 +174,7 @@ suffixe qui manquait au HSK 1 jusqu'au 15/10.
 
 ---
 
-## 6. À trancher à la prochaine révision
+## 7. À trancher à la prochaine révision
 
 > Note laissée par Matt le 13/10, après l'épuration de l'écran.
 
@@ -144,9 +184,10 @@ barre du bas, rangé en onglets (*Cette carte*, *Parcourir*, *Progression*,
 
 ### a. Que faire ensuite ?
 
-Le contenu n'a plus de trou : la suite est soit **du contenu neuf** (phrases du
-HSK 2, puis HSK 3 à 9), soit **de l'interface**, soit **l'APK**. Le HSK 2 est le
-pas le plus court et le plus utile — il rend l'application homogène.
+Le contenu n'a plus de trou : la suite est soit **du contenu neuf** (les phrases
+du HSK 2, puis les niveaux HSK 4 à 9), soit **de l'interface**, soit **l'APK**.
+Les phrases du HSK 2 sont le pas le plus court — il rend l'application homogène,
+puisque le HSK 1 et le HSK 3 en ont déjà.
 
 ### b. Les phrases ont-elles leur place sur le recto ?
 
