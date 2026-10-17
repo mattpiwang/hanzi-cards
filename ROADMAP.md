@@ -148,6 +148,21 @@ caractère, aucune donnée à importer), et elle rend la révision plus personne
 sans toucher au contenu. À poser **après** les phrases du HSK 2, pour ne pas
 étoiler des fiches qu'on retouchera ensuite.
 
+### Recherche de caractère — demandé le 17/10
+
+La recherche existe déjà sur la page **Thèmes** (caractère, pinyin, sens ou
+radical, et le résultat ouvre la carte). Ce qui manque, c'est un accès direct
+depuis l'écran principal.
+
+| Priorité | Chantier | Détail |
+|---|---|---|
+| ★★ | **Barre de recherche permanente** | Un champ accessible depuis l'écran principal (ou un onglet dédié), qui filtre instantanément les 662 fiches par caractère, pinyin ou sens, sans passer par Thèmes. |
+| ★ | **Résultats enrichis** | Chaque résultat montre caractère, pinyin, sens et niveau ; les favoris remontent en tête. |
+| ★ | **Lien profond** | Conserver `index.html?char=X` pour qu'un résultat ouvre directement la fiche, avec un retour à la recherche. |
+
+À faire en même temps que les favoris : les deux touchent la même barre de
+navigation et le même stockage local.
+
 ---
 
 ## 5. Architecture — fait : un fichier par niveau
