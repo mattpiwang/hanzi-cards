@@ -923,3 +923,29 @@ kbd {
   font-variant-numeric: tabular-nums;
 }
 .feuille-entree { display: flex; align-items: center; }
+
+/* La navigation des pages hors carte (theme.html) : les mêmes sections que les
+   onglets du bas, en liens simples — une page qui défile n'a pas de barre fixe. */
+.onglets-lies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  justify-content: center;
+  margin-top: 1.4rem;
+  padding: .9rem 1rem calc(1.1rem + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(127, 127, 127, .16);
+}
+.onglets-lies a {
+  padding: .45rem .85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 127, 127, .28);
+  color: var(--txt);
+  text-decoration: none;
+  font-size: .86rem;
+}
+.onglets-lies a:hover { border-color: var(--accent); }
+.onglets-lies a[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}

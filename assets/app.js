@@ -1073,6 +1073,11 @@
     var quoi = state.titre || data.niveau || data.deck || 'Jeu de cartes';
     if (el.deckName) { el.deckName.textContent = quoi + ' — ' + state.view.length + ' caractères'; }
     render();
+
+    /* ?ouvrir=progression : les pages qui ne sont pas la carte (la page Thèmes)
+       renvoient ici avec la section voulue déjà ouverte, plutôt que de laisser
+       l'utilisateur retaper sur un onglet. */
+    if (p.ouvrir) { ouvrirFeuille(p.ouvrir); }
   }
 
   /* Échec de chargement : on dit quoi faire, pas seulement que ça a échoué. Le
@@ -1106,7 +1111,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '97';
+  var VERSION = '99';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

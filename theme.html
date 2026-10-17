@@ -82,6 +82,13 @@
   <p><a class="back-link" href="index.html">← Retour aux cartes (tout le jeu)</a></p>
 </main>
 
+<nav class="onglets-lies" aria-label="Sections">
+  <a href="index.html">Cartes</a>
+  <a href="theme.html" aria-current="page">Thèmes</a>
+  <a href="index.html?ouvrir=progression">Progression</a>
+  <a href="index.html?ouvrir=reglages">Apparence</a>
+</nav>
+
 <script>
 (function () {
   'use strict';
@@ -251,23 +258,35 @@
   /* ---------- lots de vocabulaire ---------- */
 
   function afficherLots(prog) {
-    var cats = [];
-    CARTES.forEach(function (c) {
-      if (cats.indexOf(c.category) === -1) { cats.push(c.category); }
-    });
-
     var html = '';
     html += ligne('Toutes les cartes', CARTES.length, suesDans(CARTES, prog), LIEN);
-
+  
     var aRevoir = CARTES.filter(function (c) { return etatDe(c, prog).aRevoir; });
     html += ligne('À revoir aujourd\'hui', aRevoir.length, null, LIEN + '&review=1');
-
-    cats.forEach(function (cat) {
-      var lot = CARTES.filter(function (c) { return c.category === cat; });
-      html += ligne(cat, lot.length, suesDans(lot, prog),
-        LIEN + '&theme=' + encodeURIComponent(cat));
+  
+    /* Les thèmes de vocabulaire viennent des fiches écrites à la main : elles
+       seules portent un vrai thème (Nature, Nombres…). Les fiches importées
+       ont pour catégorie le nom de leur niveau. On liste donc les thèmes de
+       TOUS les niveaux chargés, en disant où ils vivent — sinon les niveaux
+       importés n'offriraient aucun menu. */
+    var themes = [];
+    (PAR_NIVEAU || []).forEach(function (paquet) {
+      (paquet.cards || []).forEach(function (c) {
+        var cat = c.category;
+        if (!cat || /^HSK /.test(cat)) { return; }
+        var dejaVu = themes.some(function (t) { return t.cat === cat && t.cle === paquet.cle; });
+        if (!dejaVu) { themes.push({ cat: cat, cle: paquet.cle, nom: paquet.nom }); }
+      });
     });
-
+  
+    themes.forEach(function (t) {
+      var paquet = PAR_NIVEAU.filter(function (p) { return p.cle === t.cle; })[0];
+      if (!paquet) { return; }
+      var lot = (paquet.cards || []).filter(function (c) { return c.category === t.cat; });
+      html += ligne(t.cat + ' · ' + t.nom, lot.length, suesDans(lot, prog),
+        'index.html?niveau=' + encodeURIComponent(t.cle) + '&theme=' + encodeURIComponent(t.cat));
+    });
+  
     document.getElementById('themes').innerHTML = html;
   }
 

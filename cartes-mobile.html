@@ -932,6 +932,32 @@ kbd {
 }
 .feuille-entree { display: flex; align-items: center; }
 
+/* La navigation des pages hors carte (theme.html) : les mêmes sections que les
+   onglets du bas, en liens simples — une page qui défile n'a pas de barre fixe. */
+.onglets-lies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  justify-content: center;
+  margin-top: 1.4rem;
+  padding: .9rem 1rem calc(1.1rem + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(127, 127, 127, .16);
+}
+.onglets-lies a {
+  padding: .45rem .85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 127, 127, .28);
+  color: var(--txt);
+  text-decoration: none;
+  font-size: .86rem;
+}
+.onglets-lies a:hover { border-color: var(--accent); }
+.onglets-lies a[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
 </style>
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
@@ -12775,6 +12801,11 @@ kbd {
     var quoi = state.titre || data.niveau || data.deck || 'Jeu de cartes';
     if (el.deckName) { el.deckName.textContent = quoi + ' — ' + state.view.length + ' caractères'; }
     render();
+
+    /* ?ouvrir=progression : les pages qui ne sont pas la carte (la page Thèmes)
+       renvoient ici avec la section voulue déjà ouverte, plutôt que de laisser
+       l'utilisateur retaper sur un onglet. */
+    if (p.ouvrir) { ouvrirFeuille(p.ouvrir); }
   }
 
   /* Échec de chargement : on dit quoi faire, pas seulement que ça a échoué. Le
@@ -12808,7 +12839,7 @@ kbd {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '97';
+  var VERSION = '99';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
