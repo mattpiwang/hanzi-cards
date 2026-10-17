@@ -137,6 +137,17 @@ unique, qui ne contient que le HSK 1.
 | **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
 | **Traductions locales (Ollama)** | Mesuré le 16/10, en aveugle sur 50 définitions : un 7 B local (`qwen2.5:7b`) n'en rend que **64 %** au format demandé, et perd le match **21 à 1** (10 égalités) face à Ziya — les seules vraies erreurs étant de son côté. Gardé pour les tâches courtes (`..\ollama-chat\`), **écarté pour le contenu des cartes**. Protocole, tableau A/B et dépouillement : `..\comparaison-ollama\`. |
 
+### Favoris — demandé le 17/10
+
+| Priorité | Chantier | Détail |
+|---|---|---|
+| ★★ | **Favoris** | Une étoile sur chaque fiche, stockée en local (`localStorage`, comme la progression) et reprise par l'export / import JSON existant. Filtre « Favoris » dans *Parcourir*, et file de révision dédiée si le besoin se confirme. |
+
+Pourquoi maintenant et pas plus tard : c'est une fonction courte (un booléen par
+caractère, aucune donnée à importer), et elle rend la révision plus personnelle
+sans toucher au contenu. À poser **après** les phrases du HSK 2, pour ne pas
+étoiler des fiches qu'on retouchera ensuite.
+
 ---
 
 ## 5. Architecture — fait : un fichier par niveau
