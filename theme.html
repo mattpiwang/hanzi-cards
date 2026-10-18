@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thèmes — 汉字</title>
 <meta name="description" content="Choisir un thème, chercher un caractère, suivre sa progression.">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=107">
 
 <!-- Même rattrapage que sur la page des cartes : le thème est appliqué avant
      l'affichage, pour ne pas voir de flash au chargement. -->
@@ -28,23 +28,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Cartes 汉字">
 </head>
-<body>
-
-<header class="top">
-  <div class="wrap top-inner">
-    <div class="brand">
-      <span class="logo">汉</span>
-      <div>
-        <h1>Thèmes</h1>
-        <p class="sub" id="total">chargement…</p>
-      </div>
-    </div>
-    <div class="stats">
-      <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
-      <p id="counters" class="counters">…</p>
-    </div>
-  </div>
-</header>
+<body class="page-themes">
 
 <main class="wrap">
   <div class="page-head">
@@ -82,12 +66,87 @@
   <p><a class="back-link" href="index.html">← Retour aux cartes (tout le jeu)</a></p>
 </main>
 
-<nav class="onglets-lies" aria-label="Sections">
-  <a href="index.html">Cartes</a>
-  <a href="theme.html" aria-current="page">Thèmes</a>
-  <a href="index.html?ouvrir=progression">Progression</a>
-  <a href="index.html?ouvrir=reglages">Apparence</a>
-</nav>
+<!-- La page d'accueil de la page Themes : le meme nom, le meme champ, mais la
+     recherche porte sur le pinyin de toutes les fiches connues, et un resultat
+     renvoie vers la fiche sur la page des cartes. -->
+<div class="page" id="accueil" hidden>
+  <p class="accueil-marque">满脑汉字</p>
+  <label class="accueil-label" for="accueil-recherche">Recherche</label>
+  <input type="search" id="accueil-recherche" class="recherche" placeholder="Pinyin d'un caractère…"
+         autocomplete="off" spellcheck="false" aria-label="Rechercher une fiche">
+  <div id="accueil-resultats" class="feuille-resultats"></div>
+</div>
+
+<footer class="bas">
+  <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
+
+  <nav class="onglets" aria-label="Sections">
+      <button class="onglet" type="button" data-onglet="reviser" aria-expanded="false" aria-label="Réviser" title="Réviser">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-13.7-5.6L4 7.5"/><path d="M4 4v3.5h3.5"/><path d="M4 13a8 8 0 0 0 13.7 5.6L20 16.5"/><path d="M20 20v-3.5h-3.5"/></svg>
+      </button>
+      <button class="onglet actif" type="button" data-onglet="parcourir" aria-expanded="false" aria-label="Parcourir" title="Parcourir">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="accueil" aria-expanded="false" aria-label="Accueil" title="Accueil">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11.5 12 4.5l8 7"/><path d="M6 10.5V20h12v-9.5"/><path d="M10.5 20v-5h3v5"/></svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="niveau" aria-expanded="false" aria-label="Niveau" title="Niveau">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 3.5 8l8.5 4.5L20.5 8 12 3.5Z"/><path d="m3.5 12.5 8.5 4.5 8.5-4.5"/><path d="m3.5 16.5 8.5 4.5 8.5-4.5"/></svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="reglages" aria-expanded="false" aria-label="Réglages" title="Réglages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16"/><circle cx="10" cy="8" r="2.3"/><path d="M4 16h16"/><circle cx="15" cy="16" r="2.3"/></svg>
+      </button>
+  </nav>
+
+  <!-- Les feuilles de cette page : seules celles qui ne vivent que de liens. -->
+  <div class="feuille" data-feuille="parcourir" hidden>
+    <p class="feuille-titre">Parcourir</p>
+    <a href="theme.html">Thèmes de vocabulaire</a>
+    <a href="index.html?review=1">Cartes à revoir</a>
+  </div>
+
+  <div class="feuille" data-feuille="reviser" hidden>
+    <p class="feuille-titre">Cette carte</p>
+    <p class="feuille-info" id="rev-niveau"></p>
+    <p class="feuille-info" id="rev-jour"></p>
+    <p class="feuille-info" id="rev-position"></p>
+    <a href="index.html">Ouvrir les cartes</a>
+  </div>
+
+  <div class="feuille" data-feuille="reglages" hidden>
+    <p class="feuille-titre">Apparence</p>
+    <button id="theme-toggle" class="switch" type="button" role="switch" aria-checked="false">
+      <span class="sw-yin" aria-hidden="true">阴</span>
+      <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
+      <span class="sw-yang" aria-hidden="true">阳</span>
+      <span class="sw-label" id="theme-label">Mode sombre</span>
+    </button>
+
+    <p class="feuille-titre">Recherche</p>
+    <button id="recherche-contenu" class="switch" type="button" role="switch" aria-checked="false">
+      <span class="sw-yin" aria-hidden="true">字</span>
+      <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
+      <span class="sw-yang" aria-hidden="true">卡</span>
+      <span class="sw-label" id="recherche-label">Recherche : pinyin</span>
+    </button>
+
+    <p class="feuille-titre">Progression</p>
+    <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
+    <button id="import" class="feuille-entree" type="button">Restaurer</button>
+    <input type="file" id="import-file" accept="application/json,.json" hidden>
+    <button id="reset" class="feuille-entree" type="button">Réinitialiser</button>
+    <p class="feuille-info" id="sauvegarde"></p>
+  </div>
+
+  <div class="feuille" data-feuille="niveau" hidden>
+    <p class="feuille-titre">Niveau</p>
+    <a href="index.html?niveau=hsk1">HSK 1 — 253 fiches</a>
+    <a href="index.html?niveau=hsk2">HSK 2 — 125 fiches</a>
+    <a href="index.html?niveau=hsk3">HSK 3 — 284 fiches</a>
+    <a href="index.html?niveau=tout">Tous les niveaux — 662 fiches</a>
+  </div>
+  <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2 / HSK 3</span></p>
+</footer>
 
 <script>
 (function () {
@@ -101,6 +160,11 @@
 
   /* Un fichier par niveau, chargé à la demande. Le choix se retient : on
      revient sur le niveau qu'on révisait. */
+  /* Le numéro de la page. À aligner avec VERSION dans app.js à chaque
+     livraison : la page Thèmes ne charge pas l'application, et localStorage est
+     propre à chaque origine — s'y fier donnait « ? » quand on ouvrait les cartes
+     sur une adresse et la page sur une autre. */
+  var VERSION_PAGE = '148';
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
@@ -300,6 +364,8 @@
     var prog = progression();
     var trouvees = CARTES.filter(function (c) {
       var texte = [c.char, c.pinyin, c.meaning || '', c.meaningEn || ''];
+    if (c.phrase) { texte.push(c.phrase[0], c.phrase[1], c.phrase[2]); }
+    if (c.phraseNote) { texte.push(c.phraseNote); }
       if (c.components) {
         c.components.forEach(function (t) { texte.push(t[0], t[1]); });
       }
@@ -331,14 +397,46 @@
     var prog = progression();
     var sues = suesDans(CARTES, prog);
 
-    document.getElementById('total').textContent =
-      NIVEAU.nom + ' · ' + CARTES.length + ' caractères · ' + sues + ' sue' + (sues > 1 ? 's' : '');
-    document.getElementById('counters').textContent = CARTES.length
-      ? Math.round(sues / CARTES.length * 100) + ' % du jeu maîtrisé'
-      : '';
-    document.getElementById('bar-fill').style.width =
-      CARTES.length ? Math.round(sues / CARTES.length * 100) + '%' : '0%';
+    /* L'en-tête de la page a été retiré — l'écran des cartes n'en a pas non
+       plus. Ces trois repères y vivaient : on les remplit s'ils existent, et on
+       ne casse rien sinon. Le niveau et les comptes se lisent dans la feuille
+       Accueil ; la progression par thème est dans la liste. */
+    var total = document.getElementById('total');
+    if (total) {
+      total.textContent = NIVEAU.nom + ' · ' + CARTES.length + ' caractères · ' +
+        sues + ' sue' + (sues > 1 ? 's' : '');
+    }
+    var compteurs = document.getElementById('counters');
+    if (compteurs) {
+      compteurs.textContent = CARTES.length
+        ? Math.round(sues / CARTES.length * 100) + ' % du jeu maîtrisé'
+        : '';
+    }
+    var barre = document.getElementById('bar-fill');
+    if (barre) {
+      barre.style.width = CARTES.length ? Math.round(sues / CARTES.length * 100) + '%' : '0%';
+    }
+    /* La ligne de version : app.js y dépose son numéro dans localStorage, on le
+       relit ici — une seule source, pas de numéro à recopier d'une page à
+       l'autre. Tant que l'application n'a pas été ouverte, on affiche « ? ». */
+    var ligneVersion = document.getElementById('version');
+    if (ligneVersion) {
+      ligneVersion.textContent = VERSION_PAGE;
+    }
+    var ligneNiveaux = document.getElementById('version-niveaux');
+    if (ligneNiveaux) {
+      ligneNiveaux.textContent = NIVEAUX.filter(function (n) { return n.cle !== 'tout'; })
+        .map(function (n) { return n.nom; }).join(' / ');
+    }
 
+    /* La feuille Accueil : où l'on en est, en une ligne. */
+    var ligneAccueil = document.getElementById('accueil-etat');
+    if (ligneAccueil) {
+      ligneAccueil.textContent = NIVEAU.nom + ' · ' + CARTES.length + ' fiches · ' +
+        sues + ' sue' + (sues > 1 ? 's' : '');
+    }
+    remplirReviser(prog, sues);
+    brancherTheme();
     afficherStats(prog);
     afficherLots(prog);
 
@@ -372,10 +470,300 @@
     PAR_NIVEAU = paquets;
     afficher({ cards: cartesDeLaCollection(NIVEAU.cle) });
   }).catch(function (err) {
-    document.getElementById('total').textContent = 'Erreur';
+    var totalErreur = document.getElementById('total');
+    if (totalErreur) { totalErreur.textContent = 'Erreur'; }
     document.getElementById('themes').innerHTML =
       '<p class="meaning">Impossible de lire les cartes : ' + esc(err.message) +
       '<br><br>Cette page a besoin d\'un serveur local (serve.cmd, ou Ctrl+Shift+B dans VS Code).</p>';
+  });
+})();
+</script>
+
+<script>
+/* Les feuilles de cette page. « Parcourir » et « Niveau » s'ouvrent ici ;
+   « Réviser » et « Réglages » appartiennent à la page des cartes : on y va,
+   parce que la sauvegarde et l'apparence ont besoin de l'état du jeu. */
+(function () {
+  'use strict';
+  var onglets = document.querySelectorAll('[data-onglet]');
+  var feuilles = document.querySelectorAll('[data-feuille]');
+
+  function fermerTout() {
+    for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
+    for (var j = 0; j < onglets.length; j++) {
+      onglets[j].setAttribute('aria-expanded', 'false');
+      onglets[j].classList.remove('actif');
+    }
+  }
+
+  function basculer(cle) {
+    var cible = null;
+    for (var i = 0; i < feuilles.length; i++) {
+      if (feuilles[i].getAttribute('data-feuille') === cle) { cible = feuilles[i]; }
+    }
+    if (!cible) { return; }
+    var etaitOuverte = !cible.hidden;
+    fermerTout();
+    if (etaitOuverte) { return; }
+    cible.hidden = false;
+    for (var j = 0; j < onglets.length; j++) {
+      var actif = (onglets[j].getAttribute('data-onglet') === cle);
+      onglets[j].setAttribute('aria-expanded', actif ? 'true' : 'false');
+      onglets[j].classList.toggle('actif', actif);
+    }
+  }
+
+  /* Accueil est une page, comme sur l'écran des cartes : un second appui la
+     referme. On ferme les feuilles au passage. */
+  function basculerAccueil() {
+    var page = document.getElementById('accueil');
+    if (!page) { return; }
+    var etaitOuverte = !page.hidden;
+    fermerTout();
+    page.hidden = etaitOuverte;
+    for (var i = 0; i < onglets.length; i++) {
+      var actif = (!page.hidden) && (onglets[i].getAttribute('data-onglet') === 'accueil');
+      onglets[i].setAttribute('aria-expanded', actif ? 'true' : 'false');
+      onglets[i].classList.toggle('actif', actif);
+    }
+  }
+
+  /* La recherche : sur le pinyin, sans les tons. Un résultat ouvre la fiche sur
+     la page des cartes (cette page ne charge pas l'application). */
+  function sansTons(texte) {
+    return String(texte || '').toLowerCase()
+      .replace(/[āáǎà]/g, 'a').replace(/[ēéěè]/g, 'e')
+      .replace(/[īíǐì]/g, 'i').replace(/[ōóǒò]/g, 'o')
+      .replace(/[ūúǔùǖǘǚǜü]/g, 'u');
+  }
+
+  function chercher(terme) {
+    var zone = document.getElementById('accueil-resultats');
+    if (!zone) { return; }
+    var q = String(terme || '').trim().toLowerCase();
+    if (!q) { zone.innerHTML = ''; return; }
+    var latin = sansTons(q).replace(/[^a-z0-9]+/g, '');
+    if (!latin) { zone.innerHTML = ''; return; }
+
+    var trouves = [];
+    for (var i = 0; i < CARTES.length && trouves.length < 8; i++) {
+      var c = CARTES[i];
+      if (!rechercheContenu) {
+        /* pinyin seul : égalité exacte, tons ignorés */
+        if (sansTons(c.pinyin) === latin) { trouves.push(c); }
+      } else {
+        /* tout le contenu : sens, mots, composants, phrase et sa note */
+        var morceaux = [sansTons(c.pinyin), c.meaning || '', c.meaningEn || ''];
+        (c.words || []).forEach(function (w) {
+          if (Array.isArray(w)) { morceaux.push(w[0] || '', sansTons(w[1] || ''), w[2] || ''); }
+        });
+        (c.components || []).forEach(function (t) { morceaux.push(String(t[0] || ''), String(t[1] || '')); });
+        if (c.phrase) { morceaux.push(c.phrase[0] || '', sansTons(c.phrase[1] || ''), c.phrase[2] || ''); }
+        if (c.phraseNote) { morceaux.push(c.phraseNote); }
+        var mots = morceaux.join(' ').toLowerCase()
+          .replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ').split(' ');
+        if (mots.some(function (m) { return m.indexOf(latin) === 0; })) { trouves.push(c); }
+      }
+    }
+    if (!trouves.length) {
+      zone.innerHTML = '<p class="feuille-info">Aucun pinyin ne correspond à « ' + esc(q) + ' ».</p>';
+      return;
+    }
+    zone.innerHTML = trouves.map(function (c) {
+      return '<a class="resultat" href="index.html?char=' + encodeURIComponent(c.char) + '">' +
+        '<b>' + esc(c.char) + '</b>' +
+        '<span>' + esc(c.pinyin || '') +
+          (c.meaning ? ' · ' + esc(c.meaning) : '') + '</span>' +
+      '</a>';
+    }).join('');
+  }
+
+  for (var k = 0; k < onglets.length; k++) {
+    onglets[k].addEventListener('click', function () {
+      var cle = this.getAttribute('data-onglet');
+      /* La barre ne navigue jamais : elle ouvre une feuille sur place, ou la
+         page Accueil. Seuls les liens des feuilles changent de page. */
+      if (cle === 'accueil') { basculerAccueil(); return; }
+      basculer(cle);
+    });
+  }
+
+  /* Réviser : l'information du paquet. On la remplit à chaque affichage. */
+  function remplirReviser(prog, sues) {
+    var niveau = document.getElementById('rev-niveau');
+    if (niveau) {
+      niveau.textContent = NIVEAU.nom + ' · ' + CARTES.length + ' fiches · ' + sues + ' sue' + (sues > 1 ? 's' : '');
+    }
+    var jour = document.getElementById('rev-jour');
+    if (jour) {
+      var j = null;
+      try { j = JSON.parse(localStorage.getItem('hanzi-jour') || 'null'); } catch (e) { /* privé */ }
+      var vues = j && j.vues ? Object.keys(j.vues).length : 0;
+      jour.textContent = "Aujourd'hui : " + vues + ' carte' + (vues > 1 ? 's' : '') + ' consultée' + (vues > 1 ? 's' : '');
+    }
+    var pos = document.getElementById('rev-position');
+    if (pos) {
+      var s = null;
+      try { s = JSON.parse(localStorage.getItem('hanzi-session') || 'null'); } catch (e) { /* privé */ }
+      pos.textContent = (s && s.niveau === NIVEAU.cle)
+        ? 'Reprise : carte ' + ((s.i || 0) + 1) + ' / ' + (s.n || 0)
+        : 'Aucune reprise en cours';
+    }
+  }
+
+  /* Réglages : le même switch 阴 / 阳 que l'application, sur la même clé. */
+  function brancherTheme() {
+    var bouton = document.getElementById('theme-toggle');
+    var label = document.getElementById('theme-label');
+    if (!bouton) { return; }
+    function peindre() {
+      var clair = document.documentElement.getAttribute('data-theme') === 'clair';
+      bouton.setAttribute('aria-checked', clair ? 'true' : 'false');
+      if (label) { label.textContent = clair ? 'Mode clair' : 'Mode sombre'; }
+    }
+    peindre();
+    bouton.addEventListener('click', function () {
+      var clair = document.documentElement.getAttribute('data-theme') === 'clair';
+      if (clair) {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'clair');
+      }
+      try { localStorage.setItem('hanzi-theme', clair ? 'sombre' : 'clair'); } catch (e) { /* privé */ }
+      peindre();
+    });
+  }
+
+  /* ---------------- Réglages : recherche et progression ---------------- */
+
+  /* Le mode de recherche : la clé est celle de l'application. */
+  var rechercheContenu = false;
+  try { rechercheContenu = localStorage.getItem('hanzi-recherche') === 'contenu'; } catch (e) { /* privé */ }
+
+  function peindreRecherche() {
+    var b = document.getElementById('recherche-contenu');
+    var l = document.getElementById('recherche-label');
+    if (b) { b.setAttribute('aria-checked', rechercheContenu ? 'true' : 'false'); }
+    if (l) { l.textContent = rechercheContenu ? 'Recherche : contenu' : 'Recherche : pinyin'; }
+  }
+
+  function annoncer(message) {
+    var zone = document.getElementById('sauvegarde');
+    if (zone) { zone.textContent = message; }
+  }
+
+  /* Même paquet que l'application : app, version, fiches, progression. */
+  function exporter() {
+    var prog = {};
+    try { prog = JSON.parse(localStorage.getItem('hanzi-cards-v1') || '{}'); } catch (e) { prog = {}; }
+    var n = Object.keys(prog).length;
+    if (!n) { annoncer('Aucune progression à enregistrer pour\'instant.'); return; }
+    var jour = '';
+    try { jour = localStorage.getItem('hanzi-jour') || ''; } catch (e) { jour = ''; }
+    var paquet = {
+      app: 'hanzi-cards',
+      version: 2,
+      exporteLe: jour,
+      fiches: CARTES.length,
+      progression: prog
+    };
+    var blob = new Blob([JSON.stringify(paquet, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'cartes-progression-' + (jour || 'export') + '.json';
+    document.body.appendChild(a);
+    a.click();
+    window.setTimeout(function () {
+      if (a.parentNode) { a.parentNode.removeChild(a); }
+      URL.revokeObjectURL(url);
+    }, 2000);
+    annoncer('Enregistré : ' + n + ' fiche' + (n > 1 ? 's' : '') + '.');
+  }
+
+  function restaurer(fichier) {
+    var lecteur = new FileReader();
+    lecteur.onload = function () {
+      var paquet = null;
+      try { paquet = JSON.parse(lecteur.result); } catch (e) { paquet = null; }
+      var prog = paquet && (paquet.progression || paquet);
+      if (!prog || typeof prog !== 'object' || Array.isArray(prog)) {
+        annoncer('Ce fichier ne contient pas de progression lisible.');
+        return;
+      }
+      var n = Object.keys(prog).length;
+      if (!n) { annoncer('Ce fichier ne contient aucune fiche.'); return; }
+      try { localStorage.setItem('hanzi-cards-v1', JSON.stringify(prog)); } catch (e) {
+        annoncer('Impossible d\'écrire la progression.');
+        return;
+      }
+      annoncer('Restauré : ' + n + ' fiche' + (n > 1 ? 's' : '') + '. Rechargement…');
+      window.setTimeout(function () { window.location.reload(); }, 700);
+    };
+    lecteur.readAsText(fichier);
+  }
+
+  /* Deux appuis : un confirm natif ne s'affiche pas dans une application
+     installée, et la réinitialisation ne ferait rien. */
+  var resetArme = false, resetMinuteur = null;
+  function reinitialiser() {
+    var b = document.getElementById('reset');
+    if (!resetArme) {
+      resetArme = true;
+      if (b) { b.textContent = 'Confirmer'; }
+      annoncer('Appuie encore pour tout effacer.');
+      resetMinuteur = window.setTimeout(function () {
+        resetArme = false;
+        if (b) { b.textContent = 'Réinitialiser'; }
+        annoncer('');
+      }, 4000);
+      return;
+    }
+    window.clearTimeout(resetMinuteur);
+    resetArme = false;
+    if (b) { b.textContent = 'Réinitialiser'; }
+    try {
+      localStorage.removeItem('hanzi-cards-v1');
+      localStorage.removeItem('hanzi-jour');
+      localStorage.removeItem('hanzi-session');
+    } catch (e) { /* privé */ }
+    annoncer('Progression effacée. Rechargement…');
+    window.setTimeout(function () { window.location.reload(); }, 700);
+  }
+
+  (function brancherReglages() {
+    peindreRecherche();
+    var b = document.getElementById('recherche-contenu');
+    if (b) {
+      b.addEventListener('click', function () {
+        rechercheContenu = !rechercheContenu;
+        try { localStorage.setItem('hanzi-recherche', rechercheContenu ? 'contenu' : 'pinyin'); } catch (e) { /* privé */ }
+        peindreRecherche();
+        var champ = document.getElementById('accueil-recherche');
+        if (champ) { chercher(champ.value); }
+      });
+    }
+    var ex = document.getElementById('export');
+    if (ex) { ex.addEventListener('click', exporter); }
+    var im = document.getElementById('import');
+    var fi = document.getElementById('import-file');
+    if (im && fi) {
+      im.addEventListener('click', function () { fi.click(); });
+      fi.addEventListener('change', function () {
+        if (fi.files && fi.files[0]) { restaurer(fi.files[0]); }
+      });
+    }
+    var re = document.getElementById('reset');
+    if (re) { re.addEventListener('click', reinitialiser); }
+  })();
+
+  var champAccueil = document.getElementById('accueil-recherche');
+  if (champAccueil) {
+    champAccueil.addEventListener('input', function () { chercher(champAccueil.value); });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { fermerTout(); }
   });
 })();
 </script>

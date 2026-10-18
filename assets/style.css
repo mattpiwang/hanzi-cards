@@ -77,6 +77,12 @@
    Filet de sécurité : sur une fenêtre vraiment basse, on rend le défilement. */
 html, body { height: 100%; overflow: hidden; }
 
+/* La page Thèmes défile : elle n'a pas d'écran de carte à protéger, et son
+   contenu dépasse la hauteur de l'écran. On lui rend donc le défilement dans
+   le corps — la hauteur reste bornée à 100 %, ce qui fait apparaître
+   l'ascenseur DANS le corps, et la barre fixée en bas ne bouge pas. */
+body.page-themes { overflow-y: auto; }
+
 @media (max-height: 430px) {
   html, body { height: auto; overflow: auto; }
 }
@@ -123,37 +129,6 @@ kbd {
   color: var(--dim);
 }
 
-/* ---------- en-tête ---------- */
-
-/* La page des cartes n'a plus de bandeau (il est dans le pied), mais la page Themes en garde un. */
-.top { border-bottom: 1px solid var(--line); padding: 1.1rem 0; }
-
-.top-inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand { display: flex; align-items: center; gap: .85rem; }
-
-.logo {
-  font-family: var(--cjk);
-  font-size: 2rem;
-  line-height: 1;
-  color: var(--accent);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: .3rem .55rem;
-  background: var(--panel);
-}
-
-.brand h1 { margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: -.01em; }
-.sub { margin: .1rem 0 0; color: var(--dim); font-size: .82rem; }
-
-.stats { flex: 1 1 240px; max-width: 340px; }
-
 .bar {
   height: 6px;
   background: var(--panel-2);
@@ -170,7 +145,6 @@ kbd {
 }
 
 .counters { margin: .45rem 0 0; color: var(--dim); font-size: .8rem; font-variant-numeric: tabular-nums; }
-
 
 /* ---------- interrupteur 阴 / 阳 ---------- */
 
@@ -657,15 +631,6 @@ kbd {
 
 /* Le bandeau est passé ici, fusionné avec le pied : plus rien ne surplombe la
    carte, qui occupe le haut de l'écran. */
-.foot {
-  border-top: 1px solid var(--line);
-  padding: .55rem 0 .7rem;
-  margin-top: .6rem;
-}
-
-.foot .top-inner { flex-wrap: wrap; }
-.pos { font-variant-numeric: tabular-nums; }
-
 /* ---------- accessibilité et petits écrans ---------- */
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
@@ -724,7 +689,7 @@ kbd {
 }
 
 /* Les onglets : icône seule, le halo est dessiné par le padding de l'icône */
-.onglets { display: grid; grid-template-columns: repeat(4, 1fr); gap: .1rem; grid-auto-rows: 44px; }
+.onglets { display: grid; grid-template-columns: repeat(5, 1fr); gap: .1rem; grid-auto-rows: 44px; }
 
 .onglet {
   appearance: none;
@@ -782,7 +747,7 @@ kbd {
   border-radius: 18px;
   box-shadow: 0 -10px 34px rgba(0, 0, 0, .55);
   padding: .45rem .5rem .55rem;
-  max-height: min(60vh, 420px);
+  max-height: min(72vh, 560px);   /* trois sections dans Réglages */
   overflow-y: auto;
 }
 .feuille[hidden] { display: none; }
@@ -926,26 +891,128 @@ kbd {
 
 /* La navigation des pages hors carte (theme.html) : les mêmes sections que les
    onglets du bas, en liens simples — une page qui défile n'a pas de barre fixe. */
-.onglets-lies {
+/* La page Thèmes porte la même barre que les cartes, fixée en bas de l'écran :
+   on peut donc naviguer dans l'application depuis n'importe où, sans défiler.
+   Le bas de page est dégagé pour que rien ne passe dessous. */
+.page-themes { padding-bottom: 72px; }
+.page-themes .bas {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;   /* au-dessus de la page d'accueil */
+}
+.page-themes .onglet {
   display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
+  align-items: center;
   justify-content: center;
-  margin-top: 1.4rem;
-  padding: .9rem 1rem calc(1.1rem + env(safe-area-inset-bottom, 0px));
-  border-top: 1px solid rgba(127, 127, 127, .16);
-}
-.onglets-lies a {
-  padding: .45rem .85rem;
-  border-radius: 999px;
-  border: 1px solid rgba(127, 127, 127, .28);
-  color: var(--txt);
   text-decoration: none;
-  font-size: .86rem;
 }
-.onglets-lies a:hover { border-color: var(--accent); }
-.onglets-lies a[aria-current="page"] {
-  border-color: var(--accent);
-  color: var(--accent);
+
+/* Accueil : le champ de recherche et la liste de résultats. La feuille a peu
+   de hauteur libre, donc la liste défile sur place au-delà de trois lignes. */
+.feuille .recherche { margin: 0 0 .4rem; }
+.feuille-resultats { display: flex; flex-direction: column; gap: .15rem; max-height: 34vh; overflow-y: auto; }
+.feuille-resultats:empty { display: none; }
+.feuille .resultat {
+  display: flex;
+  align-items: baseline;
+  gap: .55rem;
+  width: 100%;
+  padding: .5rem .65rem;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--txt);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.feuille .resultat:hover { background: var(--panel-2); }
+.feuille .resultat b { font-size: 1.15rem; line-height: 1; }
+.feuille .resultat span { color: var(--dim); font-size: .82rem; }
+
+/* La feuille Accueil est une page de départ, pas un menu posé sur la carte :
+   tant qu'elle est ouverte, la carte disparaît. La feuille occupe alors le
+   bas de l'écran, et le reste ne montre que le fond de la page. */
+body.page-ouverte main { visibility: hidden; }
+
+/* Accueil est une page, pas une feuille : elle occupe la surface au-dessus de
+   la carte, et la barre reste visible en bas — d'où le dégagement et le
+   z-index, la barre passant au-dessus. */
+.bas { position: relative; z-index: 20; }
+.page {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 1rem calc(76px + env(safe-area-inset-bottom, 0px));
+  background: var(--bg);
+  overflow-y: auto;
+}
+.page[hidden] { display: none; }
+.accueil-titre {
+  margin: 0 0 .3rem;
+  font-size: .8rem;
   font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.page .recherche { margin: 0; }
+.page .feuille-resultats { max-height: none; }
+/* La page « Cartes à revoir » : une grille de mini-cartes. Le caractère en
+   grand, le pinyin coloré par ton, un appui ouvre la fiche. */
+#revoir-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
+  gap: .5rem;
+  max-height: none;
+}
+.mini-carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  aspect-ratio: 3 / 4;
+  padding: .75rem .4rem;
+  border: 1px solid rgba(127, 127, 127, .22);
+  border-radius: 12px;
+  background: var(--panel-2);
+  color: var(--txt);
+  font: inherit;
+  cursor: pointer;
+}
+.mini-carte:hover,
+.mini-carte:focus-visible { border-color: var(--accent); }
+.mc-glyphe { font-size: 2rem; line-height: 1.1; }
+/* La page est une colonne flex : sans ça, la liste des résultats comprime le
+   champ de recherche, et il devient illisible ou insaisissable. Le champ garde
+   sa hauteur, la liste prend le reste. */
+.page .recherche { flex: 0 0 auto; }
+.page .feuille-resultats { flex: 1 1 auto; min-height: 0; }
+/* Le nom de l'application, en tête de la page Accueil : les quatre caractères
+   en style kai, couleur d'accent. C'est du texte vivant, pas une image — il
+   suit donc les deux thèmes, et reste net à toutes les tailles. */
+.accueil-marque {
+  margin: 0 0 .6rem;
+  text-align: center;
+  font-family: "KaiTi", "Kaiti SC", "STKaiti", var(--cjk), serif;
+  font-size: 1.55rem;
+  line-height: 1.15;
+  letter-spacing: .05em;
+  color: var(--accent);
+}
+/* Le libellé du champ de recherche : discret, centré comme le nom. */
+.accueil-label {
+  display: block;
+  margin: 0 0 .1rem;
+  text-align: center;
+  font-size: .76rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--dim);
 }

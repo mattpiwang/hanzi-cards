@@ -46,8 +46,13 @@ $json = & $read 'data\cards-hsk1.json'
 
 # On utilise .Replace() et non -replace : le CSS, le JS et le JSON contiennent
 # des caracteres $, que -replace interpreterait comme des references de regex.
-$html = $html.Replace('<link rel="stylesheet" href="assets/style.css">',
-                      "<style>`r`n$css`r`n</style>")
+# Le lien porte un numero de version (?v=107) : on l'accepte par expression,
+# sinon le CSS n'est plus integre et le fichier hors ligne sort sans style.
+# Regex.Replace interprete les $ de la chaine de remplacement : on les double.
+$style = ("<style>`r`n" + $css + "`r`n</style>")
+$html = [regex]::Replace($html, '<link rel="stylesheet" href="assets/style\.css[^"]*">',
+                         $style.Replace('$', '$$'))
+if ($html -notmatch '<style>') { throw "Le CSS n'a pas pu etre integre : la version hors ligne serait sans style." }
 
 $html = $html.Replace('<script src="assets/app.js"></script>',
                       "<script>window.__CARDS__ = $json;</script>`r`n<script>`r`n$js`r`n</script>")

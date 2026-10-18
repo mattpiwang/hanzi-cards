@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cartes — 汉字</title>
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=107">
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
      un flash clair au chargement quand on a choisi le mode sombre. -->
@@ -55,6 +55,26 @@
 
   <!-- La barre du bas : les informations de la carte, la progression, puis les
        onglets. Chaque onglet ouvre une feuille posée juste au-dessus. -->
+
+
+<!-- L'accueil n'est pas une feuille : c'est une page, posée dans le corps du
+     document, au-dessus de la carte. Seul Accueil fait ça ; Parcourir, Niveau
+     et Réglages restent des feuilles du pied de page. -->
+<div class="page" id="accueil" hidden>
+  <p class="accueil-marque">满脑汉字</p>
+  <label class="accueil-label" for="accueil-recherche">Recherche</label>
+  <input type="search" id="accueil-recherche" class="recherche" placeholder="Caractère, pinyin ou sens…"
+         autocomplete="off" spellcheck="false" aria-label="Rechercher une fiche">
+  <div id="accueil-resultats" class="feuille-resultats"></div>
+</div>
+
+
+<!-- La page des cartes à revoir : une liste de liens vers les fiches dues. -->
+<div class="page" id="revoir" hidden>
+  <p class="accueil-titre">Cartes à revoir</p>
+  <div id="revoir-liste" class="feuille-resultats"></div>
+</div>
+
   <footer class="bas">
     <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
 
@@ -72,9 +92,12 @@
           <rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/>
         </svg>
       </button>
-      <button class="onglet" type="button" data-onglet="progression" aria-expanded="false" aria-label="Progression" title="Progression">
+      <button class="onglet" type="button" data-onglet="accueil" aria-expanded="false" aria-label="Accueil" title="Accueil">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11.5 12 4.5l8 7"/><path d="M6 10.5V20h12v-9.5"/><path d="M10.5 20v-5h3v5"/></svg>
+      </button>
+      <button class="onglet" type="button" data-onglet="niveau" aria-expanded="false" aria-label="Niveau" title="Niveau">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 20h16"/><path d="M7 20v-6"/><path d="M12 20V6"/><path d="M17 20v-9"/>
+          <path d="M12 3.5 3.5 8l8.5 4.5L20.5 8 12 3.5Z"/><path d="m3.5 12.5 8.5 4.5 8.5-4.5"/><path d="m3.5 16.5 8.5 4.5 8.5-4.5"/>
         </svg>
       </button>
       <button class="onglet" type="button" data-onglet="reglages" aria-expanded="false" aria-label="Réglages" title="Réglages">
@@ -91,30 +114,22 @@
       <p class="feuille-info" id="deck-name"></p>
       <p class="feuille-info" id="position"></p>
       <p class="feuille-info" id="aujourdhui"></p>
-      <p class="feuille-jour"><span>Je sais</span><b id="compte-sais">0</b></p>
-      <p class="feuille-jour"><span>À revoir</span><b id="compte-revoir">0</b></p>
-      <button id="shuffle" class="feuille-entree" type="button">Mélanger</button>
+      <p class="feuille-jour"><span>À revoir</span><b id="statut-revoir">0</b></p>
+      <p class="feuille-jour"><span>Je sais</span><b id="statut-sais">0</b></p>
     </div>
 
     <div class="feuille" data-feuille="parcourir" hidden>
       <p class="feuille-titre">Parcourir</p>
       <a href="theme.html">Thèmes de vocabulaire</a>
-      <a href="index.html?review=1">Cartes à revoir</a>
-      <a href="index.html">Toutes les cartes</a>
+      <a href="index.html?review=1" id="lien-revoir">Cartes à revoir</a>
+    </div>
+
+    <div class="feuille" data-feuille="niveau" hidden>
       <p class="feuille-titre">Niveau</p>
       <a href="index.html?niveau=hsk1" data-niveau="hsk1">HSK 1 — 253 fiches</a>
       <a href="index.html?niveau=hsk2" data-niveau="hsk2">HSK 2 — 125 fiches</a>
       <a href="index.html?niveau=hsk3" data-niveau="hsk3">HSK 3 — 284 fiches</a>
       <a href="index.html?niveau=tout" data-niveau="tout">Tous les niveaux — 662 fiches</a>
-    </div>
-
-    <div class="feuille" data-feuille="progression" hidden>
-      <p class="feuille-titre">Progression</p>
-      <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
-      <button id="import" class="feuille-entree" type="button">Restaurer</button>
-      <input type="file" id="import-file" accept="application/json,.json" hidden>
-      <button id="reset" class="feuille-entree" type="button">Réinitialiser</button>
-      <p class="feuille-info" id="sauvegarde"></p>
     </div>
 
     <div class="feuille" data-feuille="reglages" hidden>
@@ -125,6 +140,21 @@
         <span class="sw-yang" aria-hidden="true">阳</span>
         <span class="sw-label" id="theme-label">Mode sombre</span>
       </button>
+
+      <p class="feuille-titre">Recherche</p>
+      <button id="recherche-contenu" class="switch" type="button" role="switch" aria-checked="false">
+        <span class="sw-yin" aria-hidden="true">字</span>
+        <span class="sw-track" aria-hidden="true"><span class="sw-knob"></span></span>
+        <span class="sw-yang" aria-hidden="true">卡</span>
+        <span class="sw-label" id="recherche-label">Recherche : pinyin</span>
+      </button>
+
+      <p class="feuille-titre">Progression</p>
+      <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
+      <button id="import" class="feuille-entree" type="button">Restaurer</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+      <button id="reset" class="feuille-entree" type="button">Réinitialiser</button>
+      <p class="feuille-info" id="sauvegarde"></p>
     </div>
     <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2 / HSK 3</span></p>
   </footer>

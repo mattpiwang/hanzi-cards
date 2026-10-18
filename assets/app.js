@@ -4,7 +4,12 @@
 (function () {
   'use strict';
 
-  var STORE_KEY = 'hanzi-cards-v1';
+  /* Le mode de recherche de la page Accueil : le pinyin seul (par défaut) ou
+   tout le contenu de la fiche (sens, mots d'exemple, composants). */
+var RECHERCHE_KEY = 'hanzi-recherche';
+var rechercheContenu = false;
+
+var STORE_KEY = 'hanzi-cards-v1';
 
   /* Le ton n'est pas stocké dans les données : on le déduit du diacritique du
      pinyin. Une seule table suffit, et elle sert aussi à colorer les exemples. */
@@ -40,9 +45,13 @@
     position: document.getElementById('position'),
     badge: document.getElementById('badge'),
     reset: document.getElementById('reset'),    sauvegarde: document.getElementById('sauvegarde'),
+    rechercheAccueil: document.getElementById('accueil-recherche'),
+    resultatsAccueil: document.getElementById('accueil-resultats'),
+    pageAccueil: document.getElementById('accueil'),
+    pageRevoir: document.getElementById('revoir'),
     aujourdhui: document.getElementById('aujourdhui'),
-    compteSais: document.getElementById('compte-sais'),
-    compteRevoir: document.getElementById('compte-revoir')
+    statutRevoir: document.getElementById('statut-revoir'),
+    statutSais: document.getElementById('statut-sais')
   };
 
   /* ------------------------------------------------------------------ */
@@ -56,6 +65,7 @@
     return 0; // ton neutre
   }
 
+  /* Échappe le HTML. Les données viennent de nos fichiers, mais on ne prend\n     pas de risque avec un caractère saisi par l'utilisateur (la recherche). */
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -81,14 +91,17 @@
   var EF_DEPART = 2.5, EF_MIN = 1.3, EF_MAX = 2.8;
   var MAITRISE = 21;   // au-delà de trois semaines d'intervalle, la carte est sue
 
+  /* Le jour courant, en numéro de jour depuis l'époque : c'est l'unité des\n     échéances (due). */
   function aujourdhui() {
     return new Date().toISOString().slice(0, 10);
   }
 
+  /* Le numéro de jour dans n jours — l'échéance d'une réussite. */
   function dansNJours(n) {
     return new Date(Date.now() + n * JOUR).toISOString().slice(0, 10);
   }
 
+  /* La fiche de progression d'un caractère, créée à sa première lecture. */
   function fiche(char) {
     if (!state.progress[char]) {
       state.progress[char] = { n: 0, ef: EF_DEPART, i: 0, due: aujourdhui(), seen: 0, at: '' };
@@ -96,10 +109,12 @@
     return state.progress[char];
   }
 
+  /* Vrai si l'échéance est arrivée : aujourd'hui ou avant. */
   function estDue(card) {
     return fiche(card.char).due <= aujourdhui();
   }
 
+  /* Vrai si la fiche est maîtrisée : intervalle d'au moins trois semaines. */
   function estMaitrisee(card) {
     return fiche(card.char).i >= MAITRISE;
   }
@@ -143,6 +158,7 @@
      là où on en était, sans avoir à retrouver sa place. */
   var SESSION_KEY = 'hanzi-session';
 
+  /* La session (niveau, paquet, carte) gardée d'un lancement à l'autre. */
   function lireSession() {
     try {
       var s = JSON.parse(localStorage.getItem(SESSION_KEY));
@@ -150,6 +166,7 @@
     } catch (e) { return null; }
   }
 
+  /* On retient la session à chaque rendu : on rouvre là où on s'est arrêté. */
   function retenirSession() {
     var c = current();
     if (!c) { return; }        /* vue vide : on ne mémorise pas de position */
@@ -168,6 +185,7 @@
      ce qui rend les compteurs vivants pendant qu'on révise. */
   var JOUR_KEY = 'hanzi-jour';
 
+  /* Le décompte de la journée (consultées, jugées), remis à zéro chaque matin. */
   function lireJour() {
     try {
       var j = JSON.parse(localStorage.getItem(JOUR_KEY));
@@ -188,6 +206,7 @@
     catch (e) { /* mode privé : les compteurs restent en mémoire */ }
   }
 
+  /* Combien de cartes ont été consultées aujourd'hui. */
   function nbVues() {
     return state.jour ? Object.keys(state.jour.vues).length : 0;
   }
@@ -228,6 +247,24 @@
   }
 
   /* Ce qui est « à revoir » : ce qui est dû aujourd'hui ou en retard. */
+  /* Les trois statuts, qui forment une partition du paquet :
+       à voir (jamais jugée), à revoir (vue, pas assimilée), je sais (assimilée).
+       « Assimilee » = intervalle d'au moins trois semaines (voir MAITRISE). */
+  function statuts() {
+    var aVoir = 0, aRevoir = 0, sais = 0;
+    state.cards.forEach(function (c) {
+      var p = state.progress[c.char];
+      var vue = (p && p.seen) || 0;
+      var juste = (p && p.n) || 0;
+      if (!vue) { aVoir++; }
+      else if (juste) { sais++; }
+      else { aRevoir++; }
+    });
+    return { aVoir: aVoir, aRevoir: aRevoir, sais: sais };
+  }
+
+  /* Combien de fiches sont dues aujourd'hui : c'est l'échéance, pas le
+     statut. Sert au compteur interne, pas à la pastille (voir statuts). */
   function toReviewCount() {
     return state.cards.filter(estDue).length;
   }
@@ -345,6 +382,8 @@
       traitsHTML;
   }
 
+  /* Rendu de la carte courante : les deux faces, la barre, la pastille,
+     la feuille « Cette carte » et le titre du paquet. */
   function render() {
     var c = current();
 
@@ -386,6 +425,8 @@
     retenirSession();
   }
 
+  /* Met à jour la barre, la pastille et la feuille « Cette carte ».
+     Le pourcentage suit les fiches maîtrisées ; la pastille suit « à revoir ». */
   function updateStats() {
     var total = state.cards.length;
     var known = masteredCount();
@@ -393,7 +434,7 @@
        ouvrir la feuille. Elle disparaît quand il n'y a plus rien à revoir. */
     if (el.badge) {
       var dues = toReviewCount();
-      el.badge.textContent = dues;
+      el.badge.textContent = statuts().aRevoir;   // « à revoir » : vue, pas assimilée
       el.badge.hidden = !dues;
     }
     el.bar.style.width = total ? Math.round(known / total * 100) + '%' : '0%';
@@ -404,8 +445,9 @@
       el.aujourdhui.textContent = 'Aujourd\'hui : ' + vues + ' carte' + (vues > 1 ? 's' : '') +
         ' consultée' + (vues > 1 ? 's' : '');
     }
-    if (el.compteSais) { el.compteSais.textContent = state.jour ? state.jour.sais : 0; }
-    if (el.compteRevoir) { el.compteRevoir.textContent = state.jour ? state.jour.revoir : 0; }
+    var trois = statuts();
+    if (el.statutRevoir) { el.statutRevoir.textContent = trois.aRevoir; }
+    if (el.statutSais) { el.statutSais.textContent = trois.sais; }
   }
 
   /* ------------------------------------------------------------------ */
@@ -451,14 +493,6 @@
     return f;
   }
 
-  function shuffle() {
-    for (var i = state.view.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = state.view[i]; state.view[i] = state.view[j]; state.view[j] = tmp;
-    }
-    state.i = 0;
-    render();
-  }
 
   /* Tout remettre a zero : la progression, le decompte du jour, et la
      position retenue. Deux appuis plutot qu'un dialogue natif : dans une
@@ -631,7 +665,12 @@
   var onglets = document.querySelectorAll('[data-onglet]');
   var feuilles = document.querySelectorAll('[data-feuille]');
 
+  /* Referme tout : les deux pages du corps, les feuilles du pied de page,
+     la classe posée sur <body> et l'état des onglets. */
   function fermerFeuilles() {
+    if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+    if (el.pageRevoir) { el.pageRevoir.hidden = true; }
+    if (document.body && document.body.classList) { document.body.classList.remove('page-ouverte'); }
     for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
     for (var j = 0; j < onglets.length; j++) {
       onglets[j].setAttribute('aria-expanded', 'false');
@@ -645,7 +684,34 @@
     if (!ouvert) { fermerFeuilles(); }
   }
 
+  /* Ouvre une feuille du pied de page — ou une page du corps (Accueil,
+     Cartes à revoir), qui a son propre traitement : un second appui referme. */
   function ouvrirFeuille(cle) {
+    /* Accueil et « Cartes à revoir » ne sont pas des feuilles : ce sont des
+       pages posées dans le corps. On les traite ensemble : on referme les
+       feuilles, on prépare le contenu, puis on bascule la page. */
+    if (cle === 'accueil' || cle === 'revoir') {
+      var page = (cle === 'accueil') ? el.pageAccueil : el.pageRevoir;
+      if (!page) { return; }
+      var etaitOuverte = !page.hidden;
+      fermerFeuilles();
+      if (cle === 'revoir') { remplirRevoir(); }
+      page.hidden = etaitOuverte;
+      if (document.body && document.body.classList) {
+        document.body.classList.toggle('page-ouverte', !page.hidden);
+      }
+      /* La page « à revoir » s'atteint depuis Parcourir : c'est lui qu'on allume. */
+      var ongletCle = (cle === 'accueil') ? 'accueil' : 'parcourir';
+      for (var a = 0; a < onglets.length; a++) {
+        var actif = (!page.hidden) && (onglets[a].getAttribute('data-onglet') === ongletCle);
+        onglets[a].setAttribute('aria-expanded', actif ? 'true' : 'false');
+        onglets[a].classList.toggle('actif', actif);
+      }
+      return;
+    }
+    if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+    if (el.pageRevoir) { el.pageRevoir.hidden = true; }
+
     var ouverte = false;
     for (var i = 0; i < feuilles.length; i++) {
       var f = feuilles[i];
@@ -659,6 +725,13 @@
       var actif = ouverte && (o.getAttribute('data-onglet') === cle);
       o.setAttribute('aria-expanded', actif ? 'true' : 'false');
       o.classList.toggle('actif', actif);
+    }
+
+    /* Accueil n'est pas un menu posé sur la carte : c'est une page de départ.
+       On masque donc la carte tant qu'elle est ouverte (le style s'en charge),
+       et le glissement ne reçoit plus rien, un élément invisible étant inerte. */
+    if (document.body && document.body.classList) {
+      document.body.classList.toggle('page-ouverte', ouverte && cle === 'accueil');
     }
   }
 
@@ -797,6 +870,10 @@
       if (!confirm('Remplacer ta progression actuelle par celle de ce fichier (' + n + ' fiches) ?')) { return; }
       state.progress = prog;
       migrerProgression();   // au cas où la sauvegarde vient d'une ancienne version
+
+  /* Le numéro de version, laissé à la page Thèmes : elle n'a pas
+     app.js sous la main, et un numéro recopié finirait par mentir. */
+  try { localStorage.setItem('hanzi-version', VERSION); } catch (e) { /* navigation privée */ }
       save();
       render();
       updateStats();
@@ -993,7 +1070,210 @@
     });
   }
 
-  depuisLeMenu('shuffle', shuffle);
+/* ------------------------------------------------------------------ */
+/*  Accueil : la recherche                                            */
+/* ------------------------------------------------------------------ */
+
+/* Ramène le pinyin à des lettres nues : « yī » devient « yi », pour qu'on
+   puisse chercher sans taper les tons. */
+function sansTons(texte) {
+  return String(texte || '').toLowerCase()
+    .replace(/[āáǎà]/g, 'a').replace(/[ēéěè]/g, 'e')
+    .replace(/[īíǐì]/g, 'i').replace(/[ōóǒò]/g, 'o')
+    .replace(/[ūúǔùǖǘǚǜü]/g, 'u');
+}
+
+/* Cherche dans le paquet affiché. En mode « pinyin » (par défaut), on ne
+   compare que le pinyin de la carte, sans les tons : « yi » ramène les cartes
+   dont le pinyin EST yi, pas celles qui contiennent le mot. En mode
+   « contenu », on ajoute les sens, les mots et les composants. Un caractère
+   chinois se cherche tel quel dans les deux modes. Huit résultats au plus ;
+   chaque résultat porte son caractère, retrouvé au clic. */
+function chercherAccueil(terme) {
+  var zone = el.resultatsAccueil;
+  if (!zone) { return; }
+  var q = String(terme || '').trim().toLowerCase();
+  if (!q) { zone.innerHTML = ''; return; }
+
+  var latin = sansTons(q).replace(/[^a-z0-9]+/g, '');
+  var chinois = /[\u4e00-\u9fff]/.test(q);
+
+  var trouves = [];
+  for (var i = 0; i < state.view.length && trouves.length < 8; i++) {
+    var c = state.view[i];
+    /* Un caractère chinois se cherche dans le caractère, et aussi dans la
+       phrase : c'est ainsi qu'un chéngyǔ (4 caractères) se retrouve. */
+    var dedans = chinois && (c.char.indexOf(q) !== -1 ||
+      (c.phrase && String(c.phrase[0] || '').indexOf(q) !== -1));
+
+    if (!dedans && latin) {
+      if (!rechercheContenu) {
+        /* pinyin seul : égalité exacte, tons ignorés */
+        dedans = sansTons(c.pinyin) === latin;
+      } else {
+        var morceaux = [sansTons(c.pinyin), c.meaning || '', c.meaningEn || ''];
+        /* La phrase d'exemple et sa note (celle d'un chéngyǔ) font partie du
+           contenu de la carte : on les cherche aussi. */
+        if (c.phrase) {
+          morceaux.push(c.phrase[0] || '', sansTons(c.phrase[1] || ''), c.phrase[2] || '');
+        }
+        if (c.phraseNote) { morceaux.push(c.phraseNote); }
+        (c.words || []).forEach(function (w) {
+          if (Array.isArray(w)) {
+            morceaux.push(w[0] || '', sansTons(w[1] || ''), w[2] || '');
+          } else if (w && typeof w === 'object') {
+            morceaux.push(w.mot || '', sansTons(w.pinyin || ''), w.sens || '');
+          }
+        });
+        (c.components || []).forEach(function (t) {
+          morceaux.push(String(t[0] || ''), String(t[1] || ''));
+        });
+        var mots = morceaux.join(' ').toLowerCase()
+          .replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ')
+          .split(' ');
+        dedans = mots.some(function (m) { return m.indexOf(latin) === 0; });
+      }
+    }
+    if (dedans) { trouves.push(i); }
+  }
+
+  if (!trouves.length) {
+    zone.innerHTML = '<p class="feuille-info">Rien trouvé pour « ' + esc(q) + ' ».</p>';
+    return;
+  }
+  zone.innerHTML = trouves.map(function (i) {
+    var c = state.view[i];
+    return '<button class="resultat" type="button" data-char="' + esc(c.char) + '">' +
+      '<b>' + esc(c.char) + '</b>' +
+      '<span>' + esc(c.pinyin || '') +
+        (c.meaning ? ' · ' + esc(c.meaning) : '') + '</span>' +
+    '</button>';
+  }).join('');
+}
+
+function brancherRechercheAccueil() {
+  if (el.rechercheAccueil) {
+    el.rechercheAccueil.addEventListener('input', function () {
+      chercherAccueil(el.rechercheAccueil.value);
+    });
+  }
+  if (el.resultatsAccueil) {
+    el.resultatsAccueil.addEventListener('click', function (e) {
+      var bouton = e.target && e.target.closest ? e.target.closest('.resultat') : null;
+      if (!bouton) { return; }
+      var cible = bouton.getAttribute('data-char');
+      for (var i = 0; i < state.view.length; i++) {
+        if (state.view[i].char === cible) {
+          state.i = i;
+          render();
+          menuOuvert(false);
+          return;
+        }
+      }
+    });
+  }
+}
+
+  /* La page « Cartes à revoir » : un lien par fiche due, avec son caractère.
+     Le contenu est refait à chaque ouverture, donc il suit la progression. */
+  function remplirRevoir() {
+    var zone = document.getElementById('revoir-liste');
+    if (!zone) { return; }
+    /* Ce que Matt appelle « à revoir » : vue, pas encore assimilée. L'échéance
+       ne décide plus de la présence, elle décide de l'ordre. */
+    var dues = state.cards.filter(function (c) {
+      var p = state.progress[c.char];
+      return p && p.seen && !p.n;
+    }).sort(function (a, b) {
+      return ((state.progress[a.char] || {}).due || 0) - ((state.progress[b.char] || {}).due || 0);
+    });
+    if (!dues.length) {
+      zone.innerHTML = '<p class="feuille-info">Rien à revoir pour l\'instant.</p>';
+      return;
+    }
+    zone.innerHTML = dues.map(function (c) {
+      /* Une grille de mini-cartes : le caractère en grand, le pinyin
+         coloré par ton, et rien d'autre — la fiche s'ouvre au clic. */
+      return '<button class="mini-carte" type="button" data-char="' + esc(c.char) + '"' +
+        ' aria-label="' + esc(c.char + ' ' + (c.pinyin || '')) + '">' +
+        '<span class="mc-glyphe">' + esc(c.char) + '</span>' +
+      '</button>';
+    }).join('');
+  }
+
+  /* « Cartes à revoir » ne fait rien tant que le compteur du jour est à zéro :
+     rien n'a été jugé « à revoir » aujourd'hui, et changer de paquet
+     n'apprendrait rien. Au-dessus de zéro, le lien passe normalement. */
+  function brancherLienRevoir() {
+    var lien = document.getElementById('lien-revoir');
+    if (!lien) { return; }
+    lien.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!statuts().aRevoir) { return; }   /* rien à revoir : le clic ne fait rien */
+      ouvrirFeuille('revoir');
+    });
+    var liste = document.getElementById('revoir-liste');
+    if (liste) {
+      liste.addEventListener('click', function (e) {
+        var bouton = e.target && e.target.closest ? e.target.closest('.mini-carte') : null;
+        if (!bouton) { return; }
+        var cible = bouton.getAttribute('data-char');
+        for (var i = 0; i < state.view.length; i++) {
+          if (state.view[i].char === cible) {
+            state.i = i;
+            render();
+            fermerFeuilles();
+            return;
+          }
+        }
+      });
+    }
+  }
+
+  brancherRechercheAccueil();
+  /* Les pages (Accueil, Cartes à revoir) retiennent leurs clics : sans ça, le
+     gestionnaire du document — qui ne connaît que les feuilles — les prenait
+     pour un clic « ailleurs » et refermait la page. Un clic dans le champ de
+     recherche redevenait donc un retour à la carte, sans qu'on puisse taper. */
+  function brancherPages() {
+    [el.pageAccueil, el.pageRevoir].forEach(function (page) {
+      if (page && page.addEventListener) {
+        page.addEventListener('click', function (e) {
+          if (e.stopPropagation) { e.stopPropagation(); }
+        });
+      }
+    });
+  }
+  brancherLienRevoir();
+  /* Le réglage « chercher dans le contenu » : pinyin seul par défaut. */
+  function brancherReglageRecherche() {
+    var bouton = document.getElementById('recherche-contenu');
+    try { rechercheContenu = localStorage.getItem(RECHERCHE_KEY) === 'contenu'; }
+    catch (e) { /* mode privé */ }
+    var etiquette = document.getElementById('recherche-label');
+    function peindre() {
+      /* On écrit dans le libellé, jamais dans le bouton : il contient les trois
+         spans du switch (字, la piste, 卡) — un textContent les effacerait. */
+      if (bouton) {
+        bouton.setAttribute('aria-checked', rechercheContenu ? 'true' : 'false');
+      }
+      if (etiquette) {
+        etiquette.textContent = rechercheContenu ? 'Recherche : contenu' : 'Recherche : pinyin';
+      }
+    }
+    peindre();
+    if (!bouton) { return; }
+    bouton.addEventListener('click', function () {
+      rechercheContenu = !rechercheContenu;
+      try { localStorage.setItem(RECHERCHE_KEY, rechercheContenu ? 'contenu' : 'pinyin'); }
+      catch (e) { /* mode privé */ }
+      peindre();
+      if (el.rechercheAccueil) { chercherAccueil(el.rechercheAccueil.value); }
+    });
+  }
+
+  brancherPages();
+  brancherReglageRecherche();
   depuisLeMenu('reset', resetProgress, true);
 
   document.addEventListener('keydown', function (e) {
@@ -1027,6 +1307,8 @@
     return p;
   }
 
+  /* Démarrage : lit le paquet, la session et l'adresse, choisit la vue
+     (niveau, thème, révision, fiche) et ouvre l'accueil s'il n'y a rien de précis. */
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -1047,9 +1329,10 @@
     var revision = (p.review === '1') || (!theme && !!(reprise && reprise.review));
     if (!vue && revision) {
       vue = state.cards.filter(estDue);
-      /* Rien de dû : plutôt qu'un écran vide, on ouvre le paquet — sauf si
-         l'adresse demandait explicitement la révision. */
-      if (!vue.length && p.review !== '1') { revision = false; vue = null; }
+      /* Rien de dû : plutôt qu'un écran vide, on ouvre le paquet — y compris
+         quand l'adresse demandait explicitement la révision (?review=1). Une
+         carte due, elle, donne bien ce paquet-là. */
+      if (!vue.length) { revision = false; vue = null; }
     }
     if (!vue) { vue = state.cards.slice(); }
 
@@ -1078,6 +1361,15 @@
        renvoient ici avec la section voulue déjà ouverte, plutôt que de laisser
        l'utilisateur retaper sur un onglet. */
     if (p.ouvrir) { ouvrirFeuille(p.ouvrir); }
+
+    /* L'application ouvre sur l'accueil — à l'ouverture comme à l'actualisation.
+       Sauf si le lien demandait quelque chose de précis : une fiche (?char=),
+       une feuille (?ouvrir=), ou un paquet de cartes (?niveau=, ?review=,
+       ?theme=). Choisir un niveau doit montrer ses cartes, pas l'accueil. */
+    if (!p.char && !p.ouvrir && !p.niveau && !p.review && !p.theme) {
+      ouvrirFeuille('accueil');
+    }
+
   }
 
   /* Échec de chargement : on dit quoi faire, pas seulement que ça a échoué. Le
@@ -1111,7 +1403,7 @@
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '99';
+  var VERSION = '148';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

@@ -126,7 +126,52 @@ unique, qui ne contient que le HSK 1.
 
 ---
 
-## 4. Plus tard
+## 4. Réalisé — le 17/10 (l'application)
+
+### Ce que la révision est devenue
+
+| Priorité | Chantier | Ce qui a été fait |
+|---|---|---|
+| ★★★ | **Reprise de session** | ✅ On rouvre sur sa carte, pas sur la première : niveau, lot et position sont retenus puis restaurés. Un lien explicite gagne toujours ; un thème vide ou une révision sans rien de dû retombe sur le paquet entier. |
+| ★★★ | **Les compteurs du jour** | ✅ « N cartes consultées », « Je sais » et « À revoir », datés, remis à zéro chaque matin, conservés d'un rechargement à l'autre. |
+| ★★ | **On juge au geste** | ✅ Les boutons « Je sais / À revoir » ont quitté la feuille : on glisse (ou on tape 1 / 2 au clavier). Les deux lignes ne sont plus que le tableau de bord du jour. |
+| ★★ | **Réinitialiser, pour de vrai** | ✅ Double appui (« Confirmer ») qui efface progression, décompte du jour et position — puis referme la feuille. Avant : un dialogue natif que les applications installées ignorent, qui ne faisait donc **rien**, sans le moindre signe. |
+| ★★ | **Sauvegarder, visiblement** | ✅ Le lien de téléchargement reste en place jusqu'à la libération de l'URL (retiré trop tôt, certains navigateurs annulent le téléchargement), et un message dit ce qui a été écrit. |
+| ★★★ | **Bug : « À revoir » renvoyait à demain** | ✅ Corrigé. Un échec calculait son échéance comme une réussite : la carte quittait la file du jour, et le compteur baissait au lieu de monter. |
+| ★★★ | **La page Thèmes** | ✅ Même barre de navigation que les cartes, **feuilles qui s'ouvrent sur place**, défilement rendu (la règle `html, body { overflow: hidden }` des cartes la coupait), et thèmes de **tous** les niveaux — les fiches importées n'ont pas de thème de vocabulaire. |
+| ★★ | **Menu réorganisé** | ✅ *Progression* descend dans *Réglages* ; l'onglet devient **Niveau** et reçoit les quatre niveaux. Aucune ligne de JavaScript : la mécanique des feuilles est générique (`data-onglet` ↔ `data-feuille`). |
+| ★★★ | **Un filet : `test-cartes.js`** | ✅ 13 contrôles qui exécutent le vrai `app.js` dans un faux DOM : progression, position, compteurs du jour, réinitialisation, sauvegarde. |
+
+### L'accueil, et l'état de référence
+
+L'onglet **Accueil** n'est plus une feuille : c'est une **page** — une `div#accueil`
+posée dans le corps du document, entre `</main>` et `<footer>` —, avec le champ de
+recherche en tête. **Seul Accueil** est dans ce cas : *Parcourir*, *Niveau* et
+*Réglages* restent des feuilles. La carte est masquée tant que la page est ouverte,
+et l'application démarre sur la carte, **pas** sur Accueil.
+
+La **page Thèmes** a suivi le même chemin : plus d'en-tête, la même barre que les
+cartes (avec sa ligne de version), le défilement rendu, et des feuilles qui
+s'ouvrent sur place.
+
+**État de référence : version 148.** Le harnais a désormais dix-sept contrôles,
+dont quatre qui vérifient la règle d'Accueil. Une copie de cet état est déposée
+hors du dépôt, dans `..\_sauvegardes\cartes-v148\` — utile tant que le travail
+n'est pas commité.
+### La leçon de la soirée
+
+Deux régressions sont passées **inaperçues** ✗ : des éléments retirés d'`index.html`
+alors que le script continuait à les chercher (les écritures sont protégées, donc
+rien ne casse — et rien ne s'affiche), et un onglet qui rechargeait la page au lieu
+d'ouvrir sa feuille. Les deux ont été trouvées en **exécutant**, pas en relisant.
+C'est pour cela que `test-cartes.js` existe : toute modification de l'interface
+devrait le passer au vert avant d'être publiée.
+
+**Version 105**, hors ligne reconstruit.
+
+---
+
+## 5. Plus tard
 
 | Chantier | Pourquoi attendre |
 |---|---|
@@ -135,6 +180,7 @@ unique, qui ne contient que le HSK 1.
 | **Chinois traditionnel** | Champ `traditional` + bouton d'affichage. |
 | **Audio** | Prononciations enregistrées, ou de synthèse. Prévu pour accompagner chaque phrase d'exemple. |
 | **APK** | Via PWABuilder ou Bubblewrap, une fois le contenu étoffé. |
+| **Thèmes pour les niveaux importés** | Les 125 fiches du HSK 2 et les 284 du HSK 3 n'ont pas de thème de vocabulaire — leur seule catégorie est le nom de leur niveau. La page Thèmes ne peut donc lister que ceux du HSK 1. Les classer (Nature, Verbes, Famille…) ouvrirait un vrai parcours par thème sur tous les niveaux. |
 | **Traductions locales (Ollama)** | Mesuré le 16/10, en aveugle sur 50 définitions : un 7 B local (`qwen2.5:7b`) n'en rend que **64 %** au format demandé, et perd le match **21 à 1** (10 égalités) face à Ziya — les seules vraies erreurs étant de son côté. Gardé pour les tâches courtes (`..\ollama-chat\`), **écarté pour le contenu des cartes**. Protocole, tableau A/B et dépouillement : `..\comparaison-ollama\`. |
 
 ### Favoris — demandé le 17/10
@@ -165,7 +211,7 @@ navigation et le même stockage local.
 
 ---
 
-## 5. Architecture — fait : un fichier par niveau
+## 6. Architecture — fait : un fichier par niveau
 
 Tout tenait autrefois dans `data/cards.json` : 302 Ko pour 253 fiches, soit
 environ **1,1 Ko par fiche**. Les six niveaux HSK représenteraient ~2 000 fiches
@@ -193,7 +239,7 @@ suffixe qui manquait au HSK 1 jusqu'au 15/10.
 
 ---
 
-## 6. Empaquetage APK (plus tard)
+## 7. Empaquetage APK (plus tard)
 
 - **[PWABuilder](https://www.pwabuilder.com)** (en ligne) ou **Bubblewrap** (Node + JDK) produisent un `.apk` signé depuis la PWA publiée.
 - Déjà en place : GitHub Pages en HTTPS, `manifest.json` complet, icônes 192/512, `display: standalone`.
@@ -201,7 +247,7 @@ suffixe qui manquait au HSK 1 jusqu'au 15/10.
 
 ---
 
-## 7. À trancher à la prochaine révision
+## 8. À trancher à la prochaine révision
 
 > Note laissée par Matt le 13/10, après l'épuration de l'écran.
 
