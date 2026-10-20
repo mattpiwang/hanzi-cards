@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cartes — 汉字</title>
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
-<link rel="stylesheet" href="assets/style.css?v=107">
+<link rel="stylesheet" href="assets/style.css?v=187">
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
      un flash clair au chargement quand on a choisi le mode sombre. -->
@@ -62,10 +62,31 @@
      et Réglages restent des feuilles du pied de page. -->
 <div class="page" id="accueil" hidden>
   <p class="accueil-marque">满脑汉字</p>
+
+  <!-- Les quatre niveaux, comme sur la page Thèmes, mais ici : au-dessus du
+       champ de recherche. Les liens restent relatifs et pointent sur
+       l'application (elle comprend ?niveau=). -->
+  <nav class="niveaux accueil-niveaux" aria-label="Niveau">
+    <button type="button" data-niveau="hsk1">HSK 1</button>
+    <button type="button" data-niveau="hsk2">HSK 2</button>
+    <button type="button" data-niveau="hsk3">HSK 3</button>
+    <button type="button" data-niveau="tout">Tous les niveaux</button>
+  </nav>
+
+  <div class="accueil-champ">
   <label class="accueil-label" for="accueil-recherche">Recherche</label>
   <input type="search" id="accueil-recherche" class="recherche" placeholder="Caractère, pinyin ou sens…"
          autocomplete="off" spellcheck="false" aria-label="Rechercher une fiche">
   <div id="accueil-resultats" class="feuille-resultats"></div>
+  </div>
+
+  <!-- « Où j'en suis » : le résumé du jour et la prévision des sept prochains
+       jours, sur les trois niveaux réunis. -->
+  <section class="bloc">
+    <h2 class="bloc-titre">Où j'en suis</h2>
+    <p class="resume" id="accueil-resume">chargement…</p>
+    <div class="prevision" id="accueil-prevision"></div>
+  </section>
 </div>
 
 
@@ -159,6 +180,6 @@
     <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2 / HSK 3</span></p>
   </footer>
 
-<script src="assets/app.js"></script>
+<script src="assets/app.js?v=187"></script>
 </body>
 </html>

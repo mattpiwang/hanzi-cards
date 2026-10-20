@@ -54,7 +54,10 @@ $html = [regex]::Replace($html, '<link rel="stylesheet" href="assets/style\.css[
                          $style.Replace('$', '$$'))
 if ($html -notmatch '<style>') { throw "Le CSS n'a pas pu etre integre : la version hors ligne serait sans style." }
 
-$html = $html.Replace('<script src="assets/app.js"></script>',
+# Le lien porte ?v=N : on accepte le numero, sinon le remplacement echouerait
+# en silence et la page hors ligne n'aurait plus son script.
+$scriptBalise = [regex]::Match($html, '<script src="assets/app\.js(\?v=\d+)?"></script>').Value
+$html = $html.Replace($scriptBalise,
                       "<script>window.__CARDS__ = $json;</script>`r`n<script>`r`n$js`r`n</script>")
 
 # Le manifeste et le service worker n'ont aucun sens dans un fichier local.

@@ -15,6 +15,11 @@ gauche/droite pour juger**, barre du bas à quatre onglets, **page Thèmes**, in
 (mode sombre / papier de riz), navigation au clavier, compteur de progression,
 version « un seul fichier » hors ligne, service worker.
 
+> **Point de départ, 20/10 : v172.** État restauré de la v150 — celui que Matt
+> avait validé — avec les liens versionnés (`?v=`) et le hors ligne réparé.
+> Le tableau de bord dans l'accueil (v151–v171) n'y est pas : il sera repris
+> par-dessus, **en un seul pas vérifié**. Sauvegardes : `_sauvegardes\cartes-v172\`.
+
 ---
 
 ## Décisions prises le 12/10
@@ -154,9 +159,9 @@ La **page Thèmes** a suivi le même chemin : plus d'en-tête, la même barre qu
 cartes (avec sa ligne de version), le défilement rendu, et des feuilles qui
 s'ouvrent sur place.
 
-**État de référence : version 148.** Le harnais a désormais dix-sept contrôles,
+**État de référence : version 149.** Le harnais a désormais dix-sept contrôles,
 dont quatre qui vérifient la règle d'Accueil. Une copie de cet état est déposée
-hors du dépôt, dans `..\_sauvegardes\cartes-v148\` — utile tant que le travail
+hors du dépôt, dans `..\_sauvegardes\cartes-v149\` — utile tant que le travail
 n'est pas commité.
 ### La leçon de la soirée
 

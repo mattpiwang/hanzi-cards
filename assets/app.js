@@ -696,6 +696,7 @@ var STORE_KEY = 'hanzi-cards-v1';
       var etaitOuverte = !page.hidden;
       fermerFeuilles();
       if (cle === 'revoir') { remplirRevoir(); }
+      if (cle === 'accueil') { chargerAccueil(); }
       page.hidden = etaitOuverte;
       if (document.body && document.body.classList) {
         document.body.classList.toggle('page-ouverte', !page.hidden);
@@ -1309,6 +1310,154 @@ function brancherRechercheAccueil() {
 
   /* Démarrage : lit le paquet, la session et l'adresse, choisit la vue
      (niveau, thème, révision, fiche) et ouvre l'accueil s'il n'y a rien de précis. */
+  /* ---------------- « Où j'en suis » (accueil) ---------------- */
+
+  /* Les trois paquets sont chargés ensemble, à la première ouverture de la
+     page Accueil : ils servent à compter, pas à réviser. La révision garde le
+     paquet courant de state.cards. */
+  var accueilFait = false;
+  var accueilCartes = null;
+
+  function etatAccueil(c, prog) {
+    var p = prog && prog[c.char];
+    return {
+      sue: !!(p && p.n > 0),
+      due: (p && p.due) || '',
+      aRevoir: !p || !p.due || p.due <= aujourdhui()
+    };
+  }
+
+  function suesAccueil(lot, prog) {
+    return lot.filter(function (c) { return etatAccueil(c, prog).sue; }).length;
+  }
+
+  /* Sept prochains jours. Fonction pure : elle ne touche pas au document. */
+  function courtJour(date) {
+    try { return date.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric' }); }
+    catch (e) { return date.toISOString().slice(5, 10); }
+  }
+
+  function previsionAccueil(prog, cartes, depart) {
+    var base = (depart === undefined) ? Date.now() : depart;
+    var jours = [];
+    for (var d = 0; d < 7; d++) {
+      var date = new Date(base + d * JOUR);
+      jours.push({
+        cle: date.toISOString().slice(0, 10),
+        nom: d === 0 ? "aujourd'hui" : courtJour(date),
+        n: 0
+      });
+    }
+    cartes.forEach(function (c) {
+      var etat = etatAccueil(c, prog);
+      var due = etat.aRevoir ? jours[0].cle : (etat.due || jours[0].cle);
+      if (due <= jours[0].cle) { jours[0].n++; return; }
+      var cible = jours.filter(function (j) { return j.cle === due; })[0];
+      if (cible) { cible.n++; }
+    });
+    return jours;
+  }
+
+  function peindreAccueil() {
+    if (!accueilCartes) { return; }
+    try {
+      var prog = state.progress || {};
+
+      var zoneResume = document.getElementById('accueil-resume');
+      if (zoneResume) {
+        var aRevoir = accueilCartes.filter(function (c) { return etatAccueil(c, prog).aRevoir; }).length;
+        var sues = suesAccueil(accueilCartes, prog);
+        var pct = accueilCartes.length ? Math.round(sues / accueilCartes.length * 100) : 0;
+        zoneResume.innerHTML = '<strong>' + aRevoir + '</strong> à revoir aujourd\'hui · ' +
+          '<strong>' + sues + '</strong> sues sur ' + accueilCartes.length +
+          ' (' + pct + ' % du jeu)';
+      }
+
+      var zonePrev = document.getElementById('accueil-prevision');
+      if (zonePrev) {
+        var jours = previsionAccueil(prog, accueilCartes);
+        var max = 1;
+        jours.forEach(function (j) { if (j.n > max) { max = j.n; } });
+        zonePrev.innerHTML = jours.map(function (j) {
+          return '<div class="jour">' +
+            '<span class="j-nom">' + esc(j.nom) + '</span>' +
+            '<span class="t-bar"><span style="width:' + Math.round(j.n / max * 100) + '%"></span></span>' +
+            '<span class="j-n">' + j.n + '</span>' +
+          '</div>';
+        }).join('');
+      }
+    } catch (e) {
+      var z = document.getElementById('accueil-resume');
+      if (z) { z.textContent = 'Erreur : ' + (e && e.message); }
+    }
+  }
+
+  function chargerAccueil(force) {
+    if (accueilFait && !force) { return; }
+    accueilFait = true;
+    var niveaux = ['hsk1', 'hsk2', 'hsk3'];
+    try {
+      Promise.all(niveaux.map(function (n) {
+        return fetch('data/cards-' + n + '.json', { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) { return (d && d.cards) || []; })
+          .catch(function () { return []; });
+      })).then(function (paquets) {
+        accueilCartes = [];
+        paquets.forEach(function (x) { accueilCartes = accueilCartes.concat(x); });
+        peindreAccueil();
+      }).catch(function (err) {
+        var z = document.getElementById('accueil-resume');
+        if (z) { z.textContent = 'Chargement impossible : ' + (err && err.message); }
+      });
+    } catch (e) {
+      /* pas de fetch (vieux navigateur) : la page reste telle quelle */
+    }
+  }
+
+  /* Les pastilles de niveau de l'accueil : elles CHARGENT le paquet choisi sans
+     quitter la page. Aucun lien ne s'ouvre, aucune feuille ne s'affiche — on
+     reste sur l'accueil, seule la révision change de paquet. */
+  function brancherNiveauxAccueil() {
+    var liens = document.querySelectorAll('.accueil-niveaux button');
+    for (var i = 0; i < liens.length; i++) {
+      liens[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var cle = this.getAttribute('data-niveau') || '';
+        var choix = null;
+        for (var j = 0; j < NIVEAUX.length; j++) {
+          if (NIVEAUX[j].cle === cle) { choix = NIVEAUX[j]; }
+        }
+        if (!choix) { return; }
+        try { localStorage.setItem('hanzi-niveau', choix.cle); } catch (err) { /* privé */ }
+        marquerNiveau(choix.cle);
+        var zone = document.getElementById('accueil-resume');
+        if (zone) { zone.textContent = 'chargement…'; }
+        chargerCollection(choix).then(function (data) {
+          start(data);
+          /* start() remet la vue sur la carte : on rétablit l'accueil, qui doit
+             rester affiché et allumé. On ne le BASCULE pas (un appui le
+             fermerait s'il était déjà ouvert) : on le pose ouvert, point. */
+          if (el.pageAccueil) {
+            el.pageAccueil.hidden = false;
+            if (document.body && document.body.classList) {
+              document.body.classList.add('page-ouverte');
+            }
+            var onglets2 = document.querySelectorAll('[data-onglet]');
+            for (var a = 0; a < onglets2.length; a++) {
+              var actif = onglets2[a].getAttribute('data-onglet') === 'accueil';
+              onglets2[a].setAttribute('aria-expanded', actif ? 'true' : 'false');
+              onglets2[a].classList.toggle('actif', actif);
+            }
+          }
+          chargerAccueil(true);   /* relit les paquets pour le résumé */
+        }).catch(function (err) {
+          if (zone) { zone.textContent = 'Chargement impossible : ' + (err && err.message); }
+        });
+      });
+    }
+  }
+
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -1403,7 +1552,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '148';
+  var VERSION = '187';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -1475,6 +1624,7 @@ function brancherRechercheAccueil() {
   }
 
   afficherVersion();
+  brancherNiveauxAccueil();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);

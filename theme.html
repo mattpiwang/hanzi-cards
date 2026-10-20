@@ -38,12 +38,6 @@
        ce qui revient dans les jours qui viennent.</p>
   </div>
 
-  <nav class="niveaux" aria-label="Niveau">
-    <a href="theme.html?niveau=hsk1" data-niveau="hsk1">HSK 1</a>
-    <a href="theme.html?niveau=hsk2" data-niveau="hsk2">HSK 2</a>
-    <a href="theme.html?niveau=hsk3" data-niveau="hsk3">HSK 3</a>
-    <a href="theme.html?niveau=tout" data-niveau="tout">Tous les niveaux</a>
-  </nav>
 
   <section class="bloc">
     <h2 class="bloc-titre">Où j'en suis</h2>
@@ -66,16 +60,6 @@
   <p><a class="back-link" href="index.html">← Retour aux cartes (tout le jeu)</a></p>
 </main>
 
-<!-- La page d'accueil de la page Themes : le meme nom, le meme champ, mais la
-     recherche porte sur le pinyin de toutes les fiches connues, et un resultat
-     renvoie vers la fiche sur la page des cartes. -->
-<div class="page" id="accueil" hidden>
-  <p class="accueil-marque">满脑汉字</p>
-  <label class="accueil-label" for="accueil-recherche">Recherche</label>
-  <input type="search" id="accueil-recherche" class="recherche" placeholder="Pinyin d'un caractère…"
-         autocomplete="off" spellcheck="false" aria-label="Rechercher une fiche">
-  <div id="accueil-resultats" class="feuille-resultats"></div>
-</div>
 
 <footer class="bas">
   <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
@@ -164,7 +148,7 @@
      livraison : la page Thèmes ne charge pas l'application, et localStorage est
      propre à chaque origine — s'y fier donnait « ? » quand on ouvrait les cartes
      sur une adresse et la page sur une autre. */
-  var VERSION_PAGE = '148';
+  var VERSION_PAGE = '150';
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
@@ -437,7 +421,9 @@
     }
     remplirReviser(prog, sues);
     brancherTheme();
-    afficherStats(prog);
+  
+
+  afficherStats(prog);
     afficherLots(prog);
 
     var champ = document.getElementById('recherche');
@@ -476,14 +462,10 @@
       '<p class="meaning">Impossible de lire les cartes : ' + esc(err.message) +
       '<br><br>Cette page a besoin d\'un serveur local (serve.cmd, ou Ctrl+Shift+B dans VS Code).</p>';
   });
-})();
-</script>
-
-<script>
+  /* La suite est dans la même portée : la barre et les pages ont besoin des fonctions définies plus haut. */
 /* Les feuilles de cette page. « Parcourir » et « Niveau » s'ouvrent ici ;
    « Réviser » et « Réglages » appartiennent à la page des cartes : on y va,
    parce que la sauvegarde et l'apparence ont besoin de l'état du jeu. */
-(function () {
   'use strict';
   var onglets = document.querySelectorAll('[data-onglet]');
   var feuilles = document.querySelectorAll('[data-feuille]');
@@ -513,20 +495,6 @@
     }
   }
 
-  /* Accueil est une page, comme sur l'écran des cartes : un second appui la
-     referme. On ferme les feuilles au passage. */
-  function basculerAccueil() {
-    var page = document.getElementById('accueil');
-    if (!page) { return; }
-    var etaitOuverte = !page.hidden;
-    fermerTout();
-    page.hidden = etaitOuverte;
-    for (var i = 0; i < onglets.length; i++) {
-      var actif = (!page.hidden) && (onglets[i].getAttribute('data-onglet') === 'accueil');
-      onglets[i].setAttribute('aria-expanded', actif ? 'true' : 'false');
-      onglets[i].classList.toggle('actif', actif);
-    }
-  }
 
   /* La recherche : sur le pinyin, sans les tons. Un résultat ouvre la fiche sur
      la page des cartes (cette page ne charge pas l'application). */
@@ -537,7 +505,7 @@
       .replace(/[ūúǔùǖǘǚǜü]/g, 'u');
   }
 
-  function chercher(terme) {
+  function chercherPage(terme) {
     var zone = document.getElementById('accueil-resultats');
     if (!zone) { return; }
     var q = String(terme || '').trim().toLowerCase();
@@ -583,7 +551,15 @@
       var cle = this.getAttribute('data-onglet');
       /* La barre ne navigue jamais : elle ouvre une feuille sur place, ou la
          page Accueil. Seuls les liens des feuilles changent de page. */
-      if (cle === 'accueil') { basculerAccueil(); return; }
+      /* Accueil : l'accueil de l'application vit sur l'écran des cartes. Le
+         lien est RELATIF — il suit l'hôte et le port en cours (8083 sur ce
+         poste, 192.168.1.19:8082 depuis le téléphone, le domaine une fois
+         publié). Écrire http://127.0.0.1:8083 en dur ne marcherait que sur ce
+         PC, dans ce navigateur, à ce port. */
+      if (cle === 'accueil') {
+        window.location.href = 'index.html?ouvrir=accueil';
+        return;
+      }
       basculer(cle);
     });
   }
@@ -740,7 +716,7 @@
         try { localStorage.setItem('hanzi-recherche', rechercheContenu ? 'contenu' : 'pinyin'); } catch (e) { /* privé */ }
         peindreRecherche();
         var champ = document.getElementById('accueil-recherche');
-        if (champ) { chercher(champ.value); }
+        if (champ) { chercherPage(champ.value); }
       });
     }
     var ex = document.getElementById('export');
@@ -759,12 +735,14 @@
 
   var champAccueil = document.getElementById('accueil-recherche');
   if (champAccueil) {
-    champAccueil.addEventListener('input', function () { chercher(champAccueil.value); });
+    champAccueil.addEventListener('input', function () { chercherPage(champAccueil.value); });
   }
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') { fermerTout(); }
   });
+
+
 })();
 </script>
 </body>
