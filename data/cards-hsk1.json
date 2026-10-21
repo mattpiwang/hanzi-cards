@@ -13,7 +13,7 @@
       "char": "一",
       "pinyin": "yī",
       "meaning": "un",
-      "category": "Nombres",
+      "category": "Nombres & mesure",
       "components": [
         [
           "一",
@@ -48,7 +48,7 @@
       "char": "二",
       "pinyin": "èr",
       "meaning": "deux",
-      "category": "Nombres",
+      "category": "Nombres & mesure",
       "components": [
         [
           "二",
@@ -83,7 +83,7 @@
       "char": "三",
       "pinyin": "sān",
       "meaning": "trois",
-      "category": "Nombres",
+      "category": "Nombres & mesure",
       "components": [
         [
           "三",
@@ -117,7 +117,7 @@
       "char": "日",
       "pinyin": "rì",
       "meaning": "soleil, jour",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "日",
@@ -151,7 +151,7 @@
       "char": "月",
       "pinyin": "yuè",
       "meaning": "lune, mois",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "月",
@@ -186,7 +186,7 @@
       "char": "山",
       "pinyin": "shān",
       "meaning": "montagne",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "山",
@@ -220,7 +220,7 @@
       "char": "水",
       "pinyin": "shuǐ",
       "meaning": "eau",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "水",
@@ -254,7 +254,7 @@
       "char": "火",
       "pinyin": "huǒ",
       "meaning": "feu",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "火",
@@ -289,7 +289,7 @@
       "char": "木",
       "pinyin": "mù",
       "meaning": "arbre, bois",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "木",
@@ -323,7 +323,7 @@
       "char": "田",
       "pinyin": "tián",
       "meaning": "champ cultivé",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "田",
@@ -357,7 +357,7 @@
       "char": "雨",
       "pinyin": "yǔ",
       "meaning": "pluie",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "雨",
@@ -392,7 +392,7 @@
       "char": "风",
       "pinyin": "fēng",
       "meaning": "vent",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "凡",
@@ -431,7 +431,7 @@
       "char": "电",
       "pinyin": "diàn",
       "meaning": "électricité",
-      "category": "Nature",
+      "category": "Noms",
       "components": [
         [
           "田",
@@ -470,7 +470,7 @@
       "char": "人",
       "pinyin": "rén",
       "meaning": "personne, être humain",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "人",
@@ -505,7 +505,7 @@
       "char": "大",
       "pinyin": "dà",
       "meaning": "grand",
-      "category": "Corps & personnes",
+      "category": "Adjectifs",
       "components": [
         [
           "大",
@@ -539,7 +539,7 @@
       "char": "小",
       "pinyin": "xiǎo",
       "meaning": "petit",
-      "category": "Corps & personnes",
+      "category": "Adjectifs",
       "components": [
         [
           "小",
@@ -573,7 +573,7 @@
       "char": "口",
       "pinyin": "kǒu",
       "meaning": "bouche, ouverture",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "口",
@@ -608,7 +608,7 @@
       "char": "目",
       "pinyin": "mù",
       "meaning": "œil",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "目",
@@ -642,7 +642,7 @@
       "char": "手",
       "pinyin": "shǒu",
       "meaning": "main",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "手",
@@ -676,7 +676,7 @@
       "char": "心",
       "pinyin": "xīn",
       "meaning": "cœur",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "心",
@@ -711,7 +711,7 @@
       "char": "女",
       "pinyin": "nǚ",
       "meaning": "femme, féminin",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "女",
@@ -745,7 +745,7 @@
       "char": "子",
       "pinyin": "zǐ",
       "meaning": "enfant, fils",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "子",
@@ -779,7 +779,7 @@
       "char": "男",
       "pinyin": "nán",
       "meaning": "homme, masculin",
-      "category": "Corps & personnes",
+      "category": "Noms",
       "components": [
         [
           "田",
@@ -819,7 +819,7 @@
       "char": "家",
       "pinyin": "jiā",
       "meaning": "maison, famille",
-      "category": "Famille & maison",
+      "category": "Noms",
       "components": [
         [
           "宀",
@@ -858,7 +858,7 @@
       "char": "安",
       "pinyin": "ān",
       "meaning": "paix, tranquillité",
-      "category": "Famille & maison",
+      "category": "Adjectifs",
       "components": [
         [
           "宀",
@@ -897,7 +897,7 @@
       "char": "好",
       "pinyin": "hǎo",
       "meaning": "bon, bien",
-      "category": "Famille & maison",
+      "category": "Adjectifs",
       "components": [
         [
           "女",
@@ -938,7 +938,7 @@
       "char": "上",
       "pinyin": "shàng",
       "meaning": "dessus, monter",
-      "category": "Position",
+      "category": "Verbes",
       "components": [
         [
           "上",
@@ -972,7 +972,7 @@
       "char": "下",
       "pinyin": "xià",
       "meaning": "dessous, descendre",
-      "category": "Position",
+      "category": "Verbes",
       "components": [
         [
           "下",
@@ -1007,7 +1007,7 @@
       "char": "中",
       "pinyin": "zhōng",
       "meaning": "milieu, centre",
-      "category": "Position",
+      "category": "Noms",
       "components": [
         [
           "中",
@@ -1041,7 +1041,7 @@
       "char": "我",
       "pinyin": "wǒ",
       "meaning": "je, moi",
-      "category": "Pronoms & grammaire",
+      "category": "Pronoms",
       "components": [
         [
           "我",
@@ -1076,7 +1076,7 @@
       "char": "你",
       "pinyin": "nǐ",
       "meaning": "tu, toi",
-      "category": "Pronoms & grammaire",
+      "category": "Pronoms",
       "components": [
         [
           "亻",
@@ -1115,7 +1115,7 @@
       "char": "他",
       "pinyin": "tā",
       "meaning": "il, lui",
-      "category": "Pronoms & grammaire",
+      "category": "Pronoms",
       "components": [
         [
           "亻",
@@ -1155,7 +1155,7 @@
       "char": "不",
       "pinyin": "bù",
       "meaning": "ne… pas",
-      "category": "Pronoms & grammaire",
+      "category": "Adverbes",
       "components": [
         [
           "不",
@@ -1190,7 +1190,7 @@
       "char": "是",
       "pinyin": "shì",
       "meaning": "être, c'est bien cela",
-      "category": "Pronoms & grammaire",
+      "category": "Verbes",
       "components": [
         [
           "日",
@@ -1230,7 +1230,7 @@
       "char": "有",
       "pinyin": "yǒu",
       "meaning": "avoir, il y a",
-      "category": "Pronoms & grammaire",
+      "category": "Verbes",
       "components": [
         [
           "又",
@@ -1502,7 +1502,7 @@
       "char": "爱",
       "pinyin": "ài",
       "meaningEn": "to love, to like, to be fond of, love, affection",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "爫",
       "components": [
         [
@@ -1551,7 +1551,7 @@
       "char": "姐",
       "pinyin": "jiě",
       "meaningEn": "elder sister, miss, young lady",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "女",
       "components": [
         [
@@ -1594,7 +1594,7 @@
       "char": "年",
       "pinyin": "nián",
       "meaningEn": "year, anniversary, a person's age",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "干",
       "components": [],
       "etymology": [
@@ -1628,7 +1628,7 @@
       "char": "八",
       "pinyin": "bā",
       "meaningEn": "eight, all around, all sides",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "八",
       "components": [],
       "etymology": [
@@ -1661,7 +1661,7 @@
       "char": "饭",
       "pinyin": "fàn",
       "meaningEn": "meal, food, cooked rice",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "饣",
       "components": [
         [
@@ -1705,7 +1705,7 @@
       "char": "今",
       "pinyin": "jīn",
       "meaningEn": "modern, current, today, now",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "人",
       "components": [],
       "etymology": [
@@ -1738,7 +1738,7 @@
       "char": "您",
       "pinyin": "nín",
       "meaningEn": "honorific for 'you'",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "心",
       "components": [
         [
@@ -1786,7 +1786,7 @@
       "char": "爸",
       "pinyin": "bà",
       "meaningEn": "father, papa",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "父",
       "components": [
         [
@@ -1829,7 +1829,7 @@
       "char": "房",
       "pinyin": "fáng",
       "meaningEn": "building, house, room",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "户",
       "components": [
         [
@@ -1873,7 +1873,7 @@
       "char": "九",
       "pinyin": "jiǔ",
       "meaningEn": "nine",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "乙",
       "components": [
         [
@@ -1926,7 +1926,7 @@
       "char": "牛",
       "pinyin": "niú",
       "meaningEn": "ox, cow, bull",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "牛",
       "components": [],
       "etymology": [
@@ -1960,7 +1960,7 @@
       "char": "吧",
       "pinyin": "bā",
       "meaningEn": "emphatic final particle",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "口",
       "components": [
         [
@@ -2003,7 +2003,7 @@
       "char": "飞",
       "pinyin": "fēi",
       "meaningEn": "to fly, to dart, high",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "飞",
       "components": [],
       "etymology": [
@@ -2037,7 +2037,7 @@
       "char": "觉",
       "pinyin": "jué",
       "meaningEn": "conscious, to nap, to sleep, to wake up",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "见",
       "components": [
         [
@@ -2085,7 +2085,7 @@
       "char": "白",
       "pinyin": "bái",
       "meaningEn": "white, clear, pure, unblemished, bright",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "白",
       "components": [],
       "etymology": [
@@ -2119,7 +2119,7 @@
       "char": "非",
       "pinyin": "fēi",
       "meaningEn": "not, negative, non-, to oppose",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "非",
       "components": [],
       "etymology": [
@@ -2152,7 +2152,7 @@
       "char": "开",
       "pinyin": "kāi",
       "meaningEn": "to open, to start, to initiate, to begin",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "廾",
       "components": [
         [
@@ -2196,7 +2196,7 @@
       "char": "朋",
       "pinyin": "péng",
       "meaningEn": "friend, pal, acquaintance",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "月",
       "components": [
         [
@@ -2234,7 +2234,7 @@
       "char": "百",
       "pinyin": "bǎi",
       "meaningEn": "one hundred, numerous, many",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "白",
       "components": [
         [
@@ -2278,7 +2278,7 @@
       "char": "分",
       "pinyin": "fēn",
       "meaningEn": "to divide, to allocate, fraction, small unit of time or other quantity",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "刀",
       "components": [
         [
@@ -2322,7 +2322,7 @@
       "char": "漂",
       "pinyin": "piào",
       "meaningEn": "to drift, to float, to be tossed about, bleach",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "氵",
       "components": [
         [
@@ -2365,7 +2365,7 @@
       "char": "班",
       "pinyin": "bān",
       "meaningEn": "class, squad, team, work shift",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "王",
       "components": [
         [
@@ -2409,7 +2409,7 @@
       "char": "服",
       "pinyin": "fú",
       "meaningEn": "clothes, to dress, to wear, to take medicine",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "月",
       "components": [
         [
@@ -2457,7 +2457,7 @@
       "char": "可",
       "pinyin": "kě",
       "meaningEn": "may, can, -able, possibly",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -2501,7 +2501,7 @@
       "char": "苹",
       "pinyin": "píng",
       "meaningEn": "apple, duckweed, Artemisia",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "艹",
       "components": [
         [
@@ -2544,7 +2544,7 @@
       "char": "半",
       "pinyin": "bàn",
       "meaningEn": "half, semi-, incomplete",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "十",
       "components": [
         [
@@ -2588,7 +2588,7 @@
       "char": "高",
       "pinyin": "gāo",
       "meaningEn": "tall, lofty, high, elevated",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "高",
       "components": [
         [
@@ -2636,7 +2636,7 @@
       "char": "客",
       "pinyin": "kè",
       "meaningEn": "guest, traveller, customer",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "宀",
       "components": [
         [
@@ -2680,7 +2680,7 @@
       "char": "七",
       "pinyin": "qī",
       "meaningEn": "seven",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "一",
       "components": [
         [
@@ -2733,7 +2733,7 @@
       "char": "包",
       "pinyin": "bāo",
       "meaningEn": "wrap, pack, bundle, package",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "勹",
       "components": [
         [
@@ -2777,7 +2777,7 @@
       "char": "哥",
       "pinyin": "gē",
       "meaningEn": "elder brother",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [
         [
@@ -2815,7 +2815,7 @@
       "char": "课",
       "pinyin": "kè",
       "meaningEn": "subject, lesson, course, classwork",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "讠",
       "components": [
         [
@@ -2858,7 +2858,7 @@
       "char": "期",
       "pinyin": "qī",
       "meaningEn": "a period of time, date, time, phase",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "月",
       "components": [
         [
@@ -2902,7 +2902,7 @@
       "char": "杯",
       "pinyin": "bēi",
       "meaningEn": "cup, glass, measure word for liquids",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -2945,7 +2945,7 @@
       "char": "歌",
       "pinyin": "gē",
       "meaningEn": "song, lyrics, to sing, to chant",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "欠",
       "components": [
         [
@@ -2989,7 +2989,7 @@
       "char": "起",
       "pinyin": "qǐ",
       "meaningEn": "to begin, to initiate, to rise, to stand up",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "走",
       "components": [
         [
@@ -3032,7 +3032,7 @@
       "char": "本",
       "pinyin": "běn",
       "meaningEn": "root, origin, source, basis",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "木",
       "components": [
         [
@@ -3076,7 +3076,7 @@
       "char": "个",
       "pinyin": "gè",
       "meaningEn": "this, that, single, measure word for individuals",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "丨",
       "components": [
         [
@@ -3119,7 +3119,7 @@
       "char": "块",
       "pinyin": "kuài",
       "meaningEn": "piece, lump, chunk, dollar, measure word for currency",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "土",
       "components": [
         [
@@ -3162,7 +3162,7 @@
       "char": "气",
       "pinyin": "qì",
       "meaningEn": "air, gas, steam, vapor, anger",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "气",
       "components": [],
       "etymology": [
@@ -3196,7 +3196,7 @@
       "char": "边",
       "pinyin": "biān",
       "meaningEn": "border, edge, margin, side",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "辶",
       "components": [
         [
@@ -3240,7 +3240,7 @@
       "char": "给",
       "pinyin": "gěi",
       "meaningEn": "to give, to lend, for, by",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "纟",
       "components": [
         [
@@ -3283,7 +3283,7 @@
       "char": "千",
       "pinyin": "qiān",
       "meaningEn": "thousand, many, numerous, very",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "十",
       "components": [
         [
@@ -3327,7 +3327,7 @@
       "char": "便",
       "pinyin": "biàn",
       "meaningEn": "easy, convenient, expedient",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "亻",
       "components": [
         [
@@ -3370,7 +3370,7 @@
       "char": "工",
       "pinyin": "gōng",
       "meaningEn": "labor, work, laborer, worker",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "工",
       "components": [
         [
@@ -3414,7 +3414,7 @@
       "char": "老",
       "pinyin": "lǎo",
       "meaningEn": "old, aged, experienced",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "老",
       "components": [
         [
@@ -3457,7 +3457,7 @@
       "char": "前",
       "pinyin": "qián",
       "meaningEn": "in front, forward, former, preceding",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "刂",
       "components": [
         [
@@ -3506,7 +3506,7 @@
       "char": "病",
       "pinyin": "bìng",
       "meaningEn": "sickness, illness, disease",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "疒",
       "components": [
         [
@@ -3549,7 +3549,7 @@
       "char": "公",
       "pinyin": "gōng",
       "meaningEn": "fair, equitable, public, duke",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "八",
       "components": [
         [
@@ -3593,7 +3593,7 @@
       "char": "了",
       "pinyin": "le",
       "meaningEn": "clear, to finish, particle of completed action",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "亅",
       "components": [
         [
@@ -3637,7 +3637,7 @@
       "char": "钱",
       "pinyin": "qián",
       "meaningEn": "money, currency, coins",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "钅",
       "components": [
         [
@@ -3680,7 +3680,7 @@
       "char": "狗",
       "pinyin": "gǒu",
       "meaningEn": "dog",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "犭",
       "components": [
         [
@@ -3734,7 +3734,7 @@
       "char": "冷",
       "pinyin": "lěng",
       "meaningEn": "cold, cool, lonely",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "冫",
       "components": [
         [
@@ -3777,7 +3777,7 @@
       "char": "请",
       "pinyin": "qǐng",
       "meaningEn": "to ask, to request, to invite, please",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -3820,7 +3820,7 @@
       "char": "菜",
       "pinyin": "cài",
       "meaningEn": "vegetables, order, dish, food",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "艹",
       "components": [
         [
@@ -3864,7 +3864,7 @@
       "char": "关",
       "pinyin": "guān",
       "meaningEn": "frontier pass, to close, to shut, relation",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "丷",
       "components": [
         [
@@ -3908,7 +3908,7 @@
       "char": "里",
       "pinyin": "lǐ",
       "meaningEn": "unit of distance equal to 0.5km, village, lane",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "里",
       "components": [
         [
@@ -3951,7 +3951,7 @@
       "char": "茶",
       "pinyin": "chá",
       "meaningEn": "tea, tea leaves, tea plant",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "艹",
       "components": [
         [
@@ -4000,7 +4000,7 @@
       "char": "贵",
       "pinyin": "guì",
       "meaningEn": "expensive, costly, valuable, precious",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "贝",
       "components": [
         [
@@ -4048,7 +4048,7 @@
       "char": "两",
       "pinyin": "liǎng",
       "meaningEn": "two, both, pair, couple, ounce",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "一",
       "components": [
         [
@@ -4097,7 +4097,7 @@
       "char": "热",
       "pinyin": "rè",
       "meaningEn": "heat, fever, zeal",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "灬",
       "components": [
         [
@@ -4140,7 +4140,7 @@
       "char": "常",
       "pinyin": "cháng",
       "meaningEn": "common, general, normal, always, frequently, regularly",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "巾",
       "components": [
         [
@@ -4184,7 +4184,7 @@
       "char": "国",
       "pinyin": "guó",
       "meaningEn": "country, nation, state, national",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "囗",
       "components": [
         [
@@ -4227,7 +4227,7 @@
       "char": "亮",
       "pinyin": "liàng",
       "meaningEn": "bright, brilliant, radiant, light",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "亠",
       "components": [
         [
@@ -4281,7 +4281,7 @@
       "char": "唱",
       "pinyin": "chàng",
       "meaningEn": "to sing, to chant, to call, ditty, song",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -4324,7 +4324,7 @@
       "char": "果",
       "pinyin": "guǒ",
       "meaningEn": "fruit, nut, result",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -4368,7 +4368,7 @@
       "char": "零",
       "pinyin": "líng",
       "meaningEn": "zero, fragment, fraction",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "雨",
       "components": [
         [
@@ -4411,7 +4411,7 @@
       "char": "认",
       "pinyin": "rèn",
       "meaningEn": "to know, to recognize, to understand",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -4454,7 +4454,7 @@
       "char": "超",
       "pinyin": "chāo",
       "meaningEn": "to jump over, to leap over, to overtake, to surpass",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "走",
       "components": [
         [
@@ -4498,7 +4498,7 @@
       "char": "还",
       "pinyin": "hái",
       "meaningEn": "also, besides, still, yet, to return",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "辶",
       "components": [
         [
@@ -4541,7 +4541,7 @@
       "char": "六",
       "pinyin": "liù",
       "meaningEn": "six",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "八",
       "components": [
         [
@@ -4595,7 +4595,7 @@
       "char": "车",
       "pinyin": "chē",
       "meaningEn": "cart, vehicle, to move in a cart",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "车",
       "components": [
         [
@@ -4638,7 +4638,7 @@
       "char": "孩",
       "pinyin": "hái",
       "meaningEn": "baby, child, children",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "子",
       "components": [
         [
@@ -4681,7 +4681,7 @@
       "char": "妈",
       "pinyin": "mā",
       "meaningEn": "mother, mama",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "女",
       "components": [
         [
@@ -4724,7 +4724,7 @@
       "char": "汉",
       "pinyin": "hàn",
       "meaningEn": "Chinese people, Chinese language",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "氵",
       "components": [
         [
@@ -4768,7 +4768,7 @@
       "char": "吗",
       "pinyin": "ma",
       "meaningEn": "final interrogative particle",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "口",
       "components": [
         [
@@ -4821,7 +4821,7 @@
       "char": "商",
       "pinyin": "shāng",
       "meaningEn": "commerce, business, trade",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [
         [
@@ -4869,7 +4869,7 @@
       "char": "出",
       "pinyin": "chū",
       "meaningEn": "to go out, to send out, stand, produce",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "凵",
       "components": [
         [
@@ -4913,7 +4913,7 @@
       "char": "买",
       "pinyin": "mǎi",
       "meaningEn": "to buy, to purchase, to bribe, to persuade",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "大",
       "components": [
         [
@@ -4956,7 +4956,7 @@
       "char": "穿",
       "pinyin": "chuān",
       "meaningEn": "to drill, to pierce, to dress, to wear",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "穴",
       "components": [
         [
@@ -4999,7 +4999,7 @@
       "char": "号",
       "pinyin": "hào",
       "meaningEn": "mark, sign, symbol, number, to call, to cry, to roar",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [
         [
@@ -5043,7 +5043,7 @@
       "char": "卖",
       "pinyin": "mài",
       "meaningEn": "to sell, to betray, to show off",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "十",
       "components": [
         [
@@ -5086,7 +5086,7 @@
       "char": "少",
       "pinyin": "shǎo",
       "meaningEn": "few, little, less, inadequate",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "小",
       "components": [
         [
@@ -5130,7 +5130,7 @@
       "char": "床",
       "pinyin": "chuáng",
       "meaningEn": "bed, couch, framework, chassis",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "广",
       "components": [
         [
@@ -5173,7 +5173,7 @@
       "char": "喝",
       "pinyin": "hē",
       "meaningEn": "to drink, to shout, to call out",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -5217,7 +5217,7 @@
       "char": "忙",
       "pinyin": "máng",
       "meaningEn": "busy, hurried, pressed for time",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "忄",
       "components": [
         [
@@ -5260,7 +5260,7 @@
       "char": "谁",
       "pinyin": "shuí",
       "meaningEn": "who? whom? whose? anyone?",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "讠",
       "components": [
         [
@@ -5303,7 +5303,7 @@
       "char": "打",
       "pinyin": "dǎ",
       "meaningEn": "to attack, to beat, to hit, to strike",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "扌",
       "components": [
         [
@@ -5347,7 +5347,7 @@
       "char": "和",
       "pinyin": "hé",
       "meaningEn": "harmony, peace, calm, peaceful",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "口",
       "components": [
         [
@@ -5390,7 +5390,7 @@
       "char": "猫",
       "pinyin": "māo",
       "meaningEn": "cat",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "犭",
       "components": [
         [
@@ -5434,7 +5434,7 @@
       "char": "什",
       "pinyin": "shén",
       "meaningEn": "what? mixed, miscellaneous",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "亻",
       "components": [
         [
@@ -5477,7 +5477,7 @@
       "char": "很",
       "pinyin": "hěn",
       "meaningEn": "very, quite, much",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "彳",
       "components": [
         [
@@ -5530,7 +5530,7 @@
       "char": "么",
       "pinyin": "me",
       "meaningEn": "interrogative particle",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "丿",
       "components": [
         [
@@ -5573,7 +5573,7 @@
       "char": "蛋",
       "pinyin": "dàn",
       "meaningEn": "egg",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "虫",
       "components": [
         [
@@ -5617,7 +5617,7 @@
       "char": "后",
       "pinyin": "hòu",
       "meaningEn": "after, behind, rear, descendants",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [],
       "etymology": [
@@ -5650,7 +5650,7 @@
       "char": "没",
       "pinyin": "méi",
       "meaningEn": "not, none, gone, to bury, to sink, to drown",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "氵",
       "components": [
         [
@@ -5693,7 +5693,7 @@
       "char": "师",
       "pinyin": "shī",
       "meaningEn": "teacher, professional, master",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "巾",
       "components": [
         [
@@ -5737,7 +5737,7 @@
       "char": "到",
       "pinyin": "dào",
       "meaningEn": "to go to, to arrive",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "刂",
       "components": [
         [
@@ -5780,7 +5780,7 @@
       "char": "候",
       "pinyin": "hòu",
       "meaningEn": "to wait, to expect, to visit, to greet",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "亻",
       "components": [
         [
@@ -5823,7 +5823,7 @@
       "char": "妹",
       "pinyin": "mèi",
       "meaningEn": "younger sister",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "女",
       "components": [
         [
@@ -5866,7 +5866,7 @@
       "char": "十",
       "pinyin": "shí",
       "meaningEn": "ten, tenth, complete, perfect",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "十",
       "components": [
         [
@@ -5910,7 +5910,7 @@
       "char": "道",
       "pinyin": "dào",
       "meaningEn": "method, way, path, road",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "辶",
       "components": [
         [
@@ -5953,7 +5953,7 @@
       "char": "话",
       "pinyin": "huà",
       "meaningEn": "talk, speech, language, dialect",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "讠",
       "components": [
         [
@@ -5997,7 +5997,7 @@
       "char": "们",
       "pinyin": "men",
       "meaningEn": "plural marker for pronouns and some nouns",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "亻",
       "components": [
         [
@@ -6040,7 +6040,7 @@
       "char": "时",
       "pinyin": "shí",
       "meaningEn": "time, season, period, era, age",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "日",
       "components": [
         [
@@ -6084,7 +6084,7 @@
       "char": "得",
       "pinyin": "dé",
       "meaningEn": "to obtain, to get, to acquire, suitable, proper, ready",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "彳",
       "components": [
         [
@@ -6132,7 +6132,7 @@
       "char": "欢",
       "pinyin": "huān",
       "meaningEn": "happy, glad, joyful",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "欠",
       "components": [
         [
@@ -6176,7 +6176,7 @@
       "char": "米",
       "pinyin": "mǐ",
       "meaningEn": "rice, millet, grain",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "米",
       "components": [
         [
@@ -6219,7 +6219,7 @@
       "char": "识",
       "pinyin": "shí",
       "meaningEn": "knowledge, to understand, to recognize, to know",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -6263,7 +6263,7 @@
       "char": "的",
       "pinyin": "de",
       "meaningEn": "aim, goal, of, possessive particle, -self suffix",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "白",
       "components": [
         [
@@ -6306,7 +6306,7 @@
       "char": "回",
       "pinyin": "huí",
       "meaningEn": "to return, to turn around, a time",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "囗",
       "components": [
         [
@@ -6350,7 +6350,7 @@
       "char": "面",
       "pinyin": "miàn",
       "meaningEn": "face, surface, side, plane, dimension",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "面",
       "components": [],
       "etymology": [
@@ -6383,7 +6383,7 @@
       "char": "士",
       "pinyin": "shì",
       "meaningEn": "scholar, gentleman, soldier",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "士",
       "components": [],
       "etymology": [
@@ -6417,7 +6417,7 @@
       "char": "弟",
       "pinyin": "dì",
       "meaningEn": "young brother, junior",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "弓",
       "components": [],
       "etymology": [
@@ -6450,7 +6450,7 @@
       "char": "会",
       "pinyin": "huì",
       "meaningEn": "to assemble, to meet, meeting, association, group",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "人",
       "components": [
         [
@@ -6494,7 +6494,7 @@
       "char": "名",
       "pinyin": "míng",
       "meaningEn": "name, position, rank, title",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [
         [
@@ -6537,7 +6537,7 @@
       "char": "市",
       "pinyin": "shì",
       "meaningEn": "city, town, market, fair, to trade",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "巾",
       "components": [
         [
@@ -6581,7 +6581,7 @@
       "char": "第",
       "pinyin": "dì",
       "meaningEn": "sequence, number, grade, degree, particle prefacing an ordinal",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "⺮",
       "components": [
         [
@@ -6624,7 +6624,7 @@
       "char": "明",
       "pinyin": "míng",
       "meaningEn": "bright, clear, to explain, to understand, to shed light",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "日",
       "components": [
         [
@@ -6668,7 +6668,7 @@
       "char": "事",
       "pinyin": "shì",
       "meaningEn": "affair, matter, business, to serve, accident, incident",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "亅",
       "components": [
         [
@@ -6721,7 +6721,7 @@
       "char": "点",
       "pinyin": "diǎn",
       "meaningEn": "dot, point, speck",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "灬",
       "components": [
         [
@@ -6765,7 +6765,7 @@
       "char": "机",
       "pinyin": "jī",
       "meaningEn": "desk, machine, moment, opportunity",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -6808,7 +6808,7 @@
       "char": "哪",
       "pinyin": "nǎ",
       "meaningEn": "which? where? how?",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "口",
       "components": [
         [
@@ -6851,7 +6851,7 @@
       "char": "视",
       "pinyin": "shì",
       "meaningEn": "to look at, to inspect, to observe, to regard",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "见",
       "components": [
         [
@@ -6895,7 +6895,7 @@
       "char": "鸡",
       "pinyin": "jī",
       "meaningEn": "chicken",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "鸟",
       "components": [
         [
@@ -6938,7 +6938,7 @@
       "char": "那",
       "pinyin": "nà",
       "meaningEn": "that, that one, those",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "阝",
       "components": [],
       "etymology": [
@@ -6971,7 +6971,7 @@
       "char": "东",
       "pinyin": "dōng",
       "meaningEn": "east, eastern, eastward",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "一",
       "components": [
         [
@@ -7015,7 +7015,7 @@
       "char": "几",
       "pinyin": "jǐ",
       "meaningEn": "small table, how many, a few, some",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "几",
       "components": [
         [
@@ -7059,7 +7059,7 @@
       "char": "奶",
       "pinyin": "nǎi",
       "meaningEn": "milk, breasts, nurse, grandmother",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "女",
       "components": [
         [
@@ -7102,7 +7102,7 @@
       "char": "都",
       "pinyin": "dōu",
       "meaningEn": "all, each, entirely, whole, metropolis, capital",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "阝",
       "components": [
         [
@@ -7145,7 +7145,7 @@
       "char": "书",
       "pinyin": "shū",
       "meaningEn": "book, letter, document, writing",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "丨",
       "components": [],
       "etymology": [
@@ -7179,7 +7179,7 @@
       "char": "读",
       "pinyin": "dú",
       "meaningEn": "to study, to learn, to read, to pronounce",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -7222,7 +7222,7 @@
       "char": "间",
       "pinyin": "jiān",
       "meaningEn": "between, among, midpoint, space, place, locality",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "门",
       "components": [
         [
@@ -7276,7 +7276,7 @@
       "char": "脑",
       "pinyin": "nǎo",
       "meaningEn": "brain",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "⺼",
       "components": [
         [
@@ -7324,7 +7324,7 @@
       "char": "对",
       "pinyin": "duì",
       "meaningEn": "correct, right, facing, opposed",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "寸",
       "components": [
         [
@@ -7368,7 +7368,7 @@
       "char": "见",
       "pinyin": "jiàn",
       "meaningEn": "to see, to observe, to meet, to appear",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "见",
       "components": [
         [
@@ -7411,7 +7411,7 @@
       "char": "呢",
       "pinyin": "né",
       "meaningEn": "wool, interrogative or emphatic final particle",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "口",
       "components": [
         [
@@ -7459,7 +7459,7 @@
       "char": "睡",
       "pinyin": "shuì",
       "meaningEn": "to sleep, to doze",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "目",
       "components": [
         [
@@ -7502,7 +7502,7 @@
       "char": "多",
       "pinyin": "duō",
       "meaningEn": "much, many, multi-, more than, over",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "夕",
       "components": [
         [
@@ -7541,7 +7541,7 @@
       "char": "件",
       "pinyin": "jiàn",
       "meaningEn": "item, matter, component, part, measure word for events",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "亻",
       "components": [
         [
@@ -7584,7 +7584,7 @@
       "char": "能",
       "pinyin": "néng",
       "meaningEn": "can, may, capable, full of energy",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "⺼",
       "components": [
         [
@@ -7632,7 +7632,7 @@
       "char": "说",
       "pinyin": "shuō",
       "meaningEn": "to speak, to say, to scold, to upbraid",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -7676,7 +7676,7 @@
       "char": "儿",
       "pinyin": "ér",
       "meaningEn": "son, child",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "儿",
       "components": [
         [
@@ -7719,7 +7719,7 @@
       "char": "叫",
       "pinyin": "jiào",
       "meaningEn": "cry, shout, to call, to greet, to hail",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -7763,7 +7763,7 @@
       "char": "司",
       "pinyin": "sī",
       "meaningEn": "to take charge of, to control, to manage, officer",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "口",
       "components": [],
       "etymology": [
@@ -7796,7 +7796,7 @@
       "char": "四",
       "pinyin": "sì",
       "meaningEn": "four",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "囗",
       "components": [
         [
@@ -7840,7 +7840,7 @@
       "char": "西",
       "pinyin": "xī",
       "meaningEn": "west, western, westward",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "西",
       "components": [
         [
@@ -7883,7 +7883,7 @@
       "char": "样",
       "pinyin": "yàng",
       "meaningEn": "form, pattern, shape, style",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -7927,7 +7927,7 @@
       "char": "怎",
       "pinyin": "zěn",
       "meaningEn": "what? why? how?",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "心",
       "components": [
         [
@@ -7975,7 +7975,7 @@
       "char": "岁",
       "pinyin": "suì",
       "meaningEn": "year, years old, age, harvest",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "山",
       "components": [
         [
@@ -8019,7 +8019,7 @@
       "char": "息",
       "pinyin": "xī",
       "meaningEn": "to end, to cease, to put a stop to, pause, breath, rest, news",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "心",
       "components": [
         [
@@ -8062,7 +8062,7 @@
       "char": "要",
       "pinyin": "yào",
       "meaningEn": "essential, necessary, to ask for, to coerce, to demand",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "覀",
       "components": [
         [
@@ -8106,7 +8106,7 @@
       "char": "找",
       "pinyin": "zhǎo",
       "meaningEn": "to search for, to look for, to find, change (as in money)",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "扌",
       "components": [
         [
@@ -8149,7 +8149,7 @@
       "char": "习",
       "pinyin": "xí",
       "meaningEn": "to study, to practice, habit",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "冫",
       "components": [],
       "etymology": [
@@ -8183,7 +8183,7 @@
       "char": "也",
       "pinyin": "yě",
       "meaningEn": "also, too",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "乚",
       "components": [],
       "etymology": [
@@ -8216,7 +8216,7 @@
       "char": "这",
       "pinyin": "zhè",
       "meaningEn": "this, these, such, here",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "辶",
       "components": [
         [
@@ -8259,7 +8259,7 @@
       "char": "它",
       "pinyin": "tā",
       "meaningEn": "it, other",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "宀",
       "components": [
         [
@@ -8302,7 +8302,7 @@
       "char": "喜",
       "pinyin": "xǐ",
       "meaningEn": "to love, to enjoy, to be happy, joyful, glad",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -8346,7 +8346,7 @@
       "char": "真",
       "pinyin": "zhēn",
       "meaningEn": "real, actual, true, genuine",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "目",
       "components": [
         [
@@ -8389,7 +8389,7 @@
       "char": "她",
       "pinyin": "tā",
       "meaningEn": "she, her",
-      "category": "HSK 1",
+      "category": "Pronoms",
       "radical": "女",
       "components": [
         [
@@ -8432,7 +8432,7 @@
       "char": "系",
       "pinyin": "xì",
       "meaningEn": "system, line, link, connection",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "糸",
       "components": [
         [
@@ -8475,7 +8475,7 @@
       "char": "衣",
       "pinyin": "yī",
       "meaningEn": "cloth, clothes, apparel, dress, coat",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "衣",
       "components": [],
       "etymology": [
@@ -8509,7 +8509,7 @@
       "char": "正",
       "pinyin": "zhèng",
       "meaningEn": "straight, right, proper, correct, just, true",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "止",
       "components": [
         [
@@ -8552,7 +8552,7 @@
       "char": "太",
       "pinyin": "tài",
       "meaningEn": "very, too much, big, extreme",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "大",
       "components": [
         [
@@ -8595,7 +8595,7 @@
       "char": "医",
       "pinyin": "yī",
       "meaningEn": "to cure, to heal, to treat, doctor, medicine",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "匸",
       "components": [
         [
@@ -8639,7 +8639,7 @@
       "char": "知",
       "pinyin": "zhī",
       "meaningEn": "to know, to perceive, to comprehend",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "矢",
       "components": [
         [
@@ -8687,7 +8687,7 @@
       "char": "题",
       "pinyin": "tí",
       "meaningEn": "forehead, headline, title, theme",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "页",
       "components": [
         [
@@ -8731,7 +8731,7 @@
       "char": "先",
       "pinyin": "xiān",
       "meaningEn": "first, former, previous",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "儿",
       "components": [],
       "etymology": [
@@ -8764,7 +8764,7 @@
       "char": "宜",
       "pinyin": "yí",
       "meaningEn": "fitting, proper, right, what one should do",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "宀",
       "components": [
         [
@@ -8808,7 +8808,7 @@
       "char": "只",
       "pinyin": "zhī",
       "meaningEn": "only, merely, just",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "口",
       "components": [
         [
@@ -8851,7 +8851,7 @@
       "char": "天",
       "pinyin": "tiān",
       "meaningEn": "sky, heaven, god, celestial",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "大",
       "components": [
         [
@@ -8895,7 +8895,7 @@
       "char": "现",
       "pinyin": "xiàn",
       "meaningEn": "to appear, to manifest, current, now",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "王",
       "components": [
         [
@@ -8938,7 +8938,7 @@
       "char": "以",
       "pinyin": "yǐ",
       "meaningEn": "according to, so as to, because of, then",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "人",
       "components": [],
       "etymology": [
@@ -8972,7 +8972,7 @@
       "char": "条",
       "pinyin": "tiáo",
       "meaningEn": "clause, condition, string, stripe",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "木",
       "components": [
         [
@@ -9015,7 +9015,7 @@
       "char": "想",
       "pinyin": "xiǎng",
       "meaningEn": "to believe, to wish for, to consider, to plan, to think",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "心",
       "components": [
         [
@@ -9059,7 +9059,7 @@
       "char": "椅",
       "pinyin": "yǐ",
       "meaningEn": "chair, seat",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -9102,7 +9102,7 @@
       "char": "钟",
       "pinyin": "zhōng",
       "meaningEn": "clock, bell",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "钅",
       "components": [
         [
@@ -9146,7 +9146,7 @@
       "char": "听",
       "pinyin": "tīng",
       "meaningEn": "to hear, to listen, to understand, to obey",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "口",
       "components": [
         [
@@ -9189,7 +9189,7 @@
       "char": "影",
       "pinyin": "yǐng",
       "meaningEn": "shadow, image, reflection, photograph",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "彡",
       "components": [
         [
@@ -9233,7 +9233,7 @@
       "char": "住",
       "pinyin": "zhù",
       "meaningEn": "to reside, to live at, to dwell, to lodge, to stop",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "亻",
       "components": [
         [
@@ -9276,7 +9276,7 @@
       "char": "同",
       "pinyin": "tóng",
       "meaningEn": "same, similar, together with, alike",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "口",
       "components": [
         [
@@ -9320,7 +9320,7 @@
       "char": "校",
       "pinyin": "xiào",
       "meaningEn": "school, military field officer",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -9363,7 +9363,7 @@
       "char": "友",
       "pinyin": "yǒu",
       "meaningEn": "friend, companion, fraternity",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "又",
       "components": [],
       "etymology": [
@@ -9397,7 +9397,7 @@
       "char": "桌",
       "pinyin": "zhuō",
       "meaningEn": "table, stand, desk, counter",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "木",
       "components": [
         [
@@ -9440,7 +9440,7 @@
       "char": "外",
       "pinyin": "wài",
       "meaningEn": "out, outside, external, foreign, in addition",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "夕",
       "components": [
         [
@@ -9484,7 +9484,7 @@
       "char": "些",
       "pinyin": "xiē",
       "meaningEn": "little, few, rather, somewhat",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "二",
       "components": [
         [
@@ -9527,7 +9527,7 @@
       "char": "玩",
       "pinyin": "wán",
       "meaningEn": "to play with, to joke, to entertain",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "王",
       "components": [
         [
@@ -9570,7 +9570,7 @@
       "char": "写",
       "pinyin": "xiě",
       "meaningEn": "to write, to draw, to sketch, to compose",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "冖",
       "components": [
         [
@@ -9613,7 +9613,7 @@
       "char": "字",
       "pinyin": "zì",
       "meaningEn": "character, letter, symbol, word",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "子",
       "components": [
         [
@@ -9657,7 +9657,7 @@
       "char": "晚",
       "pinyin": "wǎn",
       "meaningEn": "night, evening, late",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "日",
       "components": [
         [
@@ -9700,7 +9700,7 @@
       "char": "谢",
       "pinyin": "xiè",
       "meaningEn": "to thank, to refuse politely",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "讠",
       "components": [
         [
@@ -9744,7 +9744,7 @@
       "char": "语",
       "pinyin": "yǔ",
       "meaningEn": "words, language, saying, expression",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "讠",
       "components": [
         [
@@ -9787,7 +9787,7 @@
       "char": "租",
       "pinyin": "zū",
       "meaningEn": "to rent, to lease, tax, rent",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "禾",
       "components": [
         [
@@ -9830,7 +9830,7 @@
       "char": "喂",
       "pinyin": "wèi",
       "meaningEn": "interjection used to call attention",
-      "category": "HSK 1",
+      "category": "Mots grammaticaux",
       "radical": "口",
       "components": [
         [
@@ -9873,7 +9873,7 @@
       "char": "新",
       "pinyin": "xīn",
       "meaningEn": "new, recent, fresh, modern",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "斤",
       "components": [
         [
@@ -9917,7 +9917,7 @@
       "char": "元",
       "pinyin": "yuán",
       "meaningEn": "first, dollar, origin, head",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "儿",
       "components": [
         [
@@ -9960,7 +9960,7 @@
       "char": "昨",
       "pinyin": "zuó",
       "meaningEn": "yesterday, formerly, in the past",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "日",
       "components": [
         [
@@ -10003,7 +10003,7 @@
       "char": "文",
       "pinyin": "wén",
       "meaningEn": "culture, literature, writing",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "文",
       "components": [
         [
@@ -10047,7 +10047,7 @@
       "char": "星",
       "pinyin": "xīng",
       "meaningEn": "star, planet, a point of light",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "日",
       "components": [
         [
@@ -10090,7 +10090,7 @@
       "char": "院",
       "pinyin": "yuàn",
       "meaningEn": "court, yard, courtyard, school",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "阝",
       "components": [
         [
@@ -10133,7 +10133,7 @@
       "char": "作",
       "pinyin": "zuò",
       "meaningEn": "to make, to write, to compose, to act, to perform",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "亻",
       "components": [
         [
@@ -10177,7 +10177,7 @@
       "char": "问",
       "pinyin": "wèn",
       "meaningEn": "to ask about, to inquire after",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "门",
       "components": [
         [
@@ -10220,7 +10220,7 @@
       "char": "兴",
       "pinyin": "xìng",
       "meaningEn": "to thrive, to prosper, to flourish",
-      "category": "HSK 1",
+      "category": "Adjectifs",
       "radical": "八",
       "components": [
         [
@@ -10269,7 +10269,7 @@
       "char": "坐",
       "pinyin": "zuò",
       "meaningEn": "seat, to sit, to ride, to travel by",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "土",
       "components": [
         [
@@ -10312,7 +10312,7 @@
       "char": "休",
       "pinyin": "xiū",
       "meaningEn": "to rest, to stop, to retire",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "亻",
       "components": [
         [
@@ -10356,7 +10356,7 @@
       "char": "再",
       "pinyin": "zài",
       "meaningEn": "again, twice, re-",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "冂",
       "components": [
         [
@@ -10399,7 +10399,7 @@
       "char": "做",
       "pinyin": "zuò",
       "meaningEn": "to work, to make, to act",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "亻",
       "components": [
         [
@@ -10443,7 +10443,7 @@
       "char": "五",
       "pinyin": "wǔ",
       "meaningEn": "five, surname",
-      "category": "HSK 1",
+      "category": "Nombres & mesure",
       "radical": "二",
       "components": [],
       "etymology": [
@@ -10476,7 +10476,7 @@
       "char": "在",
       "pinyin": "zài",
       "meaningEn": "at, in, on, to exist, used to indicate the present progressive tense",
-      "category": "HSK 1",
+      "category": "Verbes",
       "radical": "土",
       "components": [
         [
@@ -10520,7 +10520,7 @@
       "char": "午",
       "pinyin": "wǔ",
       "meaningEn": "noon, 7th terrestrial branch",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "十",
       "components": [
         [
@@ -10563,7 +10563,7 @@
       "char": "雪",
       "pinyin": "xuě",
       "meaningEn": "snow, wipe away shame, avenge",
-      "category": "HSK 1",
+      "category": "Noms",
       "radical": "雨",
       "components": [
         [
@@ -10607,7 +10607,7 @@
       "char": "早",
       "pinyin": "zǎo",
       "meaningEn": "early, soon, morning",
-      "category": "HSK 1",
+      "category": "Adverbes",
       "radical": "日",
       "components": [
         [

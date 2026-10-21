@@ -689,7 +689,16 @@ kbd {
 }
 
 /* Les onglets : icône seule, le halo est dessiné par le padding de l'icône */
-.onglets { display: grid; grid-template-columns: repeat(5, 1fr); gap: .1rem; grid-auto-rows: 44px; }
+/* Une colonne PAR bouton, quelle que soit leur nombre : `repeat(5, 1fr)` en dur
+   laissait deux colonnes vides à droite depuis la barre à trois onglets, et
+   décalait tout vers la gauche. */
+.onglets {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: .1rem;
+  grid-auto-rows: 44px;
+}
 
 .onglet {
   appearance: none;
@@ -1095,4 +1104,13 @@ body.page-ouverte main { visibility: hidden; }
   color: var(--accent);
   border-color: var(--accent);
   font-weight: 600;
+}
+
+/* Les lignes de thème sont des boutons (aucun lien, donc aucune navigation) :
+   un bouton n'hérite pas de la police ni de l'alignement, on les rétablit. */
+.theme-row {
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }

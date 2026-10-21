@@ -307,10 +307,7 @@
 
   function afficherLots(prog) {
     var html = '';
-    html += ligne('Toutes les cartes', CARTES.length, suesDans(CARTES, prog), LIEN);
   
-    var aRevoir = CARTES.filter(function (c) { return etatDe(c, prog).aRevoir; });
-    html += ligne('À revoir aujourd\'hui', aRevoir.length, null, LIEN + '&review=1');
   
     /* Les thèmes de vocabulaire viennent des fiches écrites à la main : elles
        seules portent un vrai thème (Nature, Nombres…). Les fiches importées

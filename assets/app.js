@@ -1317,6 +1317,10 @@ function brancherRechercheAccueil() {
      paquet courant de state.cards. */
   var accueilFait = false;
   var accueilCartes = null;
+  var accueilPaquets = null;
+  /* Le niveau que les pastilles font regarder au résumé : « tout » au départ. */
+  var accueilNiveau = 'tout';
+  var NOMS_NIVEAUX = { hsk1: 'HSK 1', hsk2: 'HSK 2', hsk3: 'HSK 3' };
 
   function etatAccueil(c, prog) {
     var p = prog && prog[c.char];
@@ -1358,24 +1362,80 @@ function brancherRechercheAccueil() {
     return jours;
   }
 
+  /* Une ligne de thème : nom, compte, et la petite barre. */
+  function ligneAccueil(nom, total, sues, href) {
+    var pct = total ? Math.round(sues / total * 100) : 0;
+    var detail = total + ' caractère' + (total > 1 ? 's' : '');
+    if (sues !== null) { detail += ' · ' + sues + ' sue' + (sues > 1 ? 's' : ''); }
+    var morceaux = String(href).match(/niveau=([^&]+)&theme=(.+)$/);
+    var cleNiv = morceaux ? decodeURIComponent(morceaux[1]) : '';
+    var cleTheme = morceaux ? decodeURIComponent(morceaux[2]) : '';
+    return '<button class="theme-row" type="button" data-niveau="' + esc(cleNiv) + '"' +
+             ' data-theme="' + esc(cleTheme) + '">' +
+      '<span class="t-main">' +
+        '<span class="t-name">' + esc(nom) + '</span>' +
+        '<span class="t-count">' + detail + '</span>' +
+      '</span>' +
+      '<span class="t-bar"><span style="width:' + pct + '%"></span></span>' +
+    '</button>';
+  }
+
+  /* Les thèmes de vocabulaire : ceux des fiches écrites à la main (les fiches
+     importées ont pour catégorie le nom de leur niveau, on les écarte). Deux
+     thèmes trop étroits sont masqués. Chaque ligne charge le paquet du niveau
+     et le thème : le clic recharge, il n'ouvre pas la carte. */
+  function peindreThemesAccueil(prog) {
+    var zone = document.getElementById('accueil-themes');
+    if (!zone || !accueilPaquets) { return; }
+    /* Les classes sont maintenant GLOBALES : une seule ligne par catégorie,
+       qui réunit les fiches de tous les niveaux. On trie par effectif. */
+    var parClasse = {};
+    accueilPaquets.forEach(function (paquet) {
+      (paquet.cards || []).forEach(function (c) {
+        var cat = c.category;
+        if (!cat || /^HSK /.test(cat)) { return; }
+        if (!parClasse[cat]) { parClasse[cat] = []; }
+        parClasse[cat].push(c);
+      });
+    });
+    var classes = Object.keys(parClasse);
+    classes.sort(function (a, b) { return parClasse[b].length - parClasse[a].length; });
+    var html = '';
+    classes.forEach(function (cat) {
+      var lot = parClasse[cat];
+      html += ligneAccueil(cat, lot.length, suesAccueil(lot, prog),
+        'index.html?niveau=tout&theme=' + encodeURIComponent(cat));
+    });
+    zone.innerHTML = html;
+  }
+
   function peindreAccueil() {
     if (!accueilCartes) { return; }
     try {
       var prog = state.progress || {};
 
+      /* Le résumé suit le niveau choisi par les pastilles ; « tout » = les 662. */
+      var lot = accueilCartes;
+      if (accueilNiveau !== 'tout' && accueilPaquets) {
+        for (var k = 0; k < accueilPaquets.length; k++) {
+          if (accueilPaquets[k].cle === accueilNiveau) { lot = accueilPaquets[k].cards; }
+        }
+      }
+      var ouNiveau = accueilNiveau === 'tout' ? '' : ' · ' + (NOMS_NIVEAUX[accueilNiveau] || '');
+
       var zoneResume = document.getElementById('accueil-resume');
       if (zoneResume) {
-        var aRevoir = accueilCartes.filter(function (c) { return etatAccueil(c, prog).aRevoir; }).length;
-        var sues = suesAccueil(accueilCartes, prog);
-        var pct = accueilCartes.length ? Math.round(sues / accueilCartes.length * 100) : 0;
+        var aRevoir = lot.filter(function (c) { return etatAccueil(c, prog).aRevoir; }).length;
+        var sues = suesAccueil(lot, prog);
+        var pct = lot.length ? Math.round(sues / lot.length * 100) : 0;
         zoneResume.innerHTML = '<strong>' + aRevoir + '</strong> à revoir aujourd\'hui · ' +
-          '<strong>' + sues + '</strong> sues sur ' + accueilCartes.length +
-          ' (' + pct + ' % du jeu)';
+          '<strong>' + sues + '</strong> sues sur ' + lot.length +
+          ' (' + pct + ' % du jeu)' + ouNiveau;
       }
 
       var zonePrev = document.getElementById('accueil-prevision');
       if (zonePrev) {
-        var jours = previsionAccueil(prog, accueilCartes);
+        var jours = previsionAccueil(prog, lot);
         var max = 1;
         jours.forEach(function (j) { if (j.n > max) { max = j.n; } });
         zonePrev.innerHTML = jours.map(function (j) {
@@ -1386,6 +1446,7 @@ function brancherRechercheAccueil() {
           '</div>';
         }).join('');
       }
+      peindreThemesAccueil(prog);
     } catch (e) {
       var z = document.getElementById('accueil-resume');
       if (z) { z.textContent = 'Erreur : ' + (e && e.message); }
@@ -1403,6 +1464,9 @@ function brancherRechercheAccueil() {
           .then(function (d) { return (d && d.cards) || []; })
           .catch(function () { return []; });
       })).then(function (paquets) {
+        accueilPaquets = niveaux.map(function (cle, i) {
+          return { cle: cle, nom: NOMS_NIVEAUX[cle] || cle, cards: paquets[i] || [] };
+        });
         accueilCartes = [];
         paquets.forEach(function (x) { accueilCartes = accueilCartes.concat(x); });
         peindreAccueil();
@@ -1418,6 +1482,64 @@ function brancherRechercheAccueil() {
   /* Les pastilles de niveau de l'accueil : elles CHARGENT le paquet choisi sans
      quitter la page. Aucun lien ne s'ouvre, aucune feuille ne s'affiche — on
      reste sur l'accueil, seule la révision change de paquet. */
+  /* L'accueil reste affiché et allumé, quoi qu'ait fait start(). */
+  function garderAccueilOuvert() {
+    if (!el.pageAccueil) { return; }
+    el.pageAccueil.hidden = false;
+    if (document.body && document.body.classList) {
+      document.body.classList.add('page-ouverte');
+    }
+    var onglets2 = document.querySelectorAll('[data-onglet]');
+    for (var a = 0; a < onglets2.length; a++) {
+      var actif = onglets2[a].getAttribute('data-onglet') === 'accueil';
+      onglets2[a].setAttribute('aria-expanded', actif ? 'true' : 'false');
+      onglets2[a].classList.toggle('actif', actif);
+    }
+  }
+
+  /* Les THÈMES : même principe que les niveaux — on charge le paquet du niveau,
+     on applique le thème comme le ferait ?theme=, et on ne quitte pas la page. */
+  function brancherThemesAccueil() {
+    var zone = document.getElementById('accueil-themes');
+    if (!zone) { return; }
+    zone.addEventListener('click', function (e) {
+      var b = e.target;
+      while (b && b !== zone && !(b.className && String(b.className).indexOf('theme-row') !== -1)) {
+        b = b.parentNode;
+      }
+      if (!b || b === zone) { return; }
+      e.preventDefault();
+      var cleNiv = b.getAttribute('data-niveau');
+      var cleTheme = b.getAttribute('data-theme');
+      var choix = null;
+      for (var i = 0; i < NIVEAUX.length; i++) {
+        if (NIVEAUX[i].cle === cleNiv) { choix = NIVEAUX[i]; }
+      }
+      if (!choix || !cleTheme) { return; }
+      try { localStorage.setItem('hanzi-niveau', choix.cle); } catch (err) { /* privé */ }
+      marquerNiveau(choix.cle);
+      var zoneResume = document.getElementById('accueil-resume');
+      if (zoneResume) { zoneResume.textContent = 'chargement…'; }
+      chargerCollection(choix).then(function (data) {
+        start(data);
+        var vue = (data.cards || []).filter(function (c) { return c.category === cleTheme; });
+        if (vue.length) {
+          state.theme = cleTheme;
+          state.reviewMode = false;
+          state.titre = cleTheme + ' · ' + choix.nom;
+          state.view = vue;
+          state.i = 0;
+          render();
+          updateStats();
+        }
+        garderAccueilOuvert();
+        chargerAccueil(true);
+      }).catch(function (err) {
+        if (zoneResume) { zoneResume.textContent = 'Chargement impossible : ' + (err && err.message); }
+      });
+    });
+  }
+
   function brancherNiveauxAccueil() {
     var liens = document.querySelectorAll('.accueil-niveaux button');
     for (var i = 0; i < liens.length; i++) {
@@ -1431,25 +1553,12 @@ function brancherRechercheAccueil() {
         if (!choix) { return; }
         try { localStorage.setItem('hanzi-niveau', choix.cle); } catch (err) { /* privé */ }
         marquerNiveau(choix.cle);
+        accueilNiveau = choix.cle;
         var zone = document.getElementById('accueil-resume');
         if (zone) { zone.textContent = 'chargement…'; }
         chargerCollection(choix).then(function (data) {
           start(data);
-          /* start() remet la vue sur la carte : on rétablit l'accueil, qui doit
-             rester affiché et allumé. On ne le BASCULE pas (un appui le
-             fermerait s'il était déjà ouvert) : on le pose ouvert, point. */
-          if (el.pageAccueil) {
-            el.pageAccueil.hidden = false;
-            if (document.body && document.body.classList) {
-              document.body.classList.add('page-ouverte');
-            }
-            var onglets2 = document.querySelectorAll('[data-onglet]');
-            for (var a = 0; a < onglets2.length; a++) {
-              var actif = onglets2[a].getAttribute('data-onglet') === 'accueil';
-              onglets2[a].setAttribute('aria-expanded', actif ? 'true' : 'false');
-              onglets2[a].classList.toggle('actif', actif);
-            }
-          }
+          garderAccueilOuvert();
           chargerAccueil(true);   /* relit les paquets pour le résumé */
         }).catch(function (err) {
           if (zone) { zone.textContent = 'Chargement impossible : ' + (err && err.message); }
@@ -1552,7 +1661,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '187';
+  var VERSION = '195';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -1625,6 +1734,7 @@ function brancherRechercheAccueil() {
 
   afficherVersion();
   brancherNiveauxAccueil();
+  brancherThemesAccueil();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);
