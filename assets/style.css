@@ -1114,3 +1114,111 @@ body.page-ouverte main { visibility: hidden; }
   text-align: left;
   cursor: pointer;
 }
+
+/* Le tampon de favori remplace l'étoile : pas de pastille, l'image seule. Ces
+   règles viennent après celles de l'étoile et les remplacent. */
+.fav {
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.fav img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity .2s, filter .2s;
+}
+.fav[aria-pressed="false"] img { opacity: .22; filter: grayscale(1); }
+.fav[aria-pressed="false"]:hover img { opacity: .45; }
+.fav[aria-pressed="true"] img { opacity: 1; }
+
+/* La prévision tient en deux lignes : sept colonnes, le jour au-dessus du
+   compte. Ces règles remplacent celles de la version à barres. */
+.prevision {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: .25rem;
+  margin: .35rem 0 .1rem;
+}
+.prevision .jour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+  font-size: .72rem;
+}
+.prevision .j-nom {
+  width: auto;
+  font-size: .62rem;
+  white-space: nowrap;
+}
+.prevision .j-n {
+  width: auto;
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Le bouton « Réviser » de l'accueil, au-dessus des thèmes. */
+.bouton-reviser {
+  flex: 0 0 auto;
+  margin: .2rem 0 .1rem;
+  padding: .7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bouton-reviser:hover { background: var(--panel-2); }
+
+/* La page #liste : un retour, un titre, trois filtres, une grille. */
+.liste-retour {
+  align-self: flex-start;
+  padding: .35rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--dim);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+.liste-titre { margin: .1rem 0 .2rem; font-size: 1.15rem; }
+.filtres { display: flex; gap: .4rem; flex-wrap: wrap; }
+.filtres button {
+  padding: .35rem .8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--dim);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+.filtres button.actif { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.mini-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  gap: .4rem;
+  margin-top: .4rem;
+}
+.mini-carte {
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--txt);
+  font: inherit;
+  cursor: pointer;
+}
+.mini-carte:hover { border-color: var(--accent); }
+.mc-glyphe { font-family: var(--cjk); font-size: 1.6rem; line-height: 1; }

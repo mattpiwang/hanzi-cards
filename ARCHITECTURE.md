@@ -147,3 +147,16 @@ Un caractère chinois se cherche tel quel, dans le caractère comme dans la phra
    et refuse de démarrer ;
 5. **`style.css?v=N`** dans les deux pages : un vieux style en cache ne peut
    plus se mêler à un HTML neuf.
+
+## Deux règles apprises à la dure
+
+> **Toute page ajoutée** (`div.page`) doit poser `stopPropagation` sur son
+> conteneur. Le `document` referme tout sur un clic « ailleurs » : sans ce
+> garde, il referme la page au premier clic, et ses boutons semblent morts.
+
+> **Tout élément cliquable** doit être reconnu par un **attribut** (`data-…`),
+> jamais par sa classe. Une classe peut manquer, ou être partagée par le
+> conteneur (`#liste-filtres.filtres` contient « filtre »).
+
+Ces deux défauts ont coûté trois cycles de mise au point le 21/10 : même
+symptôme trompeur, « le bouton ne répond pas », alors que le câblage est bon.

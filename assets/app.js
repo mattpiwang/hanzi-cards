@@ -51,7 +51,13 @@ var STORE_KEY = 'hanzi-cards-v1';
     pageRevoir: document.getElementById('revoir'),
     aujourdhui: document.getElementById('aujourdhui'),
     statutRevoir: document.getElementById('statut-revoir'),
-    statutSais: document.getElementById('statut-sais')
+    statutSais: document.getElementById('statut-sais'),
+    statutFavoris: document.getElementById('statut-favoris'),
+    pageListe: document.getElementById('liste'),
+    listeTitre: document.getElementById('liste-titre'),
+    listeGrille: document.getElementById('liste-grille'),
+    listeFiltres: document.getElementById('liste-filtres'),
+    boutonReviser: document.getElementById('accueil-reviser')
   };
 
   /* ------------------------------------------------------------------ */
@@ -407,7 +413,7 @@ var STORE_KEY = 'hanzi-cards-v1';
     el.front.textContent = c.char;
     writer = null;          // le dessin précédent disparaît avec le contenu réécrit
     carteDessinee = '';
-    el.back.innerHTML = backHTML(c);
+    el.back.innerHTML = boutonFavori(c) + backHTML(c);
     el.back.scrollTop = 0;
 
     // On repart toujours du recto quand on change de carte.
@@ -448,6 +454,17 @@ var STORE_KEY = 'hanzi-cards-v1';
     var trois = statuts();
     if (el.statutRevoir) { el.statutRevoir.textContent = trois.aRevoir; }
     if (el.statutSais) { el.statutSais.textContent = trois.sais; }
+
+    /* Les favoris : marqués par l'étoile du verso, gardés dans la progression
+       (donc exportés et importés avec elle). */
+    if (el.statutFavoris) {
+      var favs = 0;
+      state.cards.forEach(function (c) {
+        var p = state.progress && state.progress[c.char];
+        if (p && p.fav) { favs++; }
+      });
+      el.statutFavoris.textContent = favs;
+    }
   }
 
   /* ------------------------------------------------------------------ */
@@ -464,7 +481,18 @@ var STORE_KEY = 'hanzi-cards-v1';
     updateStats();
   }
 
+  /* Dernière carte et on avance : on revient d'où l'on vient, plutôt que de
+     reboucler sur la première. */
+  function finDePaquet() {
+    if (origineCarte === 'liste') { ouvrirListe(listeFiltre); }
+    else { ouvrirFeuille('accueil'); }
+  }
+
   function go(delta) {
+    if (delta > 0 && state.view.length && state.i === state.view.length - 1) {
+      finDePaquet();
+      return;
+    }
     if (!state.view.length) { return; }
     // Navigation circulaire : après la dernière, on revient à la première.
     state.i = (state.i + delta + state.view.length) % state.view.length;
@@ -670,6 +698,7 @@ var STORE_KEY = 'hanzi-cards-v1';
   function fermerFeuilles() {
     if (el.pageAccueil) { el.pageAccueil.hidden = true; }
     if (el.pageRevoir) { el.pageRevoir.hidden = true; }
+    if (el.pageListe) { el.pageListe.hidden = true; }
     if (document.body && document.body.classList) { document.body.classList.remove('page-ouverte'); }
     for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
     for (var j = 0; j < onglets.length; j++) {
@@ -1436,12 +1465,16 @@ function brancherRechercheAccueil() {
       var zonePrev = document.getElementById('accueil-prevision');
       if (zonePrev) {
         var jours = previsionAccueil(prog, lot);
+        /* La première colonne dit les cartes VUES aujourd'hui — le même
+           compteur que la feuille Réviser — et non celles qui sont dues. */
+        jours[0].n = nbVues();
         var max = 1;
         jours.forEach(function (j) { if (j.n > max) { max = j.n; } });
+        /* Sept colonnes, deux lignes : le jour au-dessus, le compte en dessous.
+           Plus de barre : c'est elle qui prenait toute la hauteur. */
         zonePrev.innerHTML = jours.map(function (j) {
           return '<div class="jour">' +
             '<span class="j-nom">' + esc(j.nom) + '</span>' +
-            '<span class="t-bar"><span style="width:' + Math.round(j.n / max * 100) + '%"></span></span>' +
             '<span class="j-n">' + j.n + '</span>' +
           '</div>';
         }).join('');
@@ -1567,6 +1600,147 @@ function brancherRechercheAccueil() {
     }
   }
 
+  /* ---------------- Favoris ---------------- */
+
+  /* L'étoile, en haut à gauche du verso. Elle fait partie du HTML du verso :
+     rien à recâbler à chaque rendu. Son état vit dans state.progress, donc il
+     voyage avec l'export / import. */
+  function boutonFavori(c) {
+    var p = state.progress && state.progress[c.char];
+    var actif = !!(p && p.fav);
+    return '<button class="fav" type="button" data-char="' + esc(c.char) + '"' +
+      ' aria-pressed="' + (actif ? 'true' : 'false') + '"' +
+      ' title="' + (actif ? 'Retirer des favoris' : 'Ajouter aux favoris') + '"' +
+      ' aria-label="Favori"><img src="assets/tampon.png" alt=""></button>';
+  }
+
+  /* Un appui sur l'étoile ne retourne pas la carte : on l'intercepte ici, une
+     seule fois, au chargement — pas dans une fonction de rendu. */
+  if (el.back) {
+    el.back.addEventListener('click', function (e) {
+      var cible = e.target;
+      while (cible && cible !== el.back && !(cible.className && String(cible.className).indexOf('fav') !== -1)) {
+        cible = cible.parentNode;
+      }
+      if (!cible || cible === el.back) { return; }
+      e.stopPropagation();
+      var cle = cible.getAttribute('data-char');
+      var p = state.progress[cle] || (state.progress[cle] = {});
+      p.fav = !p.fav;
+      cible.setAttribute('aria-pressed', p.fav ? 'true' : 'false');
+      cible.setAttribute('title', p.fav ? 'Retirer des favoris' : 'Ajouter aux favoris');
+      save();
+      updateStats();
+    });
+  }
+
+  /* ---------------- La page « Réviser » : une grille filtrée ---------------- */
+
+  /* Trois filtres, une grille. Le titre suit le filtre ; un appui sur une fiche
+     l'ouvre et referme la page. */
+  var LISTE_TITRES = { revoir: 'À revoir', favoris: 'Favoris', sais: 'Je sais' };
+  var listeFiltre = 'revoir';
+
+  /* D'où l'on vient quand on ouvre une carte depuis une liste : « liste » ou
+     « accueil ». Sert à revenir à la bonne page en fin de paquet. */
+  var origineCarte = 'accueil';
+
+  function ficheDeListe(c) {
+    var p = state.progress && state.progress[c.char];
+    if (listeFiltre === 'favoris') { return !!(p && p.fav); }
+    var vue = (p && p.seen) || 0;
+    var juste = (p && p.n) || 0;
+    if (listeFiltre === 'sais') { return vue > 0 && juste > 0; }
+    return vue > 0 && !juste;              // « à revoir »
+  }
+
+  function peindreListe() {
+    if (!el.listeGrille) { return; }
+    /* Le titre reste « Révision » : c'est le filtre actif qui dit ce qu'on voit. */
+    if (el.listeTitre) { el.listeTitre.textContent = 'Révision'; }
+    var lot = state.cards.filter(ficheDeListe);
+    if (!lot.length) {
+      el.listeGrille.innerHTML = '<p class="feuille-info">Aucune fiche ici pour l\'instant.</p>';
+    } else {
+      el.listeGrille.innerHTML = lot.map(function (c) {
+        return '<button class="mini-carte" type="button" data-char="' + esc(c.char) + '"' +
+          ' aria-label="' + esc(c.char + ' ' + (c.pinyin || '')) + '">' +
+          '<span class="mc-glyphe">' + esc(c.char) + '</span>' +
+        '</button>';
+      }).join('');
+    }
+    if (el.listeFiltres) {
+      var boutons = el.listeFiltres.querySelectorAll('[data-filtre]');
+      for (var i = 0; i < boutons.length; i++) {
+        boutons[i].classList.toggle('actif', boutons[i].getAttribute('data-filtre') === listeFiltre);
+      }
+    }
+  }
+
+  function ouvrirListe(filtre) {
+    if (!el.pageListe) { return; }
+    listeFiltre = filtre || 'revoir';
+    peindreListe();
+    if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+    el.pageListe.hidden = false;
+    if (document.body && document.body.classList) {
+      document.body.classList.add('page-ouverte');
+    }
+  }
+
+  function fermerListe() {
+    if (!el.pageListe) { return; }
+    el.pageListe.hidden = true;
+    if (el.pageAccueil) { el.pageAccueil.hidden = false; }
+    document.body.classList.add('page-ouverte');
+  }
+
+  /* Le câblage : le bouton d'accueil, le retour, les trois filtres, et le clic
+     sur une mini-carte. Posé une seule fois, au chargement. */
+  /* Le document referme tout sur un clic « ailleurs ». Sans ce garde, un clic
+     sur le retour ou sur un filtre remontait jusqu'à lui, qui fermait la page :
+     les boutons semblaient ne pas répondre. */
+  if (el.pageListe) {
+    el.pageListe.addEventListener('click', function (e) { e.stopPropagation(); });
+  }
+  if (el.boutonReviser) {
+    el.boutonReviser.addEventListener('click', function () { ouvrirListe('revoir'); });
+  }
+  var listeRetour = document.getElementById('liste-retour');
+  if (listeRetour) {
+    listeRetour.addEventListener('click', fermerListe);
+  }
+  if (el.listeFiltres) {
+    el.listeFiltres.addEventListener('click', function (e) {
+      /* On remonte jusqu'au bouton qui porte data-filtre ; les boutons sans
+         classe (« Favoris », « Je sais ») étaient ignorés. */
+      var b = e.target;
+      while (b && b !== el.listeFiltres && !(b.getAttribute && b.getAttribute('data-filtre'))) {
+        b = b.parentNode;
+      }
+      if (!b || b === el.listeFiltres) { return; }
+      listeFiltre = b.getAttribute('data-filtre');
+      peindreListe();
+    });
+  }
+  if (el.listeGrille) {
+    el.listeGrille.addEventListener('click', function (e) {
+      var b = e.target;
+      while (b && b !== el.listeGrille && !(b.className && String(b.className).indexOf('mini-carte') !== -1)) {
+        b = b.parentNode;
+      }
+      if (!b || b === el.listeGrille) { return; }
+      var cle = b.getAttribute('data-char');
+      for (var i = 0; i < state.view.length; i++) {
+        if (state.view[i].char === cle) { state.i = i; break; }
+      }
+      origineCarte = 'liste';
+      el.pageListe.hidden = true;
+      document.body.classList.remove('page-ouverte');
+      render();
+    });
+  }
+
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -1661,7 +1835,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '195';
+  var VERSION = '210';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },

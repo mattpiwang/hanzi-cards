@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cartes — 汉字</title>
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
-<link rel="stylesheet" href="assets/style.css?v=195">
+<link rel="stylesheet" href="assets/style.css?v=210">
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
      un flash clair au chargement quand on a choisi le mode sombre. -->
@@ -90,6 +90,8 @@
 
   <!-- « Réviser par thème » : les thèmes de vocabulaire des trois niveaux, avec
        leur compte et un lien qui charge le paquet correspondant. -->
+  <button class="bouton-reviser" id="accueil-reviser" type="button">Réviser</button>
+
   <section class="bloc">
     <h2 class="bloc-titre">Réviser par thème</h2>
     <nav class="themes" id="accueil-themes" aria-label="Thèmes de vocabulaire"></nav>
@@ -103,7 +105,20 @@
   <div id="revoir-liste" class="feuille-resultats"></div>
 </div>
 
-  <footer class="bas">
+  <!-- La page « Réviser » : une grille de mini-cartes, filtrée par les trois
+     boutons du haut. Le titre suit le filtre. -->
+<div class="page" id="liste" hidden>
+  <button class="liste-retour" id="liste-retour" type="button">← Accueil</button>
+  <h2 class="liste-titre" id="liste-titre">Révision</h2>
+  <div class="filtres" id="liste-filtres">
+    <button type="button" data-filtre="revoir" class="actif">À revoir</button>
+    <button type="button" data-filtre="favoris">Favoris</button>
+    <button type="button" data-filtre="sais">Je sais</button>
+  </div>
+  <div class="mini-grille" id="liste-grille"></div>
+</div>
+
+<footer class="bas">
     <div class="bar" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100"><span id="bar-fill"></span></div>
 
     <nav class="onglets" aria-label="Sections">
@@ -128,11 +143,10 @@
     <!-- Ce que chaque onglet ouvre -->
     <div class="feuille" data-feuille="reviser" hidden>
       <p class="feuille-titre">Cette carte</p>
-      <p class="feuille-info" id="deck-name"></p>
-      <p class="feuille-info" id="position"></p>
       <p class="feuille-info" id="aujourdhui"></p>
       <p class="feuille-jour"><span>À revoir</span><b id="statut-revoir">0</b></p>
       <p class="feuille-jour"><span>Je sais</span><b id="statut-sais">0</b></p>
+      <p class="feuille-jour"><span>Favoris</span><b id="statut-favoris">0</b></p>
     </div>
 
 
@@ -164,6 +178,6 @@
     <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2 / HSK 3</span></p>
   </footer>
 
-<script src="assets/app.js?v=195"></script>
+<script src="assets/app.js?v=210"></script>
 </body>
 </html>
