@@ -19,7 +19,7 @@
    téléphone — l'app restait alors bloquée sur une vieille version, parfois
    pendant des jours, sans aucun moyen simple de la forcer à jour. */
 
-var CACHE = 'hanzi-cards-v210';
+var CACHE = 'hanzi-cards-v234';
 
 /* Tout ce dont l'app a besoin pour démarrer sans réseau.
    Les tracés (data/strokes.json) et la bibliothèque hanzi-writer ne sont PAS
@@ -31,6 +31,7 @@ var ASSETS = [
   './theme.html',
   './assets/style.css',
   './assets/tampon.png',
+  './assets/fond.jpg',
   './assets/app.js',
   './data/cards-hsk1.json',
   './manifest.json',

@@ -1162,33 +1162,8 @@ body.page-ouverte main { visibility: hidden; }
   color: var(--accent);
 }
 
-/* Le bouton « Réviser » de l'accueil, au-dessus des thèmes. */
-.bouton-reviser {
-  flex: 0 0 auto;
-  margin: .2rem 0 .1rem;
-  padding: .7rem 1rem;
-  border: 1px solid var(--accent);
-  border-radius: 14px;
-  background: var(--panel);
-  color: var(--accent);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-.bouton-reviser:hover { background: var(--panel-2); }
 
 /* La page #liste : un retour, un titre, trois filtres, une grille. */
-.liste-retour {
-  align-self: flex-start;
-  padding: .35rem .7rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: none;
-  color: var(--dim);
-  font: inherit;
-  font-size: .82rem;
-  cursor: pointer;
-}
 .liste-titre { margin: .1rem 0 .2rem; font-size: 1.15rem; }
 .filtres { display: flex; gap: .4rem; flex-wrap: wrap; }
 .filtres button {
@@ -1222,3 +1197,49 @@ body.page-ouverte main { visibility: hidden; }
 }
 .mini-carte:hover { border-color: var(--accent); }
 .mc-glyphe { font-family: var(--cjk); font-size: 1.6rem; line-height: 1; }
+
+/* Le fond derrière la carte : au lieu du noir nu, un halo très pâle qui suit
+   la palette (or sur sombre, encre sur clair). Discret : 6 % d'opacité. */
+.stage {
+  border-radius: 22px;
+  background: radial-gradient(115% 85% at 50% 32%,
+              rgba(216, 178, 106, .07) 0%,
+              rgba(216, 178, 106, .03) 45%,
+              transparent 72%);
+}
+[data-theme="clair"] .stage {
+  background: radial-gradient(115% 85% at 50% 32%,
+              rgba(138, 100, 21, .06) 0%,
+              rgba(138, 100, 21, .025) 45%,
+              transparent 72%);
+}
+
+/* Le fond derrière la carte : le motif de vagues, mais très estompé — un voile
+   du fond de l'appli ne laisse passer qu'environ 14 % du dessin. */
+.stage {
+  position: relative;
+  border-radius: 22px;
+  /* chemin relatif à CE fichier : fond.jpg, pas assets/fond.jpg */
+  background: url("fond.jpg") center / 340px auto repeat;
+}
+.stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* Un dégradé vertical, plus clair au centre : le motif respire au milieu
+     de la carte et s'efface vers les bords. */
+  background: linear-gradient(180deg, #0d1216 0%, #141d24 50%, #0d1216 100%);
+  opacity: .78;
+  pointer-events: none;
+}
+[data-theme="clair"] .stage::before {
+  background: linear-gradient(180deg, #f6f1e7 0%, #efe7d7 50%, #f6f1e7 100%);
+  opacity: .82;
+}
+
+/* L'onglet Accueil change d'icône quand il est allumé : la maison dit « aller à
+   l'accueil », les cartes disent « voilà ce qu'on regarde ». */
+.onglet [data-ico="cartes"] { display: none; }
+.onglet.actif [data-ico="maison"] { display: none; }
+.onglet.actif [data-ico="cartes"] { display: block; }

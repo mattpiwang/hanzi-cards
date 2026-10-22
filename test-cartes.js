@@ -279,11 +279,9 @@ const rouverte = appAccueil.accueil.hidden === false;
 
 appAccueil.clicOnglet('reviser');            // un autre onglet la cache
 const cacheeParAutre = appAccueil.accueil.hidden === true;
-const feuilleReviserOuverte = appAccueil.feuilles.some(function (f) {
-  return f.getAttribute('data-feuille') === 'reviser' && f.hidden === false;
-});
+const pageListeOuverte = appAccueil.element('liste').hidden === false;
 console.log('  après un appui sur Réviser : page cachée = ' + cacheeParAutre +
-  ', feuille Réviser ouverte = ' + feuilleReviserOuverte);
+  ', page Révision ouverte = ' + pageListeOuverte);
 
 
 /* ------------------------------------------------------------------ */
@@ -423,7 +421,7 @@ const controles = [
   ['la page Accueil est montrée au démarrage, feuilles fermées', ouvertAuDepart && feuillesFermees],
   ['un appui sur Accueil la referme', refermee],
   ['un second la rouvre', rouverte],
-  ['un autre onglet la cache et ouvre sa feuille', cacheeParAutre && feuilleReviserOuverte],
+  ['un autre onglet la cache et ouvre la page Révision', cacheeParAutre && pageListeOuverte],
   ['?niveau= montre les cartes, pas l\'accueil', accueilFerme],
   // Le harnais ne contient que les fiches du HSK 1 : on ne peut pas y verifier
   // le changement de paquet. Ce qui compte ici, c'est qu'une carte s'affiche.

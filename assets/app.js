@@ -49,6 +49,7 @@ var STORE_KEY = 'hanzi-cards-v1';
     resultatsAccueil: document.getElementById('accueil-resultats'),
     pageAccueil: document.getElementById('accueil'),
     pageRevoir: document.getElementById('revoir'),
+    pageReglages: document.getElementById('reglages'),
     aujourdhui: document.getElementById('aujourdhui'),
     statutRevoir: document.getElementById('statut-revoir'),
     statutSais: document.getElementById('statut-sais'),
@@ -698,6 +699,7 @@ var STORE_KEY = 'hanzi-cards-v1';
   function fermerFeuilles() {
     if (el.pageAccueil) { el.pageAccueil.hidden = true; }
     if (el.pageRevoir) { el.pageRevoir.hidden = true; }
+    if (el.pageReglages) { el.pageReglages.hidden = true; }
     if (el.pageListe) { el.pageListe.hidden = true; }
     if (document.body && document.body.classList) { document.body.classList.remove('page-ouverte'); }
     for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
@@ -716,22 +718,47 @@ var STORE_KEY = 'hanzi-cards-v1';
   /* Ouvre une feuille du pied de page — ou une page du corps (Accueil,
      Cartes à revoir), qui a son propre traitement : un second appui referme. */
   function ouvrirFeuille(cle) {
+    /* L'onglet Réviser de la barre ouvre la PAGE de révision (trois filtres +
+       grille), et non la feuille d'informations. */
+    if (cle === 'reviser') {
+      /* Déjà allumée : on la referme et on revient à la carte. */
+      if (el.pageListe && !el.pageListe.hidden) {
+        el.pageListe.hidden = true;
+        var barre = document.querySelectorAll('[data-onglet]');
+        for (var b = 0; b < barre.length; b++) { barre[b].classList.remove('actif'); }
+        if (document.body && document.body.classList) {
+          document.body.classList.remove('page-ouverte');
+        }
+      } else {
+        ouvrirListe('revoir');
+      }
+      return;
+    }
     /* Accueil et « Cartes à revoir » ne sont pas des feuilles : ce sont des
        pages posées dans le corps. On les traite ensemble : on referme les
        feuilles, on prépare le contenu, puis on bascule la page. */
-    if (cle === 'accueil' || cle === 'revoir') {
-      var page = (cle === 'accueil') ? el.pageAccueil : el.pageRevoir;
+    if (cle === 'accueil' || cle === 'revoir' || cle === 'reglages') {
+      var page = (cle === 'accueil') ? el.pageAccueil
+               : (cle === 'revoir') ? el.pageRevoir
+               : el.pageReglages;
       if (!page) { return; }
       var etaitOuverte = !page.hidden;
       fermerFeuilles();
       if (cle === 'revoir') { remplirRevoir(); }
-      if (cle === 'accueil') { chargerAccueil(); }
+      /* « Où j'en suis » doit refléter les cartes jugées à l'instant : on
+         recharge (force = vrai) et on repeint, à chaque ouverture. */
+      if (cle === 'accueil') {
+        chargerAccueil(true);
+        peindreAccueil();
+      }
       page.hidden = etaitOuverte;
       if (document.body && document.body.classList) {
         document.body.classList.toggle('page-ouverte', !page.hidden);
       }
       /* La page « à revoir » s'atteint depuis Parcourir : c'est lui qu'on allume. */
-      var ongletCle = (cle === 'accueil') ? 'accueil' : 'parcourir';
+      var ongletCle = (cle === 'accueil') ? 'accueil'
+                    : (cle === 'reglages') ? 'reglages'
+                    : 'parcourir';
       for (var a = 0; a < onglets.length; a++) {
         var actif = (!page.hidden) && (onglets[a].getAttribute('data-onglet') === ongletCle);
         onglets[a].setAttribute('aria-expanded', actif ? 'true' : 'false');
@@ -1564,6 +1591,18 @@ function brancherRechercheAccueil() {
           state.i = 0;
           render();
           updateStats();
+          /* Le thème est chargé : on referme les pages, sinon la carte change
+             DERRIÈRE l'accueil et l'on croit que le bouton n'a rien fait. */
+          if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+          if (el.pageListe) { el.pageListe.hidden = true; }
+          if (el.pageReglages) { el.pageReglages.hidden = true; }
+          if (document.body && document.body.classList) {
+            document.body.classList.remove('page-ouverte');
+          }
+          var barreThemes = document.querySelectorAll('[data-onglet]');
+          for (var bt = 0; bt < barreThemes.length; bt++) {
+            barreThemes[bt].classList.remove('actif');
+          }
         }
         garderAccueilOuvert();
         chargerAccueil(true);
@@ -1645,17 +1684,26 @@ function brancherRechercheAccueil() {
      « accueil ». Sert à revenir à la bonne page en fin de paquet. */
   var origineCarte = 'accueil';
 
+  /* Deux paquets : les cartes JUGÉES qui ne sont pas sues (« à revoir ») et
+     les cartes MARQUÉES (« favoris »). Une carte peut être dans les deux. */
   function ficheDeListe(c) {
     var p = state.progress && state.progress[c.char];
     if (listeFiltre === 'favoris') { return !!(p && p.fav); }
     var vue = (p && p.seen) || 0;
     var juste = (p && p.n) || 0;
-    if (listeFiltre === 'sais') { return vue > 0 && juste > 0; }
-    return vue > 0 && !juste;              // « à revoir »
+    return vue > 0 && !juste;
   }
 
   function peindreListe() {
     if (!el.listeGrille) { return; }
+    /* La pastille allumée dit quel paquet on regarde. */
+    if (el.listeFiltres) {
+      var pastilles = el.listeFiltres.querySelectorAll('[data-filtre]');
+      for (var i = 0; i < pastilles.length; i++) {
+        pastilles[i].classList.toggle('actif', pastilles[i].getAttribute('data-filtre') === listeFiltre);
+      }
+    }
+
     /* Le titre reste « Révision » : c'est le filtre actif qui dit ce qu'on voit. */
     if (el.listeTitre) { el.listeTitre.textContent = 'Révision'; }
     var lot = state.cards.filter(ficheDeListe);
@@ -1669,20 +1717,39 @@ function brancherRechercheAccueil() {
         '</button>';
       }).join('');
     }
-    if (el.listeFiltres) {
-      var boutons = el.listeFiltres.querySelectorAll('[data-filtre]');
-      for (var i = 0; i < boutons.length; i++) {
-        boutons[i].classList.toggle('actif', boutons[i].getAttribute('data-filtre') === listeFiltre);
-      }
-    }
+  }
+
+  /* Les paquets (« À revoir », « Favoris ») sont GLOBAUX : ils portent sur les
+     trois niveaux. On charge donc le jeu complet une fois, en tâche de fond. */
+  var toutCharge = false;
+  function chargerToutPourPaquets() {
+    if (toutCharge || !NIVEAUX.tout) { return; }
+    toutCharge = true;
+    chargerCollection(NIVEAUX.tout).then(function (data) {
+      state.cards = data.cards;
+      state.view = data.cards.slice();
+      state.titre = NIVEAUX.tout.nom;
+      peindreListe();
+    }).catch(function () { toutCharge = false; });
   }
 
   function ouvrirListe(filtre) {
     if (!el.pageListe) { return; }
     listeFiltre = filtre || 'revoir';
     peindreListe();
+    /* On ferme les AUTRES pages : sans ça, #reglages (plus bas dans le DOM)
+       recouvre #liste et l'onglet Réviser semble ne rien faire. */
     if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+    if (el.pageReglages) { el.pageReglages.hidden = true; }
+    if (el.pageRevoir) { el.pageRevoir.hidden = true; }
     el.pageListe.hidden = false;
+    chargerToutPourPaquets();
+
+    /* Le seul onglet allumé est celui de Révision. */
+    var onglets = document.querySelectorAll('[data-onglet]');
+    for (var n = 0; n < onglets.length; n++) {
+      onglets[n].classList.toggle('actif', onglets[n].getAttribute('data-onglet') === 'reviser');
+    }
     if (document.body && document.body.classList) {
       document.body.classList.add('page-ouverte');
     }
@@ -1703,17 +1770,8 @@ function brancherRechercheAccueil() {
   if (el.pageListe) {
     el.pageListe.addEventListener('click', function (e) { e.stopPropagation(); });
   }
-  if (el.boutonReviser) {
-    el.boutonReviser.addEventListener('click', function () { ouvrirListe('revoir'); });
-  }
-  var listeRetour = document.getElementById('liste-retour');
-  if (listeRetour) {
-    listeRetour.addEventListener('click', fermerListe);
-  }
   if (el.listeFiltres) {
     el.listeFiltres.addEventListener('click', function (e) {
-      /* On remonte jusqu'au bouton qui porte data-filtre ; les boutons sans
-         classe (« Favoris », « Je sais ») étaient ignorés. */
       var b = e.target;
       while (b && b !== el.listeFiltres && !(b.getAttribute && b.getAttribute('data-filtre'))) {
         b = b.parentNode;
@@ -1723,6 +1781,7 @@ function brancherRechercheAccueil() {
       peindreListe();
     });
   }
+
   if (el.listeGrille) {
     el.listeGrille.addEventListener('click', function (e) {
       var b = e.target;
@@ -1835,7 +1894,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '210';
+  var VERSION = '234';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
