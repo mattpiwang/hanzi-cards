@@ -1078,10 +1078,26 @@ body.page-ouverte main { visibility: hidden; }
 /* La nav des niveaux sur l'accueil : centrée sous le nom, et repliable pour
    que les quatre pastilles ne débordent jamais sur un écran étroit. */
 .accueil-niveaux {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 0 .35rem;
+  /* Une seule rangée : on glisse horizontalement au lieu de passer à la ligne,
+     et l'ascenseur reste invisible (il n'a rien à faire sur un téléphone). */
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* anciens Edge */
+  -webkit-overflow-scrolling: touch;
+  padding: 0 1rem .15rem;         /* la première et la dernière respirent */
+  margin: 0 -1rem .35rem;         /* … sans décaler la colonne */
+  scroll-padding-inline: 1rem;
   flex: 0 0 auto;
+}
+.accueil-niveaux::-webkit-scrollbar { display: none; }   /* Chrome, Safari */
+.accueil-niveaux > button { flex: 0 0 auto; }            /* chaque pastille garde sa largeur */
+/* Un dégradé sur le bord droit : il dit qu'il y a une suite à faire glisser. */
+.accueil-niveaux {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent);
+          mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent);
 }
 
 /* Les pastilles de niveau de l'accueil sont des boutons (aucun lien, donc
@@ -1200,42 +1216,30 @@ body.page-ouverte main { visibility: hidden; }
 
 /* Le fond derrière la carte : au lieu du noir nu, un halo très pâle qui suit
    la palette (or sur sombre, encre sur clair). Discret : 6 % d'opacité. */
-.stage {
-  border-radius: 22px;
-  background: radial-gradient(115% 85% at 50% 32%,
-              rgba(216, 178, 106, .07) 0%,
-              rgba(216, 178, 106, .03) 45%,
-              transparent 72%);
-}
-[data-theme="clair"] .stage {
-  background: radial-gradient(115% 85% at 50% 32%,
-              rgba(138, 100, 21, .06) 0%,
-              rgba(138, 100, 21, .025) 45%,
-              transparent 72%);
-}
-
 /* Le fond derrière la carte : le motif de vagues, mais très estompé — un voile
    du fond de l'appli ne laisse passer qu'environ 14 % du dessin. */
 .stage {
   position: relative;
   border-radius: 22px;
-  /* chemin relatif à CE fichier : fond.jpg, pas assets/fond.jpg */
-  background: url("fond.jpg") center / 340px auto repeat;
+  /* Une peinture, pas un motif : on la pose une fois, en couverture, et on
+     cadre sur le bas (le pêcheur est au deux tiers de la hauteur). */
+  background: url("fond.jpg") center 66% / cover no-repeat;
 }
+/* Le voile : un dégradé vertical par-dessus la peinture, plus clair au centre.
+   Il ne laisse passer qu'environ un cinquième du tableau — assez pour que le
+   caractère reste lisible sur les branchages sombres du pin. */
 .stage::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  /* Un dégradé vertical, plus clair au centre : le motif respire au milieu
-     de la carte et s'efface vers les bords. */
   background: linear-gradient(180deg, #0d1216 0%, #141d24 50%, #0d1216 100%);
-  opacity: .78;
+  opacity: .6;
   pointer-events: none;
 }
 [data-theme="clair"] .stage::before {
   background: linear-gradient(180deg, #f6f1e7 0%, #efe7d7 50%, #f6f1e7 100%);
-  opacity: .82;
+  opacity: .66;
 }
 
 /* L'onglet Accueil change d'icône quand il est allumé : la maison dit « aller à
@@ -1243,3 +1247,35 @@ body.page-ouverte main { visibility: hidden; }
 .onglet [data-ico="cartes"] { display: none; }
 .onglet.actif [data-ico="maison"] { display: none; }
 .onglet.actif [data-ico="cartes"] { display: block; }
+
+/* La page Radicaux : des lignes sobres, pas une grille de mini-cartes. */
+.radicaux-liste { display: flex; flex-direction: column; gap: .25rem; margin-top: .3rem; }
+.radical-ligne {
+  display: grid;
+  grid-template-columns: 2.2rem 2.2rem 1fr;
+  align-items: center;
+  gap: .6rem;
+  padding: .5rem .6rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--txt);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.radical-ligne:hover:not([disabled]) { border-color: var(--accent); }
+.radical-ligne[disabled] { opacity: .45; cursor: default; }
+.radical-ligne .rl-n { font-size: .68rem; color: var(--dim); text-align: right; }
+.radical-ligne .rl-glyphe { font-family: var(--cjk); font-size: 1.3rem; line-height: 1; }
+.radical-ligne .rl-k { font-size: .74rem; color: var(--dim); }
+
+/* Une expression de plusieurs caractères : corps plus petit, et retour à la
+   ligne permis (黄鼠狼给鸡拜年 ne tient pas à la taille d'un 字). */
+#front-glyph.long {
+  font-size: clamp(1.5rem, 7.5vw, 3rem);
+  line-height: 1.25;
+  word-break: break-all;
+  padding: 0 1rem;
+  text-align: center;
+}

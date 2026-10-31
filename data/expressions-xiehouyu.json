@@ -1,0 +1,142 @@
+[
+    {
+        "q":  "姜太公钓鱼",
+        "a":  "愿者上钩",
+        "pinyin":  "Jiāng Tàigōng diào yú, yuàn zhě shàng gōu",
+        "fr":  "seul le volontaire mord",
+        "note":  "Jiang Taigong pêchait sans hameçon : seuls les volontaires venaient."
+    },
+    {
+        "q":  "黄鼠狼给鸡拜年",
+        "a":  "没安好心",
+        "pinyin":  "huángshǔláng gěi jī bàinián, méi ān hǎoxīn",
+        "fr":  "n\u0027a pas de bonnes intentions",
+        "note":  "La belette souhaite la bonne année au poulet : intentions suspectes."
+    },
+    {
+        "q":  "泥菩萨过江",
+        "a":  "自身难保",
+        "pinyin":  "ní púsà guò jiāng, zìshēn nán bǎo",
+        "fr":  "ne peut même pas se sauver",
+        "note":  "Un bodhisattva d\u0027argile traverse la rivière : il fond."
+    },
+    {
+        "q":  "竹篮打水",
+        "a":  "一场空",
+        "pinyin":  "zhúlán dǎ shuǐ, yī chǎng kōng",
+        "fr":  "tout effort pour rien",
+        "note":  "Puiser de l\u0027eau avec un panier de bambou : rien ne reste."
+    },
+    {
+        "q":  "猫哭老鼠",
+        "a":  "假慈悲",
+        "pinyin":  "māo kū lǎoshǔ, jiǎ cíbēi",
+        "fr":  "fausse compassion",
+        "note":  "Le chat pleure la souris qu\u0027il veut manger : larmes hypocrites."
+    },
+    {
+        "q":  "老鼠过街",
+        "a":  "人人喊打",
+        "pinyin":  "lǎoshǔ guò jiē, rén rén hǎn dǎ",
+        "fr":  "tout le monde le pourchasse",
+        "note":  "Une souris dans la rue : chacun crie et la chasse."
+    },
+    {
+        "q":  "十五个吊桶打水",
+        "a":  "七上八下",
+        "pinyin":  "shíwǔ gè diàotǒng dǎ shuǐ, qī shàng bā xià",
+        "fr":  "cœur agité, très inquiet",
+        "note":  "Quinze seaux au puits : ils montent et descendent, comme l\u0027angoisse."
+    },
+    {
+        "q":  "芝麻开花",
+        "a":  "节节高",
+        "pinyin":  "zhīma kāihuā, jié jié gāo",
+        "fr":  "progresser de mieux en mieux",
+        "note":  "Le sésame fleurit étage par étage : la réussite monte."
+    },
+    {
+        "q":  "外甥打灯笼",
+        "a":  "照旧",
+        "pinyin":  "wàishēng dǎ dēnglóng, zhào jiù",
+        "fr":  "comme avant, rien ne change",
+        "note":  "Le neveu porte une lanterne : « éclairer l\u0027oncle » sonne comme « comme avant »."
+    },
+    {
+        "q":  "猪八戒照镜子",
+        "a":  "里外不是人",
+        "pinyin":  "Zhū Bājiè zhào jìngzi, lǐ wài bù shì rén",
+        "fr":  "mal vu des deux côtés",
+        "note":  "Zhu Bajie se regarde : laid dedans comme dehors, personne ne l\u0027aime."
+    },
+    {
+        "q":  "擀面杖吹火",
+        "a":  "一窍不通",
+        "pinyin":  "gǎnmiànzhàng chuī huǒ, yī qiào bù tōng",
+        "fr":  "n\u0027y comprendre absolument rien",
+        "note":  "Souffler dans un rouleau à pâte : aucun trou, aucun souffle."
+    },
+    {
+        "q":  "铁公鸡",
+        "a":  "一毛不拔",
+        "pinyin":  "tiě gōngjī, yī máo bù bá",
+        "fr":  "radin, ne lâche rien",
+        "note":  "Un coq de fer : impossible d\u0027en arracher une plume."
+    },
+    {
+        "q":  "狗咬吕洞宾",
+        "a":  "不识好人心",
+        "pinyin":  "gǒu yǎo Lǚ Dòngbīn, bù shí hǎo rén xīn",
+        "fr":  "méconnaître une bonne intention",
+        "note":  "Le chien mord Lü Dongbin, l\u0027immortel venu l\u0027aider."
+    },
+    {
+        "q":  "大水冲了龙王庙",
+        "a":  "一家人不认一家人",
+        "pinyin":  "dàshuǐ chōng le Lóngwáng miào, yī jiā rén bù rèn yī jiā rén",
+        "fr":  "ne pas reconnaître les siens",
+        "note":  "L\u0027inondation emporte le temple du Roi-dragon : les siens se déchirent."
+    },
+    {
+        "q":  "骑驴看唱本",
+        "a":  "走着瞧",
+        "pinyin":  "qí lǘ kàn chàngběn, zǒuzhe qiáo",
+        "fr":  "on verra bien",
+        "note":  "Lire un livret à dos d\u0027âne : on verra en avançant."
+    },
+    {
+        "q":  "兔子的尾巴",
+        "a":  "长不了",
+        "pinyin":  "tùzi de wěiba, cháng bù liǎo",
+        "fr":  "ça ne durera pas",
+        "note":  "La queue du lapin est courte : ça ne peut pas durer."
+    },
+    {
+        "q":  "热锅上的蚂蚁",
+        "a":  "团团转",
+        "pinyin":  "rè guō shàng de mǎyǐ, tuántuán zhuàn",
+        "fr":  "tourner en rond, affolé",
+        "note":  "Une fourmi sur une casserole chaude : elle tourne sans issue."
+    },
+    {
+        "q":  "丈二和尚",
+        "a":  "摸不着头脑",
+        "pinyin":  "zhàng èr héshang, mō bù zháo tóunǎo",
+        "fr":  "n\u0027y rien comprendre",
+        "note":  "Un moine haut de trois mètres : impossible de lui toucher la tête."
+    },
+    {
+        "q":  "狗拿耗子",
+        "a":  "多管闲事",
+        "pinyin":  "gǒu ná hàozi, duō guǎn xiánshì",
+        "fr":  "se mêler de tout",
+        "note":  "Un chien qui attrape les souris : ce n\u0027est pas son rôle."
+    },
+    {
+        "q":  "三个臭皮匠",
+        "a":  "顶个诸葛亮",
+        "pinyin":  "sān gè chòu píjiàng, dǐng gè Zhūgě Liàng",
+        "fr":  "trois humbles valent un génie",
+        "note":  "Trois savetiers réunis ont l\u0027esprit de Zhuge Liang, le stratège."
+    }
+]

@@ -412,6 +412,9 @@ var STORE_KEY = 'hanzi-cards-v1';
     }
 
     el.front.textContent = c.char;
+    /* Une expression (歇后语, argot) est plus longue qu'un caractère : on la
+       laisse respirer avec un corps plus petit. */
+    el.front.classList.toggle('long', c.char.length > 1);
     writer = null;          // le dessin précédent disparaît avec le contenu réécrit
     carteDessinee = '';
     el.back.innerHTML = boutonFavori(c) + backHTML(c);
@@ -700,6 +703,8 @@ var STORE_KEY = 'hanzi-cards-v1';
     if (el.pageAccueil) { el.pageAccueil.hidden = true; }
     if (el.pageRevoir) { el.pageRevoir.hidden = true; }
     if (el.pageReglages) { el.pageReglages.hidden = true; }
+    var pageRadicauxPage = document.getElementById('radicaux');
+    if (pageRadicauxPage) { pageRadicauxPage.hidden = true; }
     if (el.pageListe) { el.pageListe.hidden = true; }
     if (document.body && document.body.classList) { document.body.classList.remove('page-ouverte'); }
     for (var i = 0; i < feuilles.length; i++) { feuilles[i].hidden = true; }
@@ -1376,7 +1381,7 @@ function brancherRechercheAccueil() {
   var accueilPaquets = null;
   /* Le niveau que les pastilles font regarder au résumé : « tout » au départ. */
   var accueilNiveau = 'tout';
-  var NOMS_NIVEAUX = { hsk1: 'HSK 1', hsk2: 'HSK 2', hsk3: 'HSK 3' };
+  var NOMS_NIVEAUX = { hsk1: 'HSK 1', hsk2: 'HSK 2', hsk3: 'HSK 3', hsk4: 'HSK 4', hsk5: 'HSK 5', expr: 'Expressions' };
 
   function etatAccueil(c, prog) {
     var p = prog && prog[c.char];
@@ -1507,6 +1512,7 @@ function brancherRechercheAccueil() {
         }).join('');
       }
       peindreThemesAccueil(prog);
+    peindreRadicauxAccueil(prog);
     } catch (e) {
       var z = document.getElementById('accueil-resume');
       if (z) { z.textContent = 'Erreur : ' + (e && e.message); }
@@ -1516,7 +1522,7 @@ function brancherRechercheAccueil() {
   function chargerAccueil(force) {
     if (accueilFait && !force) { return; }
     accueilFait = true;
-    var niveaux = ['hsk1', 'hsk2', 'hsk3'];
+    var niveaux = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
     try {
       Promise.all(niveaux.map(function (n) {
         return fetch('data/cards-' + n + '.json', { cache: 'no-store' })
@@ -1800,6 +1806,146 @@ function brancherRechercheAccueil() {
     });
   }
 
+  /* ---------------- Les 214 radicaux de Kangxi ---------------- */
+
+  /* Index variante → numéro, et numéro → radical, chargés une fois. */
+  var indexRadical = null;
+  var radicauxParNum = null;
+
+  function chargerRadicaux() {
+    if (indexRadical || !window.fetch) { return; }
+    fetch('data/radicaux.json')
+      .then(function (r) { return r.json(); })
+      .then(function (liste) {
+        indexRadical = {};
+        radicauxParNum = {};
+        liste.forEach(function (r) {
+          radicauxParNum[r.n] = r.radical;
+          indexRadical[r.radical] = r.n;
+          (r.variantes || []).forEach(function (v) { indexRadical[v] = r.n; });
+        });
+        peindreRadicauxAccueil();
+        peindreListeRadicaux();
+      })
+      .catch(function () { /* hors ligne : le bouton reste sans effectif */ });
+  }
+
+  function numeroRadical(c) {
+    if (!indexRadical || !c.radical) { return 0; }
+    return indexRadical[c.radical] || 0;
+  }
+
+  /* Combien de fiches du jeu par radical. */
+  function effectifsRadicaux() {
+    var compte = {};
+    (accueilCartes || []).forEach(function (c) {
+      var n = numeroRadical(c);
+      if (n) { compte[n] = (compte[n] || 0) + 1; }
+    });
+    return compte;
+  }
+
+  /* Une seule ligne sur l'accueil : « Par radical ». */
+  function peindreRadicauxAccueil() {
+    /* La ligne « Par radical » vit dans la liste des thèmes : on l'y ajoute
+       (les thèmes sont peints avant, donc l'ordre est stable). */
+    var zone = document.getElementById('accueil-themes');
+    if (!zone) { return; }
+    var compte = effectifsRadicaux();
+    var utilises = Object.keys(compte).length;
+    zone.innerHTML += '<button class="theme-row" type="button" id="accueil-radicaux-lien">' +
+      '<span class="t-main">' +
+        '<span class="t-name">Par radical</span>' +
+        '<span class="t-count">' + utilises + ' radicaux utilisés sur 214</span>' +
+      '</span>' +
+      '<span class="t-bar"><span style="width:' + Math.round(utilises / 214 * 100) + '%"></span></span>' +
+    '</button>';
+  }
+
+  /* La page : les 214 lignes, des plus fournies aux vides. */
+  function peindreListeRadicaux() {
+    var zone = document.getElementById('radicaux-liste');
+    if (!zone || !radicauxParNum) { return; }
+    var compte = effectifsRadicaux();
+    var nums = Object.keys(radicauxParNum).map(Number);
+    nums.sort(function (a, b) { return (compte[b] || 0) - (compte[a] || 0) || a - b; });
+    zone.innerHTML = nums.map(function (n) {
+      var k = compte[n] || 0;
+      return '<button class="radical-ligne' + (k ? '' : ' vide') + '" type="button"' +
+        ' data-radical="' + n + '"' + (k ? '' : ' disabled') + '>' +
+        '<span class="rl-n">' + n + '</span>' +
+        '<span class="rl-glyphe">' + esc(radicauxParNum[n] || '?') + '</span>' +
+        '<span class="rl-k">' + (k ? k + ' fiche' + (k > 1 ? 's' : '') : '—') + '</span>' +
+      '</button>';
+    }).join('');
+  }
+
+  function ouvrirPageRadicaux() {
+    var page = document.getElementById('radicaux');
+    if (!page) { return; }
+    peindreListeRadicaux();
+    if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+    if (el.pageListe) { el.pageListe.hidden = true; }
+    if (el.pageReglages) { el.pageReglages.hidden = true; }
+    page.hidden = false;
+    if (document.body && document.body.classList) {
+      document.body.classList.add('page-ouverte');
+    }
+    var barre = document.querySelectorAll('[data-onglet]');
+    for (var i = 0; i < barre.length; i++) { barre[i].classList.remove('actif'); }
+  }
+
+  function construirePaquetRadical(n) {
+    chargerCollection(NIVEAUX.tout).then(function (data) {
+      var lot = (data.cards || []).filter(function (c) { return numeroRadical(c) === n; });
+      if (!lot.length) { return; }
+      state.cards = data.cards;
+      state.reviewMode = false;
+      state.titre = 'Radical ' + n + ' · ' + (radicauxParNum[n] || '');
+      state.view = lot;
+      state.i = 0;
+      render();
+      updateStats();
+      var page = document.getElementById('radicaux');
+      if (page) { page.hidden = true; }
+      if (el.pageAccueil) { el.pageAccueil.hidden = true; }
+      if (el.pageListe) { el.pageListe.hidden = true; }
+      if (el.pageReglages) { el.pageReglages.hidden = true; }
+      if (document.body && document.body.classList) {
+        document.body.classList.remove('page-ouverte');
+      }
+    });
+  }
+
+  function brancherRadicauxAccueil() {
+    /* le lien « Par radical » de l'accueil */
+    var zone = document.getElementById('accueil-themes');
+    if (zone) {
+      zone.addEventListener('click', function (e) {
+        var b = e.target;
+        while (b && b !== zone && !(b.id === 'accueil-radicaux-lien')) { b = b.parentNode; }
+        if (!b || b === zone) { return; }
+        ouvrirPageRadicaux();
+      });
+    }
+    /* le clic sur une ligne de la page */
+    var page = document.getElementById('radicaux');
+    if (page) {
+      page.addEventListener('click', function (e) { e.stopPropagation(); });
+      var liste = document.getElementById('radicaux-liste');
+      if (liste) {
+        liste.addEventListener('click', function (e) {
+          var b = e.target;
+          while (b && b !== liste && !(b.getAttribute && b.getAttribute('data-radical'))) {
+            b = b.parentNode;
+          }
+          if (!b || b === liste) { return; }
+          construirePaquetRadical(Number(b.getAttribute('data-radical')));
+        });
+      }
+    }
+  }
+
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -1894,13 +2040,16 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '234';
+  var VERSION = '253';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
     { cle: 'hsk2', nom: 'HSK 2', fichiers: ['data/cards-hsk2.json'] },
     { cle: 'hsk3', nom: 'HSK 3', fichiers: ['data/cards-hsk3.json'] },
-    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json'] }
+    { cle: 'hsk4', nom: 'HSK 4', fichiers: ['data/cards-hsk4.json'] },
+    { cle: 'hsk5', nom: 'HSK 5', fichiers: ['data/cards-hsk5.json'] },
+    { cle: 'expr', nom: 'Expressions', fichiers: ['data/cards-expressions.json'] },
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json', 'data/cards-hsk4.json', 'data/cards-hsk5.json'] }
   ];
 
   /* Le niveau demandé : ?niveau=hsk2 dans l'adresse, sinon celui de la dernière
@@ -1968,6 +2117,8 @@ function brancherRechercheAccueil() {
   afficherVersion();
   brancherNiveauxAccueil();
   brancherThemesAccueil();
+  brancherRadicauxAccueil();
+  chargerRadicaux();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);

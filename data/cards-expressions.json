@@ -1,0 +1,406 @@
+{
+  "deck": "Expressions",
+  "niveau": "Expressions",
+  "cards": [
+    {
+      "char": "姜太公钓鱼",
+      "pinyin": "Jiāng Tàigōng diào yú, yuàn zhě shàng gōu",
+      "meaning": "seul le volontaire mord",
+      "category": "歇后语",
+      "note": "chute : 愿者上钩 · Jiang Taigong pêchait sans hameçon : seuls les volontaires venaient.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "黄鼠狼给鸡拜年",
+      "pinyin": "huángshǔláng gěi jī bàinián, méi ān hǎoxīn",
+      "meaning": "n'a pas de bonnes intentions",
+      "category": "歇后语",
+      "note": "chute : 没安好心 · La belette souhaite la bonne année au poulet : intentions suspectes.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "泥菩萨过江",
+      "pinyin": "ní púsà guò jiāng, zìshēn nán bǎo",
+      "meaning": "ne peut même pas se sauver",
+      "category": "歇后语",
+      "note": "chute : 自身难保 · Un bodhisattva d'argile traverse la rivière : il fond.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "竹篮打水",
+      "pinyin": "zhúlán dǎ shuǐ, yī chǎng kōng",
+      "meaning": "tout effort pour rien",
+      "category": "歇后语",
+      "note": "chute : 一场空 · Puiser de l'eau avec un panier de bambou : rien ne reste.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "猫哭老鼠",
+      "pinyin": "māo kū lǎoshǔ, jiǎ cíbēi",
+      "meaning": "fausse compassion",
+      "category": "歇后语",
+      "note": "chute : 假慈悲 · Le chat pleure la souris qu'il veut manger : larmes hypocrites.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "老鼠过街",
+      "pinyin": "lǎoshǔ guò jiē, rén rén hǎn dǎ",
+      "meaning": "tout le monde le pourchasse",
+      "category": "歇后语",
+      "note": "chute : 人人喊打 · Une souris dans la rue : chacun crie et la chasse.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "十五个吊桶打水",
+      "pinyin": "shíwǔ gè diàotǒng dǎ shuǐ, qī shàng bā xià",
+      "meaning": "cœur agité, très inquiet",
+      "category": "歇后语",
+      "note": "chute : 七上八下 · Quinze seaux au puits : ils montent et descendent, comme l'angoisse.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "芝麻开花",
+      "pinyin": "zhīma kāihuā, jié jié gāo",
+      "meaning": "progresser de mieux en mieux",
+      "category": "歇后语",
+      "note": "chute : 节节高 · Le sésame fleurit étage par étage : la réussite monte.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "外甥打灯笼",
+      "pinyin": "wàishēng dǎ dēnglóng, zhào jiù",
+      "meaning": "comme avant, rien ne change",
+      "category": "歇后语",
+      "note": "chute : 照旧 · Le neveu porte une lanterne : « éclairer l'oncle » sonne comme « comme avant ».",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "猪八戒照镜子",
+      "pinyin": "Zhū Bājiè zhào jìngzi, lǐ wài bù shì rén",
+      "meaning": "mal vu des deux côtés",
+      "category": "歇后语",
+      "note": "chute : 里外不是人 · Zhu Bajie se regarde : laid dedans comme dehors, personne ne l'aime.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "擀面杖吹火",
+      "pinyin": "gǎnmiànzhàng chuī huǒ, yī qiào bù tōng",
+      "meaning": "n'y comprendre absolument rien",
+      "category": "歇后语",
+      "note": "chute : 一窍不通 · Souffler dans un rouleau à pâte : aucun trou, aucun souffle.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "铁公鸡",
+      "pinyin": "tiě gōngjī, yī máo bù bá",
+      "meaning": "radin, ne lâche rien",
+      "category": "歇后语",
+      "note": "chute : 一毛不拔 · Un coq de fer : impossible d'en arracher une plume.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "狗咬吕洞宾",
+      "pinyin": "gǒu yǎo Lǚ Dòngbīn, bù shí hǎo rén xīn",
+      "meaning": "méconnaître une bonne intention",
+      "category": "歇后语",
+      "note": "chute : 不识好人心 · Le chien mord Lü Dongbin, l'immortel venu l'aider.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "大水冲了龙王庙",
+      "pinyin": "dàshuǐ chōng le Lóngwáng miào, yī jiā rén bù rèn yī jiā rén",
+      "meaning": "ne pas reconnaître les siens",
+      "category": "歇后语",
+      "note": "chute : 一家人不认一家人 · L'inondation emporte le temple du Roi-dragon : les siens se déchirent.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "骑驴看唱本",
+      "pinyin": "qí lǘ kàn chàngběn, zǒuzhe qiáo",
+      "meaning": "on verra bien",
+      "category": "歇后语",
+      "note": "chute : 走着瞧 · Lire un livret à dos d'âne : on verra en avançant.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "兔子的尾巴",
+      "pinyin": "tùzi de wěiba, cháng bù liǎo",
+      "meaning": "ça ne durera pas",
+      "category": "歇后语",
+      "note": "chute : 长不了 · La queue du lapin est courte : ça ne peut pas durer.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "热锅上的蚂蚁",
+      "pinyin": "rè guō shàng de mǎyǐ, tuántuán zhuàn",
+      "meaning": "tourner en rond, affolé",
+      "category": "歇后语",
+      "note": "chute : 团团转 · Une fourmi sur une casserole chaude : elle tourne sans issue.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "丈二和尚",
+      "pinyin": "zhàng èr héshang, mō bù zháo tóunǎo",
+      "meaning": "n'y rien comprendre",
+      "category": "歇后语",
+      "note": "chute : 摸不着头脑 · Un moine haut de trois mètres : impossible de lui toucher la tête.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "狗拿耗子",
+      "pinyin": "gǒu ná hàozi, duō guǎn xiánshì",
+      "meaning": "se mêler de tout",
+      "category": "歇后语",
+      "note": "chute : 多管闲事 · Un chien qui attrape les souris : ce n'est pas son rôle.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "三个臭皮匠",
+      "pinyin": "sān gè chòu píjiàng, dǐng gè Zhūgě Liàng",
+      "meaning": "trois humbles valent un génie",
+      "category": "歇后语",
+      "note": "chute : 顶个诸葛亮 · Trois savetiers réunis ont l'esprit de Zhuge Liang, le stratège.",
+      "source": "Ziya",
+      "type": "xiehouyu",
+      "words": []
+    },
+    {
+      "char": "杠精",
+      "pinyin": "gàngjīng",
+      "meaning": "chicaneur, cherche la petite bête",
+      "category": "Argot",
+      "note": "Désigne celui qui contredit systématiquement, surtout en ligne. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "舔狗",
+      "pinyin": "tiǎngǒu",
+      "meaning": "amoureux soumis et servile",
+      "category": "Argot",
+      "note": "Se dit d'un amoureux qui s'humilie pour plaire ; registre moqueur. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "锦鲤",
+      "pinyin": "jǐnlǐ",
+      "meaning": "porte-bonheur, chanceux",
+      "category": "Argot",
+      "note": "Poisson porte-bonheur ; on le dit d'une personne chanceuse. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "真香",
+      "pinyin": "zhēnxiāng",
+      "meaning": "finalement conquis, très bon",
+      "category": "Argot",
+      "note": "D'abord sceptique, puis conquis ; né d'une émission télé. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "沙雕",
+      "pinyin": "shādiāo",
+      "meaning": "débile, loufoque, absurde",
+      "category": "Argot",
+      "note": "Jeu de mots sur 傻屌 ; ton moqueur mais souvent affectueux. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "硬核",
+      "pinyin": "yìnghé",
+      "meaning": "coriace, très pointu",
+      "category": "Argot",
+      "note": "Qualifie un contenu intense ou exigeant ; venu du gaming. · argot 2018",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "社死",
+      "pinyin": "shèsǐ",
+      "meaning": "honte publique, mort sociale",
+      "category": "Argot",
+      "note": "Honte si forte qu'on voudrait disparaître socialement. · argot 2019",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "柠檬精",
+      "pinyin": "níngméngjīng",
+      "meaning": "jaloux, aigri, envieux",
+      "category": "Argot",
+      "note": "Celui qui envie les autres et le manifeste avec acidité. · argot 2019",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "海王",
+      "pinyin": "hǎiwáng",
+      "meaning": "séducteur aux multiples conquêtes",
+      "category": "Argot",
+      "note": "Homme qui multiplie les conquêtes amoureuses ; connotation négative. · argot 2019",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "摸鱼",
+      "pinyin": "mōyú",
+      "meaning": "tirer au flanc au travail",
+      "category": "Argot",
+      "note": "Faire semblant de travailler, paresser au bureau. · argot 2019",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "内卷",
+      "pinyin": "nèijuǎn",
+      "meaning": "compétition stérile, involution",
+      "category": "Argot",
+      "note": "Course à la performance qui épuise tout le monde sans profit. · argot 2020",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "凡尔赛",
+      "pinyin": "fán'ěrsài",
+      "meaning": "se vanter en se plaignant",
+      "category": "Argot",
+      "note": "Vantardise déguisée en plainte ; vient du château de Versailles. · argot 2020",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "打工人",
+      "pinyin": "dǎgōngrén",
+      "meaning": "salarié, travailleur ordinaire",
+      "category": "Argot",
+      "note": "Auto-désignation humoristique des salariés ; né sur les réseaux. · argot 2020",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "干饭人",
+      "pinyin": "gānfànrén",
+      "meaning": "gros mangeur enthousiaste",
+      "category": "Argot",
+      "note": "Celui qui mange avec ardeur ; ton humoristique. · argot 2020",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "普信男",
+      "pinyin": "pǔxìnnán",
+      "meaning": "homme moyen trop confiant",
+      "category": "Argot",
+      "note": "Stéréotype de l'homme sans qualités mais très confiant. · argot 2020",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "破防",
+      "pinyin": "pòfáng",
+      "meaning": "craquer, être bouleversé",
+      "category": "Argot",
+      "note": "Être submergé par l'émotion, ne plus tenir ; très courant en ligne. · argot 2021",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "下头",
+      "pinyin": "xiàtóu",
+      "meaning": "refroidir, casser l'ambiance",
+      "category": "Argot",
+      "note": "Fait perdre l'envie ou l'enthousiasme ; contraire de 上头. · argot 2021",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "雪糕刺客",
+      "pinyin": "xuěgāo cìkè",
+      "meaning": "glace à prix abusif",
+      "category": "Argot",
+      "note": "Glace vendue très cher sans affichage clair ; dénonce les prix abusifs. · argot 2022",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "显眼包",
+      "pinyin": "xiǎnyǎnbāo",
+      "meaning": "personne qui se fait remarquer",
+      "category": "Argot",
+      "note": "Celui qui attire l'attention, souvent malgré lui ; ton affectueux. · argot 2023",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    },
+    {
+      "char": "搭子",
+      "pinyin": "dāzi",
+      "meaning": "partenaire pour une activité",
+      "category": "Argot",
+      "note": "Compagnon ponctuel pour manger, voyager ou sortir, sans engagement. · argot 2023",
+      "source": "Ziya",
+      "type": "argot",
+      "words": []
+    }
+  ]
+}

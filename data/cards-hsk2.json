@@ -28,12 +28,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "口 donne le sens ; 阿 donne la prononciation. (indice : bouche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "ah, particule d'exclamation",
-      "etymologyEn": "口 donne le sens ; 阿 donne la prononciation. (indice : mouth)",
       "words": [
         [
           "天啊",
@@ -55,6 +53,11 @@
           "ā yo",
           "interjection de surprise, douleur"
         ]
+      ],
+      "phrase": [
+        "天啊，我的猫会说话！",
+        "Tiān a, wǒ de māo huì shuōhuà!",
+        "Mon Dieu, mon chat sait parler !"
       ]
     },
     {
@@ -76,12 +79,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une personne aux jambes croisées"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "relier, livrer, échanger",
-      "etymologyEn": "A person with crossed (intersecting) legs",
       "words": [
         [
           "交给",
@@ -93,7 +94,13 @@
           "jiāo tōng",
           "liaison, trafic, transport"
         ]
-      ]
+      ],
+      "phrase": [
+        "那天风雨交加，我们没出门。",
+        "Nà tiān fēng yǔ jiāo jiā, wǒmen méi chūmén.",
+        "Ce jour-là, vent et pluie se déchaînaient, nous ne sommes pas sortis."
+      ],
+      "phraseNote": "风雨交加 : vent et pluie mêlés, gros temps."
     },
     {
       "char": "晴",
@@ -114,12 +121,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "日 donne le sens ; 青 donne la prononciation. (indice : soleil)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "temps clair, beau temps",
-      "etymologyEn": "日 donne le sens ; 青 donne la prononciation. (indice : sun)",
       "words": [
         [
           "晴天",
@@ -131,7 +136,13 @@
           "qíng lǎng",
           "ensoleillé, sans nuages"
         ]
-      ]
+      ],
+      "phrase": [
+        "今天晴空万里，很适合散步。",
+        "Jīntiān qíng kōng wàn lǐ, hěn shìhé sànbù.",
+        "Aujourd'hui le ciel est sans nuages, parfait pour une promenade."
+      ],
+      "phraseNote": "晴空万里 : ciel dégagé, temps splendide."
     },
     {
       "char": "希",
@@ -151,10 +162,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "rare, espérer, souhaiter",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -169,6 +176,11 @@
           "Xī là",
           "Grèce"
         ]
+      ],
+      "phrase": [
+        "我希望明天是晴天。",
+        "Wǒ xīwàng míngtiān shì qíngtiān.",
+        "J'espère qu'il fera beau demain."
       ]
     },
     {
@@ -190,12 +202,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Le drapeau 巾 d'une nation 邦 ; 邦 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "aider, soutenir, groupe",
-      "etymologyEn": "A nation's 邦 flag 巾; 邦 also provides the pronunciation",
       "words": [
         [
           "帮忙",
@@ -207,6 +217,11 @@
           "bāng zhù",
           "aide, assistance, aider"
         ]
+      ],
+      "phrase": [
+        "你能帮我一个忙吗？",
+        "Nǐ néng bāng wǒ yī gè máng ma?",
+        "Peux-tu me rendre un service ?"
       ]
     },
     {
@@ -228,12 +243,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "攵 donne le sens ; 孝 donne la prononciation. (indice : écriture)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "école, éducation, enseigner",
-      "etymologyEn": "攵 donne le sens ; 孝 donne la prononciation. (indice : script)",
       "words": [
         [
           "教学楼",
@@ -245,7 +258,13 @@
           "jiào shī",
           "professeur, enseignant"
         ]
-      ]
+      ],
+      "phrase": [
+        "老师应该因材施教。",
+        "Lǎoshī yīnggāi yīn cái shī jiào.",
+        "Un professeur doit adapter son enseignement à chaque élève."
+      ],
+      "phraseNote": "因材施教 : enseigner selon les aptitudes de chacun."
     },
     {
       "char": "球",
@@ -266,12 +285,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "王 donne le sens ; 求 donne la prononciation. (indice : jade)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "ballon, sphère, balle",
-      "etymologyEn": "王 donne le sens ; 求 donne la prononciation. (indice : jade)",
       "words": [
         [
           "球场",
@@ -283,6 +300,11 @@
           "qiú duì",
           "équipe sportive"
         ]
+      ],
+      "phrase": [
+        "我们在球场打球。",
+        "Wǒmen zài qiúchǎng dǎ qiú.",
+        "Nous jouons sur le terrain."
       ]
     },
     {
@@ -304,12 +326,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "氵 donne le sens ; 先 donne la prononciation. (indice : eau)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "laver, rincer, baigner",
-      "etymologyEn": "氵 donne le sens ; 先 donne la prononciation. (indice : water)",
       "words": [
         [
           "洗手间",
@@ -321,7 +341,13 @@
           "xǐ zǎo",
           "se baigner, se doucher"
         ]
-      ]
+      ],
+      "phrase": [
+        "他以前一贫如洗，现在很富有。",
+        "Tā yǐqián yī pín rú xǐ, xiànzài hěn fùyǒu.",
+        "Autrefois il était pauvre comme Job, aujourd'hui il est riche."
+      ],
+      "phraseNote": "一贫如洗 : extrêmement pauvre, dénué de tout."
     },
     {
       "char": "备",
@@ -342,12 +368,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Aller 夂 au champ 田 pour préparer la récolte"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "préparer, équiper, prêt",
-      "etymologyEn": "To go 夂 to the farm 田 to prepare for a harvest",
       "words": [
         [
           "准备",
@@ -359,6 +383,11 @@
           "shè bèi",
           "équipement, installations"
         ]
+      ],
+      "phrase": [
+        "我已经准备好了。",
+        "Wǒ yǐjīng zhǔnbèi hǎo le.",
+        "Je suis déjà prêt."
       ]
     },
     {
@@ -367,14 +396,11 @@
       "meaningEn": "agent, go-between, intermediary, to introduce, shell, armor",
       "category": "Verbes",
       "radical": "人",
-      "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une frontière 八 séparant les gens 人"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "intermédiaire, présenter, carapace",
-      "etymologyEn": "A border 八 dividing people 人",
       "words": [
         [
           "介绍",
@@ -387,7 +413,24 @@
           "intermédiaire, relier, agence"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他给我介绍了一个新朋友。",
+        "Tā gěi wǒ jièshào le yī gè xīn péngyou.",
+        "Il m'a présenté un nouvel ami."
+      ],
+      "components": [
+        [
+          "八",
+          "frontière",
+          "composant"
+        ],
+        [
+          "人",
+          "personne",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "然",
@@ -408,12 +451,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "灬 donne le sens ; 肰 donne la prononciation. (indice : feu)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "certes, naturellement, soudain",
-      "etymologyEn": "灬 donne le sens ; 肰 donne la prononciation. (indice : fire)",
       "words": [
         [
           "然后",
@@ -425,7 +466,13 @@
           "rán ér",
           "cependant, mais, pourtant"
         ]
-      ]
+      ],
+      "phrase": [
+        "他迟到，生气是理所当然的。",
+        "Tā chídào, shēngqì shì lǐ suǒ dāng rán de.",
+        "Il est en retard, il est normal d'être fâché."
+      ],
+      "phraseNote": "理所当然 : naturel, qui va de soi."
     },
     {
       "char": "笑",
@@ -446,12 +493,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une personne 夭 au large sourire ⺮"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "sourire, rire, ricaner",
-      "etymologyEn": "A person 夭 with a big grin ⺮",
       "words": [
         [
           "笑话",
@@ -463,7 +508,13 @@
           "xiào hua r",
           "forme erhua de 笑話"
         ]
-      ]
+      ],
+      "phrase": [
+        "他笑里藏刀，你要小心。",
+        "Tā xiào lǐ cáng dāo, nǐ yào xiǎoxīn.",
+        "Il cache un couteau sous son sourire, fais attention."
+      ],
+      "phraseNote": "笑里藏刀 : cacher des intentions malveillantes sous un sourire."
     },
     {
       "char": "比",
@@ -479,12 +530,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Deux cuillères 匕 côte à côte ; 匕 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "comparer, comparaison, que",
-      "etymologyEn": "Two spoons 匕 side-by-side; 匕 also provides the pronunciation",
       "words": [
         [
           "比如说",
@@ -496,7 +545,13 @@
           "bǐ jiào",
           "comparer, relativement, comparaison"
         ]
-      ]
+      ],
+      "phrase": [
+        "他的画无与伦比。",
+        "Tā de huà wú yǔ lún bǐ.",
+        "Sa peinture n'a pas d'égale."
+      ],
+      "phraseNote": "无与伦比 : sans pareil, incomparable."
     },
     {
       "char": "进",
@@ -517,12 +572,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "辶 donne le sens ; 井 donne la prononciation. (indice : marche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "entrer, avancer, progresser",
-      "etymologyEn": "辶 donne le sens ; 井 donne la prononciation. (indice : walk)",
       "words": [
         [
           "进来",
@@ -534,6 +587,11 @@
           "jìn qù",
           "entrer, aller à l'intérieur"
         ]
+      ],
+      "phrase": [
+        "请进来，门没有锁。",
+        "Qǐng jìnlái, mén méiyǒu suǒ.",
+        "Entre, la porte n'est pas fermée."
       ]
     },
     {
@@ -555,12 +613,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "讠 donne le sens ; 上 donne la prononciation. (indice : parole)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "laisser, permettre, céder",
-      "etymologyEn": "讠 donne le sens ; 上 donne la prononciation. (indice : speech)",
       "words": [
         [
           "让座",
@@ -572,7 +628,13 @@
           "ràng bù",
           "céder, se rendre, concession"
         ]
-      ]
+      ],
+      "phrase": [
+        "这件事他当仁不让。",
+        "Zhè jiàn shì tā dāng rén bù ràng.",
+        "Pour cette tâche, il ne se dérobe pas."
+      ],
+      "phraseNote": "当仁不让 : ne pas reculer devant une responsabilité qui revient de droit."
     },
     {
       "char": "姓",
@@ -593,12 +655,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "女 donne le sens ; 生 donne la prononciation. (indice : femme)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "nom de famille, patronyme",
-      "etymologyEn": "女 donne le sens ; 生 donne la prononciation. (indice : woman)",
       "words": [
         [
           "姓名",
@@ -610,6 +670,11 @@
           "lǎo bǎi xìng",
           "gens du peuple, Monsieur Tout-le-monde"
         ]
+      ],
+      "phrase": [
+        "我姓李，你姓什么？",
+        "Wǒ xìng Lǐ, nǐ xìng shénme?",
+        "Mon nom de famille est Li, et le tien ?"
       ]
     },
     {
@@ -631,12 +696,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un bâton de bambou ⺮ à pointe de poils 毛"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "stylo, pinceau, trait",
-      "etymologyEn": "A bamboo rod ⺮ tipped with hair 毛",
       "words": [
         [
           "笔记",
@@ -648,7 +711,13 @@
           "bǐ jì běn",
           "carnet, cahier, ordinateur portable"
         ]
-      ]
+      ],
+      "phrase": [
+        "过去的事一笔勾销。",
+        "Guòqù de shì yī bǐ gōu xiāo.",
+        "Ce qui est passé est effacé d'un trait de plume."
+      ],
+      "phraseNote": "一笔勾销 : tout effacer d'un trait, pardonner et oublier."
     },
     {
       "char": "近",
@@ -669,12 +738,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "辶 donne le sens ; 斤 donne la prononciation. (indice : marche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "proche, près, intime",
-      "etymologyEn": "辶 donne le sens ; 斤 donne la prononciation. (indice : walk)",
       "words": [
         [
           "近期",
@@ -686,6 +753,11 @@
           "jìn dài",
           "passé proche, époque moderne, avant 1949"
         ]
+      ],
+      "phrase": [
+        "我家离学校很近。",
+        "Wǒ jiā lí xuéxiào hěn jìn.",
+        "Ma maison est très proche de l'école."
       ]
     },
     {
@@ -707,12 +779,10 @@
         ]
       ],
       "etymology": [
-        "象形 — pictogramme",
-        "De la viande sur les côtes d'un animal"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "viande, chair",
-      "etymologyEn": "Meat on the ribs of an animal",
       "words": [
         [
           "肌肉",
@@ -724,7 +794,13 @@
           "kǎo ròu",
           "griller la viande, viande grillée"
         ]
-      ]
+      ],
+      "phrase": [
+        "这个人物有血有肉。",
+        "Zhège rénwù yǒu xuè yǒu ròu.",
+        "Ce personnage a de la chair et du sang, il est vivant."
+      ],
+      "phraseNote": "有血有肉 : plein de vie, réaliste et incarné."
     },
     {
       "char": "颜",
@@ -745,12 +821,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "页 donne le sens ; 彦 donne la prononciation. (indice : tête)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "visage, face, mine",
-      "etymologyEn": "页 donne le sens ; 彦 donne la prononciation. (indice : head)",
       "words": [
         [
           "颜色",
@@ -762,6 +836,11 @@
           "róng yán",
           "mine, teint"
         ]
+      ],
+      "phrase": [
+        "她喜欢鲜艳的颜色。",
+        "Tā xǐhuan xiānyàn de yánsè.",
+        "Elle aime les couleurs vives."
       ]
     },
     {
@@ -783,12 +862,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un vêtement 衣 de fourrure 毛 ; un châle"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "montrer, extérieur, montre",
-      "etymologyEn": "Fur 毛 clothing 衣; a shawl or wrap",
       "words": [
         [
           "表达",
@@ -800,7 +877,13 @@
           "biǎo gé",
           "formulaire, tableau"
         ]
-      ]
+      ],
+      "phrase": [
+        "他表里如一，从不骗人。",
+        "Tā biǎo lǐ rú yī, cóng bù piàn rén.",
+        "Il est identique en public et en privé, il ne ment jamais."
+      ],
+      "phraseNote": "表里如一 : être en accord avec soi-même, sans duplicité."
     },
     {
       "char": "经",
@@ -808,14 +891,11 @@
       "meaningEn": "the classics, to experience, to undergo",
       "category": "Verbes",
       "radical": "纟",
-      "components": [],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "纟 donne le sens ; 工 donne la prononciation. (indice : fil)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "classiques, expérimenter, subir",
-      "etymologyEn": "纟 donne le sens ; 工 donne la prononciation. (indice : thread)",
       "words": [
         [
           "经常",
@@ -828,7 +908,24 @@
           "passer, processus, parcours"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "我经常骑自行车上班。",
+        "Wǒ jīngcháng qí zìxíngchē shàngbān.",
+        "Je vais souvent au travail à vélo."
+      ],
+      "components": [
+        [
+          "纟",
+          "fil",
+          "sens"
+        ],
+        [
+          "工",
+          "ouvrage",
+          "son"
+        ]
+      ]
     },
     {
       "char": "色",
@@ -849,12 +946,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "(indice : ce qu'une personne ⺈ désire 巴)"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "couleur, teinte, beauté",
-      "etymologyEn": "(indice : What a person ⺈ desires 巴)",
       "words": [
         [
           "色彩",
@@ -866,7 +961,13 @@
           "bái sè",
           "blanc, réactionnaire, anticommuniste"
         ]
-      ]
+      ],
+      "phrase": [
+        "花园里五颜六色的花。",
+        "Huāyuán lǐ wǔ yán liù sè de huā.",
+        "Dans le jardin, des fleurs de toutes les couleurs."
+      ],
+      "phraseNote": "五颜六色 : multicolore, de toutes les couleurs."
     },
     {
       "char": "眼",
@@ -887,12 +988,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "目 donne le sens ; 艮 donne la prononciation. (indice : œil)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "œillet, trou, ouverture",
-      "etymologyEn": "目 donne le sens ; 艮 donne la prononciation. (indice : eye)",
       "words": [
         [
           "眼睛",
@@ -904,6 +1003,11 @@
           "yǎn qián",
           "sous les yeux, maintenant"
         ]
+      ],
+      "phrase": [
+        "他的眼睛很大。",
+        "Tā de yǎnjing hěn dà.",
+        "Il a de grands yeux."
       ]
     },
     {
@@ -925,12 +1029,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Tracer des frontières 刂 entre les catégories 另"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "séparer, distinguer, autre, ne pas",
-      "etymologyEn": "To draw boundaries 刂 between classes 另",
       "words": [
         [
           "别的",
@@ -942,6 +1044,11 @@
           "bié ren",
           "autrui, les autres"
         ]
+      ],
+      "phrase": [
+        "这是别人的书。",
+        "Zhè shì biérén de shū.",
+        "C'est le livre de quelqu'un d'autre."
       ]
     },
     {
@@ -963,12 +1070,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "目 donne le sens ; 青 donne la prononciation. (indice : œil)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "globe oculaire, pupille",
-      "etymologyEn": "目 donne le sens ; 青 donne la prononciation. (indice : eye)",
       "words": [
         [
           "眼睛",
@@ -985,7 +1090,13 @@
           "mù bù zhuǎn jīng",
           "regarder intensément"
         ]
-      ]
+      ],
+      "phrase": [
+        "最后一句画龙点睛。",
+        "Zuìhòu yī jù huà lóng diǎn jīng.",
+        "La dernière phrase est la touche finale qui fait tout."
+      ],
+      "phraseNote": "画龙点睛 : la touche finale qui donne vie à l'ensemble."
     },
     {
       "char": "绍",
@@ -1006,12 +1117,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "纟 donne le sens ; 召 donne la prononciation. (indice : fil)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "relier, présenter",
-      "etymologyEn": "纟 donne le sens ; 召 donne la prononciation. (indice : thread)",
       "words": [
         [
           "介绍",
@@ -1028,6 +1137,11 @@
           "jiè shào xìn",
           "lettre de présentation"
         ]
+      ],
+      "phrase": [
+        "他介绍了他的新朋友。",
+        "Tā jièshào le tā de xīn péngyou.",
+        "Il a présenté son nouvel ami."
       ]
     },
     {
@@ -1049,12 +1163,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "艹 donne le sens ; 约 donne la prononciation. (indice : plante)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "médicament, remède, drogue",
-      "etymologyEn": "艹 donne le sens ; 约 donne la prononciation. (indice : plant)",
       "words": [
         [
           "药店",
@@ -1066,7 +1178,13 @@
           "yào piàn",
           "comprimé, cachet"
         ]
-      ]
+      ],
+      "phrase": [
+        "良药苦口，你要坚持吃。",
+        "Liáng yào kǔ kǒu, nǐ yào jiānchí chī.",
+        "Les bons remèdes sont amers : continue à les prendre."
+      ],
+      "phraseNote": "良药苦口 : les bons remèdes ont mauvais goût, les conseils utiles déplaisent."
     },
     {
       "char": "步",
@@ -1074,14 +1192,11 @@
       "meaningEn": "walk, stroll, pace, march, to make progress",
       "category": "Noms",
       "radical": "止",
-      "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Forme moderne de 歨 ; poser un pied 止 devant l'autre"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "pas, marche, avancer",
-      "etymologyEn": "Modern form of 歨; putting one foot 止 in front of the other",
       "words": [
         [
           "步行",
@@ -1094,7 +1209,19 @@
           "initial, préliminaire, provisoire"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "我们步行去车站吧。",
+        "Wǒmen bùxíng qù chēzhàn ba.",
+        "Allons à la gare à pied."
+      ],
+      "components": [
+        [
+          "止",
+          "pied",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "酒",
@@ -1115,12 +1242,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une jarre 酉 de vin 氵 ; 酉 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "vin, alcool, liqueur",
-      "etymologyEn": "A jar 酉 of wine 氵; 酉 also provides the pronunciation",
       "words": [
         [
           "酒店",
@@ -1132,7 +1257,13 @@
           "jiǔ bā",
           "bar"
         ]
-      ]
+      ],
+      "phrase": [
+        "他过着花天酒地的生活。",
+        "Tā guò zhe huā tiān jiǔ dì de shēnghuó.",
+        "Il mène une vie de débauche et de plaisirs."
+      ],
+      "phraseNote": "花天酒地 : vie de luxure et de plaisirs dissolus."
     },
     {
       "char": "身",
@@ -1140,14 +1271,18 @@
       "meaningEn": "body, torso, person, pregnancy",
       "category": "Noms",
       "radical": "身",
-      "components": [],
+      "components": [
+        [
+          "身",
+          "corps",
+          "pictogramme"
+        ]
+      ],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : une femme enceinte)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "corps, personne, grossesse",
-      "etymologyEn": "(indice : A pregnant woman)",
       "words": [
         [
           "身上",
@@ -1160,7 +1295,13 @@
           "corps, santé"
         ]
       ],
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "phrase": [
+        "这部电影让人身临其境。",
+        "Zhè bù diànyǐng ràng rén shēn lín qí jìng.",
+        "Ce film donne l'impression d'y être."
+      ],
+      "phraseNote": "身临其境 : avoir l'impression d'être sur place."
     },
     {
       "char": "爷",
@@ -1181,12 +1322,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "父 donne le sens ; 耶 donne la prononciation. (indice : père)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "grand-père, vieil homme",
-      "etymologyEn": "父 donne le sens ; 耶 donne la prononciation. (indice : father)",
       "words": [
         [
           "爷爷",
@@ -1198,6 +1337,11 @@
           "dà yé",
           "frimeur paresseux, vantard"
         ]
+      ],
+      "phrase": [
+        "爷爷每天早上散步。",
+        "Yéye měi tiān zǎoshang sànbù.",
+        "Grand-père se promène chaque matin."
       ]
     },
     {
@@ -1219,12 +1363,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "土 donne le sens ; 昜 donne la prononciation. (indice : terre)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "terrain, place, scène",
-      "etymologyEn": "土 donne le sens ; 昜 donne la prononciation. (indice : earth)",
       "words": [
         [
           "场合",
@@ -1236,6 +1378,11 @@
           "chǎng suǒ",
           "lieu, endroit"
         ]
+      ],
+      "phrase": [
+        "这个场合不太合适。",
+        "Zhège chǎnghé bù tài héshì.",
+        "Cette occasion ne convient pas vraiment."
       ]
     },
     {
@@ -1257,12 +1404,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "尤 donne le sens ; 京 donne la prononciation. (indice : spécialité)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "justement, aussitôt, approcher",
-      "etymologyEn": "尤 donne le sens ; 京 donne la prononciation. (indice : specialty)",
       "words": [
         [
           "就要",
@@ -1274,7 +1419,13 @@
           "jiù shì",
           "exactement, juste, même si"
         ]
-      ]
+      ],
+      "phrase": [
+        "学好汉语不是一蹴而就的。",
+        "Xuéhǎo Hànyǔ bù shì yī cù ér jiù de.",
+        "Bien apprendre le chinois ne se fait pas en un coup."
+      ],
+      "phraseNote": "一蹴而就 : réussir du premier coup, sans effort."
     },
     {
       "char": "始",
@@ -1295,12 +1446,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "女 donne le sens ; 台 donne la prononciation. (indice : femme)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "commencer, début, débuter",
-      "etymologyEn": "女 donne le sens ; 台 donne la prononciation. (indice : woman)",
       "words": [
         [
           "始终",
@@ -1312,6 +1461,11 @@
           "kāi shǐ",
           "commencer, début"
         ]
+      ],
+      "phrase": [
+        "我开始学汉语了。",
+        "Wǒ kāishǐ xué Hànyǔ le.",
+        "J'ai commencé à apprendre le chinois."
       ]
     },
     {
@@ -1320,10 +1474,12 @@
       "meaningEn": "already, finished, to stop, then, afterwards",
       "category": "Adverbes",
       "radical": "己",
-      "components": [],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
+      "components": [
+        [
+          "已",
+          "déjà",
+          "pictogramme"
+        ]
       ],
       "source": "Make Me a Hanzi",
       "meaning": "déjà, fini, ensuite",
@@ -1340,7 +1496,13 @@
           "depuis longtemps, jadis"
         ]
       ],
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "phrase": [
+        "他迫不得已才这样做。",
+        "Tā pò bù dé yǐ cái zhèyàng zuò.",
+        "Il n'a agi ainsi que contraint et forcé."
+      ],
+      "phraseNote": "迫不得已 : être contraint, n'avoir pas d'autre choix."
     },
     {
       "char": "词",
@@ -1361,12 +1523,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "讠 donne le sens ; 司 donne la prononciation. (indice : mots)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "mot, expression, parole",
-      "etymologyEn": "讠 donne le sens ; 司 donne la prononciation. (indice : words)",
       "words": [
         [
           "词典",
@@ -1378,7 +1538,13 @@
           "cí yǔ",
           "mot, terme, expression"
         ]
-      ]
+      ],
+      "phrase": [
+        "他强词夺理，大家都不信。",
+        "Tā qiǎng cí duó lǐ, dàjiā dōu bù xìn.",
+        "Il tord les mots pour avoir raison, personne ne le croit."
+      ],
+      "phraseNote": "强词夺理 : raisonner de mauvaise foi, tordre les mots."
     },
     {
       "char": "咖",
@@ -1399,12 +1565,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "口 donne le sens ; 加 donne la prononciation. (indice : bouche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "café, préfixe phonétique",
-      "etymologyEn": "口 donne le sens ; 加 donne la prononciation. (indice : mouth)",
       "words": [
         [
           "咖啡",
@@ -1416,6 +1580,11 @@
           "gā lí",
           "curry"
         ]
+      ],
+      "phrase": [
+        "我每天早上喝咖啡。",
+        "Wǒ měi tiān zǎoshang hē kāfēi.",
+        "Je bois du café chaque matin."
       ]
     },
     {
@@ -1437,12 +1606,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "讠 donne le sens ; 式 donne la prononciation. (indice : parole)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "essayer, tester, examen",
-      "etymologyEn": "讠 donne le sens ; 式 donne la prononciation. (indice : speech)",
       "words": [
         [
           "试题",
@@ -1454,7 +1621,13 @@
           "shì yàn",
           "expérience, test, expérimental"
         ]
-      ]
+      ],
+      "phrase": [
+        "孩子们跃跃欲试。",
+        "Háizimen yuè yuè yù shì.",
+        "Les enfants brûlent d'envie d'essayer."
+      ],
+      "phraseNote": "跃跃欲试 : brûler d'impatience de tenter sa chance."
     },
     {
       "char": "意",
@@ -1475,12 +1648,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "心 donne le sens ; 音 donne la prononciation. (indice : cœur)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "idée, sens, intention",
-      "etymologyEn": "心 donne le sens ; 音 donne la prononciation. (indice : heart)",
       "words": [
         [
           "意见",
@@ -1492,6 +1663,11 @@
           "yì si",
           "idée, sens, attention"
         ]
+      ],
+      "phrase": [
+        "我不明白你的意思。",
+        "Wǒ bù míngbai nǐ de yìsi.",
+        "Je ne comprends pas ce que tu veux dire."
       ]
     },
     {
@@ -1513,12 +1689,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une personne 欠 bâillant plusieurs fois 冫"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "fois, ordre, suivant",
-      "etymologyEn": "A person 欠 yawning multiple times 冫",
       "words": [
         [
           "上次",
@@ -1530,7 +1704,13 @@
           "xià cì",
           "la prochaine fois"
         ]
-      ]
+      ],
+      "phrase": [
+        "他三番五次地迟到。",
+        "Tā sān fān wǔ cì de chídào.",
+        "Il est en retard à maintes reprises."
+      ],
+      "phraseNote": "三番五次 : à plusieurs reprises, sans arrêt."
     },
     {
       "char": "考",
@@ -1551,12 +1731,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "耂 donne le sens ; 丂 donne la prononciation. (indice : vieux)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "tester, examiner, enquêter",
-      "etymologyEn": "耂 donne le sens ; 丂 donne la prononciation. (indice : old)",
       "words": [
         [
           "考试",
@@ -1568,6 +1746,11 @@
           "kǎo shēng",
           "candidat à l'examen"
         ]
+      ],
+      "phrase": [
+        "明天我要考试。",
+        "Míngtiān wǒ yào kǎoshì.",
+        "Demain j'ai un examen."
       ]
     },
     {
@@ -1589,12 +1772,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "宀 donne le sens ; 至 donne la prononciation. (indice : toit)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "pièce, salle, chambre",
-      "etymologyEn": "宀 donne le sens ; 至 donne la prononciation. (indice : roof)",
       "words": [
         [
           "教室",
@@ -1606,7 +1787,13 @@
           "bàn gōng shì",
           "bureau, local professionnel"
         ]
-      ]
+      ],
+      "phrase": [
+        "兄弟不应该同室操戈。",
+        "Xiōngdì bù yīnggāi tóng shì cāo gē.",
+        "Des frères ne devraient pas se battre entre eux."
+      ],
+      "phraseNote": "同室操戈 : se battre entre proches, conflit fratricide."
     },
     {
       "char": "因",
@@ -1626,10 +1813,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "cause, raison, parce que",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -1644,6 +1827,11 @@
           "yīn cǐ",
           "donc, par conséquent"
         ]
+      ],
+      "phrase": [
+        "因为下雨，我们没去。",
+        "Yīnwèi xià yǔ, wǒmen méi qù.",
+        "Comme il pleuvait, nous ne sommes pas allés."
       ]
     },
     {
@@ -1660,12 +1848,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une personne 人 suivant une autre"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "depuis, de, par",
-      "etymologyEn": "One person 人 following another",
       "words": [
         [
           "从小",
@@ -1677,7 +1863,13 @@
           "cóng lái",
           "toujours, jamais"
         ]
-      ]
+      ],
+      "phrase": [
+        "他从头到尾听完了。",
+        "Tā cóng tóu dào wěi tīng wán le.",
+        "Il a écouté du début à la fin."
+      ],
+      "phraseNote": "从头到尾 : du début à la fin, intégralement."
     },
     {
       "char": "裤",
@@ -1698,12 +1890,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "衤 donne le sens ; 库 donne la prononciation. (indice : vêtements)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "pantalon, culotte",
-      "etymologyEn": "衤 donne le sens ; 库 donne la prononciation. (indice : clothes)",
       "words": [
         [
           "裤子",
@@ -1715,6 +1905,11 @@
           "duǎn kù",
           "short, culotte courte"
         ]
+      ],
+      "phrase": [
+        "这条裤子太长了。",
+        "Zhè tiáo kùzi tài cháng le.",
+        "Ce pantalon est trop long."
       ]
     },
     {
@@ -1736,12 +1931,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "舍 donne le sens ; 予 donne la prononciation. (indice : maison)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "détendu, confortable, étendre",
-      "etymologyEn": "舍 donne le sens ; 予 donne la prononciation. (indice : home)",
       "words": [
         [
           "舒服",
@@ -1753,6 +1946,11 @@
           "shū shì",
           "douillet, confortable"
         ]
+      ],
+      "phrase": [
+        "这张床很舒服。",
+        "Zhè zhāng chuáng hěn shūfu.",
+        "Ce lit est très confortable."
       ]
     },
     {
@@ -1774,12 +1972,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Le lieu 阝 de la lune 月 ; à comparer à 阳"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "yin, sombre, caché",
-      "etymologyEn": "The place 阝 of the moon 月; compare 阳",
       "words": [
         [
           "阴天",
@@ -1791,6 +1987,11 @@
           "yīn móu",
           "comploter, complot"
         ]
+      ],
+      "phrase": [
+        "今天是阴天，可能会下雨。",
+        "Jīntiān shì yīntiān, kěnéng huì xià yǔ.",
+        "Aujourd'hui il fait gris, il pourrait pleuvoir."
       ]
     },
     {
@@ -1812,12 +2013,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "De l'or 钅 qui fut 昔 mais est perdu"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "erreur, faute, faux",
-      "etymologyEn": "Gold 钅 that once was 昔 but is lost",
       "words": [
         [
           "错误",
@@ -1829,6 +2028,11 @@
           "bù cuò",
           "correct, bien, pas mal"
         ]
+      ],
+      "phrase": [
+        "这个字写错了。",
+        "Zhège zì xiě cuò le.",
+        "Ce caractère est mal écrit."
       ]
     },
     {
@@ -1850,12 +2054,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une volonté 忄 décidée 夬 ; 夬 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "rapide, vite, bientôt",
-      "etymologyEn": "A decisive 夬 will 忄; 夬 also provides the pronunciation",
       "words": [
         [
           "快餐",
@@ -1867,7 +2069,13 @@
           "kuài lè",
           "heureux, joyeux"
         ]
-      ]
+      ],
+      "phrase": [
+        "时间不多，我们快马加鞭吧。",
+        "Shíjiān bù duō, wǒmen kuài mǎ jiā biān ba.",
+        "Le temps presse, accélérons le rythme."
+      ],
+      "phraseNote": "快马加鞭 : accélérer l'allure, redoubler d'efforts."
     },
     {
       "char": "思",
@@ -1888,12 +2096,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Peser quelque chose avec l'esprit 囟 (modifié) et le cœur 心"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "penser, réfléchir, particule finale",
-      "etymologyEn": "Weighing something with your mind 囟 (altered) and heart 心",
       "words": [
         [
           "思想",
@@ -1905,7 +2111,13 @@
           "sī kǎo",
           "réfléchir, méditer"
         ]
-      ]
+      ],
+      "phrase": [
+        "他思前想后，决定不去。",
+        "Tā sī qián xiǎng hòu, juédìng bù qù.",
+        "Après mûre réflexion, il a décidé de ne pas y aller."
+      ],
+      "phraseNote": "思前想后 : réfléchir longuement, peser le pour et le contre."
     },
     {
       "char": "泳",
@@ -1926,12 +2138,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "氵 donne le sens ; 永 donne la prononciation. (indice : eau)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "nager, plonger",
-      "etymologyEn": "氵 donne le sens ; 永 donne la prononciation. (indice : water)",
       "words": [
         [
           "游泳",
@@ -1943,6 +2153,11 @@
           "yóu yǒng chí",
           "piscine"
         ]
+      ],
+      "phrase": [
+        "我周末去游泳。",
+        "Wǒ zhōumò qù yóuyǒng.",
+        "Je vais nager ce week-end."
       ]
     },
     {
@@ -1964,12 +2179,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "旦 donne la prononciation. (pas de détail)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "mais, cependant, toutefois",
-      "etymologyEn": "旦 donne la prononciation. (pas de détail)",
       "words": [
         [
           "但是",
@@ -1981,6 +2194,11 @@
           "bù dàn",
           "non seulement, mais aussi"
         ]
+      ],
+      "phrase": [
+        "他想去，但是没有时间。",
+        "Tā xiǎng qù, dànshì méiyǒu shíjiān.",
+        "Il veut y aller, mais il n'a pas le temps."
       ]
     },
     {
@@ -2002,12 +2220,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "⺮ donne le sens ; 监 donne la prononciation. (indice : bambou)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "panier, but",
-      "etymologyEn": "⺮ donne le sens ; 监 donne la prononciation. (indice : bamboo)",
       "words": [
         [
           "篮球",
@@ -2019,6 +2235,11 @@
           "yáo lán",
           "berceau, origine"
         ]
+      ],
+      "phrase": [
+        "他们每天打篮球。",
+        "Tāmen měi tiān dǎ lánqiú.",
+        "Ils jouent au basket chaque jour."
       ]
     },
     {
@@ -2040,12 +2261,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une personne saluant 关 quelqu'un qui s'éloigne 辶"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "offrir, envoyer, raccompagner",
-      "etymologyEn": "A person waving 关 to someone walking away 辶",
       "words": [
         [
           "送给",
@@ -2057,7 +2276,13 @@
           "fā sòng",
           "transmettre, délivrer, émettre"
         ]
-      ]
+      ],
+      "phrase": [
+        "他帮我，真是雪中送炭。",
+        "Tā bāng wǒ, zhēn shì xuě zhōng sòng tàn.",
+        "Son aide m'a été d'un grand secours dans le besoin."
+      ],
+      "phraseNote": "雪中送炭 : apporter une aide précieuse dans l'adversité."
     },
     {
       "char": "游",
@@ -2078,12 +2303,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Nager librement 斿 à travers les mers 氵"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "voyager, errer, parcourir",
-      "etymologyEn": "To swim freely 斿 through the seas 氵",
       "words": [
         [
           "游客",
@@ -2095,7 +2318,13 @@
           "yóu xì",
           "jeu, jouer"
         ]
-      ]
+      ],
+      "phrase": [
+        "他做这个工作游刃有余。",
+        "Tā zuò zhège gōngzuò yóu rèn yǒu yú.",
+        "Il fait ce travail avec une grande aisance."
+      ],
+      "phraseNote": "游刃有余 : agir avec aisance, avoir de la marge."
     },
     {
       "char": "地",
@@ -2116,12 +2345,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "土 donne le sens ; 也 donne la prononciation. (indice : terre)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "terre, sol, particule",
-      "etymologyEn": "土 donne le sens ; 也 donne la prononciation. (indice : earth)",
       "words": [
         [
           "地点",
@@ -2133,6 +2360,11 @@
           "dì fāng",
           "région, régional, local"
         ]
+      ],
+      "phrase": [
+        "这个地方很安静。",
+        "Zhège dìfang hěn ānjìng.",
+        "Cet endroit est très calme."
       ]
     },
     {
@@ -2141,14 +2373,11 @@
       "meaningEn": "cheerful, happy, laughing, music",
       "category": "Adjectifs",
       "radical": "丿",
-      "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Forme simplifiée de 樂, un instrument de musique avec bois 木, cordes 幺 et plectre 白"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "joyeux, content, musique",
-      "etymologyEn": "Simplified form of 樂, a musical instrument with wood 木, strings 幺, and a pick 白",
       "words": [
         [
           "乐观",
@@ -2161,7 +2390,25 @@
           "groupe, orchestre"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他画画乐此不疲。",
+        "Tā huàhuà lè cǐ bù pí.",
+        "Il peint sans jamais se lasser."
+      ],
+      "phraseNote": "乐此不疲 : prendre plaisir à une activité sans jamais s'en lasser.",
+      "components": [
+        [
+          "木",
+          "bois",
+          "composant"
+        ],
+        [
+          "幺",
+          "cordes",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "诉",
@@ -2182,12 +2429,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Des paroles 讠 de reproche 斥 ; 斥 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "accuser, informer, raconter",
-      "etymologyEn": "Words 讠 of blame 斥; 斥 also provides the pronunciation",
       "words": [
         [
           "告诉",
@@ -2199,6 +2444,11 @@
           "tóu sù",
           "déposer une plainte"
         ]
+      ],
+      "phrase": [
+        "请告诉我你的名字。",
+        "Qǐng gàosù wǒ nǐ de míngzi.",
+        "Dis-moi ton nom, s'il te plaît."
       ]
     },
     {
@@ -2208,10 +2458,6 @@
       "category": "Noms",
       "radical": "口",
       "components": [],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "droite, droit",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -2227,7 +2473,13 @@
           "gauche et droite, environ, contrôler"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他左顾右盼，像在找人。",
+        "Tā zuǒ gù yòu pàn, xiàng zài zhǎo rén.",
+        "Il regarde de tous les côtés, comme s'il cherchait quelqu'un."
+      ],
+      "phraseNote": "左顾右盼 : regarder à gauche et à droite, jeter des regards autour de soi."
     },
     {
       "char": "等",
@@ -2248,12 +2500,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Des lamelles de bambou ⺮ posées devant un tribunal 寺"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "attendre, égal, rang",
-      "etymologyEn": "Bamboo strips ⺮ laid before a court 寺",
       "words": [
         [
           "等到",
@@ -2265,6 +2515,11 @@
           "děng yú",
           "équivaloir, égaler"
         ]
+      ],
+      "phrase": [
+        "请等我五分钟。",
+        "Qǐng děng wǒ wǔ fēnzhōng.",
+        "Attends-moi cinq minutes, s'il te plaît."
       ]
     },
     {
@@ -2286,12 +2541,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Forme simplifiée de 纍 ; élever de la soie 糸 dans les champs 畾 ; 畾 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "fatigué, accumuler, ennui",
-      "etymologyEn": "Simplified form of 纍; growing silk 糸 in the fields 畾; 畾 also provides the pronunciation",
       "words": [
         [
           "积累",
@@ -2303,7 +2556,13 @@
           "lěi jī",
           "accumuler"
         ]
-      ]
+      ],
+      "phrase": [
+        "知识要日积月累。",
+        "Zhīshi yào rì jī yuè lěi.",
+        "Le savoir s'accumule jour après jour."
+      ],
+      "phraseNote": "日积月累 : s'accumuler peu à peu, jour après jour."
     },
     {
       "char": "虽",
@@ -2323,10 +2582,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "bien que, quoique",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -2341,6 +2596,11 @@
           "suī shuō",
           "quoique, bien que"
         ]
+      ],
+      "phrase": [
+        "虽然下雨，我还是去了。",
+        "Suīrán xià yǔ, wǒ háishì qù le.",
+        "Bien qu'il pleuve, j'y suis quand même allé."
       ]
     },
     {
@@ -2367,12 +2627,10 @@
         ]
       ],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : un poisson nageant vers le haut)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "poisson",
-      "etymologyEn": "(indice : A fish swimming upwards)",
       "words": [
         [
           "钓鱼",
@@ -2384,7 +2642,13 @@
           "è yú",
           "alligator, crocodile"
         ]
-      ]
+      ],
+      "phrase": [
+        "他在新学校如鱼得水。",
+        "Tā zài xīn xuéxiào rú yú dé shuǐ.",
+        "Dans sa nouvelle école, il est comme un poisson dans l'eau."
+      ],
+      "phraseNote": "如鱼得水 : être dans son élément."
     },
     {
       "char": "店",
@@ -2405,12 +2669,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "广 donne le sens ; 占 donne la prononciation. (indice : bâtiment)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "magasin, boutique, hôtel",
-      "etymologyEn": "广 donne le sens ; 占 donne la prononciation. (indice : building)",
       "words": [
         [
           "饭店",
@@ -2422,6 +2684,11 @@
           "shāng diàn",
           "magasin, boutique"
         ]
+      ],
+      "phrase": [
+        "这家店的面包很好吃。",
+        "Zhè jiā diàn de miànbāo hěn hǎochī.",
+        "Le pain de ce magasin est délicieux."
       ]
     },
     {
@@ -2448,12 +2715,10 @@
         ]
       ],
       "etymology": [
-        "象形 — pictogramme",
-        "Un animal debout bien droit ; 亠 est la tête"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "bête rare, étrange, élégant",
-      "etymologyEn": "An animal standing straight; 亠 is the head",
       "words": [
         [
           "离开",
@@ -2465,7 +2730,13 @@
           "lí hūn",
           "divorcer"
         ]
-      ]
+      ],
+      "phrase": [
+        "他们俩形影不离。",
+        "Tāmen liǎ xíng yǐng bù lí.",
+        "Ces deux-là sont inséparables."
+      ],
+      "phraseNote": "形影不离 : inséparables comme l'ombre et le corps."
     },
     {
       "char": "所",
@@ -2486,12 +2757,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une hache 斤 brandie contre une porte 户"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "lieu, endroit, ce que",
-      "etymologyEn": "An axe 斤 swung at a door 户",
       "words": [
         [
           "所以",
@@ -2503,6 +2772,11 @@
           "suǒ yǒu",
           "tout, avoir, posséder"
         ]
+      ],
+      "phrase": [
+        "这是我所喜欢的书。",
+        "Zhè shì wǒ suǒ xǐhuan de shū.",
+        "C'est le livre que j'aime."
       ]
     },
     {
@@ -2524,12 +2798,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "辶 donne le sens ; 元 donne la prononciation. (indice : marche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "loin, lointain, profond",
-      "etymologyEn": "辶 donne le sens ; 元 donne la prononciation. (indice : walk)",
       "words": [
         [
           "永远",
@@ -2541,7 +2813,13 @@
           "yuǎn chù",
           "lieu lointain, ailleurs"
         ]
-      ]
+      ],
+      "phrase": [
+        "领导者要高瞻远瞩。",
+        "Lǐngdǎozhě yào gāo zhān yuǎn zhǔ.",
+        "Un dirigeant doit voir loin."
+      ],
+      "phraseNote": "高瞻远瞩 : voir loin, avoir une vision à long terme."
     },
     {
       "char": "懂",
@@ -2562,12 +2840,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "忄 donne le sens ; 董 donne la prononciation. (indice : esprit)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "comprendre, savoir",
-      "etymologyEn": "忄 donne le sens ; 董 donne la prononciation. (indice : mind)",
       "words": [
         [
           "懂得",
@@ -2579,6 +2855,11 @@
           "dǒng shì",
           "déluré, raisonnable, intelligent"
         ]
+      ],
+      "phrase": [
+        "我懂你的意思。",
+        "Wǒ dǒng nǐ de yìsi.",
+        "Je comprends ce que tu veux dire."
       ]
     },
     {
@@ -2599,10 +2880,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "rester, garder, laisser",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -2617,7 +2894,13 @@
           "liú xué shēng",
           "étudiant à l'étranger, étudiant étranger"
         ]
-      ]
+      ],
+      "phrase": [
+        "大火过后，寸草不留。",
+        "Dàhuǒ guòhòu, cùn cǎo bù liú.",
+        "Après l'incendie, il ne reste plus rien."
+      ],
+      "phraseNote": "寸草不留 : ne rien laisser, tout détruire."
     },
     {
       "char": "疼",
@@ -2638,12 +2921,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "疒 donne le sens ; 冬 donne la prononciation. (indice : maladie)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "douleur, faire mal, chérir",
-      "etymologyEn": "疒 donne le sens ; 冬 donne la prononciation. (indice : sickness)",
       "words": [
         [
           "疼痛",
@@ -2655,6 +2936,11 @@
           "xīn téng",
           "chérir, regretter, plaindre"
         ]
+      ],
+      "phrase": [
+        "我头疼，想休息。",
+        "Wǒ tóuténg, xiǎng xiūxi.",
+        "J'ai mal à la tête, je veux me reposer."
       ]
     },
     {
@@ -2676,12 +2962,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "辶 donne le sens ; 云 donne la prononciation. (indice : marche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "transport, chance, mouvement",
-      "etymologyEn": "辶 donne le sens ; 云 donne la prononciation. (indice : walk)",
       "words": [
         [
           "运动",
@@ -2693,7 +2977,13 @@
           "yùn shū",
           "transporter, transport"
         ]
-      ]
+      ],
+      "phrase": [
+        "他终于时来运转了。",
+        "Tā zhōngyú shí lái yùn zhuǎn.",
+        "Sa chance a enfin tourné."
+      ],
+      "phraseNote": "时来运转 : la chance tourne enfin, les temps changent."
     },
     {
       "char": "动",
@@ -2714,12 +3004,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "力 donne le sens. (indice : force)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "bouger, mouvement, action",
-      "etymologyEn": "力 donne le sens. (indice : strength)",
       "words": [
         [
           "动作",
@@ -2731,7 +3019,13 @@
           "dòng wù",
           "animal"
         ]
-      ]
+      ],
+      "phrase": [
+        "他不动声色地听着。",
+        "Tā bù dòng shēng sè de tīng zhe.",
+        "Il écoutait sans trahir la moindre émotion."
+      ],
+      "phraseNote": "不动声色 : garder son sang-froid, ne rien laisser paraître."
     },
     {
       "char": "楼",
@@ -2752,12 +3046,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "木 donne le sens ; 娄 donne la prononciation. (indice : bois)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "immeuble, étage",
-      "etymologyEn": "木 donne le sens ; 娄 donne la prononciation. (indice : wood)",
       "words": [
         [
           "楼上",
@@ -2769,6 +3061,11 @@
           "lóu xià",
           "en bas"
         ]
+      ],
+      "phrase": [
+        "我家住在三楼。",
+        "Wǒ jiā zhù zài sān lóu.",
+        "J'habite au troisième étage."
       ]
     },
     {
@@ -2790,12 +3087,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "足 donne le sens ; 易 donne la prononciation. (indice : pied)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "donner un coup de pied",
-      "etymologyEn": "足 donne le sens ; 易 donne la prononciation. (indice : foot)",
       "words": [
         [
           "踢球",
@@ -2817,7 +3112,13 @@
           "quán dǎ jiǎo tī",
           "rouer de coups"
         ]
-      ]
+      ],
+      "phrase": [
+        "他被人拳打脚踢。",
+        "Tā bèi rén quán dǎ jiǎo tī.",
+        "Il a été roué de coups."
+      ],
+      "phraseNote": "拳打脚踢 : frapper à coups de poing et de pied."
     },
     {
       "char": "站",
@@ -2838,12 +3139,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "立 donne le sens ; 占 donne la prononciation. (indice : se tenir debout)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "station, arrêt, site web",
-      "etymologyEn": "立 donne le sens ; 占 donne la prononciation. (indice : stand)",
       "words": [
         [
           "站住",
@@ -2855,6 +3154,11 @@
           "chē zhàn",
           "gare, arrêt"
         ]
+      ],
+      "phrase": [
+        "我们在车站等你。",
+        "Wǒmen zài chēzhàn děng nǐ.",
+        "Nous t'attendons à la gare."
       ]
     },
     {
@@ -2876,12 +3180,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "口 donne le sens ; 非 donne la prononciation. (indice : bouche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "café, morphine",
-      "etymologyEn": "口 donne le sens ; 非 donne la prononciation. (indice : mouth)",
       "words": [
         [
           "咖啡",
@@ -2898,6 +3200,11 @@
           "kā fēi yīn",
           "caféine"
         ]
+      ],
+      "phrase": [
+        "我喜欢喝咖啡。",
+        "Wǒ xǐhuan hē kāfēi.",
+        "J'aime boire du café."
       ]
     },
     {
@@ -2919,12 +3226,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "足 donne le sens ; 各 donne la prononciation. (indice : pied)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "route, chemin, rue",
-      "etymologyEn": "足 donne le sens ; 各 donne la prononciation. (indice : foot)",
       "words": [
         [
           "路口",
@@ -2936,7 +3241,13 @@
           "lù shang",
           "en route, sur la route"
         ]
-      ]
+      ],
+      "phrase": [
+        "他走投无路，只好求助。",
+        "Tā zǒu tóu wú lù, zhǐhǎo qiúzhù.",
+        "Acculé, il n'a eu d'autre choix que de demander de l'aide."
+      ],
+      "phraseNote": "走投无路 : être acculé, n'avoir aucune issue."
     },
     {
       "char": "体",
@@ -2956,10 +3267,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "corps, forme, style",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -2974,7 +3281,13 @@
           "tǐ yù chǎng",
           "stade"
         ]
-      ]
+      ],
+      "phrase": [
+        "他身体力行，从不空谈。",
+        "Tā shēn tǐ lì xíng, cóng bù kōngtán.",
+        "Il agit au lieu de discourir."
+      ],
+      "phraseNote": "身体力行 : joindre le geste à la parole, agir personnellement."
     },
     {
       "char": "长",
@@ -2984,12 +3297,10 @@
       "radical": "长",
       "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Forme simplifiée de 長 ; un vieillard aux longs cheveux avec une canne"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "long, durable, exceller",
-      "etymologyEn": "Simplified form of 長; an old man with long hair and a cane",
       "words": [
         [
           "长大",
@@ -3002,7 +3313,12 @@
           "la Grande Muraille"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他比我长得高。",
+        "Tā bǐ wǒ zhǎng de gāo.",
+        "Il est plus grand que moi."
+      ]
     },
     {
       "char": "夫",
@@ -3023,12 +3339,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un homme 大 portant l'épingle 一 de sa majorité"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "homme, mari, travailleur",
-      "etymologyEn": "A man 大 wearing a coming-of-age hairpin 一",
       "words": [
         [
           "夫妇",
@@ -3040,7 +3354,13 @@
           "fū qī",
           "mari et femme, couple"
         ]
-      ]
+      ],
+      "phrase": [
+        "他们夫唱妇随，很和睦。",
+        "Tāmen fū chàng fù suí, hěn hémù.",
+        "Ils s'accordent parfaitement, en toute harmonie."
+      ],
+      "phraseNote": "夫唱妇随 : couple uni, le mari chante et la femme suit."
     },
     {
       "char": "旅",
@@ -3048,14 +3368,11 @@
       "meaningEn": "journey, trip, to travel",
       "category": "Noms",
       "radical": "方",
-      "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un homme 方 voyageant avec un paquet 氏 sur le dos"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "voyage, périple, voyager",
-      "etymologyEn": "A man 方 traveling with a pack 氏 on his back",
       "words": [
         [
           "旅客",
@@ -3068,7 +3385,24 @@
           "voyager, voyage"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "旅客们在门口等车。",
+        "Lǚkèmen zài ménkǒu děng chē.",
+        "Les voyageurs attendent le bus à l'entrée."
+      ],
+      "components": [
+        [
+          "方",
+          "homme",
+          "composant"
+        ],
+        [
+          "氏",
+          "paquet",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "跳",
@@ -3089,12 +3423,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "足 donne le sens ; 兆 donne la prononciation. (indice : pied)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "sauter, bondir, danser",
-      "etymologyEn": "足 donne le sens ; 兆 donne la prononciation. (indice : foot)",
       "words": [
         [
           "跳高",
@@ -3106,7 +3438,13 @@
           "tiào wǔ",
           "danser"
         ]
-      ]
+      ],
+      "phrase": [
+        "他气得暴跳如雷。",
+        "Tā qì de bào tiào rú léi.",
+        "Il était fou de rage."
+      ],
+      "phraseNote": "暴跳如雷 : sauter de colère, entrer dans une rage folle."
     },
     {
       "char": "丈",
@@ -3126,10 +3464,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "homme, mari, zhang (3,3 m)",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -3144,6 +3478,11 @@
           "wàn zhàng",
           "dix mille brasses, sans limites"
         ]
+      ],
+      "phrase": [
+        "她的丈夫是老师。",
+        "Tā de zhàngfu shì lǎoshī.",
+        "Son mari est professeur."
       ]
     },
     {
@@ -3165,12 +3504,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Parler 口 avec la force d'un bœuf 牛"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "annoncer, informer, accuser",
-      "etymologyEn": "To speak 口 with the force of an ox 牛",
       "words": [
         [
           "告诉",
@@ -3182,6 +3519,11 @@
           "gào bié",
           "quitter, faire ses adieux"
         ]
+      ],
+      "phrase": [
+        "他告别了朋友，回家了。",
+        "Tā gàobié le péngyou, huí jiā le.",
+        "Il a pris congé de ses amis et est rentré."
       ]
     },
     {
@@ -3203,12 +3545,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "纟 donne le sens ; 录 donne la prononciation. (indice : soie)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "vert, chlore",
-      "etymologyEn": "纟 donne le sens ; 录 donne la prononciation. (indice : silk)",
       "words": [
         [
           "绿色",
@@ -3220,7 +3560,13 @@
           "lǜ chá",
           "thé vert, fille naïve en apparence"
         ]
-      ]
+      ],
+      "phrase": [
+        "这条街晚上灯红酒绿。",
+        "Zhè tiáo jiē wǎnshang dēng hóng jiǔ lǜ.",
+        "Cette rue le soir est pleine de néons et de plaisirs."
+      ],
+      "phraseNote": "灯红酒绿 : vie nocturne luxueuse et dissolue."
     },
     {
       "char": "铁",
@@ -3241,12 +3587,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "钅 donne le sens ; 失 donne la prononciation. (indice : métal)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "fer, solide, ferme",
-      "etymologyEn": "钅 donne le sens ; 失 donne la prononciation. (indice : metal)",
       "words": [
         [
           "铁路",
@@ -3258,6 +3602,11 @@
           "dì tiě",
           "métro, rame de métro"
         ]
+      ],
+      "phrase": [
+        "我们坐地铁去上班。",
+        "Wǒmen zuò dìtiě qù shàngbān.",
+        "Nous prenons le métro pour aller travailler."
       ]
     },
     {
@@ -3284,12 +3633,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une bordure 冂 autour d'une terre 土 avec un puits 口"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "dynastie Zhou, circonférence",
-      "etymologyEn": "Border 冂 around land 土 with a well 口",
       "words": [
         [
           "周末",
@@ -3301,7 +3648,13 @@
           "zhōu nián",
           "anniversaire, annuel"
         ]
-      ]
+      ],
+      "phrase": [
+        "四季周而复始。",
+        "Sìjì zhōu ér fù shǐ.",
+        "Les quatre saisons se succèdent sans fin."
+      ],
+      "phraseNote": "周而复始 : tourner en cycle, se répéter sans cesse."
     },
     {
       "char": "跟",
@@ -3322,12 +3675,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "足 donne le sens ; 艮 donne la prononciation. (indice : pied)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "talon, suivre, avec",
-      "etymologyEn": "足 donne le sens ; 艮 donne la prononciation. (indice : foot)",
       "words": [
         [
           "跟前",
@@ -3339,6 +3690,11 @@
           "gēn suí",
           "suivre"
         ]
+      ],
+      "phrase": [
+        "他跟着我走进教室。",
+        "Tā gēn zhe wǒ zǒu jìn jiàoshì.",
+        "Il m'a suivi dans la salle de classe."
       ]
     },
     {
@@ -3360,12 +3716,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "忄 donne le sens ; 曼 donne la prononciation. (indice : cœur)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "lent, lentement, nonchalant",
-      "etymologyEn": "忄 donne le sens ; 曼 donne la prononciation. (indice : heart)",
       "words": [
         [
           "慢慢",
@@ -3377,7 +3731,13 @@
           "màn chē",
           "omnibus, train local"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话慢条斯理。",
+        "Tā shuōhuà màn tiáo sī lǐ.",
+        "Il parle avec lenteur et nonchalance."
+      ],
+      "phraseNote": "慢条斯理 : lentement et posément, sans se presser."
     },
     {
       "char": "头",
@@ -3398,12 +3758,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "大 donne le sens. (indice : haut)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "tête, chef, sommet",
-      "etymologyEn": "大 donne le sens. (indice : high)",
       "words": [
         [
           "头发",
@@ -3415,6 +3773,11 @@
           "tóu nǎo",
           "cervelle, esprit, crâne, chef"
         ]
+      ],
+      "phrase": [
+        "他的头发很长。",
+        "Tā de tóufa hěn cháng.",
+        "Ses cheveux sont très longs."
       ]
     },
     {
@@ -3435,10 +3798,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "agir, faire un geste",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -3453,7 +3812,13 @@
           "zháo jí",
           "s'inquiéter, se presser"
         ]
-      ]
+      ],
+      "phrase": [
+        "他说话不着边际。",
+        "Tā shuōhuà bù zhuó biān jì.",
+        "Il parle à côté du sujet."
+      ],
+      "phraseNote": "不着边际 : sans rapport, à côté du sujet."
     },
     {
       "char": "馆",
@@ -3474,12 +3839,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un bâtiment 官 public où l'on sert à manger 饣 ; 官 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "édifice, boutique, maison",
-      "etymologyEn": "A public 官 building where food 饣 is served; 官 also provides the pronunciation",
       "words": [
         [
           "图书馆",
@@ -3491,6 +3854,11 @@
           "fàn guǎn",
           "restaurant"
         ]
+      ],
+      "phrase": [
+        "我们去饭馆吃饭。",
+        "Wǒmen qù fànguǎn chīfàn.",
+        "Nous allons manger au restaurant."
       ]
     },
     {
@@ -3499,14 +3867,11 @@
       "meaningEn": "each, every",
       "category": "Pronoms",
       "radical": "母",
-      "components": [],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "母 donne la prononciation. (pas de détail)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "chaque, tous",
-      "etymologyEn": "母 donne la prononciation. (pas de détail)",
       "words": [
         [
           "每当",
@@ -3519,7 +3884,19 @@
           "chaque fois, à chaque occasion"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "我每天都喝咖啡。",
+        "Wǒ měi tiān dōu hē kāfēi.",
+        "Je bois du café tous les jours."
+      ],
+      "components": [
+        [
+          "母",
+          "mère",
+          "son"
+        ]
+      ]
     },
     {
       "char": "完",
@@ -3540,12 +3917,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "宀 donne le sens ; 元 donne la prononciation. (indice : toit)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "achever, finir, entier",
-      "etymologyEn": "宀 donne le sens ; 元 donne la prononciation. (indice : roof)",
       "words": [
         [
           "完成",
@@ -3557,7 +3932,13 @@
           "wán quán",
           "complet, entier, totalement"
         ]
-      ]
+      ],
+      "phrase": [
+        "借你的书，我一定完璧归赵。",
+        "Jiè nǐ de shū, wǒ yīdìng wán bì guī zhào.",
+        "Je te rendrai ton livre intact, je te le promets."
+      ],
+      "phraseNote": "完璧归赵 : rendre intact ce qui a été emprunté."
     },
     {
       "char": "准",
@@ -3578,12 +3959,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "冫 donne le sens ; 隹 donne la prononciation. (indice : eau d'un niveau)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "exact, permettre, approuver",
-      "etymologyEn": "冫 donne le sens ; 隹 donne la prononciation. (indice : water in a spirit level)",
       "words": [
         [
           "准备",
@@ -3595,6 +3974,11 @@
           "zhǔn què",
           "exact, précis"
         ]
+      ],
+      "phrase": [
+        "我的发音不太准。",
+        "Wǒ de fāyīn bù tài zhǔn.",
+        "Ma prononciation n'est pas très exacte."
       ]
     },
     {
@@ -3616,12 +4000,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "辶 donne le sens ; 咼 donne la prononciation. (indice : marche)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "passer, traverser, dépasser",
-      "etymologyEn": "辶 donne le sens ; 咼 donne la prononciation. (indice : walk)",
       "words": [
         [
           "过来",
@@ -3633,6 +4015,11 @@
           "guò nián",
           "fêter le Nouvel An chinois"
         ]
+      ],
+      "phrase": [
+        "过年的时候，我们回家。",
+        "Guònián de shíhou, wǒmen huí jiā.",
+        "Au Nouvel An, nous rentrons à la maison."
       ]
     },
     {
@@ -3643,12 +4030,10 @@
       "radical": "门",
       "components": [],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : une porte ou un portail ouvert)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "porte, entrée, portail",
-      "etymologyEn": "(indice : An open doorway or gate)",
       "words": [
         [
           "门口",
@@ -3661,7 +4046,13 @@
           "billet, place de spectacle"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "你别客气，开门见山吧。",
+        "Nǐ bié kèqi, kāi mén jiàn shān ba.",
+        "Ne tourne pas autour du pot, va droit au but."
+      ],
+      "phraseNote": "开门见山 : entrer directement dans le sujet."
     },
     {
       "char": "万",
@@ -3670,10 +4061,6 @@
       "category": "Nombres & mesure",
       "radical": "一",
       "components": [],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "dix mille, innombrable",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -3689,7 +4076,12 @@
           "dix millions, absolument, surtout"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "你千万要小心。",
+        "Nǐ qiānwàn yào xiǎoxīn.",
+        "Fais surtout très attention."
+      ]
     },
     {
       "char": "自",
@@ -3699,12 +4091,10 @@
       "radical": "自",
       "components": [],
       "etymology": [
-        "象形 — pictogramme",
-        "Un nez ; en Chine, on se désigne soi-même en montrant son nez"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "soi, personnel, depuis",
-      "etymologyEn": "A nose; in China, people refer to themselves by pointing to their noses",
       "words": [
         [
           "自己",
@@ -3717,7 +4107,13 @@
           "liberté, libre"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他自言自语地走进来。",
+        "Tā zì yán zì yǔ de zǒu jìn lái.",
+        "Il est entré en parlant tout seul."
+      ],
+      "phraseNote": "自言自语 : se parler à soi-même."
     },
     {
       "char": "黑",
@@ -3725,14 +4121,11 @@
       "meaningEn": "black, dark, evil, sinister",
       "category": "Adjectifs",
       "radical": "黑",
-      "components": [],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Le visage d'un homme noirci par la suie d'un feu 灬"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "noir, sombre, maléfique",
-      "etymologyEn": "A man's face blacked by soot from a fire 灬",
       "words": [
         [
           "黑板",
@@ -3745,7 +4138,19 @@
           "noir"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "黑板上的字很小。",
+        "Hēibǎn shàng de zì hěn xiǎo.",
+        "Les caractères au tableau sont tout petits."
+      ],
+      "components": [
+        [
+          "灬",
+          "feu",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "拿",
@@ -3766,12 +4171,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "手 donne le sens ; 合 donne la prononciation. (indice : main)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "prendre, tenir, saisir",
-      "etymologyEn": "手 donne le sens ; 合 donne la prononciation. (indice : hand)",
       "words": [
         [
           "拿出",
@@ -3783,7 +4186,13 @@
           "ná dào",
           "obtenir, recevoir"
         ]
-      ]
+      ],
+      "phrase": [
+        "这件事十拿九稳。",
+        "Zhè jiàn shì shí ná jiǔ wěn.",
+        "Cette affaire est quasi certaine."
+      ],
+      "phraseNote": "十拿九稳 : avoir neuf chances sur dix, être presque sûr."
     },
     {
       "char": "网",
@@ -3804,12 +4213,10 @@
         ]
       ],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : un filet pour prendre le poisson)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "filet, réseau",
-      "etymologyEn": "(indice : A net for catching fish)",
       "words": [
         [
           "网上",
@@ -3821,6 +4228,11 @@
           "wǎng yǒu",
           "ami en ligne, internaute"
         ]
+      ],
+      "phrase": [
+        "我在网上买了一个包。",
+        "Wǒ zài wǎngshàng mǎi le yī gè bāo.",
+        "J'ai acheté un sac en ligne."
       ]
     },
     {
@@ -3842,12 +4254,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Quelqu'un 土 avançant de son pied 止"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "marcher, courir, fuir",
-      "etymologyEn": "Someone 土 stepping with their foot 止",
       "words": [
         [
           "走路",
@@ -3859,7 +4269,13 @@
           "zǒu guò",
           "passer devant, dépasser"
         ]
-      ]
+      ],
+      "phrase": [
+        "旅行时不要走马观花。",
+        "Lǚxíng shí bù yào zǒu mǎ guān huā.",
+        "En voyage, ne survole pas tout à la va-vite."
+      ],
+      "phraseNote": "走马观花 : survoler, regarder à la hâte sans approfondir."
     },
     {
       "char": "红",
@@ -3880,12 +4296,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "纟 donne le sens ; 工 donne la prononciation. (indice : soie)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "rouge, vermillon, rougir",
-      "etymologyEn": "纟 donne le sens ; 工 donne la prononciation. (indice : silk)",
       "words": [
         [
           "红色",
@@ -3897,6 +4311,11 @@
           "hóng chá",
           "thé noir"
         ]
+      ],
+      "phrase": [
+        "她穿了一件红衣服。",
+        "Tā chuān le yī jiàn hóng yīfu.",
+        "Elle a mis un vêtement rouge."
       ]
     },
     {
@@ -3905,14 +4324,18 @@
       "meaningEn": "bird",
       "category": "Noms",
       "radical": "鸟",
-      "components": [],
+      "components": [
+        [
+          "鸟",
+          "oiseau",
+          "pictogramme"
+        ]
+      ],
       "etymology": [
-        "象形 — pictogramme",
-        "Forme simplifiée de 烏, un oiseau"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "oiseau",
-      "etymologyEn": "Simplified form of 烏, a bird",
       "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
       "words": [
         [
@@ -3925,7 +4348,13 @@
           "xiǎo niǎo",
           "petit oiseau"
         ]
-      ]
+      ],
+      "phrase": [
+        "公园里鸟语花香。",
+        "Gōngyuán lǐ niǎo yǔ huā xiāng.",
+        "Dans le parc, oiseaux qui chantent et fleurs parfumées."
+      ],
+      "phraseNote": "鸟语花香 : paysage printanier, oiseaux et fleurs."
     },
     {
       "char": "往",
@@ -3933,14 +4362,11 @@
       "meaningEn": "to go, to depart, past, former",
       "category": "Verbes",
       "radical": "彳",
-      "components": [],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "彳 donne le sens ; 王 donne la prononciation. (indice : pas)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "aller, partir, passé",
-      "etymologyEn": "彳 donne le sens ; 王 donne la prononciation. (indice : step)",
       "words": [
         [
           "往往",
@@ -3953,7 +4379,24 @@
           "fréquenter, relation, contact"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "他往往早上迟到。",
+        "Tā wǎngwǎng zǎoshang chídào.",
+        "Il est souvent en retard le matin."
+      ],
+      "components": [
+        [
+          "彳",
+          "pas",
+          "sens"
+        ],
+        [
+          "王",
+          "roi",
+          "son"
+        ]
+      ]
     },
     {
       "char": "足",
@@ -3961,14 +4404,11 @@
       "meaningEn": "foot, to attain, to satisfy, enough",
       "category": "Noms",
       "radical": "足",
-      "components": [],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : la jambe 口 au-dessus du pied)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "pied, suffire, assez",
-      "etymologyEn": "(indice : The leg 口 above the foot)",
       "words": [
         [
           "足够",
@@ -3981,7 +4421,20 @@
           "football, ballon de foot"
         ]
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "phrase": [
+        "这个计划还有美中不足。",
+        "Zhège jìhuà hái yǒu měi zhōng bù zú.",
+        "Ce projet a encore ses petits défauts."
+      ],
+      "phraseNote": "美中不足 : un petit défaut dans un ensemble satisfaisant.",
+      "components": [
+        [
+          "口",
+          "bouche",
+          "composant"
+        ]
+      ]
     },
     {
       "char": "花",
@@ -4002,12 +4455,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une fleur 艹 éclose 化 ; 化 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "fleur, fleurir, dépenser",
-      "etymologyEn": "A flower 艹 in bloom 化; 化 also provides the pronunciation",
       "words": [
         [
           "花园",
@@ -4019,7 +4470,13 @@
           "huā fèi",
           "frais, coût, dépenser"
         ]
-      ]
+      ],
+      "phrase": [
+        "他的到来真是锦上添花。",
+        "Tā de dàolái zhēn shì jǐn shàng tiān huā.",
+        "Son arrivée est une touche de beauté supplémentaire."
+      ],
+      "phraseNote": "锦上添花 : embellir ce qui est déjà beau, ajouter une touche parfaite."
     },
     {
       "char": "旁",
@@ -4040,12 +4497,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "立 donne le sens ; 方 donne la prononciation. (indice : se tenir debout)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "côté, à côté, près",
-      "etymologyEn": "立 donne le sens ; 方 donne la prononciation. (indice : stand)",
       "words": [
         [
           "旁边",
@@ -4057,6 +4512,11 @@
           "páng guān",
           "spectateur, non-participant"
         ]
+      ],
+      "phrase": [
+        "他坐在我旁边。",
+        "Tā zuò zài wǒ pángbiān.",
+        "Il est assis à côté de moi."
       ]
     },
     {
@@ -4078,12 +4538,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "心 donne le sens ; 亡 donne la prononciation. (indice : cœur)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "oublier, négliger",
-      "etymologyEn": "心 donne le sens ; 亡 donne la prononciation. (indice : heart)",
       "words": [
         [
           "忘记",
@@ -4095,7 +4553,13 @@
           "wàng diào",
           "oublier"
         ]
-      ]
+      ],
+      "phrase": [
+        "他对她念念不忘。",
+        "Tā duì tā niàn niàn bù wàng.",
+        "Il ne cesse de penser à elle."
+      ],
+      "phraseNote": "念念不忘 : garder constamment en mémoire, ne jamais oublier."
     },
     {
       "char": "最",
@@ -4116,12 +4580,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Avoir lieu 取 sous le soleil 日 (c'est-à-dire partout)"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "le plus, extrêmement",
-      "etymologyEn": "To take place 取 under the sun 日 (that is, everywhere)",
       "words": [
         [
           "最好",
@@ -4133,6 +4595,11 @@
           "zuì hòu",
           "final, dernier, enfin"
         ]
+      ],
+      "phrase": [
+        "他是我最好的朋友。",
+        "Tā shì wǒ zuì hǎo de péngyou.",
+        "C'est mon meilleur ami."
       ]
     },
     {
@@ -4159,12 +4626,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un tableau sur un chevalet ; à comparer à 畫, qui inclut le pinceau"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "tableau, dessin, dessiner",
-      "etymologyEn": "A painting on an easel; compare 畫, which includes the brush",
       "words": [
         [
           "画家",
@@ -4176,7 +4641,13 @@
           "huà r",
           "image, dessin, peinture"
         ]
-      ]
+      ],
+      "phrase": [
+        "别画蛇添足了。",
+        "Bié huà shé tiān zú le.",
+        "N'en rajoute pas, tu gâches tout."
+      ],
+      "phraseNote": "画蛇添足 : ajouter des détails inutiles qui gâtent l'ensemble."
     },
     {
       "char": "跑",
@@ -4197,12 +4668,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "足 donne le sens ; 包 donne la prononciation. (indice : pied)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "courir, fuir, s'échapper",
-      "etymologyEn": "足 donne le sens ; 包 donne la prononciation. (indice : foot)",
       "words": [
         [
           "跑步",
@@ -4214,6 +4683,11 @@
           "pǎo chē",
           "voiture de course, conduire, vélo de course"
         ]
+      ],
+      "phrase": [
+        "他每天早上去跑步。",
+        "Tā měi tiān zǎoshang qù pǎobù.",
+        "Il va courir chaque matin."
       ]
     },
     {
@@ -4240,12 +4714,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Un roi 王 contemplant la lune 月 ; 亡 donne la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "espérer, attendre, souhaiter",
-      "etymologyEn": "A king 王 gazing at the moon 月; 亡 provides the pronunciation",
       "words": [
         [
           "希望",
@@ -4257,7 +4729,13 @@
           "yuàn wàng",
           "désir, souhait"
         ]
-      ]
+      ],
+      "phrase": [
+        "她望眼欲穿地等他。",
+        "Tā wàng yǎn yù chuān de děng tā.",
+        "Elle l'attend avec une impatience extrême."
+      ],
+      "phraseNote": "望眼欲穿 : attendre avec une impatience brûlante."
     },
     {
       "char": "左",
@@ -4267,12 +4745,10 @@
       "radical": "工",
       "components": [],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : une main gauche ; à comparer à 又)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "gauche, non conventionnel",
-      "etymologyEn": "(indice : A left hand; compare 又)",
       "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
         [
@@ -4285,6 +4761,11 @@
           "zuǒ yòu",
           "gauche et droite, environ, contrôler"
         ]
+      ],
+      "phrase": [
+        "左边那家店更好。",
+        "Zuǒbian nà jiā diàn gèng hǎo.",
+        "Le magasin de gauche est meilleur."
       ]
     },
     {
@@ -4306,12 +4787,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "土 donne le sens ; 不 donne la prononciation. (indice : terre)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "mauvais, gâté, casser",
-      "etymologyEn": "土 donne le sens ; 不 donne la prononciation. (indice : earth)",
       "words": [
         [
           "坏处",
@@ -4323,6 +4802,11 @@
           "huài rén",
           "mauvais, méchant, scélérat"
         ]
+      ],
+      "phrase": [
+        "这个苹果坏了。",
+        "Zhège píngguǒ huài le.",
+        "Cette pomme est pourrie."
       ]
     },
     {
@@ -4344,12 +4828,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Des flammes 覀 au-dessus d'un autel 示, rappel d'une tradition chinoise de brûler de la fausse monnaie en offrande"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "billet, ticket, vote",
-      "etymologyEn": "Flames 覀 over an altar 示, referring to a Chinese tradition of burning fake money as an offering",
       "words": [
         [
           "票价",
@@ -4361,6 +4843,11 @@
           "chē piào",
           "billet, ticket de transport"
         ]
+      ],
+      "phrase": [
+        "我买了两张车票。",
+        "Wǒ mǎi le liǎng zhāng chēpiào.",
+        "J'ai acheté deux billets de train."
       ]
     },
     {
@@ -4381,10 +4868,6 @@
           "composant"
         ]
       ],
-      "etymology": [
-        "—",
-        "Étymologie non documentée dans cette base."
-      ],
       "source": "Make Me a Hanzi",
       "meaning": "faire, agir, être",
       "etymologyEn": "Étymologie non documentée dans cette base.",
@@ -4399,7 +4882,13 @@
           "wèi le",
           "pour, afin de"
         ]
-      ]
+      ],
+      "phrase": [
+        "别放弃，事在人为。",
+        "Bié fàngqì, shì zài rén wéi.",
+        "N'abandonne pas : tout dépend de nos efforts."
+      ],
+      "phraseNote": "事在人为 : tout dépend de l'effort humain."
     },
     {
       "char": "己",
@@ -4409,12 +4898,10 @@
       "radical": "己",
       "components": [],
       "etymology": [
-        "象形 — pictogramme",
-        "(indice : un métier à tisser avec du fil)"
+        "象形 — pictogramme"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "soi, personnel, tronc céleste",
-      "etymologyEn": "(indice : A loom woven with thread)",
       "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
       "words": [
         [
@@ -4427,6 +4914,11 @@
           "zhī jǐ",
           "se connaître, intime, ami proche"
         ]
+      ],
+      "phrase": [
+        "自己的事情自己做。",
+        "Zìjǐ de shìqing zìjǐ zuò.",
+        "On fait ses propres affaires soi-même."
       ]
     },
     {
@@ -4453,12 +4945,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une femme 女 tenant un balai 十 à la main 彐"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "épouse, femme",
-      "etymologyEn": "A woman 女 holding a broom 十 in her hand 彐",
       "words": [
         [
           "妻子",
@@ -4470,6 +4960,11 @@
           "fū qī",
           "mari et femme, couple"
         ]
+      ],
+      "phrase": [
+        "他的妻子是医生。",
+        "Tā de qīzi shì yīshēng.",
+        "Sa femme est médecin."
       ]
     },
     {
@@ -4491,12 +4986,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "L'endroit où se tient 立 une personne 亻"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "place, rang, position",
-      "etymologyEn": "The place where a person 亻 stands 立",
       "words": [
         [
           "位于",
@@ -4508,7 +5001,13 @@
           "wèi zhi",
           "position, place, siège"
         ]
-      ]
+      ],
+      "phrase": [
+        "大家各就各位，准备开始。",
+        "Dàjiā gè jiù gè wèi, zhǔnbèi kāishǐ.",
+        "Chacun à sa place, préparez-vous à commencer."
+      ],
+      "phraseNote": "各就各位 : chacun à son poste, en place."
     },
     {
       "char": "记",
@@ -4529,12 +5028,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "Une note 讠 personnelle 己 ; 己 donne aussi la prononciation"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "note, marque, enregistrer",
-      "etymologyEn": "A private 己 note 讠; 己 also provides the pronunciation",
       "words": [
         [
           "记得",
@@ -4546,6 +5043,11 @@
           "jì zhu",
           "retenir, mémoriser, apprendre par cœur"
         ]
+      ],
+      "phrase": [
+        "我记住了他的名字。",
+        "Wǒ jìzhù le tā de míngzi.",
+        "J'ai retenu son nom."
       ]
     },
     {
@@ -4567,12 +5069,10 @@
         ]
       ],
       "etymology": [
-        "形声 — composé phonétique-sémantique",
-        "忄 donne le sens ; 青 donne la prononciation. (indice : cœur)"
+        "形声 — composé phonétique-sémantique"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "émotion, sentiment, affection",
-      "etymologyEn": "忄 donne le sens ; 青 donne la prononciation. (indice : heart)",
       "words": [
         [
           "情感",
@@ -4584,7 +5084,13 @@
           "qíng kuàng",
           "circonstances, situation, état"
         ]
-      ]
+      ],
+      "phrase": [
+        "她情不自禁地笑了。",
+        "Tā qíng bù zì jīn de xiào le.",
+        "Elle n'a pas pu s'empêcher de rire."
+      ],
+      "phraseNote": "情不自禁 : ne pas pouvoir se retenir, être emporté par l'émotion."
     },
     {
       "char": "舞",
@@ -4605,12 +5111,10 @@
         ]
       ],
       "etymology": [
-        "会意 — idéogramme composé",
-        "(indice : une main 舛 tenant un éventail)"
+        "会意 — idéogramme composé"
       ],
       "source": "Make Me a Hanzi",
       "meaning": "danser, brandir",
-      "etymologyEn": "(indice : A hand 舛 holding a fan)",
       "words": [
         [
           "舞台",
@@ -4622,6 +5126,11 @@
           "tiào wǔ",
           "danser"
         ]
+      ],
+      "phrase": [
+        "她在舞台上跳舞。",
+        "Tā zài wǔtái shàng tiàowǔ.",
+        "Elle danse sur scène."
       ]
     }
   ]

@@ -135,7 +135,10 @@ Regles :
     [IO.File]::WriteAllText($promptPath, ($entete + $corps), $utf8)
 
     $chrono = [Diagnostics.Stopwatch]::StartNew()
-    $rep = & $oc agent --message-file $promptPath 2>&1 | Out-String
+    # Une session neuve par lot : la session principale finit par saturer
+    # (compactage impossible), et Ziya refuse alors de répondre.
+    $session = 'phrases-' + [guid]::NewGuid().ToString('N').Substring(0, 12)
+    $rep = & $oc agent --message-file $promptPath --session-id $session 2>&1 | Out-String
     $chrono.Stop()
     $d = $rep.IndexOf('{'); $f = $rep.LastIndexOf('}')
     if ($d -ge 0 -and $f -gt $d) {
