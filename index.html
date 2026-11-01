@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cartes — 汉字</title>
 <meta name="description" content="Cartes de révision français / chinois : caractère au recto, pinyin, radicaux, exemples et étymologie au verso.">
-<link rel="stylesheet" href="assets/style.css?v=253">
+<link rel="stylesheet" href="assets/style.css?v=258">
 
 <!-- Applique le thème choisi AVANT le premier affichage : sans ça, on verrait
      un flash clair au chargement quand on a choisi le mode sombre. -->
@@ -138,6 +138,12 @@
         <span class="sw-label" id="recherche-label">Recherche : pinyin</span>
       </button>
 
+      <p class="feuille-titre">Fond des cartes</p>
+      <button id="fond-choisir" class="feuille-entree" type="button">Choisir une image…</button>
+      <button id="fond-defaut" class="feuille-entree" type="button">Revenir au fond d'origine</button>
+      <input type="file" id="fond-fichier" accept="image/*" hidden>
+      <p class="feuille-info" id="fond-etat"></p>
+
       <p class="feuille-titre">Progression</p>
       <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
       <button id="import" class="feuille-entree" type="button">Restaurer</button>
@@ -191,6 +197,6 @@
     <p class="version">Version <span id="version">?</span> — <span id="version-niveaux">HSK 1 / HSK 2 / HSK 3</span></p>
   </footer>
 
-<script src="assets/app.js?v=253"></script>
+<script src="assets/app.js?v=258"></script>
 </body>
 </html>

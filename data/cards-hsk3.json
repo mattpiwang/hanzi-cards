@@ -42,7 +42,8 @@
         "阿姨今天给我一个苹果。",
         "Āyí jīntiān gěi wǒ yī gè píngguǒ.",
         "La tante m'a donné une pomme aujourd'hui."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "典",
@@ -84,7 +85,8 @@
         "Tā shuōhuà xǐhuan yǐn jīng jù diǎn.",
         "Il aime citer les classiques quand il parle."
       ],
-      "phraseNote": "引经据典 : citer les classiques pour appuyer ses propos."
+      "phraseNote": "引经据典 : citer les classiques pour appuyer ses propos.",
+      "niveau": "HSK 3"
     },
     {
       "char": "环",
@@ -125,7 +127,8 @@
         "我们的环境越来越好了。",
         "Wǒmen de huánjìng yuè lái yuè hǎo le.",
         "Notre environnement s'améliore de plus en plus."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "康",
@@ -167,7 +170,8 @@
         "Qiánmiàn shì yī tiáo kāng zhuāng dà dào.",
         "Devant nous s'ouvre une route large et prometteuse."
       ],
-      "phraseNote": "康庄大道 : grande voie, avenir brillant et sans obstacle."
+      "phraseNote": "康庄大道 : grande voie, avenir brillant et sans obstacle.",
+      "niveau": "HSK 3"
     },
     {
       "char": "矮",
@@ -203,7 +207,8 @@
         "他比我矮一点，可是跑得快。",
         "Tā bǐ wǒ ǎi yīdiǎn, kěshì pǎo de kuài.",
         "Il est un peu plus petit que moi, mais il court vite."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "调",
@@ -245,7 +250,8 @@
         "Zhè shì diào hǔ lí shān zhī jì.",
         "C'est une ruse pour attirer l'adversaire hors de son terrain."
       ],
-      "phraseNote": "调虎离山 : faire sortir l'adversaire de son refuge par une ruse."
+      "phraseNote": "调虎离山 : faire sortir l'adversaire de son refuge par une ruse.",
+      "niveau": "HSK 3"
     },
     {
       "char": "换",
@@ -286,7 +292,8 @@
         "我想把苹果换成香蕉。",
         "Wǒ xiǎng bǎ píngguǒ huàn chéng xiāngjiāo.",
         "Je veux échanger les pommes contre des bananes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "渴",
@@ -323,7 +330,8 @@
         "Méiyǒu shuǐ, zhǐhǎo wàng méi zhǐ kě.",
         "Sans eau, il ne reste qu'à se consoler par l'imagination."
       ],
-      "phraseNote": "望梅止渴 : tromper sa soif par l'image des prunes, se consoler d'une illusion."
+      "phraseNote": "望梅止渴 : tromper sa soif par l'image des prunes, se consoler d'une illusion.",
+      "niveau": "HSK 3"
     },
     {
       "char": "安",
@@ -364,7 +372,8 @@
         "这里很安静，我很喜欢。",
         "Zhèlǐ hěn ānjìng, wǒ hěn xǐhuan.",
         "Ici c'est très calme, j'aime beaucoup."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "定",
@@ -406,7 +415,8 @@
         "Tā jiān dìng bù yí de xuéxí Zhōngwén.",
         "Il apprend le chinois avec une détermination inébranlable."
       ],
-      "phraseNote": "坚定不移 : ferme et inébranlable."
+      "phraseNote": "坚定不移 : ferme et inébranlable.",
+      "niveau": "HSK 3"
     },
     {
       "char": "黄",
@@ -437,7 +447,8 @@
         "Wǒ xǐhuan huángsè de xiāngjiāo.",
         "J'aime les bananes jaunes."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "刻",
@@ -479,7 +490,8 @@
         "Tā zhèyàng zuò, zhēn shì kè zhōu qiú jiàn.",
         "Agir ainsi, c'est s'obstiner dans une méthode dépassée."
       ],
-      "phraseNote": "刻舟求剑 : s'obstiner dans une méthode figée sans tenir compte du changement."
+      "phraseNote": "刻舟求剑 : s'obstiner dans une méthode figée sans tenir compte du changement.",
+      "niveau": "HSK 3"
     },
     {
       "char": "把",
@@ -520,7 +532,8 @@
         "我把苹果放在桌子上。",
         "Wǒ bǎ píngguǒ fàng zài zhuōzi shàng.",
         "Je pose les pommes sur la table."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "丢",
@@ -562,7 +575,8 @@
         "Tā zǒngshì diū sān là sì, chángcháng zhǎo bù dào shǒujī.",
         "Il oublie toujours tout, il ne retrouve jamais son téléphone."
       ],
-      "phraseNote": "丢三落四 : être étourdi, oublier sans cesse des choses."
+      "phraseNote": "丢三落四 : être étourdi, oublier sans cesse des choses.",
+      "niveau": "HSK 3"
     },
     {
       "char": "婚",
@@ -603,7 +617,8 @@
         "他们的婚礼在今天。",
         "Tāmen de hūnlǐ zài jīntiān.",
         "Leur mariage a lieu aujourd'hui."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "空",
@@ -645,7 +660,8 @@
         "Tā shuōhuà hǎi kuò tiān kōng, hěn yǒu yìsi.",
         "Il parle de tout et de rien, c'est très divertissant."
       ],
-      "phraseNote": "海阔天空 : parler librement, sans limites, de façon décousue."
+      "phraseNote": "海阔天空 : parler librement, sans limites, de façon décousue.",
+      "niveau": "HSK 3"
     },
     {
       "char": "般",
@@ -681,7 +697,8 @@
         "这儿的猫一般都很胖。",
         "Zhèr de māo yībān dōu hěn pàng.",
         "Les chats d'ici sont en général très gros."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "冬",
@@ -723,7 +740,8 @@
         "Hán dōng là yuè, wǒmen zuò zài huǒlú pángbiān.",
         "En plein hiver glacial, nous nous asseyons près du poêle."
       ],
-      "phraseNote": "寒冬腊月 : les mois les plus froids de l'hiver."
+      "phraseNote": "寒冬腊月 : les mois les plus froids de l'hiver.",
+      "niveau": "HSK 3"
     },
     {
       "char": "活",
@@ -764,7 +782,8 @@
         "我的生活很简单，也很开心。",
         "Wǒ de shēnghuó hěn jiǎndān, yě hěn kāixīn.",
         "Ma vie est simple, et je suis heureux."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "哭",
@@ -801,7 +820,8 @@
         "Tā de yàngzi ràng wǒ kū xiào bù dé.",
         "Sa mine me fait rire et pleurer à la fois."
       ],
-      "phraseNote": "哭笑不得 : ne savoir s'il faut rire ou pleurer."
+      "phraseNote": "哭笑不得 : ne savoir s'il faut rire ou pleurer.",
+      "niveau": "HSK 3"
     },
     {
       "char": "搬",
@@ -842,7 +862,8 @@
         "下个月我们要搬家。",
         "Xià gè yuè wǒmen yào bānjiā.",
         "Le mois prochain, nous déménageons."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "短",
@@ -884,7 +905,8 @@
         "Liǎng duì zài ménkǒu duǎn bīng xiāng jiē.",
         "Les deux équipes s'affrontent au corps à corps à l'entrée."
       ],
-      "phraseNote": "短兵相接 : combat rapproché, lutte directe."
+      "phraseNote": "短兵相接 : combat rapproché, lutte directe.",
+      "niveau": "HSK 3"
     },
     {
       "char": "或",
@@ -930,7 +952,8 @@
         "你喝茶或者咖啡？",
         "Nǐ hē chá huòzhě kāfēi?",
         "Tu bois du thé ou du café ?"
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "筷",
@@ -966,7 +989,8 @@
         "我用筷子吃饭。",
         "Wǒ yòng kuàizi chīfàn.",
         "Je mange avec des baguettes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "板",
@@ -1008,7 +1032,8 @@
         "Zhè jiàn shì yǐjīng bǎn shàng dìng dīng le.",
         "Cette affaire est désormais certaine, on ne peut plus la changer."
       ],
-      "phraseNote": "板上钉钉 : chose certaine, définitive, impossible à modifier."
+      "phraseNote": "板上钉钉 : chose certaine, définitive, impossible à modifier.",
+      "niveau": "HSK 3"
     },
     {
       "char": "段",
@@ -1045,7 +1070,8 @@
           "arme",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "激",
@@ -1087,7 +1113,8 @@
         "Tā de yǎnjiǎng kāng kǎi jī áng.",
         "Son discours était plein de ferveur."
       ],
-      "phraseNote": "慷慨激昂 : plein d'ardeur, vibrant d'enthousiasme."
+      "phraseNote": "慷慨激昂 : plein d'ardeur, vibrant d'enthousiasme.",
+      "niveau": "HSK 3"
     },
     {
       "char": "矿",
@@ -1128,7 +1155,8 @@
         "我只喝矿泉水。",
         "Wǒ zhǐ hē kuàngquánshuǐ.",
         "Je ne bois que de l'eau minérale."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "办",
@@ -1169,7 +1197,8 @@
         "我有一个好办法。",
         "Wǒ yǒu yī gè hǎo bànfǎ.",
         "J'ai une bonne idée."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "锻",
@@ -1205,7 +1234,8 @@
         "他每天锻炼一个小时。",
         "Tā měi tiān duànliàn yī gè xiǎoshí.",
         "Il s'entraîne une heure par jour."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "级",
@@ -1246,7 +1276,8 @@
         "我的汉语是高级班的。",
         "Wǒ de Hànyǔ shì gāojí bān de.",
         "Mon niveau de chinois est celui d'une classe avancée."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "蓝",
@@ -1288,7 +1319,8 @@
         "Tā de huà qīng chū yú lán.",
         "Son art surpasse celui de son maître."
       ],
-      "phraseNote": "青出于蓝 : surpasser son maître, dépasser son modèle."
+      "phraseNote": "青出于蓝 : surpasser son maître, dépasser son modèle.",
+      "niveau": "HSK 3"
     },
     {
       "char": "饱",
@@ -1329,7 +1361,8 @@
         "我吃得很饱，不想再吃了。",
         "Wǒ chī de hěn bǎo, bù xiǎng zài chī le.",
         "J'ai bien mangé, je n'en veux plus."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "朵",
@@ -1365,7 +1398,8 @@
         "猫的耳朵很小，很可爱。",
         "Māo de ěrduo hěn xiǎo, hěn kě'ài.",
         "Les oreilles du chat sont toutes petites, c'est mignon."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "极",
@@ -1407,7 +1441,8 @@
         "Tā de jìshù yǐjīng dēng fēng zào jí.",
         "Sa technique a atteint la perfection."
       ],
-      "phraseNote": "登峰造极 : atteindre le sommet, la perfection."
+      "phraseNote": "登峰造极 : atteindre le sommet, la perfection.",
+      "niveau": "HSK 3"
     },
     {
       "char": "礼",
@@ -1448,7 +1483,8 @@
         "我收到了一份礼物。",
         "Wǒ shōudào le yī fèn lǐwù.",
         "J'ai reçu un cadeau."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "报",
@@ -1494,7 +1530,8 @@
         "我想报名参加汉语课。",
         "Wǒ xiǎng bàomíng cānjiā Hànyǔ kè.",
         "Je veux m'inscrire au cours de chinois."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "饿",
@@ -1531,7 +1568,8 @@
         "Tā chīfàn de shíhou xiàng è hǔ pū shí.",
         "Quand il mange, on dirait un tigre affamé sur sa proie."
       ],
-      "phraseNote": "饿虎扑食 : se jeter sur la nourriture comme un tigre affamé."
+      "phraseNote": "饿虎扑食 : se jeter sur la nourriture comme un tigre affamé.",
+      "niveau": "HSK 3"
     },
     {
       "char": "急",
@@ -1572,7 +1610,8 @@
         "他急忙跑去车站。",
         "Tā jímáng pǎo qù chēzhàn.",
         "Il a couru en hâte vers la gare."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "李",
@@ -1609,7 +1648,8 @@
         "Lái de dōu shì zhāng sān lǐ sì, wǒ dōu bù rènshi.",
         "Tous ces gens, c'est Monsieur Untel et compagnie ; je ne connais personne."
       ],
-      "phraseNote": "张三李四 : Monsieur Tout-le-monde, des gens quelconques."
+      "phraseNote": "张三李四 : Monsieur Tout-le-monde, des gens quelconques.",
+      "niveau": "HSK 3"
     },
     {
       "char": "北",
@@ -1646,7 +1686,8 @@
           "personne",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "而",
@@ -1681,7 +1722,8 @@
         "Wǒ xǐhuan píngguǒ, ér tā xǐhuan xiāngjiāo.",
         "Moi j'aime les pommes, et lui les bananes."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "季",
@@ -1722,7 +1764,8 @@
         "这个季节水果很多。",
         "Zhège jìjié shuǐguǒ hěn duō.",
         "En cette saison, il y a beaucoup de fruits."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "理",
@@ -1764,7 +1807,8 @@
         "Tā bù lái yě shì lǐ suǒ dāng rán de.",
         "Il est tout à fait normal qu'il ne vienne pas."
       ],
-      "phraseNote": "理所当然 : chose naturelle, qui va de soi."
+      "phraseNote": "理所当然 : chose naturelle, qui va de soi.",
+      "niveau": "HSK 3"
     },
     {
       "char": "被",
@@ -1805,7 +1849,8 @@
         "我的苹果被猫吃了。",
         "Wǒ de píngguǒ bèi māo chī le.",
         "Ma pomme a été mangée par le chat."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "耳",
@@ -1832,7 +1877,8 @@
         "Cette nouvelle décoration donne une impression de fraîcheur."
       ],
       "phraseNote": "耳目一新 : paraître entièrement neuf, apporter un air nouveau.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "绩",
@@ -1873,7 +1919,8 @@
         "他的成绩一直是第一名。",
         "Tā de chéngjì yīzhí shì dì yī míng.",
         "Ses résultats ont toujours été les meilleurs."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "力",
@@ -1905,7 +1952,8 @@
         "Il ne fait que ce qui est à sa portée."
       ],
       "phraseNote": "力所能及 : ce qui est à la portée de ses forces.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "必",
@@ -1945,7 +1993,8 @@
         "Tā gōngzuò shì bì gōng qīn.",
         "Dans son travail, il s'occupe personnellement de tout."
       ],
-      "phraseNote": "事必躬亲 : s'occuper soi-même de chaque chose, sans déléguer."
+      "phraseNote": "事必躬亲 : s'occuper soi-même de chaque chose, sans déléguer.",
+      "niveau": "HSK 3"
     },
     {
       "char": "发",
@@ -1974,7 +2023,8 @@
         "Wǒ fāxiàn māo zài shuìjiào.",
         "Je découvre que le chat dort."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "加",
@@ -2016,7 +2066,8 @@
         "Kǎoshì kuài dào le, wǒmen yào kuài mǎ jiā biān.",
         "L'examen approche, il faut accélérer le rythme."
       ],
-      "phraseNote": "快马加鞭 : accélérer l'allure, redoubler d'efforts."
+      "phraseNote": "快马加鞭 : accélérer l'allure, redoubler d'efforts.",
+      "niveau": "HSK 3"
     },
     {
       "char": "历",
@@ -2057,7 +2108,8 @@
         "中国有很长的历史。",
         "Zhōngguó yǒu hěn cháng de lìshǐ.",
         "La Chine a une très longue histoire."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "变",
@@ -2097,7 +2149,8 @@
         "Tiānqì qiān biàn wàn huà, hěn nán shuō.",
         "Le temps change sans cesse, difficile à prévoir."
       ],
-      "phraseNote": "千变万化 : changer de mille façons, être extrêmement varié."
+      "phraseNote": "千变万化 : changer de mille façons, être extrêmement varié.",
+      "niveau": "HSK 3"
     },
     {
       "char": "法",
@@ -2138,7 +2191,8 @@
         "这个办法不太好。",
         "Zhège bànfǎ bù tài hǎo.",
         "Cette méthode n'est pas très bonne."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "假",
@@ -2180,7 +2234,8 @@
         "Kǎoshì bù néng nòng xū zuò jiǎ.",
         "Il ne faut pas tricher à l'examen."
       ],
-      "phraseNote": "弄虚作假 : falsifier, tromper par des faux-semblants."
+      "phraseNote": "弄虚作假 : falsifier, tromper par des faux-semblants.",
+      "niveau": "HSK 3"
     },
     {
       "char": "脸",
@@ -2221,7 +2276,8 @@
         "他的脸色不太好。",
         "Tā de liǎnsè bù tài hǎo.",
         "Il n'a pas très bonne mine."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "遍",
@@ -2263,7 +2319,8 @@
         "Hǎochī de fànguǎn biàn dì kāi huā.",
         "Les bons restaurants poussent partout comme des fleurs."
       ],
-      "phraseNote": "遍地开花 : se multiplier partout, fleurir de toutes parts."
+      "phraseNote": "遍地开花 : se multiplier partout, fleurir de toutes parts.",
+      "niveau": "HSK 3"
     },
     {
       "char": "方",
@@ -2292,7 +2349,8 @@
         "Zhège shǒujī hěn fāngbiàn.",
         "Ce téléphone est très pratique."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "坚",
@@ -2322,7 +2380,8 @@
         "Il étudie avec persévérance."
       ],
       "phraseNote": "坚持不懈 : persévérer sans relâche.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "练",
@@ -2363,7 +2422,8 @@
         "我每天练习说汉语。",
         "Wǒ měi tiān liànxí shuō Hànyǔ.",
         "Je m'exerce à parler chinois chaque jour."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "宾",
@@ -2405,7 +2465,8 @@
         "Zhè jiā bīnguǎn bīn zhì rú guī.",
         "Dans cet hôtel, on se sent comme chez soi."
       ],
-      "phraseNote": "宾至如归 : se sentir chez soi, comme un invité choyé."
+      "phraseNote": "宾至如归 : se sentir chez soi, comme un invité choyé.",
+      "niveau": "HSK 3"
     },
     {
       "char": "放",
@@ -2441,7 +2502,8 @@
         "放学以后我回家。",
         "Fàngxué yǐhòu wǒ huí jiā.",
         "Après la sortie des classes, je rentre à la maison."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "检",
@@ -2482,7 +2544,8 @@
         "医生检查了我的眼睛。",
         "Yīshēng jiǎnchá le wǒ de yǎnjing.",
         "Le médecin a examiné mes yeux."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "炼",
@@ -2519,7 +2582,8 @@
         "Bǎi liàn chéng gāng, nǔlì jiù yǒu xīwàng.",
         "À force d'épreuves on devient de l'acier : avec des efforts il y a de l'espoir."
       ],
-      "phraseNote": "百炼成钢 : après maintes épreuves, on devient aussi solide que l'acier."
+      "phraseNote": "百炼成钢 : après maintes épreuves, on devient aussi solide que l'acier.",
+      "niveau": "HSK 3"
     },
     {
       "char": "冰",
@@ -2561,7 +2625,8 @@
         "Wàimiàn bīng tiān xuě dì, bié chūqù.",
         "Dehors tout est gelé et enneigé, ne sors pas."
       ],
-      "phraseNote": "冰天雪地 : un paysage de glace et de neige, un froid glacial."
+      "phraseNote": "冰天雪地 : un paysage de glace et de neige, un froid glacial.",
+      "niveau": "HSK 3"
     },
     {
       "char": "风",
@@ -2600,7 +2665,8 @@
         "今天的风很大。",
         "Jīntiān de fēng hěn dà.",
         "Aujourd'hui il y a beaucoup de vent."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "简",
@@ -2642,7 +2708,8 @@
         "Tā de huídá jiǎn míng è yào.",
         "Sa réponse est concise et précise."
       ],
-      "phraseNote": "简明扼要 : concis et précis."
+      "phraseNote": "简明扼要 : concis et précis.",
+      "niveau": "HSK 3"
     },
     {
       "char": "凉",
@@ -2683,7 +2750,8 @@
         "凉水比热水好喝。",
         "Liángshuǐ bǐ rèshuǐ hǎohē.",
         "L'eau fraîche est meilleure que l'eau chaude."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "才",
@@ -2715,7 +2783,8 @@
         "Il a un immense talent, c'est un génie."
       ],
       "phraseNote": "才高八斗 : avoir un talent très supérieur, être extrêmement doué.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "封",
@@ -2756,7 +2825,8 @@
         "我收到一封信。",
         "Wǒ shōudào yī fēng xìn.",
         "J'ai reçu une lettre."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "健",
@@ -2793,7 +2863,8 @@
         "Lǎorén jiàn bù rú fēi.",
         "Le vieil homme marche d'un pas rapide comme le vent."
       ],
-      "phraseNote": "健步如飞 : marcher d'un pas vif et léger."
+      "phraseNote": "健步如飞 : marcher d'un pas vif et léger.",
+      "niveau": "HSK 3"
     },
     {
       "char": "辆",
@@ -2829,7 +2900,8 @@
         "路上有很多车辆。",
         "Lùshang yǒu hěn duō chēliàng.",
         "Il y a beaucoup de véhicules sur la route."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "参",
@@ -2875,7 +2947,8 @@
         "我想参加汉语比赛。",
         "Wǒ xiǎng cānjiā Hànyǔ bǐsài.",
         "Je veux participer au concours de chinois."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "附",
@@ -2917,7 +2990,8 @@
         "Tā xià de hún bù fù tǐ.",
         "Il était mort de peur."
       ],
-      "phraseNote": "魂不附体 : être terrifié, avoir l'âme qui quitte le corps."
+      "phraseNote": "魂不附体 : être terrifié, avoir l'âme qui quitte le corps.",
+      "niveau": "HSK 3"
     },
     {
       "char": "讲",
@@ -2958,7 +3032,8 @@
         "老师讲得很清楚。",
         "Lǎoshī jiǎng de hěn qīngchu.",
         "Le professeur explique très clairement."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "聊",
@@ -2995,7 +3070,8 @@
         "Tā yī gè rén zài jiā, bǎi wú liáo lài.",
         "Seul à la maison, il s'ennuie à mourir."
       ],
-      "phraseNote": "百无聊赖 : s'ennuyer profondément, n'avoir rien à faire."
+      "phraseNote": "百无聊赖 : s'ennuyer profondément, n'avoir rien à faire.",
+      "niveau": "HSK 3"
     },
     {
       "char": "草",
@@ -3036,7 +3112,8 @@
         "我们去草地上玩儿吧。",
         "Wǒmen qù cǎodì shàng wánr ba.",
         "Allons jouer sur la pelouse."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "复",
@@ -3083,7 +3160,8 @@
         "Tā de huài yùnqi wú yǐ fù jiā.",
         "Sa malchance a atteint son comble."
       ],
-      "phraseNote": "无以复加 : au plus haut point, on ne peut pas faire plus."
+      "phraseNote": "无以复加 : au plus haut point, on ne peut pas faire plus.",
+      "niveau": "HSK 3"
     },
     {
       "char": "蕉",
@@ -3119,7 +3197,8 @@
         "我喜欢吃香蕉。",
         "Wǒ xǐhuan chī xiāngjiāo.",
         "J'aime manger des bananes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "料",
@@ -3161,7 +3240,8 @@
         "Tā liào shì rú shén, shénme dōu cāi de dào.",
         "Il devine tout, comme s'il était devin."
       ],
-      "phraseNote": "料事如神 : prévoir les choses avec une exactitude étonnante."
+      "phraseNote": "料事如神 : prévoir les choses avec une exactitude étonnante.",
+      "niveau": "HSK 3"
     },
     {
       "char": "层",
@@ -3202,7 +3282,8 @@
         "这个蛋糕有三层。",
         "Zhège dàngāo yǒu sān céng.",
         "Ce gâteau a trois couches."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "该",
@@ -3243,7 +3324,8 @@
         "我们应该早点睡觉。",
         "Wǒmen yīnggāi zǎo diǎn shuìjiào.",
         "Nous devrions aller dormir plus tôt."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "角",
@@ -3285,7 +3367,8 @@
         "Tā niánjì qīngqīng jiù zhǎn lù tóu jiǎo.",
         "Tout jeune, il s'est déjà distingué."
       ],
-      "phraseNote": "崭露头角 : se faire remarquer, montrer son talent."
+      "phraseNote": "崭露头角 : se faire remarquer, montrer son talent.",
+      "niveau": "HSK 3"
     },
     {
       "char": "邻",
@@ -3326,7 +3409,8 @@
         "我的邻居有一只猫。",
         "Wǒ de línjū yǒu yī zhī māo.",
         "Mon voisin a un chat."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "查",
@@ -3360,7 +3444,8 @@
         "请查一下我的号码。",
         "Qǐng chá yīxià wǒ de hàomǎ.",
         "Vérifiez mon numéro, s'il vous plaît."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "概",
@@ -3402,7 +3487,8 @@
         "Bù néng yī gài ér lùn.",
         "On ne peut pas généraliser."
       ],
-      "phraseNote": "一概而论 : tout juger de la même façon, généraliser."
+      "phraseNote": "一概而论 : tout juger de la même façon, généraliser.",
+      "niveau": "HSK 3"
     },
     {
       "char": "饺",
@@ -3438,7 +3524,8 @@
         "我们晚上吃饺子吧。",
         "Wǒmen wǎnshang chī jiǎozi ba.",
         "Mangeons des raviolis ce soir."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "凌",
@@ -3475,7 +3562,8 @@
         "Tā shuōhuà shèng qì líng rén.",
         "Il parle d'un ton arrogant et méprisant."
       ],
-      "phraseNote": "盛气凌人 : se montrer arrogant et dominateur."
+      "phraseNote": "盛气凌人 : se montrer arrogant et dominateur.",
+      "niveau": "HSK 3"
     },
     {
       "char": "差",
@@ -3516,7 +3604,8 @@
         "我们差不多一样高。",
         "Wǒmen chàbuduō yīyàng gāo.",
         "Nous sommes à peu près de la même taille."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "感",
@@ -3558,7 +3647,8 @@
         "Zhège gùshi gǎn rén fèi fǔ.",
         "Cette histoire touche profondément le cœur."
       ],
-      "phraseNote": "感人肺腑 : émouvoir jusqu'au fond du cœur."
+      "phraseNote": "感人肺腑 : émouvoir jusqu'au fond du cœur.",
+      "niveau": "HSK 3"
     },
     {
       "char": "脚",
@@ -3599,7 +3689,8 @@
         "他的脚印留在雪上。",
         "Tā de jiǎoyìn liú zài xuě shàng.",
         "Ses empreintes de pas restent dans la neige."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "马",
@@ -3631,7 +3722,8 @@
         "Je te souhaite une réussite immédiate !"
       ],
       "phraseNote": "马到成功 : réussir dès le premier essai.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "尝",
@@ -3667,7 +3759,8 @@
         "我想尝试一下中国菜。",
         "Wǒ xiǎng chángshì yīxià Zhōngguócài.",
         "Je veux goûter la cuisine chinoise."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "干",
@@ -3709,7 +3802,8 @@
         "Tā mái tóu kǔ gàn, cóng bù bàoyuàn.",
         "Il travaille d'arrache-pied sans jamais se plaindre."
       ],
-      "phraseNote": "埋头苦干 : travailler dur, la tête baissée."
+      "phraseNote": "埋头苦干 : travailler dur, la tête baissée.",
+      "niveau": "HSK 3"
     },
     {
       "char": "较",
@@ -3750,7 +3844,8 @@
         "我比较喜欢喝茶。",
         "Wǒ bǐjiào xǐhuan hē chá.",
         "Je préfère plutôt boire du thé."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "码",
@@ -3791,7 +3886,8 @@
         "我在码头等朋友。",
         "Wǒ zài mǎtóu děng péngyou.",
         "J'attends un ami sur le quai."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "衬",
@@ -3832,7 +3928,8 @@
         "他穿着一件白衬衫。",
         "Tā chuānzhe yī jiàn bái chènshān.",
         "Il porte une chemise blanche."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "刚",
@@ -3868,7 +3965,8 @@
         "他刚刚回来，还没吃饭。",
         "Tā gānggāng huílái, hái méi chīfàn.",
         "Il vient de rentrer et n'a pas encore mangé."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "接",
@@ -3910,7 +4008,8 @@
         "Hǎo xiāoxi jiē èr lián sān de lái.",
         "Les bonnes nouvelles arrivent l'une après l'autre."
       ],
-      "phraseNote": "接二连三 : l'un après l'autre, coup sur coup."
+      "phraseNote": "接二连三 : l'un après l'autre, coup sur coup.",
+      "niveau": "HSK 3"
     },
     {
       "char": "满",
@@ -3956,7 +4055,8 @@
         "我对这个结果很满意。",
         "Wǒ duì zhège jiéguǒ hěn mǎnyì.",
         "Je suis très satisfait de ce résultat."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "成",
@@ -3991,7 +4091,8 @@
         "Chéng qiān shàng wàn de rén lái kàn.",
         "Des milliers de personnes sont venues voir."
       ],
-      "phraseNote": "成千上万 : par milliers, en très grand nombre."
+      "phraseNote": "成千上万 : par milliers, en très grand nombre.",
+      "niveau": "HSK 3"
     },
     {
       "char": "糕",
@@ -4032,7 +4133,8 @@
         "这个蛋糕太好吃了！",
         "Zhège dàngāo tài hǎochī le!",
         "Ce gâteau est délicieux !"
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "街",
@@ -4074,7 +4176,8 @@
         "Dà jiē xiǎo xiàng dōu zài shuō zhè jiàn shì.",
         "Toutes les rues en parlent."
       ],
-      "phraseNote": "大街小巷 : dans toutes les rues et ruelles, partout en ville."
+      "phraseNote": "大街小巷 : dans toutes les rues et ruelles, partout en ville.",
+      "niveau": "HSK 3"
     },
     {
       "char": "毛",
@@ -4113,7 +4216,8 @@
         "这条毛巾很软。",
         "Zhè tiáo máojīn hěn ruǎn.",
         "Cette serviette est très douce."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "城",
@@ -4155,7 +4259,8 @@
         "Zhǐyào zhòng zhì chéng chéng, shénme dōu néng zuò dào.",
         "Si tout le monde unit ses forces, tout devient possible."
       ],
-      "phraseNote": "众志成城 : l'union fait la force, la volonté commune est une forteresse."
+      "phraseNote": "众志成城 : l'union fait la force, la volonté commune est une forteresse.",
+      "niveau": "HSK 3"
     },
     {
       "char": "根",
@@ -4196,7 +4301,8 @@
         "根据天气预报，明天会下雨。",
         "Gēnjù tiānqì yùbào, míngtiān huì xià yǔ.",
         "D'après la météo, il pleuvra demain."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "节",
@@ -4234,7 +4340,8 @@
           "bambou",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "冒",
@@ -4275,7 +4382,8 @@
         "我感冒了，想休息。",
         "Wǒ gǎnmào le, xiǎng xiūxi.",
         "J'ai attrapé un rhume, je veux me reposer."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "迟",
@@ -4316,7 +4424,8 @@
         "他今天又迟到了。",
         "Tā jīntiān yòu chídào le.",
         "Il est encore en retard aujourd'hui."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "更",
@@ -4361,7 +4470,8 @@
         "Bàn yè sān gēng, tā hái zài kàn shū.",
         "Au milieu de la nuit, il lit encore."
       ],
-      "phraseNote": "半夜三更 : au cœur de la nuit, très tard."
+      "phraseNote": "半夜三更 : au cœur de la nuit, très tard.",
+      "niveau": "HSK 3"
     },
     {
       "char": "结",
@@ -4402,7 +4512,8 @@
         "考试的结果明天出来。",
         "Kǎoshì de jiéguǒ míngtiān chūlái.",
         "Le résultat de l'examen sortira demain."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "末",
@@ -4444,7 +4555,8 @@
         "Zuòshì bù yào běn mò dào zhì.",
         "Dans ton travail, ne confonds pas l'essentiel et l'accessoire."
       ],
-      "phraseNote": "本末倒置 : inverser l'essentiel et l'accessoire."
+      "phraseNote": "本末倒置 : inverser l'essentiel et l'accessoire.",
+      "niveau": "HSK 3"
     },
     {
       "char": "持",
@@ -4485,7 +4597,8 @@
         "他保持着好习惯。",
         "Tā bǎochízhe hǎo xíguàn.",
         "Il garde de bonnes habitudes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "共",
@@ -4532,7 +4645,8 @@
         "Tāmen shì tóng gān gòng kǔ de péngyou.",
         "Ce sont des amis qui partagent les bons et les mauvais moments."
       ],
-      "phraseNote": "同甘共苦 : partager joies et peines, être solidaire."
+      "phraseNote": "同甘共苦 : partager joies et peines, être solidaire.",
+      "niveau": "HSK 3"
     },
     {
       "char": "解",
@@ -4578,7 +4692,8 @@
         "这个问题很难解决。",
         "Zhège wèntí hěn nán jiějué.",
         "Ce problème est difficile à résoudre."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "目",
@@ -4620,7 +4735,8 @@
         "Tā mù bù zhuǎn jīng de kàn zhe diànyǐng.",
         "Il regarde le film sans détacher les yeux."
       ],
-      "phraseNote": "目不转睛 : regarder fixement, sans détourner les yeux."
+      "phraseNote": "目不转睛 : regarder fixement, sans détourner les yeux.",
+      "niveau": "HSK 3"
     },
     {
       "char": "初",
@@ -4661,7 +4777,8 @@
         "我初步了解了这个计划。",
         "Wǒ chūbù liǎojiě le zhège jìhuà.",
         "J'ai une première idée de ce projet."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "故",
@@ -4703,7 +4820,8 @@
         "Tā míng zhī gù fàn, tài bù yīnggāi.",
         "Il agit mal en connaissance de cause, ce n'est pas acceptable."
       ],
-      "phraseNote": "明知故犯 : commettre sciemment une faute."
+      "phraseNote": "明知故犯 : commettre sciemment une faute.",
+      "niveau": "HSK 3"
     },
     {
       "char": "界",
@@ -4744,7 +4862,8 @@
         "世界上有很多语言。",
         "Shìjiè shàng yǒu hěn duō yǔyán.",
         "Il y a beaucoup de langues dans le monde."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "南",
@@ -4796,7 +4915,8 @@
         "Tā fāngxiàng cuò le, zhēn shì nán yuán běi zhé.",
         "Il s'est trompé de direction : il va exactement à l'opposé."
       ],
-      "phraseNote": "南辕北辙 : agir à l'opposé du but visé, prendre la mauvaise direction."
+      "phraseNote": "南辕北辙 : agir à l'opposé du but visé, prendre la mauvaise direction.",
+      "niveau": "HSK 3"
     },
     {
       "char": "除",
@@ -4838,7 +4958,8 @@
         "Zuòshì yào zhǎn cǎo chú gēn.",
         "Il faut régler le problème à la racine."
       ],
-      "phraseNote": "斩草除根 : couper l'herbe et en arracher les racines, éliminer complètement."
+      "phraseNote": "斩草除根 : couper l'herbe et en arracher les racines, éliminer complètement.",
+      "niveau": "HSK 3"
     },
     {
       "char": "顾",
@@ -4879,7 +5000,8 @@
         "他很照顾我的猫。",
         "Tā hěn zhàogù wǒ de māo.",
         "Il s'occupe bien de mon chat."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "借",
@@ -4921,7 +5043,8 @@
         "Wǒ jiè huā xiàn fó, bǎ zhè lǐwù sòng gěi nǐ.",
         "Je te fais ce cadeau avec les moyens d'autrui."
       ],
-      "phraseNote": "借花献佛 : offrir à quelqu'un ce qu'on a reçu d'un autre."
+      "phraseNote": "借花献佛 : offrir à quelqu'un ce qu'on a reçu d'un autre.",
+      "niveau": "HSK 3"
     },
     {
       "char": "难",
@@ -4962,7 +5085,8 @@
         "这件事很难，但是我不放弃。",
         "Zhè jiàn shì hěn nán, dànshì wǒ bù fàngqì.",
         "C'est difficile, mais je n'abandonne pas."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "楚",
@@ -4997,7 +5121,8 @@
         "Tā sì miàn chǔ gē, méiyǒu péngyou.",
         "Il est isolé et sans soutien."
       ],
-      "phraseNote": "四面楚歌 : être encerclé, isolé de tous côtés."
+      "phraseNote": "四面楚歌 : être encerclé, isolé de tous côtés.",
+      "niveau": "HSK 3"
     },
     {
       "char": "瓜",
@@ -5023,7 +5148,8 @@
         "Xiàtiān wǒ zuì ài chī xīguā.",
         "En été, j'adore la pastèque."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "斤",
@@ -5058,7 +5184,8 @@
         "Bié jīn jīn jì jiào, xiǎoshì éryǐ.",
         "N'en fais pas toute une histoire pour si peu."
       ],
-      "phraseNote": "斤斤计较 : chipoter, s'attacher aux moindres détails."
+      "phraseNote": "斤斤计较 : chipoter, s'attacher aux moindres détails.",
+      "niveau": "HSK 3"
     },
     {
       "char": "努",
@@ -5094,7 +5221,8 @@
         "他学习很努力。",
         "Tā xuéxí hěn nǔlì.",
         "Il étudie avec beaucoup d'efforts."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "处",
@@ -5136,7 +5264,8 @@
         "Wǒmen yào shè shēn chǔ dì wèi biérén xiǎng.",
         "Il faut se mettre à la place des autres."
       ],
-      "phraseNote": "设身处地 : se mettre à la place d'autrui."
+      "phraseNote": "设身处地 : se mettre à la place d'autrui.",
+      "niveau": "HSK 3"
     },
     {
       "char": "刮",
@@ -5172,7 +5301,8 @@
         "今天刮风，别出去。",
         "Jīntiān guā fēng, bié chūqù.",
         "Il y a du vent aujourd'hui, ne sors pas."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "净",
@@ -5209,7 +5339,8 @@
         "Pánzi bèi chī de yī gān èr jìng.",
         "L'assiette a été nettoyée jusqu'à la dernière miette."
       ],
-      "phraseNote": "一干二净 : complètement, jusqu'au dernier reste."
+      "phraseNote": "一干二净 : complètement, jusqu'au dernier reste.",
+      "niveau": "HSK 3"
     },
     {
       "char": "爬",
@@ -5245,7 +5376,8 @@
         "周末我们去爬山吧。",
         "Zhōumò wǒmen qù páshān ba.",
         "Ce week-end, allons faire de la randonnée."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "船",
@@ -5291,7 +5423,8 @@
         "我们坐船去那边。",
         "Wǒmen zuò chuán qù nàbiān.",
         "Nous prenons le bateau pour aller là-bas."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "怪",
@@ -5330,7 +5463,8 @@
         "这只猫的样子很奇怪。",
         "Zhè zhī māo de yàngzi hěn qíguài.",
         "L'allure de ce chat est très étrange."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "静",
@@ -5367,7 +5501,8 @@
         "Xiànzài wǒmen zhǐ néng jìng guān qí biàn.",
         "Pour l'instant, nous ne pouvons qu'observer les choses évoluer."
       ],
-      "phraseNote": "静观其变 : observer calmement l'évolution de la situation."
+      "phraseNote": "静观其变 : observer calmement l'évolution de la situation.",
+      "niveau": "HSK 3"
     },
     {
       "char": "怕",
@@ -5408,7 +5543,8 @@
         "我不怕冷，只怕辣。",
         "Wǒ bù pà lěng, zhǐ pà là.",
         "Je ne crains pas le froid, seulement le piment."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "春",
@@ -5446,7 +5582,8 @@
           "soleil",
           "sens"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "惯",
@@ -5487,7 +5624,8 @@
         "我已经习惯早起。",
         "Wǒ yǐjīng xíguàn zǎoqǐ.",
         "Je suis déjà habitué à me lever tôt."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "境",
@@ -5524,7 +5662,8 @@
         "Kàn diànyǐng xiàng shēn lín qí jìng.",
         "Regarder un film, c'est comme y être vraiment."
       ],
-      "phraseNote": "身临其境 : avoir l'impression d'y être soi-même."
+      "phraseNote": "身临其境 : avoir l'impression d'y être soi-même.",
+      "niveau": "HSK 3"
     },
     {
       "char": "拍",
@@ -5565,7 +5704,8 @@
         "我们在海边拍照。",
         "Wǒmen zài hǎibiān pāizhào.",
         "Nous prenons des photos au bord de mer."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "聪",
@@ -5602,7 +5742,8 @@
         "Lǎorén yīrán ěr cōng mù míng.",
         "Le vieil homme a encore l'ouïe et la vue fines."
       ],
-      "phraseNote": "耳聪目明 : avoir l'ouïe fine et la vue perçante."
+      "phraseNote": "耳聪目明 : avoir l'ouïe fine et la vue perçante.",
+      "niveau": "HSK 3"
     },
     {
       "char": "海",
@@ -5643,7 +5784,8 @@
         "海很大，看不到边。",
         "Hǎi hěn dà, kàn bù dào biān.",
         "La mer est immense, on n'en voit pas le bout."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "久",
@@ -5673,7 +5815,8 @@
         "Peu à peu, avec le temps, il s'y est habitué."
       ],
       "phraseNote": "久而久之 : à la longue, avec le temps.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "盘",
@@ -5714,7 +5857,8 @@
         "盘子里的菜很好吃。",
         "Pánzi lǐ de cài hěn hǎochī.",
         "Les plats dans l'assiette sont délicieux."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "答",
@@ -5754,7 +5898,8 @@
         "Tā huídá wèntí duì dá rú liú.",
         "Il répond aux questions avec une grande aisance."
       ],
-      "phraseNote": "对答如流 : répondre avec fluidité, sans hésitation."
+      "phraseNote": "对答如流 : répondre avec fluidité, sans hésitation.",
+      "niveau": "HSK 3"
     },
     {
       "char": "害",
@@ -5793,7 +5938,8 @@
         "抽烟危害健康。",
         "Chōuyān wēihài jiànkāng.",
         "Fumer nuit à la santé."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "旧",
@@ -5835,7 +5981,8 @@
         "Tā jiù dì chóng yóu, hěn gǎnkǎi.",
         "En revisitant les lieux de son passé, il est tout ému."
       ],
-      "phraseNote": "旧地重游 : revisiter un lieu chargé de souvenirs."
+      "phraseNote": "旧地重游 : revisiter un lieu chargé de souvenirs.",
+      "niveau": "HSK 3"
     },
     {
       "char": "胖",
@@ -5876,7 +6023,8 @@
         "这只猫太胖了。",
         "Zhè zhī māo tài pàng le.",
         "Ce chat est trop gros."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "带",
@@ -5923,7 +6071,8 @@
         "Tā zuòshì cóng bù tuō ní dài shuǐ.",
         "Il ne traîne jamais en longueur dans son travail."
       ],
-      "phraseNote": "拖泥带水 : agir avec lenteur et hésitation, ne pas être net."
+      "phraseNote": "拖泥带水 : agir avec lenteur et hésitation, ne pas être net.",
+      "niveau": "HSK 3"
     },
     {
       "char": "合",
@@ -5962,7 +6111,8 @@
         "这件衣服很合适。",
         "Zhè jiàn yīfu hěn héshì.",
         "Ce vêtement me va très bien."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "居",
@@ -6004,7 +6154,8 @@
         "Wǒmen yào jū ān sī wēi.",
         "Il faut penser au danger même en temps de paix."
       ],
-      "phraseNote": "居安思危 : penser aux dangers à venir même dans la sécurité."
+      "phraseNote": "居安思危 : penser aux dangers à venir même dans la sécurité.",
+      "niveau": "HSK 3"
     },
     {
       "char": "啤",
@@ -6040,7 +6191,8 @@
         "我想喝一杯啤酒。",
         "Wǒ xiǎng hē yī bēi píjiǔ.",
         "Je voudrais boire une bière."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "担",
@@ -6081,7 +6233,8 @@
         "他担任了班长。",
         "Tā dānrèn le bānzhǎng.",
         "Il est devenu chef de classe."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "河",
@@ -6123,7 +6276,8 @@
         "Tā guò hé chāi qiáo, tài bù hòudào.",
         "Il oublie ceux qui l'ont aidé, ce n'est pas correct."
       ],
-      "phraseNote": "过河拆桥 : oublier ceux qui nous ont aidé une fois le but atteint."
+      "phraseNote": "过河拆桥 : oublier ceux qui nous ont aidé une fois le but atteint.",
+      "niveau": "HSK 3"
     },
     {
       "char": "句",
@@ -6164,7 +6318,8 @@
         "这句话很有意思。",
         "Zhè jù huà hěn yǒu yìsi.",
         "Cette phrase est très intéressante."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "片",
@@ -6196,7 +6351,8 @@
         "Il n'a laissé que quelques mots épars."
       ],
       "phraseNote": "只言片语 : quelques mots, de rares fragments de paroles.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "单",
@@ -6226,7 +6382,8 @@
         "Sans détour, il m'a posé une question."
       ],
       "phraseNote": "单刀直入 : aller droit au but, sans détour.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "乎",
@@ -6255,7 +6412,8 @@
         "Tā jīhū měi tiān pǎobù.",
         "Il court presque tous les jours."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "据",
@@ -6297,7 +6455,8 @@
         "Tā jù lǐ lì zhēng, bù kěn ràng bù.",
         "Il défend son point de vue avec arguments et refuse de céder."
       ],
-      "phraseNote": "据理力争 : défendre vigoureusement ses arguments."
+      "phraseNote": "据理力争 : défendre vigoureusement ses arguments.",
+      "niveau": "HSK 3"
     },
     {
       "char": "平",
@@ -6338,7 +6497,8 @@
         "他们要求平等。",
         "Tāmen yāoqiú píngděng.",
         "Ils demandent l'égalité."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "当",
@@ -6378,7 +6538,8 @@
         "Tā dāng jī lì duàn, mǎshàng zǒu le.",
         "Il a pris sa décision sans hésiter et est parti aussitôt."
       ],
-      "phraseNote": "当机立断 : décider sur-le-champ, saisir l'occasion."
+      "phraseNote": "当机立断 : décider sur-le-champ, saisir l'occasion.",
+      "niveau": "HSK 3"
     },
     {
       "char": "护",
@@ -6419,7 +6580,8 @@
         "护士照顾病人。",
         "Hùshi zhàogù bìngrén.",
         "L'infirmière s'occupe des malades."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "决",
@@ -6459,7 +6621,8 @@
         "Tā yì rán jué rán de líkāi le.",
         "Il est parti avec une ferme détermination."
       ],
-      "phraseNote": "毅然决然 : avec une résolution ferme et inflexible."
+      "phraseNote": "毅然决然 : avec une résolution ferme et inflexible.",
+      "niveau": "HSK 3"
     },
     {
       "char": "瓶",
@@ -6500,7 +6663,8 @@
         "桌上有一个空瓶子。",
         "Zhuōshàng yǒu yī gè kōng píngzi.",
         "Il y a une bouteille vide sur la table."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "灯",
@@ -6542,7 +6706,8 @@
         "Guònián shí jiēshàng zhāng dēng jié cǎi.",
         "Pendant le Nouvel An, les rues sont décorées de lanternes et de guirlandes."
       ],
-      "phraseNote": "张灯结彩 : décorer de lanternes et de guirlandes, en grande fête."
+      "phraseNote": "张灯结彩 : décorer de lanternes et de guirlandes, en grande fête.",
+      "niveau": "HSK 3"
     },
     {
       "char": "化",
@@ -6576,7 +6741,8 @@
         "这个化石很古老。",
         "Zhège huàshí hěn gǔlǎo.",
         "Ce fossile est très ancien."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "卡",
@@ -6617,7 +6783,8 @@
         "我的银行卡丢了。",
         "Wǒ de yínhángkǎ diū le.",
         "J'ai perdu ma carte bancaire."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "其",
@@ -6662,7 +6829,8 @@
         "Tā chū qí bù yì de lái le.",
         "Il est arrivé à l'improviste."
       ],
-      "phraseNote": "出其不意 : à l'improviste, par surprise."
+      "phraseNote": "出其不意 : à l'improviste, par surprise.",
+      "niveau": "HSK 3"
     },
     {
       "char": "奇",
@@ -6698,7 +6866,8 @@
         "这只猫很奇怪，会开门。",
         "Zhè zhī māo hěn qíguài, huì kāi mén.",
         "Ce chat est bizarre, il sait ouvrir les portes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "收",
@@ -6740,7 +6909,8 @@
         "Tā míng lì shuāng shōu, hěn chénggōng.",
         "Il a gagné gloire et fortune, c'est un succès."
       ],
-      "phraseNote": "名利双收 : obtenir à la fois renommée et profit."
+      "phraseNote": "名利双收 : obtenir à la fois renommée et profit.",
+      "niveau": "HSK 3"
     },
     {
       "char": "香",
@@ -6776,7 +6946,8 @@
         "这碗面很香，我想再吃一碗。",
         "Zhè wǎn miàn hěn xiāng, wǒ xiǎng zài chī yī wǎn.",
         "Ces nouilles sentent très bon, j'en veux encore un bol."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "用",
@@ -6806,7 +6977,8 @@
         "Il faut appliquer ce qu'on apprend en chinois."
       ],
       "phraseNote": "学以致用 : mettre en pratique ce que l'on apprend.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "骑",
@@ -6842,7 +7014,8 @@
         "我每天骑车上学。",
         "Wǒ měi tiān qíchē shàngxué.",
         "Je vais à l'école à vélo chaque jour."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "受",
@@ -6889,7 +7062,8 @@
         "Tā zì zuò zì shòu, bié guǎn tā.",
         "Il a ce qu'il mérite, ne t'occupe pas de lui."
       ],
-      "phraseNote": "自作自受 : subir les conséquences de ses propres actes."
+      "phraseNote": "自作自受 : subir les conséquences de ses propres actes.",
+      "niveau": "HSK 3"
     },
     {
       "char": "箱",
@@ -6930,7 +7104,8 @@
         "箱子里全是旧衣服。",
         "Xiāngzi lǐ quán shì jiù yīfu.",
         "La malle est pleine de vieux habits."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "邮",
@@ -6971,7 +7146,8 @@
         "我去邮局买邮票。",
         "Wǒ qù yóujú mǎi yóupiào.",
         "Je vais au bureau de poste acheter des timbres."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "汽",
@@ -7012,7 +7188,8 @@
         "这辆汽车很新。",
         "Zhè liàng qìchē hěn xīn.",
         "Cette voiture est toute neuve."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "瘦",
@@ -7048,7 +7225,8 @@
           "xiāo shòu",
           "dépérir, se consumer"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "响",
@@ -7090,7 +7268,8 @@
         "Tā de biǎoxiàn bù tóng fán xiǎng.",
         "Sa performance est remarquable."
       ],
-      "phraseNote": "不同凡响 : sortir de l'ordinaire, être remarquable."
+      "phraseNote": "不同凡响 : sortir de l'ordinaire, être remarquable.",
+      "niveau": "HSK 3"
     },
     {
       "char": "又",
@@ -7122,7 +7301,8 @@
           "yòu míng",
           "aussi appelé, alias"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "铅",
@@ -7163,7 +7343,8 @@
         "我用铅笔画画。",
         "Wǒ yòng qiānbǐ huà huà.",
         "Je dessine avec un crayon."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "叔",
@@ -7204,7 +7385,8 @@
         "叔叔给我买了一个玩具。",
         "Shūshu gěi wǒ mǎi le yī gè wánjù.",
         "Mon oncle m'a acheté un jouet."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "向",
@@ -7234,7 +7416,8 @@
         "Cette équipe est invincible."
       ],
       "phraseNote": "所向披靡 : balayer tous les obstacles, être invincible.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "于",
@@ -7273,7 +7456,8 @@
         "他于是回家了。",
         "Tā yúshì huí jiā le.",
         "Il est alors rentré chez lui."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "且",
@@ -7309,7 +7493,8 @@
         "她聪明并且努力。",
         "Tā cōngming bìngqiě nǔlì.",
         "Elle est intelligente et travailleuse."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "束",
@@ -7351,7 +7536,8 @@
         "Yùdào wèntí, tā shù shǒu wú cè.",
         "Face au problème, il est sans solution."
       ],
-      "phraseNote": "束手无策 : être désemparé, n'avoir aucune solution."
+      "phraseNote": "束手无策 : être désemparé, n'avoir aucune solution.",
+      "niveau": "HSK 3"
     },
     {
       "char": "像",
@@ -7392,7 +7578,8 @@
         "她像她妈妈一样高。",
         "Tā xiàng tā māma yīyàng gāo.",
         "Elle est aussi grande que sa mère."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "羽",
@@ -7428,7 +7615,8 @@
         "我们周末打羽毛球。",
         "Wǒmen zhōumò dǎ yǔmáoqiú.",
         "Nous jouons au badminton ce week-end."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "轻",
@@ -7475,7 +7663,8 @@
         "Zhè jiàn shì duì tā lái shuō qīng ér yì jǔ.",
         "Cette tâche est très facile pour lui."
       ],
-      "phraseNote": "轻而易举 : très facile, sans effort."
+      "phraseNote": "轻而易举 : très facile, sans effort.",
+      "niveau": "HSK 3"
     },
     {
       "char": "树",
@@ -7516,7 +7705,8 @@
         "树林里有很多小鸟。",
         "Shùlín lǐ yǒu hěn duō xiǎoniǎo.",
         "Il y a beaucoup d'oiseaux dans le bois."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "鞋",
@@ -7557,7 +7747,8 @@
         "这双皮鞋很贵。",
         "Zhè shuāng píxié hěn guì.",
         "Cette paire de chaussures en cuir est très chère."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "育",
@@ -7603,7 +7794,8 @@
         "体育课是我最喜欢的课。",
         "Tǐyù kè shì wǒ zuì xǐhuan de kè.",
         "Le cours de sport est mon préféré."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "清",
@@ -7640,7 +7832,8 @@
         "Zhèlǐ shān qīng shuǐ xiù, hěn měi.",
         "Ici, montagnes claires et eaux limpides, c'est splendide."
       ],
-      "phraseNote": "山清水秀 : paysage de montagnes et d'eaux limpides, très beau."
+      "phraseNote": "山清水秀 : paysage de montagnes et d'eaux limpides, très beau.",
+      "niveau": "HSK 3"
     },
     {
       "char": "数",
@@ -7681,7 +7874,8 @@
         "这个数字很大。",
         "Zhège shùzì hěn dà.",
         "Ce chiffre est très grand."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "心",
@@ -7719,7 +7913,8 @@
         "Il étudie avec une concentration totale."
       ],
       "phraseNote": "一心一意 : de tout cœur, avec une seule intention.",
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "niveau": "HSK 3"
     },
     {
       "char": "遇",
@@ -7760,7 +7955,8 @@
         "我昨天遇到一个老朋友。",
         "Wǒ zuótiān yùdào yī gè lǎo péngyou.",
         "Hier, j'ai rencontré un vieil ami."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "秋",
@@ -7802,7 +7998,8 @@
         "Qiūtiān de tiānqì qiū gāo qì shuǎng.",
         "En automne, le ciel est haut et l'air vivifiant."
       ],
-      "phraseNote": "秋高气爽 : ciel dégagé et air frais d'automne."
+      "phraseNote": "秋高气爽 : ciel dégagé et air frais d'automne.",
+      "niveau": "HSK 3"
     },
     {
       "char": "刷",
@@ -7848,7 +8045,8 @@
         "我每天刷牙两次。",
         "Wǒ měi tiān shuāyá liǎng cì.",
         "Je me brosse les dents deux fois par jour."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "信",
@@ -7888,7 +8086,8 @@
         "Tā duì zhège xiāoxi bàn xìn bàn yí.",
         "Il est à moitié convaincu par cette nouvelle."
       ],
-      "phraseNote": "半信半疑 : partagé entre doute et confiance, à moitié convaincu."
+      "phraseNote": "半信半疑 : partagé entre doute et confiance, à moitié convaincu.",
+      "niveau": "HSK 3"
     },
     {
       "char": "园",
@@ -7929,7 +8128,8 @@
         "周末我们去公园吧。",
         "Zhōumò wǒmen qù gōngyuán ba.",
         "Allons au parc ce week-end."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "求",
@@ -7969,7 +8169,8 @@
         "Tánpàn yào dǒngdé qiú tóng cún yì.",
         "Dans une négociation, il faut chercher le terrain d'entente en préservant les différences."
       ],
-      "phraseNote": "求同存异 : rechercher les points communs et laisser de côté les divergences."
+      "phraseNote": "求同存异 : rechercher les points communs et laisser de côté les divergences.",
+      "niveau": "HSK 3"
     },
     {
       "char": "双",
@@ -8005,7 +8206,8 @@
         "这双鞋很舒服。",
         "Zhè shuāng xié hěn shūfu.",
         "Cette paire de chaussures est très confortable."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "行",
@@ -8047,7 +8249,8 @@
         "Zhège bànfǎ xíng zhī yǒu xiào.",
         "Cette méthode est efficace en pratique."
       ],
-      "phraseNote": "行之有效 : qui se révèle efficace dans la pratique."
+      "phraseNote": "行之有效 : qui se révèle efficace dans la pratique.",
+      "niveau": "HSK 3"
     },
     {
       "char": "员",
@@ -8088,7 +8291,8 @@
         "他是我们班的一员。",
         "Tā shì wǒmen bān de yī yuán.",
         "Il fait partie de notre classe."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "区",
@@ -8129,7 +8333,8 @@
         "这个区域很安静。",
         "Zhège qūyù hěn ānjìng.",
         "Ce quartier est très calme."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "算",
@@ -8171,7 +8376,8 @@
         "Māma guò rìzi jīng dǎ xì suàn.",
         "Maman gère le budget avec une grande économie."
       ],
-      "phraseNote": "精打细算 : calculer au plus juste, économiser soigneusement."
+      "phraseNote": "精打细算 : calculer au plus juste, économiser soigneusement.",
+      "niveau": "HSK 3"
     },
     {
       "char": "熊",
@@ -8207,7 +8413,8 @@
         "动物园里有大熊猫。",
         "Dòngwùyuán lǐ yǒu dà xióngmāo.",
         "Il y a des pandas géants au zoo."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "愿",
@@ -8249,7 +8456,8 @@
         "Zhè zhǐshì nǐ yī xiāng qíng yuàn.",
         "Ce n'est que ton souhait, sans le consentement de l'autre."
       ],
-      "phraseNote": "一厢情愿 : ne tenir compte que de son propre désir, agir avec un espoir unilatéral."
+      "phraseNote": "一厢情愿 : ne tenir compte que de son propre désir, agir avec un espoir unilatéral.",
+      "niveau": "HSK 3"
     },
     {
       "char": "趣",
@@ -8290,7 +8498,8 @@
         "学汉语很有乐趣。",
         "Xué Hànyǔ hěn yǒu lèqù.",
         "Apprendre le chinois est très amusant."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "糖",
@@ -8331,7 +8540,8 @@
         "孩子爱吃糖果。",
         "Háizi ài chī tángguǒ.",
         "Les enfants adorent les bonbons."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "须",
@@ -8367,7 +8577,8 @@
         "这件事你无须担心。",
         "Zhè jiàn shì nǐ wúxū dānxīn.",
         "Tu n'as pas besoin de t'inquiéter pour cela."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "越",
@@ -8409,7 +8620,8 @@
         "Zhè shì bù kě yú yuè de jièxiàn.",
         "C'est une limite infranchissable."
       ],
-      "phraseNote": "不可逾越 : infranchissable, impossible à dépasser."
+      "phraseNote": "不可逾越 : infranchissable, impossible à dépasser.",
+      "niveau": "HSK 3"
     },
     {
       "char": "全",
@@ -8451,7 +8663,8 @@
         "Tā quán xīn quán yì wèi rénmín fúwù.",
         "Il sert le peuple de tout son cœur."
       ],
-      "phraseNote": "全心全意 : de tout cœur, corps et âme."
+      "phraseNote": "全心全意 : de tout cœur, corps et âme.",
+      "niveau": "HSK 3"
     },
     {
       "char": "特",
@@ -8493,7 +8706,8 @@
         "Tā yīxiàng tè lì dú xíng.",
         "Il a toujours agi à sa manière, en solitaire."
       ],
-      "phraseNote": "特立独行 : agir de façon indépendante, se distinguer des autres."
+      "phraseNote": "特立独行 : agir de façon indépendante, se distinguer des autres.",
+      "niveau": "HSK 3"
     },
     {
       "char": "需",
@@ -8534,7 +8748,8 @@
         "我们的需求很多。",
         "Wǒmen de xūqiú hěn duō.",
         "Nos besoins sont nombreux."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "咱",
@@ -8570,7 +8785,8 @@
         "咱们一起去吧。",
         "Zánmen yīqǐ qù ba.",
         "Allons-y ensemble."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "泉",
@@ -8606,7 +8822,8 @@
         "公园里有一个喷泉。",
         "Gōngyuán lǐ yǒu yī gè pēnquán.",
         "Il y a une fontaine dans le parc."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "梯",
@@ -8647,7 +8864,8 @@
         "我们坐电梯上去。",
         "Wǒmen zuò diàntī shàngqù.",
         "Nous montons en ascenseur."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "选",
@@ -8688,7 +8906,8 @@
         "我选了这个颜色。",
         "Wǒ xuǎn le zhège yánsè.",
         "J'ai choisi cette couleur."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "脏",
@@ -8729,7 +8948,8 @@
         "他的手很脏，快去洗手。",
         "Tā de shǒu hěn zāng, kuài qù xǐshǒu.",
         "Ses mains sont sales, va vite les laver."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "裙",
@@ -8765,7 +8985,8 @@
         "她买了一条新裙子。",
         "Tā mǎi le yī tiáo xīn qúnzi.",
         "Elle a acheté une nouvelle jupe."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "提",
@@ -8807,7 +9028,8 @@
         "Tā tí xīn diào dǎn de děng zhe jiéguǒ.",
         "Il attend le résultat le cœur serré d'angoisse."
       ],
-      "phraseNote": "提心吊胆 : être dans une vive inquiétude, le cœur serré."
+      "phraseNote": "提心吊胆 : être dans une vive inquiétude, le cœur serré.",
+      "niveau": "HSK 3"
     },
     {
       "char": "牙",
@@ -8838,7 +9060,8 @@
         "Mon petit frère apprend à parler."
       ],
       "phraseNote": "牙牙学语 : babiller, apprendre à parler (pour un enfant).",
-      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer."
+      "note": "D'un seul bloc : ce caractère n'a pas de parties à décomposer.",
+      "niveau": "HSK 3"
     },
     {
       "char": "澡",
@@ -8874,7 +9097,8 @@
         "我每天晚上洗澡。",
         "Wǒ měi tiān wǎnshang xǐzǎo.",
         "Je me douche tous les soirs."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "容",
@@ -8916,7 +9140,8 @@
         "Tā jīntiān róng guāng huàn fā.",
         "Aujourd'hui, elle rayonne de santé."
       ],
-      "phraseNote": "容光焕发 : rayonner de santé, avoir le visage éclatant."
+      "phraseNote": "容光焕发 : rayonner de santé, avoir le visage éclatant.",
+      "niveau": "HSK 3"
     },
     {
       "char": "甜",
@@ -8958,7 +9183,8 @@
         "Tā yòng tián yán mì yǔ hǒng tā.",
         "Il la charme avec des paroles doucereuses."
       ],
-      "phraseNote": "甜言蜜语 : paroles mielleuses, flatteries doucereuses."
+      "phraseNote": "甜言蜜语 : paroles mielleuses, flatteries doucereuses.",
+      "niveau": "HSK 3"
     },
     {
       "char": "言",
@@ -9004,7 +9230,8 @@
         "他的言语很客气。",
         "Tā de yányǔ hěn kèqi.",
         "Ses paroles sont très polies."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "择",
@@ -9029,7 +9256,8 @@
           "xuǎn zé",
           "choisir, choix, option"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "如",
@@ -9071,7 +9299,8 @@
         "Tā zài xīn gōngsī rú yú dé shuǐ.",
         "Dans sa nouvelle entreprise, il est comme un poisson dans l'eau."
       ],
-      "phraseNote": "如鱼得水 : être dans son élément, à l'aise comme un poisson dans l'eau."
+      "phraseNote": "如鱼得水 : être dans son élément, à l'aise comme un poisson dans l'eau.",
+      "niveau": "HSK 3"
     },
     {
       "char": "挺",
@@ -9107,7 +9336,8 @@
         "今天天气挺好。",
         "Jīntiān tiānqì tǐng hǎo.",
         "Aujourd'hui il fait plutôt beau."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "演",
@@ -9148,7 +9378,8 @@
         "他们在台上演出。",
         "Tāmen zài táishàng yǎnchū.",
         "Ils se produisent sur scène."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "展",
@@ -9191,7 +9422,8 @@
           "cadavre",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "赛",
@@ -9228,7 +9460,8 @@
           "toit",
           "son"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "突",
@@ -9270,7 +9503,8 @@
         "Tā de Hànyǔ tū fēi měng jìn.",
         "Son chinois progresse à pas de géant."
       ],
-      "phraseNote": "突飞猛进 : progresser à grands pas, faire des progrès fulgurants."
+      "phraseNote": "突飞猛进 : progresser à grands pas, faire des progrès fulgurants.",
+      "niveau": "HSK 3"
     },
     {
       "char": "羊",
@@ -9296,7 +9530,8 @@
           "shān yáng",
           "chèvre, bouc"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "张",
@@ -9338,7 +9573,8 @@
         "Guòjié shí jiēshàng zhāng dēng jié cǎi.",
         "Pendant la fête, les rues sont décorées de lanternes."
       ],
-      "phraseNote": "张灯结彩 : décorer de lanternes et de guirlandes."
+      "phraseNote": "张灯结彩 : décorer de lanternes et de guirlandes.",
+      "niveau": "HSK 3"
     },
     {
       "char": "伞",
@@ -9364,7 +9600,8 @@
         "Xià yǔ le, dài bǎ sǎn ba.",
         "Il pleut, prends un parapluie."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "图",
@@ -9401,7 +9638,8 @@
         "Shìqíng dào zuìhòu tú qióng bǐ xiàn.",
         "En fin de compte, ses intentions véritables se révèlent."
       ],
-      "phraseNote": "图穷匕见 : la vérité éclate à la fin, le vrai visage se révèle."
+      "phraseNote": "图穷匕见 : la vérité éclate à la fin, le vrai visage se révèle.",
+      "niveau": "HSK 3"
     },
     {
       "char": "阳",
@@ -9442,7 +9680,8 @@
         "今天阳光很好。",
         "Jīntiān yángguāng hěn hǎo.",
         "Aujourd'hui il y a un beau soleil."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "照",
@@ -9479,7 +9718,8 @@
         "Tā zuòhuà zhǐ huì zhào māo huà hǔ.",
         "Pour peindre, il ne fait que copier maladroitement."
       ],
-      "phraseNote": "照猫画虎 : imiter servilement, sans comprendre."
+      "phraseNote": "照猫画虎 : imiter servilement, sans comprendre.",
+      "niveau": "HSK 3"
     },
     {
       "char": "扫",
@@ -9521,7 +9761,8 @@
         "Zhuōshàng de diǎnxin bèi yī sǎo ér kōng.",
         "Les gâteaux sur la table ont été engloutis d'un coup."
       ],
-      "phraseNote": "一扫而空 : tout balayer, ne rien laisser."
+      "phraseNote": "一扫而空 : tout balayer, ne rien laisser.",
+      "niveau": "HSK 3"
     },
     {
       "char": "腿",
@@ -9557,7 +9798,8 @@
         "我跑了一天，腿很疼。",
         "Wǒ pǎo le yī tiān, tuǐ hěn téng.",
         "J'ai couru toute la journée, j'ai mal aux jambes."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "养",
@@ -9599,7 +9841,8 @@
         "Guójiā xūyào xiū yǎng shēng xī.",
         "Le pays a besoin de se reposer et de se reconstruire."
       ],
-      "phraseNote": "休养生息 : se reposer et reprendre des forces (pour un peuple, un pays)."
+      "phraseNote": "休养生息 : se reposer et reprendre des forces (pour un peuple, un pays).",
+      "niveau": "HSK 3"
     },
     {
       "char": "者",
@@ -9633,7 +9876,8 @@
         "读者很喜欢这本书。",
         "Dúzhě hěn xǐhuan zhè běn shū.",
         "Les lecteurs aiment beaucoup ce livre."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "沙",
@@ -9675,7 +9919,8 @@
         "Zhège tuánduì xiàng yī pán sǎn shā.",
         "Cette équipe est désunie comme un tas de sable."
       ],
-      "phraseNote": "一盘散沙 : désuni, sans cohésion."
+      "phraseNote": "一盘散沙 : désuni, sans cohésion.",
+      "niveau": "HSK 3"
     },
     {
       "char": "碗",
@@ -9711,7 +9956,8 @@
         "碗里的饭都吃完了。",
         "Wǎn lǐ de fàn dōu chī wán le.",
         "On a fini tout le riz dans le bol."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "业",
@@ -9741,7 +9987,8 @@
         "Il travaille avec zèle et application."
       ],
       "phraseNote": "兢兢业业 : travailler avec soin et dévouement.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "直",
@@ -9787,7 +10034,8 @@
         "他直接回答了问题。",
         "Tā zhíjiē huídá le wèntí.",
         "Il a répondu directement à la question."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "山",
@@ -9824,7 +10072,8 @@
         "Tāmen zǒuguò wàn shuǐ qiān shān.",
         "Ils ont franchi monts et rivières."
       ],
-      "phraseNote": "万水千山 : mille monts et dix mille rivières, un très long voyage."
+      "phraseNote": "万水千山 : mille monts et dix mille rivières, un très long voyage.",
+      "niveau": "HSK 3"
     },
     {
       "char": "卫",
@@ -9863,7 +10112,8 @@
         "我们要注意卫生。",
         "Wǒmen yào zhùyì wèishēng.",
         "Il faut faire attention à l'hygiène."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "页",
@@ -9894,7 +10144,8 @@
         "Zhège wǎngyè hěn hǎokàn.",
         "Cette page web est très jolie."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "纸",
@@ -9931,7 +10182,8 @@
         "Guāng shuō méi yòng, bié zhǐ shàng tán bīng.",
         "Parler ne suffit pas, ne fais pas de théorie sans agir."
       ],
-      "phraseNote": "纸上谈兵 : discuter de tout sur le papier, sans passer à l'acte."
+      "phraseNote": "纸上谈兵 : discuter de tout sur le papier, sans passer à l'acte.",
+      "niveau": "HSK 3"
     },
     {
       "char": "衫",
@@ -9967,7 +10219,8 @@
           "chèn shān",
           "chemise, chemisier"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "闻",
@@ -10009,7 +10262,8 @@
         "Chángchéng jǔ shì wén míng.",
         "La Grande Muraille est mondialement connue."
       ],
-      "phraseNote": "举世闻名 : connu du monde entier."
+      "phraseNote": "举世闻名 : connu du monde entier.",
+      "niveau": "HSK 3"
     },
     {
       "char": "姨",
@@ -10050,7 +10304,8 @@
           "yí mā",
           "tante, sœur de la mère"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "终",
@@ -10092,7 +10347,8 @@
         "Tā zuòshì de rèqíng shǐ zhōng rú yī.",
         "Sa passion pour son travail reste la même du début à la fin."
       ],
-      "phraseNote": "始终如一 : constant du début à la fin, toujours pareil."
+      "phraseNote": "始终如一 : constant du début à la fin, toujours pareil.",
+      "niveau": "HSK 3"
     },
     {
       "char": "烧",
@@ -10133,7 +10389,8 @@
         "我今天有点发烧，不想上班。",
         "Wǒ jīntiān yǒu diǎn fāshāo, bù xiǎng shàngbān.",
         "J'ai un peu de fièvre aujourd'hui, je ne veux pas aller travailler."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "屋",
@@ -10175,7 +10432,8 @@
         "Tā duì tā de māo yě ài wū jí wū.",
         "Il en vient même à aimer son chat, par amour pour elle."
       ],
-      "phraseNote": "爱屋及乌 : aimer tout ce qui touche une personne aimée."
+      "phraseNote": "爱屋及乌 : aimer tout ce qui touche une personne aimée.",
+      "niveau": "HSK 3"
     },
     {
       "char": "议",
@@ -10216,7 +10474,8 @@
         "这件事引起了大家的议论。",
         "Zhè jiàn shì yǐnqǐ le dàjiā de yìlùn.",
         "Cette affaire a suscité les discussions de tous."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "种",
@@ -10258,7 +10517,8 @@
         "Cóngqián rénmen dāo gēng huǒ zhòng.",
         "Autrefois, on cultivait par brûlis et à la houe."
       ],
-      "phraseNote": "刀耕火种 : cultivation primitive par écobuage."
+      "phraseNote": "刀耕火种 : cultivation primitive par écobuage.",
+      "niveau": "HSK 3"
     },
     {
       "char": "勺",
@@ -10294,7 +10554,8 @@
           "sháo zi",
           "cuillère, louche"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "务",
@@ -10334,7 +10595,8 @@
         "Xiànzài chīfàn shì dāng wù zhī jí.",
         "Pour l'instant, manger est la priorité absolue."
       ],
-      "phraseNote": "当务之急 : la tâche la plus urgente du moment."
+      "phraseNote": "当务之急 : la tâche la plus urgente du moment.",
+      "niveau": "HSK 3"
     },
     {
       "char": "易",
@@ -10368,7 +10630,8 @@
         "这个字很容易写。",
         "Zhège zì hěn róngyì xiě.",
         "Ce caractère est facile à écrire."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "重",
@@ -10410,7 +10673,8 @@
         "Tā yǔ zhòng xīn cháng de hé wǒ shuōhuà.",
         "Il m'a parlé d'un ton grave et plein de sollicitude."
       ],
-      "phraseNote": "语重心长 : parler avec gravité et bienveillance, avec des paroles chargées de sens."
+      "phraseNote": "语重心长 : parler avec gravité et bienveillance, avec des paroles chargées de sens.",
+      "niveau": "HSK 3"
     },
     {
       "char": "声",
@@ -10442,7 +10706,8 @@
         "Il a utilisé la tactique de la diversion."
       ],
       "phraseNote": "声东击西 : faire diversion, attaquer d'un côté en menaçant de l'autre.",
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "物",
@@ -10478,7 +10743,8 @@
         "动物园里有很多动物。",
         "Dòngwùyuán lǐ yǒu hěn duō dòngwù.",
         "Il y a beaucoup d'animaux au zoo."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "音",
@@ -10520,7 +10786,8 @@
         "Tā de huà lǐ yǒu xián wài zhī yīn.",
         "Il y a un sous-entendu dans ses paroles."
       ],
-      "phraseNote": "弦外之音 : le sous-entendu, ce qui est dit à demi-mot."
+      "phraseNote": "弦外之音 : le sous-entendu, ce qui est dit à demi-mot.",
+      "niveau": "HSK 3"
     },
     {
       "char": "主",
@@ -10561,7 +10828,8 @@
         "他是这家的主人。",
         "Tā shì zhè jiā de zhǔrén.",
         "C'est le maître de cette maison."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "实",
@@ -10601,7 +10869,8 @@
         "Zuòshì yào shí shì qiú shì.",
         "Il faut s'en tenir aux faits, être réaliste."
       ],
-      "phraseNote": "实事求是 : s'en tenir aux faits, chercher la vérité dans les faits."
+      "phraseNote": "实事求是 : s'en tenir aux faits, chercher la vérité dans les faits.",
+      "niveau": "HSK 3"
     },
     {
       "char": "戏",
@@ -10642,7 +10911,8 @@
         "孩子们在玩游戏。",
         "Háizimen zài wán yóuxì.",
         "Les enfants jouent à un jeu."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "银",
@@ -10679,7 +10949,8 @@
         "Jiérì wǎnshang huǒ shù yín huā.",
         "Le soir de la fête, les illuminations resplendissent."
       ],
-      "phraseNote": "火树银花 : illuminations splendides, décor de lumières éclatantes."
+      "phraseNote": "火树银花 : illuminations splendides, décor de lumières éclatantes.",
+      "niveau": "HSK 3"
     },
     {
       "char": "助",
@@ -10720,7 +10991,8 @@
         "他帮助了很多人。",
         "Tā bāngzhù le hěn duō rén.",
         "Il a aidé beaucoup de gens."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "史",
@@ -10757,7 +11029,8 @@
           "lì shǐ",
           "histoire"
         ]
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "夏",
@@ -10801,7 +11074,8 @@
         "夏天我最喜欢游泳。",
         "Xiàtiān wǒ zuì xǐhuan yóuyǒng.",
         "En été, j'aime surtout nager."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "饮",
@@ -10843,7 +11117,8 @@
         "Wǒmen yào yǐn shuǐ sī yuán.",
         "Il faut se souvenir de l'origine de notre bien-être."
       ],
-      "phraseNote": "饮水思源 : en buvant l'eau, penser à la source, ne pas oublier son origine."
+      "phraseNote": "饮水思源 : en buvant l'eau, penser à la source, ne pas oublier son origine.",
+      "niveau": "HSK 3"
     },
     {
       "char": "注",
@@ -10884,7 +11159,8 @@
         "上课要注意听讲。",
         "Shàngkè yào zhùyì tīngjiǎng.",
         "En classe, il faut faire attention à écouter."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "世",
@@ -10910,7 +11186,8 @@
         "Xiànzài yǐjīng shì èrshíyī shìjì.",
         "Nous sommes déjà au vingt-et-unième siècle."
       ],
-      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout."
+      "note": "Décomposition non documentée : ce caractère s'apprend comme un tout.",
+      "niveau": "HSK 3"
     },
     {
       "char": "鲜",
@@ -10952,7 +11229,8 @@
         "Zhèyàng de shì lǚ jiàn bù xiān.",
         "Ce genre de choses est monnaie courante."
       ],
-      "phraseNote": "屡见不鲜 : chose fréquente, courante, qui n'a plus rien d'étonnant."
+      "phraseNote": "屡见不鲜 : chose fréquente, courante, qui n'a plus rien d'étonnant.",
+      "niveau": "HSK 3"
     },
     {
       "char": "应",
@@ -10991,7 +11269,8 @@
         "我们应该早点出发。",
         "Wǒmen yīnggāi zǎo diǎn chūfā.",
         "Nous devrions partir plus tôt."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "总",
@@ -11038,7 +11317,8 @@
         "Zǒng ér yán zhī, wǒ hěn mǎnyì.",
         "En un mot, je suis très satisfait."
       ],
-      "phraseNote": "总而言之 : en un mot, en résumé."
+      "phraseNote": "总而言之 : en un mot, en résumé.",
+      "niveau": "HSK 3"
     },
     {
       "char": "适",
@@ -11079,7 +11359,8 @@
         "这件衣服很适合你。",
         "Zhè jiàn yīfu hěn shìhé nǐ.",
         "Ce vêtement te va très bien."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "相",
@@ -11121,7 +11402,8 @@
         "Xuéxí hé liànxí xiāng fǔ xiāng chéng.",
         "L'étude et la pratique se complètent mutuellement."
       ],
-      "phraseNote": "相辅相成 : se compléter l'un l'autre, aller de pair."
+      "phraseNote": "相辅相成 : se compléter l'un l'autre, aller de pair.",
+      "niveau": "HSK 3"
     },
     {
       "char": "迎",
@@ -11162,7 +11444,8 @@
         "我们去门口迎接客人。",
         "Wǒmen qù ménkǒu yíngjiē kèrén.",
         "Nous allons accueillir les invités à la porte."
-      ]
+      ],
+      "niveau": "HSK 3"
     },
     {
       "char": "嘴",
@@ -11204,7 +11487,8 @@
         "Dàjiā qī zuǐ bā shé de tǎolùn.",
         "Tout le monde discute en même temps, tous azimuts."
       ],
-      "phraseNote": "七嘴八舌 : tout le monde parle en même temps, discussions confuses."
+      "phraseNote": "七嘴八舌 : tout le monde parle en même temps, discussions confuses.",
+      "niveau": "HSK 3"
     }
   ]
 }

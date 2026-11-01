@@ -1221,9 +1221,13 @@ body.page-ouverte main { visibility: hidden; }
 .stage {
   position: relative;
   border-radius: 22px;
-  /* Une peinture, pas un motif : on la pose une fois, en couverture, et on
-     cadre sur le bas (le pêcheur est au deux tiers de la hauteur). */
-  background: url("fond.jpg") center 66% / cover no-repeat;
+  /* Le motif de vagues rouge et or, posé en COUVERTURE (une seule fois,
+     agrandi pour remplir la carte) au lieu d'être répété en petit. */
+  /* Le ?v= est indispensable : sans lui, le navigateur et le service
+     worker resservent l'ancienne image depuis leur cache. */
+  /* L'image vient d'une variable : par défaut celle livrée avec l'appli,
+     ou celle que l'utilisateur a choisie (Réglages → Fond des cartes). */
+  background: var(--fond-image, url("fond.jpg?v=257")) center / cover no-repeat;
 }
 /* Le voile : un dégradé vertical par-dessus la peinture, plus clair au centre.
    Il ne laisse passer qu'environ un cinquième du tableau — assez pour que le

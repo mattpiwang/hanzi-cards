@@ -247,6 +247,14 @@ var STORE_KEY = 'hanzi-cards-v1';
     } catch (e) { state.progress = {}; }
     state.jour = lireJour();
     migrerProgression();
+    /* Ceux qui utilisaient l'appli avant les listes : toute carte vue et non
+       sue entre dans « à revoir », une seule fois. */
+    var migre = false;
+    Object.keys(state.progress).forEach(function (ch) {
+      var p = state.progress[ch];
+      if (p && p.revoir === undefined && p.seen > 0 && !p.n) { p.revoir = true; migre = true; }
+    });
+    if (migre) { save(); }
   }
 
   function masteredCount() {
@@ -509,6 +517,10 @@ var STORE_KEY = 'hanzi-cards-v1';
     var avant = estDue(c);
     compter(known ? 'sais' : 'revoir', c.char);
     var f = reviser(c, known);
+    /* « À revoir » entre dans la liste « à revoir » ; « je sais » l'en fait sortir. */
+    var enr = state.progress[c.char] || (state.progress[c.char] = {});
+    enr.revoir = !known;
+    save();
 
     /* En mode « à revoir », une carte qui vient d'être réussie ne sera plus due
        avant un moment : elle quitte la file, plutôt que de revenir tout de suite. */
@@ -1692,12 +1704,16 @@ function brancherRechercheAccueil() {
 
   /* Deux paquets : les cartes JUGÉES qui ne sont pas sues (« à revoir ») et
      les cartes MARQUÉES (« favoris »). Une carte peut être dans les deux. */
+  var listeCartes = [];      // les cartes du paquet affiché (après filtre)
+
   function ficheDeListe(c) {
     var p = state.progress && state.progress[c.char];
+    /* Deux LISTES, tenues par la carte elle-même : « revoir » y entre quand on
+       la juge À REVOIR, en sort quand on la juge « je sais » ; « fav » bascule
+       avec le tampon. Rien n'est recalculé, donc la liste ne bouge pas toute
+       seule, et elle traverse les niveaux. */
     if (listeFiltre === 'favoris') { return !!(p && p.fav); }
-    var vue = (p && p.seen) || 0;
-    var juste = (p && p.n) || 0;
-    return vue > 0 && !juste;
+    return !!(p && p.revoir);
   }
 
   function peindreListe() {
@@ -1713,6 +1729,7 @@ function brancherRechercheAccueil() {
     /* Le titre reste « Révision » : c'est le filtre actif qui dit ce qu'on voit. */
     if (el.listeTitre) { el.listeTitre.textContent = 'Révision'; }
     var lot = state.cards.filter(ficheDeListe);
+    listeCartes = lot;
     if (!lot.length) {
       el.listeGrille.innerHTML = '<p class="feuille-info">Aucune fiche ici pour l\'instant.</p>';
     } else {
@@ -1796,8 +1813,14 @@ function brancherRechercheAccueil() {
       }
       if (!b || b === el.listeGrille) { return; }
       var cle = b.getAttribute('data-char');
-      for (var i = 0; i < state.view.length; i++) {
-        if (state.view[i].char === cle) { state.i = i; break; }
+      /* On joue LE PAQUET, pas les 1 574 fiches : trois favoris = trois cartes,
+         puis la fin du paquet ramène à la liste. */
+      if (listeCartes.length) {
+        state.view = listeCartes.slice();
+        state.i = 0;
+        for (var i = 0; i < state.view.length; i++) {
+          if (state.view[i].char === cle) { state.i = i; break; }
+        }
       }
       origineCarte = 'liste';
       el.pageListe.hidden = true;
@@ -1946,6 +1969,90 @@ function brancherRechercheAccueil() {
     }
   }
 
+  /* ---------------- Le fond choisi par l'utilisateur ---------------- */
+
+  /* L'image est réduite avant d'être gardée : une photo de téléphone pèse
+     plusieurs mégaoctets, localStorage en accepte à peine cinq. On la ramène à
+     1400 px de large au plus, en JPEG, ce qui donne 200 à 400 Ko. */
+  var CLE_FOND = 'hanzi-fond';
+
+  function appliquerFond(dataUrl) {
+    var racine = document.documentElement;
+    if (!racine || !racine.style) { return; }
+    if (dataUrl) {
+      racine.style.setProperty('--fond-image', 'url("' + dataUrl + '")');
+    } else {
+      racine.style.removeProperty('--fond-image');
+    }
+  }
+
+  function chargerFond() {
+    try {
+      var garde = localStorage.getItem(CLE_FOND);
+      if (garde) { appliquerFond(garde); }
+      return garde || '';
+    } catch (e) { return ''; }
+  }
+
+  function reduireImage(fichier) {
+    return new Promise(function (ok, ko) {
+      var lecteur = new FileReader();
+      lecteur.onerror = function () { ko(new Error('lecture impossible')); };
+      lecteur.onload = function () {
+        var img = new Image();
+        img.onerror = function () { ko(new Error('image illisible')); };
+        img.onload = function () {
+          var max = 1400;
+          var largeur = img.width, hauteur = img.height;
+          if (largeur > max) { hauteur = Math.round(hauteur * max / largeur); largeur = max; }
+          var toile = document.createElement('canvas');
+          toile.width = largeur;
+          toile.height = hauteur;
+          toile.getContext('2d').drawImage(img, 0, 0, largeur, hauteur);
+          ok(toile.toDataURL('image/jpeg', 0.82));
+        };
+        img.src = lecteur.result;
+      };
+      lecteur.readAsDataURL(fichier);
+    });
+  }
+
+  function brancherFond() {
+    var choisir = document.getElementById('fond-choisir');
+    var defaut = document.getElementById('fond-defaut');
+    var champ = document.getElementById('fond-fichier');
+    var etat = document.getElementById('fond-etat');
+    if (!choisir || !champ) { return; }
+
+    function dire(t) { if (etat) { etat.textContent = t; } }
+    dire(localStorage.getItem(CLE_FOND) ? 'Fond personnel en place.' : 'Fond d\'origine.');
+
+    choisir.addEventListener('click', function () { champ.click(); });
+
+    champ.addEventListener('change', function () {
+      var f = champ.files && champ.files[0];
+      if (!f) { return; }
+      dire('Préparation…');
+      reduireImage(f).then(function (dataUrl) {
+        try {
+          localStorage.setItem(CLE_FOND, dataUrl);
+          appliquerFond(dataUrl);
+          dire('Fond personnel en place (' + Math.round(dataUrl.length / 1024) + ' Ko).');
+        } catch (e) {
+          dire('Image trop lourde pour ce navigateur — essaie une image plus petite.');
+        }
+      }).catch(function () { dire('Cette image n\'a pas pu être lue.'); });
+    });
+
+    if (defaut) {
+      defaut.addEventListener('click', function () {
+        try { localStorage.removeItem(CLE_FOND); } catch (e) { /* privé */ }
+        appliquerFond(null);
+        dire('Fond d\'origine rétabli.');
+      });
+    }
+  }
+
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -2040,7 +2147,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '253';
+  var VERSION = '258';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -2119,6 +2226,8 @@ function brancherRechercheAccueil() {
   brancherThemesAccueil();
   brancherRadicauxAccueil();
   chargerRadicaux();
+  brancherFond();
+  chargerFond();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);

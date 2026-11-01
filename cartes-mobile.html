@@ -1229,9 +1229,13 @@ body.page-ouverte main { visibility: hidden; }
 .stage {
   position: relative;
   border-radius: 22px;
-  /* Une peinture, pas un motif : on la pose une fois, en couverture, et on
-     cadre sur le bas (le pêcheur est au deux tiers de la hauteur). */
-  background: url("fond.jpg") center 66% / cover no-repeat;
+  /* Le motif de vagues rouge et or, posé en COUVERTURE (une seule fois,
+     agrandi pour remplir la carte) au lieu d'être répété en petit. */
+  /* Le ?v= est indispensable : sans lui, le navigateur et le service
+     worker resservent l'ancienne image depuis leur cache. */
+  /* L'image vient d'une variable : par défaut celle livrée avec l'appli,
+     ou celle que l'utilisateur a choisie (Réglages → Fond des cartes). */
+  background: var(--fond-image, url("fond.jpg?v=257")) center / cover no-repeat;
 }
 /* Le voile : un dégradé vertical par-dessus la peinture, plus clair au centre.
    Il ne laisse passer qu'environ un cinquième du tableau — assez pour que le
@@ -1421,6 +1425,12 @@ body.page-ouverte main { visibility: hidden; }
         <span class="sw-label" id="recherche-label">Recherche : pinyin</span>
       </button>
 
+      <p class="feuille-titre">Fond des cartes</p>
+      <button id="fond-choisir" class="feuille-entree" type="button">Choisir une image…</button>
+      <button id="fond-defaut" class="feuille-entree" type="button">Revenir au fond d'origine</button>
+      <input type="file" id="fond-fichier" accept="image/*" hidden>
+      <p class="feuille-info" id="fond-etat"></p>
+
       <p class="feuille-titre">Progression</p>
       <button id="export" class="feuille-entree" type="button">Sauvegarder</button>
       <button id="import" class="feuille-entree" type="button">Restaurer</button>
@@ -1517,7 +1527,8 @@ body.page-ouverte main { visibility: hidden; }
         "我有一个秘密，不告诉你。",
         "Wǒ yǒu yī gè mìmì, bù gàosù nǐ.",
         "J'ai un secret, je ne te le dis pas."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "二",
@@ -1551,7 +1562,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhège cài dú yī wú èr.",
         "Ce plat est unique en son genre."
       ],
-      "phraseNote": "独一无二 : unique, sans pareil."
+      "phraseNote": "独一无二 : unique, sans pareil.",
+      "niveau": "HSK 1"
     },
     {
       "char": "三",
@@ -1584,7 +1596,8 @@ body.page-ouverte main { visibility: hidden; }
         "我有三个苹果，都在冰箱里。",
         "Wǒ yǒu sān gè píngguǒ, dōu zài bīngxiāng lǐ.",
         "J'ai trois pommes, toutes dans le frigo."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "日",
@@ -1617,7 +1630,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天是我的生日，可是没人记得。",
         "Jīntiān shì wǒ de shēngrì, kěshì méi rén jìde.",
         "C'est mon anniversaire aujourd'hui, mais personne ne s'en souvient."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "月",
@@ -1651,7 +1665,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tāmen de hūnlǐ huā hǎo yuè yuán.",
         "Leur mariage est une union parfaite."
       ],
-      "phraseNote": "花好月圆 : union heureuse, bonheur parfait."
+      "phraseNote": "花好月圆 : union heureuse, bonheur parfait.",
+      "niveau": "HSK 1"
     },
     {
       "char": "山",
@@ -1684,7 +1699,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫想爬山，可是它太胖了。",
         "Wǒ de māo xiǎng pá shān, kěshì tā tài pàng le.",
         "Mon chat veut grimper la montagne, mais il est trop gros."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "水",
@@ -1717,7 +1733,8 @@ body.page-ouverte main { visibility: hidden; }
         "我不喜欢喝水，可是我喜欢吃水果。",
         "Wǒ bù xǐhuan hē shuǐ, kěshì wǒ xǐhuan chī shuǐguǒ.",
         "Je n'aime pas boire de l'eau, mais j'adore les fruits."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "火",
@@ -1751,7 +1768,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shēngqì de huǒ mào sān zhàng.",
         "Il est furieux, il bout de colère."
       ],
-      "phraseNote": "火冒三丈 : entrer dans une colère noire."
+      "phraseNote": "火冒三丈 : entrer dans une colère noire.",
+      "niveau": "HSK 1"
     },
     {
       "char": "木",
@@ -1784,7 +1802,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫睡在木头上，像一块面包。",
         "Wǒ de māo shuì zài mùtou shàng, xiàng yī kuài miànbāo.",
         "Mon chat dort sur le bois, comme un pain."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "田",
@@ -1817,7 +1836,8 @@ body.page-ouverte main { visibility: hidden; }
         "爷爷的田地里住着一只青蛙。",
         "Yéye de tiándì lǐ zhù zhe yī zhī qīngwā.",
         "Une grenouille habite dans le champ de grand-père."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "雨",
@@ -1851,7 +1871,8 @@ body.page-ouverte main { visibility: hidden; }
         "Māma shuō yào wèi yǔ chóu móu, xiān dài sǎn.",
         "Maman dit qu'il faut prévoir, on prend un parapluie."
       ],
-      "phraseNote": "未雨绸缪 : prévoir avant que le mal n'arrive."
+      "phraseNote": "未雨绸缪 : prévoir avant que le mal n'arrive.",
+      "niveau": "HSK 1"
     },
     {
       "char": "风",
@@ -1889,7 +1910,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天风很大，我的帽子飞走了。",
         "Jīntiān fēng hěn dà, wǒ de màozi fēizǒu le.",
         "Aujourd'hui il y a beaucoup de vent, mon chapeau s'est envolé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "电",
@@ -1927,7 +1949,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的电脑今天不想工作。",
         "Wǒ de diànnǎo jīntiān bù xiǎng gōngzuò.",
         "Mon ordinateur ne veut pas travailler aujourd'hui."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "人",
@@ -1961,7 +1984,8 @@ body.page-ouverte main { visibility: hidden; }
         "Shāngdiàn lǐ rén shān rén hǎi, wǒ chū bù qù le.",
         "Il y a une foule énorme dans le magasin, je n'arrive pas à sortir."
       ],
-      "phraseNote": "人山人海 : foule immense, marée humaine."
+      "phraseNote": "人山人海 : foule immense, marée humaine.",
+      "niveau": "HSK 1"
     },
     {
       "char": "大",
@@ -1994,7 +2018,8 @@ body.page-ouverte main { visibility: hidden; }
         "大家的猫都很大，只有我的很小。",
         "Dàjiā de māo dōu hěn dà, zhǐyǒu wǒ de hěn xiǎo.",
         "Les chats de tout le monde sont grands, seul le mien est petit."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "小",
@@ -2027,7 +2052,8 @@ body.page-ouverte main { visibility: hidden; }
         "我家的小狗每天睡十个小时。",
         "Wǒ jiā de xiǎogǒu měi tiān shuì shí gè xiǎoshí.",
         "Mon petit chien dort dix heures par jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "口",
@@ -2061,7 +2087,8 @@ body.page-ouverte main { visibility: hidden; }
         "Dàjiā yì kǒu tóng shēng de shuō: hǎo chī!",
         "Tout le monde dit d'une même voix : délicieux !"
       ],
-      "phraseNote": "异口同声 : dire la même chose à l'unisson."
+      "phraseNote": "异口同声 : dire la même chose à l'unisson.",
+      "niveau": "HSK 1"
     },
     {
       "char": "目",
@@ -2094,7 +2121,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的新目标是每天不看手机。",
         "Wǒ de xīn mùbiāo shì měi tiān bù kàn shǒujī.",
         "Mon nouvel objectif : ne pas regarder mon téléphone chaque jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "手",
@@ -2127,7 +2155,8 @@ body.page-ouverte main { visibility: hidden; }
         "猫用舌头洗手，不用手机。",
         "Māo yòng shétou xǐ shǒu, bù yòng shǒujī.",
         "Le chat se lave les pattes avec sa langue, sans téléphone."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "心",
@@ -2161,7 +2190,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā yī xīn yī yì de xuéxí Zhōngwén.",
         "Il étudie le chinois avec une concentration totale."
       ],
-      "phraseNote": "一心一意 : de tout cœur, avec une seule intention."
+      "phraseNote": "一心一意 : de tout cœur, avec une seule intention.",
+      "niveau": "HSK 1"
     },
     {
       "char": "女",
@@ -2194,7 +2224,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的小狗是女孩子，它爱吃米饭。",
         "Wǒ de xiǎogǒu shì nǚháizi, tā ài chī mǐfàn.",
         "Mon petit chien est une fille, elle adore le riz."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "子",
@@ -2227,7 +2258,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个孩子吃米饭，像一只小鸟。",
         "Zhège háizi chī mǐfàn, xiàng yī zhī xiǎoniǎo.",
         "Cet enfant mange du riz comme un petit oiseau."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "男",
@@ -2266,7 +2298,8 @@ body.page-ouverte main { visibility: hidden; }
         "Cóngqián nán gēng nǚ zhī, xiànzài dàjiā dōu zài shàngbān.",
         "Autrefois les hommes cultivaient, les femmes tissaient ; maintenant tout le monde travaille."
       ],
-      "phraseNote": "男耕女织 : division traditionnelle du travail entre hommes et femmes."
+      "phraseNote": "男耕女织 : division traditionnelle du travail entre hommes et femmes.",
+      "niveau": "HSK 1"
     },
     {
       "char": "家",
@@ -2304,7 +2337,8 @@ body.page-ouverte main { visibility: hidden; }
         "我回家的时候，猫在门口等我。",
         "Wǒ huí jiā de shíhou, māo zài ménkǒu děng wǒ.",
         "Quand je rentre à la maison, le chat m'attend à la porte."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "安",
@@ -2342,7 +2376,8 @@ body.page-ouverte main { visibility: hidden; }
         "晚上不安全，我的猫不敢出门。",
         "Wǎnshang bù ānquán, wǒ de māo bù gǎn chūmén.",
         "La nuit n'est pas sûre, mon chat n'ose pas sortir."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "好",
@@ -2382,7 +2417,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xué Zhōngwén hǎo shì duō mó, mànman lái ba.",
         "Apprendre le chinois demande du temps ; prends ton temps."
       ],
-      "phraseNote": "好事多磨 : les bonnes choses demandent patience et efforts."
+      "phraseNote": "好事多磨 : les bonnes choses demandent patience et efforts.",
+      "niveau": "HSK 1"
     },
     {
       "char": "上",
@@ -2415,7 +2451,8 @@ body.page-ouverte main { visibility: hidden; }
         "上午我上山，下午我下海。",
         "Shàngwǔ wǒ shàng shān, xiàwǔ wǒ xià hǎi.",
         "Le matin je monte à la montagne, l'après-midi je descends à la mer."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "下",
@@ -2449,7 +2486,8 @@ body.page-ouverte main { visibility: hidden; }
         "Děng yīxià kǎoshì, wǒ xīnlǐ qī shàng bā xià.",
         "À l'approche de l'examen, je suis très nerveux."
       ],
-      "phraseNote": "七上八下 : être inquiet, le cœur agité."
+      "phraseNote": "七上八下 : être inquiet, le cœur agité.",
+      "niveau": "HSK 1"
     },
     {
       "char": "中",
@@ -2482,7 +2520,8 @@ body.page-ouverte main { visibility: hidden; }
         "中午我吃中国菜，晚上吃法国菜。",
         "Zhōngwǔ wǒ chī Zhōngguócài, wǎnshang chī Fǎguócài.",
         "Le midi je mange chinois, le soir français."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "我",
@@ -2516,7 +2555,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zuòshì wǒ xíng wǒ sù, bù tīng biérén.",
         "Il agit toujours à sa façon, sans écouter les autres."
       ],
-      "phraseNote": "我行我素 : faire à sa tête, à sa manière."
+      "phraseNote": "我行我素 : faire à sa tête, à sa manière.",
+      "niveau": "HSK 1"
     },
     {
       "char": "你",
@@ -2554,7 +2594,8 @@ body.page-ouverte main { visibility: hidden; }
         "你好，你家的猫叫什么名字？",
         "Nǐ hǎo, nǐ jiā de māo jiào shénme míngzi?",
         "Bonjour, comment s'appelle le chat de ta maison ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "他",
@@ -2593,7 +2634,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shān zhī shí, kěyǐ gōng yù.",
         "La pierre d'une autre montagne peut polir le jade."
       ],
-      "phraseNote": "他山之石 : tirer profit des expériences d'autrui pour progresser."
+      "phraseNote": "他山之石 : tirer profit des expériences d'autrui pour progresser.",
+      "niveau": "HSK 1"
     },
     {
       "char": "不",
@@ -2627,7 +2669,8 @@ body.page-ouverte main { visibility: hidden; }
         "我不喜欢吃药，可是我喜欢吃糖。",
         "Wǒ bù xǐhuan chī yào, kěshì wǒ xǐhuan chī táng.",
         "Je n'aime pas les médicaments, mais j'adore les bonbons."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "是",
@@ -2666,7 +2709,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā hěn zì yǐ wéi shì, bù tīng dàjiā de huà.",
         "Il a la grosse tête et n'écoute personne."
       ],
-      "phraseNote": "自以为是 : se croire toujours dans le vrai."
+      "phraseNote": "自以为是 : se croire toujours dans le vrai.",
+      "niveau": "HSK 1"
     },
     {
       "char": "有",
@@ -2704,7 +2748,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫有意思，它喜欢看书。",
         "Wǒ de māo yǒu yìsi, tā xǐhuan kàn shū.",
         "Mon chat est amusant, il aime lire."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "来",
@@ -2738,7 +2783,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā hòu lái jū shàng, kǎoshì dé le dì yī.",
         "Il a dépassé tout le monde et a fini premier."
       ],
-      "phraseNote": "后来居上 : dépasser ceux qui étaient devant, réussir au final."
+      "phraseNote": "后来居上 : dépasser ceux qui étaient devant, réussir au final.",
+      "niveau": "HSK 1"
     },
     {
       "char": "去",
@@ -2776,7 +2822,8 @@ body.page-ouverte main { visibility: hidden; }
         "去年我去北京，看见很多猫。",
         "Qùnián wǒ qù Běijīng, kànjiàn hěn duō māo.",
         "L'an dernier je suis allé à Pékin et j'ai vu beaucoup de chats."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "看",
@@ -2815,7 +2862,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā jìnbù hěn dà, dàjiā guā mù xiāng kàn.",
         "Il a beaucoup progressé, tout le monde le voit autrement."
       ],
-      "phraseNote": "刮目相看 : voir quelqu'un d'un nouvel œil."
+      "phraseNote": "刮目相看 : voir quelqu'un d'un nouvel œil.",
+      "niveau": "HSK 1"
     },
     {
       "char": "吃",
@@ -2853,7 +2901,8 @@ body.page-ouverte main { visibility: hidden; }
         "我吃火锅的时候，猫也在吃鱼。",
         "Wǒ chī huǒguō de shíhou, māo yě zài chī yú.",
         "Quand je mange une fondue chinoise, le chat mange aussi du poisson."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "学",
@@ -2897,7 +2946,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xué wú zhǐ jìng, wǒmen jìxù nǔlì.",
         "Le savoir n'a pas de limite, continuons à travailler."
       ],
-      "phraseNote": "学无止境 : on n'a jamais fini d'apprendre."
+      "phraseNote": "学无止境 : on n'a jamais fini d'apprendre.",
+      "niveau": "HSK 1"
     },
     {
       "char": "生",
@@ -2931,7 +2981,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的生日是八月八日，很吉利。",
         "Wǒ de shēngrì shì bā yuè bā rì, hěn jílì.",
         "Mon anniversaire tombe le 8 août, très porte-bonheur."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "爱",
@@ -2978,7 +3029,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā duì xīn shū ài bù shì shǒu.",
         "Elle ne peut pas lâcher son nouveau livre."
       ],
-      "phraseNote": "爱不释手 : aimer tellement qu'on ne peut plus s'en séparer."
+      "phraseNote": "爱不释手 : aimer tellement qu'on ne peut plus s'en séparer.",
+      "niveau": "HSK 1"
     },
     {
       "char": "姐",
@@ -3019,7 +3071,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的姐姐今年十八岁。",
         "Wǒ de jiějie jīnnián shíbā suì.",
         "Ma grande sœur a dix-huit ans cette année."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "年",
@@ -3057,7 +3110,8 @@ body.page-ouverte main { visibility: hidden; }
           "grain",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "八",
@@ -3094,7 +3148,8 @@ body.page-ouverte main { visibility: hidden; }
         "我八点起床，可是八点半还在睡。",
         "Wǒ bā diǎn qǐchuáng, kěshì bā diǎn bàn hái zài shuì.",
         "Je me lève à huit heures, mais à huit heures et demie je dors encore."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "饭",
@@ -3136,7 +3191,8 @@ body.page-ouverte main { visibility: hidden; }
         "Jiābān duì tā lái shuō yǐjīng shì jiā cháng biàn fàn.",
         "Les heures supplémentaires sont devenues son quotidien."
       ],
-      "phraseNote": "家常便饭 : chose devenue habituelle, routine."
+      "phraseNote": "家常便饭 : chose devenue habituelle, routine.",
+      "niveau": "HSK 1"
     },
     {
       "char": "今",
@@ -3173,7 +3229,8 @@ body.page-ouverte main { visibility: hidden; }
           "bouche",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "您",
@@ -3219,7 +3276,8 @@ body.page-ouverte main { visibility: hidden; }
         "您好，您今天要去哪里？",
         "Nín hǎo, nín jīntiān yào qù nǎlǐ?",
         "Bonjour, où allez-vous aujourd'hui ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "爸",
@@ -3260,7 +3318,8 @@ body.page-ouverte main { visibility: hidden; }
         "爸爸今天做饭，可是饭很咸。",
         "Bàba jīntiān zuòfàn, kěshì fàn hěn xián.",
         "Papa a cuisiné aujourd'hui, mais le plat est très salé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "房",
@@ -3302,7 +3361,8 @@ body.page-ouverte main { visibility: hidden; }
         "Shūzhuō shàng yǒu wén fáng sì bǎo.",
         "Sur le bureau reposent les quatre trésors du lettré."
       ],
-      "phraseNote": "文房四宝 : les quatre trésors du lettré (pinceau, encre, papier, pierre à encre)."
+      "phraseNote": "文房四宝 : les quatre trésors du lettré (pinceau, encre, papier, pierre à encre).",
+      "niveau": "HSK 1"
     },
     {
       "char": "九",
@@ -3353,7 +3413,8 @@ body.page-ouverte main { visibility: hidden; }
         "我九点睡觉，可是九点半还在看书。",
         "Wǒ jiǔ diǎn shuìjiào, kěshì jiǔ diǎn bàn hái zài kàn shū.",
         "Je me couche à neuf heures, mais à neuf heures et demie je lis encore."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "牛",
@@ -3391,7 +3452,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè diǎn qián shì jiǔ niú yī máo.",
         "Cette somme, c'est une goutte d'eau dans la mer."
       ],
-      "phraseNote": "九牛一毛 : quantité insignifiante par rapport à l'ensemble."
+      "phraseNote": "九牛一毛 : quantité insignifiante par rapport à l'ensemble.",
+      "niveau": "HSK 1"
     },
     {
       "char": "吧",
@@ -3432,7 +3494,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们去酒吧喝牛奶吧！",
         "Wǒmen qù jiǔbā hē niúnǎi ba!",
         "Allons boire du lait au bar !"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "飞",
@@ -3464,7 +3527,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bìyè hòu fēi huáng téng dá.",
         "Après ses études, il a fait une carrière éclatante."
       ],
-      "phraseNote": "飞黄腾达 : réussir brillamment, faire une carrière fulgurante."
+      "phraseNote": "飞黄腾达 : réussir brillamment, faire une carrière fulgurante.",
+      "niveau": "HSK 1"
     },
     {
       "char": "觉",
@@ -3510,7 +3574,8 @@ body.page-ouverte main { visibility: hidden; }
         "我今天觉得非常累。",
         "Wǒ jīntiān juéde fēicháng lèi.",
         "Aujourd'hui je me sens très fatigué."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "白",
@@ -3542,7 +3607,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bái shǒu qǐ jiā, xiànzài hěn yǒu qián.",
         "Il est parti de rien et il est riche aujourd'hui."
       ],
-      "phraseNote": "白手起家 : bâtir sa réussite à partir de rien."
+      "phraseNote": "白手起家 : bâtir sa réussite à partir de rien.",
+      "niveau": "HSK 1"
     },
     {
       "char": "非",
@@ -3573,7 +3639,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天的天气非常好。",
         "Jīntiān de tiānqì fēicháng hǎo.",
         "Aujourd'hui, le temps est très beau."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "开",
@@ -3615,7 +3682,8 @@ body.page-ouverte main { visibility: hidden; }
         "Nǐ bié kèqi, kāi mén jiàn shān ba.",
         "Ne tourne pas autour du pot, va droit au but."
       ],
-      "phraseNote": "开门见山 : entrer directement dans le sujet."
+      "phraseNote": "开门见山 : entrer directement dans le sujet.",
+      "niveau": "HSK 1"
     },
     {
       "char": "朋",
@@ -3651,7 +3719,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的朋友都喜欢吃米饭。",
         "Wǒ de péngyou dōu xǐhuan chī mǐfàn.",
         "Mes amis aiment tous manger du riz."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "百",
@@ -3693,7 +3762,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā dǎ lánqiú bǎi fā bǎi zhòng.",
         "Il marque à tous les coups au basket."
       ],
-      "phraseNote": "百发百中 : ne jamais manquer sa cible."
+      "phraseNote": "百发百中 : ne jamais manquer sa cible.",
+      "niveau": "HSK 1"
     },
     {
       "char": "分",
@@ -3735,7 +3805,8 @@ body.page-ouverte main { visibility: hidden; }
         "Kǎoshì kuài dào le, dàjiā fēn miǎo bì zhēng.",
         "L'examen approche, chacun ne perd pas une seconde."
       ],
-      "phraseNote": "分秒必争 : lutter pour chaque seconde, ne pas perdre de temps."
+      "phraseNote": "分秒必争 : lutter pour chaque seconde, ne pas perdre de temps.",
+      "niveau": "HSK 1"
     },
     {
       "char": "漂",
@@ -3776,7 +3847,8 @@ body.page-ouverte main { visibility: hidden; }
         "这条河很漂亮，可是水很冷。",
         "Zhè tiáo hé hěn piàoliang, kěshì shuǐ hěn lěng.",
         "Cette rivière est très jolie, mais l'eau est très froide."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "班",
@@ -3818,7 +3890,8 @@ body.page-ouverte main { visibility: hidden; }
         "Wǒ chànggē shì bān mén nòng fǔ.",
         "Quand je chante, c'est de la prétention."
       ],
-      "phraseNote": "班门弄斧 : étaler ses talents devant plus fort que soi."
+      "phraseNote": "班门弄斧 : étaler ses talents devant plus fort que soi.",
+      "niveau": "HSK 1"
     },
     {
       "char": "服",
@@ -3864,7 +3937,8 @@ body.page-ouverte main { visibility: hidden; }
         "这件旧衣服我很喜欢。",
         "Zhè jiàn jiù yīfu wǒ hěn xǐhuan.",
         "Ce vieux vêtement, je l'aime beaucoup."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "可",
@@ -3906,7 +3980,8 @@ body.page-ouverte main { visibility: hidden; }
         "Māo huì shuō Fǎyǔ, tài bù kě sī yì le!",
         "Un chat qui parle français, c'est incroyable !"
       ],
-      "phraseNote": "不可思议 : inconcevable, incroyable."
+      "phraseNote": "不可思议 : inconcevable, incroyable.",
+      "niveau": "HSK 1"
     },
     {
       "char": "苹",
@@ -3947,7 +4022,8 @@ body.page-ouverte main { visibility: hidden; }
         "我每天吃一个苹果，医生远离我。",
         "Wǒ měi tiān chī yī gè píngguǒ, yīshēng yuǎnlí wǒ.",
         "Je mange une pomme par jour, le médecin s'éloigne de moi."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "半",
@@ -3989,7 +4065,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xué Zhōngwén bù yào bàn tú ér fèi.",
         "Pour apprendre le chinois, n'abandonne pas en route."
       ],
-      "phraseNote": "半途而废 : abandonner une tâche à mi-chemin."
+      "phraseNote": "半途而废 : abandonner une tâche à mi-chemin.",
+      "niveau": "HSK 1"
     },
     {
       "char": "高",
@@ -4035,7 +4112,8 @@ body.page-ouverte main { visibility: hidden; }
         "我很高兴，因为今天没有作业。",
         "Wǒ hěn gāoxìng, yīnwèi jīntiān méiyǒu zuòyè.",
         "Je suis content, car aujourd'hui il n'y a pas de devoirs."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "客",
@@ -4077,7 +4155,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zuótiān jiālǐ lái le yī wèi bù sù zhī kè.",
         "Hier, un visiteur inattendu est venu à la maison."
       ],
-      "phraseNote": "不速之客 : visiteur inattendu, non invité."
+      "phraseNote": "不速之客 : visiteur inattendu, non invité.",
+      "niveau": "HSK 1"
     },
     {
       "char": "七",
@@ -4126,7 +4205,8 @@ body.page-ouverte main { visibility: hidden; }
         "我七点起床，可是七点半还在睡。",
         "Wǒ qī diǎn qǐchuáng, kěshì qī diǎn bàn hái zài shuì.",
         "Je me lève à sept heures, mais à sept heures et demie je dors encore."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "包",
@@ -4168,7 +4248,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè běn shū bāo luó wàn xiàng.",
         "Ce livre aborde tous les sujets."
       ],
-      "phraseNote": "包罗万象 : englober tout, être universel."
+      "phraseNote": "包罗万象 : englober tout, être universel.",
+      "niveau": "HSK 1"
     },
     {
       "char": "哥",
@@ -4204,7 +4285,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的哥哥很高，像一棵树。",
         "Wǒ de gēge hěn gāo, xiàng yī kē shù.",
         "Mon grand frère est très grand, comme un arbre."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "课",
@@ -4245,7 +4327,8 @@ body.page-ouverte main { visibility: hidden; }
         "这节课很有意思，老师很像演员。",
         "Zhè jié kè hěn yǒu yìsi, lǎoshī hěn xiàng yǎnyuán.",
         "Ce cours est très intéressant, le professeur ressemble à un acteur."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "期",
@@ -4287,7 +4370,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shuōhuà qī qī ài ài, dàjiā tīng bù dǒng.",
         "Il bégaie en parlant, personne ne le comprend."
       ],
-      "phraseNote": "期期艾艾 : bégayer, s'exprimer avec peine."
+      "phraseNote": "期期艾艾 : bégayer, s'exprimer avec peine.",
+      "niveau": "HSK 1"
     },
     {
       "char": "杯",
@@ -4328,7 +4412,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个杯子太漂亮了，我舍不得用。",
         "Zhège bēizi tài piàoliang le, wǒ shěbudé yòng.",
         "Ce verre est trop joli, je n'ose pas m'en servir."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "歌",
@@ -4370,7 +4455,8 @@ body.page-ouverte main { visibility: hidden; }
         "Dàjiā gāo gē měng jìn, yīqǐ nǔlì.",
         "Tous avancent avec ardeur."
       ],
-      "phraseNote": "高歌猛进 : avancer avec ardeur et enthousiasme."
+      "phraseNote": "高歌猛进 : avancer avec ardeur et enthousiasme.",
+      "niveau": "HSK 1"
     },
     {
       "char": "起",
@@ -4411,7 +4497,8 @@ body.page-ouverte main { visibility: hidden; }
         "我每天六点起床，可是猫还在睡。",
         "Wǒ měi tiān liù diǎn qǐchuáng, kěshì māo hái zài shuì.",
         "Je me lève à six heures chaque jour, mais le chat dort encore."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "本",
@@ -4453,7 +4540,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xuéxí bù yào shě běn zhú mò.",
         "Dans l'étude, ne néglige pas l'essentiel pour l'accessoire."
       ],
-      "phraseNote": "舍本逐末 : sacrifier l'essentiel pour le détail."
+      "phraseNote": "舍本逐末 : sacrifier l'essentiel pour le détail.",
+      "niveau": "HSK 1"
     },
     {
       "char": "个",
@@ -4494,7 +4582,8 @@ body.page-ouverte main { visibility: hidden; }
         "我这个星期很忙，那个星期也忙。",
         "Wǒ zhège xīngqī hěn máng, nàge xīngqī yě máng.",
         "Cette semaine je suis très occupé, et la semaine dernière aussi."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "块",
@@ -4535,7 +4624,8 @@ body.page-ouverte main { visibility: hidden; }
         "我买了一块蛋糕，两块面包。",
         "Wǒ mǎi le yī kuài dàngāo, liǎng kuài miànbāo.",
         "J'ai acheté un morceau de gâteau et deux pains."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "气",
@@ -4573,7 +4663,8 @@ body.page-ouverte main { visibility: hidden; }
           "personne",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "边",
@@ -4615,7 +4706,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shuōhuà bù zhuó biān jì, wǒ tīng bù dǒng.",
         "Il parle à côté du sujet, je ne comprends pas."
       ],
-      "phraseNote": "不着边际 : sans rapport, à côté du sujet."
+      "phraseNote": "不着边际 : sans rapport, à côté du sujet.",
+      "niveau": "HSK 1"
     },
     {
       "char": "给",
@@ -4656,7 +4748,8 @@ body.page-ouverte main { visibility: hidden; }
         "妈妈给我一个苹果。",
         "Māma gěi wǒ yī gè píngguǒ.",
         "Maman me donne une pomme."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "千",
@@ -4696,7 +4789,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā qiān fāng bǎi jì zhǎo tā de māo.",
         "Il cherche son chat par tous les moyens."
       ],
-      "phraseNote": "千方百计 : par tous les moyens possibles."
+      "phraseNote": "千方百计 : par tous les moyens possibles.",
+      "niveau": "HSK 1"
     },
     {
       "char": "便",
@@ -4735,7 +4829,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个手机很方便，也很便宜。",
         "Zhège shǒujī hěn fāngbiàn, yě hěn piányi.",
         "Ce téléphone est très pratique et pas cher."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "工",
@@ -4777,7 +4872,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhège dàngāo qiǎo duó tiān gōng, wǒ shěbudé chī.",
         "Ce gâteau a un air d'œuvre d'art, je n'ose pas le manger."
       ],
-      "phraseNote": "巧夺天工 : dont l'habileté surpasse la nature."
+      "phraseNote": "巧夺天工 : dont l'habileté surpasse la nature.",
+      "niveau": "HSK 1"
     },
     {
       "char": "老",
@@ -4818,7 +4914,8 @@ body.page-ouverte main { visibility: hidden; }
         "老人每天在公园唱歌。",
         "Lǎorén měi tiān zài gōngyuán chànggē.",
         "Le vieil homme chante au parc chaque jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "前",
@@ -4863,7 +4960,8 @@ body.page-ouverte main { visibility: hidden; }
         "Wǒmen yǒng wǎng zhí qián, bù pà kùnnan.",
         "Nous avançons avec courage, sans craindre les difficultés."
       ],
-      "phraseNote": "勇往直前 : avancer hardiment sans reculer."
+      "phraseNote": "勇往直前 : avancer hardiment sans reculer.",
+      "niveau": "HSK 1"
     },
     {
       "char": "病",
@@ -4904,7 +5002,8 @@ body.page-ouverte main { visibility: hidden; }
         "病人今天好多了，可以吃饭。",
         "Bìngrén jīntiān hǎo duō le, kěyǐ chīfàn.",
         "Le malade va mieux aujourd'hui, il peut manger."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "公",
@@ -4946,7 +5045,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zuòshì dà gōng wú sī, dàjiā dōu xǐhuan tā.",
         "Il est impartial et désintéressé, tout le monde l'aime."
       ],
-      "phraseNote": "大公无私 : juste et désintéressé, sans favoritisme."
+      "phraseNote": "大公无私 : juste et désintéressé, sans favoritisme.",
+      "niveau": "HSK 1"
     },
     {
       "char": "了",
@@ -4988,7 +5088,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè zhāng tú yī mù liǎo rán, hěn róngyì.",
         "Ce schéma est clair au premier coup d'œil."
       ],
-      "phraseNote": "一目了然 : clair au premier regard."
+      "phraseNote": "一目了然 : clair au premier regard.",
+      "niveau": "HSK 1"
     },
     {
       "char": "钱",
@@ -5029,7 +5130,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的钱包里没有钱，只有一张照片。",
         "Wǒ de qiánbāo lǐ méiyǒu qián, zhǐyǒu yī zhāng zhàopiàn.",
         "Dans mon portefeuille il n'y a pas d'argent, juste une photo."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "狗",
@@ -5081,7 +5183,8 @@ body.page-ouverte main { visibility: hidden; }
         "Bié bī tā, gǒu jí tiào qiáng.",
         "Ne le pousse pas à bout : un chien acculé saute le mur."
       ],
-      "phraseNote": "狗急跳墙 : acculé, on agit de façon désespérée."
+      "phraseNote": "狗急跳墙 : acculé, on agit de façon désespérée.",
+      "niveau": "HSK 1"
     },
     {
       "char": "冷",
@@ -5122,7 +5225,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天很冷，我们开冷气吧！",
         "Jīntiān hěn lěng, wǒmen kāi lěngqì ba!",
         "Il fait très froid aujourd'hui, allumons la climatisation !"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "请",
@@ -5163,7 +5267,8 @@ body.page-ouverte main { visibility: hidden; }
         "请进，请坐，请喝茶。",
         "Qǐng jìn, qǐng zuò, qǐng hē chá.",
         "Entrez, asseyez-vous, buvez du thé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "菜",
@@ -5205,7 +5310,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bìng le yǐhòu, miàn yǒu cài sè.",
         "Depuis sa maladie, il a le teint pâle."
       ],
-      "phraseNote": "面有菜色 : avoir le teint blême et maladif."
+      "phraseNote": "面有菜色 : avoir le teint blême et maladif.",
+      "niveau": "HSK 1"
     },
     {
       "char": "关",
@@ -5245,7 +5351,8 @@ body.page-ouverte main { visibility: hidden; }
         "Jiànkāng yǔ yùndòng xī xī xiāng guān.",
         "La santé et le sport sont étroitement liés."
       ],
-      "phraseNote": "息息相关 : étroitement lié, inséparable."
+      "phraseNote": "息息相关 : étroitement lié, inséparable.",
+      "niveau": "HSK 1"
     },
     {
       "char": "里",
@@ -5286,7 +5393,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫在房子里边睡觉。",
         "Wǒ de māo zài fángzi lǐbian shuìjiào.",
         "Mon chat dort à l'intérieur de la maison."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "茶",
@@ -5333,7 +5441,8 @@ body.page-ouverte main { visibility: hidden; }
         "Chá yú fàn hòu, wǒmen xǐhuan sànbù.",
         "Après le repas, nous aimons nous promener."
       ],
-      "phraseNote": "茶余饭后 : aux moments de loisir, après les repas."
+      "phraseNote": "茶余饭后 : aux moments de loisir, après les repas.",
+      "niveau": "HSK 1"
     },
     {
       "char": "贵",
@@ -5379,7 +5488,8 @@ body.page-ouverte main { visibility: hidden; }
         "时间比钱更宝贵。",
         "Shíjiān bǐ qián gèng bǎoguì.",
         "Le temps est plus précieux que l'argent."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "两",
@@ -5426,7 +5536,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xuéshēngmen sān sān liǎng liǎng de lái le.",
         "Les élèves sont arrivés par petits groupes."
       ],
-      "phraseNote": "三三两两 : par petits groupes de deux ou trois."
+      "phraseNote": "三三两两 : par petits groupes de deux ou trois.",
+      "niveau": "HSK 1"
     },
     {
       "char": "热",
@@ -5467,7 +5578,8 @@ body.page-ouverte main { visibility: hidden; }
         "他对客人非常热情。",
         "Tā duì kèrén fēicháng rèqíng.",
         "Il est très chaleureux avec les invités."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "常",
@@ -5509,7 +5621,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā chídào, dàjiā dōu xí yǐ wéi cháng.",
         "Il arrive en retard, tout le monde y est habitué."
       ],
-      "phraseNote": "习以为常 : être devenu une habitude, ne plus surprendre."
+      "phraseNote": "习以为常 : être devenu une habitude, ne plus surprendre.",
+      "niveau": "HSK 1"
     },
     {
       "char": "国",
@@ -5550,7 +5663,8 @@ body.page-ouverte main { visibility: hidden; }
         "中国菜在外国很有名。",
         "Zhōngguócài zài wàiguó hěn yǒumíng.",
         "La cuisine chinoise est très célèbre à l'étranger."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "亮",
@@ -5602,7 +5716,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā wéirén gāo fēng liàng jié, zhídé xuéxí.",
         "Il a un caractère noble et exemplaire."
       ],
-      "phraseNote": "高风亮节 : grande noblesse de caractère et de conduite."
+      "phraseNote": "高风亮节 : grande noblesse de caractère et de conduite.",
+      "niveau": "HSK 1"
     },
     {
       "char": "唱",
@@ -5643,7 +5758,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫唱歌比我好听。",
         "Wǒ de māo chànggē bǐ wǒ hǎotīng.",
         "Mon chat chante mieux que moi."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "果",
@@ -5685,7 +5801,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bù tīng quàngào, zhōngyú zì shí qí guǒ.",
         "Il n'a pas écouté les conseils et en a subi les conséquences."
       ],
-      "phraseNote": "自食其果 : subir les conséquences de ses propres actes."
+      "phraseNote": "自食其果 : subir les conséquences de ses propres actes.",
+      "niveau": "HSK 1"
     },
     {
       "char": "零",
@@ -5726,7 +5843,8 @@ body.page-ouverte main { visibility: hidden; }
         "外面零下十度，我想吃零食。",
         "Wàimiàn líng xià shí dù, wǒ xiǎng chī língshí.",
         "Il fait moins dix dehors, et j'ai envie de grignoter."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "认",
@@ -5767,7 +5885,8 @@ body.page-ouverte main { visibility: hidden; }
         "我认识那只猫，它叫小白。",
         "Wǒ rènshi nà zhī māo, tā jiào Xiǎobái.",
         "Je connais ce chat, il s'appelle Petit-Blanc."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "超",
@@ -5809,7 +5928,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā de huà chāo fán tuō sú.",
         "Sa peinture sort de l'ordinaire."
       ],
-      "phraseNote": "超凡脱俗 : sortir du commun, être au-dessus du vulgaire."
+      "phraseNote": "超凡脱俗 : sortir du commun, être au-dessus du vulgaire.",
+      "niveau": "HSK 1"
     },
     {
       "char": "还",
@@ -5850,7 +5970,8 @@ body.page-ouverte main { visibility: hidden; }
         "我还有三个苹果。",
         "Wǒ hái yǒu sān gè píngguǒ.",
         "J'ai encore trois pommes."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "六",
@@ -5900,7 +6021,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā kǎoshì qián liù shén wú zhǔ.",
         "Avant l'examen, il est complètement paniqué."
       ],
-      "phraseNote": "六神无主 : perdre ses moyens, être affolé."
+      "phraseNote": "六神无主 : perdre ses moyens, être affolé.",
+      "niveau": "HSK 1"
     },
     {
       "char": "车",
@@ -5941,7 +6063,8 @@ body.page-ouverte main { visibility: hidden; }
         "学校前边有一个车站。",
         "Xuéxiào qiánbian yǒu yī gè chēzhàn.",
         "Il y a une station devant l'école."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "孩",
@@ -5982,7 +6105,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个孩子一天吃六个包子。",
         "Zhège háizi yī tiān chī liù gè bāozi.",
         "Cet enfant mange six brioches par jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "妈",
@@ -6023,7 +6147,8 @@ body.page-ouverte main { visibility: hidden; }
         "妈妈，我的袜子在哪里？",
         "Māma, wǒ de wàzi zài nǎlǐ?",
         "Maman, où sont mes chaussettes ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "汉",
@@ -6065,7 +6190,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā suīrán xiǎo, dànshì qì chōng xiāo hàn.",
         "Bien que petit, il a un courage immense."
       ],
-      "phraseNote": "气冲霄汉 : plein d'ardeur, une énergie qui monte au ciel."
+      "phraseNote": "气冲霄汉 : plein d'ardeur, une énergie qui monte au ciel.",
+      "niveau": "HSK 1"
     },
     {
       "char": "吗",
@@ -6116,7 +6242,8 @@ body.page-ouverte main { visibility: hidden; }
         "你会说汉语吗？",
         "Nǐ huì shuō Hànyǔ ma?",
         "Sais-tu parler chinois ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "商",
@@ -6162,7 +6289,8 @@ body.page-ouverte main { visibility: hidden; }
         "我在商场买了三件衣服。",
         "Wǒ zài shāngchǎng mǎi le sān jiàn yīfu.",
         "J'ai acheté trois vêtements au centre commercial."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "出",
@@ -6204,7 +6332,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā nǔlì xuéxí, xiǎng chū rén tóu dì.",
         "Il travaille dur, voulant se distinguer."
       ],
-      "phraseNote": "出人头地 : se distinguer, s'élever au-dessus des autres."
+      "phraseNote": "出人头地 : se distinguer, s'élever au-dessus des autres.",
+      "niveau": "HSK 1"
     },
     {
       "char": "买",
@@ -6243,7 +6372,8 @@ body.page-ouverte main { visibility: hidden; }
         "我去买面包，你去买牛奶。",
         "Wǒ qù mǎi miànbāo, nǐ qù mǎi niúnǎi.",
         "Je vais acheter du pain, tu vas acheter du lait."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "穿",
@@ -6284,7 +6414,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天很冷，我穿了两件衣服。",
         "Jīntiān hěn lěng, wǒ chuān le liǎng jiàn yīfu.",
         "Il fait très froid, j'ai mis deux vêtements."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "号",
@@ -6326,7 +6457,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā xǐhuan fā hào shī lìng, xiàng yī gè xiǎo lǎobǎn.",
         "Il aime donner des ordres, comme un petit patron."
       ],
-      "phraseNote": "发号施令 : donner des ordres, commander."
+      "phraseNote": "发号施令 : donner des ordres, commander.",
+      "niveau": "HSK 1"
     },
     {
       "char": "卖",
@@ -6367,7 +6499,8 @@ body.page-ouverte main { visibility: hidden; }
         "这家店卖面包，也卖牛奶。",
         "Zhè jiā diàn mài miànbāo, yě mài niúnǎi.",
         "Ce magasin vend du pain et du lait."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "少",
@@ -6409,7 +6542,8 @@ body.page-ouverte main { visibility: hidden; }
         "Nǐ shǎo jiàn duō guài, māo dāngrán huì shuìjiào.",
         "Tu t'étonnes pour rien : bien sûr qu'un chat dort."
       ],
-      "phraseNote": "少见多怪 : s'étonner de ce qui est banal, faute d'expérience."
+      "phraseNote": "少见多怪 : s'étonner de ce qui est banal, faute d'expérience.",
+      "niveau": "HSK 1"
     },
     {
       "char": "床",
@@ -6450,7 +6584,8 @@ body.page-ouverte main { visibility: hidden; }
         "我每天七点起床，可是今天没有。",
         "Wǒ měi tiān qī diǎn qǐchuáng, kěshì jīntiān méiyǒu.",
         "Je me lève à sept heures chaque jour, mais pas aujourd'hui."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "喝",
@@ -6492,7 +6627,8 @@ body.page-ouverte main { visibility: hidden; }
         "Méiyǒu qián, wǒmen zhǐ néng hē xī běi fēng.",
         "Sans argent, il ne nous reste qu'à jeûner."
       ],
-      "phraseNote": "喝西北风 : n'avoir rien à manger, vivre dans la misère."
+      "phraseNote": "喝西北风 : n'avoir rien à manger, vivre dans la misère.",
+      "niveau": "HSK 1"
     },
     {
       "char": "忙",
@@ -6533,7 +6669,8 @@ body.page-ouverte main { visibility: hidden; }
         "他今天很忙，连饭都没有吃。",
         "Tā jīntiān hěn máng, lián fàn dōu méiyǒu chī.",
         "Il est si occupé aujourd'hui qu'il n'a même pas mangé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "谁",
@@ -6574,7 +6711,8 @@ body.page-ouverte main { visibility: hidden; }
         "谁把我的苹果吃了？",
         "Shuí bǎ wǒ de píngguǒ chī le?",
         "Qui a mangé ma pomme ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "打",
@@ -6616,7 +6754,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xiǎoshēng yīdiǎn, bù yào dǎ cǎo jīng shé.",
         "Parle moins fort, ne va pas éveiller les soupçons."
       ],
-      "phraseNote": "打草惊蛇 : alerter l'adversaire en agissant trop tôt."
+      "phraseNote": "打草惊蛇 : alerter l'adversaire en agissant trop tôt.",
+      "niveau": "HSK 1"
     },
     {
       "char": "和",
@@ -6657,7 +6796,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个房子很暖和，我很喜欢。",
         "Zhège fángzi hěn nuǎnhuo, wǒ hěn xǐhuan.",
         "Cette maison est bien chaude, je l'aime beaucoup."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "猫",
@@ -6699,7 +6839,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zhǐshì zhào māo huà hǔ, huà de bù hǎo.",
         "Il ne fait que copier maladroitement, son dessin est raté."
       ],
-      "phraseNote": "照猫画虎 : imiter servilement, sans comprendre."
+      "phraseNote": "照猫画虎 : imiter servilement, sans comprendre.",
+      "niveau": "HSK 1"
     },
     {
       "char": "什",
@@ -6740,7 +6881,8 @@ body.page-ouverte main { visibility: hidden; }
         "你喜欢什么颜色？",
         "Nǐ xǐhuan shénme yánsè?",
         "Quelle couleur aimes-tu ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "很",
@@ -6791,7 +6933,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天的天气很好，我很开心。",
         "Jīntiān de tiānqì hěn hǎo, wǒ hěn kāixīn.",
         "Il fait très beau aujourd'hui, je suis très content."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "么",
@@ -6830,7 +6973,8 @@ body.page-ouverte main { visibility: hidden; }
         "你为什么不吃早饭？",
         "Nǐ wèishénme bù chī zǎofàn?",
         "Pourquoi ne manges-tu pas de petit-déjeuner ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "蛋",
@@ -6872,7 +7016,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā jī fēi dàn dǎ, shénme dōu méiyǒu le.",
         "Il a tout perdu, il ne lui reste rien."
       ],
-      "phraseNote": "鸡飞蛋打 : tout perdre, le poulet s'envole et l'œuf se casse."
+      "phraseNote": "鸡飞蛋打 : tout perdre, le poulet s'envole et l'œuf se casse.",
+      "niveau": "HSK 1"
     },
     {
       "char": "后",
@@ -6901,7 +7046,8 @@ body.page-ouverte main { visibility: hidden; }
         "后天是我的生日，千万别忘了。",
         "Hòutiān shì wǒ de shēngrì, qiānwàn bié wàng le.",
         "Après-demain c'est mon anniversaire, n'oublie surtout pas."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "没",
@@ -6942,7 +7088,8 @@ body.page-ouverte main { visibility: hidden; }
         "我没有钱，但是我有猫。",
         "Wǒ méiyǒu qián, dànshì wǒ yǒu māo.",
         "Je n'ai pas d'argent, mais j'ai un chat."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "师",
@@ -6984,7 +7131,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shénme dōu dǒng, hào wéi rén shī.",
         "Il croit tout savoir et aime faire la leçon."
       ],
-      "phraseNote": "好为人师 : aimer donner des leçons, se poser en maître."
+      "phraseNote": "好为人师 : aimer donner des leçons, se poser en maître.",
+      "niveau": "HSK 1"
     },
     {
       "char": "到",
@@ -7025,7 +7173,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们到了车站，车已经走了。",
         "Wǒmen dào le chēzhàn, chē yǐjīng zǒu le.",
         "Nous sommes arrivés à la gare, mais le bus était déjà parti."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "候",
@@ -7066,7 +7215,8 @@ body.page-ouverte main { visibility: hidden; }
         "有时候我喝茶，有时候我喝咖啡。",
         "Yǒushíhou wǒ hē chá, yǒushíhou wǒ hē kāfēi.",
         "Parfois je bois du thé, parfois du café."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "妹",
@@ -7107,7 +7257,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的妹妹今年十岁。",
         "Wǒ de mèimei jīnnián shí suì.",
         "Ma petite sœur a dix ans cette année."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "十",
@@ -7147,7 +7298,8 @@ body.page-ouverte main { visibility: hidden; }
         "Méiyǒu rén shì shí quán shí měi de.",
         "Personne n'est parfait."
       ],
-      "phraseNote": "十全十美 : parfait en tout point."
+      "phraseNote": "十全十美 : parfait en tout point.",
+      "niveau": "HSK 1"
     },
     {
       "char": "道",
@@ -7188,7 +7340,8 @@ body.page-ouverte main { visibility: hidden; }
         "这条道路又宽又干净。",
         "Zhè tiáo dàolù yòu kuān yòu gānjìng.",
         "Cette route est large et propre."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "话",
@@ -7230,7 +7383,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shuō huà lǐ yǒu huà, nǐ yào xiǎoxīn.",
         "Il parle à mots couverts, fais attention."
       ],
-      "phraseNote": "话里有话 : avoir un sous-entendu, parler à mots couverts."
+      "phraseNote": "话里有话 : avoir un sous-entendu, parler à mots couverts.",
+      "niveau": "HSK 1"
     },
     {
       "char": "们",
@@ -7271,7 +7425,8 @@ body.page-ouverte main { visibility: hidden; }
         "你们都喜欢吃中国菜吗？",
         "Nǐmen dōu xǐhuan chī Zhōngguócài ma?",
         "Vous aimez tous la cuisine chinoise ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "时",
@@ -7313,7 +7468,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shí shí kè kè dōu xiǎng zhe tā de māo.",
         "Il pense à son chat à chaque instant."
       ],
-      "phraseNote": "时时刻刻 : à tout moment, sans cesse."
+      "phraseNote": "时时刻刻 : à tout moment, sans cesse.",
+      "niveau": "HSK 1"
     },
     {
       "char": "得",
@@ -7359,7 +7515,8 @@ body.page-ouverte main { visibility: hidden; }
         "我今天得到了一件礼物。",
         "Wǒ jīntiān dédào le yī jiàn lǐwù.",
         "Aujourd'hui j'ai reçu un cadeau."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "欢",
@@ -7399,7 +7556,8 @@ body.page-ouverte main { visibility: hidden; }
         "Háizimen huān tiān xǐ dì de chànggē.",
         "Les enfants chantent pleins de joie."
       ],
-      "phraseNote": "欢天喜地 : déborder de joie."
+      "phraseNote": "欢天喜地 : déborder de joie.",
+      "niveau": "HSK 1"
     },
     {
       "char": "米",
@@ -7440,7 +7598,8 @@ body.page-ouverte main { visibility: hidden; }
         "我每天吃米饭，喝牛奶。",
         "Wǒ měi tiān chī mǐfàn, hē niúnǎi.",
         "Je mange du riz et bois du lait chaque jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "识",
@@ -7482,7 +7641,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā yǒu yuǎn jiàn zhuó shí, dàjiā xìnrèn tā.",
         "Il a une vision remarquable, tout le monde lui fait confiance."
       ],
-      "phraseNote": "远见卓识 : avoir une grande clairvoyance, voir loin."
+      "phraseNote": "远见卓识 : avoir une grande clairvoyance, voir loin.",
+      "niveau": "HSK 1"
     },
     {
       "char": "的",
@@ -7521,7 +7681,8 @@ body.page-ouverte main { visibility: hidden; }
         "这是我的猫，它喜欢面包。",
         "Zhè shì wǒ de māo, tā xǐhuan miànbāo.",
         "C'est mon chat, il adore le pain."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "回",
@@ -7563,7 +7724,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zhōngyú huí xīn zhuǎn yì, huílái le.",
         "Il a finalement changé d'avis et est revenu."
       ],
-      "phraseNote": "回心转意 : changer d'avis, revenir sur sa décision."
+      "phraseNote": "回心转意 : changer d'avis, revenir sur sa décision.",
+      "niveau": "HSK 1"
     },
     {
       "char": "面",
@@ -7594,7 +7756,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的面前有一碗面条。",
         "Wǒ de miànqián yǒu yī wǎn miàntiáo.",
         "Devant moi, il y a un bol de nouilles."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "士",
@@ -7630,7 +7793,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè wèi lǎobǎn lǐ xián xià shì, dàjiā xǐhuan tā.",
         "Ce patron respecte les gens de talent, on l'apprécie."
       ],
-      "phraseNote": "礼贤下士 : respecter et accueillir les personnes de mérite."
+      "phraseNote": "礼贤下士 : respecter et accueillir les personnes de mérite.",
+      "niveau": "HSK 1"
     },
     {
       "char": "弟",
@@ -7659,7 +7823,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的弟弟喜欢喝牛奶。",
         "Wǒ de dìdi xǐhuan hē niúnǎi.",
         "Mon petit frère aime boire du lait."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "会",
@@ -7701,7 +7866,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā xuéxí hěn nǔlì, róng huì guàn tōng.",
         "Il travaille dur et assimile tout à la perfection."
       ],
-      "phraseNote": "融会贯通 : maîtriser parfaitement en reliant toutes les connaissances."
+      "phraseNote": "融会贯通 : maîtriser parfaitement en reliant toutes les connaissances.",
+      "niveau": "HSK 1"
     },
     {
       "char": "名",
@@ -7742,7 +7908,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的名字很难写，只有两个字。",
         "Wǒ de míngzi hěn nán xiě, zhǐyǒu liǎng gè zì.",
         "Mon prénom est difficile à écrire, il n'a que deux caractères."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "市",
@@ -7782,7 +7949,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè jiā fànguǎn mén tíng ruò shì, rén hěn duō.",
         "Ce restaurant est pris d'assaut, il y a beaucoup de monde."
       ],
-      "phraseNote": "门庭若市 : avoir une affluence énorme."
+      "phraseNote": "门庭若市 : avoir une affluence énorme.",
+      "niveau": "HSK 1"
     },
     {
       "char": "第",
@@ -7823,7 +7991,8 @@ body.page-ouverte main { visibility: hidden; }
         "这是我第一次来中国。",
         "Zhè shì wǒ dì yī cì lái Zhōngguó.",
         "C'est ma première fois en Chine."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "明",
@@ -7865,7 +8034,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā míng zhī gù fàn, zhēn de bù hǎo.",
         "Il fait exprès de mal agir, ce n'est vraiment pas bien."
       ],
-      "phraseNote": "明知故犯 : commettre sciemment une faute."
+      "phraseNote": "明知故犯 : commettre sciemment une faute.",
+      "niveau": "HSK 1"
     },
     {
       "char": "事",
@@ -7914,7 +8084,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天事情很多，我没有时间。",
         "Jīntiān shìqing hěn duō, wǒ méiyǒu shíjiān.",
         "Aujourd'hui j'ai beaucoup de choses à faire, je n'ai pas le temps."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "点",
@@ -7956,7 +8127,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè jù huà huà lóng diǎn jīng, fēicháng hǎo.",
         "Cette phrase est la touche finale parfaite."
       ],
-      "phraseNote": "画龙点睛 : la touche finale qui fait toute la différence."
+      "phraseNote": "画龙点睛 : la touche finale qui fait toute la différence.",
+      "niveau": "HSK 1"
     },
     {
       "char": "机",
@@ -7997,7 +8169,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们去机场，坐飞机去北京。",
         "Wǒmen qù jīchǎng, zuò fēijī qù Běijīng.",
         "Nous allons à l'aéroport prendre l'avion pour Pékin."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "哪",
@@ -8038,7 +8211,8 @@ body.page-ouverte main { visibility: hidden; }
         "你的猫在哪里？我很想它。",
         "Nǐ de māo zài nǎlǐ? Wǒ hěn xiǎng tā.",
         "Où est ton chat ? Il me manque beaucoup."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "视",
@@ -8080,7 +8254,8 @@ body.page-ouverte main { visibility: hidden; }
         "Lǎoshī duì xuéshēng yī shì tóng rén.",
         "Le professeur traite tous les élèves de la même façon."
       ],
-      "phraseNote": "一视同仁 : traiter tout le monde sur un pied d'égalité."
+      "phraseNote": "一视同仁 : traiter tout le monde sur un pied d'égalité.",
+      "niveau": "HSK 1"
     },
     {
       "char": "鸡",
@@ -8121,7 +8296,8 @@ body.page-ouverte main { visibility: hidden; }
         "我家的公鸡每天早上唱歌。",
         "Wǒ jiā de gōngjī měi tiān zǎoshang chànggē.",
         "Mon coq chante chaque matin."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "那",
@@ -8150,7 +8326,8 @@ body.page-ouverte main { visibility: hidden; }
         "那边的东西很便宜。",
         "Nàbiān de dōngxi hěn piányi.",
         "Ce qui est là-bas n'est pas cher."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "东",
@@ -8192,7 +8369,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zài chēzhàn dōng zhāng xī wàng, xiàng zài děng rén.",
         "Il regarde partout à la gare, comme s'il attendait quelqu'un."
       ],
-      "phraseNote": "东张西望 : regarder de tous les côtés."
+      "phraseNote": "东张西望 : regarder de tous les côtés.",
+      "niveau": "HSK 1"
     },
     {
       "char": "几",
@@ -8234,7 +8412,8 @@ body.page-ouverte main { visibility: hidden; }
         "Wǒmen de qián suǒ shèng wú jǐ.",
         "Il ne nous reste presque plus d'argent."
       ],
-      "phraseNote": "所剩无几 : il n'en reste presque plus."
+      "phraseNote": "所剩无几 : il n'en reste presque plus.",
+      "niveau": "HSK 1"
     },
     {
       "char": "奶",
@@ -8275,7 +8454,8 @@ body.page-ouverte main { visibility: hidden; }
         "奶奶每天早上喝奶茶。",
         "Nǎinai měi tiān zǎoshang hē nǎichá.",
         "Grand-mère boit du thé au lait chaque matin."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "都",
@@ -8316,7 +8496,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们都是好朋友。",
         "Wǒmen dōu shì hǎo péngyou.",
         "Nous sommes tous de bons amis."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "书",
@@ -8354,7 +8535,8 @@ body.page-ouverte main { visibility: hidden; }
           "pinceau",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "读",
@@ -8395,7 +8577,8 @@ body.page-ouverte main { visibility: hidden; }
         "我每天读书，也读报纸。",
         "Wǒ měi tiān dúshū, yě dú bàozhǐ.",
         "Je lis des livres et des journaux chaque jour."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "间",
@@ -8447,7 +8630,8 @@ body.page-ouverte main { visibility: hidden; }
         "Qíngkuàng hěn wēixiǎn, jiān bù róng fà.",
         "La situation est si critique qu'il n'y a pas un instant à perdre."
       ],
-      "phraseNote": "间不容发 : urgence extrême, pas le moindre répit."
+      "phraseNote": "间不容发 : urgence extrême, pas le moindre répit.",
+      "niveau": "HSK 1"
     },
     {
       "char": "脑",
@@ -8493,7 +8677,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的电脑又坏了，脑袋疼。",
         "Wǒ de diànnǎo yòu huài le, nǎodai téng.",
         "Mon ordinateur est encore en panne, j'en ai mal à la tête."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "对",
@@ -8535,7 +8720,8 @@ body.page-ouverte main { visibility: hidden; }
         "Gēn tā jiǎng dàolǐ, jiǎnzhí duì niú tán qín.",
         "Lui expliquer la raison, c'est parler à un mur."
       ],
-      "phraseNote": "对牛弹琴 : perdre ses paroles avec qui ne comprend pas."
+      "phraseNote": "对牛弹琴 : perdre ses paroles avec qui ne comprend pas.",
+      "niveau": "HSK 1"
     },
     {
       "char": "见",
@@ -8576,7 +8762,8 @@ body.page-ouverte main { visibility: hidden; }
         "我很想见他，可是没有时间。",
         "Wǒ hěn xiǎng jiàn tā, kěshì méiyǒu shíjiān.",
         "Je veux beaucoup le voir, mais je n'ai pas le temps."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "呢",
@@ -8622,7 +8809,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫呢？它在睡觉。",
         "Wǒ de māo ne? Tā zài shuìjiào.",
         "Et mon chat ? Il dort."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "睡",
@@ -8663,7 +8851,8 @@ body.page-ouverte main { visibility: hidden; }
         "他每天睡八个小时，很幸福。",
         "Tā měi tiān shuì bā gè xiǎoshí, hěn xìngfú.",
         "Il dort huit heures par jour, quel bonheur."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "多",
@@ -8700,7 +8889,8 @@ body.page-ouverte main { visibility: hidden; }
         "Shū yuè duō yuè hǎo, duō duō yì shàn.",
         "Plus il y a de livres, mieux c'est : on n'en a jamais trop."
       ],
-      "phraseNote": "多多益善 : plus il y en a, mieux c'est."
+      "phraseNote": "多多益善 : plus il y en a, mieux c'est.",
+      "niveau": "HSK 1"
     },
     {
       "char": "件",
@@ -8741,7 +8931,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天有一件很好的事情。",
         "Jīntiān yǒu yī jiàn hěn hǎo de shìqing.",
         "Aujourd'hui il y a une très bonne chose."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "能",
@@ -8787,7 +8978,8 @@ body.page-ouverte main { visibility: hidden; }
         "我能吃三碗米饭。",
         "Wǒ néng chī sān wǎn mǐfàn.",
         "Je peux manger trois bols de riz."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "说",
@@ -8829,7 +9021,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shuōhuà shuō yī bù èr, dàjiā tīng tā de.",
         "Il tient toujours parole, tout le monde l'écoute."
       ],
-      "phraseNote": "说一不二 : tenir parole, être inflexible dans ses propos."
+      "phraseNote": "说一不二 : tenir parole, être inflexible dans ses propos.",
+      "niveau": "HSK 1"
     },
     {
       "char": "儿",
@@ -8870,7 +9063,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的儿子喜欢吃鸡蛋。",
         "Wǒ de érzi xǐhuan chī jīdàn.",
         "Mon fils aime manger des œufs."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "叫",
@@ -8912,7 +9106,8 @@ body.page-ouverte main { visibility: hidden; }
         "Měi tiān jiābān, tā jiào kǔ lián tiān.",
         "Il se plaint sans cesse de ses heures supplémentaires."
       ],
-      "phraseNote": "叫苦连天 : se plaindre amèrement sans arrêt."
+      "phraseNote": "叫苦连天 : se plaindre amèrement sans arrêt.",
+      "niveau": "HSK 1"
     },
     {
       "char": "司",
@@ -8949,7 +9144,8 @@ body.page-ouverte main { visibility: hidden; }
           "bouche",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "四",
@@ -8991,7 +9187,8 @@ body.page-ouverte main { visibility: hidden; }
         "Rénmen cóng sì miàn bā fāng lái le.",
         "Les gens sont venus de tous les côtés."
       ],
-      "phraseNote": "四面八方 : de tous les côtés, de partout."
+      "phraseNote": "四面八方 : de tous les côtés, de partout.",
+      "niveau": "HSK 1"
     },
     {
       "char": "西",
@@ -9032,7 +9229,8 @@ body.page-ouverte main { visibility: hidden; }
         "西边的学校很大。",
         "Xībian de xuéxiào hěn dà.",
         "L'école à l'ouest est très grande."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "样",
@@ -9074,7 +9272,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè liǎng zhī māo yī mú yī yàng.",
         "Ces deux chats se ressemblent trait pour trait."
       ],
-      "phraseNote": "一模一样 : exactement pareils, identiques."
+      "phraseNote": "一模一样 : exactement pareils, identiques.",
+      "niveau": "HSK 1"
     },
     {
       "char": "怎",
@@ -9120,7 +9319,8 @@ body.page-ouverte main { visibility: hidden; }
         "你怎么不吃早饭呢？",
         "Nǐ zěnme bù chī zǎofàn ne?",
         "Pourquoi ne manges-tu pas de petit-déjeuner ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "岁",
@@ -9160,7 +9360,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhù nǎinai cháng mìng bǎi suì!",
         "Que grand-mère vive cent ans !"
       ],
-      "phraseNote": "长命百岁 : vivre jusqu'à cent ans (vœu de longue vie)."
+      "phraseNote": "长命百岁 : vivre jusqu'à cent ans (vœu de longue vie).",
+      "niveau": "HSK 1"
     },
     {
       "char": "息",
@@ -9201,7 +9402,8 @@ body.page-ouverte main { visibility: hidden; }
         "他工作太忙，没有时间休息。",
         "Tā gōngzuò tài máng, méiyǒu shíjiān xiūxi.",
         "Il est trop occupé pour se reposer."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "要",
@@ -9243,7 +9445,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā de bàogào jiǎn míng è yào, hěn hǎo dǒng.",
         "Son rapport est concis et clair, facile à comprendre."
       ],
-      "phraseNote": "简明扼要 : concis et précis."
+      "phraseNote": "简明扼要 : concis et précis.",
+      "niveau": "HSK 1"
     },
     {
       "char": "找",
@@ -9284,7 +9487,8 @@ body.page-ouverte main { visibility: hidden; }
         "我的猫不见了，到处找它。",
         "Wǒ de māo bùjiàn le, dàochù zhǎo tā.",
         "Mon chat a disparu, je le cherche partout."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "习",
@@ -9314,7 +9518,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā chídào, dàjiā xí yǐ wéi cháng.",
         "Il arrive en retard, tout le monde y est habitué."
       ],
-      "phraseNote": "习以为常 : être devenu une habitude banale."
+      "phraseNote": "习以为常 : être devenu une habitude banale.",
+      "niveau": "HSK 1"
     },
     {
       "char": "也",
@@ -9343,7 +9548,8 @@ body.page-ouverte main { visibility: hidden; }
         "我也喜欢吃中国菜。",
         "Wǒ yě xǐhuan chī Zhōngguócài.",
         "Moi aussi j'aime la cuisine chinoise."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "这",
@@ -9382,7 +9588,8 @@ body.page-ouverte main { visibility: hidden; }
         "这本书很有意思。",
         "Zhè běn shū hěn yǒu yìsi.",
         "Ce livre est très intéressant."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "它",
@@ -9421,7 +9628,8 @@ body.page-ouverte main { visibility: hidden; }
         "这只猫很胖，它只吃米饭。",
         "Zhè zhī māo hěn pàng, tā zhǐ chī mǐfàn.",
         "Ce chat est gros, il ne mange que du riz."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "喜",
@@ -9463,7 +9671,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shōudào lǐwù, xǐ chū wàng wài.",
         "En recevant son cadeau, il a été transporté de joie."
       ],
-      "phraseNote": "喜出望外 : être ravi au-delà de toute attente."
+      "phraseNote": "喜出望外 : être ravi au-delà de toute attente.",
+      "niveau": "HSK 1"
     },
     {
       "char": "真",
@@ -9504,7 +9713,8 @@ body.page-ouverte main { visibility: hidden; }
         "这是真的吗？我不相信。",
         "Zhè shì zhēn de ma? Wǒ bù xiāngxìn.",
         "C'est vrai ? Je n'y crois pas."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "她",
@@ -9545,7 +9755,8 @@ body.page-ouverte main { visibility: hidden; }
         "她是我妹妹，她很可爱。",
         "Tā shì wǒ mèimei, tā hěn kě'ài.",
         "C'est ma petite sœur, elle est adorable."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "系",
@@ -9586,7 +9797,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个系统很方便，我用它。",
         "Zhège xìtǒng hěn fāngbiàn, wǒ yòng tā.",
         "Ce système est très pratique, je l'utilise."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "衣",
@@ -9618,7 +9830,8 @@ body.page-ouverte main { visibility: hidden; }
         "Yī shí zhù xíng dōu hěn zhòngyào.",
         "Se vêtir, se nourrir, se loger et se déplacer : tout est important."
       ],
-      "phraseNote": "衣食住行 : les besoins essentiels de la vie."
+      "phraseNote": "衣食住行 : les besoins essentiels de la vie.",
+      "niveau": "HSK 1"
     },
     {
       "char": "正",
@@ -9659,7 +9872,8 @@ body.page-ouverte main { visibility: hidden; }
         "我正在学习汉语。",
         "Wǒ zhèngzài xuéxí Hànyǔ.",
         "Je suis en train d'apprendre le chinois."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "太",
@@ -9700,7 +9914,8 @@ body.page-ouverte main { visibility: hidden; }
         "今天太热了，我想吃冰。",
         "Jīntiān tài rè le, wǒ xiǎng chī bīng.",
         "Il fait trop chaud aujourd'hui, je veux manger de la glace."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "医",
@@ -9742,7 +9957,8 @@ body.page-ouverte main { visibility: hidden; }
         "Yǒu bìng yào kàn yīshēng, bù yào huì jí jì yī.",
         "En cas de maladie, va voir le médecin : ne cache pas ton mal."
       ],
-      "phraseNote": "讳疾忌医 : refuser d'affronter le problème par peur du remède."
+      "phraseNote": "讳疾忌医 : refuser d'affronter le problème par peur du remède.",
+      "niveau": "HSK 1"
     },
     {
       "char": "知",
@@ -9788,7 +10004,8 @@ body.page-ouverte main { visibility: hidden; }
         "我知道他的名字。",
         "Wǒ zhīdào tā de míngzi.",
         "Je connais son nom."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "题",
@@ -9830,7 +10047,8 @@ body.page-ouverte main { visibility: hidden; }
         "Yī jiàn xiǎoshì, bù yào xiǎo tí dà zuò.",
         "C'est un petit détail, n'en fais pas toute une histoire."
       ],
-      "phraseNote": "小题大做 : faire toute une montagne d'un rien."
+      "phraseNote": "小题大做 : faire toute une montagne d'un rien.",
+      "niveau": "HSK 1"
     },
     {
       "char": "先",
@@ -9872,7 +10090,8 @@ body.page-ouverte main { visibility: hidden; }
           "personne",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "宜",
@@ -9914,7 +10133,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhè zhǐshì quán yí zhī jì.",
         "Ce n'est qu'une mesure provisoire."
       ],
-      "phraseNote": "权宜之计 : expédient temporaire, solution provisoire."
+      "phraseNote": "权宜之计 : expédient temporaire, solution provisoire.",
+      "niveau": "HSK 1"
     },
     {
       "char": "只",
@@ -9955,7 +10175,8 @@ body.page-ouverte main { visibility: hidden; }
         "我只有一个苹果。",
         "Wǒ zhǐyǒu yī gè píngguǒ.",
         "Je n'ai qu'une seule pomme."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "天",
@@ -9997,7 +10218,8 @@ body.page-ouverte main { visibility: hidden; }
         "Yuàn wǒmen de yǒuyì tiān cháng dì jiǔ.",
         "Que notre amitié dure à jamais."
       ],
-      "phraseNote": "天长地久 : durer éternellement, comme le ciel et la terre."
+      "phraseNote": "天长地久 : durer éternellement, comme le ciel et la terre.",
+      "niveau": "HSK 1"
     },
     {
       "char": "现",
@@ -10038,7 +10260,8 @@ body.page-ouverte main { visibility: hidden; }
         "现在几点？我要睡觉了。",
         "Xiànzài jǐ diǎn? Wǒ yào shuìjiào le.",
         "Quelle heure est-il ? Je vais me coucher."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "以",
@@ -10068,7 +10291,8 @@ body.page-ouverte main { visibility: hidden; }
         "Lǎoshī yǐ shēn zuò zé, xuéshēng xué tā.",
         "Le professeur donne l'exemple, les élèves l'imitent."
       ],
-      "phraseNote": "以身作则 : montrer l'exemple par sa propre conduite."
+      "phraseNote": "以身作则 : montrer l'exemple par sa propre conduite.",
+      "niveau": "HSK 1"
     },
     {
       "char": "条",
@@ -10107,7 +10331,8 @@ body.page-ouverte main { visibility: hidden; }
         "这个条件很简单。",
         "Zhège tiáojiàn hěn jiǎndān.",
         "Cette condition est très simple."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "想",
@@ -10149,7 +10374,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā shàngkè de shíhou xiǎng rù fēi fēi.",
         "Pendant le cours, il se perd dans ses rêveries."
       ],
-      "phraseNote": "想入非非 : se livrer à des rêveries, fantasmer."
+      "phraseNote": "想入非非 : se livrer à des rêveries, fantasmer.",
+      "niveau": "HSK 1"
     },
     {
       "char": "椅",
@@ -10190,7 +10416,8 @@ body.page-ouverte main { visibility: hidden; }
         "这把椅子很舒服。",
         "Zhè bǎ yǐzi hěn shūfu.",
         "Cette chaise est très confortable."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "钟",
@@ -10232,7 +10459,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tāmen yī jiàn zhōng qíng, hěn kuài jiéhūn.",
         "Ils ont eu un coup de foudre et se sont mariés vite."
       ],
-      "phraseNote": "一见钟情 : tomber amoureux au premier regard."
+      "phraseNote": "一见钟情 : tomber amoureux au premier regard.",
+      "niveau": "HSK 1"
     },
     {
       "char": "听",
@@ -10273,7 +10501,8 @@ body.page-ouverte main { visibility: hidden; }
         "我听不懂他说的话。",
         "Wǒ tīng bù dǒng tā shuō de huà.",
         "Je ne comprends pas ce qu'il dit."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "影",
@@ -10315,7 +10544,8 @@ body.page-ouverte main { visibility: hidden; }
         "Wǒ de māo pǎo de wú yǐng wú zōng.",
         "Mon chat a disparu sans laisser de trace."
       ],
-      "phraseNote": "无影无踪 : disparaître complètement, sans laisser de trace."
+      "phraseNote": "无影无踪 : disparaître complètement, sans laisser de trace.",
+      "niveau": "HSK 1"
     },
     {
       "char": "住",
@@ -10356,7 +10586,8 @@ body.page-ouverte main { visibility: hidden; }
         "我住在学校里。",
         "Wǒ zhù zài xuéxiào lǐ.",
         "J'habite dans l'école."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "同",
@@ -10398,7 +10629,8 @@ body.page-ouverte main { visibility: hidden; }
         "Wǒmen tóng xīn xié lì, yīdìng chénggōng.",
         "En unissant nos efforts, nous réussirons."
       ],
-      "phraseNote": "同心协力 : unir ses forces, travailler de concert."
+      "phraseNote": "同心协力 : unir ses forces, travailler de concert.",
+      "niveau": "HSK 1"
     },
     {
       "char": "校",
@@ -10439,7 +10671,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们的校园很漂亮。",
         "Wǒmen de xiàoyuán hěn piàoliang.",
         "Notre campus est très joli."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "友",
@@ -10477,7 +10710,8 @@ body.page-ouverte main { visibility: hidden; }
           "main",
           "composant"
         ]
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "桌",
@@ -10516,7 +10750,8 @@ body.page-ouverte main { visibility: hidden; }
         "桌子上有一杯茶。",
         "Zhuōzi shàng yǒu yī bēi chá.",
         "Sur la table, il y a une tasse de thé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "外",
@@ -10558,7 +10793,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā wài qiáng zhōng gān, qíshí hěn pà.",
         "Il fait le fort, mais au fond il a très peur."
       ],
-      "phraseNote": "外强中干 : fort en apparence, faible en réalité."
+      "phraseNote": "外强中干 : fort en apparence, faible en réalité.",
+      "niveau": "HSK 1"
     },
     {
       "char": "些",
@@ -10599,7 +10835,8 @@ body.page-ouverte main { visibility: hidden; }
         "我买了一些苹果。",
         "Wǒ mǎi le yīxiē píngguǒ.",
         "J'ai acheté quelques pommes."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "玩",
@@ -10640,7 +10877,8 @@ body.page-ouverte main { visibility: hidden; }
         "孩子们在公园玩儿。",
         "Háizimen zài gōngyuán wánr.",
         "Les enfants jouent au parc."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "写",
@@ -10679,7 +10917,8 @@ body.page-ouverte main { visibility: hidden; }
         "我用汉语写我的名字。",
         "Wǒ yòng Hànyǔ xiě wǒ de míngzi.",
         "J'écris mon nom en chinois."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "字",
@@ -10721,7 +10960,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā de zì yī zì qiān jīn.",
         "Chacun de ses mots vaut de l'or."
       ],
-      "phraseNote": "一字千金 : chaque mot pèse de l'or, un écrit très précieux."
+      "phraseNote": "一字千金 : chaque mot pèse de l'or, un écrit très précieux.",
+      "niveau": "HSK 1"
     },
     {
       "char": "晚",
@@ -10762,7 +11002,8 @@ body.page-ouverte main { visibility: hidden; }
         "昨天晚上我睡得很好。",
         "Zuótiān wǎnshang wǒ shuì de hěn hǎo.",
         "Hier soir, j'ai très bien dormi."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "谢",
@@ -10804,7 +11045,8 @@ body.page-ouverte main { visibility: hidden; }
         "Xiè tiān xiè dì, nǐ zhōngyú lái le!",
         "Dieu merci, tu es enfin arrivé !"
       ],
-      "phraseNote": "谢天谢地 : Dieu merci, quelle chance !"
+      "phraseNote": "谢天谢地 : Dieu merci, quelle chance !",
+      "niveau": "HSK 1"
     },
     {
       "char": "语",
@@ -10845,7 +11087,8 @@ body.page-ouverte main { visibility: hidden; }
         "我会说两种语言。",
         "Wǒ huì shuō liǎng zhǒng yǔyán.",
         "Je parle deux langues."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "租",
@@ -10886,7 +11129,8 @@ body.page-ouverte main { visibility: hidden; }
         "我们租了一间房子。",
         "Wǒmen zū le yī jiān fángzi.",
         "Nous avons loué une maison."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "喂",
@@ -10927,7 +11171,8 @@ body.page-ouverte main { visibility: hidden; }
         "喂，你好，请问你是谁？",
         "Wèi, nǐ hǎo, qǐngwèn nǐ shì shuí?",
         "Allô, bonjour, qui êtes-vous ?"
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "新",
@@ -10969,7 +11214,8 @@ body.page-ouverte main { visibility: hidden; }
         "Fángjiān huàn rán yī xīn, hěn piàoliang.",
         "La pièce a un air tout neuf, très jolie."
       ],
-      "phraseNote": "焕然一新 : prendre un aspect entièrement nouveau."
+      "phraseNote": "焕然一新 : prendre un aspect entièrement nouveau.",
+      "niveau": "HSK 1"
     },
     {
       "char": "元",
@@ -11010,7 +11256,8 @@ body.page-ouverte main { visibility: hidden; }
         "这本书十元，很便宜。",
         "Zhè běn shū shí yuán, hěn piányi.",
         "Ce livre coûte dix yuans, c'est bon marché."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "昨",
@@ -11051,7 +11298,8 @@ body.page-ouverte main { visibility: hidden; }
         "昨天我们去了公园。",
         "Zuótiān wǒmen qù le gōngyuán.",
         "Hier, nous sommes allés au parc."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "文",
@@ -11093,7 +11341,8 @@ body.page-ouverte main { visibility: hidden; }
         "Zhège jìhuà zhǐshì yī zhǐ kōng wén.",
         "Ce plan n'est qu'un chiffon de papier."
       ],
-      "phraseNote": "一纸空文 : texte sans effet, simple bout de papier."
+      "phraseNote": "一纸空文 : texte sans effet, simple bout de papier.",
+      "niveau": "HSK 1"
     },
     {
       "char": "星",
@@ -11134,7 +11383,8 @@ body.page-ouverte main { visibility: hidden; }
         "今晚的星星很漂亮。",
         "Jīnwǎn de xīngxing hěn piàoliang.",
         "Les étoiles sont très belles ce soir."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "院",
@@ -11175,7 +11425,8 @@ body.page-ouverte main { visibility: hidden; }
         "我家的院子里有一只猫。",
         "Wǒ jiā de yuànzi lǐ yǒu yī zhī māo.",
         "Il y a un chat dans la cour de ma maison."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "作",
@@ -11217,7 +11468,8 @@ body.page-ouverte main { visibility: hidden; }
         "Dàjiā yī gǔ zuò qì, zuò wán le gōngzuò.",
         "Tous d'un seul élan, ils ont fini le travail."
       ],
-      "phraseNote": "一鼓作气 : accomplir d'un seul souffle, sans relâche."
+      "phraseNote": "一鼓作气 : accomplir d'un seul souffle, sans relâche.",
+      "niveau": "HSK 1"
     },
     {
       "char": "问",
@@ -11258,7 +11510,8 @@ body.page-ouverte main { visibility: hidden; }
         "我想问老师一个问题。",
         "Wǒ xiǎng wèn lǎoshī yī gè wèntí.",
         "Je veux poser une question au professeur."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "兴",
@@ -11303,7 +11556,8 @@ body.page-ouverte main { visibility: hidden; }
         "Háizimen xìng gāo cǎi liè de chànggē.",
         "Les enfants chantent pleins d'entrain."
       ],
-      "phraseNote": "兴高采烈 : plein d'entrain et de joie."
+      "phraseNote": "兴高采烈 : plein d'entrain et de joie.",
+      "niveau": "HSK 1"
     },
     {
       "char": "坐",
@@ -11344,7 +11598,8 @@ body.page-ouverte main { visibility: hidden; }
         "请坐，我给你倒茶。",
         "Qǐng zuò, wǒ gěi nǐ dào chá.",
         "Asseyez-vous, je vous sers du thé."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "休",
@@ -11386,7 +11641,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bù kěn shàn bà gān xiū.",
         "Il refuse de laisser tomber."
       ],
-      "phraseNote": "善罢甘休 : laisser tomber facilement, s'arrêter de bon gré."
+      "phraseNote": "善罢甘休 : laisser tomber facilement, s'arrêter de bon gré.",
+      "niveau": "HSK 1"
     },
     {
       "char": "再",
@@ -11427,7 +11683,8 @@ body.page-ouverte main { visibility: hidden; }
         "再见，明天再聊。",
         "Zàijiàn, míngtiān zài liáo.",
         "Au revoir, on reparlera demain."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "做",
@@ -11469,7 +11726,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā zuò zéi xīn xū, yī jù huà yě bù shuō.",
         "Il a mauvaise conscience, il ne dit pas un mot."
       ],
-      "phraseNote": "做贼心虚 : avoir la conscience coupable, être mal à l'aise."
+      "phraseNote": "做贼心虚 : avoir la conscience coupable, être mal à l'aise.",
+      "niveau": "HSK 1"
     },
     {
       "char": "五",
@@ -11499,7 +11757,8 @@ body.page-ouverte main { visibility: hidden; }
         "我有五个苹果，都很红。",
         "Wǒ yǒu wǔ gè píngguǒ, dōu hěn hóng.",
         "J'ai cinq pommes, toutes rouges."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "在",
@@ -11541,7 +11800,8 @@ body.page-ouverte main { visibility: hidden; }
         "Bié fàngqì, shì zài rén wéi.",
         "N'abandonne pas : tout dépend de nos efforts."
       ],
-      "phraseNote": "事在人为 : tout dépend de l'effort humain, rien n'est fatal."
+      "phraseNote": "事在人为 : tout dépend de l'effort humain, rien n'est fatal.",
+      "niveau": "HSK 1"
     },
     {
       "char": "午",
@@ -11580,7 +11840,8 @@ body.page-ouverte main { visibility: hidden; }
         "中午我们一起吃饭吧。",
         "Zhōngwǔ wǒmen yīqǐ chīfàn ba.",
         "Déjeunons ensemble à midi."
-      ]
+      ],
+      "niveau": "HSK 1"
     },
     {
       "char": "雪",
@@ -11622,7 +11883,8 @@ body.page-ouverte main { visibility: hidden; }
         "Tā bāngzhù wǒ, zhēn shì xuě zhōng sòng tàn.",
         "Son aide m'a été d'un grand secours dans le besoin."
       ],
-      "phraseNote": "雪中送炭 : apporter une aide précieuse dans l'adversité."
+      "phraseNote": "雪中送炭 : apporter une aide précieuse dans l'adversité.",
+      "niveau": "HSK 1"
     },
     {
       "char": "早",
@@ -11663,7 +11925,8 @@ body.page-ouverte main { visibility: hidden; }
         "我早上六点起床，可是还很困。",
         "Wǒ zǎoshang liù diǎn qǐchuáng, kěshì hái hěn kùn.",
         "Je me lève à six heures du matin, mais je suis encore tout endormi."
-      ]
+      ],
+      "niveau": "HSK 1"
     }
   ]
 }
@@ -11918,6 +12181,14 @@ var STORE_KEY = 'hanzi-cards-v1';
     } catch (e) { state.progress = {}; }
     state.jour = lireJour();
     migrerProgression();
+    /* Ceux qui utilisaient l'appli avant les listes : toute carte vue et non
+       sue entre dans « à revoir », une seule fois. */
+    var migre = false;
+    Object.keys(state.progress).forEach(function (ch) {
+      var p = state.progress[ch];
+      if (p && p.revoir === undefined && p.seen > 0 && !p.n) { p.revoir = true; migre = true; }
+    });
+    if (migre) { save(); }
   }
 
   function masteredCount() {
@@ -12180,6 +12451,10 @@ var STORE_KEY = 'hanzi-cards-v1';
     var avant = estDue(c);
     compter(known ? 'sais' : 'revoir', c.char);
     var f = reviser(c, known);
+    /* « À revoir » entre dans la liste « à revoir » ; « je sais » l'en fait sortir. */
+    var enr = state.progress[c.char] || (state.progress[c.char] = {});
+    enr.revoir = !known;
+    save();
 
     /* En mode « à revoir », une carte qui vient d'être réussie ne sera plus due
        avant un moment : elle quitte la file, plutôt que de revenir tout de suite. */
@@ -13363,12 +13638,16 @@ function brancherRechercheAccueil() {
 
   /* Deux paquets : les cartes JUGÉES qui ne sont pas sues (« à revoir ») et
      les cartes MARQUÉES (« favoris »). Une carte peut être dans les deux. */
+  var listeCartes = [];      // les cartes du paquet affiché (après filtre)
+
   function ficheDeListe(c) {
     var p = state.progress && state.progress[c.char];
+    /* Deux LISTES, tenues par la carte elle-même : « revoir » y entre quand on
+       la juge À REVOIR, en sort quand on la juge « je sais » ; « fav » bascule
+       avec le tampon. Rien n'est recalculé, donc la liste ne bouge pas toute
+       seule, et elle traverse les niveaux. */
     if (listeFiltre === 'favoris') { return !!(p && p.fav); }
-    var vue = (p && p.seen) || 0;
-    var juste = (p && p.n) || 0;
-    return vue > 0 && !juste;
+    return !!(p && p.revoir);
   }
 
   function peindreListe() {
@@ -13384,6 +13663,7 @@ function brancherRechercheAccueil() {
     /* Le titre reste « Révision » : c'est le filtre actif qui dit ce qu'on voit. */
     if (el.listeTitre) { el.listeTitre.textContent = 'Révision'; }
     var lot = state.cards.filter(ficheDeListe);
+    listeCartes = lot;
     if (!lot.length) {
       el.listeGrille.innerHTML = '<p class="feuille-info">Aucune fiche ici pour l\'instant.</p>';
     } else {
@@ -13467,8 +13747,14 @@ function brancherRechercheAccueil() {
       }
       if (!b || b === el.listeGrille) { return; }
       var cle = b.getAttribute('data-char');
-      for (var i = 0; i < state.view.length; i++) {
-        if (state.view[i].char === cle) { state.i = i; break; }
+      /* On joue LE PAQUET, pas les 1 574 fiches : trois favoris = trois cartes,
+         puis la fin du paquet ramène à la liste. */
+      if (listeCartes.length) {
+        state.view = listeCartes.slice();
+        state.i = 0;
+        for (var i = 0; i < state.view.length; i++) {
+          if (state.view[i].char === cle) { state.i = i; break; }
+        }
       }
       origineCarte = 'liste';
       el.pageListe.hidden = true;
@@ -13617,6 +13903,90 @@ function brancherRechercheAccueil() {
     }
   }
 
+  /* ---------------- Le fond choisi par l'utilisateur ---------------- */
+
+  /* L'image est réduite avant d'être gardée : une photo de téléphone pèse
+     plusieurs mégaoctets, localStorage en accepte à peine cinq. On la ramène à
+     1400 px de large au plus, en JPEG, ce qui donne 200 à 400 Ko. */
+  var CLE_FOND = 'hanzi-fond';
+
+  function appliquerFond(dataUrl) {
+    var racine = document.documentElement;
+    if (!racine || !racine.style) { return; }
+    if (dataUrl) {
+      racine.style.setProperty('--fond-image', 'url("' + dataUrl + '")');
+    } else {
+      racine.style.removeProperty('--fond-image');
+    }
+  }
+
+  function chargerFond() {
+    try {
+      var garde = localStorage.getItem(CLE_FOND);
+      if (garde) { appliquerFond(garde); }
+      return garde || '';
+    } catch (e) { return ''; }
+  }
+
+  function reduireImage(fichier) {
+    return new Promise(function (ok, ko) {
+      var lecteur = new FileReader();
+      lecteur.onerror = function () { ko(new Error('lecture impossible')); };
+      lecteur.onload = function () {
+        var img = new Image();
+        img.onerror = function () { ko(new Error('image illisible')); };
+        img.onload = function () {
+          var max = 1400;
+          var largeur = img.width, hauteur = img.height;
+          if (largeur > max) { hauteur = Math.round(hauteur * max / largeur); largeur = max; }
+          var toile = document.createElement('canvas');
+          toile.width = largeur;
+          toile.height = hauteur;
+          toile.getContext('2d').drawImage(img, 0, 0, largeur, hauteur);
+          ok(toile.toDataURL('image/jpeg', 0.82));
+        };
+        img.src = lecteur.result;
+      };
+      lecteur.readAsDataURL(fichier);
+    });
+  }
+
+  function brancherFond() {
+    var choisir = document.getElementById('fond-choisir');
+    var defaut = document.getElementById('fond-defaut');
+    var champ = document.getElementById('fond-fichier');
+    var etat = document.getElementById('fond-etat');
+    if (!choisir || !champ) { return; }
+
+    function dire(t) { if (etat) { etat.textContent = t; } }
+    dire(localStorage.getItem(CLE_FOND) ? 'Fond personnel en place.' : 'Fond d\'origine.');
+
+    choisir.addEventListener('click', function () { champ.click(); });
+
+    champ.addEventListener('change', function () {
+      var f = champ.files && champ.files[0];
+      if (!f) { return; }
+      dire('Préparation…');
+      reduireImage(f).then(function (dataUrl) {
+        try {
+          localStorage.setItem(CLE_FOND, dataUrl);
+          appliquerFond(dataUrl);
+          dire('Fond personnel en place (' + Math.round(dataUrl.length / 1024) + ' Ko).');
+        } catch (e) {
+          dire('Image trop lourde pour ce navigateur — essaie une image plus petite.');
+        }
+      }).catch(function () { dire('Cette image n\'a pas pu être lue.'); });
+    });
+
+    if (defaut) {
+      defaut.addEventListener('click', function () {
+        try { localStorage.removeItem(CLE_FOND); } catch (e) { /* privé */ }
+        appliquerFond(null);
+        dire('Fond d\'origine rétabli.');
+      });
+    }
+  }
+
   function start(data) {
     state.cards = data.cards || [];
     var p = parametres();
@@ -13711,7 +14081,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '253';
+  var VERSION = '258';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -13790,6 +14160,8 @@ function brancherRechercheAccueil() {
   brancherThemesAccueil();
   brancherRadicauxAccueil();
   chargerRadicaux();
+  brancherFond();
+  chargerFond();
 
   if (window.__CARDS__) {
     marquerNiveau(NIVEAUX[0].cle);
