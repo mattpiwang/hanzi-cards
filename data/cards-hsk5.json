@@ -24,12 +24,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "艾",
-          "",
+          "armoise",
           "composant"
         ]
       ],
@@ -63,12 +63,12 @@
       "components": [
         [
           "支",
-          "",
+          "soutenir",
           "composant"
         ],
         [
           "羽",
-          "",
+          "plume",
           "composant"
         ]
       ],
@@ -103,12 +103,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "方",
-          "",
+          "carré",
           "composant"
         ]
       ],
@@ -142,12 +142,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "匚",
-          "",
+          "boîte",
           "composant"
         ]
       ],
@@ -182,12 +182,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "矣",
-          "",
+          "particule",
           "composant"
         ]
       ],
@@ -221,12 +221,12 @@
       "components": [
         [
           "冫",
-          "",
+          "glace",
           "composant"
         ],
         [
           "中",
-          "",
+          "milieu",
           "composant"
         ]
       ],
@@ -261,12 +261,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "方",
-          "",
+          "carré",
           "composant"
         ]
       ],
@@ -328,12 +328,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "音",
-          "",
+          "son",
           "composant"
         ]
       ],
@@ -367,12 +367,12 @@
       "components": [
         [
           "亠",
-          "",
+          "forme",
           "composant"
         ],
         [
           "允",
-          "",
+          "accorder",
           "composant"
         ]
       ],
@@ -407,12 +407,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "巴",
-          "",
+          "désirer",
           "composant"
         ]
       ],
@@ -446,12 +446,12 @@
       "components": [
         [
           "彗",
-          "",
+          "balai",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -486,12 +486,12 @@
       "components": [
         [
           "敖",
-          "",
+          "errer",
           "composant"
         ],
         [
           "灬",
-          "",
+          "feu",
           "composant"
         ]
       ],
@@ -553,12 +553,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "分",
-          "",
+          "diviser",
           "composant"
         ]
       ],
@@ -592,12 +592,12 @@
       "components": [
         [
           "礻",
-          "",
+          "autel",
           "composant"
         ],
         [
           "呙",
-          "",
+          "tordu",
           "composant"
         ]
       ],
@@ -632,12 +632,12 @@
       "components": [
         [
           "片",
-          "",
+          "tranche",
           "composant"
         ],
         [
           "反",
-          "",
+          "inverse",
           "composant"
         ]
       ],
@@ -671,12 +671,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "龙",
-          "",
+          "dragon",
           "composant"
         ]
       ],
@@ -711,12 +711,12 @@
       "components": [
         [
           "疒",
-          "",
+          "maladie",
           "composant"
         ],
         [
           "风",
-          "",
+          "vent",
           "composant"
         ]
       ],
@@ -750,12 +750,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "几",
-          "",
+          "combien",
           "composant"
         ]
       ],
@@ -790,12 +790,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "分",
-          "",
+          "diviser",
           "composant"
         ]
       ],
@@ -829,12 +829,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "由",
-          "",
+          "cause",
           "composant"
         ]
       ],
@@ -869,12 +869,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "夫",
-          "",
+          "homme",
           "composant"
         ]
       ],
@@ -908,12 +908,12 @@
       "components": [
         [
           "疒",
-          "",
+          "maladie",
           "composant"
         ],
         [
           "矢",
-          "",
+          "flèche",
           "composant"
         ]
       ],
@@ -948,12 +948,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "半",
-          "",
+          "moitié",
           "composant"
         ]
       ],
@@ -987,12 +987,12 @@
       "components": [
         [
           "刀",
-          "",
+          "couteau",
           "composant"
         ],
         [
           "二",
-          "",
+          "deux",
           "composant"
         ]
       ],
@@ -1027,12 +1027,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "弗",
-          "",
+          "négation",
           "composant"
         ]
       ],
@@ -1066,12 +1066,12 @@
       "components": [
         [
           "隹",
-          "",
+          "oiseau",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -1106,12 +1106,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "旁",
-          "",
+          "côté",
           "composant"
         ]
       ],
@@ -1145,12 +1145,12 @@
       "components": [
         [
           "自",
-          "",
+          "soi",
           "composant"
         ],
         [
           "犬",
-          "",
+          "chien",
           "composant"
         ]
       ],
@@ -1185,12 +1185,12 @@
       "components": [
         [
           "广",
-          "",
+          "vaste",
           "composant"
         ],
         [
           "付",
-          "",
+          "donner",
           "composant"
         ]
       ],
@@ -1224,12 +1224,12 @@
       "components": [
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ],
         [
           "咠",
-          "",
+          "chuchoter",
           "composant"
         ]
       ],
@@ -1263,12 +1263,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "旁",
-          "",
+          "côté",
           "composant"
         ]
       ],
@@ -1303,12 +1303,12 @@
       "components": [
         [
           "角",
-          "",
+          "angle",
           "composant"
         ],
         [
           "虫",
-          "",
+          "insecte",
           "composant"
         ]
       ],
@@ -1343,17 +1343,17 @@
       "components": [
         [
           "广",
-          "",
+          "vaste",
           "composant"
         ],
         [
           "付",
-          "",
+          "donner",
           "composant"
         ],
         [
           "肉",
-          "",
+          "viande",
           "composant"
         ]
       ],
@@ -1387,12 +1387,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "齐",
-          "",
+          "égal",
           "composant"
         ]
       ],
@@ -1426,12 +1426,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "溥",
-          "",
+          "vaste",
           "composant"
         ]
       ],
@@ -1466,12 +1466,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "专",
-          "",
+          "spécialisé",
           "composant"
         ]
       ],
@@ -1505,12 +1505,12 @@
       "components": [
         [
           "女",
-          "",
+          "femme",
           "composant"
         ],
         [
           "彐",
-          "",
+          "groin",
           "composant"
         ]
       ],
@@ -1545,12 +1545,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "亦",
-          "",
+          "aussi",
           "composant"
         ]
       ],
@@ -1584,12 +1584,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "玉",
-          "",
+          "jade",
           "composant"
         ]
       ],
@@ -1624,12 +1624,12 @@
       "components": [
         [
           "仓",
-          "",
+          "grenier",
           "composant"
         ],
         [
           "刂",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -1663,12 +1663,12 @@
       "components": [
         [
           "畐",
-          "",
+          "plein",
           "composant"
         ],
         [
           "刂",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -1702,12 +1702,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "圭",
-          "",
+          "tablette de jade",
           "composant"
         ]
       ],
@@ -1742,17 +1742,17 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "共",
-          "",
+          "ensemble",
           "composant"
         ],
         [
           "水",
-          "",
+          "eau",
           "composant"
         ]
       ],
@@ -1787,12 +1787,12 @@
       "components": [
         [
           "舌",
-          "",
+          "langue",
           "composant"
         ],
         [
           "辛",
-          "",
+          "amer",
           "composant"
         ]
       ],
@@ -1826,12 +1826,12 @@
       "components": [
         [
           "羊",
-          "",
+          "mouton",
           "composant"
         ],
         [
           "皿",
-          "",
+          "vaisselle",
           "composant"
         ]
       ],
@@ -1866,12 +1866,12 @@
       "components": [
         [
           "壴",
-          "",
+          "tambour",
           "composant"
         ],
         [
           "加",
-          "",
+          "ajouter",
           "composant"
         ]
       ],
@@ -1905,12 +1905,12 @@
       "components": [
         [
           "冂",
-          "",
+          "forme",
           "composant"
         ],
         [
           "人",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -1944,12 +1944,12 @@
       "components": [
         [
           "朿",
-          "",
+          "épine",
           "composant"
         ],
         [
           "刂",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -1984,12 +1984,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "高",
-          "",
+          "haut",
           "composant"
         ]
       ],
@@ -2051,12 +2051,12 @@
       "components": [
         [
           "彳",
-          "",
+          "pas",
           "composant"
         ],
         [
           "皮",
-          "",
+          "peau",
           "composant"
         ]
       ],
@@ -2090,12 +2090,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "足",
-          "",
+          "pied",
           "composant"
         ]
       ],
@@ -2157,12 +2157,12 @@
       "components": [
         [
           "加",
-          "",
+          "ajouter",
           "composant"
         ],
         [
           "马",
-          "",
+          "cheval",
           "composant"
         ]
       ],
@@ -2197,12 +2197,12 @@
       "components": [
         [
           "丿",
-          "",
+          "trait",
           "composant"
         ],
         [
           "巾",
-          "",
+          "tissu",
           "composant"
         ]
       ],
@@ -2236,12 +2236,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "崔",
-          "",
+          "mont escarpé",
           "composant"
         ]
       ],
@@ -2275,12 +2275,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "鬲",
-          "",
+          "chaudron",
           "composant"
         ]
       ],
@@ -2315,12 +2315,12 @@
       "components": [
         [
           "加",
-          "",
+          "ajouter",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -2355,12 +2355,12 @@
       "components": [
         [
           "门",
-          "",
+          "porte",
           "composant"
         ],
         [
           "才",
-          "",
+          "talent",
           "composant"
         ]
       ],
@@ -2394,12 +2394,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "昔",
-          "",
+          "autrefois",
           "composant"
         ]
       ],
@@ -2434,12 +2434,12 @@
       "components": [
         [
           "共",
-          "",
+          "ensemble",
           "composant"
         ],
         [
           "⺗",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -2473,12 +2473,12 @@
       "components": [
         [
           "又",
-          "",
+          "et",
           "composant"
         ],
         [
           "艮",
-          "",
+          "obstiné",
           "composant"
         ]
       ],
@@ -2513,12 +2513,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "辟",
-          "",
+          "souverain",
           "composant"
         ]
       ],
@@ -2552,12 +2552,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "弋",
-          "",
+          "flèche",
           "composant"
         ]
       ],
@@ -2592,12 +2592,12 @@
       "components": [
         [
           "工",
-          "",
+          "travail",
           "composant"
         ],
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ]
       ],
@@ -2631,12 +2631,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "佥",
-          "",
+          "tous",
           "composant"
         ]
       ],
@@ -2670,12 +2670,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "发",
-          "",
+          "émettre",
           "composant"
         ]
       ],
@@ -2710,12 +2710,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "旦",
-          "",
+          "aube",
           "composant"
         ]
       ],
@@ -2750,12 +2750,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "勾",
-          "",
+          "crochet",
           "composant"
         ]
       ],
@@ -2789,12 +2789,12 @@
       "components": [
         [
           "前",
-          "",
+          "devant",
           "composant"
         ],
         [
           "刀",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -2828,12 +2828,12 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "皮",
-          "",
+          "peau",
           "composant"
         ]
       ],
@@ -2867,12 +2867,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "一",
-          "",
+          "un",
           "composant"
         ]
       ],
@@ -2907,12 +2907,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "勾",
-          "",
+          "crochet",
           "composant"
         ]
       ],
@@ -2946,12 +2946,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "存",
-          "",
+          "exister",
           "composant"
         ]
       ],
@@ -2986,12 +2986,12 @@
       "components": [
         [
           "衤",
-          "",
+          "vêtement",
           "composant"
         ],
         [
           "卜",
-          "",
+          "divination",
           "composant"
         ]
       ],
@@ -3025,12 +3025,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "炎",
-          "",
+          "flamme",
           "composant"
         ]
       ],
@@ -3065,12 +3065,12 @@
       "components": [
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -3104,12 +3104,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "斩",
-          "",
+          "trancher",
           "composant"
         ]
       ],
@@ -3172,12 +3172,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "当",
-          "",
+          "approprié",
           "composant"
         ]
       ],
@@ -3211,12 +3211,12 @@
       "components": [
         [
           "囗",
-          "",
+          "enceinte",
           "composant"
         ],
         [
           "古",
-          "",
+          "vieux",
           "composant"
         ]
       ],
@@ -3251,12 +3251,12 @@
       "components": [
         [
           "足",
-          "",
+          "pied",
           "composant"
         ],
         [
           "戋",
-          "",
+          "petit",
           "composant"
         ]
       ],
@@ -3290,17 +3290,17 @@
       "components": [
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "戈",
-          "",
+          "hallebarde",
           "composant"
         ],
         [
           "衣",
-          "",
+          "vêtement",
           "composant"
         ]
       ],
@@ -3335,12 +3335,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "当",
-          "",
+          "approprié",
           "composant"
         ]
       ],
@@ -3374,17 +3374,17 @@
       "components": [
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "元",
-          "",
+          "yuan",
           "composant"
         ],
         [
           "寸",
-          "",
+          "pouce",
           "composant"
         ]
       ],
@@ -3419,17 +3419,17 @@
       "components": [
         [
           "丬",
-          "",
+          "bois",
           "composant"
         ],
         [
           "夕",
-          "",
+          "soir",
           "composant"
         ],
         [
           "水",
-          "",
+          "eau",
           "composant"
         ]
       ],
@@ -3463,12 +3463,12 @@
       "components": [
         [
           "爫",
-          "",
+          "griffe",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -3503,12 +3503,12 @@
       "components": [
         [
           "足",
-          "",
+          "pied",
           "composant"
         ],
         [
           "舀",
-          "",
+          "puiser",
           "composant"
         ]
       ],
@@ -3543,12 +3543,12 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "鬼",
-          "",
+          "fantôme",
           "composant"
         ]
       ],
@@ -3582,12 +3582,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "尧",
-          "",
+          "haut",
           "composant"
         ]
       ],
@@ -3621,12 +3621,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "臧",
-          "",
+          "bon",
           "composant"
         ]
       ],
@@ -3661,12 +3661,12 @@
       "components": [
         [
           "舌",
-          "",
+          "langue",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -3701,12 +3701,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "巨",
-          "",
+          "grand",
           "composant"
         ]
       ],
@@ -3740,12 +3740,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "介",
-          "",
+          "intermédiaire",
           "composant"
         ]
       ],
@@ -3779,17 +3779,17 @@
       "components": [
         [
           "冂",
-          "",
+          "forme",
           "composant"
         ],
         [
           "冂",
-          "",
+          "forme",
           "composant"
         ],
         [
           "一",
-          "",
+          "un",
           "composant"
         ]
       ],
@@ -3823,12 +3823,12 @@
       "components": [
         [
           "虫",
-          "",
+          "insecte",
           "composant"
         ],
         [
           "枼",
-          "",
+          "feuille",
           "composant"
         ]
       ],
@@ -3863,12 +3863,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "衮",
-          "",
+          "robe impériale",
           "composant"
         ]
       ],
@@ -3903,12 +3903,12 @@
       "components": [
         [
           "尸",
-          "",
+          "cadavre",
           "composant"
         ],
         [
           "由",
-          "",
+          "cause",
           "composant"
         ]
       ],
@@ -3942,12 +3942,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "则",
-          "",
+          "règle",
           "composant"
         ]
       ],
@@ -3982,12 +3982,12 @@
       "components": [
         [
           "冫",
-          "",
+          "glace",
           "composant"
         ],
         [
           "东",
-          "",
+          "est",
           "composant"
         ]
       ],
@@ -4022,12 +4022,12 @@
       "components": [
         [
           "钅",
-          "",
+          "métal",
           "composant"
         ],
         [
           "呙",
-          "",
+          "tordu",
           "composant"
         ]
       ],
@@ -4061,12 +4061,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "堇",
-          "",
+          "argile jaune",
           "composant"
         ]
       ],
@@ -4128,12 +4128,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "同",
-          "",
+          "même",
           "composant"
         ]
       ],
@@ -4168,12 +4168,12 @@
       "components": [
         [
           "衣",
-          "",
+          "vêtement",
           "composant"
         ],
         [
           "果",
-          "",
+          "fruit",
           "composant"
         ]
       ],
@@ -4207,12 +4207,12 @@
       "components": [
         [
           "苟",
-          "",
+          "négligent",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -4247,12 +4247,12 @@
       "components": [
         [
           "又",
-          "",
+          "et",
           "composant"
         ],
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -4314,12 +4314,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "合",
-          "",
+          "combiner",
           "composant"
         ]
       ],
@@ -4353,12 +4353,12 @@
       "components": [
         [
           "求",
-          "",
+          "chercher",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -4393,12 +4393,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "臿",
-          "",
+          "pelle",
           "composant"
         ]
       ],
@@ -4432,22 +4432,22 @@
       "components": [
         [
           "一",
-          "",
+          "un",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "丷",
-          "",
+          "forme",
           "composant"
         ],
         [
           "一",
-          "",
+          "un",
           "composant"
         ]
       ],
@@ -4482,12 +4482,12 @@
       "components": [
         [
           "今",
-          "",
+          "aujourd'hui",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -4521,12 +4521,12 @@
       "components": [
         [
           "尺",
-          "",
+          "règle",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -4561,12 +4561,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "斥",
-          "",
+          "repousser",
           "composant"
         ]
       ],
@@ -4600,12 +4600,12 @@
       "components": [
         [
           "犭",
-          "",
+          "chien",
           "composant"
         ],
         [
           "虫",
-          "",
+          "insecte",
           "composant"
         ]
       ],
@@ -4640,12 +4640,12 @@
       "components": [
         [
           "忄",
-          "",
+          "cœur",
           "composant"
         ],
         [
           "感",
-          "",
+          "ressentir",
           "composant"
         ]
       ],
@@ -4679,12 +4679,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "矞",
-          "",
+          "percer",
           "composant"
         ]
       ],
@@ -4718,12 +4718,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "昌",
-          "",
+          "prospère",
           "composant"
         ]
       ],
@@ -4757,12 +4757,12 @@
       "components": [
         [
           "土",
-          "",
+          "terre",
           "composant"
         ],
         [
           "隹",
-          "",
+          "oiseau",
           "composant"
         ]
       ],
@@ -4796,17 +4796,17 @@
       "components": [
         [
           "行",
-          "",
+          "aller",
           "composant"
         ],
         [
           "角",
-          "",
+          "angle",
           "composant"
         ],
         [
           "大",
-          "",
+          "grand",
           "composant"
         ]
       ],
@@ -4869,12 +4869,12 @@
       "components": [
         [
           "龺",
-          "",
+          "aube",
           "composant"
         ],
         [
           "月",
-          "",
+          "lune",
           "composant"
         ]
       ],
@@ -4909,12 +4909,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "屯",
-          "",
+          "germer",
           "composant"
         ]
       ],
@@ -4948,12 +4948,12 @@
       "components": [
         [
           "犭",
-          "",
+          "chien",
           "composant"
         ],
         [
           "侯",
-          "",
+          "marquis",
           "composant"
         ]
       ],
@@ -4988,12 +4988,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "肙",
-          "",
+          "ver",
           "composant"
         ]
       ],
@@ -5027,12 +5027,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "少",
-          "",
+          "peu",
           "composant"
         ]
       ],
@@ -5066,17 +5066,17 @@
       "components": [
         [
           "厂",
-          "",
+          "falaise",
           "composant"
         ],
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "目",
-          "",
+          "œil",
           "composant"
         ]
       ],
@@ -5110,12 +5110,12 @@
       "components": [
         [
           "古",
-          "",
+          "vieux",
           "composant"
         ],
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ]
       ],
@@ -5150,12 +5150,12 @@
       "components": [
         [
           "龹",
-          "",
+          "forme",
           "composant"
         ],
         [
           "㔾",
-          "",
+          "joint",
           "composant"
         ]
       ],
@@ -5189,12 +5189,12 @@
       "components": [
         [
           "火",
-          "",
+          "feu",
           "composant"
         ],
         [
           "少",
-          "",
+          "peu",
           "composant"
         ]
       ],
@@ -5228,12 +5228,12 @@
       "components": [
         [
           "身",
-          "",
+          "corps",
           "composant"
         ],
         [
           "朵",
-          "",
+          "fleur",
           "composant"
         ]
       ],
@@ -5268,12 +5268,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "胡",
-          "",
+          "follement",
           "composant"
         ]
       ],
@@ -5307,12 +5307,12 @@
       "components": [
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ]
       ],
@@ -5347,12 +5347,12 @@
       "components": [
         [
           "彳",
-          "",
+          "pas",
           "composant"
         ],
         [
           "切",
-          "",
+          "couper",
           "composant"
         ]
       ],
@@ -5386,12 +5386,12 @@
       "components": [
         [
           "丿",
-          "",
+          "trait",
           "composant"
         ],
         [
           "之",
-          "",
+          "de",
           "composant"
         ]
       ],
@@ -5426,12 +5426,12 @@
       "components": [
         [
           "虫",
-          "",
+          "insecte",
           "composant"
         ],
         [
           "胡",
-          "",
+          "follement",
           "composant"
         ]
       ],
@@ -5465,12 +5465,12 @@
       "components": [
         [
           "土",
-          "",
+          "terre",
           "composant"
         ],
         [
           "匀",
-          "",
+          "égal",
           "composant"
         ]
       ],
@@ -5505,12 +5505,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "冗",
-          "",
+          "superflu",
           "composant"
         ]
       ],
@@ -5544,17 +5544,17 @@
       "components": [
         [
           "罒",
-          "",
+          "filet",
           "composant"
         ],
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "刂",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -5588,12 +5588,12 @@
       "components": [
         [
           "米",
-          "",
+          "riz",
           "composant"
         ],
         [
           "胡",
-          "",
+          "follement",
           "composant"
         ]
       ],
@@ -5628,12 +5628,12 @@
       "components": [
         [
           "告",
-          "",
+          "annoncer",
           "composant"
         ],
         [
           "非",
-          "",
+          "non",
           "composant"
         ]
       ],
@@ -5668,12 +5668,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "尔",
-          "",
+          "toi",
           "composant"
         ]
       ],
@@ -5735,12 +5735,12 @@
       "components": [
         [
           "化",
-          "",
+          "changer",
           "composant"
         ],
         [
           "十",
-          "",
+          "dix",
           "composant"
         ]
       ],
@@ -5775,12 +5775,12 @@
       "components": [
         [
           "果",
-          "",
+          "fruit",
           "composant"
         ],
         [
           "页",
-          "",
+          "page",
           "composant"
         ]
       ],
@@ -5842,12 +5842,12 @@
       "components": [
         [
           "敏",
-          "",
+          "rapide",
           "composant"
         ],
         [
           "糸",
-          "",
+          "soie",
           "composant"
         ]
       ],
@@ -5881,12 +5881,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "骨",
-          "",
+          "os",
           "composant"
         ]
       ],
@@ -5921,12 +5921,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "空",
-          "",
+          "vide",
           "composant"
         ]
       ],
@@ -5960,12 +5960,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "登",
-          "",
+          "monter",
           "composant"
         ]
       ],
@@ -5999,12 +5999,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "反",
-          "",
+          "inverse",
           "composant"
         ]
       ],
@@ -6038,12 +6038,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "爰",
-          "",
+          "alors",
           "composant"
         ]
       ],
@@ -6078,12 +6078,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -6117,12 +6117,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "也",
-          "",
+          "aussi",
           "composant"
         ]
       ],
@@ -6157,12 +6157,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "乏",
-          "",
+          "pauvre",
           "composant"
         ]
       ],
@@ -6224,12 +6224,12 @@
       "components": [
         [
           "广",
-          "",
+          "vaste",
           "composant"
         ],
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ]
       ],
@@ -6263,12 +6263,12 @@
       "components": [
         [
           "尸",
-          "",
+          "cadavre",
           "composant"
         ],
         [
           "乚",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -6303,12 +6303,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "氾",
-          "",
+          "déborder",
           "composant"
         ]
       ],
@@ -6342,12 +6342,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "军",
-          "",
+          "armée",
           "composant"
         ]
       ],
@@ -6382,12 +6382,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "苋",
-          "",
+          "amarante",
           "composant"
         ]
       ],
@@ -6421,17 +6421,17 @@
       "components": [
         [
           "止",
-          "",
+          "arrêter",
           "composant"
         ],
         [
           "凵",
-          "",
+          "récipient",
           "composant"
         ],
         [
           "人",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -6466,12 +6466,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "方",
-          "",
+          "carré",
           "composant"
         ]
       ],
@@ -6505,12 +6505,12 @@
       "components": [
         [
           "忄",
-          "",
+          "cœur",
           "composant"
         ],
         [
           "灰",
-          "",
+          "cendre",
           "composant"
         ]
       ],
@@ -6544,17 +6544,17 @@
       "components": [
         [
           "士",
-          "",
+          "lettré",
           "composant"
         ],
         [
           "示",
-          "",
+          "montrer",
           "composant"
         ],
         [
           "欠",
-          "",
+          "manquer",
           "composant"
         ]
       ],
@@ -6588,12 +6588,12 @@
       "components": [
         [
           "犭",
-          "",
+          "chien",
           "composant"
         ],
         [
           "王",
-          "",
+          "roi",
           "composant"
         ]
       ],
@@ -6627,12 +6627,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "莫",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -6667,12 +6667,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "闰",
-          "",
+          "intercalaire",
           "composant"
         ]
       ],
@@ -6706,17 +6706,17 @@
       "components": [
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "糸",
-          "",
+          "soie",
           "composant"
         ]
       ],
@@ -6778,12 +6778,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "百",
-          "",
+          "cent",
           "composant"
         ]
       ],
@@ -6818,22 +6818,22 @@
       "components": [
         [
           "弓",
-          "",
+          "arc",
           "composant"
         ],
         [
           "冫",
-          "",
+          "glace",
           "composant"
         ],
         [
           "弓",
-          "",
+          "arc",
           "composant"
         ],
         [
           "冫",
-          "",
+          "glace",
           "composant"
         ]
       ],
@@ -6867,17 +6867,17 @@
       "components": [
         [
           "钅",
-          "",
+          "métal",
           "composant"
         ],
         [
           "⺌",
-          "",
+          "petit",
           "composant"
         ],
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ]
       ],
@@ -6911,12 +6911,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "比",
-          "",
+          "comparer",
           "composant"
         ]
       ],
@@ -6950,12 +6950,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "莫",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -6990,12 +6990,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "西",
-          "",
+          "ouest",
           "composant"
         ]
       ],
@@ -7029,12 +7029,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "兆",
-          "",
+          "présage",
           "composant"
         ]
       ],
@@ -7069,12 +7069,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "广",
-          "",
+          "vaste",
           "composant"
         ]
       ],
@@ -7108,12 +7108,12 @@
       "components": [
         [
           "甘",
-          "",
+          "doux",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -7147,22 +7147,22 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "囟",
-          "",
+          "fontanelle",
           "composant"
         ],
         [
           "八",
-          "",
+          "huit",
           "composant"
         ],
         [
           "夂",
-          "",
+          "aller",
           "composant"
         ]
       ],
@@ -7197,17 +7197,17 @@
       "components": [
         [
           "夫",
-          "",
+          "homme",
           "composant"
         ],
         [
           "夫",
-          "",
+          "homme",
           "composant"
         ],
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ]
       ],
@@ -7241,12 +7241,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "舌",
-          "",
+          "langue",
           "composant"
         ]
       ],
@@ -7280,12 +7280,12 @@
       "components": [
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "八",
-          "",
+          "huit",
           "composant"
         ]
       ],
@@ -7319,12 +7319,12 @@
       "components": [
         [
           "厂",
-          "",
+          "falaise",
           "composant"
         ],
         [
           "夏",
-          "",
+          "été",
           "composant"
         ]
       ],
@@ -7359,12 +7359,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "兆",
-          "",
+          "présage",
           "composant"
         ]
       ],
@@ -7426,12 +7426,12 @@
       "components": [
         [
           "莫",
-          "",
+          "personne",
           "composant"
         ],
         [
           "巾",
-          "",
+          "tissu",
           "composant"
         ]
       ],
@@ -7465,12 +7465,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "西",
-          "",
+          "ouest",
           "composant"
         ]
       ],
@@ -7504,12 +7504,12 @@
       "components": [
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ],
         [
           "占",
-          "",
+          "diviner",
           "composant"
         ]
       ],
@@ -7543,12 +7543,12 @@
       "components": [
         [
           "良",
-          "",
+          "bon",
           "composant"
         ],
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ]
       ],
@@ -7582,12 +7582,12 @@
       "components": [
         [
           "大",
-          "",
+          "grand",
           "composant"
         ],
         [
           "示",
-          "",
+          "montrer",
           "composant"
         ]
       ],
@@ -7622,12 +7622,12 @@
       "components": [
         [
           "册",
-          "",
+          "livre",
           "composant"
         ],
         [
           "刂",
-          "",
+          "couteau",
           "composant"
         ]
       ],
@@ -7661,12 +7661,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "充",
-          "",
+          "remplir",
           "composant"
         ]
       ],
@@ -7701,17 +7701,17 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -7745,12 +7745,12 @@
       "components": [
         [
           "今",
-          "",
+          "aujourd'hui",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -7785,12 +7785,12 @@
       "components": [
         [
           "户",
-          "",
+          "porte",
           "composant"
         ],
         [
           "羽",
-          "",
+          "plume",
           "composant"
         ]
       ],
@@ -7824,12 +7824,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "殳",
-          "",
+          "arme",
           "composant"
         ]
       ],
@@ -7864,12 +7864,12 @@
       "components": [
         [
           "女",
-          "",
+          "femme",
           "composant"
         ],
         [
           "老",
-          "",
+          "vieux",
           "composant"
         ]
       ],
@@ -7903,12 +7903,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "农",
-          "",
+          "agriculture",
           "composant"
         ]
       ],
@@ -7943,22 +7943,22 @@
       "components": [
         [
           "羊",
-          "",
+          "mouton",
           "composant"
         ],
         [
           "丷",
-          "",
+          "forme",
           "composant"
         ],
         [
           "一",
-          "",
+          "un",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -7992,12 +7992,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "余",
-          "",
+          "reste",
           "composant"
         ]
       ],
@@ -8032,12 +8032,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "目",
-          "",
+          "œil",
           "composant"
         ]
       ],
@@ -8072,12 +8072,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "我",
-          "",
+          "je",
           "composant"
         ]
       ],
@@ -8111,12 +8111,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "亶",
-          "",
+          "sincère",
           "composant"
         ]
       ],
@@ -8150,12 +8150,12 @@
       "components": [
         [
           "免",
-          "",
+          "épargner",
           "composant"
         ],
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -8190,12 +8190,12 @@
       "components": [
         [
           "米",
-          "",
+          "riz",
           "composant"
         ],
         [
           "大",
-          "",
+          "grand",
           "composant"
         ]
       ],
@@ -8230,12 +8230,12 @@
       "components": [
         [
           "区",
-          "",
+          "zone",
           "composant"
         ],
         [
           "欠",
-          "",
+          "manquer",
           "composant"
         ]
       ],
@@ -8269,12 +8269,12 @@
       "components": [
         [
           "尚",
-          "",
+          "encore",
           "composant"
         ],
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ]
       ],
@@ -8309,12 +8309,12 @@
       "components": [
         [
           "囗",
-          "",
+          "enceinte",
           "composant"
         ],
         [
           "才",
-          "",
+          "talent",
           "composant"
         ]
       ],
@@ -8348,12 +8348,12 @@
       "components": [
         [
           "厂",
-          "",
+          "falaise",
           "composant"
         ],
         [
           "里",
-          "",
+          "li (500 m)",
           "composant"
         ]
       ],
@@ -8415,12 +8415,12 @@
       "components": [
         [
           "虫",
-          "",
+          "insecte",
           "composant"
         ],
         [
           "它",
-          "",
+          "il",
           "composant"
         ]
       ],
@@ -8455,12 +8455,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "艮",
-          "",
+          "obstiné",
           "composant"
         ]
       ],
@@ -8494,12 +8494,12 @@
       "components": [
         [
           "利",
-          "",
+          "gain",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -8533,12 +8533,12 @@
       "components": [
         [
           "土",
-          "",
+          "terre",
           "composant"
         ],
         [
           "咅",
-          "",
+          "cracher",
           "composant"
         ]
       ],
@@ -8572,12 +8572,12 @@
       "components": [
         [
           "人",
-          "",
+          "personne",
           "composant"
         ],
         [
           "舌",
-          "",
+          "langue",
           "composant"
         ]
       ],
@@ -8612,17 +8612,17 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "也",
-          "",
+          "aussi",
           "composant"
         ]
       ],
@@ -8657,12 +8657,12 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "离",
-          "",
+          "bête rare",
           "composant"
         ]
       ],
@@ -8696,12 +8696,12 @@
       "components": [
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ],
         [
           "咅",
-          "",
+          "cracher",
           "composant"
         ]
       ],
@@ -8735,12 +8735,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "殳",
-          "",
+          "arme",
           "composant"
         ]
       ],
@@ -8775,12 +8775,12 @@
       "components": [
         [
           "亦",
-          "",
+          "aussi",
           "composant"
         ],
         [
           "弓",
-          "",
+          "arc",
           "composant"
         ]
       ],
@@ -8814,17 +8814,17 @@
       "components": [
         [
           "亠",
-          "",
+          "forme",
           "composant"
         ],
         [
           "丷",
-          "",
+          "forme",
           "composant"
         ],
         [
           "一",
-          "",
+          "un",
           "composant"
         ]
       ],
@@ -8859,12 +8859,12 @@
       "components": [
         [
           "酉",
-          "",
+          "coq",
           "composant"
         ],
         [
           "己",
-          "",
+          "soi",
           "composant"
         ]
       ],
@@ -8898,12 +8898,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "申",
-          "",
+          "signaler",
           "composant"
         ]
       ],
@@ -8938,12 +8938,12 @@
       "components": [
         [
           "戌",
-          "",
+          "11e rameau terrestre",
           "composant"
         ],
         [
           "女",
-          "",
+          "femme",
           "composant"
         ]
       ],
@@ -8977,12 +8977,12 @@
       "components": [
         [
           "亦",
-          "",
+          "aussi",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -9017,12 +9017,12 @@
       "components": [
         [
           "分",
-          "",
+          "diviser",
           "composant"
         ],
         [
           "皿",
-          "",
+          "vaisselle",
           "composant"
         ]
       ],
@@ -9056,12 +9056,12 @@
       "components": [
         [
           "礻",
-          "",
+          "autel",
           "composant"
         ],
         [
           "申",
-          "",
+          "signaler",
           "composant"
         ]
       ],
@@ -9096,12 +9096,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "韦",
-          "",
+          "cuir",
           "composant"
         ]
       ],
@@ -9135,12 +9135,12 @@
       "components": [
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ],
         [
           "艮",
-          "",
+          "obstiné",
           "composant"
         ]
       ],
@@ -9175,12 +9175,12 @@
       "components": [
         [
           "石",
-          "",
+          "pierre",
           "composant"
         ],
         [
           "並",
-          "",
+          "ensemble",
           "composant"
         ]
       ],
@@ -9214,12 +9214,12 @@
       "components": [
         [
           "忄",
-          "",
+          "cœur",
           "composant"
         ],
         [
           "真",
-          "",
+          "vrai",
           "composant"
         ]
       ],
@@ -9254,12 +9254,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "隹",
-          "",
+          "oiseau",
           "composant"
         ]
       ],
@@ -9293,12 +9293,12 @@
       "components": [
         [
           "米",
-          "",
+          "riz",
           "composant"
         ],
         [
           "良",
-          "",
+          "bon",
           "composant"
         ]
       ],
@@ -9333,12 +9333,12 @@
       "components": [
         [
           "匸",
-          "",
+          "cacher",
           "composant"
         ],
         [
           "儿",
-          "",
+          "fils",
           "composant"
         ]
       ],
@@ -9400,12 +9400,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "隹",
-          "",
+          "oiseau",
           "composant"
         ]
       ],
@@ -9439,12 +9439,12 @@
       "components": [
         [
           "疒",
-          "",
+          "maladie",
           "composant"
         ],
         [
           "了",
-          "",
+          "particule d'action accomplie",
           "composant"
         ]
       ],
@@ -9478,12 +9478,12 @@
       "components": [
         [
           "马",
-          "",
+          "cheval",
           "composant"
         ],
         [
           "扁",
-          "",
+          "plat",
           "composant"
         ]
       ],
@@ -9518,12 +9518,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "生",
-          "",
+          "naître",
           "composant"
         ]
       ],
@@ -9557,12 +9557,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "韦",
-          "",
+          "cuir",
           "composant"
         ]
       ],
@@ -9597,12 +9597,12 @@
       "components": [
         [
           "列",
-          "",
+          "ligne",
           "composant"
         ],
         [
           "灬",
-          "",
+          "feu",
           "composant"
         ]
       ],
@@ -9637,12 +9637,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "并",
-          "",
+          "combiner",
           "composant"
         ]
       ],
@@ -9676,12 +9676,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "寺",
-          "",
+          "temple",
           "composant"
         ]
       ],
@@ -9715,12 +9715,12 @@
       "components": [
         [
           "尸",
-          "",
+          "cadavre",
           "composant"
         ],
         [
           "毛",
-          "",
+          "poil",
           "composant"
         ]
       ],
@@ -9782,12 +9782,12 @@
       "components": [
         [
           "任",
-          "",
+          "confier",
           "composant"
         ],
         [
           "几",
-          "",
+          "combien",
           "composant"
         ]
       ],
@@ -9822,12 +9822,12 @@
       "components": [
         [
           "方",
-          "",
+          "carré",
           "composant"
         ],
         [
           "㐌",
-          "",
+          "forme",
           "composant"
         ]
       ],
@@ -9861,12 +9861,12 @@
       "components": [
         [
           "一",
-          "",
+          "un",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -9901,12 +9901,12 @@
       "components": [
         [
           "彐",
-          "",
+          "groin",
           "composant"
         ],
         [
           "火",
-          "",
+          "feu",
           "composant"
         ]
       ],
@@ -9941,12 +9941,12 @@
       "components": [
         [
           "户",
-          "",
+          "porte",
           "composant"
         ],
         [
           "并",
-          "",
+          "combiner",
           "composant"
         ]
       ],
@@ -9980,12 +9980,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "显",
-          "",
+          "clair",
           "composant"
         ]
       ],
@@ -10019,12 +10019,12 @@
       "components": [
         [
           "田",
-          "",
+          "champ cultivé",
           "composant"
         ],
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ]
       ],
@@ -10058,12 +10058,12 @@
       "components": [
         [
           "钅",
-          "",
+          "métal",
           "composant"
         ],
         [
           "令",
-          "",
+          "ordre",
           "composant"
         ]
       ],
@@ -10098,12 +10098,12 @@
       "components": [
         [
           "波",
-          "",
+          "vague",
           "composant"
         ],
         [
           "女",
-          "",
+          "femme",
           "composant"
         ]
       ],
@@ -10138,12 +10138,12 @@
       "components": [
         [
           "厂",
-          "",
+          "falaise",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -10178,12 +10178,12 @@
       "components": [
         [
           "尉",
-          "",
+          "officier",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -10217,12 +10217,12 @@
       "components": [
         [
           "令",
-          "",
+          "ordre",
           "composant"
         ],
         [
           "页",
-          "",
+          "page",
           "composant"
         ]
       ],
@@ -10285,12 +10285,12 @@
       "components": [
         [
           "马",
-          "",
+          "cheval",
           "composant"
         ],
         [
           "史",
-          "",
+          "histoire",
           "composant"
         ]
       ],
@@ -10324,12 +10324,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "急",
-          "",
+          "pressé",
           "composant"
         ]
       ],
@@ -10391,12 +10391,12 @@
       "components": [
         [
           "人",
-          "",
+          "personne",
           "composant"
         ],
         [
           "止",
-          "",
+          "arrêter",
           "composant"
         ]
       ],
@@ -10430,12 +10430,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "以",
-          "",
+          "selon",
           "composant"
         ]
       ],
@@ -10469,12 +10469,12 @@
       "components": [
         [
           "臣",
-          "",
+          "ministre",
           "composant"
         ],
         [
           "卜",
-          "",
+          "divination",
           "composant"
         ]
       ],
@@ -10509,12 +10509,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "刘",
-          "",
+          "tuer",
           "composant"
         ]
       ],
@@ -10548,27 +10548,27 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "犬",
-          "",
+          "chien",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -10603,12 +10603,12 @@
       "components": [
         [
           "执",
-          "",
+          "exécuter",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -10642,12 +10642,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "屋",
-          "",
+          "bâtiment",
           "composant"
         ]
       ],
@@ -10682,12 +10682,12 @@
       "components": [
         [
           "尤",
-          "",
+          "surtout",
           "composant"
         ],
         [
           "丿",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -10721,12 +10721,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "戋",
-          "",
+          "petit",
           "composant"
         ]
       ],
@@ -10788,12 +10788,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "五",
-          "",
+          "cinq",
           "composant"
         ]
       ],
@@ -10827,12 +10827,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "屚",
-          "",
+          "fuite",
           "composant"
         ]
       ],
@@ -10867,12 +10867,12 @@
       "components": [
         [
           "⺈",
-          "",
+          "couteau",
           "composant"
         ],
         [
           "人",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -10906,12 +10906,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "寸",
-          "",
+          "pouce",
           "composant"
         ]
       ],
@@ -10946,17 +10946,17 @@
       "components": [
         [
           "一",
-          "",
+          "un",
           "composant"
         ],
         [
           "弋",
-          "",
+          "flèche",
           "composant"
         ],
         [
           "止",
-          "",
+          "arrêter",
           "composant"
         ]
       ],
@@ -10990,12 +10990,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "击",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -11030,12 +11030,12 @@
       "components": [
         [
           "土",
-          "",
+          "terre",
           "composant"
         ],
         [
           "啬",
-          "",
+          "épargne",
           "composant"
         ]
       ],
@@ -11069,12 +11069,12 @@
       "components": [
         [
           "歹",
-          "",
+          "mauvais",
           "composant"
         ],
         [
           "朱",
-          "",
+          "vermillon",
           "composant"
         ]
       ],
@@ -11109,12 +11109,12 @@
       "components": [
         [
           "雨",
-          "",
+          "pluie",
           "composant"
         ],
         [
           "务",
-          "",
+          "affaires",
           "composant"
         ]
       ],
@@ -11148,12 +11148,12 @@
       "components": [
         [
           "彐",
-          "",
+          "groin",
           "composant"
         ],
         [
           "氺",
-          "",
+          "eau",
           "composant"
         ]
       ],
@@ -11188,12 +11188,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "仓",
-          "",
+          "grenier",
           "composant"
         ]
       ],
@@ -11227,12 +11227,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "疏",
-          "",
+          "clairsemé",
           "composant"
         ]
       ],
@@ -11267,12 +11267,12 @@
       "components": [
         [
           "勹",
-          "",
+          "envelopper",
           "composant"
         ],
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -11306,12 +11306,12 @@
       "components": [
         [
           "石",
-          "",
+          "pierre",
           "composant"
         ],
         [
           "录",
-          "",
+          "enregistrer",
           "composant"
         ]
       ],
@@ -11345,12 +11345,12 @@
       "components": [
         [
           "忄",
-          "",
+          "cœur",
           "composant"
         ],
         [
           "肖",
-          "",
+          "ressembler",
           "composant"
         ]
       ],
@@ -11385,12 +11385,12 @@
       "components": [
         [
           "尸",
-          "",
+          "cadavre",
           "composant"
         ],
         [
           "禹",
-          "",
+          "Yu le Grand",
           "composant"
         ]
       ],
@@ -11424,12 +11424,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "斤",
-          "",
+          "livre (≈500 g)",
           "composant"
         ]
       ],
@@ -11464,12 +11464,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "罗",
-          "",
+          "filet",
           "composant"
         ]
       ],
@@ -11503,12 +11503,12 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "加",
-          "",
+          "ajouter",
           "composant"
         ]
       ],
@@ -11570,17 +11570,17 @@
       "components": [
         [
           "广",
-          "",
+          "vaste",
           "composant"
         ],
         [
           "廿",
-          "",
+          "vingt",
           "composant"
         ],
         [
           "巾",
-          "",
+          "tissu",
           "composant"
         ]
       ],
@@ -11614,12 +11614,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "各",
-          "",
+          "chaque",
           "composant"
         ]
       ],
@@ -11654,12 +11654,12 @@
       "components": [
         [
           "堇",
-          "",
+          "argile jaune",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -11693,12 +11693,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "术",
-          "",
+          "art",
           "composant"
         ]
       ],
@@ -11733,12 +11733,12 @@
       "components": [
         [
           "门",
-          "",
+          "porte",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -11799,12 +11799,12 @@
       "components": [
         [
           "穴",
-          "",
+          "caverne",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -11839,12 +11839,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "率",
-          "",
+          "commander",
           "composant"
         ]
       ],
@@ -11878,12 +11878,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "业",
-          "",
+          "métier",
           "composant"
         ]
       ],
@@ -11918,17 +11918,17 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "马",
-          "",
+          "cheval",
           "composant"
         ]
       ],
@@ -11962,17 +11962,17 @@
       "components": [
         [
           "曰",
-          "",
+          "dire",
           "composant"
         ],
         [
           "丨",
-          "",
+          "trait",
           "composant"
         ],
         [
           "丨",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -12007,12 +12007,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "兑",
-          "",
+          "échanger",
           "composant"
         ]
       ],
@@ -12046,12 +12046,12 @@
       "components": [
         [
           "且",
-          "",
+          "de plus",
           "composant"
         ],
         [
           "厶",
-          "",
+          "privé",
           "composant"
         ]
       ],
@@ -12113,12 +12113,12 @@
       "components": [
         [
           "走",
-          "",
+          "marcher",
           "composant"
         ],
         [
           "刍",
-          "",
+          "foin",
           "composant"
         ]
       ],
@@ -12153,12 +12153,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "厶",
-          "",
+          "privé",
           "composant"
         ]
       ],
@@ -12192,12 +12192,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "艮",
-          "",
+          "obstiné",
           "composant"
         ]
       ],
@@ -12232,12 +12232,12 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -12271,12 +12271,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "又",
-          "",
+          "et",
           "composant"
         ]
       ],
@@ -12311,12 +12311,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "叟",
-          "",
+          "vieillard",
           "composant"
         ]
       ],
@@ -12350,12 +12350,12 @@
       "components": [
         [
           "南",
-          "",
+          "sud",
           "composant"
         ],
         [
           "犬",
-          "",
+          "chien",
           "composant"
         ]
       ],
@@ -12390,12 +12390,12 @@
       "components": [
         [
           "女",
-          "",
+          "femme",
           "composant"
         ],
         [
           "某",
-          "",
+          "un certain",
           "composant"
         ]
       ],
@@ -12429,12 +12429,12 @@
       "components": [
         [
           "又",
-          "",
+          "et",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -12469,12 +12469,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "谷",
-          "",
+          "vallée",
           "composant"
         ]
       ],
@@ -12508,12 +12508,12 @@
       "components": [
         [
           "厂",
-          "",
+          "falaise",
           "composant"
         ],
         [
           "相",
-          "",
+          "mutuel",
           "composant"
         ]
       ],
@@ -12548,12 +12548,12 @@
       "components": [
         [
           "鬼",
-          "",
+          "fantôme",
           "composant"
         ],
         [
           "未",
-          "",
+          "pas encore",
           "composant"
         ]
       ],
@@ -12587,12 +12587,12 @@
       "components": [
         [
           "君",
-          "",
+          "seigneur",
           "composant"
         ],
         [
           "羊",
-          "",
+          "mouton",
           "composant"
         ]
       ],
@@ -12654,17 +12654,17 @@
       "components": [
         [
           "亠",
-          "",
+          "forme",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "子",
-          "",
+          "enfant",
           "composant"
         ]
       ],
@@ -12699,12 +12699,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "必",
-          "",
+          "certes",
           "composant"
         ]
       ],
@@ -12739,12 +12739,12 @@
       "components": [
         [
           "火",
-          "",
+          "feu",
           "composant"
         ],
         [
           "然",
-          "",
+          "certes",
           "composant"
         ]
       ],
@@ -12778,12 +12778,12 @@
       "components": [
         [
           "龶",
-          "",
+          "forme",
           "composant"
         ],
         [
           "糸",
-          "",
+          "soie",
           "composant"
         ]
       ],
@@ -12818,12 +12818,12 @@
       "components": [
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ],
         [
           "象",
-          "",
+          "éléphant",
           "composant"
         ]
       ],
@@ -12857,12 +12857,12 @@
       "components": [
         [
           "目",
-          "",
+          "œil",
           "composant"
         ],
         [
           "民",
-          "",
+          "citoyens",
           "composant"
         ]
       ],
@@ -12897,12 +12897,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "尧",
-          "",
+          "haut",
           "composant"
         ]
       ],
@@ -12936,12 +12936,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "佰",
-          "",
+          "cent",
           "composant"
         ]
       ],
@@ -12976,12 +12976,12 @@
       "components": [
         [
           "钅",
-          "",
+          "métal",
           "composant"
         ],
         [
           "肖",
-          "",
+          "ressembler",
           "composant"
         ]
       ],
@@ -13015,12 +13015,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "苗",
-          "",
+          "jeune plant",
           "composant"
         ]
       ],
@@ -13055,12 +13055,12 @@
       "components": [
         [
           "刃",
-          "",
+          "lame",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -13094,12 +13094,12 @@
       "components": [
         [
           "石",
-          "",
+          "pierre",
           "composant"
         ],
         [
           "卒",
-          "",
+          "soldat",
           "composant"
         ]
       ],
@@ -13134,12 +13134,12 @@
       "components": [
         [
           "⺌",
-          "",
+          "petit",
           "composant"
         ],
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ]
       ],
@@ -13173,12 +13173,12 @@
       "components": [
         [
           "每",
-          "",
+          "chaque",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -13212,17 +13212,17 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "木",
-          "",
+          "arbre",
           "composant"
         ]
       ],
@@ -13257,12 +13257,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "员",
-          "",
+          "employé",
           "composant"
         ]
       ],
@@ -13296,12 +13296,12 @@
       "components": [
         [
           "十",
-          "",
+          "dix",
           "composant"
         ],
         [
           "办",
-          "",
+          "gérer",
           "composant"
         ]
       ],
@@ -13336,12 +13336,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "莫",
-          "",
+          "personne",
           "composant"
         ]
       ],
@@ -13375,12 +13375,12 @@
       "components": [
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ],
         [
           "欠",
-          "",
+          "manquer",
           "composant"
         ]
       ],
@@ -13415,12 +13415,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "宿",
-          "",
+          "loger",
           "composant"
         ]
       ],
@@ -13454,12 +13454,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "办",
-          "",
+          "gérer",
           "composant"
         ]
       ],
@@ -13494,12 +13494,12 @@
       "components": [
         [
           "余",
-          "",
+          "reste",
           "composant"
         ],
         [
           "斗",
-          "",
+          "lutter",
           "composant"
         ]
       ],
@@ -13561,12 +13561,12 @@
       "components": [
         [
           "兟",
-          "",
+          "avancer",
           "composant"
         ],
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ]
       ],
@@ -13628,12 +13628,12 @@
       "components": [
         [
           "斤",
-          "",
+          "livre (≈500 g)",
           "composant"
         ],
         [
           "欠",
-          "",
+          "manquer",
           "composant"
         ]
       ],
@@ -13668,12 +13668,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "乙",
-          "",
+          "second",
           "composant"
         ]
       ],
@@ -13707,12 +13707,12 @@
       "components": [
         [
           "米",
-          "",
+          "riz",
           "composant"
         ],
         [
           "曹",
-          "",
+          "groupe",
           "composant"
         ]
       ],
@@ -13747,12 +13747,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "台",
-          "",
+          "plateforme",
           "composant"
         ]
       ],
@@ -13786,12 +13786,12 @@
       "components": [
         [
           "开",
-          "",
+          "ouvrir",
           "composant"
         ],
         [
           "彡",
-          "",
+          "poils",
           "composant"
         ]
       ],
@@ -13826,12 +13826,12 @@
       "components": [
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ],
         [
           "乂",
-          "",
+          "couper",
           "composant"
         ]
       ],
@@ -13865,12 +13865,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "告",
-          "",
+          "annoncer",
           "composant"
         ]
       ],
@@ -13905,12 +13905,12 @@
       "components": [
         [
           "至",
-          "",
+          "atteindre",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -13944,12 +13944,12 @@
       "components": [
         [
           "刑",
-          "",
+          "châtiment",
           "composant"
         ],
         [
           "土",
-          "",
+          "terre",
           "composant"
         ]
       ],
@@ -13983,12 +13983,12 @@
       "components": [
         [
           "水",
-          "",
+          "eau",
           "composant"
         ],
         [
           "皿",
-          "",
+          "vaisselle",
           "composant"
         ]
       ],
@@ -14023,12 +14023,12 @@
       "components": [
         [
           "贝",
-          "",
+          "coquillage",
           "composant"
         ],
         [
           "曾",
-          "",
+          "déjà",
           "composant"
         ]
       ],
@@ -14062,12 +14062,12 @@
       "components": [
         [
           "知",
-          "",
+          "savoir",
           "composant"
         ],
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ]
       ],
@@ -14102,12 +14102,12 @@
       "components": [
         [
           "虍",
-          "",
+          "tigre",
           "composant"
         ],
         [
           "业",
-          "",
+          "métier",
           "composant"
         ]
       ],
@@ -14141,17 +14141,17 @@
       "components": [
         [
           "艹",
-          "",
+          "herbe",
           "composant"
         ],
         [
           "冖",
-          "",
+          "forme",
           "composant"
         ],
         [
           "吕",
-          "",
+          "note",
           "composant"
         ]
       ],
@@ -14186,12 +14186,12 @@
       "components": [
         [
           "火",
-          "",
+          "feu",
           "composant"
         ],
         [
           "乍",
-          "",
+          "soudain",
           "composant"
         ]
       ],
@@ -14225,12 +14225,12 @@
       "components": [
         [
           "罒",
-          "",
+          "filet",
           "composant"
         ],
         [
           "直",
-          "",
+          "droit",
           "composant"
         ]
       ],
@@ -14265,12 +14265,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "者",
-          "",
+          "celui qui",
           "composant"
         ]
       ],
@@ -14304,12 +14304,12 @@
       "components": [
         [
           "日",
-          "",
+          "soleil",
           "composant"
         ],
         [
           "央",
-          "",
+          "centre",
           "composant"
         ]
       ],
@@ -14344,12 +14344,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "啇",
-          "",
+          "souche",
           "composant"
         ]
       ],
@@ -14383,12 +14383,12 @@
       "components": [
         [
           "犭",
-          "",
+          "chien",
           "composant"
         ],
         [
           "者",
-          "",
+          "celui qui",
           "composant"
         ]
       ],
@@ -14423,12 +14423,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "亘",
-          "",
+          "étendre",
           "composant"
         ]
       ],
@@ -14462,12 +14462,12 @@
       "components": [
         [
           "石",
-          "",
+          "pierre",
           "composant"
         ],
         [
           "更",
-          "",
+          "plus",
           "composant"
         ]
       ],
@@ -14502,12 +14502,12 @@
       "components": [
         [
           "穴",
-          "",
+          "caverne",
           "composant"
         ],
         [
           "乍",
-          "",
+          "soudain",
           "composant"
         ]
       ],
@@ -14569,12 +14569,12 @@
       "components": [
         [
           "彐",
-          "",
+          "groin",
           "composant"
         ],
         [
           "寸",
-          "",
+          "pouce",
           "composant"
         ]
       ],
@@ -14608,12 +14608,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "用",
-          "",
+          "utiliser",
           "composant"
         ]
       ],
@@ -14648,12 +14648,12 @@
       "components": [
         [
           "⺊",
-          "",
+          "divination",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -14687,12 +14687,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "豕",
-          "",
+          "porc",
           "composant"
         ]
       ],
@@ -14727,12 +14727,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "旬",
-          "",
+          "décade",
           "composant"
         ]
       ],
@@ -14766,12 +14766,12 @@
       "components": [
         [
           "攸",
-          "",
+          "lieu",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -14806,12 +14806,12 @@
       "components": [
         [
           "占",
-          "",
+          "diviner",
           "composant"
         ],
         [
           "戈",
-          "",
+          "hallebarde",
           "composant"
         ]
       ],
@@ -14845,12 +14845,12 @@
       "components": [
         [
           "者",
-          "",
+          "celui qui",
           "composant"
         ],
         [
           "灬",
-          "",
+          "feu",
           "composant"
         ]
       ],
@@ -14884,12 +14884,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "川",
-          "",
+          "rivière",
           "composant"
         ]
       ],
@@ -14924,12 +14924,12 @@
       "components": [
         [
           "犭",
-          "",
+          "chien",
           "composant"
         ],
         [
           "尤",
-          "",
+          "surtout",
           "composant"
         ]
       ],
@@ -14963,12 +14963,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "张",
-          "",
+          "déployer",
           "composant"
         ]
       ],
@@ -15003,12 +15003,12 @@
       "components": [
         [
           "⺮",
-          "",
+          "bambou",
           "composant"
         ],
         [
           "巩",
-          "",
+          "lier",
           "composant"
         ]
       ],
@@ -15042,12 +15042,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "卂",
-          "",
+          "rapide",
           "composant"
         ]
       ],
@@ -15081,12 +15081,12 @@
       "components": [
         [
           "幺",
-          "",
+          "petit",
           "composant"
         ],
         [
           "力",
-          "",
+          "force",
           "composant"
         ]
       ],
@@ -15121,12 +15121,12 @@
       "components": [
         [
           "尚",
-          "",
+          "encore",
           "composant"
         ],
         [
           "手",
-          "",
+          "main",
           "composant"
         ]
       ],
@@ -15160,12 +15160,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "爪",
-          "",
+          "griffe",
           "composant"
         ]
       ],
@@ -15200,12 +15200,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "甲",
-          "",
+          "armure",
           "composant"
         ]
       ],
@@ -15267,12 +15267,12 @@
       "components": [
         [
           "刀",
-          "",
+          "couteau",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -15306,12 +15306,12 @@
       "components": [
         [
           "丬",
-          "",
+          "bois",
           "composant"
         ],
         [
           "犬",
-          "",
+          "chien",
           "composant"
         ]
       ],
@@ -15346,12 +15346,12 @@
       "components": [
         [
           "甲",
-          "",
+          "armure",
           "composant"
         ],
         [
           "鸟",
-          "",
+          "oiseau",
           "composant"
         ]
       ],
@@ -15385,12 +15385,12 @@
       "components": [
         [
           "女",
-          "",
+          "femme",
           "composant"
         ],
         [
           "吴",
-          "",
+          "parler",
           "composant"
         ]
       ],
@@ -15425,12 +15425,12 @@
       "components": [
         [
           "折",
-          "",
+          "casser",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -15464,12 +15464,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "童",
-          "",
+          "enfant",
           "composant"
         ]
       ],
@@ -15504,12 +15504,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "牙",
-          "",
+          "dent",
           "composant"
         ]
       ],
@@ -15543,12 +15543,12 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "丶",
-          "",
+          "trait",
           "composant"
         ]
       ],
@@ -15583,17 +15583,17 @@
       "components": [
         [
           "王",
-          "",
+          "roi",
           "composant"
         ],
         [
           "人",
-          "",
+          "personne",
           "composant"
         ],
         [
           "彡",
-          "",
+          "poils",
           "composant"
         ]
       ],
@@ -15627,17 +15627,17 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "丿",
-          "",
+          "trait",
           "composant"
         ],
         [
           "㠯",
-          "",
+          "avec",
           "composant"
         ]
       ],
@@ -15672,12 +15672,12 @@
       "components": [
         [
           "丿",
-          "",
+          "trait",
           "composant"
         ],
         [
           "㢟",
-          "",
+          "marcher",
           "composant"
         ]
       ],
@@ -15711,12 +15711,12 @@
       "components": [
         [
           "土",
-          "",
+          "terre",
           "composant"
         ],
         [
           "或",
-          "",
+          "ou",
           "composant"
         ]
       ],
@@ -15751,12 +15751,12 @@
       "components": [
         [
           "讠",
-          "",
+          "parole",
           "composant"
         ],
         [
           "㐱",
-          "",
+          "cheveux",
           "composant"
         ]
       ],
@@ -15790,12 +15790,12 @@
       "components": [
         [
           "次",
-          "",
+          "fois",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -15830,17 +15830,17 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "几",
-          "",
+          "combien",
           "composant"
         ],
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ]
       ],
@@ -15874,12 +15874,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "俞",
-          "",
+          "approuver",
           "composant"
         ]
       ],
@@ -15914,12 +15914,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ]
       ],
@@ -15953,12 +15953,12 @@
       "components": [
         [
           "次",
-          "",
+          "fois",
           "composant"
         ],
         [
           "女",
-          "",
+          "femme",
           "composant"
         ]
       ],
@@ -15993,12 +15993,12 @@
       "components": [
         [
           "⺼",
-          "",
+          "chair",
           "composant"
         ],
         [
           "要",
-          "",
+          "vouloir",
           "composant"
         ]
       ],
@@ -16032,12 +16032,12 @@
       "components": [
         [
           "宀",
-          "",
+          "toit",
           "composant"
         ],
         [
           "禺",
-          "",
+          "singe",
           "composant"
         ]
       ],
@@ -16072,12 +16072,12 @@
       "components": [
         [
           "雨",
-          "",
+          "pluie",
           "composant"
         ],
         [
           "辰",
-          "",
+          "dragon",
           "composant"
         ]
       ],
@@ -16111,12 +16111,12 @@
       "components": [
         [
           "此",
-          "",
+          "ce",
           "composant"
         ],
         [
           "糸",
-          "",
+          "soie",
           "composant"
         ]
       ],
@@ -16151,12 +16151,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "䍃",
-          "",
+          "jarre",
           "composant"
         ]
       ],
@@ -16190,12 +16190,12 @@
       "components": [
         [
           "予",
-          "",
+          "donner",
           "composant"
         ],
         [
           "象",
-          "",
+          "éléphant",
           "composant"
         ]
       ],
@@ -16230,12 +16230,12 @@
       "components": [
         [
           "彳",
-          "",
+          "pas",
           "composant"
         ],
         [
           "正",
-          "",
+          "droit",
           "composant"
         ]
       ],
@@ -16269,12 +16269,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "宗",
-          "",
+          "ancêtre",
           "composant"
         ]
       ],
@@ -16309,12 +16309,12 @@
       "components": [
         [
           "口",
-          "",
+          "bouche",
           "composant"
         ],
         [
           "交",
-          "",
+          "relier",
           "composant"
         ]
       ],
@@ -16348,12 +16348,12 @@
       "components": [
         [
           "囗",
-          "",
+          "enceinte",
           "composant"
         ],
         [
           "员",
-          "",
+          "employé",
           "composant"
         ]
       ],
@@ -16388,12 +16388,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "争",
-          "",
+          "disputer",
           "composant"
         ]
       ],
@@ -16427,12 +16427,12 @@
       "components": [
         [
           "阝",
-          "",
+          "colline",
           "composant"
         ],
         [
           "且",
-          "",
+          "de plus",
           "composant"
         ]
       ],
@@ -16467,12 +16467,12 @@
       "components": [
         [
           "亻",
-          "",
+          "personne",
           "composant"
         ],
         [
           "衣",
-          "",
+          "vêtement",
           "composant"
         ]
       ],
@@ -16506,12 +16506,12 @@
       "components": [
         [
           "氵",
-          "",
+          "eau",
           "composant"
         ],
         [
           "原",
-          "",
+          "source",
           "composant"
         ]
       ],
@@ -16546,12 +16546,12 @@
       "components": [
         [
           "正",
-          "",
+          "droit",
           "composant"
         ],
         [
           "攵",
-          "",
+          "frapper",
           "composant"
         ]
       ],
@@ -16585,12 +16585,12 @@
       "components": [
         [
           "酉",
-          "",
+          "coq",
           "composant"
         ],
         [
           "卒",
-          "",
+          "soldat",
           "composant"
         ]
       ],
@@ -16625,12 +16625,12 @@
       "components": [
         [
           "禾",
-          "",
+          "céréale",
           "composant"
         ],
         [
           "多",
-          "",
+          "beaucoup",
           "composant"
         ]
       ],
@@ -16664,12 +16664,12 @@
       "components": [
         [
           "夗",
-          "",
+          "se retourner",
           "composant"
         ],
         [
           "心",
-          "",
+          "cœur",
           "composant"
         ]
       ],
@@ -16704,12 +16704,12 @@
       "components": [
         [
           "纟",
-          "",
+          "soie",
           "composant"
         ],
         [
           "只",
-          "",
+          "seulement",
           "composant"
         ]
       ],
@@ -16743,12 +16743,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "尊",
-          "",
+          "honorer",
           "composant"
         ]
       ],
@@ -16783,12 +16783,12 @@
       "components": [
         [
           "辶",
-          "",
+          "marche",
           "composant"
         ],
         [
           "贵",
-          "",
+          "cher",
           "composant"
         ]
       ],
@@ -16822,12 +16822,12 @@
       "components": [
         [
           "哉",
-          "",
+          "particule",
           "composant"
         ],
         [
           "车",
-          "",
+          "véhicule",
           "composant"
         ]
       ],
@@ -16862,12 +16862,12 @@
       "components": [
         [
           "扌",
-          "",
+          "main",
           "composant"
         ],
         [
           "丸",
-          "",
+          "boule",
           "composant"
         ]
       ],

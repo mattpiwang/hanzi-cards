@@ -1393,7 +1393,7 @@ function brancherRechercheAccueil() {
   var accueilPaquets = null;
   /* Le niveau que les pastilles font regarder au résumé : « tout » au départ. */
   var accueilNiveau = 'tout';
-  var NOMS_NIVEAUX = { hsk1: 'HSK 1', hsk2: 'HSK 2', hsk3: 'HSK 3', hsk4: 'HSK 4', hsk5: 'HSK 5', expr: 'Expressions' };
+  var NOMS_NIVEAUX = { hsk1: 'HSK 1', hsk2: 'HSK 2', hsk3: 'HSK 3', hsk4: 'HSK 4', hsk5: 'HSK 5', hsk6: 'HSK 6', expr: 'Expressions' };
 
   function etatAccueil(c, prog) {
     var p = prog && prog[c.char];
@@ -1534,7 +1534,7 @@ function brancherRechercheAccueil() {
   function chargerAccueil(force) {
     if (accueilFait && !force) { return; }
     accueilFait = true;
-    var niveaux = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
+    var niveaux = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
     try {
       Promise.all(niveaux.map(function (n) {
         return fetch('data/cards-' + n + '.json', { cache: 'no-store' })
@@ -2147,7 +2147,7 @@ function brancherRechercheAccueil() {
      fichiers à la fois. */
   /* Doit suivre la version du service worker (CACHE ci-dessous) : c'est ce qui
      permet de savoir quelle version le navigateur sert vraiment. */
-  var VERSION = '258';
+  var VERSION = '259';
 
   var NIVEAUX = [
     { cle: 'hsk1', nom: 'HSK 1', fichiers: ['data/cards-hsk1.json'] },
@@ -2155,8 +2155,9 @@ function brancherRechercheAccueil() {
     { cle: 'hsk3', nom: 'HSK 3', fichiers: ['data/cards-hsk3.json'] },
     { cle: 'hsk4', nom: 'HSK 4', fichiers: ['data/cards-hsk4.json'] },
     { cle: 'hsk5', nom: 'HSK 5', fichiers: ['data/cards-hsk5.json'] },
+    { cle: 'hsk6', nom: 'HSK 6', fichiers: ['data/cards-hsk6.json'] },
     { cle: 'expr', nom: 'Expressions', fichiers: ['data/cards-expressions.json'] },
-    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json', 'data/cards-hsk4.json', 'data/cards-hsk5.json'] }
+    { cle: 'tout', nom: 'Tous les niveaux', fichiers: ['data/cards-hsk1.json', 'data/cards-hsk2.json', 'data/cards-hsk3.json', 'data/cards-hsk4.json', 'data/cards-hsk5.json', 'data/cards-hsk6.json'] }
   ];
 
   /* Le niveau demandé : ?niveau=hsk2 dans l'adresse, sinon celui de la dernière

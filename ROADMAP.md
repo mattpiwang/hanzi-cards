@@ -1,14 +1,27 @@
 # Feuille de route — Cartes 汉字
 
-**État actuel** (16/10, version 87) : **662 fiches** — 253 du HSK 1 (41 écrites à
-la main en français + 212 importées), 125 du HSK 2 et 284 du HSK 3 —,
-application statique sans dépendance, installable en PWA, progression locale au
-navigateur.
+**État de référence** (1/11, version 258) : **1 574 fiches** sur cinq niveaux —
+253 du HSK 1, 125 du HSK 2, 284 du HSK 3, 441 du HSK 4 et 431 du HSK 5, toutes
+tirées des **listes officielles HSK 3.0** —, plus un module **Expressions** de
+40 fiches (20 歇后语 vérifiés contre une base de 14 032, 20 argots datés de 2018
+à 2023), aujourd'hui masqué dans l'interface mais joignable par `?niveau=expr`.
 
-Chaque fiche a **au moins deux mots d'exemple** (1 277 en tout), le **HSK 1 et
-le HSK 3 ont en plus une phrase** qui met le caractère en situation (537
-phrases, dont 235 chéngyǔ expliqués), et **aucun anglais n'est affiché** : les
-sens, étymologies, gloses, mots et phrases sont tous en français.
+Chaque fiche a son **pinyin**, son **sens en français**, **deux mots d'exemple**
+traduits, une **phrase** qui met le caractère en situation (1 534 phrases, dont
+plus de 500 chéngyǔ expliqués), ses **tracés** (1 528 caractères dans
+`data/strokes.json`) et, quand la source le permet, ses **composants**. Aucun
+anglais n'est affiché nulle part.
+
+Les **étymologies** ne sont plus affichées : les phrases de Make Me a Hanzi se
+sont révélées peu fiables (« la jambe 口 au-dessus du pied » pour 足), elles ont
+été retirées ; seules les **étiquettes 六书** (象形, 指事, 会意, 形声, 假借)
+demeurent, car elles sont factuelles.
+
+Les **214 radicaux de Kangxi** sont disponibles : page « Par radical », liste
+complète, avec la table des variantes de position (亻, 讠, 氵, 艹, ⺮…).
+
+« À revoir » et « Favoris » sont de **vraies listes** : un drapeau sur chaque
+carte, persisté avec la progression, qui traverse les niveaux.
 
 **Déjà en place** : retournement d'un appui sur la carte, **glissement
 gauche/droite pour juger**, barre du bas à quatre onglets, **page Thèmes**, interrupteur **阴 / 阳**

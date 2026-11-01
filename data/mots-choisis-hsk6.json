@@ -1,0 +1,5764 @@
+{
+ "碍": [
+  {
+   "mot": "大碍",
+   "pinyin": "da4 ai4",
+   "niveau": "HSK 6",
+   "def": "(usually used in the negative) major iss"
+  },
+  {
+   "mot": "妨碍",
+   "pinyin": "fang2 ai4",
+   "niveau": "HSK 6",
+   "def": "to hinder"
+  }
+ ],
+ "储": [
+  {
+   "mot": "仓储",
+   "pinyin": "cang1 chu3",
+   "niveau": "HSK 6",
+   "def": "to store in a warehouse"
+  },
+  {
+   "mot": "储值",
+   "pinyin": "chu3 zhi2",
+   "niveau": "HSK 6",
+   "def": "(Tw) to put money into (a stored-value c"
+  }
+ ],
+ "氛": [
+  {
+   "mot": "氛围",
+   "pinyin": "fen1 wei2",
+   "niveau": "HSK 6",
+   "def": "ambience; atmosphere"
+  },
+  {
+   "mot": "气氛",
+   "pinyin": "qi4 fen1",
+   "niveau": "HSK 6",
+   "def": "atmosphere; mood"
+  }
+ ],
+ "恨": [
+  {
+   "mot": "仇恨",
+   "pinyin": "chou2 hen4",
+   "niveau": "HSK 6",
+   "def": "to hate"
+  },
+  {
+   "mot": "仇恨罪",
+   "pinyin": "chou2 hen4 zui4",
+   "niveau": "HSK 6",
+   "def": "hate crime"
+  }
+ ],
+ "岸": [
+  {
+   "mot": "上岸",
+   "pinyin": "shang4 an4",
+   "niveau": "HSK 6",
+   "def": "to go ashore; to climb ashore"
+  },
+  {
+   "mot": "伟岸",
+   "pinyin": "wei3 an4",
+   "niveau": "HSK 6",
+   "def": "imposing"
+  }
+ ],
+ "串": [
+  {
+   "mot": "一连串",
+   "pinyin": "yi1 lian2 chuan4",
+   "niveau": "HSK 6",
+   "def": "a succession of"
+  },
+  {
+   "mot": "串串",
+   "pinyin": "chuan4 chuan4",
+   "niveau": "HSK 6",
+   "def": "(coll.) skewers; barbecued food on stick"
+  }
+ ],
+ "粉": [
+  {
+   "mot": "K粉",
+   "pinyin": "K fen3",
+   "niveau": "HSK 6",
+   "def": "ketamine (slang)"
+  },
+  {
+   "mot": "干粉",
+   "pinyin": "gan1 fen3",
+   "niveau": "HSK 6",
+   "def": "dry powder"
+  }
+ ],
+ "横": [
+  {
+   "mot": "专横",
+   "pinyin": "zhuan1 heng4",
+   "niveau": "HSK 6",
+   "def": "imperious"
+  },
+  {
+   "mot": "强横",
+   "pinyin": "qiang2 heng4",
+   "niveau": "HSK 6",
+   "def": "surly and unreasoning"
+  }
+ ],
+ "昂": [
+  {
+   "mot": "低昂",
+   "pinyin": "di1 ang2",
+   "niveau": "HSK 6",
+   "def": "ups and down"
+  },
+  {
+   "mot": "卡昂",
+   "pinyin": "Ka3 ang2",
+   "niveau": "HSK 6",
+   "def": "Caen (French town)"
+  }
+ ],
+ "闯": [
+  {
+   "mot": "擅闯",
+   "pinyin": "shan4 chuang3",
+   "niveau": "HSK 6",
+   "def": "to enter without permission"
+  },
+  {
+   "mot": "私闯",
+   "pinyin": "si1 chuang3",
+   "niveau": "HSK 6",
+   "def": "to enter (a place) without permission; t"
+  }
+ ],
+ "愤": [
+  {
+   "mot": "公愤",
+   "pinyin": "gong1 fen4",
+   "niveau": "HSK 6",
+   "def": "public anger"
+  },
+  {
+   "mot": "怨愤",
+   "pinyin": "yuan4 fen4",
+   "niveau": "HSK 6",
+   "def": "resentment and indignation"
+  }
+ ],
+ "宏": [
+  {
+   "mot": "宏亮",
+   "pinyin": "hong2 liang4",
+   "niveau": "HSK 6",
+   "def": "variant of 洪亮[hong2 liang4]"
+  },
+  {
+   "mot": "宏伟",
+   "pinyin": "Hong2 wei3",
+   "niveau": "HSK 6",
+   "def": "see 宏偉區|宏伟区[Hong2 wei3 Qu1]"
+  }
+ ],
+ "拔": [
+  {
+   "mot": "俊拔",
+   "pinyin": "jun4 ba2",
+   "niveau": "HSK 6",
+   "def": "outstandingly talented"
+  },
+  {
+   "mot": "劲拔",
+   "pinyin": "jing4 ba2",
+   "niveau": "HSK 6",
+   "def": "tall and straight"
+  }
+ ],
+ "垂": [
+  {
+   "mot": "下垂",
+   "pinyin": "xia4 chui2",
+   "niveau": "HSK 6",
+   "def": "to droop"
+  },
+  {
+   "mot": "低垂",
+   "pinyin": "di1 chui2",
+   "niveau": "HSK 6",
+   "def": "to droop"
+  }
+ ],
+ "峰": [
+  {
+   "mot": "上峰",
+   "pinyin": "shang4 feng1",
+   "niveau": "HSK 6",
+   "def": "peak"
+  },
+  {
+   "mot": "主峰",
+   "pinyin": "zhu3 feng1",
+   "niveau": "HSK 6",
+   "def": "main peak (of a mountain range)"
+  }
+ ],
+ "虹": [
+  {
+   "mot": "彩虹",
+   "pinyin": "cai3 hong2",
+   "niveau": "HSK 6",
+   "def": "rainbow"
+  },
+  {
+   "mot": "彩虹屁",
+   "pinyin": "cai3 hong2 pi4",
+   "niveau": "HSK 6",
+   "def": "(neologism c. 2017) (slang) over-the-top"
+  }
+ ],
+ "摆": [
+  {
+   "mot": "下摆",
+   "pinyin": "xia4 bai3",
+   "niveau": "HSK 6",
+   "def": "hem of a skirt"
+  },
+  {
+   "mot": "停摆",
+   "pinyin": "ting2 bai3",
+   "niveau": "HSK 6",
+   "def": "(of a pendulum) to stop swinging"
+  }
+ ],
+ "纯": [
+  {
+   "mot": "亚纯",
+   "pinyin": "ya4 chun2",
+   "niveau": "HSK 6",
+   "def": "meromorphic (math.)"
+  },
+  {
+   "mot": "全纯",
+   "pinyin": "quan2 chun2",
+   "niveau": "HSK 6",
+   "def": "holomorphic (math.)"
+  }
+ ],
+ "蜂": [
+  {
+   "mot": "一窝蜂",
+   "pinyin": "yi1 wo1 feng1",
+   "niveau": "HSK 6",
+   "def": "like a swarm of bees; in droves (used to"
+  },
+  {
+   "mot": "切叶蜂",
+   "pinyin": "qie1 ye4 feng1",
+   "niveau": "HSK 6",
+   "def": "leafcutter bee"
+  }
+ ],
+ "洪": [
+  {
+   "mot": "于洪",
+   "pinyin": "Yu2 hong2",
+   "niveau": "HSK 6",
+   "def": "see 于洪區|于洪区[Yu2 hong2 Qu1]"
+  },
+  {
+   "mot": "于洪区",
+   "pinyin": "Yu2 hong2 Qu1",
+   "niveau": "HSK 6",
+   "def": "Yuhong, a district of Shenyang City 瀋陽市|"
+  }
+ ],
+ "拜": [
+  {
+   "mot": "下拜",
+   "pinyin": "xia4 bai4",
+   "niveau": "HSK 6",
+   "def": "to bow down low"
+  },
+  {
+   "mot": "交拜",
+   "pinyin": "jiao1 bai4",
+   "niveau": "HSK 6",
+   "def": "to bow to one another"
+  }
+ ],
+ "瓷": [
+  {
+   "mot": "半导瓷",
+   "pinyin": "ban4 dao3 ci2",
+   "niveau": "HSK 6",
+   "def": "semiconducting ceramic (electronics)"
+  },
+  {
+   "mot": "搪瓷",
+   "pinyin": "tang2 ci2",
+   "niveau": "HSK 6",
+   "def": "enamel"
+  }
+ ],
+ "奉": [
+  {
+   "mot": "事奉",
+   "pinyin": "shi4 feng4",
+   "niveau": "HSK 6",
+   "def": "to serve"
+  },
+  {
+   "mot": "侍奉",
+   "pinyin": "shi4 feng4",
+   "niveau": "HSK 6",
+   "def": "to wait upon"
+  }
+ ],
+ "壶": [
+  {
+   "mot": "便壶",
+   "pinyin": "bian4 hu2",
+   "niveau": "HSK 6",
+   "def": "bed urinal"
+  },
+  {
+   "mot": "冰壶",
+   "pinyin": "bing1 hu2",
+   "niveau": "HSK 6",
+   "def": "jade pot for cold water"
+  }
+ ],
+ "榜": [
+  {
+   "mot": "上榜",
+   "pinyin": "shang4 bang3",
+   "niveau": "HSK 6",
+   "def": "to appear on the public roll of successf"
+  },
+  {
+   "mot": "光荣榜",
+   "pinyin": "guang1 rong2 bang3",
+   "niveau": "HSK 6",
+   "def": "honor roll"
+  }
+ ],
+ "匆": [
+  {
+   "mot": "匆促",
+   "pinyin": "cong1 cu4",
+   "niveau": "HSK 6",
+   "def": "hastily"
+  },
+  {
+   "mot": "匆匆",
+   "pinyin": "cong1 cong1",
+   "niveau": "HSK 6",
+   "def": "hurriedly"
+  }
+ ],
+ "浮": [
+  {
+   "mot": "上浮",
+   "pinyin": "shang4 fu2",
+   "niveau": "HSK 6",
+   "def": "to float up"
+  },
+  {
+   "mot": "下浮",
+   "pinyin": "xia4 fu2",
+   "niveau": "HSK 6",
+   "def": "downward fluctuation (of prices etc)"
+  }
+ ],
+ "幻": [
+  {
+   "mot": "梦幻",
+   "pinyin": "meng4 huan4",
+   "niveau": "HSK 6",
+   "def": "dream"
+  },
+  {
+   "mot": "奇幻",
+   "pinyin": "qi2 huan4",
+   "niveau": "HSK 6",
+   "def": "fantasy (fiction)"
+  }
+ ],
+ "胞": [
+  {
+   "mot": "三胞胎",
+   "pinyin": "san1 bao1 tai1",
+   "niveau": "HSK 6",
+   "def": "triplets"
+  },
+  {
+   "mot": "侨胞",
+   "pinyin": "qiao2 bao1",
+   "niveau": "HSK 6",
+   "def": "countryman living abroad"
+  }
+ ],
+ "醋": [
+  {
+   "mot": "冰醋酸",
+   "pinyin": "bing1 cu4 suan1",
+   "niveau": "HSK 6",
+   "def": "glacial acetic acid"
+  },
+  {
+   "mot": "半瓶醋",
+   "pinyin": "ban4 ping2 cu4",
+   "niveau": "HSK 6",
+   "def": "dabbler"
+  }
+ ],
+ "辅": [
+  {
+   "mot": "基辅",
+   "pinyin": "Ji1 fu3",
+   "niveau": "HSK 6",
+   "def": "Kyiv or Kiev, capital of Ukraine"
+  },
+  {
+   "mot": "教辅",
+   "pinyin": "jiao4 fu3",
+   "niveau": "HSK 6",
+   "def": "supplementary educational material (e.g."
+  }
+ ],
+ "患": [
+  {
+   "mot": "伤患",
+   "pinyin": "shang1 huan4",
+   "niveau": "HSK 6",
+   "def": "injured person"
+  },
+  {
+   "mot": "共患难",
+   "pinyin": "gong4 huan4 nan4",
+   "niveau": "HSK 6",
+   "def": "to go through hardship together"
+  }
+ ],
+ "爆": [
+  {
+   "mot": "傻爆眼",
+   "pinyin": "sha3 bao4 yan3",
+   "niveau": "HSK 6",
+   "def": "(slang) stunned; flabbergasted (emphatic"
+  },
+  {
+   "mot": "光爆",
+   "pinyin": "guang1 bao4",
+   "niveau": "HSK 6",
+   "def": "explosion of light"
+  }
+ ],
+ "脆": [
+  {
+   "mot": "干脆",
+   "pinyin": "gan1 cui4",
+   "niveau": "HSK 6",
+   "def": "candid"
+  },
+  {
+   "mot": "清脆",
+   "pinyin": "qing1 cui4",
+   "niveau": "HSK 6",
+   "def": "sharp and clear"
+  }
+ ],
+ "赋": [
+  {
+   "mot": "天赋",
+   "pinyin": "tian1 fu4",
+   "niveau": "HSK 6",
+   "def": "gift"
+  },
+  {
+   "mot": "田赋",
+   "pinyin": "tian2 fu4",
+   "niveau": "HSK 6",
+   "def": "land tax"
+  }
+ ],
+ "皇": [
+  {
+   "mot": "三皇",
+   "pinyin": "san1 huang2",
+   "niveau": "HSK 6",
+   "def": "the three legendary sovereigns of the th"
+  },
+  {
+   "mot": "人皇",
+   "pinyin": "Ren2 huang2",
+   "niveau": "HSK 6",
+   "def": "Human Sovereign, one of the three legend"
+  }
+ ],
+ "悲": [
+  {
+   "mot": "假慈悲",
+   "pinyin": "jia3 ci2 bei1",
+   "niveau": "HSK 6",
+   "def": "phony mercy"
+  },
+  {
+   "mot": "伤悲",
+   "pinyin": "shang1 bei1",
+   "niveau": "HSK 6",
+   "def": "sad"
+  }
+ ],
+ "寸": [
+  {
+   "mot": "公寸",
+   "pinyin": "gong1 cun4",
+   "niveau": "HSK 6",
+   "def": "decimeter"
+  },
+  {
+   "mot": "分寸",
+   "pinyin": "fen1 cun5",
+   "niveau": "HSK 6",
+   "def": "propriety"
+  }
+ ],
+ "覆": [
+  {
+   "mot": "上覆",
+   "pinyin": "shang4 fu4",
+   "niveau": "HSK 6",
+   "def": "to inform"
+  },
+  {
+   "mot": "倾覆",
+   "pinyin": "qing1 fu4",
+   "niveau": "HSK 6",
+   "def": "to capsize"
+  }
+ ],
+ "绘": [
+  {
+   "mot": "彩绘",
+   "pinyin": "cai3 hui4",
+   "niveau": "HSK 6",
+   "def": "painted"
+  },
+  {
+   "mot": "手绘",
+   "pinyin": "shou3 hui4",
+   "niveau": "HSK 6",
+   "def": "to paint by hand; to draw by hand"
+  }
+ ],
+ "辈": [
+  {
+   "mot": "一辈子",
+   "pinyin": "yi1 bei4 zi5",
+   "niveau": "HSK 6",
+   "def": "(for) a lifetime"
+  },
+  {
+   "mot": "上辈",
+   "pinyin": "shang4 bei4",
+   "niveau": "HSK 6",
+   "def": "ancestors"
+  }
+ ],
+ "挫": [
+  {
+   "mot": "下挫",
+   "pinyin": "xia4 cuo4",
+   "niveau": "HSK 6",
+   "def": "(of sales, prices etc) to fall"
+  },
+  {
+   "mot": "力挫",
+   "pinyin": "li4 cuo4",
+   "niveau": "HSK 6",
+   "def": "to win as a result of tenacious effort"
+  }
+ ],
+ "尬": [
+  {
+   "mot": "尬意",
+   "pinyin": "ga4 yi4",
+   "niveau": "HSK 6",
+   "def": "(Tw) to like; to prefer"
+  },
+  {
+   "mot": "尬笑",
+   "pinyin": "ga4 xiao4",
+   "niveau": "HSK 6",
+   "def": "(coll.) to laugh or smile out of awkward"
+  }
+ ],
+ "混": [
+  {
+   "mot": "含混",
+   "pinyin": "han2 hun4",
+   "niveau": "HSK 6",
+   "def": "vague"
+  },
+  {
+   "mot": "小混混",
+   "pinyin": "xiao3 hun4 hun4",
+   "niveau": "HSK 6",
+   "def": "hooligan"
+  }
+ ],
+ "奔": [
+  {
+   "mot": "出奔",
+   "pinyin": "chu1 ben1",
+   "niveau": "HSK 6",
+   "def": "to flee"
+  },
+  {
+   "mot": "奔三",
+   "pinyin": "ben4 san1",
+   "niveau": "HSK 6",
+   "def": "to be pushing 30"
+  }
+ ],
+ "搭": [
+  {
+   "mot": "乘搭",
+   "pinyin": "cheng2 da1",
+   "niveau": "HSK 6",
+   "def": "to ride as a passenger (in a car, boat, "
+  },
+  {
+   "mot": "内搭裤",
+   "pinyin": "nei4 da1 ku4",
+   "niveau": "HSK 6",
+   "def": "leggings (Tw)"
+  }
+ ],
+ "肝": [
+  {
+   "mot": "乙肝",
+   "pinyin": "yi3 gan1",
+   "niveau": "HSK 6",
+   "def": "hepatitis B"
+  },
+  {
+   "mot": "动肝火",
+   "pinyin": "dong4 gan1 huo3",
+   "niveau": "HSK 6",
+   "def": "to fly into a rage; to lose one's temper"
+  }
+ ],
+ "惑": [
+  {
+   "mot": "不惑",
+   "pinyin": "bu4 huo4",
+   "niveau": "HSK 6",
+   "def": "without doubt"
+  },
+  {
+   "mot": "古惑仔",
+   "pinyin": "gu3 huo4 zai3",
+   "niveau": "HSK 6",
+   "def": "gangster"
+  }
+ ],
+ "逼": [
+  {
+   "mot": "二逼",
+   "pinyin": "er4 bi1",
+   "niveau": "HSK 6",
+   "def": "variant of 二屄[er4 bi1]"
+  },
+  {
+   "mot": "倒逼",
+   "pinyin": "dao4 bi1",
+   "niveau": "HSK 6",
+   "def": "(neologism c. 2006) (of circumstances) t"
+  }
+ ],
+ "呆": [
+  {
+   "mot": "呆住",
+   "pinyin": "dai1 zhu4",
+   "niveau": "HSK 6",
+   "def": "to be dumbfounded"
+  },
+  {
+   "mot": "呆傻",
+   "pinyin": "dai1 sha3",
+   "niveau": "HSK 6",
+   "def": "stupid"
+  }
+ ],
+ "尴": [
+  {
+   "mot": "尴尬",
+   "pinyin": "gan1 ga4",
+   "niveau": "HSK 6",
+   "def": "awkward; embarrassed"
+  }
+ ],
+ "击": [
+  {
+   "mot": "伏击",
+   "pinyin": "fu2 ji1",
+   "niveau": "HSK 6",
+   "def": "ambush"
+  },
+  {
+   "mot": "出击",
+   "pinyin": "chu1 ji1",
+   "niveau": "HSK 6",
+   "def": "to sally"
+  }
+ ],
+ "壁": [
+  {
+   "mot": "一壁",
+   "pinyin": "yi1 bi4",
+   "niveau": "HSK 6",
+   "def": "at the same time; simultaneously; while"
+  },
+  {
+   "mot": "一壁厢",
+   "pinyin": "yi1 bi4 xiang1",
+   "niveau": "HSK 6",
+   "def": "see 一壁[yi1 bi4]"
+  }
+ ],
+ "贷": [
+  {
+   "mot": "乞贷",
+   "pinyin": "qi3 dai4",
+   "niveau": "HSK 6",
+   "def": "to beg for a loan"
+  },
+  {
+   "mot": "信贷",
+   "pinyin": "xin4 dai4",
+   "niveau": "HSK 6",
+   "def": "credit"
+  }
+ ],
+ "岗": [
+  {
+   "mot": "上岗",
+   "pinyin": "shang4 gang3",
+   "niveau": "HSK 6",
+   "def": "to take up one's post; to go on duty"
+  },
+  {
+   "mot": "下岗",
+   "pinyin": "xia4 gang3",
+   "niveau": "HSK 6",
+   "def": "(of a guard, sentry etc) to come off dut"
+  }
+ ],
+ "饥": [
+  {
+   "mot": "充饥",
+   "pinyin": "chong1 ji1",
+   "niveau": "HSK 6",
+   "def": "to allay one's hunger"
+  },
+  {
+   "mot": "易饥症",
+   "pinyin": "yi4 ji1 zheng4",
+   "niveau": "HSK 6",
+   "def": "bulimia"
+  }
+ ],
+ "臂": [
+  {
+   "mot": "上臂",
+   "pinyin": "shang4 bi4",
+   "niveau": "HSK 6",
+   "def": "upper arm"
+  },
+  {
+   "mot": "交臂",
+   "pinyin": "jiao1 bi4",
+   "niveau": "HSK 6",
+   "def": "linking arms"
+  }
+ ],
+ "耽": [
+  {
+   "mot": "耽心",
+   "pinyin": "dan1 xin1",
+   "niveau": "HSK 6",
+   "def": "variant of 擔心|担心[dan1 xin1]"
+  },
+  {
+   "mot": "耽忧",
+   "pinyin": "dan1 you1",
+   "niveau": "HSK 6",
+   "def": "variant of 擔憂|担忧[dan1 you1]"
+  }
+ ],
+ "港": [
+  {
+   "mot": "下港",
+   "pinyin": "xia4 gang3",
+   "niveau": "HSK 6",
+   "def": "(Tw) southern Taiwan (from Taiwanese, Ta"
+  },
+  {
+   "mot": "不冻港",
+   "pinyin": "bu4 dong4 gang3",
+   "niveau": "HSK 6",
+   "def": "ice-free port"
+  }
+ ],
+ "吉": [
+  {
+   "mot": "不吉",
+   "pinyin": "bu4 ji2",
+   "niveau": "HSK 6",
+   "def": "unlucky"
+  },
+  {
+   "mot": "不吉利",
+   "pinyin": "bu4 ji2 li4",
+   "niveau": "HSK 6",
+   "def": "ominous"
+  }
+ ],
+ "编": [
+  {
+   "mot": "主编",
+   "pinyin": "zhu3 bian1",
+   "niveau": "HSK 6",
+   "def": "editor in chief"
+  },
+  {
+   "mot": "事业编",
+   "pinyin": "shi4 ye4 bian1",
+   "niveau": "HSK 6",
+   "def": "staffing quota for public service instit"
+  }
+ ],
+ "诞": [
+  {
+   "mot": "任诞",
+   "pinyin": "ren4 dan4",
+   "niveau": "HSK 6",
+   "def": "dissipated"
+  },
+  {
+   "mot": "佛诞日",
+   "pinyin": "Fo2 dan4 ri4",
+   "niveau": "HSK 6",
+   "def": "Buddha's Birthday (8th day of the 4th Lu"
+  }
+ ],
+ "稿": [
+  {
+   "mot": "供稿",
+   "pinyin": "gong1 gao3",
+   "niveau": "HSK 6",
+   "def": "to contribute (to a magazine etc)"
+  },
+  {
+   "mot": "修改稿",
+   "pinyin": "xiu1 gai3 gao3",
+   "niveau": "HSK 6",
+   "def": "revised draft"
+  }
+ ],
+ "寂": [
+  {
+   "mot": "冷寂",
+   "pinyin": "leng3 ji4",
+   "niveau": "HSK 6",
+   "def": "cold and desolate"
+  },
+  {
+   "mot": "圆寂",
+   "pinyin": "yuan2 ji4",
+   "niveau": "HSK 6",
+   "def": "(of a Buddhist monk or nun) to pass away"
+  }
+ ],
+ "兵": [
+  {
+   "mot": "上等兵",
+   "pinyin": "shang4 deng3 bing1",
+   "niveau": "HSK 6",
+   "def": "private first class (army rank)"
+  },
+  {
+   "mot": "交兵",
+   "pinyin": "jiao1 bing1",
+   "niveau": "HSK 6",
+   "def": "in a state of war"
+  }
+ ],
+ "岛": [
+  {
+   "mot": "中岛",
+   "pinyin": "Zhong1 dao3",
+   "niveau": "HSK 6",
+   "def": "Nakajima or Nakashima (Japanese surname "
+  },
+  {
+   "mot": "中途岛",
+   "pinyin": "Zhong1 tu2 Dao3",
+   "niveau": "HSK 6",
+   "def": "Midway Islands"
+  }
+ ],
+ "割": [
+  {
+   "mot": "交割",
+   "pinyin": "jiao1 ge1",
+   "niveau": "HSK 6",
+   "def": "delivery (commerce)"
+  },
+  {
+   "mot": "分割",
+   "pinyin": "fen1 ge1",
+   "niveau": "HSK 6",
+   "def": "to cut up"
+  }
+ ],
+ "夹": [
+  {
+   "mot": "包夹",
+   "pinyin": "bao1 jia1",
+   "niveau": "HSK 6",
+   "def": "to surround; to hem in"
+  },
+  {
+   "mot": "夹克",
+   "pinyin": "jia1 ke4",
+   "niveau": "HSK 6",
+   "def": "(loanword) jacket"
+  }
+ ],
+ "脖": [
+  {
+   "mot": "勒脖子",
+   "pinyin": "lei1 bo2 zi5",
+   "niveau": "HSK 6",
+   "def": "to throttle"
+  },
+  {
+   "mot": "卡脖子",
+   "pinyin": "qia3 bo2 zi5",
+   "niveau": "HSK 6",
+   "def": "to squeeze the throat"
+  }
+ ],
+ "稻": [
+  {
+   "mot": "再生稻",
+   "pinyin": "zai4 sheng1 dao4",
+   "niveau": "HSK 6",
+   "def": "ratoon rice; rice plants that regrow fro"
+  },
+  {
+   "mot": "捞稻草",
+   "pinyin": "lao1 dao4 cao3",
+   "niveau": "HSK 6",
+   "def": "(fig.) to clutch at straws (in desperati"
+  }
+ ],
+ "攻": [
+  {
+   "mot": "主攻",
+   "pinyin": "zhu3 gong1",
+   "niveau": "HSK 6",
+   "def": "main assault"
+  },
+  {
+   "mot": "力攻",
+   "pinyin": "li4 gong1",
+   "niveau": "HSK 6",
+   "def": "to assault"
+  }
+ ],
+ "嫁": [
+  {
+   "mot": "下嫁",
+   "pinyin": "xia4 jia4",
+   "niveau": "HSK 6",
+   "def": "(of a woman) to marry a man of lower soc"
+  },
+  {
+   "mot": "再嫁",
+   "pinyin": "zai4 jia4",
+   "niveau": "HSK 6",
+   "def": "(of woman) to remarry"
+  }
+ ],
+ "捕": [
+  {
+   "mot": "兜捕",
+   "pinyin": "dou1 bu3",
+   "niveau": "HSK 6",
+   "def": "to round up (fugitives)"
+  },
+  {
+   "mot": "围捕",
+   "pinyin": "wei2 bu3",
+   "niveau": "HSK 6",
+   "def": "to fish by casting a net"
+  }
+ ],
+ "德": [
+  {
+   "mot": "不道德",
+   "pinyin": "bu4 dao4 de2",
+   "niveau": "HSK 6",
+   "def": "immoral"
+  },
+  {
+   "mot": "亨德尔",
+   "pinyin": "Heng1 de2 er3",
+   "niveau": "HSK 6",
+   "def": "George Frideric Handel (1685–1759), Germ"
+  }
+ ],
+ "宫": [
+  {
+   "mot": "九宫山",
+   "pinyin": "Jiu3 gong1 Shan1",
+   "niveau": "HSK 6",
+   "def": "Jiugong Mountains (the location of Jiugo"
+  },
+  {
+   "mot": "九宫格",
+   "pinyin": "jiu3 gong1 ge2",
+   "niveau": "HSK 6",
+   "def": "3-by-3 grid"
+  }
+ ],
+ "稼": [
+  {
+   "mot": "稼穑",
+   "pinyin": "jia4 se4",
+   "niveau": "HSK 6",
+   "def": "(literary) sowing and reaping"
+  },
+  {
+   "mot": "庄稼",
+   "pinyin": "zhuang1 jia5",
+   "niveau": "HSK 6",
+   "def": "farm crop"
+  }
+ ],
+ "财": [
+  {
+   "mot": "中财",
+   "pinyin": "Zhong1 Cai2",
+   "niveau": "HSK 6",
+   "def": "Central University of Finance and Econom"
+  },
+  {
+   "mot": "善财",
+   "pinyin": "shan4 cai2",
+   "niveau": "HSK 6",
+   "def": "to cherish wealth"
+  }
+ ],
+ "滴": [
+  {
+   "mot": "吊点滴",
+   "pinyin": "diao4 dian3 di1",
+   "niveau": "HSK 6",
+   "def": "to put sb on an intravenous drip (Tw)"
+  },
+  {
+   "mot": "娇滴滴",
+   "pinyin": "jiao1 di1 di1",
+   "niveau": "HSK 6",
+   "def": "sweet"
+  }
+ ],
+ "巩": [
+  {
+   "mot": "岑巩",
+   "pinyin": "Cen2 gong3",
+   "niveau": "HSK 6",
+   "def": "see 岑鞏縣|岑巩县[Cen2 gong3 Xian4]"
+  },
+  {
+   "mot": "岑巩县",
+   "pinyin": "Cen2 gong3 Xian4",
+   "niveau": "HSK 6",
+   "def": "Cengong, a county in Qiandongnan Miao an"
+  }
+ ],
+ "尖": [
+  {
+   "mot": "三尖瓣",
+   "pinyin": "san1 jian1 ban4",
+   "niveau": "HSK 6",
+   "def": "(anatomy) tricuspid valve"
+  },
+  {
+   "mot": "二尖瓣",
+   "pinyin": "er4 jian1 ban4",
+   "niveau": "HSK 6",
+   "def": "mitral valve (physiology)"
+  }
+ ],
+ "踩": [
+  {
+   "mot": "踩刹车",
+   "pinyin": "cai3 sha1 che1",
+   "niveau": "HSK 6",
+   "def": "to step on the brake"
+  },
+  {
+   "mot": "踩动",
+   "pinyin": "cai3 dong4",
+   "niveau": "HSK 6",
+   "def": "to operate by means of a pedal"
+  }
+ ],
+ "抵": [
+  {
+   "mot": "备抵",
+   "pinyin": "bei4 di3",
+   "niveau": "HSK 6",
+   "def": "an allowance"
+  },
+  {
+   "mot": "充抵",
+   "pinyin": "chong1 di3",
+   "niveau": "HSK 6",
+   "def": "see 抵充[di3 chong1]"
+  }
+ ],
+ "孤": [
+  {
+   "mot": "孤例",
+   "pinyin": "gu1 li4",
+   "niveau": "HSK 6",
+   "def": "isolated case; sole instance"
+  },
+  {
+   "mot": "孤傲",
+   "pinyin": "gu1 ao4",
+   "niveau": "HSK 6",
+   "def": "proud and aloof"
+  }
+ ],
+ "肩": [
+  {
+   "mot": "并肩",
+   "pinyin": "bing4 jian1",
+   "niveau": "HSK 6",
+   "def": "alongside"
+  },
+  {
+   "mot": "五十肩",
+   "pinyin": "wu3 shi2 jian1",
+   "niveau": "HSK 6",
+   "def": "adhesive capsulitis (frozen shoulder)"
+  }
+ ],
+ "残": [
+  {
+   "mot": "伤残",
+   "pinyin": "shang1 can2",
+   "niveau": "HSK 6",
+   "def": "disabled"
+  },
+  {
+   "mot": "凶残",
+   "pinyin": "xiong1 can2",
+   "niveau": "HSK 6",
+   "def": "savage"
+  }
+ ],
+ "帝": [
+  {
+   "mot": "上帝",
+   "pinyin": "Shang4 di4",
+   "niveau": "HSK 6",
+   "def": "God"
+  },
+  {
+   "mot": "五帝",
+   "pinyin": "wu3 di4",
+   "niveau": "HSK 6",
+   "def": "the Five Legendary Emperors, usually tak"
+  }
+ ],
+ "股": [
+  {
+   "mot": "一股子",
+   "pinyin": "yi1 gu3 zi5",
+   "niveau": "HSK 6",
+   "def": "a whiff of"
+  },
+  {
+   "mot": "一股脑",
+   "pinyin": "yi1 gu3 nao3",
+   "niveau": "HSK 6",
+   "def": "all of it"
+  }
+ ],
+ "监": [
+  {
+   "mot": "保监会",
+   "pinyin": "Bao3 Jian1 hui4",
+   "niveau": "HSK 6",
+   "def": "China Insurance Regulatory Commission (C"
+  },
+  {
+   "mot": "国子监",
+   "pinyin": "Guo2 zi3 jian4",
+   "niveau": "HSK 6",
+   "def": "Guozijian, the highest educational admin"
+  }
+ ],
+ "仓": [
+  {
+   "mot": "仓位",
+   "pinyin": "cang1 wei4",
+   "niveau": "HSK 6",
+   "def": "(logistics) storage location"
+  },
+  {
+   "mot": "仓促",
+   "pinyin": "cang1 cu4",
+   "niveau": "HSK 6",
+   "def": "all of a sudden"
+  }
+ ],
+ "吊": [
+  {
+   "mot": "上吊",
+   "pinyin": "shang4 diao4",
+   "niveau": "HSK 6",
+   "def": "to hang oneself"
+  },
+  {
+   "mot": "半吊子",
+   "pinyin": "ban4 diao4 zi5",
+   "niveau": "HSK 6",
+   "def": "dabbler"
+  }
+ ],
+ "骨": [
+  {
+   "mot": "一骨碌",
+   "pinyin": "yi1 gu1 lu5",
+   "niveau": "HSK 6",
+   "def": "with a rolling or twisting movement"
+  },
+  {
+   "mot": "上颌骨",
+   "pinyin": "shang4 he2 gu3",
+   "niveau": "HSK 6",
+   "def": "maxilla (upper jaw)"
+  }
+ ],
+ "兼": [
+  {
+   "mot": "兼任",
+   "pinyin": "jian1 ren4",
+   "niveau": "HSK 6",
+   "def": "to hold a concurrent post"
+  },
+  {
+   "mot": "兼并",
+   "pinyin": "jian1 bing4",
+   "niveau": "HSK 6",
+   "def": "to annex"
+  }
+ ],
+ "侧": [
+  {
+   "mot": "一侧化",
+   "pinyin": "yi1 ce4 hua4",
+   "niveau": "HSK 6",
+   "def": "lateralization"
+  },
+  {
+   "mot": "二侧",
+   "pinyin": "er4 ce4",
+   "niveau": "HSK 6",
+   "def": "two sides"
+  }
+ ],
+ "钓": [
+  {
+   "mot": "冰钓",
+   "pinyin": "bing1 diao4",
+   "niveau": "HSK 6",
+   "def": "ice fishing"
+  },
+  {
+   "mot": "垂钓",
+   "pinyin": "chui2 diao4",
+   "niveau": "HSK 6",
+   "def": "angling"
+  }
+ ],
+ "拐": [
+  {
+   "mot": "向右拐",
+   "pinyin": "xiang4 you4 guai3",
+   "niveau": "HSK 6",
+   "def": "to turn right"
+  },
+  {
+   "mot": "向左拐",
+   "pinyin": "xiang4 zuo3 guai3",
+   "niveau": "HSK 6",
+   "def": "to turn left"
+  }
+ ],
+ "剑": [
+  {
+   "mot": "佩剑",
+   "pinyin": "pei4 jian4",
+   "niveau": "HSK 6",
+   "def": "sword"
+  },
+  {
+   "mot": "刀剑",
+   "pinyin": "dao1 jian4",
+   "niveau": "HSK 6",
+   "def": "sword"
+  }
+ ],
+ "策": [
+  {
+   "mot": "上策",
+   "pinyin": "shang4 ce4",
+   "niveau": "HSK 6",
+   "def": "best course of action; best policy"
+  },
+  {
+   "mot": "善策",
+   "pinyin": "shan4 ce4",
+   "niveau": "HSK 6",
+   "def": "wise policy"
+  }
+ ],
+ "跌": [
+  {
+   "mot": "下跌",
+   "pinyin": "xia4 die1",
+   "niveau": "HSK 6",
+   "def": "to fall"
+  },
+  {
+   "mot": "回跌",
+   "pinyin": "hui2 die1",
+   "niveau": "HSK 6",
+   "def": "to fall back (of water level or share pr"
+  }
+ ],
+ "官": [
+  {
+   "mot": "上官",
+   "pinyin": "Shang4 guan1",
+   "niveau": "HSK 6",
+   "def": "two-character surname Shangguan"
+  },
+  {
+   "mot": "丢官",
+   "pinyin": "diu1 guan1",
+   "niveau": "HSK 6",
+   "def": "(of an official) to lose one's job"
+  }
+ ],
+ "鉴": [
+  {
+   "mot": "借鉴",
+   "pinyin": "jie4 jian4",
+   "niveau": "HSK 6",
+   "def": "to draw on (others' experience)"
+  },
+  {
+   "mot": "印鉴",
+   "pinyin": "yin4 jian4",
+   "niveau": "HSK 6",
+   "def": "seal impression"
+  }
+ ],
+ "柴": [
+  {
+   "mot": "劈柴",
+   "pinyin": "pi1 chai2",
+   "niveau": "HSK 6",
+   "def": "to chop firewood"
+  },
+  {
+   "mot": "北柴胡",
+   "pinyin": "bei3 chai2 hu2",
+   "niveau": "HSK 6",
+   "def": "honewort"
+  }
+ ],
+ "顶": [
+  {
+   "mot": "丹顶鹤",
+   "pinyin": "dan1 ding3 he4",
+   "niveau": "HSK 6",
+   "def": "(bird species of China) red-crowned cran"
+  },
+  {
+   "mot": "个顶个",
+   "pinyin": "ge4 ding3 ge4",
+   "niveau": "HSK 6",
+   "def": "(dialect) each one; every one"
+  }
+ ],
+ "贯": [
+  {
+   "mot": "一贯",
+   "pinyin": "yi1 guan4",
+   "niveau": "HSK 6",
+   "def": "consistent"
+  },
+  {
+   "mot": "大满贯",
+   "pinyin": "da4 man3 guan4",
+   "niveau": "HSK 6",
+   "def": "grand slam"
+  }
+ ],
+ "箭": [
+  {
+   "mot": "上箭头",
+   "pinyin": "shang4 jian4 tou2",
+   "niveau": "HSK 6",
+   "def": "up-pointing arrow"
+  },
+  {
+   "mot": "下箭头",
+   "pinyin": "xia4 jian4 tou2",
+   "niveau": "HSK 6",
+   "def": "down-pointing arrow"
+  }
+ ],
+ "肠": [
+  {
+   "mot": "升结肠",
+   "pinyin": "sheng1 jie2 chang2",
+   "niveau": "HSK 6",
+   "def": "ascending colon (anatomy)"
+  },
+  {
+   "mot": "回肠",
+   "pinyin": "hui2 chang2",
+   "niveau": "HSK 6",
+   "def": "ileum (segment of small intestine betwee"
+  }
+ ],
+ "栋": [
+  {
+   "mot": "吴作栋",
+   "pinyin": "Wu2 Zuo4 dong4",
+   "niveau": "HSK 6",
+   "def": "Goh Chok Tong (1941-), Singapore busines"
+  },
+  {
+   "mot": "栋梁",
+   "pinyin": "dong4 liang2",
+   "niveau": "HSK 6",
+   "def": "ridgepole"
+  }
+ ],
+ "罐": [
+  {
+   "mot": "储气罐",
+   "pinyin": "chu3 qi4 guan4",
+   "niveau": "HSK 6",
+   "def": "gas tank (for gas, not gasoline)"
+  },
+  {
+   "mot": "存钱罐",
+   "pinyin": "cun2 qian2 guan4",
+   "niveau": "HSK 6",
+   "def": "piggy bank"
+  }
+ ],
+ "酱": [
+  {
+   "mot": "XO酱",
+   "pinyin": "X O jiang4",
+   "niveau": "HSK 6",
+   "def": "XO sauce, a spicy seafood sauce invented"
+  },
+  {
+   "mot": "凯撒酱",
+   "pinyin": "Kai3 sa1 jiang4",
+   "niveau": "HSK 6",
+   "def": "Caesar salad dressing"
+  }
+ ],
+ "偿": [
+  {
+   "mot": "代偿",
+   "pinyin": "dai4 chang2",
+   "niveau": "HSK 6",
+   "def": "(medical) compensation"
+  },
+  {
+   "mot": "偿付",
+   "pinyin": "chang2 fu4",
+   "niveau": "HSK 6",
+   "def": "to pay back"
+  }
+ ],
+ "逗": [
+  {
+   "mot": "句逗",
+   "pinyin": "ju4 dou4",
+   "niveau": "HSK 6",
+   "def": "punctuation of a sentence (in former tim"
+  },
+  {
+   "mot": "引逗",
+   "pinyin": "yin3 dou4",
+   "niveau": "HSK 6",
+   "def": "to tantalize"
+  }
+ ],
+ "归": [
+  {
+   "mot": "三归依",
+   "pinyin": "san1 gui1 yi1",
+   "niveau": "HSK 6",
+   "def": "the Three Pillars of Faith (Buddha, dhar"
+  },
+  {
+   "mot": "不归路",
+   "pinyin": "bu4 gui1 lu4",
+   "niveau": "HSK 6",
+   "def": "road to ruin; course of action from whic"
+  }
+ ],
+ "胶": [
+  {
+   "mot": "三秒胶",
+   "pinyin": "san1 miao3 jiao1",
+   "niveau": "HSK 6",
+   "def": "(Tw) superglue"
+  },
+  {
+   "mot": "乳胶",
+   "pinyin": "ru3 jiao1",
+   "niveau": "HSK 6",
+   "def": "latex"
+  }
+ ],
+ "畅": [
+  {
+   "mot": "充畅",
+   "pinyin": "chong1 chang4",
+   "niveau": "HSK 6",
+   "def": "abundant and fluent"
+  },
+  {
+   "mot": "宽畅",
+   "pinyin": "kuan1 chang4",
+   "niveau": "HSK 6",
+   "def": "with no worries"
+  }
+ ],
+ "督": [
+  {
+   "mot": "反基督",
+   "pinyin": "fan3 Ji1 du1",
+   "niveau": "HSK 6",
+   "def": "the anti-Christ"
+  },
+  {
+   "mot": "基督",
+   "pinyin": "Ji1 du1",
+   "niveau": "HSK 6",
+   "def": "Christ"
+  }
+ ],
+ "龟": [
+  {
+   "mot": "九尾龟",
+   "pinyin": "jiu3 wei3 gui1",
+   "niveau": "HSK 6",
+   "def": "nine-tailed turtle of mythology"
+  },
+  {
+   "mot": "忍者龟",
+   "pinyin": "Ren3 zhe3 Gui1",
+   "niveau": "HSK 6",
+   "def": "Teenage Mutant Ninja Turtles (Tw)"
+  }
+ ],
+ "椒": [
+  {
+   "mot": "全椒",
+   "pinyin": "Quan2 jiao1",
+   "niveau": "HSK 6",
+   "def": "see 全椒縣|全椒县[Quan2 jiao1 Xian4]"
+  },
+  {
+   "mot": "全椒县",
+   "pinyin": "Quan2 jiao1 Xian4",
+   "niveau": "HSK 6",
+   "def": "Quanjiao, a county in Chuzhou City 滁州市[C"
+  }
+ ],
+ "抄": [
+  {
+   "mot": "做小抄",
+   "pinyin": "zuo4 xiao3 chao1",
+   "niveau": "HSK 6",
+   "def": "to prepare a crib sheet"
+  },
+  {
+   "mot": "传抄",
+   "pinyin": "chuan2 chao1",
+   "niveau": "HSK 6",
+   "def": "to copy (a text) from person to person"
+  }
+ ],
+ "毒": [
+  {
+   "mot": "㐖毒",
+   "pinyin": "Xie2 du2",
+   "niveau": "HSK 6",
+   "def": "archaic name for India"
+  },
+  {
+   "mot": "下毒",
+   "pinyin": "xia4 du2",
+   "niveau": "HSK 6",
+   "def": "to put poison in sth"
+  }
+ ],
+ "轨": [
+  {
+   "mot": "上轨道",
+   "pinyin": "shang4 gui3 dao4",
+   "niveau": "HSK 6",
+   "def": "to stay on track"
+  },
+  {
+   "mot": "不轨",
+   "pinyin": "bu4 gui3",
+   "niveau": "HSK 6",
+   "def": "errant"
+  }
+ ],
+ "焦": [
+  {
+   "mot": "三焦",
+   "pinyin": "san1 jiao1",
+   "niveau": "HSK 6",
+   "def": "(TCM) the three truncal cavities (thorac"
+  },
+  {
+   "mot": "上焦",
+   "pinyin": "shang4 jiao1",
+   "niveau": "HSK 6",
+   "def": "(TCM) upper burner, the part of the body"
+  }
+ ],
+ "嘲": [
+  {
+   "mot": "嘲哳",
+   "pinyin": "zhao1 zha1",
+   "niveau": "HSK 6",
+   "def": "(onom.) clamorous noise made by numerous"
+  },
+  {
+   "mot": "嘲弄",
+   "pinyin": "chao2 nong4",
+   "niveau": "HSK 6",
+   "def": "to tease"
+  }
+ ],
+ "渡": [
+  {
+   "mot": "偷渡",
+   "pinyin": "tou1 du4",
+   "niveau": "HSK 6",
+   "def": "illegal immigration"
+  },
+  {
+   "mot": "偷渡者",
+   "pinyin": "tou1 du4 zhe3",
+   "niveau": "HSK 6",
+   "def": "smuggled illegal alien"
+  }
+ ],
+ "跪": [
+  {
+   "mot": "下跪",
+   "pinyin": "xia4 gui4",
+   "niveau": "HSK 6",
+   "def": "to kneel"
+  },
+  {
+   "mot": "滑跪",
+   "pinyin": "hua2 gui4",
+   "niveau": "HSK 6",
+   "def": "(of a soccer player) to knee slide after"
+  }
+ ],
+ "杰": [
+  {
+   "mot": "人杰",
+   "pinyin": "ren2 jie2",
+   "niveau": "HSK 6",
+   "def": "outstanding talent"
+  },
+  {
+   "mot": "伯杰",
+   "pinyin": "Bo2 jie2",
+   "niveau": "HSK 6",
+   "def": "(surname) Berger"
+  }
+ ],
+ "潮": [
+  {
+   "mot": "干潮",
+   "pinyin": "gan1 chao2",
+   "niveau": "HSK 6",
+   "def": "low tide"
+  },
+  {
+   "mot": "人潮",
+   "pinyin": "ren2 chao2",
+   "niveau": "HSK 6",
+   "def": "a tide of people"
+  }
+ ],
+ "端": [
+  {
+   "mot": "一锅端",
+   "pinyin": "yi1 guo1 duan1",
+   "niveau": "HSK 6",
+   "def": "see 連鍋端|连锅端[lian2 guo1 duan1]"
+  },
+  {
+   "mot": "不端",
+   "pinyin": "bu4 duan1",
+   "niveau": "HSK 6",
+   "def": "improper"
+  }
+ ],
+ "棍": [
+  {
+   "mot": "二节棍",
+   "pinyin": "er4 jie2 gun4",
+   "niveau": "HSK 6",
+   "def": "nunchaku (weapon with two rods joined by"
+  },
+  {
+   "mot": "光棍",
+   "pinyin": "guang1 gun4",
+   "niveau": "HSK 6",
+   "def": "gangster; hoodlum"
+  }
+ ],
+ "洁": [
+  {
+   "mot": "佳洁士",
+   "pinyin": "Jia1 jie2 shi4",
+   "niveau": "HSK 6",
+   "def": "Crest (brand)"
+  },
+  {
+   "mot": "保洁",
+   "pinyin": "bao3 jie2",
+   "niveau": "HSK 6",
+   "def": "sanitation"
+  }
+ ],
+ "撤": [
+  {
+   "mot": "后撤",
+   "pinyin": "hou4 che4",
+   "niveau": "HSK 6",
+   "def": "to pull back (an army)"
+  },
+  {
+   "mot": "撤下",
+   "pinyin": "che4 xia4",
+   "niveau": "HSK 6",
+   "def": "to withdraw"
+  }
+ ],
+ "蹲": [
+  {
+   "mot": "下蹲翻",
+   "pinyin": "xia4 dun1 fan1",
+   "niveau": "HSK 6",
+   "def": "(weightlifting) clean; squat clean"
+  },
+  {
+   "mot": "半蹲",
+   "pinyin": "ban4 dun1",
+   "niveau": "HSK 6",
+   "def": "half squat"
+  }
+ ],
+ "涵": [
+  {
+   "mot": "内涵",
+   "pinyin": "nei4 han2",
+   "niveau": "HSK 6",
+   "def": "meaningful content"
+  },
+  {
+   "mot": "包涵",
+   "pinyin": "bao1 han5",
+   "niveau": "HSK 6",
+   "def": "to excuse; to forgive; to bear with; to "
+  }
+ ],
+ "捷": [
+  {
+   "mot": "便捷",
+   "pinyin": "bian4 jie2",
+   "niveau": "HSK 6",
+   "def": "convenient and fast"
+  },
+  {
+   "mot": "便捷化",
+   "pinyin": "bian4 jie2 hua4",
+   "niveau": "HSK 6",
+   "def": "to facilitate"
+  }
+ ],
+ "臣": [
+  {
+   "mot": "人臣",
+   "pinyin": "ren2 chen2",
+   "niveau": "HSK 6",
+   "def": "an official (in former times)"
+  },
+  {
+   "mot": "内臣",
+   "pinyin": "nei4 chen2",
+   "niveau": "HSK 6",
+   "def": "chamberlain"
+  }
+ ],
+ "夺": [
+  {
+   "mot": "剥夺",
+   "pinyin": "bo1 duo2",
+   "niveau": "HSK 6",
+   "def": "to deprive"
+  },
+  {
+   "mot": "劫夺",
+   "pinyin": "jie2 duo2",
+   "niveau": "HSK 6",
+   "def": "to seize by force"
+  }
+ ],
+ "罕": [
+  {
+   "mot": "加拉罕",
+   "pinyin": "Jia1 la1 han3",
+   "niveau": "HSK 6",
+   "def": "Leo Karakhan (1889-1937), Soviet ambassa"
+  },
+  {
+   "mot": "堪达罕",
+   "pinyin": "kan1 da2 han3",
+   "niveau": "HSK 6",
+   "def": "(dialect) moose (loanword via Manchu)"
+  }
+ ],
+ "截": [
+  {
+   "mot": "半截",
+   "pinyin": "ban4 jie2",
+   "niveau": "HSK 6",
+   "def": "half (of sth)"
+  },
+  {
+   "mot": "半截衫",
+   "pinyin": "ban4 jie2 shan1",
+   "niveau": "HSK 6",
+   "def": "upper jacket"
+  }
+ ],
+ "尘": [
+  {
+   "mot": "凡尘",
+   "pinyin": "fan2 chen2",
+   "niveau": "HSK 6",
+   "def": "mundane world (in religious context)"
+  },
+  {
+   "mot": "前尘",
+   "pinyin": "qian2 chen2",
+   "niveau": "HSK 6",
+   "def": "the past"
+  }
+ ],
+ "额": [
+  {
+   "mot": "交易额",
+   "pinyin": "jiao1 yi4 e2",
+   "niveau": "HSK 6",
+   "def": "sum or volume of business transactions"
+  },
+  {
+   "mot": "份额",
+   "pinyin": "fen4 e2",
+   "niveau": "HSK 6",
+   "def": "share"
+  }
+ ],
+ "旱": [
+  {
+   "mot": "干旱",
+   "pinyin": "gan1 han4",
+   "niveau": "HSK 6",
+   "def": "drought"
+  },
+  {
+   "mot": "干旱土",
+   "pinyin": "gan1 han4 tu3",
+   "niveau": "HSK 6",
+   "def": "aridisol (soil taxonomy)"
+  }
+ ],
+ "戒": [
+  {
+   "mot": "传戒",
+   "pinyin": "chuan2 jie4",
+   "niveau": "HSK 6",
+   "def": "(Buddhism) to initiate sb for monkhood o"
+  },
+  {
+   "mot": "儆戒",
+   "pinyin": "jing3 jie4",
+   "niveau": "HSK 6",
+   "def": "to warn"
+  }
+ ],
+ "趁": [
+  {
+   "mot": "趁便",
+   "pinyin": "chen4 bian4",
+   "niveau": "HSK 6",
+   "def": "to take the opportunity"
+  },
+  {
+   "mot": "趁势",
+   "pinyin": "chen4 shi4",
+   "niveau": "HSK 6",
+   "def": "to take advantage of a favorable situati"
+  }
+ ],
+ "恶": [
+  {
+   "mot": "二恶英",
+   "pinyin": "er4 e4 ying1",
+   "niveau": "HSK 6",
+   "def": "dioxin"
+  },
+  {
+   "mot": "交恶",
+   "pinyin": "jiao1 wu4",
+   "niveau": "HSK 6",
+   "def": "to become enemies; to become hostile tow"
+  }
+ ],
+ "毫": [
+  {
+   "mot": "伤毫毛",
+   "pinyin": "shang1 hao2 mao2",
+   "niveau": "HSK 6",
+   "def": "see 動毫毛|动毫毛[dong4 hao2 mao2]"
+  },
+  {
+   "mot": "公毫",
+   "pinyin": "gong1 hao2",
+   "niveau": "HSK 6",
+   "def": "centigram"
+  }
+ ],
+ "劲": [
+  {
+   "mot": "Q劲",
+   "pinyin": "Q jin4",
+   "niveau": "HSK 6",
+   "def": "springy mouthfeel"
+  },
+  {
+   "mot": "一个劲",
+   "pinyin": "yi1 ge4 jin4",
+   "niveau": "HSK 6",
+   "def": "continuously"
+  }
+ ],
+ "撑": [
+  {
+   "mot": "俯卧撑",
+   "pinyin": "fu3 wo4 cheng1",
+   "niveau": "HSK 6",
+   "def": "push-up; press-up (exercise)"
+  },
+  {
+   "mot": "强撑",
+   "pinyin": "qiang3 cheng1",
+   "niveau": "HSK 6",
+   "def": "to use all one's willpower (to do sth)"
+  }
+ ],
+ "帆": [
+  {
+   "mot": "力帆",
+   "pinyin": "Li4 fan1",
+   "niveau": "HSK 6",
+   "def": "Lifan Group (auto manufacturer in Chongq"
+  },
+  {
+   "mot": "展帆",
+   "pinyin": "zhan3 fan1",
+   "niveau": "HSK 6",
+   "def": "to unfurl (a sail)"
+  }
+ ],
+ "豪": [
+  {
+   "mot": "包豪斯",
+   "pinyin": "Bao1 hao2 si1",
+   "niveau": "HSK 6",
+   "def": "Bauhaus (German school of modern archite"
+  },
+  {
+   "mot": "吴建豪",
+   "pinyin": "Wu2 Jian4 hao2",
+   "niveau": "HSK 6",
+   "def": "Wu Jianhao or Vanness Wu (1978-), Taiwan"
+  }
+ ],
+ "井": [
+  {
+   "mot": "三井",
+   "pinyin": "San1 jing3",
+   "niveau": "HSK 6",
+   "def": "Mitsui (Japanese company)"
+  },
+  {
+   "mot": "井上",
+   "pinyin": "Jing3 shang4",
+   "niveau": "HSK 6",
+   "def": "Inoue (Japanese surname, pr. \"ee-no-oo-a"
+  }
+ ],
+ "呈": [
+  {
+   "mot": "保呈",
+   "pinyin": "bao3 cheng2",
+   "niveau": "HSK 6",
+   "def": "document guaranteeing the words or actio"
+  },
+  {
+   "mot": "呈交",
+   "pinyin": "cheng2 jiao1",
+   "niveau": "HSK 6",
+   "def": "(formal and deferential) to present"
+  }
+ ],
+ "凡": [
+  {
+   "mot": "下凡",
+   "pinyin": "xia4 fan2",
+   "niveau": "HSK 6",
+   "def": "(of immortals) to descend to the human w"
+  },
+  {
+   "mot": "不凡",
+   "pinyin": "bu4 fan2",
+   "niveau": "HSK 6",
+   "def": "extraordinary; remarkable; exceptional"
+  }
+ ],
+ "耗": [
+  {
+   "mot": "低耗",
+   "pinyin": "di1 hao4",
+   "niveau": "HSK 6",
+   "def": "low consumption (energy, fuel etc)"
+  },
+  {
+   "mot": "伤耗",
+   "pinyin": "shang1 hao4",
+   "niveau": "HSK 6",
+   "def": "damage (e.g. to goods in transit)"
+  }
+ ],
+ "颈": [
+  {
+   "mot": "吊颈",
+   "pinyin": "diao4 jing3",
+   "niveau": "HSK 6",
+   "def": "to hang oneself"
+  },
+  {
+   "mot": "子宫颈",
+   "pinyin": "zi3 gong1 jing3",
+   "niveau": "HSK 6",
+   "def": "cervix; the neck of the uterus"
+  }
+ ],
+ "惩": [
+  {
+   "mot": "严惩",
+   "pinyin": "yan2 cheng2",
+   "niveau": "HSK 6",
+   "def": "to punish severely"
+  },
+  {
+   "mot": "惩戒",
+   "pinyin": "cheng2 jie4",
+   "niveau": "HSK 6",
+   "def": "to discipline"
+  }
+ ],
+ "犯": [
+  {
+   "mot": "主犯",
+   "pinyin": "zhu3 fan4",
+   "niveau": "HSK 6",
+   "def": "culprit"
+  },
+  {
+   "mot": "人犯",
+   "pinyin": "ren2 fan4",
+   "niveau": "HSK 6",
+   "def": "criminal"
+  }
+ ],
+ "核": [
+  {
+   "mot": "伏隔核",
+   "pinyin": "fu2 ge2 he2",
+   "niveau": "HSK 6",
+   "def": "nucleus accumbens (anatomy)"
+  },
+  {
+   "mot": "似核",
+   "pinyin": "si4 he2",
+   "niveau": "HSK 6",
+   "def": "nucleoid (of prokaryotic cell)"
+  }
+ ],
+ "径": [
+  {
+   "mot": "一径",
+   "pinyin": "yi1 jing4",
+   "niveau": "HSK 6",
+   "def": "directly"
+  },
+  {
+   "mot": "中径",
+   "pinyin": "zhong1 jing4",
+   "niveau": "HSK 6",
+   "def": "diameter"
+  }
+ ],
+ "崇": [
+  {
+   "mot": "尊崇",
+   "pinyin": "zun1 chong2",
+   "niveau": "HSK 6",
+   "def": "to revere"
+  },
+  {
+   "mot": "崇仁",
+   "pinyin": "Chong2 ren2",
+   "niveau": "HSK 6",
+   "def": "see 崇仁縣|崇仁县[Chong2 ren2 Xian4]"
+  }
+ ],
+ "妨": [
+  {
+   "mot": "不妨",
+   "pinyin": "bu4 fang2",
+   "niveau": "HSK 6",
+   "def": "there is no harm in; might as well"
+  },
+  {
+   "mot": "何妨",
+   "pinyin": "he2 fang2",
+   "niveau": "HSK 6",
+   "def": "what harm is there in (doing sth)"
+  }
+ ],
+ "嘿": [
+  {
+   "mot": "嘿咻",
+   "pinyin": "hei1 xiu1",
+   "niveau": "HSK 6",
+   "def": "(coll.) to make love"
+  },
+  {
+   "mot": "嘿嘿",
+   "pinyin": "hei1 hei1",
+   "niveau": "HSK 6",
+   "def": "(onom.) he he"
+  }
+ ],
+ "纠": [
+  {
+   "mot": "弹纠",
+   "pinyin": "tan2 jiu1",
+   "niveau": "HSK 6",
+   "def": "to accuse"
+  },
+  {
+   "mot": "纠偏",
+   "pinyin": "jiu1 pian1",
+   "niveau": "HSK 6",
+   "def": "to correct an error"
+  }
+ ],
+ "愁": [
+  {
+   "mot": "哀愁",
+   "pinyin": "ai1 chou2",
+   "niveau": "HSK 6",
+   "def": "sorrow; sadness"
+  },
+  {
+   "mot": "悲愁",
+   "pinyin": "bei1 chou2",
+   "niveau": "HSK 6",
+   "def": "melancholy"
+  }
+ ],
+ "肪": [
+  {
+   "mot": "脂肪",
+   "pinyin": "zhi1 fang2",
+   "niveau": "HSK 6",
+   "def": "fat (in the body, in a plant, or in food"
+  },
+  {
+   "mot": "脂肪团",
+   "pinyin": "zhi1 fang2 tuan2",
+   "niveau": "HSK 6",
+   "def": "cellulite"
+  }
+ ],
+ "痕": [
+  {
+   "mot": "伤痕",
+   "pinyin": "shang1 hen2",
+   "niveau": "HSK 6",
+   "def": "scar"
+  },
+  {
+   "mot": "凹痕",
+   "pinyin": "ao1 hen2",
+   "niveau": "HSK 6",
+   "def": "dent"
+  }
+ ],
+ "舅": [
+  {
+   "mot": "外舅",
+   "pinyin": "wai4 jiu4",
+   "niveau": "HSK 6",
+   "def": "(literary) father-in-law"
+  },
+  {
+   "mot": "大舅哥",
+   "pinyin": "da4 jiu4 ge1",
+   "niveau": "HSK 6",
+   "def": "(coll.) wife's older brother"
+  }
+ ],
+ "筹": [
+  {
+   "mot": "众筹",
+   "pinyin": "zhong4 chou2",
+   "niveau": "HSK 6",
+   "def": "crowdfunding"
+  },
+  {
+   "mot": "筹备",
+   "pinyin": "chou2 bei4",
+   "niveau": "HSK 6",
+   "def": "preparations"
+  }
+ ],
+ "肺": [
+  {
+   "mot": "尘肺",
+   "pinyin": "chen2 fei4",
+   "niveau": "HSK 6",
+   "def": "pneumoconiosis"
+  },
+  {
+   "mot": "心肺",
+   "pinyin": "xin1 fei4",
+   "niveau": "HSK 6",
+   "def": "the heart and lungs; cardiopulmonary"
+  }
+ ],
+ "狠": [
+  {
+   "mot": "下狠心",
+   "pinyin": "xia4 hen3 xin1",
+   "niveau": "HSK 6",
+   "def": "to resolve (to do sth); to toughen up"
+  },
+  {
+   "mot": "凶狠",
+   "pinyin": "xiong1 hen3",
+   "niveau": "HSK 6",
+   "def": "variant of 凶狠[xiong1 hen3]"
+  }
+ ],
+ "菊": [
+  {
+   "mot": "戴菊",
+   "pinyin": "dai4 ju2",
+   "niveau": "HSK 6",
+   "def": "(bird species of China) goldcrest (Regul"
+  },
+  {
+   "mot": "戴菊鸟",
+   "pinyin": "dai4 ju2 niao3",
+   "niveau": "HSK 6",
+   "def": "kinglet"
+  }
+ ],
+ "矩": [
+  {
+   "mot": "中心矩",
+   "pinyin": "zhong1 xin1 ju3",
+   "niveau": "HSK 6",
+   "def": "(statistics) central moment"
+  },
+  {
+   "mot": "偏心矩",
+   "pinyin": "pian1 xin1 ju3",
+   "niveau": "HSK 6",
+   "def": "axis of eccentricity"
+  }
+ ],
+ "煤": [
+  {
+   "mot": "元煤",
+   "pinyin": "yuan2 mei2",
+   "niveau": "HSK 6",
+   "def": "variant of 原煤[yuan2 mei2]"
+  },
+  {
+   "mot": "原煤",
+   "pinyin": "yuan2 mei2",
+   "niveau": "HSK 6",
+   "def": "raw coal"
+  }
+ ],
+ "渠": [
+  {
+   "mot": "五家渠",
+   "pinyin": "Wu3 jia1 qu2",
+   "niveau": "HSK 6",
+   "def": "Wujyachü shehiri (Wujiaqu city) or Wǔjiā"
+  },
+  {
+   "mot": "夏敬渠",
+   "pinyin": "Xia4 Jing4 qu2",
+   "niveau": "HSK 6",
+   "def": "Xia Jingqu (1705-1787), Qing novelist, a"
+  }
+ ],
+ "铜": [
+  {
+   "mot": "古铜色",
+   "pinyin": "gu3 tong2 se4",
+   "niveau": "HSK 6",
+   "def": "bronze color"
+  },
+  {
+   "mot": "炮铜",
+   "pinyin": "pao4 tong2",
+   "niveau": "HSK 6",
+   "def": "gunmetal (alloy of copper, tin and zinc)"
+  }
+ ],
+ "俱": [
+  {
+   "mot": "俱佳",
+   "pinyin": "ju4 jia1",
+   "niveau": "HSK 6",
+   "def": "excellent"
+  },
+  {
+   "mot": "俱全",
+   "pinyin": "ju4 quan2",
+   "niveau": "HSK 6",
+   "def": "to have all of the elements mentioned (f"
+  }
+ ],
+ "弥": [
+  {
+   "mot": "弥勒",
+   "pinyin": "Mi2 le4",
+   "niveau": "HSK 6",
+   "def": "Maitreya, the future Bodhisattva, to com"
+  },
+  {
+   "mot": "弥勒佛",
+   "pinyin": "Mi2 le4 fo2",
+   "niveau": "HSK 6",
+   "def": "Maitreya"
+  }
+ ],
+ "娶": [
+  {
+   "mot": "娶妻",
+   "pinyin": "qu3 qi1",
+   "niveau": "HSK 6",
+   "def": "to take a wife"
+  },
+  {
+   "mot": "娶媳妇",
+   "pinyin": "qu3 xi2 fu4",
+   "niveau": "HSK 6",
+   "def": "to get oneself a wife"
+  }
+ ],
+ "筒": [
+  {
+   "mot": "信筒",
+   "pinyin": "xin4 tong3",
+   "niveau": "HSK 6",
+   "def": "mailbox"
+  },
+  {
+   "mot": "传声筒",
+   "pinyin": "chuan2 sheng1 tong3",
+   "niveau": "HSK 6",
+   "def": "loudhailer"
+  }
+ ],
+ "惧": [
+  {
+   "mot": "危惧",
+   "pinyin": "wei1 ju4",
+   "niveau": "HSK 6",
+   "def": "afraid"
+  },
+  {
+   "mot": "怵惧",
+   "pinyin": "chu4 ju4",
+   "niveau": "HSK 6",
+   "def": "fear"
+  }
+ ],
+ "蜜": [
+  {
+   "mot": "吸蜜鸟",
+   "pinyin": "xi1 mi4 niao3",
+   "niveau": "HSK 6",
+   "def": "honeyeater (bird of family Meliphagidae)"
+  },
+  {
+   "mot": "哈蜜瓜",
+   "pinyin": "ha1 mi4 gua1",
+   "niveau": "HSK 6",
+   "def": "variant of 哈密瓜[ha1 mi4 gua1]"
+  }
+ ],
+ "圈": [
+  {
+   "mot": "A圈儿",
+   "pinyin": "A quan1 r5",
+   "niveau": "HSK 6",
+   "def": "at symbol, @"
+  },
+  {
+   "mot": "中圈套",
+   "pinyin": "zhong4 quan1 tao4",
+   "niveau": "HSK 6",
+   "def": "to fall in a trap"
+  }
+ ],
+ "偷": [
+  {
+   "mot": "偷人",
+   "pinyin": "tou1 ren2",
+   "niveau": "HSK 6",
+   "def": "(of a married woman) to cheat on her hus"
+  },
+  {
+   "mot": "偷偷",
+   "pinyin": "tou1 tou1",
+   "niveau": "HSK 6",
+   "def": "stealthily"
+  }
+ ],
+ "菌": [
+  {
+   "mot": "乳杆菌",
+   "pinyin": "ru3 gan3 jun1",
+   "niveau": "HSK 6",
+   "def": "lactobacillus"
+  },
+  {
+   "mot": "乳酸菌",
+   "pinyin": "ru3 suan1 jun1",
+   "niveau": "HSK 6",
+   "def": "lactic acid bacteria"
+  }
+ ],
+ "棉": [
+  {
+   "mot": "小棉袄",
+   "pinyin": "xiao3 mian2 ao3",
+   "niveau": "HSK 6",
+   "def": "(fig.) one's daughter (affectionate term"
+  },
+  {
+   "mot": "采棉机",
+   "pinyin": "cai3 mian2 ji1",
+   "niveau": "HSK 6",
+   "def": "cotton picker"
+  }
+ ],
+ "券": [
+  {
+   "mot": "代金券",
+   "pinyin": "dai4 jin1 quan4",
+   "niveau": "HSK 6",
+   "def": "voucher; coupon"
+  },
+  {
+   "mot": "债券",
+   "pinyin": "zhai4 quan4",
+   "niveau": "HSK 6",
+   "def": "bond"
+  }
+ ],
+ "透": [
+  {
+   "mot": "不透明",
+   "pinyin": "bu4 tou4 ming2",
+   "niveau": "HSK 6",
+   "def": "opaque"
+  },
+  {
+   "mot": "不透气",
+   "pinyin": "bu4 tou4 qi4",
+   "niveau": "HSK 6",
+   "def": "airtight"
+  }
+ ],
+ "刊": [
+  {
+   "mot": "停刊",
+   "pinyin": "ting2 kan1",
+   "niveau": "HSK 6",
+   "def": "(of a newspaper, magazine etc) to stop p"
+  },
+  {
+   "mot": "内刊",
+   "pinyin": "nei4 kan1",
+   "niveau": "HSK 6",
+   "def": "internal publication"
+  }
+ ],
+ "勉": [
+  {
+   "mot": "互勉",
+   "pinyin": "hu4 mian3",
+   "niveau": "HSK 6",
+   "def": "to encourage each other"
+  },
+  {
+   "mot": "勉力",
+   "pinyin": "mian3 li4",
+   "niveau": "HSK 6",
+   "def": "to strive"
+  }
+ ],
+ "壤": [
+  {
+   "mot": "土壤",
+   "pinyin": "tu3 rang3",
+   "niveau": "HSK 6",
+   "def": "soil"
+  },
+  {
+   "mot": "土壤学",
+   "pinyin": "tu3 rang3 xue2",
+   "niveau": "HSK 6",
+   "def": "pedology (soil study)"
+  }
+ ],
+ "徒": [
+  {
+   "mot": "丹徒",
+   "pinyin": "Dan1 tu2",
+   "niveau": "HSK 6",
+   "def": "see 丹徒區|丹徒区[Dan1 tu2 Qu1]"
+  },
+  {
+   "mot": "丹徒区",
+   "pinyin": "Dan1 tu2 Qu1",
+   "niveau": "HSK 6",
+   "def": "Dantu, a district of Zhenjiang City 鎮江市|"
+  }
+ ],
+ "砍": [
+  {
+   "mot": "砍伐",
+   "pinyin": "kan3 fa2",
+   "niveau": "HSK 6",
+   "def": "to hew"
+  },
+  {
+   "mot": "砍伤",
+   "pinyin": "kan3 shang1",
+   "niveau": "HSK 6",
+   "def": "to wound with a blade or hatchet"
+  }
+ ],
+ "妙": [
+  {
+   "mot": "不妙",
+   "pinyin": "bu4 miao4",
+   "niveau": "HSK 6",
+   "def": "(of a turn of events) not too encouragin"
+  },
+  {
+   "mot": "佳妙",
+   "pinyin": "jia1 miao4",
+   "niveau": "HSK 6",
+   "def": "wonderful"
+  }
+ ],
+ "绒": [
+  {
+   "mot": "天鹅绒",
+   "pinyin": "tian1 e2 rong2",
+   "niveau": "HSK 6",
+   "def": "velvet"
+  },
+  {
+   "mot": "小绒鸭",
+   "pinyin": "xiao3 rong2 ya1",
+   "niveau": "HSK 6",
+   "def": "(bird species of China) Steller's eider "
+  }
+ ],
+ "吐": [
+  {
+   "mot": "不吐气",
+   "pinyin": "bu4 tu3 qi4",
+   "niveau": "HSK 6",
+   "def": "unaspirated"
+  },
+  {
+   "mot": "催吐",
+   "pinyin": "cui1 tu4",
+   "niveau": "HSK 6",
+   "def": "to induce vomiting"
+  }
+ ],
+ "抗": [
+  {
+   "mot": "反抗",
+   "pinyin": "fan3 kang4",
+   "niveau": "HSK 6",
+   "def": "to resist"
+  },
+  {
+   "mot": "反抗者",
+   "pinyin": "fan3 kang4 zhe3",
+   "niveau": "HSK 6",
+   "def": "rebel"
+  }
+ ],
+ "灭": [
+  {
+   "mot": "剿灭",
+   "pinyin": "jiao3 mie4",
+   "niveau": "HSK 6",
+   "def": "to eliminate (by armed force)"
+  },
+  {
+   "mot": "吞灭",
+   "pinyin": "tun1 mie4",
+   "niveau": "HSK 6",
+   "def": "to absorb"
+  }
+ ],
+ "融": [
+  {
+   "mot": "交融",
+   "pinyin": "jiao1 rong2",
+   "niveau": "HSK 6",
+   "def": "to blend"
+  },
+  {
+   "mot": "再融资",
+   "pinyin": "zai4 rong2 zi1",
+   "niveau": "HSK 6",
+   "def": "refinancing"
+  }
+ ],
+ "吞": [
+  {
+   "mot": "并吞",
+   "pinyin": "bing4 tun1",
+   "niveau": "HSK 6",
+   "def": "to swallow up"
+  },
+  {
+   "mot": "侵吞",
+   "pinyin": "qin1 tun1",
+   "niveau": "HSK 6",
+   "def": "to annex"
+  }
+ ],
+ "枯": [
+  {
+   "mot": "干枯",
+   "pinyin": "gan1 ku1",
+   "niveau": "HSK 6",
+   "def": "withered; shriveled; dried-up"
+  },
+  {
+   "mot": "枯干",
+   "pinyin": "ku1 gan1",
+   "niveau": "HSK 6",
+   "def": "dried up; shriveled; withered"
+  }
+ ],
+ "摩": [
+  {
+   "mot": "哈摩辣",
+   "pinyin": "Ha1 mo2 la4",
+   "niveau": "HSK 6",
+   "def": "Gomorrah"
+  },
+  {
+   "mot": "乔答摩",
+   "pinyin": "Qiao2 da1 mo2",
+   "niveau": "HSK 6",
+   "def": "Gautama, surname of the Siddhartha, the "
+  }
+ ],
+ "柔": [
+  {
+   "mot": "优柔",
+   "pinyin": "you1 rou2",
+   "niveau": "HSK 6",
+   "def": "gentle"
+  },
+  {
+   "mot": "怀柔",
+   "pinyin": "Huai2 rou2",
+   "niveau": "HSK 6",
+   "def": "see 懷柔區|怀柔区[Huai2 rou2 Qu1]"
+  }
+ ],
+ "托": [
+  {
+   "mot": "交托",
+   "pinyin": "jiao1 tuo1",
+   "niveau": "HSK 6",
+   "def": "to entrust"
+  },
+  {
+   "mot": "付托",
+   "pinyin": "fu4 tuo1",
+   "niveau": "HSK 6",
+   "def": "to entrust to"
+  }
+ ],
+ "酷": [
+  {
+   "mot": "优酷",
+   "pinyin": "You1 ku4",
+   "niveau": "HSK 6",
+   "def": "Youku, Chinese video hosting platform"
+  },
+  {
+   "mot": "冷酷",
+   "pinyin": "leng3 ku4",
+   "niveau": "HSK 6",
+   "def": "unfeeling; callous"
+  }
+ ],
+ "寞": [
+  {
+   "mot": "寂寞",
+   "pinyin": "ji4 mo4",
+   "niveau": "HSK 6",
+   "def": "lonely"
+  },
+  {
+   "mot": "落寞",
+   "pinyin": "luo4 mo4",
+   "niveau": "HSK 6",
+   "def": "lonely; desolate"
+  }
+ ],
+ "撒": [
+  {
+   "mot": "亚撒",
+   "pinyin": "Ya4 sa1",
+   "niveau": "HSK 6",
+   "def": "Asa (?-870 BC), third king of Judah and "
+  },
+  {
+   "mot": "以撒",
+   "pinyin": "Yi3 sa1",
+   "niveau": "HSK 6",
+   "def": "Isaac (son of Abraham)"
+  }
+ ],
+ "挖": [
+  {
+   "mot": "挖人",
+   "pinyin": "wa1 ren2",
+   "niveau": "HSK 6",
+   "def": "to poach an employee (often from a compe"
+  },
+  {
+   "mot": "挖土机",
+   "pinyin": "wa1 tu3 ji1",
+   "niveau": "HSK 6",
+   "def": "excavator"
+  }
+ ],
+ "夸": [
+  {
+   "mot": "上夸克",
+   "pinyin": "shang4 kua1 ke4",
+   "niveau": "HSK 6",
+   "def": "up quark (particle physics)"
+  },
+  {
+   "mot": "下夸克",
+   "pinyin": "xia4 kua1 ke4",
+   "niveau": "HSK 6",
+   "def": "down quark (particle physics)"
+  }
+ ],
+ "纳": [
+  {
+   "mot": "交纳",
+   "pinyin": "jiao1 na4",
+   "niveau": "HSK 6",
+   "def": "to pay (taxes or dues)"
+  },
+  {
+   "mot": "伯纳姆",
+   "pinyin": "Bo2 na4 mu3",
+   "niveau": "HSK 6",
+   "def": "(name) Burnham"
+  }
+ ],
+ "塞": [
+  {
+   "mot": "充塞",
+   "pinyin": "chong1 se4",
+   "niveau": "HSK 6",
+   "def": "congestion"
+  },
+  {
+   "mot": "冰塞",
+   "pinyin": "bing1 sai1",
+   "niveau": "HSK 6",
+   "def": "ice blockage"
+  }
+ ],
+ "娃": [
+  {
+   "mot": "伊娃",
+   "pinyin": "Yi1 wa2",
+   "niveau": "HSK 6",
+   "def": "Eva (name)"
+  },
+  {
+   "mot": "厄娃",
+   "pinyin": "E4 wa2",
+   "niveau": "HSK 6",
+   "def": "Eve, the first woman (transcription used"
+  }
+ ],
+ "馈": [
+  {
+   "mot": "反馈",
+   "pinyin": "fan3 kui4",
+   "niveau": "HSK 6",
+   "def": "to send back information"
+  },
+  {
+   "mot": "回馈",
+   "pinyin": "hui2 kui4",
+   "niveau": "HSK 6",
+   "def": "to repay a favor"
+  }
+ ],
+ "泥": [
+  {
+   "mot": "南泥湾",
+   "pinyin": "Nan2 ni2 wan1",
+   "niveau": "HSK 6",
+   "def": "Nanniwan, township 45 km south of Yan'an"
+  },
+  {
+   "mot": "印泥",
+   "pinyin": "yin4 ni2",
+   "niveau": "HSK 6",
+   "def": "red ink paste used for seal"
+  }
+ ],
+ "嗓": [
+  {
+   "mot": "倒嗓",
+   "pinyin": "dao3 sang3",
+   "niveau": "HSK 6",
+   "def": "(of a singer) to lose one's voice"
+  },
+  {
+   "mot": "假嗓",
+   "pinyin": "jia3 sang3",
+   "niveau": "HSK 6",
+   "def": "falsetto (in opera)"
+  }
+ ],
+ "哇": [
+  {
+   "mot": "中爪哇",
+   "pinyin": "Zhong1 Zhao3 wa1",
+   "niveau": "HSK 6",
+   "def": "Central Java, province of Indonesia"
+  },
+  {
+   "mot": "卡哇伊",
+   "pinyin": "ka3 wa1 yi1",
+   "niveau": "HSK 6",
+   "def": "cute"
+  }
+ ],
+ "阔": [
+  {
+   "mot": "久阔",
+   "pinyin": "jiu3 kuo4",
+   "niveau": "HSK 6",
+   "def": "a long period of separation"
+  },
+  {
+   "mot": "壮阔",
+   "pinyin": "zhuang4 kuo4",
+   "niveau": "HSK 6",
+   "def": "grand"
+  }
+ ],
+ "拟": [
+  {
+   "mot": "原拟",
+   "pinyin": "yuan2 ni3",
+   "niveau": "HSK 6",
+   "def": "to initially plan to ...; to originally "
+  },
+  {
+   "mot": "摹拟",
+   "pinyin": "mo2 ni3",
+   "niveau": "HSK 6",
+   "def": "variant of 模擬|模拟[mo2 ni3]"
+  }
+ ],
+ "丧": [
+  {
+   "mot": "凶丧",
+   "pinyin": "xiong1 sang1",
+   "niveau": "HSK 6",
+   "def": "funeral arrangements"
+  },
+  {
+   "mot": "出丧",
+   "pinyin": "chu1 sang1",
+   "niveau": "HSK 6",
+   "def": "to hold a funeral procession"
+  }
+ ],
+ "歪": [
+  {
+   "mot": "带歪",
+   "pinyin": "dai4 wai1",
+   "niveau": "HSK 6",
+   "def": "(coll.) to lead astray"
+  },
+  {
+   "mot": "弄歪",
+   "pinyin": "nong4 wai1",
+   "niveau": "HSK 6",
+   "def": "to distort"
+  }
+ ],
+ "啦": [
+  {
+   "mot": "卡啦",
+   "pinyin": "ka3 la1",
+   "niveau": "HSK 6",
+   "def": "crispy, deep-fried (variant of 卡拉[ka3 la"
+  },
+  {
+   "mot": "叭啦狗",
+   "pinyin": "ba1 la1 gou3",
+   "niveau": "HSK 6",
+   "def": "bulldog"
+  }
+ ],
+ "扭": [
+  {
+   "mot": "别扭",
+   "pinyin": "bie4 niu5",
+   "niveau": "HSK 6",
+   "def": "awkward"
+  },
+  {
+   "mot": "扭伤",
+   "pinyin": "niu3 shang1",
+   "niveau": "HSK 6",
+   "def": "a sprain"
+  }
+ ],
+ "杀": [
+  {
+   "mot": "仇杀",
+   "pinyin": "chou2 sha1",
+   "niveau": "HSK 6",
+   "def": "to kill in revenge"
+  },
+  {
+   "mot": "他杀",
+   "pinyin": "ta1 sha1",
+   "niveau": "HSK 6",
+   "def": "homicide (law)"
+  }
+ ],
+ "顽": [
+  {
+   "mot": "凶顽",
+   "pinyin": "xiong1 wan2",
+   "niveau": "HSK 6",
+   "def": "fierce and uncontrollable"
+  },
+  {
+   "mot": "冥顽",
+   "pinyin": "ming2 wan2",
+   "niveau": "HSK 6",
+   "def": "stupidly obstinate"
+  }
+ ],
+ "赖": [
+  {
+   "mot": "不赖",
+   "pinyin": "bu4 lai4",
+   "niveau": "HSK 6",
+   "def": "(coll.) not bad"
+  },
+  {
+   "mot": "仰赖",
+   "pinyin": "yang3 lai4",
+   "niveau": "HSK 6",
+   "def": "to rely on"
+  }
+ ],
+ "怒": [
+  {
+   "mot": "动怒",
+   "pinyin": "dong4 nu4",
+   "niveau": "HSK 6",
+   "def": "to get angry"
+  },
+  {
+   "mot": "嗔怒",
+   "pinyin": "chen1 nu4",
+   "niveau": "HSK 6",
+   "def": "to get angry"
+  }
+ ],
+ "刹": [
+  {
+   "mot": "一刹那",
+   "pinyin": "yi1 cha4 na4",
+   "niveau": "HSK 6",
+   "def": "a moment"
+  },
+  {
+   "mot": "什刹海",
+   "pinyin": "shi2 cha4 hai3",
+   "niveau": "HSK 6",
+   "def": "Shichahai, scenic area of northwest Beij"
+  }
+ ],
+ "亡": [
+  {
+   "mot": "亡佚",
+   "pinyin": "wang2 yi4",
+   "niveau": "HSK 6",
+   "def": "nonextant"
+  },
+  {
+   "mot": "亡八",
+   "pinyin": "wang2 ba1",
+   "niveau": "HSK 6",
+   "def": "variant of 王八[wang2 ba1]"
+  }
+ ],
+ "兰": [
+  {
+   "mot": "亚兰",
+   "pinyin": "Ya4 lan2",
+   "niveau": "HSK 6",
+   "def": "Ram (son of Hezron)"
+  },
+  {
+   "mot": "伊斯兰",
+   "pinyin": "Yi1 si1 lan2",
+   "niveau": "HSK 6",
+   "def": "Islam"
+  }
+ ],
+ "诺": [
+  {
+   "mot": "伊利诺",
+   "pinyin": "Yi1 li4 nuo4",
+   "niveau": "HSK 6",
+   "def": "Illinois, US state"
+  },
+  {
+   "mot": "优诺牌",
+   "pinyin": "You1 nuo4 pai2",
+   "niveau": "HSK 6",
+   "def": "Uno (card game)"
+  }
+ ],
+ "鲨": [
+  {
+   "mot": "大白鲨",
+   "pinyin": "da4 bai2 sha1",
+   "niveau": "HSK 6",
+   "def": "great white shark (Carcharodon carcharia"
+  },
+  {
+   "mot": "姥鲨",
+   "pinyin": "lao3 sha1",
+   "niveau": "HSK 6",
+   "def": "basking shark (Cetorhinus maximus)"
+  }
+ ],
+ "王": [
+  {
+   "mot": "亚瑟王",
+   "pinyin": "Ya4 se4 wang2",
+   "niveau": "HSK 6",
+   "def": "King Arthur"
+  },
+  {
+   "mot": "仙王座",
+   "pinyin": "Xian1 wang2 zuo4",
+   "niveau": "HSK 6",
+   "def": "Cepheus (constellation)"
+  }
+ ],
+ "拦": [
+  {
+   "mot": "拦住",
+   "pinyin": "lan2 zhu4",
+   "niveau": "HSK 6",
+   "def": "to stop"
+  },
+  {
+   "mot": "拦劫",
+   "pinyin": "lan2 jie2",
+   "niveau": "HSK 6",
+   "def": "to mug"
+  }
+ ],
+ "盼": [
+  {
+   "mot": "企盼",
+   "pinyin": "qi3 pan4",
+   "niveau": "HSK 6",
+   "def": "to hope for; to look forward to"
+  },
+  {
+   "mot": "切盼",
+   "pinyin": "qie4 pan4",
+   "niveau": "HSK 6",
+   "def": "(formal) to earnestly hope"
+  }
+ ],
+ "筛": [
+  {
+   "mot": "分子筛",
+   "pinyin": "fen1 zi3 shai1",
+   "niveau": "HSK 6",
+   "def": "molecular sieve"
+  },
+  {
+   "mot": "快筛",
+   "pinyin": "kuai4 shai1",
+   "niveau": "HSK 6",
+   "def": "rapid diagnostic test (RDT), abbr. for 快"
+  }
+ ],
+ "委": [
+  {
+   "mot": "中纪委",
+   "pinyin": "Zhong1 ji4 wei3",
+   "niveau": "HSK 6",
+   "def": "Central Commission for Discipline Inspec"
+  },
+  {
+   "mot": "主委",
+   "pinyin": "zhu3 wei3",
+   "niveau": "HSK 6",
+   "def": "committee chairperson"
+  }
+ ],
+ "栏": [
+  {
+   "mot": "三框栏",
+   "pinyin": "san1 kuang4 lan2",
+   "niveau": "HSK 6",
+   "def": "radical 匚[fang1] (Kangxi radical 22)"
+  },
+  {
+   "mot": "任务栏",
+   "pinyin": "ren4 wu5 lan2",
+   "niveau": "HSK 6",
+   "def": "taskbar (computing)"
+  }
+ ],
+ "庞": [
+  {
+   "mot": "勒庞",
+   "pinyin": "Le4 Pang2",
+   "niveau": "HSK 6",
+   "def": "Jean-Marie Le Pen (1928-), French Front "
+  },
+  {
+   "mot": "脸庞",
+   "pinyin": "lian3 pang2",
+   "niveau": "HSK 6",
+   "def": "face"
+  }
+ ],
+ "闪": [
+  {
+   "mot": "一闪念",
+   "pinyin": "yi1 shan3 nian4",
+   "niveau": "HSK 6",
+   "def": "sudden idea"
+  },
+  {
+   "mot": "亮闪闪",
+   "pinyin": "liang4 shan3 shan3",
+   "niveau": "HSK 6",
+   "def": "bright"
+  }
+ ],
+ "谓": [
+  {
+   "mot": "不谓",
+   "pinyin": "bu4 wei4",
+   "niveau": "HSK 6",
+   "def": "cannot be deemed"
+  },
+  {
+   "mot": "主谓",
+   "pinyin": "zhu3 wei4",
+   "niveau": "HSK 6",
+   "def": "(linguistics) subject and predicate"
+  }
+ ],
+ "烂": [
+  {
+   "mot": "下三烂",
+   "pinyin": "xia4 san1 lan4",
+   "niveau": "HSK 6",
+   "def": "variant of 下三濫|下三滥[xia4 san1 lan4]"
+  },
+  {
+   "mot": "唬烂",
+   "pinyin": "hu3 lan4",
+   "niveau": "HSK 6",
+   "def": "(slang) (Tw) to bullshit"
+  }
+ ],
+ "抛": [
+  {
+   "mot": "打抛",
+   "pinyin": "da3 pao1",
+   "niveau": "HSK 6",
+   "def": "holy basil (Ocimum tenuiflorum) (loanwor"
+  },
+  {
+   "mot": "打抛猪",
+   "pinyin": "da3 pao1 zhu1",
+   "niveau": "HSK 6",
+   "def": "stir-fried pork with basil; pork phat ka"
+  }
+ ],
+ "尚": [
+  {
+   "mot": "和尚",
+   "pinyin": "he2 shang5",
+   "niveau": "HSK 6",
+   "def": "Buddhist monk"
+  },
+  {
+   "mot": "孔尚任",
+   "pinyin": "Kong3 Shang4 ren4",
+   "niveau": "HSK 6",
+   "def": "Kong Shangren (1648-1718), Qing dramatis"
+  }
+ ],
+ "沃": [
+  {
+   "mot": "加沃特",
+   "pinyin": "jia1 wo4 te4",
+   "niveau": "HSK 6",
+   "def": "(loanword) gavotte, French dance popular"
+  },
+  {
+   "mot": "希沃特",
+   "pinyin": "xi1 wo4 te4",
+   "niveau": "HSK 6",
+   "def": "sievert (Sv), unit of radiation damage u"
+  }
+ ],
+ "狼": [
+  {
+   "mot": "土狼",
+   "pinyin": "tu3 lang2",
+   "niveau": "HSK 6",
+   "def": "aardwolf (Proteles cristatus), a small i"
+  },
+  {
+   "mot": "大灰狼",
+   "pinyin": "da4 hui1 lang2",
+   "niveau": "HSK 6",
+   "def": "big bad wolf"
+  }
+ ],
+ "泡": [
+  {
+   "mot": "卵泡",
+   "pinyin": "luan3 pao1",
+   "niveau": "HSK 6",
+   "def": "ovarian follicle"
+  },
+  {
+   "mot": "囊泡",
+   "pinyin": "nang2 pao4",
+   "niveau": "HSK 6",
+   "def": "vesicle"
+  }
+ ],
+ "舌": [
+  {
+   "mot": "口舌",
+   "pinyin": "kou3 she2",
+   "niveau": "HSK 6",
+   "def": "dispute or misunderstanding caused by go"
+  },
+  {
+   "mot": "吐舌头",
+   "pinyin": "tu3 she2 tou5",
+   "niveau": "HSK 6",
+   "def": "to stick out one's tongue"
+  }
+ ],
+ "乌": [
+  {
+   "mot": "三足乌",
+   "pinyin": "san1 zu2 wu1",
+   "niveau": "HSK 6",
+   "def": "three-legged Golden Crow that lives in t"
+  },
+  {
+   "mot": "何首乌",
+   "pinyin": "he2 shou3 wu1",
+   "niveau": "HSK 6",
+   "def": "Chinese knotweed (Polygonum multiflorum)"
+  }
+ ],
+ "廊": [
+  {
+   "mot": "前廊",
+   "pinyin": "qian2 lang2",
+   "niveau": "HSK 6",
+   "def": "front porch"
+  },
+  {
+   "mot": "廊坊",
+   "pinyin": "Lang2 fang2",
+   "niveau": "HSK 6",
+   "def": "see 廊坊市[Lang2 fang2 Shi4]"
+  }
+ ],
+ "佩": [
+  {
+   "mot": "佩剑",
+   "pinyin": "pei4 jian4",
+   "niveau": "HSK 6",
+   "def": "sword"
+  },
+  {
+   "mot": "佩奇",
+   "pinyin": "Pei4 qi2",
+   "niveau": "HSK 6",
+   "def": "Peppa, from Peppa Pig cartoon"
+  }
+ ],
+ "射": [
+  {
+   "mot": "仿射",
+   "pinyin": "fang3 she4",
+   "niveau": "HSK 6",
+   "def": "(math.) affine"
+  },
+  {
+   "mot": "光射线",
+   "pinyin": "guang1 she4 xian4",
+   "niveau": "HSK 6",
+   "def": "light ray"
+  }
+ ],
+ "晰": [
+  {
+   "mot": "明晰",
+   "pinyin": "ming2 xi1",
+   "niveau": "HSK 6",
+   "def": "clear; well-defined; limpid"
+  },
+  {
+   "mot": "清晰",
+   "pinyin": "qing1 xi1",
+   "niveau": "HSK 6",
+   "def": "clear; distinct"
+  }
+ ],
+ "朗": [
+  {
+   "mot": "丹布朗",
+   "pinyin": "Dan1 Bu4 lang3",
+   "niveau": "HSK 6",
+   "def": "Dan Brown (American novelist)"
+  },
+  {
+   "mot": "伊朗",
+   "pinyin": "Yi1 lang3",
+   "niveau": "HSK 6",
+   "def": "Iran"
+  }
+ ],
+ "喷": [
+  {
+   "mot": "井喷",
+   "pinyin": "jing3 pen1",
+   "niveau": "HSK 6",
+   "def": "(oil) blowout"
+  },
+  {
+   "mot": "喷出",
+   "pinyin": "pen1 chu1",
+   "niveau": "HSK 6",
+   "def": "spout"
+  }
+ ],
+ "涉": [
+  {
+   "mot": "不干涉",
+   "pinyin": "bu4 gan1 she4",
+   "niveau": "HSK 6",
+   "def": "noninterference"
+  },
+  {
+   "mot": "交涉",
+   "pinyin": "jiao1 she4",
+   "niveau": "HSK 6",
+   "def": "to negotiate (with)"
+  }
+ ],
+ "媳": [
+  {
+   "mot": "儿媳",
+   "pinyin": "er2 xi2",
+   "niveau": "HSK 6",
+   "def": "daughter-in-law"
+  },
+  {
+   "mot": "儿媳妇",
+   "pinyin": "er2 xi2 fu4",
+   "niveau": "HSK 6",
+   "def": "daughter-in-law"
+  }
+ ],
+ "牢": [
+  {
+   "mot": "吃牢饭",
+   "pinyin": "chi1 lao2 fan4",
+   "niveau": "HSK 6",
+   "def": "(coll.) to serve time in prison; (Tw) (s"
+  },
+  {
+   "mot": "嘴牢",
+   "pinyin": "zui3 lao2",
+   "niveau": "HSK 6",
+   "def": "tight-lipped"
+  }
+ ],
+ "捧": [
+  {
+   "mot": "受追捧",
+   "pinyin": "shou4 zhui1 peng3",
+   "niveau": "HSK 6",
+   "def": "to be eagerly sought after"
+  },
+  {
+   "mot": "吹捧",
+   "pinyin": "chui1 peng3",
+   "niveau": "HSK 6",
+   "def": "to flatter"
+  }
+ ],
+ "审": [
+  {
+   "mot": "一审",
+   "pinyin": "yi1 shen3",
+   "niveau": "HSK 6",
+   "def": "first instance (law)"
+  },
+  {
+   "mot": "二审",
+   "pinyin": "er4 shen3",
+   "niveau": "HSK 6",
+   "def": "(law) second instance; second trial"
+  }
+ ],
+ "吓": [
+  {
+   "mot": "吓一跳",
+   "pinyin": "xia4 yi1 tiao4",
+   "niveau": "HSK 6",
+   "def": "startled"
+  },
+  {
+   "mot": "吓人",
+   "pinyin": "xia4 ren2",
+   "niveau": "HSK 6",
+   "def": "to scare"
+  }
+ ],
+ "雷": [
+  {
+   "mot": "布雷",
+   "pinyin": "bu4 lei2",
+   "niveau": "HSK 6",
+   "def": "to lay mines"
+  },
+  {
+   "mot": "布雷舰",
+   "pinyin": "bu4 lei2 jian4",
+   "niveau": "HSK 6",
+   "def": "minelayer (ship)"
+  }
+ ],
+ "披": [
+  {
+   "mot": "披垂",
+   "pinyin": "pi1 chui2",
+   "niveau": "HSK 6",
+   "def": "(of clothes, hair etc) to hang down and "
+  },
+  {
+   "mot": "披巾",
+   "pinyin": "pi1 jin1",
+   "niveau": "HSK 6",
+   "def": "shawl"
+  }
+ ],
+ "甥": [
+  {
+   "mot": "外甥",
+   "pinyin": "wai4 sheng1",
+   "niveau": "HSK 6",
+   "def": "sister's son"
+  },
+  {
+   "mot": "外甥女",
+   "pinyin": "wai4 sheng5 nu:3",
+   "niveau": "HSK 6",
+   "def": "sister's daughter"
+  }
+ ],
+ "嫌": [
+  {
+   "mot": "主嫌",
+   "pinyin": "zhu3 xian2",
+   "niveau": "HSK 6",
+   "def": "prime, key or main suspect (law)"
+  },
+  {
+   "mot": "凶嫌",
+   "pinyin": "xiong1 xian2",
+   "niveau": "HSK 6",
+   "def": "alleged killer (or attacker); suspect in"
+  }
+ ],
+ "粒": [
+  {
+   "mot": "中心粒",
+   "pinyin": "zhong1 xin1 li4",
+   "niveau": "HSK 6",
+   "def": "(cell biology) centriole"
+  },
+  {
+   "mot": "反粒子",
+   "pinyin": "fan3 li4 zi3",
+   "niveau": "HSK 6",
+   "def": "antiparticle (physics)"
+  }
+ ],
+ "疲": [
+  {
+   "mot": "疲乏",
+   "pinyin": "pi2 fa2",
+   "niveau": "HSK 6",
+   "def": "tired"
+  },
+  {
+   "mot": "疲倦",
+   "pinyin": "pi2 juan4",
+   "niveau": "HSK 6",
+   "def": "to tire"
+  }
+ ],
+ "盛": [
+  {
+   "mot": "全盛",
+   "pinyin": "quan2 sheng4",
+   "niveau": "HSK 6",
+   "def": "flourishing"
+  },
+  {
+   "mot": "女体盛",
+   "pinyin": "nu:3 ti3 cheng2",
+   "niveau": "HSK 6",
+   "def": "nyotaimori or \"body sushi\", Japanese pra"
+  }
+ ],
+ "陷": [
+  {
+   "mot": "下陷",
+   "pinyin": "xia4 xian4",
+   "niveau": "HSK 6",
+   "def": "to subside"
+  },
+  {
+   "mot": "低陷",
+   "pinyin": "di1 xian4",
+   "niveau": "HSK 6",
+   "def": "to sink"
+  }
+ ],
+ "怜": [
+  {
+   "mot": "乞怜",
+   "pinyin": "qi3 lian2",
+   "niveau": "HSK 6",
+   "def": "to beg for pity"
+  },
+  {
+   "mot": "可怜",
+   "pinyin": "ke3 lian2",
+   "niveau": "HSK 6",
+   "def": "pitiful"
+  }
+ ],
+ "飘": [
+  {
+   "mot": "发飘",
+   "pinyin": "fa1 piao1",
+   "niveau": "HSK 6",
+   "def": "to feel shaky; to feel wobbly"
+  },
+  {
+   "mot": "虚飘飘",
+   "pinyin": "xu1 piao1 piao1",
+   "niveau": "HSK 6",
+   "def": "light and airy"
+  }
+ ],
+ "狮": [
+  {
+   "mot": "小狮座",
+   "pinyin": "Xiao3 shi1 zuo4",
+   "niveau": "HSK 6",
+   "def": "Leo Minor (constellation)"
+  },
+  {
+   "mot": "山狮",
+   "pinyin": "shan1 shi1",
+   "niveau": "HSK 6",
+   "def": "mountain lion"
+  }
+ ],
+ "祥": [
+  {
+   "mot": "不祥",
+   "pinyin": "bu4 xiang2",
+   "niveau": "HSK 6",
+   "def": "ominous"
+  },
+  {
+   "mot": "吉祥",
+   "pinyin": "ji2 xiang2",
+   "niveau": "HSK 6",
+   "def": "lucky"
+  }
+ ],
+ "链": [
+  {
+   "mot": "人链",
+   "pinyin": "ren2 lian4",
+   "niveau": "HSK 6",
+   "def": "human chain"
+  },
+  {
+   "mot": "供应链",
+   "pinyin": "gong1 ying4 lian4",
+   "niveau": "HSK 6",
+   "def": "supply chain"
+  }
+ ],
+ "贫": [
+  {
+   "mot": "扶贫",
+   "pinyin": "fu2 pin2",
+   "niveau": "HSK 6",
+   "def": "assistance to the poor"
+  },
+  {
+   "mot": "次贫",
+   "pinyin": "ci4 pin2",
+   "niveau": "HSK 6",
+   "def": "extremely poor but not destitute"
+  }
+ ],
+ "寿": [
+  {
+   "mot": "人寿",
+   "pinyin": "ren2 shou4",
+   "niveau": "HSK 6",
+   "def": "human lifespan"
+  },
+  {
+   "mot": "仁寿",
+   "pinyin": "Ren2 shou4",
+   "niveau": "HSK 6",
+   "def": "see 仁壽縣|仁寿县[Ren2 shou4 Xian4]"
+  }
+ ],
+ "宵": [
+  {
+   "mot": "今宵",
+   "pinyin": "jin1 xiao1",
+   "niveau": "HSK 6",
+   "def": "(literary) tonight"
+  },
+  {
+   "mot": "元宵",
+   "pinyin": "yuan2 xiao1",
+   "niveau": "HSK 6",
+   "def": "Lantern Festival"
+  }
+ ],
+ "梁": [
+  {
+   "mot": "丁字梁",
+   "pinyin": "ding1 zi4 liang2",
+   "niveau": "HSK 6",
+   "def": "T-girder"
+  },
+  {
+   "mot": "上梁",
+   "pinyin": "shang4 liang2",
+   "niveau": "HSK 6",
+   "def": "to lay an upper beam"
+  }
+ ],
+ "坡": [
+  {
+   "mot": "上坡",
+   "pinyin": "shang4 po1",
+   "niveau": "HSK 6",
+   "def": "uphill"
+  },
+  {
+   "mot": "上坡段",
+   "pinyin": "shang4 po1 duan4",
+   "niveau": "HSK 6",
+   "def": "uphill section (of a race)"
+  }
+ ],
+ "薯": [
+  {
+   "mot": "参薯",
+   "pinyin": "shen1 shu3",
+   "niveau": "HSK 6",
+   "def": "ube; purple yam (Dioscorea alata)"
+  },
+  {
+   "mot": "木薯",
+   "pinyin": "mu4 shu3",
+   "niveau": "HSK 6",
+   "def": "cassava, a tropical tuber plant"
+  }
+ ],
+ "歇": [
+  {
+   "mot": "停歇",
+   "pinyin": "ting2 xie1",
+   "niveau": "HSK 6",
+   "def": "to stop for a rest"
+  },
+  {
+   "mot": "冬歇期",
+   "pinyin": "dong1 xie1 qi1",
+   "niveau": "HSK 6",
+   "def": "winter break"
+  }
+ ],
+ "晾": [
+  {
+   "mot": "晾干",
+   "pinyin": "liang4 gan1",
+   "niveau": "HSK 6",
+   "def": "to dry (sth) by airing"
+  },
+  {
+   "mot": "晾晒",
+   "pinyin": "liang4 shai4",
+   "niveau": "HSK 6",
+   "def": "to sun-dry"
+  }
+ ],
+ "迫": [
+  {
+   "mot": "交迫",
+   "pinyin": "jiao1 po4",
+   "niveau": "HSK 6",
+   "def": "to be beleaguered"
+  },
+  {
+   "mot": "切迫",
+   "pinyin": "qie4 po4",
+   "niveau": "HSK 6",
+   "def": "urgent"
+  }
+ ],
+ "竖": [
+  {
+   "mot": "横竖",
+   "pinyin": "heng2 shu5",
+   "niveau": "HSK 6",
+   "def": "anyway"
+  },
+  {
+   "mot": "竖中指",
+   "pinyin": "shu4 zhong1 zhi3",
+   "niveau": "HSK 6",
+   "def": "to give the middle finger"
+  }
+ ],
+ "谐": [
+  {
+   "mot": "俳谐",
+   "pinyin": "pai2 xie2",
+   "niveau": "HSK 6",
+   "def": "(literary) humorous; facetious"
+  },
+  {
+   "mot": "和谐",
+   "pinyin": "he2 xie2",
+   "niveau": "HSK 6",
+   "def": "harmonious"
+  }
+ ],
+ "劣": [
+  {
+   "mot": "低劣",
+   "pinyin": "di1 lie4",
+   "niveau": "HSK 6",
+   "def": "inferior quality"
+  },
+  {
+   "mot": "伪劣",
+   "pinyin": "wei3 lie4",
+   "niveau": "HSK 6",
+   "def": "inferior"
+  }
+ ],
+ "扑": [
+  {
+   "mot": "反扑",
+   "pinyin": "fan3 pu1",
+   "niveau": "HSK 6",
+   "def": "to counterattack"
+  },
+  {
+   "mot": "打扑克",
+   "pinyin": "da3 pu1 ke4",
+   "niveau": "HSK 6",
+   "def": "to play cards"
+  }
+ ],
+ "漱": [
+  {
+   "mot": "梁漱溟",
+   "pinyin": "Liang2 Shu4 ming2",
+   "niveau": "HSK 6",
+   "def": "Liang Shuming (1893-1988), modern philos"
+  },
+  {
+   "mot": "洗漱",
+   "pinyin": "xi3 shu4",
+   "niveau": "HSK 6",
+   "def": "to wash the face and rinse the mouth"
+  }
+ ],
+ "携": [
+  {
+   "mot": "便携",
+   "pinyin": "bian4 xie2",
+   "niveau": "HSK 6",
+   "def": "portable"
+  },
+  {
+   "mot": "便携式",
+   "pinyin": "bian4 xie2 shi4",
+   "niveau": "HSK 6",
+   "def": "portable"
+  }
+ ],
+ "淋": [
+  {
+   "mot": "冰淇淋",
+   "pinyin": "bing1 qi2 lin2",
+   "niveau": "HSK 6",
+   "def": "ice cream"
+  },
+  {
+   "mot": "味淋",
+   "pinyin": "wei4 lin2",
+   "niveau": "HSK 6",
+   "def": "variant of 味醂[wei4 lin2]"
+  }
+ ],
+ "朴": [
+  {
+   "mot": "俭朴",
+   "pinyin": "jian3 pu3",
+   "niveau": "HSK 6",
+   "def": "thrifty and simple"
+  },
+  {
+   "mot": "凹朴皮",
+   "pinyin": "ao1 po4 pi2",
+   "niveau": "HSK 6",
+   "def": "bark of tulip tree (TCM)"
+  }
+ ],
+ "衰": [
+  {
+   "mot": "不衰",
+   "pinyin": "bu4 shuai1",
+   "niveau": "HSK 6",
+   "def": "unfailing"
+  },
+  {
+   "mot": "半衰期",
+   "pinyin": "ban4 shuai1 qi1",
+   "niveau": "HSK 6",
+   "def": "(physics) half-life"
+  }
+ ],
+ "械": [
+  {
+   "mot": "器械",
+   "pinyin": "qi4 xie4",
+   "niveau": "HSK 6",
+   "def": "apparatus"
+  },
+  {
+   "mot": "持械",
+   "pinyin": "chi2 xie4",
+   "niveau": "HSK 6",
+   "def": "armed (robbery etc)"
+  }
+ ],
+ "笼": [
+  {
+   "mot": "八角笼",
+   "pinyin": "ba1 jiao3 long2",
+   "niveau": "HSK 6",
+   "def": "MMA octagon (octagonal cage used for mix"
+  },
+  {
+   "mot": "出笼",
+   "pinyin": "chu1 long2",
+   "niveau": "HSK 6",
+   "def": "(of food) to be taken out of the steamer"
+  }
+ ],
+ "铺": [
+  {
+   "mot": "上下铺",
+   "pinyin": "shang4 xia4 pu4",
+   "niveau": "HSK 6",
+   "def": "bunk bed"
+  },
+  {
+   "mot": "吊铺",
+   "pinyin": "diao4 pu4",
+   "niveau": "HSK 6",
+   "def": "suspended bunk"
+  }
+ ],
+ "瞬": [
+  {
+   "mot": "一瞬",
+   "pinyin": "yi1 shun4",
+   "niveau": "HSK 6",
+   "def": "one instant"
+  },
+  {
+   "mot": "一瞬间",
+   "pinyin": "yi1 shun4 jian1",
+   "niveau": "HSK 6",
+   "def": "split second"
+  }
+ ],
+ "薪": [
+  {
+   "mot": "加薪",
+   "pinyin": "jia1 xin1",
+   "niveau": "HSK 6",
+   "def": "to raise salary"
+  },
+  {
+   "mot": "工薪族",
+   "pinyin": "gong1 xin1 zu2",
+   "niveau": "HSK 6",
+   "def": "salaried class"
+  }
+ ],
+ "露": [
+  {
+   "mot": "不外露",
+   "pinyin": "bu4 wai4 lu4",
+   "niveau": "HSK 6",
+   "def": "not exposed"
+  },
+  {
+   "mot": "出露",
+   "pinyin": "chu1 lu4",
+   "niveau": "HSK 6",
+   "def": "to emerge"
+  }
+ ],
+ "欺": [
+  {
+   "mot": "可欺",
+   "pinyin": "ke3 qi1",
+   "niveau": "HSK 6",
+   "def": "gullible"
+  },
+  {
+   "mot": "欺侮",
+   "pinyin": "qi1 wu3",
+   "niveau": "HSK 6",
+   "def": "to bully"
+  }
+ ],
+ "胸": [
+  {
+   "mot": "低胸",
+   "pinyin": "di1 xiong1",
+   "niveau": "HSK 6",
+   "def": "low-cut (dress)"
+  },
+  {
+   "mot": "前胸",
+   "pinyin": "qian2 xiong1",
+   "niveau": "HSK 6",
+   "def": "human chest"
+  }
+ ],
+ "轮": [
+  {
+   "mot": "一轮",
+   "pinyin": "yi1 lun2",
+   "niveau": "HSK 6",
+   "def": "first round or stage (of a match, electi"
+  },
+  {
+   "mot": "三轮",
+   "pinyin": "san1 lun2",
+   "niveau": "HSK 6",
+   "def": "see 三輪車|三轮车[san1 lun2 che1]"
+  }
+ ],
+ "棋": [
+  {
+   "mot": "一盘棋",
+   "pinyin": "yi1 pan2 qi2",
+   "niveau": "HSK 6",
+   "def": "chessboard layout"
+  },
+  {
+   "mot": "下棋",
+   "pinyin": "xia4 qi2",
+   "niveau": "HSK 6",
+   "def": "to play chess"
+  }
+ ],
+ "塔": [
+  {
+   "mot": "九层塔",
+   "pinyin": "jiu3 ceng2 ta3",
+   "niveau": "HSK 6",
+   "def": "basil"
+  },
+  {
+   "mot": "伊塔",
+   "pinyin": "yi1 ta3",
+   "niveau": "HSK 6",
+   "def": "eta (Greek letter Η, η)"
+  }
+ ],
+ "雄": [
+  {
+   "mot": "南雄",
+   "pinyin": "Nan2 xiong2",
+   "niveau": "HSK 6",
+   "def": "see 南雄市[Nan2 xiong2 Shi4]"
+  },
+  {
+   "mot": "南雄市",
+   "pinyin": "Nan2 xiong2 Shi4",
+   "niveau": "HSK 6",
+   "def": "Nanxiong, a county-level city in Shaogua"
+  }
+ ],
+ "履": [
+  {
+   "mot": "履带",
+   "pinyin": "lu:3 dai4",
+   "niveau": "HSK 6",
+   "def": "caterpillar track (propulsion system use"
+  },
+  {
+   "mot": "履新",
+   "pinyin": "lu:3 xin1",
+   "niveau": "HSK 6",
+   "def": "(of an official) to take up a new post"
+  }
+ ],
+ "旗": [
+  {
+   "mot": "三角旗",
+   "pinyin": "san1 jiao3 qi2",
+   "niveau": "HSK 6",
+   "def": "triangular flag; pennant"
+  },
+  {
+   "mot": "下半旗",
+   "pinyin": "xia4 ban4 qi2",
+   "niveau": "HSK 6",
+   "def": "to fly a flag at half-mast as a sign of "
+  }
+ ],
+ "踏": [
+  {
+   "mot": "大踏步",
+   "pinyin": "da4 ta4 bu4",
+   "niveau": "HSK 6",
+   "def": "in big strides"
+  },
+  {
+   "mot": "挤踏",
+   "pinyin": "ji3 ta4",
+   "niveau": "HSK 6",
+   "def": "stampede"
+  }
+ ],
+ "袖": [
+  {
+   "mot": "套袖",
+   "pinyin": "tao4 xiu4",
+   "niveau": "HSK 6",
+   "def": "sleeve cover"
+  },
+  {
+   "mot": "捋袖子",
+   "pinyin": "luo1 xiu4 zi5",
+   "niveau": "HSK 6",
+   "def": "to push up one's sleeves"
+  }
+ ],
+ "略": [
+  {
+   "mot": "三略",
+   "pinyin": "San1 lu:e4",
+   "niveau": "HSK 6",
+   "def": "see 黃石公三略|黄石公三略[Huang2 Shi2 gong1 San1 l"
+  },
+  {
+   "mot": "事略",
+   "pinyin": "shi4 lu:e4",
+   "niveau": "HSK 6",
+   "def": "biographical sketch"
+  }
+ ],
+ "启": [
+  {
+   "mot": "冷启动",
+   "pinyin": "leng3 qi3 dong4",
+   "niveau": "HSK 6",
+   "def": "to cold start (a vehicle, a computer etc"
+  },
+  {
+   "mot": "哀启",
+   "pinyin": "ai1 qi3",
+   "niveau": "HSK 6",
+   "def": "obituary (archaic term)"
+  }
+ ],
+ "汰": [
+  {
+   "mot": "删汰",
+   "pinyin": "shan1 tai4",
+   "niveau": "HSK 6",
+   "def": "(literary) to eliminate; to delete"
+  },
+  {
+   "mot": "劣汰",
+   "pinyin": "lie4 tai4",
+   "niveau": "HSK 6",
+   "def": "elimination of the weak (cf. 優勝劣汰|优胜劣汰[y"
+  }
+ ],
+ "叙": [
+  {
+   "mot": "以叙",
+   "pinyin": "Yi3 Xu4",
+   "niveau": "HSK 6",
+   "def": "Israel-Syria"
+  },
+  {
+   "mot": "倒叙",
+   "pinyin": "dao4 xu4",
+   "niveau": "HSK 6",
+   "def": "to start a narrative at the end (or midw"
+  }
+ ],
+ "蚂": [
+  {
+   "mot": "蚂蚱",
+   "pinyin": "ma4 zha5",
+   "niveau": "HSK 6",
+   "def": "(dialect) locust"
+  },
+  {
+   "mot": "蚂蜂",
+   "pinyin": "ma3 feng1",
+   "niveau": "HSK 6",
+   "def": "variant of 馬蜂|马蜂[ma3 feng1]"
+  }
+ ],
+ "恰": [
+  {
+   "mot": "恰似",
+   "pinyin": "qia4 si4",
+   "niveau": "HSK 6",
+   "def": "just like"
+  },
+  {
+   "mot": "恰合",
+   "pinyin": "qia4 he2",
+   "niveau": "HSK 6",
+   "def": "to be just right for"
+  }
+ ],
+ "坛": [
+  {
+   "mot": "乒坛",
+   "pinyin": "ping1 tan2",
+   "niveau": "HSK 6",
+   "def": "the table tennis world; table tennis cir"
+  },
+  {
+   "mot": "剧坛",
+   "pinyin": "ju4 tan2",
+   "niveau": "HSK 6",
+   "def": "the world of Chinese opera"
+  }
+ ],
+ "蓄": [
+  {
+   "mot": "储蓄",
+   "pinyin": "chu3 xu4",
+   "niveau": "HSK 6",
+   "def": "to save money (in a bank)"
+  },
+  {
+   "mot": "储蓄卡",
+   "pinyin": "chu3 xu4 ka3",
+   "niveau": "HSK 6",
+   "def": "debit card"
+  }
+ ],
+ "嘛": [
+  {
+   "mot": "喇嘛",
+   "pinyin": "la3 ma5",
+   "niveau": "HSK 6",
+   "def": "lama, spiritual teacher in Tibetan Buddh"
+  },
+  {
+   "mot": "喇嘛庙",
+   "pinyin": "la3 ma5 miao4",
+   "niveau": "HSK 6",
+   "def": "lamasery"
+  }
+ ],
+ "牵": [
+  {
+   "mot": "手牵手",
+   "pinyin": "shou3 qian1 shou3",
+   "niveau": "HSK 6",
+   "def": "hand in hand"
+  },
+  {
+   "mot": "拘牵",
+   "pinyin": "ju1 qian1",
+   "niveau": "HSK 6",
+   "def": "restrained"
+  }
+ ],
+ "探": [
+  {
+   "mot": "侦探",
+   "pinyin": "zhen1 tan4",
+   "niveau": "HSK 6",
+   "def": "detective"
+  },
+  {
+   "mot": "初探",
+   "pinyin": "chu1 tan4",
+   "niveau": "HSK 6",
+   "def": "to conduct an exploratory foray into (an"
+  }
+ ],
+ "旋": [
+  {
+   "mot": "下旋",
+   "pinyin": "xia4 xuan2",
+   "niveau": "HSK 6",
+   "def": "(sport) backspin"
+  },
+  {
+   "mot": "主旋律",
+   "pinyin": "zhu3 xuan2 lu:4",
+   "niveau": "HSK 6",
+   "def": "(music) theme; principal melody"
+  }
+ ],
+ "埋": [
+  {
+   "mot": "包埋",
+   "pinyin": "bao1 mai2",
+   "niveau": "HSK 6",
+   "def": "to embed"
+  },
+  {
+   "mot": "埋伏",
+   "pinyin": "mai2 fu2",
+   "niveau": "HSK 6",
+   "def": "to ambush"
+  }
+ ],
+ "谦": [
+  {
+   "mot": "囊谦",
+   "pinyin": "Nang2 qian1",
+   "niveau": "HSK 6",
+   "def": "see 囊謙縣|囊谦县[Nang2 qian1 Xian4]"
+  },
+  {
+   "mot": "囊谦县",
+   "pinyin": "Nang2 qian1 Xian4",
+   "niveau": "HSK 6",
+   "def": "Nangqên, a county in Yushu Tibetan Auton"
+  }
+ ],
+ "碳": [
+  {
+   "mot": "七碳糖",
+   "pinyin": "qi1 tan4 tang2",
+   "niveau": "HSK 6",
+   "def": "heptose (CH2O)7, monosaccharide with sev"
+  },
+  {
+   "mot": "三碳糖",
+   "pinyin": "san1 tan4 tang2",
+   "niveau": "HSK 6",
+   "def": "triose (CH2O)3, monosaccharide with thre"
+  }
+ ],
+ "旬": [
+  {
+   "mot": "七旬",
+   "pinyin": "qi1 xun2",
+   "niveau": "HSK 6",
+   "def": "70 years; one's seventies"
+  },
+  {
+   "mot": "上旬",
+   "pinyin": "shang4 xun2",
+   "niveau": "HSK 6",
+   "def": "first third of a month"
+  }
+ ],
+ "迈": [
+  {
+   "mot": "年迈",
+   "pinyin": "nian2 mai4",
+   "niveau": "HSK 6",
+   "def": "old"
+  },
+  {
+   "mot": "清迈",
+   "pinyin": "Qing1 mai4",
+   "niveau": "HSK 6",
+   "def": "Chiang Mai, city in Thailand"
+  }
+ ],
+ "潜": [
+  {
+   "mot": "反潜",
+   "pinyin": "fan3 qian2",
+   "niveau": "HSK 6",
+   "def": "anti-submarine"
+  },
+  {
+   "mot": "有潜力",
+   "pinyin": "you3 qian2 li4",
+   "niveau": "HSK 6",
+   "def": "promising"
+  }
+ ],
+ "烫": [
+  {
+   "mot": "氽烫",
+   "pinyin": "tun3 tang4",
+   "niveau": "HSK 6",
+   "def": "to blanch (cooking)"
+  },
+  {
+   "mot": "滚烫",
+   "pinyin": "gun3 tang4",
+   "niveau": "HSK 6",
+   "def": "boiling hot"
+  }
+ ],
+ "循": [
+  {
+   "mot": "依循",
+   "pinyin": "yi1 xun2",
+   "niveau": "HSK 6",
+   "def": "to follow; to comply"
+  },
+  {
+   "mot": "因循",
+   "pinyin": "yin1 xun2",
+   "niveau": "HSK 6",
+   "def": "to continue the same old routine"
+  }
+ ],
+ "麦": [
+  {
+   "mot": "丹麦",
+   "pinyin": "Dan1 mai4",
+   "niveau": "HSK 6",
+   "def": "Denmark"
+  },
+  {
+   "mot": "丹麦包",
+   "pinyin": "Dan1 mai4 bao1",
+   "niveau": "HSK 6",
+   "def": "Danish pastry"
+  }
+ ],
+ "枪": [
+  {
+   "mot": "中枪",
+   "pinyin": "zhong4 qiang1",
+   "niveau": "HSK 6",
+   "def": "to be hit by a gun"
+  },
+  {
+   "mot": "来复枪",
+   "pinyin": "lai2 fu4 qiang1",
+   "niveau": "HSK 6",
+   "def": "rifle (loanword)"
+  }
+ ],
+ "掏": [
+  {
+   "mot": "掏出",
+   "pinyin": "tao1 chu1",
+   "niveau": "HSK 6",
+   "def": "to fish out"
+  },
+  {
+   "mot": "掏包",
+   "pinyin": "tao1 bao1",
+   "niveau": "HSK 6",
+   "def": "to pick pockets"
+  }
+ ],
+ "讯": [
+  {
+   "mot": "侦讯",
+   "pinyin": "zhen1 xun4",
+   "niveau": "HSK 6",
+   "def": "to interrogate during investigation"
+  },
+  {
+   "mot": "传讯",
+   "pinyin": "chuan2 xun4",
+   "niveau": "HSK 6",
+   "def": "(law) to summon (a witness); to subpoena"
+  }
+ ],
+ "盲": [
+  {
+   "mot": "半文盲",
+   "pinyin": "ban4 wen2 mang2",
+   "niveau": "HSK 6",
+   "def": "semiliterate"
+  },
+  {
+   "mot": "单盲",
+   "pinyin": "dan1 mang2",
+   "niveau": "HSK 6",
+   "def": "single-blind (scientific experiment)"
+  }
+ ],
+ "腔": [
+  {
+   "mot": "一腔",
+   "pinyin": "yi1 qiang1",
+   "niveau": "HSK 6",
+   "def": "full of (zeal, anger etc)"
+  },
+  {
+   "mot": "口腔",
+   "pinyin": "kou3 qiang1",
+   "niveau": "HSK 6",
+   "def": "oral cavity"
+  }
+ ],
+ "逃": [
+  {
+   "mot": "出逃",
+   "pinyin": "chu1 tao2",
+   "niveau": "HSK 6",
+   "def": "to run away"
+  },
+  {
+   "mot": "叛逃",
+   "pinyin": "pan4 tao2",
+   "niveau": "HSK 6",
+   "def": "to defect"
+  }
+ ],
+ "讶": [
+  {
+   "mot": "怪讶",
+   "pinyin": "guai4 ya4",
+   "niveau": "HSK 6",
+   "def": "astonished"
+  },
+  {
+   "mot": "讶异",
+   "pinyin": "ya4 yi4",
+   "niveau": "HSK 6",
+   "def": "to be surprised"
+  }
+ ],
+ "贸": [
+  {
+   "mot": "世贸",
+   "pinyin": "Shi4 mao4",
+   "niveau": "HSK 6",
+   "def": "World Trade Organization (WTO)"
+  },
+  {
+   "mot": "内贸",
+   "pinyin": "nei4 mao4",
+   "niveau": "HSK 6",
+   "def": "domestic trade"
+  }
+ ],
+ "瞧": [
+  {
+   "mot": "小瞧",
+   "pinyin": "xiao3 qiao2",
+   "niveau": "HSK 6",
+   "def": "(coll.) to look down on; to underestimat"
+  },
+  {
+   "mot": "瞧不起",
+   "pinyin": "qiao2 bu4 qi3",
+   "niveau": "HSK 6",
+   "def": "to look down upon; to hold in contempt"
+  }
+ ],
+ "淘": [
+  {
+   "mot": "小淘气",
+   "pinyin": "Xiao3 tao2 qi4",
+   "niveau": "HSK 6",
+   "def": "Rogue, Marvel Comics superhero"
+  },
+  {
+   "mot": "海淘",
+   "pinyin": "hai3 tao2",
+   "niveau": "HSK 6",
+   "def": "online purchase of goods dispatched from"
+  }
+ ],
+ "淹": [
+  {
+   "mot": "淹博",
+   "pinyin": "yan1 bo2",
+   "niveau": "HSK 6",
+   "def": "widely read"
+  },
+  {
+   "mot": "淹死",
+   "pinyin": "yan1 si3",
+   "niveau": "HSK 6",
+   "def": "to drown"
+  }
+ ],
+ "眉": [
+  {
+   "mot": "八字眉",
+   "pinyin": "ba1 zi4 mei2",
+   "niveau": "HSK 6",
+   "def": "sloping eyebrows, formed like character "
+  },
+  {
+   "mot": "娥眉",
+   "pinyin": "e2 mei2",
+   "niveau": "HSK 6",
+   "def": "variant of 蛾眉[e2 mei2]"
+  }
+ ],
+ "倾": [
+  {
+   "mot": "倾佩",
+   "pinyin": "qing1 pei4",
+   "niveau": "HSK 6",
+   "def": "to admire greatly"
+  },
+  {
+   "mot": "倾倒",
+   "pinyin": "qing1 dao3",
+   "niveau": "HSK 6",
+   "def": "to topple over; to fall over"
+  }
+ ],
+ "添": [
+  {
+   "mot": "加添",
+   "pinyin": "jia1 tian1",
+   "niveau": "HSK 6",
+   "def": "to add; to augment; to increase"
+  },
+  {
+   "mot": "增添",
+   "pinyin": "zeng1 tian1",
+   "niveau": "HSK 6",
+   "def": "to add"
+  }
+ ],
+ "炎": [
+  {
+   "mot": "中耳炎",
+   "pinyin": "zhong1 er3 yan2",
+   "niveau": "HSK 6",
+   "def": "inflammation of middle ear"
+  },
+  {
+   "mot": "乳腺炎",
+   "pinyin": "ru3 xian4 yan2",
+   "niveau": "HSK 6",
+   "def": "mastitis"
+  }
+ ],
+ "梅": [
+  {
+   "mot": "不来梅",
+   "pinyin": "Bu4 lai2 mei2",
+   "niveau": "HSK 6",
+   "def": "Bremen (city in Germany)"
+  },
+  {
+   "mot": "不莱梅",
+   "pinyin": "Bu4 lai2 mei2",
+   "niveau": "HSK 6",
+   "def": "Bremen (city in Germany)"
+  }
+ ],
+ "屈": [
+  {
+   "mot": "不屈",
+   "pinyin": "bu4 qu1",
+   "niveau": "HSK 6",
+   "def": "unyielding"
+  },
+  {
+   "mot": "冤屈",
+   "pinyin": "yuan1 qu1",
+   "niveau": "HSK 6",
+   "def": "to treat unjustly"
+  }
+ ],
+ "田": [
+  {
+   "mot": "三田",
+   "pinyin": "San1 tian2",
+   "niveau": "HSK 6",
+   "def": "Mita, Sanda, Mitsuda etc (Japanese surna"
+  },
+  {
+   "mot": "上田",
+   "pinyin": "Shang4 tian2",
+   "niveau": "HSK 6",
+   "def": "Ueda (Japanese surname and place name)"
+  }
+ ],
+ "艳": [
+  {
+   "mot": "光艳",
+   "pinyin": "guang1 yan4",
+   "niveau": "HSK 6",
+   "def": "bright and colorful; gorgeous"
+  },
+  {
+   "mot": "冶艳",
+   "pinyin": "ye3 yan4",
+   "niveau": "HSK 6",
+   "def": "bewitching"
+  }
+ ],
+ "宴": [
+  {
+   "mot": "便宴",
+   "pinyin": "bian4 yan4",
+   "niveau": "HSK 6",
+   "def": "informal banquet; dinner party"
+  },
+  {
+   "mot": "公宴",
+   "pinyin": "gong1 yan4",
+   "niveau": "HSK 6",
+   "def": "banquet hosted by an organization to hon"
+  }
+ ],
+ "涌": [
+  {
+   "mot": "喷涌",
+   "pinyin": "pen1 yong3",
+   "niveau": "HSK 6",
+   "def": "to bubble out"
+  },
+  {
+   "mot": "掀涌",
+   "pinyin": "xian1 yong3",
+   "niveau": "HSK 6",
+   "def": "to seethe"
+  }
+ ],
+ "粘": [
+  {
+   "mot": "不粘锅",
+   "pinyin": "bu4 zhan1 guo1",
+   "niveau": "HSK 6",
+   "def": "non-stick pan"
+  },
+  {
+   "mot": "粘乎乎",
+   "pinyin": "nian2 hu1 hu1",
+   "niveau": "HSK 6",
+   "def": "sticky"
+  }
+ ],
+ "株": [
+  {
+   "mot": "株守",
+   "pinyin": "zhu1 shou3",
+   "niveau": "HSK 6",
+   "def": "to stick to sth stubbornly"
+  },
+  {
+   "mot": "株治",
+   "pinyin": "zhu1 zhi4",
+   "niveau": "HSK 6",
+   "def": "to involve others (in a law case)"
+  }
+ ],
+ "央": [
+  {
+   "mot": "中央",
+   "pinyin": "zhong1 yang1",
+   "niveau": "HSK 6",
+   "def": "central"
+  },
+  {
+   "mot": "中央凹",
+   "pinyin": "zhong1 yang1 ao1",
+   "niveau": "HSK 6",
+   "def": "fovea centralis (depression in the macul"
+  }
+ ],
+ "忧": [
+  {
+   "mot": "丁忧",
+   "pinyin": "ding1 you1",
+   "niveau": "HSK 6",
+   "def": "(literary) to be in mourning after the d"
+  },
+  {
+   "mot": "分忧",
+   "pinyin": "fen1 you1",
+   "niveau": "HSK 6",
+   "def": "to share tribulations"
+  }
+ ],
+ "崭": [
+  {
+   "mot": "崭亮",
+   "pinyin": "zhan3 liang4",
+   "niveau": "HSK 6",
+   "def": "shining"
+  },
+  {
+   "mot": "崭劲",
+   "pinyin": "zhan3 jin4",
+   "niveau": "HSK 6",
+   "def": "(dialect) to apply oneself; to make a st"
+  }
+ ],
+ "诸": [
+  {
+   "mot": "付诸",
+   "pinyin": "fu4 zhu1",
+   "niveau": "HSK 6",
+   "def": "to apply to"
+  },
+  {
+   "mot": "见诸",
+   "pinyin": "jian4 zhu1",
+   "niveau": "HSK 6",
+   "def": "(literary) to appear in (newspapers, the"
+  }
+ ],
+ "仰": [
+  {
+   "mot": "久仰",
+   "pinyin": "jiu3 yang3",
+   "niveau": "HSK 6",
+   "def": "honorific: I've long looked forward to m"
+  },
+  {
+   "mot": "仰仗",
+   "pinyin": "yang3 zhang4",
+   "niveau": "HSK 6",
+   "def": "to rely on"
+  }
+ ],
+ "予": [
+  {
+   "mot": "不予",
+   "pinyin": "bu4 yu3",
+   "niveau": "HSK 6",
+   "def": "(formal) not to (do sth)"
+  },
+  {
+   "mot": "予以",
+   "pinyin": "yu3 yi3",
+   "niveau": "HSK 6",
+   "def": "to give"
+  }
+ ],
+ "仗": [
+  {
+   "mot": "仗势",
+   "pinyin": "zhang4 shi4",
+   "niveau": "HSK 6",
+   "def": "to rely on power"
+  },
+  {
+   "mot": "仗恃",
+   "pinyin": "zhang4 shi4",
+   "niveau": "HSK 6",
+   "def": "to rely on; to depend on"
+  }
+ ],
+ "砖": [
+  {
+   "mot": "冰砖",
+   "pinyin": "bing1 zhuan1",
+   "niveau": "HSK 6",
+   "def": "ice-cream brick"
+  },
+  {
+   "mot": "地板砖",
+   "pinyin": "di4 ban3 zhuan1",
+   "niveau": "HSK 6",
+   "def": "floor tile"
+  }
+ ],
+ "氧": [
+  {
+   "mot": "乙氧基",
+   "pinyin": "yi3 yang3 ji1",
+   "niveau": "HSK 6",
+   "def": "ethoxy (chemistry)"
+  },
+  {
+   "mot": "二氧芑",
+   "pinyin": "er4 yang3 qi3",
+   "niveau": "HSK 6",
+   "def": "dioxin"
+  }
+ ],
+ "浴": [
+  {
+   "mot": "坐浴桶",
+   "pinyin": "zuo4 yu4 tong3",
+   "niveau": "HSK 6",
+   "def": "bidet"
+  },
+  {
+   "mot": "坐浴盆",
+   "pinyin": "zuo4 yu4 pen2",
+   "niveau": "HSK 6",
+   "def": "bidet"
+  }
+ ],
+ "障": [
+  {
+   "mot": "保障",
+   "pinyin": "bao3 zhang4",
+   "niveau": "HSK 6",
+   "def": "to ensure"
+  },
+  {
+   "mot": "保障房",
+   "pinyin": "bao3 zhang4 fang2",
+   "niveau": "HSK 6",
+   "def": "affordable housing"
+  }
+ ],
+ "妆": [
+  {
+   "mot": "化妆",
+   "pinyin": "hua4 zhuang1",
+   "niveau": "HSK 6",
+   "def": "to put on makeup"
+  },
+  {
+   "mot": "化妆品",
+   "pinyin": "hua4 zhuang1 pin3",
+   "niveau": "HSK 6",
+   "def": "cosmetic"
+  }
+ ],
+ "痒": [
+  {
+   "mot": "怕痒",
+   "pinyin": "pa4 yang3",
+   "niveau": "HSK 6",
+   "def": "to be ticklish"
+  },
+  {
+   "mot": "手痒",
+   "pinyin": "shou3 yang3",
+   "niveau": "HSK 6",
+   "def": "(fig.) to itch (to do sth)"
+  }
+ ],
+ "欲": [
+  {
+   "mot": "利欲",
+   "pinyin": "li4 yu4",
+   "niveau": "HSK 6",
+   "def": "cupidity"
+  },
+  {
+   "mot": "利欲心",
+   "pinyin": "li4 yu4 xin1",
+   "niveau": "HSK 6",
+   "def": "cupidity"
+  }
+ ],
+ "枕": [
+  {
+   "mot": "U型枕",
+   "pinyin": "U xing2 zhen3",
+   "niveau": "HSK 6",
+   "def": "travel pillow"
+  },
+  {
+   "mot": "失枕",
+   "pinyin": "shi1 zhen3",
+   "niveau": "HSK 6",
+   "def": "a crick in the neck"
+  }
+ ],
+ "庄": [
+  {
+   "mot": "亦庄",
+   "pinyin": "Yi4 zhuang1",
+   "niveau": "HSK 6",
+   "def": "Yizhuang town in Beijing municipality"
+  },
+  {
+   "mot": "做庄",
+   "pinyin": "zuo4 zhuang1",
+   "niveau": "HSK 6",
+   "def": "variant of 坐莊|坐庄[zuo4 zhuang1]"
+  }
+ ],
+ "遥": [
+  {
+   "mot": "平遥",
+   "pinyin": "Ping2 yao2",
+   "niveau": "HSK 6",
+   "def": "see 平遙縣|平遥县[Ping2 yao2 Xian4]"
+  },
+  {
+   "mot": "平遥县",
+   "pinyin": "Ping2 yao2 Xian4",
+   "niveau": "HSK 6",
+   "def": "Pingyao, a county in Jinzhong City 晉中市|晋"
+  }
+ ],
+ "裕": [
+  {
+   "mot": "优裕",
+   "pinyin": "you1 yu4",
+   "niveau": "HSK 6",
+   "def": "plenty"
+  },
+  {
+   "mot": "充裕",
+   "pinyin": "chong1 yu4",
+   "niveau": "HSK 6",
+   "def": "abundant"
+  }
+ ],
+ "镇": [
+  {
+   "mot": "冰镇",
+   "pinyin": "bing1 zhen4",
+   "niveau": "HSK 6",
+   "def": "iced"
+  },
+  {
+   "mot": "前镇",
+   "pinyin": "Qian2 zhen4",
+   "niveau": "HSK 6",
+   "def": "see 前鎮區|前镇区[Qian2 zhen4 Qu1]"
+  }
+ ],
+ "壮": [
+  {
+   "mot": "健壮",
+   "pinyin": "jian4 zhuang4",
+   "niveau": "HSK 6",
+   "def": "robust"
+  },
+  {
+   "mot": "壮丁",
+   "pinyin": "zhuang4 ding1",
+   "niveau": "HSK 6",
+   "def": "able-bodied man (capable of fighting in "
+  }
+ ],
+ "野": [
+  {
+   "mot": "上野",
+   "pinyin": "Shang4 ye3",
+   "niveau": "HSK 6",
+   "def": "Ueno, district in Taitō Ward, Tokyo"
+  },
+  {
+   "mot": "下野",
+   "pinyin": "xia4 ye3",
+   "niveau": "HSK 6",
+   "def": "to step down from office"
+  }
+ ],
+ "誉": [
+  {
+   "mot": "不名誉",
+   "pinyin": "bu4 ming2 yu4",
+   "niveau": "HSK 6",
+   "def": "disreputable"
+  },
+  {
+   "mot": "享誉",
+   "pinyin": "xiang3 yu4",
+   "niveau": "HSK 6",
+   "def": "to be renowned"
+  }
+ ],
+ "睁": [
+  {
+   "mot": "眼睁睁",
+   "pinyin": "yan3 zheng1 zheng1",
+   "niveau": "HSK 6",
+   "def": "to stare blankly"
+  },
+  {
+   "mot": "睁眼",
+   "pinyin": "zheng1 yan3",
+   "niveau": "HSK 6",
+   "def": "to open one's eyes"
+  }
+ ],
+ "椎": [
+  {
+   "mot": "尾椎",
+   "pinyin": "wei3 zhui1",
+   "niveau": "HSK 6",
+   "def": "coccyx"
+  },
+  {
+   "mot": "椎间盘",
+   "pinyin": "zhui1 jian1 pan2",
+   "niveau": "HSK 6",
+   "def": "intervertebral disk"
+  }
+ ],
+ "液": [
+  {
+   "mot": "乳液",
+   "pinyin": "ru3 ye4",
+   "niveau": "HSK 6",
+   "def": "lotion"
+  },
+  {
+   "mot": "五粮液",
+   "pinyin": "Wu3 liang2 ye4",
+   "niveau": "HSK 6",
+   "def": "Wuliangye liquor"
+  }
+ ],
+ "援": [
+  {
+   "mot": "备援",
+   "pinyin": "bei4 yuan2",
+   "niveau": "HSK 6",
+   "def": "backup (Tw)"
+  },
+  {
+   "mot": "增援",
+   "pinyin": "zeng1 yuan2",
+   "niveau": "HSK 6",
+   "def": "to reinforce"
+  }
+ ],
+ "症": [
+  {
+   "mot": "不孕症",
+   "pinyin": "bu4 yun4 zheng4",
+   "niveau": "HSK 6",
+   "def": "female infertility"
+  },
+  {
+   "mot": "不育症",
+   "pinyin": "bu4 yu4 zheng4",
+   "niveau": "HSK 6",
+   "def": "sterility"
+  }
+ ],
+ "捉": [
+  {
+   "mot": "捉住",
+   "pinyin": "zhuo1 zhu4",
+   "niveau": "HSK 6",
+   "def": "to catch"
+  },
+  {
+   "mot": "捉取",
+   "pinyin": "zhuo1 qu3",
+   "niveau": "HSK 6",
+   "def": "to capture"
+  }
+ ],
+ "仪": [
+  {
+   "mot": "仪仗",
+   "pinyin": "yi2 zhang4",
+   "niveau": "HSK 6",
+   "def": "ceremonial weaponry"
+  },
+  {
+   "mot": "仪仗队",
+   "pinyin": "yi2 zhang4 dui4",
+   "niveau": "HSK 6",
+   "def": "honor guard"
+  }
+ ],
+ "跃": [
+  {
+   "mot": "喜跃",
+   "pinyin": "xi3 yue4",
+   "niveau": "HSK 6",
+   "def": "to jump for joy"
+  },
+  {
+   "mot": "大跃进",
+   "pinyin": "Da4 yue4 jin4",
+   "niveau": "HSK 6",
+   "def": "Great Leap Forward (1958-1960), Mao's at"
+  }
+ ],
+ "枝": [
+  {
+   "mot": "六枝",
+   "pinyin": "Liu4 zhi1",
+   "niveau": "HSK 6",
+   "def": "see 六枝特區|六枝特区[Liu4 zhi1 Te4 qu1]"
+  },
+  {
+   "mot": "分枝",
+   "pinyin": "fen1 zhi1",
+   "niveau": "HSK 6",
+   "def": "branch"
+  }
+ ],
+ "棕": [
+  {
+   "mot": "棕噪鹛",
+   "pinyin": "zong1 zao4 mei2",
+   "niveau": "HSK 6",
+   "def": "(bird species of China) buffy laughingth"
+  },
+  {
+   "mot": "棕垫",
+   "pinyin": "zong1 dian4",
+   "niveau": "HSK 6",
+   "def": "palm fiber mat"
+  }
+ ],
+ "蚁": [
+  {
+   "mot": "兵蚁",
+   "pinyin": "bing1 yi3",
+   "niveau": "HSK 6",
+   "def": "soldier ant"
+  },
+  {
+   "mot": "工蚁",
+   "pinyin": "gong1 yi3",
+   "niveau": "HSK 6",
+   "def": "worker ant"
+  }
+ ],
+ "晕": [
+  {
+   "mot": "乳晕",
+   "pinyin": "ru3 yun4",
+   "niveau": "HSK 6",
+   "def": "mammary areola"
+  },
+  {
+   "mot": "光晕",
+   "pinyin": "guang1 yun4",
+   "niveau": "HSK 6",
+   "def": "halo"
+  }
+ ],
+ "脂": [
+  {
+   "mot": "乳脂",
+   "pinyin": "ru3 zhi1",
+   "niveau": "HSK 6",
+   "def": "cream"
+  },
+  {
+   "mot": "低脂",
+   "pinyin": "di1 zhi1",
+   "niveau": "HSK 6",
+   "def": "low fat"
+  }
+ ],
+ "踪": [
+  {
+   "mot": "失踪",
+   "pinyin": "shi1 zong1",
+   "niveau": "HSK 6",
+   "def": "to be missing"
+  },
+  {
+   "mot": "影踪",
+   "pinyin": "ying3 zong1",
+   "niveau": "HSK 6",
+   "def": "trace"
+  }
+ ],
+ "异": [
+  {
+   "mot": "互异",
+   "pinyin": "hu4 yi4",
+   "niveau": "HSK 6",
+   "def": "differing from one another"
+  },
+  {
+   "mot": "优异",
+   "pinyin": "you1 yi4",
+   "niveau": "HSK 6",
+   "def": "exceptional; outstandingly good"
+  }
+ ],
+ "匀": [
+  {
+   "mot": "匀实",
+   "pinyin": "yun2 shi5",
+   "niveau": "HSK 6",
+   "def": "even"
+  },
+  {
+   "mot": "匀整",
+   "pinyin": "yun2 zheng3",
+   "niveau": "HSK 6",
+   "def": "neat and well-spaced"
+  }
+ ],
+ "侄": [
+  {
+   "mot": "堂侄",
+   "pinyin": "tang2 zhi2",
+   "niveau": "HSK 6",
+   "def": "nephew by the male line"
+  },
+  {
+   "mot": "侄儿",
+   "pinyin": "zhi2 er2",
+   "niveau": "HSK 6",
+   "def": "see 姪子|侄子[zhi2 zi5]"
+  }
+ ],
+ "粽": [
+  {
+   "mot": "粽子",
+   "pinyin": "zong4 zi5",
+   "niveau": "HSK 6",
+   "def": "glutinous rice and choice of filling wra"
+  },
+  {
+   "mot": "粽叶",
+   "pinyin": "zong4 ye4",
+   "niveau": "HSK 6",
+   "def": "leaf (usually bamboo or reed leaf) used "
+  }
+ ],
+ "抑": [
+  {
+   "mot": "冤抑",
+   "pinyin": "yuan1 yi4",
+   "niveau": "HSK 6",
+   "def": "to suffer injustice"
+  },
+  {
+   "mot": "压抑",
+   "pinyin": "ya1 yi4",
+   "niveau": "HSK 6",
+   "def": "to constrain or repress emotions"
+  }
+ ],
+ "孕": [
+  {
+   "mot": "不孕",
+   "pinyin": "bu4 yun4",
+   "niveau": "HSK 6",
+   "def": "infertile"
+  },
+  {
+   "mot": "不孕症",
+   "pinyin": "bu4 yun4 zheng4",
+   "niveau": "HSK 6",
+   "def": "female infertility"
+  }
+ ],
+ "殖": [
+  {
+   "mot": "增殖",
+   "pinyin": "zeng1 zhi2",
+   "niveau": "HSK 6",
+   "def": "growth"
+  },
+  {
+   "mot": "垦殖",
+   "pinyin": "ken3 zhi2",
+   "niveau": "HSK 6",
+   "def": "to open up land for cultivation"
+  }
+ ],
+ "奏": [
+  {
+   "mot": "三重奏",
+   "pinyin": "san1 chong2 zou4",
+   "niveau": "HSK 6",
+   "def": "trio (musical ensemble)"
+  },
+  {
+   "mot": "上奏",
+   "pinyin": "shang4 zou4",
+   "niveau": "HSK 6",
+   "def": "(historical) to submit a memorial to the"
+  }
+ ],
+ "疫": [
+  {
+   "mot": "免疫",
+   "pinyin": "mian3 yi4",
+   "niveau": "HSK 6",
+   "def": "immunity (to disease)"
+  },
+  {
+   "mot": "免疫力",
+   "pinyin": "mian3 yi4 li4",
+   "niveau": "HSK 6",
+   "def": "immunity"
+  }
+ ],
+ "灾": [
+  {
+   "mot": "受灾",
+   "pinyin": "shou4 zai1",
+   "niveau": "HSK 6",
+   "def": "disaster-stricken"
+  },
+  {
+   "mot": "大灾",
+   "pinyin": "da4 zai1",
+   "niveau": "HSK 6",
+   "def": "calamity"
+  }
+ ],
+ "秩": [
+  {
+   "mot": "品秩",
+   "pinyin": "pin3 zhi4",
+   "niveau": "HSK 6",
+   "def": "(old) rank and salary of an official pos"
+  },
+  {
+   "mot": "无秩序",
+   "pinyin": "wu2 zhi4 xu4",
+   "niveau": "HSK 6",
+   "def": "disorder"
+  }
+ ],
+ "祖": [
+  {
+   "mot": "二世祖",
+   "pinyin": "er4 shi4 zu3",
+   "niveau": "HSK 6",
+   "def": "profligate child of a wealthy family"
+  },
+  {
+   "mot": "五祖拳",
+   "pinyin": "wu3 zu3 quan2",
+   "niveau": "HSK 6",
+   "def": "Wuzuquan - \"Five Ancestors\" - Martial Ar"
+  }
+ ],
+ "姻": [
+  {
+   "mot": "姻缘",
+   "pinyin": "yin1 yuan2",
+   "niveau": "HSK 6",
+   "def": "a marriage predestined by fate"
+  },
+  {
+   "mot": "姻亲",
+   "pinyin": "yin1 qin1",
+   "niveau": "HSK 6",
+   "def": "relation by marriage; in-laws"
+  }
+ ],
+ "遭": [
+  {
+   "mot": "免遭",
+   "pinyin": "mian3 zao1",
+   "niveau": "HSK 6",
+   "def": "to avoid suffering"
+  },
+  {
+   "mot": "周遭",
+   "pinyin": "zhou1 zao1",
+   "niveau": "HSK 6",
+   "def": "surrounding"
+  }
+ ],
+ "肿": [
+  {
+   "mot": "囊肿",
+   "pinyin": "nang2 zhong3",
+   "niveau": "HSK 6",
+   "def": "cyst (med.)"
+  },
+  {
+   "mot": "水肿",
+   "pinyin": "shui3 zhong3",
+   "niveau": "HSK 6",
+   "def": "(medicine) to suffer from edema (dropsy)"
+  }
+ ],
+ "钻": [
+  {
+   "mot": "冰钻",
+   "pinyin": "bing1 zuan4",
+   "niveau": "HSK 6",
+   "def": "ice auger"
+  },
+  {
+   "mot": "刁钻",
+   "pinyin": "diao1 zuan1",
+   "niveau": "HSK 6",
+   "def": "crafty"
+  }
+ ],
+ "隐": [
+  {
+   "mot": "恻隐",
+   "pinyin": "ce4 yin3",
+   "niveau": "HSK 6",
+   "def": "compassion"
+  },
+  {
+   "mot": "李商隐",
+   "pinyin": "Li3 Shang1 yin3",
+   "niveau": "HSK 6",
+   "def": "Li Shangyin (c. 813-858), Tang poet"
+  }
+ ],
+ "噪": [
+  {
+   "mot": "信噪比",
+   "pinyin": "xin4 zao4 bi3",
+   "niveau": "HSK 6",
+   "def": "signal-to-noise ratio"
+  },
+  {
+   "mot": "北噪鸦",
+   "pinyin": "bei3 zao4 ya1",
+   "niveau": "HSK 6",
+   "def": "(bird species of China) Siberian jay (Pe"
+  }
+ ],
+ "州": [
+  {
+   "mot": "七河州",
+   "pinyin": "Qi1 he2 zhou1",
+   "niveau": "HSK 6",
+   "def": "Semirechye region of Kazakhstan, borderi"
+  },
+  {
+   "mot": "九州",
+   "pinyin": "Jiu3 zhou1",
+   "niveau": "HSK 6",
+   "def": "division of China during earliest dynast"
+  }
+ ],
+ "罪": [
+  {
+   "mot": "二茬罪",
+   "pinyin": "er4 cha2 zui4",
+   "niveau": "HSK 6",
+   "def": "to suffer second persecution"
+  },
+  {
+   "mot": "仇恨罪",
+   "pinyin": "chou2 hen4 zui4",
+   "niveau": "HSK 6",
+   "def": "hate crime"
+  }
+ ],
+ "英": [
+  {
+   "mot": "中英",
+   "pinyin": "Zhong1 Ying1",
+   "niveau": "HSK 6",
+   "def": "Sino-British"
+  },
+  {
+   "mot": "二𫫇英",
+   "pinyin": "er4 e4 ying1",
+   "niveau": "HSK 6",
+   "def": "dioxin"
+  }
+ ],
+ "燥": [
+  {
+   "mot": "干燥",
+   "pinyin": "gan1 zao4",
+   "niveau": "HSK 6",
+   "def": "(of weather, climate, soil etc) dry; ari"
+  },
+  {
+   "mot": "干燥剂",
+   "pinyin": "gan1 zao4 ji4",
+   "niveau": "HSK 6",
+   "def": "desiccant"
+  }
+ ],
+ "粥": [
+  {
+   "mot": "一锅粥",
+   "pinyin": "yi1 guo1 zhou1",
+   "niveau": "HSK 6",
+   "def": "(lit.) a pot of porridge"
+  },
+  {
+   "mot": "八宝粥",
+   "pinyin": "ba1 bao3 zhou1",
+   "niveau": "HSK 6",
+   "def": "rice congee made with red beans, lotus s"
+  }
+ ],
+ "婴": [
+  {
+   "mot": "反圣婴",
+   "pinyin": "Fan3 sheng4 ying1",
+   "niveau": "HSK 6",
+   "def": "La Niña (counterpart of El Niño in meteo"
+  },
+  {
+   "mot": "女婴",
+   "pinyin": "nu:3 ying1",
+   "niveau": "HSK 6",
+   "def": "female baby"
+  }
+ ],
+ "扎": [
+  {
+   "mot": "包扎",
+   "pinyin": "bao1 za1",
+   "niveau": "HSK 6",
+   "def": "variant of 包紮|包扎[bao1 za1]"
+  },
+  {
+   "mot": "卡扎菲",
+   "pinyin": "Ka3 zha1 fei1",
+   "niveau": "HSK 6",
+   "def": "(Colonel Muammar) Gaddafi (1942-2011), d"
+  }
+ ],
+ "骤": [
+  {
+   "mot": "分步骤",
+   "pinyin": "fen1 bu4 zhou4",
+   "niveau": "HSK 6",
+   "def": "step by step"
+  },
+  {
+   "mot": "急骤",
+   "pinyin": "ji2 zhou4",
+   "niveau": "HSK 6",
+   "def": "rapid"
+  }
+ ],
+ "颖": [
+  {
+   "mot": "孔颖达",
+   "pinyin": "Kong3 Ying3 da2",
+   "niveau": "HSK 6",
+   "def": "Kong Yingda (574-648), Confucian scholar"
+  },
+  {
+   "mot": "新颖",
+   "pinyin": "xin1 ying3",
+   "niveau": "HSK 6",
+   "def": "lit. new bud"
+  }
+ ],
+ "宅": [
+  {
+   "mot": "住宅",
+   "pinyin": "zhu4 zhai2",
+   "niveau": "HSK 6",
+   "def": "residence; dwelling; abode"
+  },
+  {
+   "mot": "住宅区",
+   "pinyin": "zhu4 zhai2 qu1",
+   "niveau": "HSK 6",
+   "def": "residential area"
+  }
+ ],
+ "珠": [
+  {
+   "mot": "七龙珠",
+   "pinyin": "Qi1 long2 zhu1",
+   "niveau": "HSK 6",
+   "def": "Dragon Ball, Japanese manga and anime se"
+  },
+  {
+   "mot": "佛珠",
+   "pinyin": "fo2 zhu1",
+   "niveau": "HSK 6",
+   "def": "Buddhist prayer beads"
+  }
+ ]
+}
